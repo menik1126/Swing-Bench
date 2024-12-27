@@ -1,0 +1,31 @@
+git+https://github.com/yeger00/pylspclient.git@bd58ae7ee5773fd3b4df8c28480a8df9279cd59a # use older version to avoid conflict with sansio-lsp-server
+python-lsp-server>=1.8.2
+jedi>=0.19.1
+returns[compatible-mypy]>=0.23.0
+jsonlines>=4.0.0
+tqdm>=4.64.1
+lambdas>=0.2.0
+sansio-lsp-client==0.10.0
+pygithub==2.3.0
+pytest==8.3.2
+astor==0.8.1
+jedi==0.19.1
+fire==0.6.0
+python-Levenshtein==0.25.1
+fuzzywuzzy==0.18.0
+cytoolz==0.12.3
+orjson==3.10.6
+pathos==0.3.2
+funcy==2.0
+funcy_chain>=0.2.0
+matplotlib==3.8.3
+pandas==2.2.2
+
+# tree-sitter dependencies
+tree-sitter==0.21.3
+tree-sitter-go==0.21.0
+tree-sitter-cpp==0.22.3
+tree-sitter-java==0.21.0
+tree-sitter-javascript==0.21.4
+tree-sitter-python==0.21.0
+tree-sitter-rust==0.21.2
