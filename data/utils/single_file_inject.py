@@ -21,7 +21,7 @@ def parse_function_names_from_file(data_file):
                 parts = line.split('::')
                 if len(parts) == 3:
                     raw_name = parts[2]
-                    clean_name = raw_name.replace('test_', '').replace('_', '')
+                    clean_name = raw_name.replace('test_', '')
                     function_names.append(clean_name)
     return function_names
 
@@ -45,16 +45,18 @@ def locate_and_process_function(function_name, repo_path):
                     file_content = infile.read()
 
                 # Match function name with possible prefixes or suffixes
-                function_pattern = rf"def (?:_?{function_name}_?|_?{function_name}|{function_name}_?)\\(.*?\\):"
+                function_pattern = rf"def _?{function_name}"
                 if re.search(function_pattern, file_content):
                     relative_path = os.path.relpath(file_path, repo_path)
                     return {
                         "file_path": relative_path,
                         "content": file_content
                     }
+                
+    print(f"Function '{function_name}' not found in the repository.")
     return None
 
-def call_gpt(prompt_text, api_key, api_base):
+def call_gpt(prompt_text, api_key, api_base=None):
     """
     Call GPT with the given prompt.
 
@@ -67,7 +69,8 @@ def call_gpt(prompt_text, api_key, api_base):
         str: The response from GPT-4.
     """
     openai.api_key = api_key
-    openai.api_base = api_base
+    if api_base:
+        openai.api_base = api_base
     response = openai.ChatCompletion.create(
         model="gpt-4o",
         messages=[
@@ -108,12 +111,13 @@ if __name__ == "__main__":
     repo_path = "../UniTSyn/data/repos/ageitgey-face_recognition"
 
     # OpenAI settings
-    openai_api_key = "sk-mbJUXSh916hxnYKO371cD8809919451092B9E170D0544687"
-    openai_api_base = "https://api.ai-gaochao.cn/v1"
+    openai_api_key = "sk-emtELVm1Frmuf33Q344c8aF792B14696A2DcD68fB96766Fc"
+    openai_api_base = "https://api.openai.com/v1"
 
     for function_name in function_names:
         # Locate and process the function
         function_details = locate_and_process_function(function_name, repo_path)
+
         if function_details:
             # Generate the GPT prompt
             prompt = inject_bug_and_generate_prompt(function_details)
