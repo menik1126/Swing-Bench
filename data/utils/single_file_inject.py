@@ -2,6 +2,25 @@ import os
 import re
 import openai
 
+# Map of bug types and their descriptions
+bug_map = {
+    "misused ==/=": "First of all please inject a misuse of = and == bug into it with comments as the following format: \"// Misuse of = and ==\".",
+    "missing colons": "First of all please inject a missing colon bug into it with comments as the following format: \"// Missing colon\".",
+    "unclosed parentheses": "First of all please inject an unclosed parentheses bug into it with comments as the following format: \"// Unclosed parentheses\".",
+    "illegal separation": "First of all please inject an illegal separation bug into it with comments as the following format: \"// Illegal separation\".",
+    "illegal indentation": "First of all please inject an illegal indentation bug into it with comments as the following format: \"// Illegal indentation\".",
+    "unclosed string": "First of all please inject an unclosed string bug into it with comments as the following format: \"// Unclosed string\".",
+    "illegal comment": "First of all please inject an illegal comment bug into it with comments as the following format: \"// Illegal comment\".",
+    "faulty indexing": "First of all please inject a faulty indexing bug into it with comments as the following format: \"// Faulty indexing\".",
+    "undefined objects": "First of all please inject an undefined object bug into it with comments as the following format: \"// Undefined object\".",
+    "undefined methods": "First of all please inject an undefined method bug into it with comments as the following format: \"// Undefined method\".",
+    "illegal keywords": "First of all please inject an illegal keyword bug into it with comments as the following format: \"// Illegal keyword\".",
+    "condition error": "First of all please inject a condition error bug into it with comments as the following format: \"// Condition error\".",
+    "operation error": "First of all please inject an operation error bug into it with comments as the following format: \"// Operation error\".",
+    "variable error": "First of all please inject a variable error bug into it with comments as the following format: \"// Variable error\"."
+}
+
+
 def parse_function_names_from_file(data_file):
     """
     Parse function names from a data file containing paths in the format:
@@ -80,7 +99,7 @@ def call_gpt(prompt_text, api_key, api_base=None):
     )
     return response['choices'][0]['message']['content']
 
-def inject_bug_and_generate_prompt(function_details):
+def inject_bug_and_generate_prompt(function_details, bug_type):
     """
     Read the extracted file and format the prompt for injecting bugs.
 
@@ -92,11 +111,20 @@ def inject_bug_and_generate_prompt(function_details):
     """
     file_path = function_details["file_path"]
     code = function_details["content"]
+
+    bug_injection_instruction = bug_map.get(bug_type)
+
+
     prompt = f"# FILE: {file_path}\n```{code}```\n\n"
     prompt += (
-        "The above is a piece of Python code and I would like you to follow two steps to complete the task. \n"
-        "1. First of all please inject a misuse of = and == bug into it with comments as the following format: \"// Misuse of = and ==\". \n"
-        "2. Generate a text file in the following format, and replace the contents of the \"context\" here with the complete buggy code you generated in step 1, without comments and the complete code should not be omitted, replace the contents of the \"answers\" with the name of the function you injected the bug into, and replace the contents of the \"options\" with the names of all the functions in the entire code: \"context\": \"The code generated in step 1\", \"input\": \"Which funtion has deliberate error?\", \"answer\": [\"correct_answer\"], \"options\": [\"option1\", \"option2\", \"option3\", \"option4\"] The answer you generate doesn't need to contain the results of the first step, you just need to return the text file."
+        f"The above is a piece of Python code and I would like you to follow two steps to complete the task.\n"
+        f"1. {bug_injection_instruction}\n"
+        "2. Generate a text file in the following format, and replace the contents of the \"context\" here with the complete buggy code you generated in step 1, without comments and the complete code should not be omitted, replace the contents of the \"answers\" with the name of the function you injected the bug into, and replace the contents of the \"options\" with the names of all the functions in the entire code: "
+        "\"context\": \"The code generated in step 1\", "
+        "\"input\": \"Which function has deliberate error?\", "
+        "\"answer\": [\"correct_answer\"], "
+        "\"options\": [\"option1\", \"option2\", \"option3\", \"option4\"].\n"
+        "The answer you generate does not need to contain the results of the first step, you just need to return the text file."
     )
     return prompt
 
@@ -115,7 +143,9 @@ if __name__ == "__main__":
     openai_api_base = "https://api.openai.com/v1"
 
     # Output file to collect GPT responses
-    output_file = "gpt_responses.txt"
+    output_file = "injected.txt"
+
+    selected_bug_type = "illegal indentation"
 
     with open(output_file, 'w', encoding='utf-8') as outfile:
         for function_name in function_names:
@@ -124,7 +154,7 @@ if __name__ == "__main__":
 
             if function_details:
                 # Generate the GPT prompt
-                prompt = inject_bug_and_generate_prompt(function_details)
+                prompt = inject_bug_and_generate_prompt(function_details, selected_bug_type)
 
                 gpt_response = call_gpt(prompt, openai_api_key, openai_api_base)
 
