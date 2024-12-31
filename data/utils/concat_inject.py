@@ -78,8 +78,9 @@ if __name__ == "__main__":
     output_file = "./test_concat_file.txt"
 
     # OpenAI settings
-    openai_api_key = "sk-mbJUXSh916hxnYKO371cD8809919451092B9E170D0544687"
-    openai_api_base = "https://api.ai-gaochao.cn/v1"
+    openai_api_key = "sk-EaJIsRtJR3wNozOzFA97U2HHxeBDhi3QngjBHFpGT8aPu5Ae"
+    # openai_api_base = "https://api.ai-gaochao.cn/v1"
+    openai.api_base = "https://api.openai.com/v1"
 
     concatenate_py_files(repo_path, output_file)
     print(f"All .py files have been concatenated into {output_file}")

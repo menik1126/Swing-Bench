@@ -96,7 +96,7 @@ def inject_bug_and_generate_prompt(function_details):
     prompt += (
         "The above is a piece of Python code and I would like you to follow two steps to complete the task. \n"
         "1. First of all please inject a misuse of = and == bug into it with comments as the following format: \"// Misuse of = and ==\". \n"
-        "2. Providing the buggy code in txt format with the following keys: \"context\": \"The code generated in step 1, THE COMPLETE CODE SHOULD NOT BE OMITTED in JSON file.\", \"input\": \"Which function has deliberate error?\", \"answer\": [\"correct_answer\"], \"options\": [\"option1\", \"option2\", \"option3\", \"option4\"]."
+        "2. Generate a text file in the following format, and replace the contents of the \"context\" here with the complete buggy code you generated in step 1, without comments and the complete code should not be omitted, replace the contents of the \"answers\" with the name of the function you injected the bug into, and replace the contents of the \"options\" with the names of all the functions in the entire code: \"context\": \"The code generated in step 1\", \"input\": \"Which funtion has deliberate error?\", \"answer\": [\"correct_answer\"], \"options\": [\"option1\", \"option2\", \"option3\", \"option4\"] The answer you generate doesn't need to contain the results of the first step, you just need to return the text file."
     )
     return prompt
 
@@ -111,17 +111,26 @@ if __name__ == "__main__":
     repo_path = "../UniTSyn/data/repos/ageitgey-face_recognition"
 
     # OpenAI settings
-    openai_api_key = "sk-emtELVm1Frmuf33Q344c8aF792B14696A2DcD68fB96766Fc"
+    openai_api_key = "sk-proj-9sIwQNVjiIMCMui4nbyVT3BlbkFJdz9WXzfxFnjlbJ1EE1ri"
     openai_api_base = "https://api.openai.com/v1"
 
-    for function_name in function_names:
-        # Locate and process the function
-        function_details = locate_and_process_function(function_name, repo_path)
+    # Output file to collect GPT responses
+    output_file = "gpt_responses.txt"
 
-        if function_details:
-            # Generate the GPT prompt
-            prompt = inject_bug_and_generate_prompt(function_details)
+    with open(output_file, 'w', encoding='utf-8') as outfile:
+        for function_name in function_names:
+            # Locate and process the function
+            function_details = locate_and_process_function(function_name, repo_path)
 
-            gpt_response = call_gpt(prompt, openai_api_key, openai_api_base)
-            print("GPT Response:")
-            print(gpt_response)
+            if function_details:
+                # Generate the GPT prompt
+                prompt = inject_bug_and_generate_prompt(function_details)
+
+                gpt_response = call_gpt(prompt, openai_api_key, openai_api_base)
+
+                # Write the GPT response to the output file
+                outfile.write(f"Function Name: {function_name}\n")
+                outfile.write(f"Response:\n{gpt_response}\n")
+                outfile.write("=" * 80 + "\n")  # Add a separator for readability
+
+                print(f"Response for '{function_name}' saved.")
