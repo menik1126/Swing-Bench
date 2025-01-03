@@ -78,6 +78,7 @@ def collect_from_repo(
     return (status, nfile, ntest)
     status can be 0: success, 1: repo not found, 2: test not found, 3: skip when output file existed
     """
+    assert 1==0
     repo_path = os.path.join(repo_root, wrap_repo(repo_id))
     if not os.path.exists(repo_path) or not os.path.isdir(repo_path):
         return 1, 0, 0
@@ -97,6 +98,7 @@ def collect_from_repo(
     n_test_func = 0
     n_focal_func = 0
     with open(focal_path, "w") as outfile:
+        assert 1==0
         for k, ds in tests.items():
             for d in ds:
                 if d is None:
@@ -134,7 +136,7 @@ def main(
         collect_from_repo,
         repo_id_list=repo_id_list,
         nprocs=nprocs,
-        timeout=timeout,
+      
         repo_root=repo_root,
         test_root=test_root,
         focal_root=focal_root,

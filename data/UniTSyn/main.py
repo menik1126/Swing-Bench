@@ -49,6 +49,7 @@ def java_workdir_dict(objs: list[dict]) -> dict[str, list[dict]]:
 def focal2result(syncer: Synchronizer, repos_root, obj):
     p = id2path(obj["test_id"])
     file_path = os.path.join(repos_root, p)
+    print(obj["focal_loc"] )
     src_lineno, src_col_offset = obj["focal_loc"]
     test_lineno, test_col_offset = obj["test_loc"]
 
@@ -162,21 +163,19 @@ def process_one_focal_file(
             case _:
                 syncer = LSPSynchronizer(full_workdir, language)
 
-        try:
-            syncer.initialize(timeout=60)
+#        
+        syncer.initialize(timeout=60)
 
-            for obj in workdir_objs:
+        for obj in workdir_objs:
+            try:
                 result = focal2result(syncer, repos_root, obj)
-                if "error" in result:
-                    fail.append(result)
-                else:
-                    succ.append(result)
+                succ.append(result)
+            except Exception as e:
+                fail.append(result)
+                
 
-            syncer.stop()
-        except Exception as e:  # pylint: disable=broad-exception-caught
-            logging.debug(e)
-            syncer.stop()
-            continue
+        syncer.stop()
+
 
         # append to source file in loop to avoid losing data
         with jsonlines.open(success_file, "a") as f:
