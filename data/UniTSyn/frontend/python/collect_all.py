@@ -29,7 +29,7 @@ def main(
         nprocs=nprocs,
         limits=limits,
     )
-    collect_focal = collect_focal_org if original_collect_focal else collect_focal_new
+    collect_focal = collect_focal_new #collect_focal #_org # if original_collect_focal else collect_focal_new
     collect_focal.main(
         repo_id=repo_id,
         test_root=test_root,

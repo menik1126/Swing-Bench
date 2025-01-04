@@ -81,7 +81,7 @@ def parse_focal_call(test_func: ast.AST, module: ModuleNavigator, repo: jedi.Pro
             and not defs[0].in_builtin_module()
             and is_subpath(repo.path, defs[0].module_path)
         ):
-            return node, defs[0]
+            return node, defs[0], node.lineno, shift_col_offset
     return None
 
 
@@ -120,8 +120,9 @@ def collect_focal_func(
     test_func, test_mod = load_ast_func(os.path.join(iroot, test_id), return_nav=True)
     # find call to to the potential focal function
     result = parse_focal_call(test_func, test_mod, repo)
+    print("result:{}".format(result))
     if result is not None:
-        focal_call, focal_func_jedi = result  # pylint: disable=unused-variable
+           focal_call, focal_func_jedi, line, col = result  # pylint: disable=unused-variable
     else:
         raise NotFoundException(f"Failed to find potential focal call in {test_id}")
     # convert focal_func from jedi Name to ast object
@@ -135,7 +136,7 @@ def collect_focal_func(
     # get focal path to dump focal func
     focal_path = str(focal_func_jedi.module_path.relative_to(os.path.abspath(iroot)))
     focal_id = dump_ast_func(focal_func, focal_path, focal_mod)
-    return focal_id
+    return focal_id, (line, col), (test_func.lineno, test_func.col_offset)
 
 
 def collect_from_repo(
@@ -161,6 +162,7 @@ def collect_from_repo(
     if not os.path.exists(test_path):
         return 1, 0, 0
     focal_path = os.path.join(focal_root, wrap_repo(repo_id) + ".jsonl")
+    print("focal_path:{}".format(focal_path))
     if os.path.exists(focal_path):
         return 3, 0, 0
     # build jedi project
@@ -181,7 +183,7 @@ def collect_from_repo(
     # save to disk
     with open(focal_path, "w") as ofile:
         for test_id, focal_id in zip(test_ids, focal_ids):
-            ofile.write(json.dumps({"test": test_id, "focal": focal_id}) + "\n")
+            ofile.write(json.dumps({"test_id": test_id, "focal_id": focal_id[0], "focal_loc": focal_id[1], "test_loc": focal_id[2]}) + "\n")
     return 0, len(test_ids), len(test_ids) - failed
 
 

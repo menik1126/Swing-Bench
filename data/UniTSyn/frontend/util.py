@@ -108,6 +108,7 @@ def mp_map_repos(handler: Callable, repo_id_list: List[str], nprocs: int = 0, **
     other args can be passed as named args by kwargs
     """
     results = []
+    print("handler:{}".format(handler))
     if nprocs < 1:
         for repo_id in (pbar := tqdm(repo_id_list)):
             pbar.set_description(f"{timestamp()} Processing {repo_id}")
@@ -121,6 +122,9 @@ def mp_map_repos(handler: Callable, repo_id_list: List[str], nprocs: int = 0, **
                     results.append(status)
                     pbar.set_description(timestamp())
                     pbar.update()
+    print("results:{}".format(results))
+    print("len(results):{}".format(len(results)))
+    print(f"Processed {len(results)} repos")
     return results
 
 
