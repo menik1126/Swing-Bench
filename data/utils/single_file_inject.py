@@ -139,8 +139,8 @@ if __name__ == "__main__":
     repo_path = "../UniTSyn/data/repos/ageitgey-face_recognition"
 
     # OpenAI settings
-    openai_api_key = "sk-proj-9sIwQNVjiIMCMui4nbyVT3BlbkFJdz9WXzfxFnjlbJ1EE1ri"
-    openai_api_base = "https://api.openai.com/v1"
+    openai_api_key = "sk-nZGxCfIBxtuzEMdKO7Y52xd91ulbCl74fJSfv7XPhDLF8iZF"
+    openai_api_base = "https://api.feidaapi.com/v1"
 
     # Output file to collect GPT responses
     output_file = "injected.txt"
