@@ -16,9 +16,16 @@ import os
 import sys
 from typing import Callable, Optional
 
+import argparse
+import json
+import site
+site.addsitedir('/Users/killt/OneDrive/desktop/multihop-prefill-stage-benchmark/data/UniTSyn')
+# print(sys.path)
+# os.chdir('C:\Users\killt\OneDrive\Desktop\multihop-prefill-stage-benchmark\data\UniTSyn')
+
+
 from scripts.check_repo_stats import check_requirements, check_map
 from scripts.common import get_graphql_data
-
 
 def search_by_stars(
     language: str, stars_query: str, cursor: str, gql_format: str, bulk_size: int = 100
@@ -243,13 +250,34 @@ def save_repos_to_file(language: str, repos_list: list[str]) -> None:
 # Pass checks_list and reqs with this template: --checks_list='<list>' --reqs='<list>'
 # Ex. --reqs='["0", "2020-1-1"]'
 # If checking Rust fuzz path, put null in place of where the req should be in the reqs list
-def main(
-    language: str = "Java",
-    checks_list: list[str] = ["stars", "latest commit"],
-    reqs: list[str] = ["10", "2020-1-1"],  # Year format should be <year>-<month>-<day>
-    num_searches: int = 1,  # How much of the rate limit to use (5000 max)
-):
-    # Set up requirement callables and reqs
+# def main(
+#     language: str = "Java",
+#     checks_list: list[str] = ["stars", "latest commit"],
+#     reqs: list[str] = ["10", "2020-1-1"],  # Year format should be <year>-<month>-<day>
+#     num_searches: int = 1,  # How much of the rate limit to use (5000 max)
+# ):
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--language", type=str, default="Java")
+    parser.add_argument("--checks_list", type=str, default='["stars", "latest commit"]')
+    parser.add_argument("--reqs", type=str, default='["10", "2020-1-1"]')
+    parser.add_argument("--num_searches", type=int, default=1)
+    
+    args = parser.parse_args()
+
+    checks_list = args.checks_list
+    reqs = args.reqs
+    num_searches = args.num_searches
+    language = args.language
+
+    print("Language:", args.language)
+    print("Checks List:", checks_list)
+    print("Requirements:", reqs)
+    print("Number of Searches:", args.num_searches)
+
+    print("Parsed checks_list:", args.check)
+    print("checks_list:", checks_list)
+    print("check_map keys:", check_map.keys())
     checks = [check_map[check] for check in checks_list]
 
     for _ in range(num_searches):
