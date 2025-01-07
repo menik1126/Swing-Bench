@@ -1,0 +1,20 @@
+repo_name,language,stars,type,content,url,category
+conductor-oss/conductor,Java,18080,pull_request,reduce fork/join latency,https://github.com/conductor-oss/conductor/pull/352,time
+gunnarmorling/1brc,Java,6601,pull_request,use crac to start faster,https://github.com/gunnarmorling/1brc/pull/705,time
+langchain4j/langchain4j,Java,5236,pull_request,modify when memoryid is used,https://github.com/langchain4j/langchain4j/pull/2364,space
+novicezk/midjourney-proxy,Java,4861,pull_request,feat: add aliyun oss storage config,https://github.com/novicezk/midjourney-proxy/pull/343,space
+xpipe-io/xpipe,Java,4020,pull_request,bump com.fasterxml.jackson.core:jackson-databind from 2.18.1 to 2.18.2,https://github.com/xpipe-io/xpipe/pull/382,time
+xpipe-io/xpipe,Java,4020,pull_request,bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 from 2.18.1 to 2.18.2,https://github.com/xpipe-io/xpipe/pull/381,time
+xpipe-io/xpipe,Java,4020,pull_request,bump com.fasterxml.jackson.core:jackson-databind from 2.17.2 to 2.18.1,https://github.com/xpipe-io/xpipe/pull/366,time
+xpipe-io/xpipe,Java,4020,pull_request,bump com.fasterxml.jackson.core:jackson-databind from 2.17.2 to 2.18.0,https://github.com/xpipe-io/xpipe/pull/348,time
+tencentmusic/supersonic,Java,2604,pull_request,[fix]fix user feedback for query memory bug,https://github.com/tencentmusic/supersonic/pull/1992,space
+linyimin0812/spring-startup-analyzer,Java,1616,pull_request,use gson instead of fastjson,https://github.com/linyimin0812/spring-startup-analyzer/pull/151,time
+jbellis/jvector,Java,1536,pull_request,don't use segment hashcode in memorysegmentvectorfloat,https://github.com/jbellis/jvector/pull/372,space
+HamburgChimps/apple-notes-liberator,Java,980,pull_request,fix gzip memory leak in `decompress` method,https://github.com/HamburgChimps/apple-notes-liberator/pull/11,space
+MCRcortex/nvidium,Java,738,pull_request,fix linux-specific memory leak,https://github.com/MCRcortex/nvidium/pull/173,space
+amnesica/KryptEY,Java,713,pull_request,fastlane i18n ru,https://github.com/amnesica/KryptEY/pull/33,time
+ThePrimeagen/ts-rust-zig-deez,Java,639,pull_request,elixir lexer now with 300% more blazingly fast and 300% less memory usage,https://github.com/ThePrimeagen/ts-rust-zig-deez/pull/255,time
+langchain4j/langchain4j-examples,Java,628,pull_request,update dependency com.fasterxml.jackson.core:jackson-databind to v2.18.1,https://github.com/langchain4j/langchain4j-examples/pull/124,time
+stateIs0/exp,Java,615,pull_request,perf: add logic for faster return,https://github.com/stateIs0/exp/pull/25,time
+google/project-gameface,Java,590,pull_request,added support for f13-f24 keys and allow cursor speeds to be 0,https://github.com/google/project-gameface/pull/18,time
+dylibso/chicory,Java,564,pull_request,add memoryfactory and make memory an interface,https://github.com/dylibso/chicory/pull/698,space

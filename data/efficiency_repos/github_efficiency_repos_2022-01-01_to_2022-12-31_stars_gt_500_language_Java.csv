@@ -1,0 +1,44 @@
+repo_name,language,stars,type,content,url,category
+PlexPt/chatgpt-java,Java,3611,pull_request,bump com.fasterxml.jackson.core:jackson-databind from 2.15.2 to 2.18.2,https://github.com/PlexPt/chatgpt-java/pull/345,time
+PlexPt/chatgpt-java,Java,3611,pull_request,bump com.fasterxml.jackson.core:jackson-databind from 2.15.2 to 2.18.1,https://github.com/PlexPt/chatgpt-java/pull/336,time
+PlexPt/chatgpt-java,Java,3611,pull_request,bump com.fasterxml.jackson.core:jackson-databind from 2.15.2 to 2.18.0,https://github.com/PlexPt/chatgpt-java/pull/327,time
+Helium314/HeliBoard,Java,2616,pull_request,triggering of haptic and audio feedback during cursor movement on spacebar swipe,https://github.com/Helium314/HeliBoard/pull/1035,space
+Helium314/HeliBoard,Java,2616,pull_request,"space swipe to toggle numpad layout, with side bonuses",https://github.com/Helium314/HeliBoard/pull/950,space
+alibaba/SREWorks,Java,1826,pull_request,[fix] issues-235 kubernetes storage causing mysql startup delay,https://github.com/alibaba/SREWorks/pull/236,space
+alibaba/SREWorks,Java,1826,pull_request,fix(sec): upgrade com.alibaba:fastjson to 1.2.83,https://github.com/alibaba/SREWorks/pull/209,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane full description,https://github.com/deltazefiro/Amarok-Hider/pull/188,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane short description,https://github.com/deltazefiro/Amarok-Hider/pull/177,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane full description,https://github.com/deltazefiro/Amarok-Hider/pull/176,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane short description,https://github.com/deltazefiro/Amarok-Hider/pull/163,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane full description,https://github.com/deltazefiro/Amarok-Hider/pull/162,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane short description,https://github.com/deltazefiro/Amarok-Hider/pull/159,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane short description,https://github.com/deltazefiro/Amarok-Hider/pull/155,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane full description,https://github.com/deltazefiro/Amarok-Hider/pull/148,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane full description,https://github.com/deltazefiro/Amarok-Hider/pull/147,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane full description,https://github.com/deltazefiro/Amarok-Hider/pull/136,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane full description,https://github.com/deltazefiro/Amarok-Hider/pull/135,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane short description,https://github.com/deltazefiro/Amarok-Hider/pull/134,time
+deltazefiro/Amarok-Hider,Java,1769,pull_request,translations update: fastlane full description,https://github.com/deltazefiro/Amarok-Hider/pull/133,time
+xCollateral/VulkanMod,Java,1636,pull_request,[performance] add early-z optimization option (experimental fast leaves),https://github.com/xCollateral/VulkanMod/pull/491,time
+qi4L/JYso,Java,1626,pull_request,"revert ""修改fastjson1支持1.2.83""",https://github.com/qi4L/JYso/pull/29,time
+qi4L/JYso,Java,1626,pull_request,修改fastjson1支持1.2.83,https://github.com/qi4L/JYso/pull/26,time
+NextAlone/Nagram,Java,1552,pull_request,fix memory leak,https://github.com/NextAlone/Nagram/pull/28,space
+ReVanced/revanced-integrations,Java,726,pull_request,fix(youtube - playback speed): restore old playback speed menu,https://github.com/ReVanced/revanced-integrations/pull/728,time
+ReVanced/revanced-integrations,Java,726,pull_request,fix(youtube - playback speed): remember playback speed with new speed menu,https://github.com/ReVanced/revanced-integrations/pull/725,time
+iSoftStoneGroup/EazyBuilder,Java,651,pull_request,increase yarn source configuration to accelerate the download speed of front-end construction in mainland china,https://github.com/iSoftStoneGroup/EazyBuilder/pull/109,time
+continew-org/continew-admin,Java,641,pull_request,fix: remove last commit non-breaking space,https://github.com/continew-org/continew-admin/pull/73,space
+Sunagatov/Iced-Latte,Java,612,pull_request,deps: bump com.fasterxml.jackson.core:jackson-databind from 2.15.2 to 2.18.2,https://github.com/Sunagatov/Iced-Latte/pull/397,time
+Sunagatov/Iced-Latte,Java,612,pull_request,deps: bump com.fasterxml.jackson.core:jackson-core from 2.15.2 to 2.18.2,https://github.com/Sunagatov/Iced-Latte/pull/396,time
+Sunagatov/Iced-Latte,Java,612,pull_request,deps: bump com.fasterxml.jackson.core:jackson-core from 2.15.2 to 2.18.1,https://github.com/Sunagatov/Iced-Latte/pull/389,time
+Sunagatov/Iced-Latte,Java,612,pull_request,deps: bump com.fasterxml.jackson.core:jackson-databind from 2.15.2 to 2.18.1,https://github.com/Sunagatov/Iced-Latte/pull/388,time
+Sunagatov/Iced-Latte,Java,612,pull_request,deps: bump com.fasterxml.jackson.core:jackson-databind from 2.15.2 to 2.18.0,https://github.com/Sunagatov/Iced-Latte/pull/379,time
+Sunagatov/Iced-Latte,Java,612,pull_request,deps: bump com.fasterxml.jackson.core:jackson-core from 2.15.2 to 2.18.0,https://github.com/Sunagatov/Iced-Latte/pull/378,time
+Sunagatov/Iced-Latte,Java,612,pull_request,deps: bump com.fasterxml.jackson.core:jackson-databind from 2.15.2 to 2.17.2,https://github.com/Sunagatov/Iced-Latte/pull/370,time
+kishanrajput23/Java-Projects-Collections,Java,591,pull_request,binomial coefficient calculation,https://github.com/kishanrajput23/Java-Projects-Collections/pull/441,time
+aws/event-ruler,Java,585,pull_request,bump com.fasterxml.jackson.core:jackson-databind from 2.18.1 to 2.18.2,https://github.com/aws/event-ruler/pull/204,time
+aws/event-ruler,Java,585,pull_request,bump ch.randelshofer:fastdoubleparser from 2.0.0 to 2.0.1,https://github.com/aws/event-ruler/pull/202,time
+aws/event-ruler,Java,585,pull_request,bump com.fasterxml.jackson.core:jackson-databind from 2.18.0 to 2.18.1,https://github.com/aws/event-ruler/pull/201,time
+aws/event-ruler,Java,585,pull_request,bump ch.randelshofer:fastdoubleparser from 1.0.1 to 2.0.0,https://github.com/aws/event-ruler/pull/196,time
+aws/event-ruler,Java,585,pull_request,bump com.fasterxml.jackson.core:jackson-databind from 2.17.2 to 2.18.0,https://github.com/aws/event-ruler/pull/191,time
+aws/event-ruler,Java,585,pull_request,bump ch.randelshofer:fastdoubleparser from 1.0.0 to 1.0.1,https://github.com/aws/event-ruler/pull/184,time
+aws/event-ruler,Java,585,pull_request,add fastdoubleparser as a dependency instead of using jackson's shaded version,https://github.com/aws/event-ruler/pull/172,time

@@ -1,0 +1,41 @@
+repo_name,language,stars,type,content,url,category
+brunodev85/winlator,C,10052,pull_request,create workspace.xml,https://github.com/brunodev85/winlator/pull/82,space
+brunodev85/winlator,C,10052,pull_request, fix: handle spaces in environment variable names and values,https://github.com/brunodev85/winlator/pull/57,space
+antirez/smallchat,C,7338,pull_request,"fix compile error ""storage size of 'hints' isn't know""",https://github.com/antirez/smallchat/pull/45,space
+antirez/smallchat,C,7338,pull_request,fix realloc potential memory leaks,https://github.com/antirez/smallchat/pull/22,space
+opa334/Dopamine,C,3646,pull_request,uses tab spaces and lighting kfd,https://github.com/opa334/Dopamine/pull/661,space
+opa334/Dopamine,C,3646,pull_request,codespace sturdy funicular 4jqj5pq969x4h77jj,https://github.com/opa334/Dopamine/pull/583,space
+curl/trurl,C,3204,pull_request,trurl: fix a few returns codes for out of memory,https://github.com/curl/trurl/pull/368,space
+phoboslab/wipeout-rewrite,C,2689,pull_request,add speed number in kph,https://github.com/phoboslab/wipeout-rewrite/pull/69,time
+phoboslab/wipeout-rewrite,C,2689,pull_request,fix memory leak on exit,https://github.com/phoboslab/wipeout-rewrite/pull/63,space
+BitMaker-hub/NerdMiner_v2,C,1744,pull_request,chore : update fastled and onebutton,https://github.com/BitMaker-hub/NerdMiner_v2/pull/511,time
+FelixKratz/JankyBorders,C,1632,pull_request,docs/readme: fix grammatical error for aerospace config,https://github.com/FelixKratz/JankyBorders/pull/135,space
+FelixKratz/JankyBorders,C,1632,pull_request,use hashtable for storage,https://github.com/FelixKratz/JankyBorders/pull/7,space
+netero1010/EDRSilencer,C,1548,pull_request,memory leak in getproviderguidbydescription,https://github.com/netero1010/EDRSilencer/pull/22,space
+oracle/bpftune,C,1527,pull_request,tcp_buffer_tuner: reduce tcp_[rw]mem max when correlated with latency…,https://github.com/oracle/bpftune/pull/134,time
+oracle/bpftune,C,1527,pull_request,ip_frag_tuner: tunables are not namespaced,https://github.com/oracle/bpftune/pull/115,space
+egzumer/uv-k5-firmware-custom,C,1379,pull_request,codespace humble acorn 6v9j5rv7jggh49pr,https://github.com/egzumer/uv-k5-firmware-custom/pull/564,space
+quickjs-ng/quickjs,C,1256,pull_request,fix exporting js_getmodulenamespace,https://github.com/quickjs-ng/quickjs/pull/740,space
+ashvardanian/SimSIMD,C,1181,pull_request,faster fma on haswell,https://github.com/ashvardanian/SimSIMD/pull/216,time
+ashvardanian/SimSIMD,C,1181,pull_request,faster binary distances on arm neon & sve,https://github.com/ashvardanian/SimSIMD/pull/212,time
+ashvardanian/SimSIMD,C,1181,pull_request,improve: 2x faster l2 on arm neon,https://github.com/ashvardanian/SimSIMD/pull/211,time
+ashvardanian/SimSIMD,C,1181,pull_request,faster loads & broader tests,https://github.com/ashvardanian/SimSIMD/pull/210,time
+unum-cloud/ucall,C,1160,pull_request,reorganize folders to match namespaces,https://github.com/unum-cloud/ucall/pull/84,space
+unum-cloud/ucall,C,1160,pull_request,fastapi-like interface,https://github.com/unum-cloud/ucall/pull/83,time
+ravachol/kew,C,1126,pull_request,prune whitespaces at end of line in src/settings.c,https://github.com/ravachol/kew/pull/186,space
+dune3d/dune3d,C,1086,pull_request,update solvespace to latest solver using eigen.,https://github.com/dune3d/dune3d/pull/63,space
+cococry/ragnar,C,1076,pull_request,add keyboard layout config option and fix memory leaks,https://github.com/cococry/ragnar/pull/61,space
+sched-ext/scx,C,1038,pull_request,scx_lavd: add a fast path for a migration-disabled task in pick_idle_cpu(),https://github.com/sched-ext/scx/pull/1156,time
+sched-ext/scx,C,1038,pull_request,scx_flash: option for userspace lock boosting,https://github.com/sched-ext/scx/pull/1136,space
+HarbourMasters/2ship2harkinian,C,1034,pull_request,[timesaver] faster swamp boat,https://github.com/HarbourMasters/2ship2harkinian/pull/918,time
+MrNeRF/gaussian-splatting-cuda,C,945,pull_request,backward pass speed up,https://github.com/MrNeRF/gaussian-splatting-cuda/pull/15,time
+MrNeRF/gaussian-splatting-cuda,C,945,pull_request,memory duplication speed up,https://github.com/MrNeRF/gaussian-splatting-cuda/pull/3,time
+yeyupiaoling/Whisper-Finetune,C,923,pull_request,fix: whitespace error,https://github.com/yeyupiaoling/Whisper-Finetune/pull/55,space
+NouamaneTazi/bloomz.cpp,C,810,pull_request,mention converter space in readme.md,https://github.com/NouamaneTazi/bloomz.cpp/pull/19,space
+ColleagueRiley/RGFW,C,809,pull_request,mac os memory fixes,https://github.com/ColleagueRiley/RGFW/pull/23,space
+phoboslab/qoa,C,800,pull_request,move memory allocations out of `qoa_encode/decode`,https://github.com/phoboslab/qoa/pull/55,space
+neondatabase-labs/pg_embedding,C,567,pull_request,:fix memory leak in hnsw_gettuple,https://github.com/neondatabase-labs/pg_embedding/pull/44,space
+neondatabase-labs/pg_embedding,C,567,pull_request,speed up l2 distance calculation,https://github.com/neondatabase-labs/pg_embedding/pull/18,time
+toniebox-reverse-engineering/teddycloud,C,540,pull_request,fix memory leaks,https://github.com/toniebox-reverse-engineering/teddycloud/pull/259,space
+toniebox-reverse-engineering/teddycloud,C,540,pull_request,fix memory leaks,https://github.com/toniebox-reverse-engineering/teddycloud/pull/256,space
+toniebox-reverse-engineering/teddycloud,C,540,pull_request,missing space,https://github.com/toniebox-reverse-engineering/teddycloud/pull/221,space

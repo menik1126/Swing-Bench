@@ -1,0 +1,181 @@
+repo_name,language,stars,type,content,url,category
+OpenInterpreter/open-interpreter,Python,57730,pull_request,use response inside try block in computer.ai fast_llm,https://github.com/OpenInterpreter/open-interpreter/pull/1554,time
+OpenInterpreter/open-interpreter,Python,57730,pull_request,fix: relax starlette version requirement to resolve fastapi conflict,https://github.com/OpenInterpreter/open-interpreter/pull/1506,time
+lllyasviel/Fooocus,Python,42423,pull_request,codespace automatic engine 976r67prqvqjcx9q4,https://github.com/lllyasviel/Fooocus/pull/3470,space
+LC044/WeChatMsg,Python,36085,pull_request,"补充ai部署文档:增加qwen2-0.5b模型进行微调,可免费部署在modelspace创空间",https://github.com/LC044/WeChatMsg/pull/478,space
+tatsu-lab/stanford_alpaca,Python,29715,pull_request,add accelerate to requirements.txt,https://github.com/tatsu-lab/stanford_alpaca/pull/274,time
+s0md3v/roop,Python,28943,pull_request,dockerfile+ fastapi for the cpu version added.,https://github.com/s0md3v/roop/pull/794,time
+infiniflow/ragflow,Python,27344,pull_request,improve storage engine,https://github.com/infiniflow/ragflow/pull/4341,space
+svc-develop-team/so-vits-svc,Python,26246,pull_request,accelerate up random slice segments,https://github.com/svc-develop-team/so-vits-svc/pull/376,time
+Vision-CAIR/MiniGPT-4,Python,25527,pull_request,drastically improved load speed of llama when low_resource=false,https://github.com/Vision-CAIR/MiniGPT-4/pull/370,time
+Vision-CAIR/MiniGPT-4,Python,25527,pull_request,using ijson to avoid loading full json in memory.,https://github.com/Vision-CAIR/MiniGPT-4/pull/356,space
+Stability-AI/generative-models,Python,25013,pull_request,merge sv4d changes: 1. reduce memory consumption (40g -> 20g) and speed up (500s -> 200s) 2. add gradio demo ,https://github.com/Stability-AI/generative-models/pull/394,time
+Aider-AI/aider,Python,24414,pull_request,fix: lint command with nested spaced strings,https://github.com/Aider-AI/aider/pull/2753,space
+crewAIInc/crewAI,Python,24042,pull_request,fix(manager_llm): handle coworker role name case/whitespace properly,https://github.com/crewAIInc/crewAI/pull/1820,space
+mem0ai/mem0,Python,23769,pull_request,doc: modify update memory api,https://github.com/mem0ai/mem0/pull/2099,space
+mem0ai/mem0,Python,23769,pull_request,feat: fastembed embeddings,https://github.com/mem0ai/mem0/pull/2083,time
+mem0ai/mem0,Python,23769,pull_request,(update) vercel ai sdk memory saving algo,https://github.com/mem0ai/mem0/pull/2082,space
+openai/chatgpt-retrieval-plugin,Python,21100,pull_request,[bugfix]: change env chroma_in_memory's type from str to bool before use it,https://github.com/openai/chatgpt-retrieval-plugin/pull/402,space
+yoheinakajima/babyagi,Python,20687,pull_request,fix: enriched result vector not passed to storage when using weaviate,https://github.com/yoheinakajima/babyagi/pull/342,space
+mlc-ai/mlc-llm,Python,19548,pull_request,[c++] invoke storage allocation for cuda graph explicitly,https://github.com/mlc-ai/mlc-llm/pull/3042,space
+kaixindelele/ChatPaper,Python,18646,pull_request,add documentation for result retrieval and storage location,https://github.com/kaixindelele/ChatPaper/pull/139,space
+ymcui/Chinese-LLaMA-Alpaca,Python,18611,pull_request,add patches for memory_efficient_attention and ntk scaling,https://github.com/ymcui/Chinese-LLaMA-Alpaca/pull/743,time
+ymcui/Chinese-LLaMA-Alpaca,Python,18611,pull_request,add memory-efficient merging script,https://github.com/ymcui/Chinese-LLaMA-Alpaca/pull/608,time
+BerriAI/litellm,Python,15923,pull_request,(latency/perf fixes - proxy) - use `async_service_success_hook` ,https://github.com/BerriAI/litellm/pull/7591,time
+THUDM/ChatGLM2-6B,Python,15746,pull_request,"add accelerate, cpm_kernels 依赖",https://github.com/THUDM/ChatGLM2-6B/pull/478,time
+GaiZhenbiao/ChuanhuChatGPT,Python,15332,pull_request,fix: 修复gradio和fastapi带来的版本问题,https://github.com/GaiZhenbiao/ChuanhuChatGPT/pull/1167,time
+graphdeco-inria/gaussian-splatting,Python,15321,pull_request,resize 2x speedup,https://github.com/graphdeco-inria/gaussian-splatting/pull/680,time
+graphdeco-inria/gaussian-splatting,Python,15321,pull_request,switch the lpips computation from cpu to cuda. ~15x faster for evaluation.,https://github.com/graphdeco-inria/gaussian-splatting/pull/428,time
+QwenLM/Qwen,Python,15206,pull_request,fix(requirements.txt): accelerate version mismatch,https://github.com/QwenLM/Qwen/pull/841,time
+LlamaFamily/Llama-Chinese,Python,14308,pull_request,feat(inference-speed): add lmdeploy,https://github.com/LlamaFamily/Llama-Chinese/pull/120,time
+LlamaFamily/Llama-Chinese,Python,14308,pull_request,注释deepspeeds，添加dockerfile，docker-compose启动文件，修改启动脚本可以在局域网内访问,https://github.com/LlamaFamily/Llama-Chinese/pull/24,time
+letta-ai/letta,Python,13728,pull_request,fix: record the external memory summary inside of the context viewer,https://github.com/letta-ai/letta/pull/2306,space
+letta-ai/letta,Python,13728,pull_request,fix: remove in-memory `_messages` field on agent,https://github.com/letta-ai/letta/pull/2295,space
+state-spaces/mamba,Python,13696,pull_request,fix incorrect gradients and illegal memory access error in mamba2,https://github.com/state-spaces/mamba/pull/537,space
+state-spaces/mamba,Python,13696,pull_request,fix tuple unpacking error in inference_params.key_value_memory_dict,https://github.com/state-spaces/mamba/pull/487,space
+onyx-dot-app/onyx,Python,11377,pull_request,speedup orphan doc cleanup script,https://github.com/onyx-dot-app/onyx/pull/3596,time
+databrickslabs/dolly,Python,10820,pull_request,drop back to deepspeed 0.8.3 because of issues with 0.9.x,https://github.com/databrickslabs/dolly/pull/130,time
+twitter/the-algorithm-ml,Python,10167,pull_request,"update speed_check(), add type hints.",https://github.com/twitter/the-algorithm-ml/pull/119,time
+microsoft/promptflow,Python,9734,pull_request,fix key for fastapicontextdataprovider context data provider,https://github.com/microsoft/promptflow/pull/3890,time
+BlinkDL/ChatRWKV,Python,9454,pull_request,fast fp16 seq and one mode,https://github.com/BlinkDL/ChatRWKV/pull/157,time
+BlinkDL/ChatRWKV,Python,9454,pull_request,[wip] add fast cuda kernels for one mode,https://github.com/BlinkDL/ChatRWKV/pull/154,time
+BlinkDL/ChatRWKV,Python,9454,pull_request,faster tokenizer,https://github.com/BlinkDL/ChatRWKV/pull/137,time
+FMInference/FlexLLMGen,Python,9252,pull_request,faster and memory-efficient weight download,https://github.com/FMInference/FlexLLMGen/pull/69,time
+facebookresearch/nougat,Python,9133,pull_request,dockerfile for running nougat fastapi server,https://github.com/facebookresearch/nougat/pull/124,time
+facebookresearch/nougat,Python,9133,pull_request,added a spaces hosted gradio demo link,https://github.com/facebookresearch/nougat/pull/27,space
+togethercomputer/OpenChatKit,Python,9016,pull_request,fastparquet version req is causing issues,https://github.com/togethercomputer/OpenChatKit/pull/159,time
+voicepaw/so-vits-svc-fork,Python,8843,pull_request,fix(deps): update dependency fastapi to v0.111.1,https://github.com/voicepaw/so-vits-svc-fork/pull/1212,time
+axolotl-ai-cloud/axolotl,Python,8231,pull_request,"inference - don't default w accelerate, fix base model",https://github.com/axolotl-ai-cloud/axolotl/pull/2216,time
+axolotl-ai-cloud/axolotl,Python,8231,pull_request,add deepspeed example with torch compile enabled,https://github.com/axolotl-ai-cloud/axolotl/pull/2212,time
+FlagOpen/FlagEmbedding,Python,8147,pull_request,fix torch.outofmemoryerror --> torch.outofmemoryerror,https://github.com/FlagOpen/FlagEmbedding/pull/1314,space
+FlagOpen/FlagEmbedding,Python,8147,pull_request,fix bugs of outofmemory error,https://github.com/FlagOpen/FlagEmbedding/pull/1269,space
+explodinggradients/ragas,Python,7791,pull_request,improve question generation efficiency in response relevancy metrics,https://github.com/explodinggradients/ragas/pull/1810,time
+THUDM/CodeGeeX2,Python,7643,pull_request,"增加e5系列处理器fastllm编译问题的解决方案,修复身份验证脚本,增加了readme中的选项释义",https://github.com/THUDM/CodeGeeX2/pull/36,time
+CASIA-IVA-Lab/FastSAM,Python,7630,pull_request,solved error in fastsampredictor.postprocess method,https://github.com/CASIA-IVA-Lab/FastSAM/pull/251,time
+CASIA-IVA-Lab/FastSAM,Python,7630,pull_request,https://github.com/casia-iva-lab/fastsam.git,https://github.com/CASIA-IVA-Lab/FastSAM/pull/100,time
+CASIA-IVA-Lab/FastSAM,Python,7630,pull_request,fastsamprompt does now accept images of type str | np.ndarray | image.image,https://github.com/CASIA-IVA-Lab/FastSAM/pull/85,time
+CASIA-IVA-Lab/FastSAM,Python,7630,pull_request,make fastsamprompt able to operate on tensors,https://github.com/CASIA-IVA-Lab/FastSAM/pull/67,time
+Chainlit/chainlit,Python,7564,pull_request,preserve root path when mounting as fastapi sub-application,https://github.com/Chainlit/chainlit/pull/1594,time
+Acly/krita-ai-diffusion,Python,7553,pull_request,work around pyqt memory leak on the krita::documents() method.,https://github.com/Acly/krita-ai-diffusion/pull/1359,space
+jxxghp/MoviePilot,Python,7363,pull_request,fix(storage): delete `blu-ray` directory when removing movie file,https://github.com/jxxghp/MoviePilot/pull/3615,space
+zilliztech/GPTCache,Python,7326,pull_request,fix the nil memory eviction when using the init_similar_cache method,https://github.com/zilliztech/GPTCache/pull/636,space
+Future-House/paper-qa,Python,6697,pull_request,memory-efficient document loading with leandocs + qdrantvectorstore,https://github.com/Future-House/paper-qa/pull/783,time
+OpenGVLab/InternVL,Python,6663,pull_request,feat: support balanced dataset to speed-up training,https://github.com/OpenGVLab/InternVL/pull/506,time
+ml-explore/mlx-examples,Python,6490,pull_request,bpe stream without space,https://github.com/ml-explore/mlx-examples/pull/1154,space
+timothybrooks/instruct-pix2pix,Python,6469,pull_request,faster data downloads,https://github.com/timothybrooks/instruct-pix2pix/pull/123,time
+Codium-ai/pr-agent,Python,6413,pull_request,support pull requests in personal spaces in bitbucket server,https://github.com/Codium-ai/pr-agent/pull/1406,space
+THUDM/CogVLM,Python,6249,pull_request,openai-demo: add support of 4bit quantization with auto checking cuda total memory,https://github.com/THUDM/CogVLM/pull/292,space
+Lightning-AI/lit-llama,Python,6018,pull_request,small changes to reduce peak memory.,https://github.com/Lightning-AI/lit-llama/pull/389,space
+google/mesop,Python,5765,pull_request,fixes major memory leak in component renderer,https://github.com/google/mesop/pull/1136,space
+pytorch-labs/gpt-fast,Python,5745,pull_request,adding torchao apis to gpt-fast,https://github.com/pytorch-labs/gpt-fast/pull/208,time
+google-deepmind/graphcast,Python,5591,pull_request,"add data_storage.py, for access to datafiles without authentication",https://github.com/google-deepmind/graphcast/pull/3,space
+SkalskiP/courses,Python,5483,pull_request,add diffusionfastforward + fixed links in readme,https://github.com/SkalskiP/courses/pull/28,time
+SkalskiP/courses,Python,5483,pull_request,added stable diffusion course by fast.ai,https://github.com/SkalskiP/courses/pull/7,time
+dsdanielpark/Bard-API,Python,5309,pull_request,googleworkspacecontent  and  googlehotelcontent,https://github.com/dsdanielpark/Bard-API/pull/210,space
+imoneoi/openchat,Python,5274,pull_request,training with deepspeed zero-3,https://github.com/imoneoi/openchat/pull/97,time
+biobootloader/wolverine,Python,5194,pull_request,implemented .env file api key storage,https://github.com/biobootloader/wolverine/pull/12,space
+InternLM/lmdeploy,Python,5104,pull_request,expose spaces_between_special_tokens,https://github.com/InternLM/lmdeploy/pull/2991,space
+yl4579/StyleTTS2,Python,5102,pull_request,"rough accelerate implementation, and updated finetuning colab",https://github.com/yl4579/StyleTTS2/pull/100,time
+arcee-ai/mergekit,Python,5051,pull_request,handle merges stored as list instead of space-separated string,https://github.com/arcee-ai/mergekit/pull/430,space
+allenai/OLMo,Python,4984,pull_request,improved support for google storage,https://github.com/allenai/OLMo/pull/742,space
+xxlong0/Wonder3D,Python,4904,pull_request,patch to let huggingface users duplicate the live demo space,https://github.com/xxlong0/Wonder3D/pull/34,space
+huggingface/alignment-handbook,Python,4866,pull_request,update the `deepspeed` dependency,https://github.com/huggingface/alignment-handbook/pull/181,time
+pkuliyi2015/multidiffusion-upscaler-for-automatic1111,Python,4812,pull_request,improving efficiency for demo& fix disable error,https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111/pull/376,time
+microsoft/LLMLingua,Python,4786,pull_request,[llmlingua2] fix wrong key storage during filtering ,https://github.com/microsoft/LLMLingua/pull/199,space
+livekit/agents,Python,4522,pull_request,add memory to load calc,https://github.com/livekit/agents/pull/1336,space
+NVIDIA/NeMo-Guardrails,Python,4294,pull_request,chore: pin fastembed to 4.0.0,https://github.com/NVIDIA/NeMo-Guardrails/pull/884,time
+openai/plugins-quickstart,Python,4242,pull_request,add codespaces support for container-based editing,https://github.com/openai/plugins-quickstart/pull/88,space
+docker/genai-stack,Python,4233,pull_request,pending changes exported from your codespace,https://github.com/docker/genai-stack/pull/155,space
+InternLM/xtuner,Python,4123,pull_request,[feature] support balanced dataset to speed-up vl training,https://github.com/InternLM/xtuner/pull/906,time
+mosaicml/llm-foundry,Python,4100,pull_request,"update accelerate requirement from <1.2,>=0.25 to >=0.25,<1.3",https://github.com/mosaicml/llm-foundry/pull/1692,time
+tconbeer/harlequin,Python,3937,pull_request,fix: bump textual-fastdatatable to 0.10 for bug fixes,https://github.com/tconbeer/harlequin/pull/677,time
+Significant-Gravitas/Auto-GPT-Plugins,Python,3897,pull_request,fixed workspace directory,https://github.com/Significant-Gravitas/Auto-GPT-Plugins/pull/224,space
+turboderp-org/exllamav2,Python,3819,pull_request,add: wheels for torch2.2.2 that work on hf spaces,https://github.com/turboderp-org/exllamav2/pull/547,space
+huggingface/distil-whisper,Python,3678,pull_request,[eval] benchmark generation speed,https://github.com/huggingface/distil-whisper/pull/123,time
+Luodian/Otter,Python,3574,pull_request,[feature] supporting deepspeed zero3 and a large otter model,https://github.com/Luodian/Otter/pull/236,time
+OpenRLHF/OpenRLHF,Python,3569,pull_request,enable overlap_comm in deepspeed,https://github.com/OpenRLHF/OpenRLHF/pull/578,time
+llm-attacks/llm-attacks,Python,3552,pull_request,completed project bhagirathi - redlist loss gcg for efficient attacks against aligned llms,https://github.com/llm-attacks/llm-attacks/pull/93,time
+Kent0n-Li/ChatDoctor,Python,3504,pull_request,"adjust dependencies to adapt to new transformer version, remove wandb usage, and enable gradient checkpointing for memory usage",https://github.com/Kent0n-Li/ChatDoctor/pull/57,space
+minimaxir/simpleaichat,Python,3496,pull_request,"support `aichat.save_session(format=""dict"")` to receive the session's info in-memory",https://github.com/minimaxir/simpleaichat/pull/15,space
+xtekky/chatgpt-clone,Python,3492,pull_request,increase backend conversation speed,https://github.com/xtekky/chatgpt-clone/pull/125,time
+xtekky/chatgpt-clone,Python,3492,pull_request,pending changes exported from your codespace,https://github.com/xtekky/chatgpt-clone/pull/105,space
+xtekky/chatgpt-clone,Python,3492,pull_request,proposal to monospace font (roboto mono) in responses with code,https://github.com/xtekky/chatgpt-clone/pull/68,space
+Pennyw0rth/NetExec,Python,3447,pull_request,speed improvements and bug fixes,https://github.com/Pennyw0rth/NetExec/pull/498,time
+s0md3v/sd-webui-roop,Python,3423,pull_request,feature/whz/return fast when not enable v2,https://github.com/s0md3v/sd-webui-roop/pull/217,time
+s0md3v/sd-webui-roop,Python,3423,pull_request,"if not enable, return fast",https://github.com/s0md3v/sd-webui-roop/pull/209,time
+polarsource/polar,Python,3400,pull_request,dx: fix vs code mypy configuration to dramatically speed up things,https://github.com/polarsource/polar/pull/4784,time
+BeastByteAI/scikit-llm,Python,3398,pull_request,added sklearn memory index (dynamicfewshot),https://github.com/BeastByteAI/scikit-llm/pull/57,space
+danielgross/localpilot,Python,3369,pull_request,"include sse-starlette, starlette-context, fastapi and pydantic_settings dependencies",https://github.com/danielgross/localpilot/pull/4,time
+hitsz-ids/synthetic-data-generator,Python,3309,pull_request,reduce the memory usage of gaussian copula training.,https://github.com/hitsz-ids/synthetic-data-generator/pull/233,space
+deep-diver/LLM-As-Chatbot,Python,3304,pull_request,space,https://github.com/deep-diver/LLM-As-Chatbot/pull/58,space
+jaymody/picoGPT,Python,3289,pull_request,"feat: added k, v cache for inference speed up",https://github.com/jaymody/picoGPT/pull/7,time
+hwchase17/langchain-hub,Python,3279,pull_request,fix double spaces in prompt,https://github.com/hwchase17/langchain-hub/pull/23,space
+spaceandtimelabs/SxT-Python-SDK,Python,3170,pull_request,add enums to space and time wrapper class,https://github.com/spaceandtimelabs/SxT-Python-SDK/pull/12,space
+robusta-dev/krr,Python,3161,pull_request,added validation for namespaces,https://github.com/robusta-dev/krr/pull/349,space
+robusta-dev/krr,Python,3161,pull_request,feat(namespace): regex match,https://github.com/robusta-dev/krr/pull/336,space
+robusta-dev/krr,Python,3161,pull_request,feat : use --no-cache-dir flag to pip in dockerfiles to save space,https://github.com/robusta-dev/krr/pull/334,space
+opengeos/segment-geospatial,Python,3122,pull_request,"undefined attribute in fast sam, fixed by setting the image variable",https://github.com/opengeos/segment-geospatial/pull/384,time
+yuka-friends/Windrecorder,Python,3067,pull_request,fix path with space not callable,https://github.com/yuka-friends/Windrecorder/pull/218,space
+vocodedev/vocode-core,Python,3048,pull_request,improve memory extraction prompt,https://github.com/vocodedev/vocode-core/pull/711,space
+qwopqwop200/GPTQ-for-LLaMa,Python,3026,pull_request,"better, faster, smaller rotary embedding implementation in triton.",https://github.com/qwopqwop200/GPTQ-for-LLaMa/pull/221,time
+ErikBjare/gptme,Python,2995,pull_request,"fix: create workspace symlink in log folder, load on resume",https://github.com/ErikBjare/gptme/pull/368,space
+enhuiz/vall-e,Python,2980,pull_request,fix missing deepspeedconfig for deepspeed v0.9.1,https://github.com/enhuiz/vall-e/pull/92,time
+baichuan-inc/Baichuan-13B,Python,2978,pull_request,alleviate mps device memory leakage issue,https://github.com/baichuan-inc/Baichuan-13B/pull/26,space
+ChrisBuilds/terminaltexteffects,Python,2963,pull_request,feature/movement-speed,https://github.com/ChrisBuilds/terminaltexteffects/pull/2,time
+PixArt-alpha/PixArt-alpha,Python,2918,pull_request,"reuse text_encoder and vae on validation, reduces memory and is faster",https://github.com/PixArt-alpha/PixArt-alpha/pull/132,time
+lyuwenyu/RT-DETR,Python,2896,pull_request,"fix import error, copy-on-read overhead ( called memory leak in repository ) and slightly refactor dist_utils.py for improved readability",https://github.com/lyuwenyu/RT-DETR/pull/418,space
+Kosinkadink/ComfyUI-AnimateDiff-Evolved,Python,2882,pull_request,move node and samples into separate files (should speed up page load),https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved/pull/492,time
+muellerberndt/mini-agi,Python,2819,pull_request,add redis option for memory,https://github.com/muellerberndt/mini-agi/pull/10,space
+muellerberndt/mini-agi,Python,2819,pull_request,allow use of postgres for memory,https://github.com/muellerberndt/mini-agi/pull/9,space
+juncongmoo/pyllama,Python,2806,pull_request,watch downloading speed and restart downloading if it drops to very low,https://github.com/juncongmoo/pyllama/pull/42,time
+SakuraLLM/SakuraLLM,Python,2798,pull_request,logger: fix print speed,https://github.com/SakuraLLM/SakuraLLM/pull/74,time
+turboderp/exllama,Python,2794,pull_request,fixed: batch memory corruption due to overrunning `temp_state` buffer.,https://github.com/turboderp/exllama/pull/128,space
+jianchang512/stt,Python,2785,pull_request,improve clarity and grammar in comments related to gpu memory usage,https://github.com/jianchang512/stt/pull/102,space
+Josh-XT/AGiXT,Python,2684,pull_request,s3 workspaces,https://github.com/Josh-XT/AGiXT/pull/1352,space
+YiVal/YiVal,Python,2675,pull_request,add_codespace,https://github.com/YiVal/YiVal/pull/246,space
+leptonai/leptonai,Python,2671,pull_request,feat: add job-shared-memory-size,https://github.com/leptonai/leptonai/pull/532,space
+mit-han-lab/llm-awq,Python,2643,pull_request,replace fastertransformers like kv cache layout and kernel with flash attention for better support for longer sequence,https://github.com/mit-han-lab/llm-awq/pull/239,time
+mit-han-lab/llm-awq,Python,2643,pull_request,fix illegal memory access of gemv kernel,https://github.com/mit-han-lab/llm-awq/pull/201,space
+mit-han-lab/llm-awq,Python,2643,pull_request,update tinychat speed for vila,https://github.com/mit-han-lab/llm-awq/pull/150,time
+mit-han-lab/llm-awq,Python,2643,pull_request,fix memory issue when running `run_awq`,https://github.com/mit-han-lab/llm-awq/pull/145,space
+DLLXW/baby-llama2-chinese,Python,2607,pull_request,fix: fix attribute error and reduce memory usage during data processing,https://github.com/DLLXW/baby-llama2-chinese/pull/65,space
+yerfor/GeneFace,Python,2584,pull_request,"reduce memory footprint,change prompt statement",https://github.com/yerfor/GeneFace/pull/249,space
+cheshire-cat-ai/core,Python,2543,pull_request,moved history methods to workingmemory ,https://github.com/cheshire-cat-ai/core/pull/977,space
+cheshire-cat-ai/core,Python,2543,pull_request,add new post endpoint /memory/recall,https://github.com/cheshire-cat-ai/core/pull/976,space
+cheshire-cat-ai/core,Python,2543,pull_request,feat: fast_reply hook,https://github.com/cheshire-cat-ai/core/pull/949,time
+mit-han-lab/efficientvit,Python,2529,pull_request,added batching support & made inference 2.66x faster,https://github.com/mit-han-lab/efficientvit/pull/158,time
+mit-han-lab/efficientvit,Python,2529,pull_request,rewrite efficient-vit-sam tensorrt inference with torch2trt to make the code a lot simpler,https://github.com/mit-han-lab/efficientvit/pull/80,time
+Textualize/trogon,Python,2526,pull_request,fix: prefix binding actions with app namespace,https://github.com/Textualize/trogon/pull/83,space
+haoheliu/AudioLDM,Python,2517,pull_request,add links and update the badge for spaces,https://github.com/haoheliu/AudioLDM/pull/1,space
+ading2210/poe-api,Python,2507,pull_request,add a simple fastapi with authentication in examples directory,https://github.com/ading2210/poe-api/pull/163,time
+Fannovel16/comfyui_controlnet_aux,Python,2470,pull_request,"namespace error in windows, aux is one of the reserved names  fix(#267)",https://github.com/Fannovel16/comfyui_controlnet_aux/pull/268,space
+UX-Decoder/Semantic-SAM,Python,2436,pull_request,fix memory leak in demo_auto_generation.py,https://github.com/UX-Decoder/Semantic-SAM/pull/105,space
+linsomniac/spotify_to_ytmusic,Python,2366,pull_request,improve speed of copying,https://github.com/linsomniac/spotify_to_ytmusic/pull/79,time
+KoljaB/RealtimeSTT,Python,2331,pull_request,fix: clear text storage and audio frames on audio queue clear,https://github.com/KoljaB/RealtimeSTT/pull/144,space
+dvmazur/mixtral-offloading,Python,2296,pull_request,fastapi integration and performance benchmarking,https://github.com/dvmazur/mixtral-offloading/pull/29,time
+predibase/lorax,Python,2281,pull_request,memory estimate fixes,https://github.com/predibase/lorax/pull/720,space
+predibase/lorax,Python,2281,pull_request,make memory_wiggle_room a custom arg ,https://github.com/predibase/lorax/pull/701,space
+predibase/lorax,Python,2281,pull_request,speed up best_of when using prefix caching,https://github.com/predibase/lorax/pull/698,time
+ufal/whisper_streaming,Python,2277,pull_request,add live transcription fastapi server with websocket and streaming decode,https://github.com/ufal/whisper_streaming/pull/146,time
+aurelio-labs/semantic-router,Python,2267,pull_request,fix: fixed namespace missing in _async_fetch_metadata inside pinecone,https://github.com/aurelio-labs/semantic-router/pull/490,space
+aurelio-labs/semantic-router,Python,2267,pull_request,feat!: add fast sync check,https://github.com/aurelio-labs/semantic-router/pull/460,time
+collabora/WhisperLive,Python,2252,pull_request,upgrade faster_whisper==1.1.0 official release,https://github.com/collabora/WhisperLive/pull/298,time
+collabora/WhisperLive,Python,2252,pull_request,upgrade faster-whisper 1.1.0rc0,https://github.com/collabora/WhisperLive/pull/296,time
+allenai/open-instruct,Python,2251,pull_request,faster mmlu oe-eval,https://github.com/allenai/open-instruct/pull/441,time
+dot-agent/nextpy,Python,2245,pull_request,fixing memory,https://github.com/dot-agent/nextpy/pull/112,space
+dot-agent/nextpy,Python,2245,pull_request,added llm field to basememory and optional memory_llm parameter to engine,https://github.com/dot-agent/nextpy/pull/109,space
+LinkSoul-AI/Chinese-Llama-2-7b,Python,2236,pull_request,chore: ggml command use `linksoul` namespace,https://github.com/LinkSoul-AI/Chinese-Llama-2-7b/pull/15,space
+skills/secure-code-game,Python,2132,pull_request,update github codespaces instructions for s2l5,https://github.com/skills/secure-code-game/pull/85,space
+griptape-ai/griptape,Python,2106,pull_request,support inserting conversation memory on tasks without structures,https://github.com/griptape-ai/griptape/pull/1457,space
+Azure/PyRIT,Python,2034,pull_request,feat: prompt memory consolidation and filters,https://github.com/Azure/PyRIT/pull/625,space
+Azure/PyRIT,Python,2034,pull_request,feat: explicitly initialize central memory + remove defaults,https://github.com/Azure/PyRIT/pull/616,space
+Azure/PyRIT,Python,2034,pull_request,[draft] refactoring scores in memory,https://github.com/Azure/PyRIT/pull/614,space
+Azure/PyRIT,Python,2034,pull_request,maint add support for local multimodal input prompts when using azuresqlmemory,https://github.com/Azure/PyRIT/pull/613,space
+lucidrains/toolformer-pytorch,Python,1985,pull_request,api_stop in invoke_tools has extra space,https://github.com/lucidrains/toolformer-pytorch/pull/20,space
+bghira/SimpleTuner,Python,1969,pull_request,deepspeed stage 3 needs validations disabled thoroughly,https://github.com/bghira/SimpleTuner/pull/1243,time
+bghira/SimpleTuner,Python,1969,pull_request,accelerate: from v0.34 to v1.2,https://github.com/bghira/SimpleTuner/pull/1228,time
+bghira/SimpleTuner,Python,1969,pull_request,deepspeed from 0.15 to 0.16.1,https://github.com/bghira/SimpleTuner/pull/1227,time
+InternLM/lagent,Python,1944,pull_request,[feat] support resetting agent memory recursively or by keypath,https://github.com/InternLM/lagent/pull/271,space
+IAHispano/Applio,Python,1942,pull_request,devin/1734539214 fastapi vertex integration,https://github.com/IAHispano/Applio/pull/918,time
+NVIDIA/Stable-Diffusion-WebUI-TensorRT,Python,1935,pull_request,use cupy to accelerate,https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT/pull/214,time
+google-gemini/generative-ai-python,Python,1932,pull_request,add whitespace to generated tables to fix markdown in tables.,https://github.com/google-gemini/generative-ai-python/pull/602,space
