@@ -1,0 +1,15 @@
+<patch>
+diff --git a/django/db/models/deletion.py b/django/db/models/deletion.py
+--- a/django/db/models/deletion.py
++++ b/django/db/models/deletion.py
+@@ -426,11 +426,11 @@ def delete(self):
+                 query = sql.DeleteQuery(model)
+                 pk_list = [obj.pk for obj in instances]
+                 count = query.delete_batch(pk_list, self.using)
+-                deleted_counter[model._meta.label] += count
+ 
+                 if not model._meta.auto_created:
+                     for obj in instances:
+                         signals.post_delete.send(
+-                            sender=model, instance=obj, using=self.using
++                

@@ -1,0 +1,2469 @@
+2025-02-10 14:51:42,022 - INFO - Environment image sweb.env.py.x86_64.c795f4b88616b8462021ed:latest found for sympy__sympy-24066
+Building instance image sweb.eval.x86_64.sympy__sympy-24066:latest for sympy__sympy-24066
+2025-02-10 14:52:13,549 - INFO - Creating container for sympy__sympy-24066...
+2025-02-10 14:52:13,567 - INFO - Container for sympy__sympy-24066 created: ff6521d2b122e56fc58d81428a3d9cb25afc9bdf15f4485fd4091c35cbb361d6
+2025-02-10 14:52:13,861 - INFO - Container for sympy__sympy-24066 started: ff6521d2b122e56fc58d81428a3d9cb25afc9bdf15f4485fd4091c35cbb361d6
+2025-02-10 14:52:13,862 - INFO - Intermediate patch for sympy__sympy-24066 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/patch.diff, now applying to container...
+2025-02-10 14:52:14,294 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 14:52:14,397 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 14:52:14,510 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-10 14:52:14,510 - INFO - >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+2025-02-10 14:52:14,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-10 14:52:14,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,518 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,518 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,518 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,518 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,518 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,518 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,518 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,518 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,518 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,518 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,519 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,519 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,519 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,519 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,519 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,519 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,519 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,519 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,519 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,520 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,520 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,520 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,520 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,520 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,520 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,520 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,520 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,520 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,521 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,521 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,521 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,521 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,521 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,521 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,521 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,521 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,521 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,522 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,522 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,522 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,522 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,522 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,522 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,522 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,522 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,522 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,522 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,523 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,523 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,523 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,523 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,523 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,523 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,523 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,523 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,523 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,524 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,524 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,524 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,524 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,524 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,524 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,524 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,524 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,524 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,525 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,525 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,525 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,525 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,525 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,525 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,525 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,525 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,525 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,526 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,526 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,526 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,526 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,526 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,526 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,526 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,526 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,526 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,527 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,527 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,527 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,527 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,527 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,527 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,527 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,527 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,527 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,531 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-10 14:52:14,531 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,531 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,531 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,532 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,532 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,532 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,532 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,532 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,532 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,532 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,532 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,532 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,533 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,533 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,533 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,533 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,533 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,533 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,533 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,533 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,533 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,534 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,534 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,534 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,534 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,534 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,534 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,534 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,534 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,534 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,535 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,535 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,535 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,535 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,535 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,535 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,535 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,535 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,535 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,535 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,536 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,536 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,536 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,536 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,536 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,536 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,536 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,536 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,536 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,537 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,537 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,537 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,537 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,537 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,537 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,537 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,537 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,537 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,537 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,538 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,538 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,538 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,538 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,538 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,538 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,538 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,538 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,538 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,539 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,539 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,539 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,539 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,539 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,539 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,539 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,539 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,539 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,540 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,540 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,540 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,540 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,540 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,540 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,540 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,540 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,540 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,540 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,541 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,541 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,541 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,541 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,541 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,541 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,541 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,541 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,541 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,542 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,542 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,542 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,542 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,542 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,542 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,542 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,542 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,542 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,543 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,543 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,543 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,543 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,543 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,543 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,543 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,543 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,543 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,544 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,544 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,544 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,544 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,544 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,544 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,544 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,544 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-24066: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/physics/units/unitsystem.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24066/run_instance.log) for more information.
+
+2025-02-10 14:52:14,544 - INFO - Attempting to stop container sweb.eval.sympy__sympy-24066.test...
+2025-02-10 14:52:29,784 - INFO - Attempting to remove container sweb.eval.sympy__sympy-24066.test...
+2025-02-10 14:52:29,797 - INFO - Container sweb.eval.sympy__sympy-24066.test removed.
+2025-02-10 14:52:29,797 - INFO - Attempting to remove image sweb.eval.x86_64.sympy__sympy-24066:latest...
+2025-02-10 14:52:29,893 - INFO - Image sweb.eval.x86_64.sympy__sympy-24066:latest removed.

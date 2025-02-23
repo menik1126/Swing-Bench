@@ -1,0 +1,52 @@
+2025-02-10 13:41:06,670 - INFO - Environment image sweb.env.py.x86_64.aa92880033da20ca313928:latest found for scikit-learn__scikit-learn-13497
+Building instance image sweb.eval.x86_64.scikit-learn__scikit-learn-13497:latest for scikit-learn__scikit-learn-13497
+2025-02-10 13:44:47,926 - INFO - Creating container for scikit-learn__scikit-learn-13497...
+2025-02-10 13:44:47,943 - INFO - Container for scikit-learn__scikit-learn-13497 created: 630136f0950184e05f3c6bce9f7f2b83a1bccdce69a0d12cd80da37aee2454f2
+2025-02-10 13:44:48,224 - INFO - Container for scikit-learn__scikit-learn-13497 started: 630136f0950184e05f3c6bce9f7f2b83a1bccdce69a0d12cd80da37aee2454f2
+2025-02-10 13:44:48,225 - INFO - Intermediate patch for scikit-learn__scikit-learn-13497 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/scikit-learn__scikit-learn-13497/patch.diff, now applying to container...
+2025-02-10 13:44:48,662 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 13:44:48,761 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 13:44:48,856 - INFO - >>>>> Applied Patch:
+patching file sklearn/feature_selection/mutual_info_.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 247 with fuzz 3.
+
+2025-02-10 13:44:49,193 - INFO - Git diff before:
+diff --git a/sklearn/feature_selection/mutual_info_.py b/sklearn/feature_selection/mutual_info_.py
+index d5d1b7fb5..9611305e3 100644
+--- a/sklearn/feature_selection/mutual_info_.py
++++ b/sklearn/feature_selection/mutual_info_.py
+@@ -247,7 +247,7 @@ def _estimate_mi(X, y, discrete_features='auto', discrete_target=False,
+     X, y = check_X_y(X, y, accept_sparse='csc', y_numeric=not discrete_target)
+     n_samples, n_features = X.shape
+ 
+-    if discrete_features == 'auto':
++    if discrete_features == 'auto' or isinstance(discrete_features, bool):
+         discrete_features = issparse(X)
+ 
+     if isinstance(discrete_features, bool):
+2025-02-10 13:44:49,194 - INFO - Eval script for scikit-learn__scikit-learn-13497 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/scikit-learn__scikit-learn-13497/eval.sh; copying to container...
+2025-02-10 13:44:53,057 - INFO - Test runtime: 3.57 seconds
+2025-02-10 13:44:53,058 - INFO - Test output for scikit-learn__scikit-learn-13497 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/scikit-learn__scikit-learn-13497/test_output.txt
+2025-02-10 13:44:53,154 - INFO - Git diff after:
+diff --git a/sklearn/feature_selection/mutual_info_.py b/sklearn/feature_selection/mutual_info_.py
+index d5d1b7fb5..9611305e3 100644
+--- a/sklearn/feature_selection/mutual_info_.py
++++ b/sklearn/feature_selection/mutual_info_.py
+@@ -247,7 +247,7 @@ def _estimate_mi(X, y, discrete_features='auto', discrete_target=False,
+     X, y = check_X_y(X, y, accept_sparse='csc', y_numeric=not discrete_target)
+     n_samples, n_features = X.shape
+ 
+-    if discrete_features == 'auto':
++    if discrete_features == 'auto' or isinstance(discrete_features, bool):
+         discrete_features = issparse(X)
+ 
+     if isinstance(discrete_features, bool):
+2025-02-10 13:44:53,154 - INFO - Grading answer for scikit-learn__scikit-learn-13497...
+2025-02-10 13:44:53,158 - INFO - report: {'scikit-learn__scikit-learn-13497': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_options']}, 'PASS_TO_PASS': {'success': ['sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_dd', 'sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_cc', 'sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_cd', 'sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_cd_unique_label', 'sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_regression', 'sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_classif_mixed'], 'failure': ['sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_classif_discrete']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for scikit-learn__scikit-learn-13497: resolved: False
+2025-02-10 13:44:53,159 - INFO - Attempting to stop container sweb.eval.scikit-learn__scikit-learn-13497.test...
+2025-02-10 13:45:08,400 - INFO - Attempting to remove container sweb.eval.scikit-learn__scikit-learn-13497.test...
+2025-02-10 13:45:08,423 - INFO - Container sweb.eval.scikit-learn__scikit-learn-13497.test removed.
+2025-02-10 13:45:08,423 - INFO - Attempting to remove image sweb.eval.x86_64.scikit-learn__scikit-learn-13497:latest...
+2025-02-10 13:45:08,542 - INFO - Image sweb.eval.x86_64.scikit-learn__scikit-learn-13497:latest removed.

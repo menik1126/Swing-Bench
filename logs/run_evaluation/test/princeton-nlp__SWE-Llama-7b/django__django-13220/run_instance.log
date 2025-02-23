@@ -1,0 +1,56 @@
+2025-02-08 20:11:44,964 - INFO - Environment image sweb.env.py.x86_64.e83e37f52c09532c62acfb:latest found for django__django-13220
+Building instance image sweb.eval.x86_64.django__django-13220:latest for django__django-13220
+2025-02-08 20:12:17,894 - INFO - Creating container for django__django-13220...
+2025-02-08 20:12:17,917 - INFO - Container for django__django-13220 created: b3e9bf22fe0e961880cc29ab4a81c2d8a45b0534fd1223af8ad825f1ee8d9180
+2025-02-08 20:12:18,188 - INFO - Container for django__django-13220 started: b3e9bf22fe0e961880cc29ab4a81c2d8a45b0534fd1223af8ad825f1ee8d9180
+2025-02-08 20:12:18,189 - INFO - Intermediate patch for django__django-13220 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-13220/patch.diff, now applying to container...
+2025-02-08 20:12:18,575 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-08 20:12:18,669 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-08 20:12:18,767 - INFO - >>>>> Applied Patch:
+patching file django/core/exceptions.py
+patch unexpectedly ends in middle of line
+patch unexpectedly ends in middle of line
+
+2025-02-08 20:12:19,542 - INFO - Git diff before:
+diff --git a/django/core/exceptions.py b/django/core/exceptions.py
+index dc084b8692..d5507637c0 100644
+--- a/django/core/exceptions.py
++++ b/django/core/exceptions.py
+@@ -111,6 +111,10 @@ class ValidationError(Exception):
+ 
+         if isinstance(message, ValidationError):
+             if hasattr(message, 'error_dict'):
++                # For ValidationError instances, clone the inner layer of error
++                # messages so that the inner exceptions can be surfaced to the
++                # user.
++                message = message.error_dict.copy()
+                 message = message.error_dict
+             elif not hasattr(message, 'message'):
+                 message = message.error_list
+2025-02-08 20:12:19,543 - INFO - Eval script for django__django-13220 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-13220/eval.sh; copying to container...
+2025-02-08 20:12:25,099 - INFO - Test runtime: 5.23 seconds
+2025-02-08 20:12:25,100 - INFO - Test output for django__django-13220 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-13220/test_output.txt
+2025-02-08 20:12:25,199 - INFO - Git diff after:
+diff --git a/django/core/exceptions.py b/django/core/exceptions.py
+index dc084b8692..d5507637c0 100644
+--- a/django/core/exceptions.py
++++ b/django/core/exceptions.py
+@@ -111,6 +111,10 @@ class ValidationError(Exception):
+ 
+         if isinstance(message, ValidationError):
+             if hasattr(message, 'error_dict'):
++                # For ValidationError instances, clone the inner layer of error
++                # messages so that the inner exceptions can be surfaced to the
++                # user.
++                message = message.error_dict.copy()
+                 message = message.error_dict
+             elif not hasattr(message, 'message'):
+                 message = message.error_list
+2025-02-08 20:12:25,199 - INFO - Grading answer for django__django-13220...
+2025-02-08 20:12:25,201 - INFO - report: {'django__django-13220': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_eq (test_exceptions.test_validation_error.TestValidationError)', 'test_eq_nested (test_exceptions.test_validation_error.TestValidationError)', 'test_hash (test_exceptions.test_validation_error.TestValidationError)', 'test_hash_nested (test_exceptions.test_validation_error.TestValidationError)']}, 'PASS_TO_PASS': {'success': ['test_messages_concatenates_error_dict_values (test_exceptions.test_validation_error.TestValidationError)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-13220: resolved: False
+2025-02-08 20:12:25,202 - INFO - Attempting to stop container sweb.eval.django__django-13220.test...
+2025-02-08 20:12:40,466 - INFO - Attempting to remove container sweb.eval.django__django-13220.test...
+2025-02-08 20:12:40,510 - INFO - Container sweb.eval.django__django-13220.test removed.
+2025-02-08 20:12:40,510 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-13220:latest...
+2025-02-08 20:12:40,793 - INFO - Image sweb.eval.x86_64.django__django-13220:latest removed.

@@ -1,0 +1,14 @@
+
+diff --git a/src/_pytest/pathlib.py b/src/_pytest/pathlib.py
+--- a/src/_pytest/pathlib.py
++++ b/src/_pytest/pathlib.py
+@@ -562,7 +562,7 @@ def import_path(
+     else:
+         assert_never(mode)
+ 
+-    importlib.import_module(module_name)
++    mod = importlib.import_module(module_name)
+ 
+     mod = sys.modules[module_name]
+     if path.name == "__init__.py":
+

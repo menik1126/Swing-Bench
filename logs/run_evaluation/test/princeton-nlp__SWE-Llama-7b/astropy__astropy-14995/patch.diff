@@ -1,0 +1,14 @@
+
+diff --git a/astropy/nddata/mixins/ndarithmetic.py b/astropy/nddata/mixins/ndarithmetic.py
+--- a/astropy/nddata/mixins/ndarithmetic.py
++++ b/astropy/nddata/mixins/ndarithmetic.py
+@@ -322,7 +322,7 @@ def _arithmetic(
+ 
+         if handle_mask is None:
+             pass
+-        elif hasattr(result, "mask"):
++        elif hasattr(result, "mask") and result.mask is not None:
+             # if numpy.ma or astropy.utils.masked is being used, the constructor
+             # will pick up the mask from the masked object:
+             kwargs["mask"] = None
+

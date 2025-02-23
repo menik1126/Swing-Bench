@@ -1,0 +1,16 @@
+<patch>
+diff --git a/sklearn/neighbors/nca.py b/sklearn/neighbors/nca.py
+--- a/sklearn/neighbors/nca.py
++++ b/sklearn/neighbors/nca.py
+@@ -285,10 +285,10 @@ def _validate_params(self, X, y):
+         Raises
+         -------
+         TypeError
+-            If a parameter is not an instance of the desired type.
++            If a parameter is not an instance of the desired type or if
++            it is not in the legal range.
+ 
+         ValueError
+-            If a parameter's value violates its legal value range or if the
+-            combination of two or more given parameters is incompatible.
++            If a parameter's value viol

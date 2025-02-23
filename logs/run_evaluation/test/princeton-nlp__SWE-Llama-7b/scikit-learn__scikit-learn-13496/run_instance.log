@@ -1,0 +1,28 @@
+2025-02-10 13:37:02,960 - INFO - Environment image sweb.env.py.x86_64.aa92880033da20ca313928:latest found for scikit-learn__scikit-learn-13496
+Building instance image sweb.eval.x86_64.scikit-learn__scikit-learn-13496:latest for scikit-learn__scikit-learn-13496
+2025-02-10 13:40:42,747 - INFO - Creating container for scikit-learn__scikit-learn-13496...
+2025-02-10 13:40:42,770 - INFO - Container for scikit-learn__scikit-learn-13496 created: 5fd2f9f13d9b3b84153705fdc8d22ecf9163cabc31549b328c783f8eca5d2bc5
+2025-02-10 13:40:43,032 - INFO - Container for scikit-learn__scikit-learn-13496 started: 5fd2f9f13d9b3b84153705fdc8d22ecf9163cabc31549b328c783f8eca5d2bc5
+2025-02-10 13:40:43,033 - INFO - Intermediate patch for scikit-learn__scikit-learn-13496 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/scikit-learn__scikit-learn-13496/patch.diff, now applying to container...
+2025-02-10 13:40:43,402 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 13:40:43,481 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 13:40:43,577 - INFO - >>>>> Applied Patch:
+patching file sklearn/ensemble/iforest.py
+patch unexpectedly ends in middle of line
+patch unexpectedly ends in middle of line
+
+2025-02-10 13:40:43,918 - INFO - Git diff before:
+
+2025-02-10 13:40:43,919 - INFO - Eval script for scikit-learn__scikit-learn-13496 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/scikit-learn__scikit-learn-13496/eval.sh; copying to container...
+2025-02-10 13:40:51,155 - INFO - Test runtime: 6.93 seconds
+2025-02-10 13:40:51,155 - INFO - Test output for scikit-learn__scikit-learn-13496 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/scikit-learn__scikit-learn-13496/test_output.txt
+2025-02-10 13:40:51,276 - INFO - Git diff after:
+
+2025-02-10 13:40:51,276 - INFO - Grading answer for scikit-learn__scikit-learn-13496...
+2025-02-10 13:40:51,279 - INFO - report: {'scikit-learn__scikit-learn-13496': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['sklearn/ensemble/tests/test_iforest.py::test_iforest_warm_start']}, 'PASS_TO_PASS': {'success': ['sklearn/ensemble/tests/test_iforest.py::test_iforest', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_sparse', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_error', 'sklearn/ensemble/tests/test_iforest.py::test_recalculate_max_depth', 'sklearn/ensemble/tests/test_iforest.py::test_max_samples_attribute', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_parallel_regression', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_performance', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_works[0.25]', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_works[auto]', 'sklearn/ensemble/tests/test_iforest.py::test_max_samples_consistency', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_subsampled_features', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_average_path_length', 'sklearn/ensemble/tests/test_iforest.py::test_score_samples', 'sklearn/ensemble/tests/test_iforest.py::test_deprecation', 'sklearn/ensemble/tests/test_iforest.py::test_behaviour_param', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works1[0.25-3]', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works1[auto-2]', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works2[0.25-3]', 'sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works2[auto-2]'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for scikit-learn__scikit-learn-13496: resolved: False
+2025-02-10 13:40:51,279 - INFO - Attempting to stop container sweb.eval.scikit-learn__scikit-learn-13496.test...
+2025-02-10 13:41:06,517 - INFO - Attempting to remove container sweb.eval.scikit-learn__scikit-learn-13496.test...
+2025-02-10 13:41:06,540 - INFO - Container sweb.eval.scikit-learn__scikit-learn-13496.test removed.
+2025-02-10 13:41:06,540 - INFO - Attempting to remove image sweb.eval.x86_64.scikit-learn__scikit-learn-13496:latest...
+2025-02-10 13:41:06,662 - INFO - Image sweb.eval.x86_64.scikit-learn__scikit-learn-13496:latest removed.

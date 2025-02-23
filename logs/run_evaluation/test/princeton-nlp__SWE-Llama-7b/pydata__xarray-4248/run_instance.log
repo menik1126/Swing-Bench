@@ -1,0 +1,56 @@
+2025-02-10 12:51:54,393 - INFO - Environment image sweb.env.py.x86_64.502d8fc6ebccd881244091:latest found for pydata__xarray-4248
+Building instance image sweb.eval.x86_64.pydata__xarray-4248:latest for pydata__xarray-4248
+2025-02-10 12:52:05,687 - INFO - Creating container for pydata__xarray-4248...
+2025-02-10 12:52:05,716 - INFO - Container for pydata__xarray-4248 created: 4c7053f055e92304df3ea0a0661a50eab965e447721e494d11750b2a5d05dc6f
+2025-02-10 12:52:06,041 - INFO - Container for pydata__xarray-4248 started: 4c7053f055e92304df3ea0a0661a50eab965e447721e494d11750b2a5d05dc6f
+2025-02-10 12:52:06,041 - INFO - Intermediate patch for pydata__xarray-4248 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pydata__xarray-4248/patch.diff, now applying to container...
+2025-02-10 12:52:06,477 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 12:52:06,572 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 12:52:06,669 - INFO - >>>>> Applied Patch:
+patching file xarray/core/formatting.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 283 with fuzz 3.
+
+2025-02-10 12:52:06,863 - INFO - Git diff before:
+diff --git a/xarray/core/formatting.py b/xarray/core/formatting.py
+index 28eaae5f..58c65c05 100644
+--- a/xarray/core/formatting.py
++++ b/xarray/core/formatting.py
+@@ -283,6 +283,10 @@ def summarize_variable(
+         dims_str = "({}) ".format(", ".join(map(str, var.dims)))
+     else:
+         dims_str = ""
++    if var.attrs:
++        attrs_str = "  attrs={}".format(short_attrs_repr(var.attrs))
++    else:
++        attrs_str = ""
+     front_str = f"{first_col}{dims_str}{var.dtype} "
+ 
+     values_width = max_width - len(front_str)
+2025-02-10 12:52:06,863 - INFO - Eval script for pydata__xarray-4248 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pydata__xarray-4248/eval.sh; copying to container...
+2025-02-10 12:52:13,137 - INFO - Test runtime: 5.95 seconds
+2025-02-10 12:52:13,138 - INFO - Test output for pydata__xarray-4248 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pydata__xarray-4248/test_output.txt
+2025-02-10 12:52:13,240 - INFO - Git diff after:
+diff --git a/xarray/core/formatting.py b/xarray/core/formatting.py
+index 28eaae5f..58c65c05 100644
+--- a/xarray/core/formatting.py
++++ b/xarray/core/formatting.py
+@@ -283,6 +283,10 @@ def summarize_variable(
+         dims_str = "({}) ".format(", ".join(map(str, var.dims)))
+     else:
+         dims_str = ""
++    if var.attrs:
++        attrs_str = "  attrs={}".format(short_attrs_repr(var.attrs))
++    else:
++        attrs_str = ""
+     front_str = f"{first_col}{dims_str}{var.dtype} "
+ 
+     values_width = max_width - len(front_str)
+2025-02-10 12:52:13,240 - INFO - Grading answer for pydata__xarray-4248...
+2025-02-10 12:52:13,244 - INFO - report: {'pydata__xarray-4248': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['xarray/tests/test_formatting.py::test_inline_variable_array_repr_custom_repr']}, 'PASS_TO_PASS': {'success': ['xarray/tests/test_formatting.py::TestFormatting::test_get_indexer_at_least_n_items', 'xarray/tests/test_formatting.py::TestFormatting::test_first_n_items', 'xarray/tests/test_formatting.py::TestFormatting::test_last_n_items', 'xarray/tests/test_formatting.py::TestFormatting::test_last_item', 'xarray/tests/test_formatting.py::TestFormatting::test_format_item', 'xarray/tests/test_formatting.py::TestFormatting::test_format_items', 'xarray/tests/test_formatting.py::TestFormatting::test_format_array_flat', 'xarray/tests/test_formatting.py::TestFormatting::test_pretty_print', 'xarray/tests/test_formatting.py::TestFormatting::test_maybe_truncate', 'xarray/tests/test_formatting.py::TestFormatting::test_format_timestamp_out_of_bounds', 'xarray/tests/test_formatting.py::TestFormatting::test_attribute_repr', 'xarray/tests/test_formatting.py::TestFormatting::test_diff_array_repr', 'xarray/tests/test_formatting.py::TestFormatting::test_diff_attrs_repr_with_array', 'xarray/tests/test_formatting.py::TestFormatting::test_array_repr', 'xarray/tests/test_formatting.py::test_set_numpy_options', 'xarray/tests/test_formatting.py::test_short_numpy_repr', 'xarray/tests/test_formatting.py::test_large_array_repr_length'], 'failure': ['xarray/tests/test_formatting.py::TestFormatting::test_diff_dataset_repr']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pydata__xarray-4248: resolved: False
+2025-02-10 12:52:13,244 - INFO - Attempting to stop container sweb.eval.pydata__xarray-4248.test...
+2025-02-10 12:52:28,479 - INFO - Attempting to remove container sweb.eval.pydata__xarray-4248.test...
+2025-02-10 12:52:28,503 - INFO - Container sweb.eval.pydata__xarray-4248.test removed.
+2025-02-10 12:52:28,504 - INFO - Attempting to remove image sweb.eval.x86_64.pydata__xarray-4248:latest...
+2025-02-10 12:52:28,570 - INFO - Image sweb.eval.x86_64.pydata__xarray-4248:latest removed.

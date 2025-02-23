@@ -1,0 +1,49 @@
+2025-02-08 20:20:34,515 - INFO - Environment image sweb.env.py.x86_64.e83e37f52c09532c62acfb:latest found for django__django-13660
+Building instance image sweb.eval.x86_64.django__django-13660:latest for django__django-13660
+2025-02-08 20:21:11,514 - INFO - Creating container for django__django-13660...
+2025-02-08 20:21:11,539 - INFO - Container for django__django-13660 created: ea19d9d09280b8d3b335b6476595f6741a714b2383259dc4cbabfb04b6e915f2
+2025-02-08 20:21:11,886 - INFO - Container for django__django-13660 started: ea19d9d09280b8d3b335b6476595f6741a714b2383259dc4cbabfb04b6e915f2
+2025-02-08 20:21:11,887 - INFO - Intermediate patch for django__django-13660 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-13660/patch.diff, now applying to container...
+2025-02-08 20:21:12,345 - INFO - >>>>> Applied Patch:
+Checking patch django/core/management/commands/shell.py...
+Applied patch django/core/management/commands/shell.py cleanly.
+
+2025-02-08 20:21:13,259 - INFO - Git diff before:
+diff --git a/django/core/management/commands/shell.py b/django/core/management/commands/shell.py
+index 2b306a579e..a9d21217db 100644
+--- a/django/core/management/commands/shell.py
++++ b/django/core/management/commands/shell.py
+@@ -84,7 +84,7 @@ class Command(BaseCommand):
+     def handle(self, **options):
+         # Execute the command and exit.
+         if options['command']:
+-            exec(options['command'])
++            exec(options['command'], globals())
+             return
+ 
+         # Execute stdin if it has anything to read and exit.
+2025-02-08 20:21:13,259 - INFO - Eval script for django__django-13660 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-13660/eval.sh; copying to container...
+2025-02-08 20:21:20,021 - INFO - Test runtime: 6.46 seconds
+2025-02-08 20:21:20,022 - INFO - Test output for django__django-13660 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-13660/test_output.txt
+2025-02-08 20:21:20,156 - INFO - Git diff after:
+diff --git a/django/core/management/commands/shell.py b/django/core/management/commands/shell.py
+index 2b306a579e..a9d21217db 100644
+--- a/django/core/management/commands/shell.py
++++ b/django/core/management/commands/shell.py
+@@ -84,7 +84,7 @@ class Command(BaseCommand):
+     def handle(self, **options):
+         # Execute the command and exit.
+         if options['command']:
+-            exec(options['command'])
++            exec(options['command'], globals())
+             return
+ 
+         # Execute stdin if it has anything to read and exit.
+2025-02-08 20:21:20,157 - INFO - Grading answer for django__django-13660...
+2025-02-08 20:21:20,158 - INFO - report: {'django__django-13660': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_command_option_inline_function_call (shell.tests.ShellCommandTestCase)', 'test_stdin_read_inline_function_call (shell.tests.ShellCommandTestCase)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_command_option (shell.tests.ShellCommandTestCase)', 'test_command_option_globals (shell.tests.ShellCommandTestCase)', 'test_shell_with_bpython_not_installed (shell.tests.ShellCommandTestCase)', 'test_shell_with_ipython_not_installed (shell.tests.ShellCommandTestCase)', 'test_stdin_read (shell.tests.ShellCommandTestCase)', 'test_stdin_read_globals (shell.tests.ShellCommandTestCase)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-13660: resolved: True
+2025-02-08 20:21:20,159 - INFO - Attempting to stop container sweb.eval.django__django-13660.test...
+2025-02-08 20:21:35,491 - INFO - Attempting to remove container sweb.eval.django__django-13660.test...
+2025-02-08 20:21:35,521 - INFO - Container sweb.eval.django__django-13660.test removed.
+2025-02-08 20:21:35,522 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-13660:latest...
+2025-02-08 20:21:35,791 - INFO - Image sweb.eval.x86_64.django__django-13660:latest removed.

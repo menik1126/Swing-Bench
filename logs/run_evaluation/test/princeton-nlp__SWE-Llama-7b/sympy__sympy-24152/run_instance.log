@@ -1,0 +1,52 @@
+2025-02-10 14:53:16,600 - INFO - Environment image sweb.env.py.x86_64.c795f4b88616b8462021ed:latest found for sympy__sympy-24152
+Building instance image sweb.eval.x86_64.sympy__sympy-24152:latest for sympy__sympy-24152
+2025-02-10 14:53:42,158 - INFO - Creating container for sympy__sympy-24152...
+2025-02-10 14:53:42,187 - INFO - Container for sympy__sympy-24152 created: 001b770a8d21569da895d646705e9bfb15c6c27c8158d09b5b9a244a83a43ccb
+2025-02-10 14:53:42,502 - INFO - Container for sympy__sympy-24152 started: 001b770a8d21569da895d646705e9bfb15c6c27c8158d09b5b9a244a83a43ccb
+2025-02-10 14:53:42,503 - INFO - Intermediate patch for sympy__sympy-24152 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24152/patch.diff, now applying to container...
+2025-02-10 14:53:42,927 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 14:53:43,029 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 14:53:43,132 - INFO - >>>>> Applied Patch:
+patching file sympy/physics/quantum/tensorproduct.py
+Hunk #1 succeeded at 246 with fuzz 3.
+patch unexpectedly ends in middle of line
+
+2025-02-10 14:53:43,680 - INFO - Git diff before:
+diff --git a/sympy/physics/quantum/tensorproduct.py b/sympy/physics/quantum/tensorproduct.py
+index 78accaf295..629af02d75 100644
+--- a/sympy/physics/quantum/tensorproduct.py
++++ b/sympy/physics/quantum/tensorproduct.py
+@@ -246,7 +246,7 @@ def _eval_expand_tensorproduct(self, **hints):
+             if isinstance(args[i], Add):
+                 for aa in args[i].args:
+                     tp = TensorProduct(*args[:i] + (aa,) + args[i + 1:])
+-                    if isinstance(tp, TensorProduct):
++                    tp = tp._eval_expand_tensorproduct()
+                         tp = tp._eval_expand_tensorproduct()
+                     add_args.append(tp)
+                 break
+2025-02-10 14:53:43,681 - INFO - Eval script for sympy__sympy-24152 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24152/eval.sh; copying to container...
+2025-02-10 14:53:47,945 - INFO - Test runtime: 3.96 seconds
+2025-02-10 14:53:47,945 - INFO - Test output for sympy__sympy-24152 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-24152/test_output.txt
+2025-02-10 14:53:48,053 - INFO - Git diff after:
+diff --git a/sympy/physics/quantum/tensorproduct.py b/sympy/physics/quantum/tensorproduct.py
+index 78accaf295..629af02d75 100644
+--- a/sympy/physics/quantum/tensorproduct.py
++++ b/sympy/physics/quantum/tensorproduct.py
+@@ -246,7 +246,7 @@ def _eval_expand_tensorproduct(self, **hints):
+             if isinstance(args[i], Add):
+                 for aa in args[i].args:
+                     tp = TensorProduct(*args[:i] + (aa,) + args[i + 1:])
+-                    if isinstance(tp, TensorProduct):
++                    tp = tp._eval_expand_tensorproduct()
+                         tp = tp._eval_expand_tensorproduct()
+                     add_args.append(tp)
+                 break
+2025-02-10 14:53:48,053 - INFO - Grading answer for sympy__sympy-24152...
+2025-02-10 14:53:48,057 - INFO - report: {'sympy__sympy-24152': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_tensor_product_expand']}, 'PASS_TO_PASS': {'success': [], 'failure': ['test_sparse_matrices', 'test_tensor_product_dagger', 'test_tensor_product_abstract', 'test_tensor_product_commutator', 'test_tensor_product_simp', 'test_issue_5923']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-24152: resolved: False
+2025-02-10 14:53:48,058 - INFO - Attempting to stop container sweb.eval.sympy__sympy-24152.test...
+2025-02-10 14:54:03,268 - INFO - Attempting to remove container sweb.eval.sympy__sympy-24152.test...
+2025-02-10 14:54:03,308 - INFO - Container sweb.eval.sympy__sympy-24152.test removed.
+2025-02-10 14:54:03,308 - INFO - Attempting to remove image sweb.eval.x86_64.sympy__sympy-24152:latest...
+2025-02-10 14:54:03,407 - INFO - Image sweb.eval.x86_64.sympy__sympy-24152:latest removed.

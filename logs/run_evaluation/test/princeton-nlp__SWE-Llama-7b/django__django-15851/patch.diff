@@ -1,0 +1,14 @@
+
+diff --git a/django/db/backends/postgresql/client.py b/django/db/backends/postgresql/client.py
+--- a/django/db/backends/postgresql/client.py
++++ b/django/db/backends/postgresql/client.py
+@@ -34,7 +34,7 @@ def settings_to_cmd_args_env(cls, settings_dict, parameters):
+             args += ["-p", str(port)]
+         if dbname:
+             args += [dbname]
+-        args.extend(parameters)
++        args.extend(parameters)
+ 
+         env = {}
+         if passwd:
+

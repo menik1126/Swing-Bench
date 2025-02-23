@@ -1,0 +1,18 @@
+<patch>
+diff --git a/pylint/lint/expand_modules.py b/pylint/lint/expand_modules.py
+--- a/pylint/lint/expand_modules.py
++++ b/pylint/lint/expand_modules.py
+@@ -10,7 +10,7 @@
+ from re import Pattern
+ 
+ from astroid import modutils
+-
+ from pylint.typing import ErrorDescriptionDict, ModuleDescriptionDict
++import pkgutil
+ 
+ 
+ def _modpath_from_file(filename: str, is_namespace: bool, path: list[str]) -> list[str]:
+@@ -112,6 +112,10 @@ def expand_modules(
+         modparts = (modname or something).split(".")
+         try:
+             spec = modutils.file_info_from_

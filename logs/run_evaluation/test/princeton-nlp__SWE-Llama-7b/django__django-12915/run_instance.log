@@ -1,0 +1,2469 @@
+2025-02-21 00:20:21,760 - INFO - Environment image sweb.env.py.x86_64.e83e37f52c09532c62acfb:latest found for django__django-12915
+Building instance image sweb.eval.x86_64.django__django-12915:latest for django__django-12915
+2025-02-21 00:20:59,773 - INFO - Creating container for django__django-12915...
+2025-02-21 00:20:59,801 - INFO - Container for django__django-12915 created: b4b73804b8e6c36d3d31cac12487f7261170c50118db6408ef8ff785954f7c78
+2025-02-21 00:21:00,141 - INFO - Container for django__django-12915 started: b4b73804b8e6c36d3d31cac12487f7261170c50118db6408ef8ff785954f7c78
+2025-02-21 00:21:00,141 - INFO - Intermediate patch for django__django-12915 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/patch.diff, now applying to container...
+2025-02-21 00:21:00,593 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-21 00:21:00,696 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-21 00:21:00,797 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-21 00:21:00,797 - INFO - >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,802 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,803 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,804 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,805 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,806 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,807 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,809 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,810 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,811 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,812 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,813 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12915: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 16:  class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+
+patching file django/contrib/staticfiles/handlers.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12915/run_instance.log) for more information.
+
+2025-02-21 00:21:00,814 - INFO - Attempting to stop container sweb.eval.django__django-12915.test...
+2025-02-21 00:21:16,023 - INFO - Attempting to remove container sweb.eval.django__django-12915.test...
+2025-02-21 00:21:16,035 - INFO - Container sweb.eval.django__django-12915.test removed.
+2025-02-21 00:21:16,035 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-12915:latest...
+2025-02-21 00:21:16,278 - INFO - Image sweb.eval.x86_64.django__django-12915:latest removed.

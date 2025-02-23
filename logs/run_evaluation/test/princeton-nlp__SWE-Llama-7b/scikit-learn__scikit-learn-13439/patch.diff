@@ -1,0 +1,15 @@
+<patch>
+diff --git a/sklearn/pipeline.py b/sklearn/pipeline.py
+--- a/sklearn/pipeline.py
++++ b/sklearn/pipeline.py
+@@ -111,6 +111,10 @@ class Pipeline(_BaseComposition):
+            False)
+     >>> # Indexing can also be used to extract a sub-pipeline.
+     >>> sub_pipeline = anova_svm[:1]
++    >>> len(sub_pipeline)
++    1
++    >>> len(anova_svm)
++    2
+     >>> sub_pipeline  # doctest: +ELLIPSIS +NORMALIZE_WHITESPACE
+     Pipeline(memory=None, steps=[('anova', ...)])
+     >>> coef = anova_sv

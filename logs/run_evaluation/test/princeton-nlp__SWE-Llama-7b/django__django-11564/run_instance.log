@@ -1,0 +1,2469 @@
+2025-02-21 00:13:46,510 - INFO - Environment image sweb.env.py.x86_64.a18371b03f944585b4f08c:latest found for django__django-11564
+Building instance image sweb.eval.x86_64.django__django-11564:latest for django__django-11564
+2025-02-21 00:14:23,693 - INFO - Creating container for django__django-11564...
+2025-02-21 00:14:23,720 - INFO - Container for django__django-11564 created: d28c839da18fc6939b0ca44c772000031937db2d43f36ecdf7815e35bbcf94b7
+2025-02-21 00:14:24,064 - INFO - Container for django__django-11564 started: d28c839da18fc6939b0ca44c772000031937db2d43f36ecdf7815e35bbcf94b7
+2025-02-21 00:14:24,065 - INFO - Intermediate patch for django__django-11564 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/patch.diff, now applying to container...
+2025-02-21 00:14:24,487 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-21 00:14:24,581 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-21 00:14:24,687 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-21 00:14:24,687 - INFO - >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+2025-02-21 00:14:24,691 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:14:24,692 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,692 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,692 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,692 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,692 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,692 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,692 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,692 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,692 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,693 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,693 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,693 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,693 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,693 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,693 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,693 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,693 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,694 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,694 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,694 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,694 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,694 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,694 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,694 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,694 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,694 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,694 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,695 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,695 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,695 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,695 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,695 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,695 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,695 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,695 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,695 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,696 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,696 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,696 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,696 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,696 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,696 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,696 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,696 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,696 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,697 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,697 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,697 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,697 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,697 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,697 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,697 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,697 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,697 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,698 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,698 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,698 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,698 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,698 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,698 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,698 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,698 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,698 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,699 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,699 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,699 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,699 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,699 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,699 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,699 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,699 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,699 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,700 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,700 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,700 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,700 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,700 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,700 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,700 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,700 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,700 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,700 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,701 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,701 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,701 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,701 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,701 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,701 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,701 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,701 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,702 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,702 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,702 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,702 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,702 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,702 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,702 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,702 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,702 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,703 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,703 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,703 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,703 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,703 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,703 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,703 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,703 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,703 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,704 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,704 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,704 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,704 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,704 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,704 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,704 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,704 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,704 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,705 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,705 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,705 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,705 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,705 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,709 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:14:24,709 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,709 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,709 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,709 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,709 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,709 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,710 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,710 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,710 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,710 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,710 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,710 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,710 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,710 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,710 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,711 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,711 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,711 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,711 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,711 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,711 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,711 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,711 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,711 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,712 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,712 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,712 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,712 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,712 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,712 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,712 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,712 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,712 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,713 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,713 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,713 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,713 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,713 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,713 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,713 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,713 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,713 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,714 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,714 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,714 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,714 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,714 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,714 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,714 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,714 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,714 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,714 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,715 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,715 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,715 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,715 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,715 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,715 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,715 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,715 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,715 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,716 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,716 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,716 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,716 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,716 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,716 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,716 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,716 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,716 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,717 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,717 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,717 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,717 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,717 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,717 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,717 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,717 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,717 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,718 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,718 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,718 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,718 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,718 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,718 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,718 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,718 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,718 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,719 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,719 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,719 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,719 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,719 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,719 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,719 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,719 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,719 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,720 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,720 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,720 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,720 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,720 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,720 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,720 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,720 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,720 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,721 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,721 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,721 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,721 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,721 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,721 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,721 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,721 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,721 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,722 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,722 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,722 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,722 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,722 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,722 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,722 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11564: >>>>> Patch Apply Failed:
+patching file django/conf/__init__.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11564/run_instance.log) for more information.
+
+2025-02-21 00:14:24,722 - INFO - Attempting to stop container sweb.eval.django__django-11564.test...
+2025-02-21 00:14:39,939 - INFO - Attempting to remove container sweb.eval.django__django-11564.test...
+2025-02-21 00:14:39,950 - INFO - Container sweb.eval.django__django-11564.test removed.
+2025-02-21 00:14:39,950 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-11564:latest...
+2025-02-21 00:14:40,223 - INFO - Image sweb.eval.x86_64.django__django-11564:latest removed.

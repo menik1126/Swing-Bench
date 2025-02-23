@@ -1,0 +1,2714 @@
+2025-02-10 14:37:48,830 - INFO - Environment image sweb.env.py.x86_64.c795f4b88616b8462021ed:latest found for sympy__sympy-19007
+Building instance image sweb.eval.x86_64.sympy__sympy-19007:latest for sympy__sympy-19007
+2025-02-10 14:38:10,548 - INFO - Creating container for sympy__sympy-19007...
+2025-02-10 14:38:10,567 - INFO - Container for sympy__sympy-19007 created: 495be807b86da024678323f1a7bf3a588e23e41a1f174f6baadf3462ea649f83
+2025-02-10 14:38:10,855 - INFO - Container for sympy__sympy-19007 started: 495be807b86da024678323f1a7bf3a588e23e41a1f174f6baadf3462ea649f83
+2025-02-10 14:38:10,856 - INFO - Intermediate patch for sympy__sympy-19007 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/patch.diff, now applying to container...
+2025-02-10 14:38:11,286 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 14:38:11,386 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 14:38:11,481 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-10 14:38:11,481 - INFO - >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+2025-02-10 14:38:11,486 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-10 14:38:11,486 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,486 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,487 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,487 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,487 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,487 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,487 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,487 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,487 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,487 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,487 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,487 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,488 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,488 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,488 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,488 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,488 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,488 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,488 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,488 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,488 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,489 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,489 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,489 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,489 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,489 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,489 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,489 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,489 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,489 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,490 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,490 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,490 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,490 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,490 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,490 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,490 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,490 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,490 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,491 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,491 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,491 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,491 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,491 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,491 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,491 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,491 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,491 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,492 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,492 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,492 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,492 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,492 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,492 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,492 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,492 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,492 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,493 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,493 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,493 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,493 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,493 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,493 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,493 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,493 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,493 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,494 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,494 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,494 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,494 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,494 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,494 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,494 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,494 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,494 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,495 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,495 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,495 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,495 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,495 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,495 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,495 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,495 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,495 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,496 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,496 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,496 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,496 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,496 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,496 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,496 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,496 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,496 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,497 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,497 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,497 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,497 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,497 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,497 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,497 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,497 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,497 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,498 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,498 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,498 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,498 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,498 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,498 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,498 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,498 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,498 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,499 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,499 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,499 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,499 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,499 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,499 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,499 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,499 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,499 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,499 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,500 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,503 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-10 14:38:11,503 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,503 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,504 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,504 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,504 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,504 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,504 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,504 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,504 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,504 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,504 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,505 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,505 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,505 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,505 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,505 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,505 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,505 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,505 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,505 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,506 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,506 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,506 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,506 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,506 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,506 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,506 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,506 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,506 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,507 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,507 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,507 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,507 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,507 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,507 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,507 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,507 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,507 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,508 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,508 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,508 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,508 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,508 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,508 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,508 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,508 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,508 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,509 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,509 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,509 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,509 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,509 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,509 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,509 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,509 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,509 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,509 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,510 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,510 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,510 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,510 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,510 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,510 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,510 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,510 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,510 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,511 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,511 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,511 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,511 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,511 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,511 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,511 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,511 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,511 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,512 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,512 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,512 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,512 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,512 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,512 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,512 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,512 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,513 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,513 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,513 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,513 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,513 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,513 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,513 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,513 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,513 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,514 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,515 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,516 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,517 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-19007/run_instance.log) for more information.
+
+2025-02-10 14:38:11,517 - INFO - Attempting to stop container sweb.eval.sympy__sympy-19007.test...
+2025-02-10 14:38:26,779 - INFO - Attempting to remove container sweb.eval.sympy__sympy-19007.test...
+2025-02-10 14:38:26,790 - INFO - Container sweb.eval.sympy__sympy-19007.test removed.
+2025-02-10 14:38:26,790 - INFO - Attempting to remove image sweb.eval.x86_64.sympy__sympy-19007:latest...
+2025-02-10 14:38:26,912 - INFO - Image sweb.eval.x86_64.sympy__sympy-19007:latest removed.

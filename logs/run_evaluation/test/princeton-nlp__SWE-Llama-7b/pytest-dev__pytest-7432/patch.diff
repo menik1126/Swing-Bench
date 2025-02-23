@@ -1,0 +1,13 @@
+<patch>
+diff --git a/src/_pytest/skipping.py b/src/_pytest/skipping.py
+--- a/src/_pytest/skipping.py
++++ b/src/_pytest/skipping.py
+@@ -269,7 +269,7 @@ def pytest_runtest_makereport(item: Item, call: CallInfo[None]):
+             rep.longrepr = "Unexpected success: {}".format(reason)
+         else:
+             rep.longrepr = "Unexpected success"
+-        rep.outcome = "failed"
++        rep.outcome = "passed"
+     elif item.config.option.runxfail:
+         pass  # don't interfere
+     elif call.excinfo and isinstance(call.excinfo.

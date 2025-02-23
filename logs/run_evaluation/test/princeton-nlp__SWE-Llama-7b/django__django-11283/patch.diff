@@ -1,0 +1,14 @@
+<patch>
+diff --git a/django/contrib/auth/migrations/0011_update_proxy_permissions.py b/django/contrib/auth/migrations/0011_update_proxy_permissions.py
+--- a/django/contrib/auth/migrations/0011_update_proxy_permissions.py
++++ b/django/contrib/auth/migrations/0011_update_proxy_permissions.py
+@@ -1,10 +1,10 @@
+ from django.db import migrations
+ from django.db.models import Q
+ 
+-
+ def update_proxy_model_permissions(apps, schema_editor, reverse=False):
+     """
+     Update the content_type of proxy model permissions to use the ContentType
+     of the proxy model.
+@@ -20,6 +20

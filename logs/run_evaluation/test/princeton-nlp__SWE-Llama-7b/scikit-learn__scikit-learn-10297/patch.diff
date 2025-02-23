@@ -1,0 +1,11 @@
+<patch>
+diff --git a/sklearn/linear_model/ridge.py b/sklearn/linear_model/ridge.py
+--- a/sklearn/linear_model/ridge.py
++++ b/sklearn/linear_model/ridge.py
+@@ -783,7 +783,7 @@ class RidgeClassifier(LinearClassifierMixin, _BaseRidge):
+     advantage of the multi-variate response support in Ridge.
+     """
+     def __init__(self, alpha=1.0, fit_intercept=True, normalize=False,
+-                 copy_X=True, max_iter=None, tol=1e-3, class_weight=None,
++                 copy_X=True, max_iter=None, tol=1e-3, class_weight=None,
+                  sol

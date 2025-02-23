@@ -1,0 +1,2469 @@
+2025-02-10 14:36:27,727 - INFO - Environment image sweb.env.py.x86_64.c795f4b88616b8462021ed:latest found for sympy__sympy-18199
+Building instance image sweb.eval.x86_64.sympy__sympy-18199:latest for sympy__sympy-18199
+2025-02-10 14:36:50,380 - INFO - Creating container for sympy__sympy-18199...
+2025-02-10 14:36:50,396 - INFO - Container for sympy__sympy-18199 created: 90c4e6aa248116a6de37b9531dfc2c43d9de651af4209d352b54beb5f9bd26cd
+2025-02-10 14:36:50,679 - INFO - Container for sympy__sympy-18199 started: 90c4e6aa248116a6de37b9531dfc2c43d9de651af4209d352b54beb5f9bd26cd
+2025-02-10 14:36:50,679 - INFO - Intermediate patch for sympy__sympy-18199 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/patch.diff, now applying to container...
+2025-02-10 14:36:51,062 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 14:36:51,158 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 14:36:51,258 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-10 14:36:51,258 - INFO - >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+2025-02-10 14:36:51,263 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-10 14:36:51,263 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,263 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,263 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,263 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,263 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,263 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,264 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,264 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,264 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,264 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,264 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,264 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,264 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,264 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,264 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,265 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,265 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,265 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,265 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,265 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,265 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,265 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,265 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,265 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,266 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,266 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,266 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,266 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,266 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,266 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,266 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,266 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,266 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,267 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,267 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,267 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,267 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,267 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,267 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,267 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,267 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,267 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,268 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,268 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,268 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,268 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,268 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,268 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,268 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,268 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,268 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,269 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,269 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,269 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,269 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,269 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,269 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,269 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,269 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,269 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,270 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,270 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,270 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,270 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,270 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,270 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,270 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,270 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,270 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,271 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,271 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,271 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,271 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,271 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,271 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,271 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,271 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,271 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,272 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,272 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,272 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,272 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,272 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,272 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,272 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,272 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,272 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,272 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,273 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,273 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,273 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,273 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,273 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,273 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,273 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,273 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,273 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,274 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,274 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,274 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,274 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,274 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,274 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,274 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,274 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,274 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,275 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,275 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,275 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,275 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,275 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,275 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,275 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,275 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,275 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,276 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,276 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,276 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,276 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,276 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,276 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,276 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,280 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-10 14:36:51,280 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,280 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,280 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,280 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,280 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,281 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,281 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,281 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,281 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,281 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,281 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,281 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,281 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,281 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,282 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,282 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,282 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,282 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,282 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,282 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,282 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,282 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,282 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,282 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,283 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,283 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,283 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,283 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,283 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,283 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,283 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,283 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,283 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,284 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,284 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,284 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,284 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,284 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,284 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,284 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,284 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,284 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,284 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,285 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,285 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,285 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,285 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,285 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,285 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,285 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,285 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,285 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,286 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,286 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,286 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,286 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,286 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,286 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,286 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,286 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,286 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,287 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,287 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,287 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,287 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,287 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,287 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,287 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,287 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,287 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,287 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,288 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,288 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,288 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,288 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,288 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,288 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,288 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,288 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,288 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,289 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,289 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,289 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,289 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,289 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,289 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,289 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,289 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,289 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,289 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,290 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,290 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,290 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,290 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,290 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,290 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,290 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,290 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,290 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,291 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,291 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,291 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,291 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,291 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,291 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,291 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,291 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,291 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,292 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,292 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,292 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,292 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,292 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,292 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,292 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,292 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,292 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,293 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,293 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,293 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,293 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,293 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-18199: >>>>> Patch Apply Failed:
+patch: **** unexpected end of file in patch
+patching file sympy/ntheory/residue_ntheory.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-18199/run_instance.log) for more information.
+
+2025-02-10 14:36:51,293 - INFO - Attempting to stop container sweb.eval.sympy__sympy-18199.test...
+2025-02-10 14:37:06,528 - INFO - Attempting to remove container sweb.eval.sympy__sympy-18199.test...
+2025-02-10 14:37:06,539 - INFO - Container sweb.eval.sympy__sympy-18199.test removed.
+2025-02-10 14:37:06,539 - INFO - Attempting to remove image sweb.eval.x86_64.sympy__sympy-18199:latest...
+2025-02-10 14:37:06,616 - INFO - Image sweb.eval.x86_64.sympy__sympy-18199:latest removed.

@@ -1,0 +1,14 @@
+
+diff --git a/src/_pytest/mark/evaluate.py b/src/_pytest/mark/evaluate.py
+--- a/src/_pytest/mark/evaluate.py
++++ b/src/_pytest/mark/evaluate.py
+@@ -96,7 +96,7 @@ def _istrue(self) -> bool:
+ 
+                 for expr in args:
+                     self.expr = expr
+-                    if isinstance(expr, str):
++                    if isinstance(expr, str) and not hasattr(self, "result"):
+                         d = self._getglobals()
+                         result = cached_eval(self.item.config, expr, d)
+                     else:
+

@@ -1,0 +1,14 @@
+
+diff --git a/src/_pytest/assertion/util.py b/src/_pytest/assertion/util.py
+--- a/src/_pytest/assertion/util.py
++++ b/src/_pytest/assertion/util.py
+@@ -125,7 +125,7 @@ def assertrepr_compare(config, op, left, right):
+     explanation = None
+     try:
+         if op == "==":
+-            if istext(left) and istext(right):
++            if istext(left) and istext(right) and not config.getoption("verbose"):
+                 explanation = _diff_text(left, right, verbose)
+             else:
+                 if issequence(left) and issequence(right):
+

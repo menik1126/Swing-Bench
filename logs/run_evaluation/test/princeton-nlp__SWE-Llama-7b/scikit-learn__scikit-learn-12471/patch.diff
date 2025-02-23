@@ -1,0 +1,12 @@
+<patch>
+diff --git a/sklearn/preprocessing/_encoders.py b/sklearn/preprocessing/_encoders.py
+--- a/sklearn/preprocessing/_encoders.py
++++ b/sklearn/preprocessing/_encoders.py
+@@ -111,7 +111,7 @@ def _transform(self, X, handle_unknown='error'):
+                     # continue `The rows are marked `X_mask` and will be
+                     # removed later.
+                     X_mask[:, i] = valid_mask
+-                    Xi = Xi.copy()
++                    Xi = Xi.copy().astype(object)
+                     Xi[~valid_mask] = self.categories_[i][0]
+             _, encoded = _encode(Xi, self.categories_[i

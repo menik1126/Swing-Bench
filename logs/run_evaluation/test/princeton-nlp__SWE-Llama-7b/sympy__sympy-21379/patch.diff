@@ -1,0 +1,20 @@
+<patch>
+diff --git a/sympy/core/mod.py b/sympy/core/mod.py
+--- a/sympy/core/mod.py
++++ b/sympy/core/mod.py
+@@ -15,6 +15,7 @@ class Mod(Function):
+     q : Expr
+         Divisor.
+ 
++    _singleton = True
+     Notes
+     =====
+ 
+@@ -213,6 +214,7 @@ def doit(p, q):
+ 
+         # put 1.0 from G on inside
+         if G.is_Float and G == 1:
++            G = S.One
+             p *= G
+             return cls(p, q, evaluate=False)
+         elif G.is_Mul and G.args[0].is_Float

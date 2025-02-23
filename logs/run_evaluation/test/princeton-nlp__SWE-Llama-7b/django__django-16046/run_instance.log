@@ -1,0 +1,2469 @@
+2025-02-21 00:34:51,641 - INFO - Environment image sweb.env.py.x86_64.a33dddf55cdff5d8e23374:latest found for django__django-16046
+Building instance image sweb.eval.x86_64.django__django-16046:latest for django__django-16046
+2025-02-21 00:35:32,143 - INFO - Creating container for django__django-16046...
+2025-02-21 00:35:32,170 - INFO - Container for django__django-16046 created: 2affbcd54af37f0d53cd3a82f3588feffe4ccb496c6f60f81d92f95922195652
+2025-02-21 00:35:32,504 - INFO - Container for django__django-16046 started: 2affbcd54af37f0d53cd3a82f3588feffe4ccb496c6f60f81d92f95922195652
+2025-02-21 00:35:32,504 - INFO - Intermediate patch for django__django-16046 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/patch.diff, now applying to container...
+2025-02-21 00:35:32,911 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-21 00:35:33,031 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-21 00:35:33,146 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-21 00:35:33,147 - INFO - >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+2025-02-21 00:35:33,152 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:35:33,152 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,152 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,153 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,153 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,153 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,153 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,153 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,153 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,153 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,153 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,153 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,154 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,154 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,154 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,154 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,154 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,154 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,154 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,154 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,154 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,155 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,155 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,155 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,155 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,155 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,155 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,155 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,155 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,155 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,156 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,156 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,156 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,156 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,156 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,156 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,156 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,156 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,156 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,156 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,157 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,157 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,157 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,157 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,157 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,157 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,157 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,157 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,157 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,158 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,158 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,158 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,158 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,158 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,158 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,158 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,158 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,158 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,159 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,159 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,159 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,159 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,159 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,159 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,159 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,159 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,159 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,160 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,160 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,160 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,160 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,160 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,160 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,160 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,160 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,160 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,161 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,161 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,161 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,161 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,161 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,161 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,161 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,161 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,161 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,162 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,162 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,162 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,162 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,162 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,162 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,162 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,162 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,162 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,163 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,163 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,163 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,163 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,163 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,163 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,163 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,163 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,163 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,163 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,164 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,164 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,164 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,164 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,164 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,164 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,164 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,164 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,164 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,165 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,165 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,165 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,165 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,165 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,165 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,165 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,165 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,165 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,166 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,170 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:35:33,170 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,170 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,170 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,170 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,170 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,170 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,170 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,171 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,171 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,171 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,171 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,171 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,171 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,171 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,171 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,171 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,171 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,172 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,172 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,172 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,172 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,172 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,172 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,172 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,172 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,172 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,173 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,173 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,173 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,173 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,173 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,173 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,173 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,173 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,173 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,174 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,174 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,174 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,174 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,174 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,174 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,174 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,174 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,174 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,174 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,175 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,175 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,175 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,175 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,175 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,175 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,175 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,175 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,175 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,176 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,176 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,176 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,176 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,176 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,176 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,176 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,176 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,176 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,177 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,177 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,177 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,177 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,177 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,177 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,177 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,177 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,177 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,178 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,178 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,178 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,178 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,178 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,178 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,178 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,178 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,178 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,178 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,179 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,179 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,179 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,179 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,179 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,179 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,179 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,179 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,179 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,180 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,180 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,180 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,180 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,180 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,180 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,180 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,180 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,180 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,180 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,181 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,181 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,181 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,181 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,181 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,181 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,181 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,181 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,181 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,182 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,182 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,182 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,182 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,182 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,182 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,182 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,182 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,182 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,183 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,183 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,183 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-16046: >>>>> Patch Apply Failed:
+patching file django/utils/numberformat.py
+Hunk #1 FAILED at 68.
+1 out of 1 hunk FAILED -- saving rejects to file django/utils/numberformat.py.rej
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-16046/run_instance.log) for more information.
+
+2025-02-21 00:35:33,183 - INFO - Attempting to stop container sweb.eval.django__django-16046.test...
+2025-02-21 00:35:48,432 - INFO - Attempting to remove container sweb.eval.django__django-16046.test...
+2025-02-21 00:35:48,443 - INFO - Container sweb.eval.django__django-16046.test removed.
+2025-02-21 00:35:48,444 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-16046:latest...
+2025-02-21 00:35:48,722 - INFO - Image sweb.eval.x86_64.django__django-16046:latest removed.

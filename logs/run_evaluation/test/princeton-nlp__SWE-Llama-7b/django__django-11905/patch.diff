@@ -1,0 +1,14 @@
+
+diff --git a/django/db/models/lookups.py b/django/db/models/lookups.py
+--- a/django/db/models/lookups.py
++++ b/django/db/models/lookups.py
+@@ -460,7 +460,7 @@ def get_rhs_op(self, connection, rhs):
+ @Field.register_lookup
+ class IsNull(BuiltinLookup):
+     lookup_name = 'isnull'
+-    prepare_rhs = False
++    prepare_rhs = True
+ 
+     def as_sql(self, compiler, connection):
+         sql, params = compiler.compile(self.lhs)
+

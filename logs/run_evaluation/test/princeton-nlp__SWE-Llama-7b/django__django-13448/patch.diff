@@ -1,0 +1,14 @@
+
+diff --git a/django/db/backends/base/creation.py b/django/db/backends/base/creation.py
+--- a/django/db/backends/base/creation.py
++++ b/django/db/backends/base/creation.py
+@@ -115,7 +115,7 @@ def get_objects():
+                             queryset = model._default_manager.using(
+                                 self.connection.alias,
+                             ).order_by(model._meta.pk.name)
+-                            yield from queryset.iterator()
++                            yield from queryset
+         # Serialize to a string
+         out = StringIO()
+         serializers.serialize("json", get_objects(), indent=None, stream=out)
+

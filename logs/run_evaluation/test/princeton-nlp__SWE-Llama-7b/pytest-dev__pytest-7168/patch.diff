@@ -1,0 +1,18 @@
+<patch>
+diff --git a/src/_pytest/_io/saferepr.py b/src/_pytest/_io/saferepr.py
+--- a/src/_pytest/_io/saferepr.py
++++ b/src/_pytest/_io/saferepr.py
+@@ -1,6 +1,7 @@
+ import pprint
+ import reprlib
+ from typing import Any
++import sys
+ 
+ 
+ def _try_repr_or_str(obj):
+@@ -12,7 +13,7 @@ def _try_repr_or_str(obj):
+         return '{}("{}")'.format(type(obj).__name__, obj)
+ 
+ 
+-def _format_repr_exception(exc: BaseException, obj: Any) -> str:
++def _format

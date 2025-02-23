@@ -1,0 +1,14 @@
+
+diff --git a/sympy/matrices/expressions/matexpr.py b/sympy/matrices/expressions/matexpr.py
+--- a/sympy/matrices/expressions/matexpr.py
++++ b/sympy/matrices/expressions/matexpr.py
+@@ -980,7 +980,7 @@ def conjugate(self):
+         return self
+ 
+     def _entry(self, i, j, **kwargs):
+-        return S.Zero
++        return Integer(0)
+ 
+     def __nonzero__(self):
+         return False
+

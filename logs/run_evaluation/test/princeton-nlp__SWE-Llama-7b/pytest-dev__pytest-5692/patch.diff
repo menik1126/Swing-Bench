@@ -1,0 +1,14 @@
+
+diff --git a/src/_pytest/junitxml.py b/src/_pytest/junitxml.py
+--- a/src/_pytest/junitxml.py
++++ b/src/_pytest/junitxml.py
+@@ -659,7 +659,7 @@ def pytest_sessionfinish(self):
+ 
+         suite_node = Junit.testsuite(
+             self._get_global_properties_node(),
+-            [x.to_xml() for x in self.node_reporters_ordered],
++            [x.to_xml() for x in self.node_reporters_ordered],
+             name=self.suite_name,
+             errors=self.stats["error"],
+             failures=self.stats["failure"],
+

@@ -1,0 +1,11 @@
+<patch>
+diff --git a/src/_pytest/assertion/rewrite.py b/src/_pytest/assertion/rewrite.py
+--- a/src/_pytest/assertion/rewrite.py
++++ b/src/_pytest/assertion/rewrite.py
+@@ -925,7 +925,7 @@ def visit_BoolOp(self, boolop):
+         self.on_failure = fail_inner
+             self.push_format_context()
+             res, expl = self.visit(v)
+-            body.append(ast.Assign([ast.Name(res_var, ast.Store())], res))
++            body.append(ast.Assign([ast.Name(res_var, ast.Store())], [res]))
+             expl_format = self.pop_format_context(ast.Str(expl

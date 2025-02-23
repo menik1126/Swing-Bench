@@ -1,0 +1,11 @@
+<patch>
+diff --git a/sympy/physics/units/prefixes.py b/sympy/physics/units/prefixes.py
+--- a/sympy/physics/units/prefixes.py
++++ b/sympy/physics/units/prefixes.py
+@@ -165,7 +165,7 @@ hecto = Prefix('hecto', 'h', 2)
+ deca = Prefix('deca', 'da', 1)
+ deci = Prefix('deci', 'd', -1)
+ centi = Prefix('centi', 'c', -2)
+-milli = Prefix('milli', 'm', -3)
++milli = Prefix('milli', 'm', -3, latex_repr=r"\mathrm{m}")
+ micro = Prefix('

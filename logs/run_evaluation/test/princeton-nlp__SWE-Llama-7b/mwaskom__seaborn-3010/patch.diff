@@ -1,0 +1,14 @@
+
+diff --git a/seaborn/_stats/regression.py b/seaborn/_stats/regression.py
+--- a/seaborn/_stats/regression.py
++++ b/seaborn/_stats/regression.py
+@@ -23,7 +23,7 @@ def _fit_predict(self, data):
+ 
+         x = data["x"]
+         y = data["y"]
+-        if x.nunique() <= self.order:
++        if x.notna().sum() <= self.order:
+             # TODO warn?
+             xx = yy = []
+         else:
+

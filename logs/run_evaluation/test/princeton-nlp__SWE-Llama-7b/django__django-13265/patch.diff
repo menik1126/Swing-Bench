@@ -1,0 +1,10 @@
+<patch>
+diff --git a/django/db/migrations/autodetector.py b/django/db/migrations/autodetector.py
+--- a/django/db/migrations/autodetector.py
++++ b/django/db/migrations/autodetector.py
+@@ -1190,7 +1190,7 @@ def generate_altered_options(self):
+                 )
+ 
+     def generate_altered_order_with_respect_to(self):
+-        for app_label, model_name in sorted(self.kept_model_keys):
++        for app_label, model_name in sorted(self.kept_model_keys, key=lambda x: self.to_state.models[x].options.get('order_with_respect_to')):

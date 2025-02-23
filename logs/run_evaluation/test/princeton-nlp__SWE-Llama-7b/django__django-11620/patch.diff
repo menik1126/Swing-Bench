@@ -1,0 +1,14 @@
+
+diff --git a/django/views/debug.py b/django/views/debug.py
+--- a/django/views/debug.py
++++ b/django/views/debug.py
+@@ -458,7 +458,7 @@ def explicit_or_implicit_cause(exc_value):
+ 
+ def technical_404_response(request, exception):
+     """Create a technical 404 error response. `exception` is the Http404."""
+-    try:
++    if isinstance(exception, Http404):
+         error_url = exception.args[0]['path']
+     except (IndexError, TypeError, KeyError):
+         error_url = request.path_info[1:]  # Trim leading slash
+

@@ -1,0 +1,52 @@
+2025-02-10 13:49:18,521 - INFO - Environment image sweb.env.py.x86_64.aa92880033da20ca313928:latest found for scikit-learn__scikit-learn-13779
+Building instance image sweb.eval.x86_64.scikit-learn__scikit-learn-13779:latest for scikit-learn__scikit-learn-13779
+2025-02-10 13:53:30,538 - INFO - Creating container for scikit-learn__scikit-learn-13779...
+2025-02-10 13:53:30,564 - INFO - Container for scikit-learn__scikit-learn-13779 created: cd02cffad7d61ea6ddb8f12789fae6d0cbf76bd09d3761de9cb4630add9655c5
+2025-02-10 13:53:30,833 - INFO - Container for scikit-learn__scikit-learn-13779 started: cd02cffad7d61ea6ddb8f12789fae6d0cbf76bd09d3761de9cb4630add9655c5
+2025-02-10 13:53:30,834 - INFO - Intermediate patch for scikit-learn__scikit-learn-13779 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/scikit-learn__scikit-learn-13779/patch.diff, now applying to container...
+2025-02-10 13:53:31,246 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 13:53:31,338 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 13:53:31,433 - INFO - >>>>> Applied Patch:
+patching file sklearn/ensemble/voting.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 76 with fuzz 1.
+
+2025-02-10 13:53:31,761 - INFO - Git diff before:
+diff --git a/sklearn/ensemble/voting.py b/sklearn/ensemble/voting.py
+index 7afa7180c..0c40458aa 100644
+--- a/sklearn/ensemble/voting.py
++++ b/sklearn/ensemble/voting.py
+@@ -76,7 +76,7 @@ class _BaseVoting(_BaseComposition, TransformerMixin):
+                              '; got %d weights, %d estimators'
+                              % (len(self.weights), len(self.estimators)))
+ 
+-        if sample_weight is not None:
++        if sample_weight is not None and self.estimators is not None:
+             for name, step in self.estimators:
+                 if not has_fit_parameter(step, 'sample_weight'):
+                     raise ValueError('Underlying estimator \'%s\' does not'
+2025-02-10 13:53:31,762 - INFO - Eval script for scikit-learn__scikit-learn-13779 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/scikit-learn__scikit-learn-13779/eval.sh; copying to container...
+2025-02-10 13:53:37,340 - INFO - Test runtime: 5.25 seconds
+2025-02-10 13:53:37,341 - INFO - Test output for scikit-learn__scikit-learn-13779 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/scikit-learn__scikit-learn-13779/test_output.txt
+2025-02-10 13:53:37,461 - INFO - Git diff after:
+diff --git a/sklearn/ensemble/voting.py b/sklearn/ensemble/voting.py
+index 7afa7180c..0c40458aa 100644
+--- a/sklearn/ensemble/voting.py
++++ b/sklearn/ensemble/voting.py
+@@ -76,7 +76,7 @@ class _BaseVoting(_BaseComposition, TransformerMixin):
+                              '; got %d weights, %d estimators'
+                              % (len(self.weights), len(self.estimators)))
+ 
+-        if sample_weight is not None:
++        if sample_weight is not None and self.estimators is not None:
+             for name, step in self.estimators:
+                 if not has_fit_parameter(step, 'sample_weight'):
+                     raise ValueError('Underlying estimator \'%s\' does not'
+2025-02-10 13:53:37,461 - INFO - Grading answer for scikit-learn__scikit-learn-13779...
+2025-02-10 13:53:37,469 - INFO - report: {'scikit-learn__scikit-learn-13779': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['sklearn/ensemble/tests/test_voting.py::test_none_estimator_with_weights[X0-y0-voter0]', 'sklearn/ensemble/tests/test_voting.py::test_none_estimator_with_weights[X1-y1-voter1]']}, 'PASS_TO_PASS': {'success': ['sklearn/ensemble/tests/test_voting.py::test_estimator_init', 'sklearn/ensemble/tests/test_voting.py::test_predictproba_hardvoting', 'sklearn/ensemble/tests/test_voting.py::test_notfitted', 'sklearn/ensemble/tests/test_voting.py::test_majority_label_iris', 'sklearn/ensemble/tests/test_voting.py::test_tie_situation', 'sklearn/ensemble/tests/test_voting.py::test_weights_iris', 'sklearn/ensemble/tests/test_voting.py::test_weights_regressor', 'sklearn/ensemble/tests/test_voting.py::test_predict_on_toy_problem', 'sklearn/ensemble/tests/test_voting.py::test_predict_proba_on_toy_problem', 'sklearn/ensemble/tests/test_voting.py::test_multilabel', 'sklearn/ensemble/tests/test_voting.py::test_gridsearch', 'sklearn/ensemble/tests/test_voting.py::test_parallel_fit', 'sklearn/ensemble/tests/test_voting.py::test_sample_weight', 'sklearn/ensemble/tests/test_voting.py::test_sample_weight_kwargs', 'sklearn/ensemble/tests/test_voting.py::test_set_params', 'sklearn/ensemble/tests/test_voting.py::test_set_estimator_none', 'sklearn/ensemble/tests/test_voting.py::test_estimator_weights_format', 'sklearn/ensemble/tests/test_voting.py::test_transform'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for scikit-learn__scikit-learn-13779: resolved: False
+2025-02-10 13:53:37,470 - INFO - Attempting to stop container sweb.eval.scikit-learn__scikit-learn-13779.test...
+2025-02-10 13:53:52,738 - INFO - Attempting to remove container sweb.eval.scikit-learn__scikit-learn-13779.test...
+2025-02-10 13:53:52,749 - INFO - Container sweb.eval.scikit-learn__scikit-learn-13779.test removed.
+2025-02-10 13:53:52,749 - INFO - Attempting to remove image sweb.eval.x86_64.scikit-learn__scikit-learn-13779:latest...
+2025-02-10 13:53:52,902 - INFO - Image sweb.eval.x86_64.scikit-learn__scikit-learn-13779:latest removed.

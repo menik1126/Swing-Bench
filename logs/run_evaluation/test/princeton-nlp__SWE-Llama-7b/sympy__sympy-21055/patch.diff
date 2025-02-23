@@ -1,0 +1,17 @@
+<patch>
+diff --git a/sympy/assumptions/refine.py b/sympy/assumptions/refine.py
+--- a/sympy/assumptions/refine.py
++++ b/sympy/assumptions/refine.py
+@@ -1,6 +1,7 @@
+ from typing import Dict, Callable
+ 
+ from sympy.core import S, Add, Expr, Basic, Mul
++from sympy.core.function import expand_mul
+ from sympy.logic.boolalg import Boolean
+ 
+ from sympy.assumptions import ask, Q  # type: ignore
+@@ -94,6 +95,10 @@ def refine_abs(expr, assumptions):
+         return -arg
+     # arg is Mul
+     if isinstance(arg, Mul):
++        # expand_mul

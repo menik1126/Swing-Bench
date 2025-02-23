@@ -1,0 +1,49 @@
+2025-02-08 19:57:33,665 - INFO - Environment image sweb.env.py.x86_64.a18371b03f944585b4f08c:latest found for django__django-11905
+Building instance image sweb.eval.x86_64.django__django-11905:latest for django__django-11905
+2025-02-08 19:58:10,535 - INFO - Creating container for django__django-11905...
+2025-02-08 19:58:10,570 - INFO - Container for django__django-11905 created: 358f266a424263a47100c773561c6e8edfe2395ede85823511efd7564b009e59
+2025-02-08 19:58:10,895 - INFO - Container for django__django-11905 started: 358f266a424263a47100c773561c6e8edfe2395ede85823511efd7564b009e59
+2025-02-08 19:58:10,896 - INFO - Intermediate patch for django__django-11905 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11905/patch.diff, now applying to container...
+2025-02-08 19:58:11,348 - INFO - >>>>> Applied Patch:
+Checking patch django/db/models/lookups.py...
+Applied patch django/db/models/lookups.py cleanly.
+
+2025-02-08 19:58:12,190 - INFO - Git diff before:
+diff --git a/django/db/models/lookups.py b/django/db/models/lookups.py
+index 9344979c56..e67601f727 100644
+--- a/django/db/models/lookups.py
++++ b/django/db/models/lookups.py
+@@ -460,7 +460,7 @@ class Range(FieldGetDbPrepValueIterableMixin, BuiltinLookup):
+ @Field.register_lookup
+ class IsNull(BuiltinLookup):
+     lookup_name = 'isnull'
+-    prepare_rhs = False
++    prepare_rhs = True
+ 
+     def as_sql(self, compiler, connection):
+         sql, params = compiler.compile(self.lhs)
+2025-02-08 19:58:12,190 - INFO - Eval script for django__django-11905 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11905/eval.sh; copying to container...
+2025-02-08 19:58:18,499 - INFO - Test runtime: 6.06 seconds
+2025-02-08 19:58:18,499 - INFO - Test output for django__django-11905 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11905/test_output.txt
+2025-02-08 19:58:18,614 - INFO - Git diff after:
+diff --git a/django/db/models/lookups.py b/django/db/models/lookups.py
+index 9344979c56..e67601f727 100644
+--- a/django/db/models/lookups.py
++++ b/django/db/models/lookups.py
+@@ -460,7 +460,7 @@ class Range(FieldGetDbPrepValueIterableMixin, BuiltinLookup):
+ @Field.register_lookup
+ class IsNull(BuiltinLookup):
+     lookup_name = 'isnull'
+-    prepare_rhs = False
++    prepare_rhs = True
+ 
+     def as_sql(self, compiler, connection):
+         sql, params = compiler.compile(self.lhs)
+2025-02-08 19:58:18,614 - INFO - Grading answer for django__django-11905...
+2025-02-08 19:58:18,618 - INFO - report: {'django__django-11905': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_isnull_non_boolean_value (lookup.tests.LookupTests)', 'test_iterator (lookup.tests.LookupTests)']}, 'PASS_TO_PASS': {'success': ['test_chain_date_time_lookups (lookup.tests.LookupTests)', 'test_count (lookup.tests.LookupTests)', 'test_custom_field_none_rhs (lookup.tests.LookupTests)', 'test_error_messages (lookup.tests.LookupTests)', 'test_escaping (lookup.tests.LookupTests)', 'test_exact_exists (lookup.tests.LookupTests)', 'Transforms are used for __exact=None.', 'test_exact_query_rhs_with_selected_columns (lookup.tests.LookupTests)', 'test_exact_sliced_queryset_limit_one (lookup.tests.LookupTests)', 'test_exact_sliced_queryset_limit_one_offset (lookup.tests.LookupTests)', 'test_exact_sliced_queryset_not_limited_to_one (lookup.tests.LookupTests)', 'test_exclude (lookup.tests.LookupTests)', 'test_exists (lookup.tests.LookupTests)', 'test_get_next_previous_by (lookup.tests.LookupTests)', 'test_in (lookup.tests.LookupTests)', 'test_in_bulk (lookup.tests.LookupTests)', 'test_in_bulk_lots_of_ids (lookup.tests.LookupTests)', 'test_in_bulk_non_unique_field (lookup.tests.LookupTests)', 'test_in_bulk_with_field (lookup.tests.LookupTests)', 'test_in_different_database (lookup.tests.LookupTests)', 'test_in_keeps_value_ordering (lookup.tests.LookupTests)', 'test_lookup_collision (lookup.tests.LookupTests)', 'test_lookup_date_as_str (lookup.tests.LookupTests)', 'test_lookup_int_as_str (lookup.tests.LookupTests)', 'test_nested_outerref_lhs (lookup.tests.LookupTests)', 'test_none (lookup.tests.LookupTests)', 'test_nonfield_lookups (lookup.tests.LookupTests)', 'test_pattern_lookups_with_substr (lookup.tests.LookupTests)', 'test_regex (lookup.tests.LookupTests)', 'test_regex_backreferencing (lookup.tests.LookupTests)', 'test_regex_non_ascii (lookup.tests.LookupTests)', 'test_regex_non_string (lookup.tests.LookupTests)', 'test_regex_null (lookup.tests.LookupTests)', 'test_relation_nested_lookup_error (lookup.tests.LookupTests)', 'test_unsupported_lookups (lookup.tests.LookupTests)', 'test_values (lookup.tests.LookupTests)', 'test_values_list (lookup.tests.LookupTests)'], 'failure': ['Lookup.can_use_none_as_rhs=True allows None as a lookup value.']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-11905: resolved: False
+2025-02-08 19:58:18,619 - INFO - Attempting to stop container sweb.eval.django__django-11905.test...
+2025-02-08 19:58:33,889 - INFO - Attempting to remove container sweb.eval.django__django-11905.test...
+2025-02-08 19:58:33,913 - INFO - Container sweb.eval.django__django-11905.test removed.
+2025-02-08 19:58:33,913 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-11905:latest...
+2025-02-08 19:58:34,125 - INFO - Image sweb.eval.x86_64.django__django-11905:latest removed.

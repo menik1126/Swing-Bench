@@ -1,0 +1,303 @@
+2025-02-08 19:15:17,010 - INFO - Building image sweb.env.py.x86_64.088a7e628bda9770f9757b:latest
+Using dockerfile:
+FROM --platform=linux/x86_64 sweb.base.py.x86_64:latest
+
+COPY ./setup_env.sh /root/
+RUN sed -i -e 's/\r$//' /root/setup_env.sh
+RUN chmod +x /root/setup_env.sh
+RUN /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"
+
+WORKDIR /testbed/
+
+# Automatically activate the testbed environment
+RUN echo "source /opt/miniconda3/etc/profile.d/conda.sh && conda activate testbed" > /root/.bashrc
+
+Adding (1) setup scripts to image build repo
+2025-02-08 19:15:17,010 - INFO - [SETUP SCRIPT] setup_env.sh:
+#!/bin/bash
+set -euxo pipefail
+source /opt/miniconda3/bin/activate
+conda create -n testbed python=3.9  -y
+conda activate testbed
+python -m pip install atomicwrites==1.4.1 attrs==23.1.0 more-itertools==10.1.0 packaging==23.1 pluggy==0.13.1 py==1.11.0 six==1.16.0 wcwidth==0.2.6
+
+2025-02-08 19:15:17,010 - INFO - Building docker image sweb.env.py.x86_64.088a7e628bda9770f9757b:latest in logs/build_images/env/sweb.env.py.x86_64.088a7e628bda9770f9757b__latest with platform linux/x86_64
+2025-02-08 19:15:17,022 - INFO - Step 1/7 : FROM --platform=linux/x86_64 sweb.base.py.x86_64:latest
+2025-02-08 19:15:17,022 - INFO - 
+2025-02-08 19:15:17,022 - INFO - ---> f1bc4fb9a4bb
+2025-02-08 19:15:17,023 - INFO - Step 2/7 : COPY ./setup_env.sh /root/
+2025-02-08 19:15:17,023 - INFO - 
+2025-02-08 19:15:17,047 - INFO - ---> 9a07fb63eb25
+2025-02-08 19:15:17,047 - INFO - Step 3/7 : RUN sed -i -e 's/\r$//' /root/setup_env.sh
+2025-02-08 19:15:17,047 - INFO - 
+2025-02-08 19:15:17,053 - INFO - ---> Running in 248e1ee717e4
+2025-02-08 19:15:17,500 - INFO - ---> Removed intermediate container 248e1ee717e4
+2025-02-08 19:15:17,500 - INFO - ---> 684cb26647ae
+2025-02-08 19:15:17,501 - INFO - Step 4/7 : RUN chmod +x /root/setup_env.sh
+2025-02-08 19:15:17,501 - INFO - 
+2025-02-08 19:15:17,515 - INFO - ---> Running in 6f48179cb07f
+2025-02-08 19:15:18,145 - INFO - ---> Removed intermediate container 6f48179cb07f
+2025-02-08 19:15:18,145 - INFO - ---> 478835636aa6
+2025-02-08 19:15:18,145 - INFO - Step 5/7 : RUN /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"
+2025-02-08 19:15:18,146 - INFO - 
+2025-02-08 19:15:18,154 - INFO - ---> Running in 3efd40b2ad3f
+2025-02-08 19:15:18,466 - INFO - + source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+2025-02-08 19:15:18,466 - INFO - +++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
+2025-02-08 19:15:18,467 - INFO - +++++ dirname /opt/miniconda3/bin/conda
+2025-02-08 19:15:18,468 - INFO - ++++ dirname /opt/miniconda3/bin
+2025-02-08 19:15:18,469 - INFO - +++ PATH=/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
+2025-02-08 19:15:18,469 - INFO - +++ PS1=
++++ __conda_exe shell.posix activate
+2025-02-08 19:15:18,470 - INFO - +++ /opt/miniconda3/bin/conda shell.posix activate
+2025-02-08 19:15:18,593 - INFO - ++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda create -n testbed python=3.9 -y
++ local cmd=create
++ case "$cmd" in
++ __conda_exe create -n testbed python=3.9 -y
+2025-02-08 19:15:18,594 - INFO - + /opt/miniconda3/bin/conda create -n testbed python=3.9 -y
+2025-02-08 19:15:19,145 - INFO - Channels:
+ - defaults
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working...
+2025-02-08 19:16:01,572 - INFO - done
+Solving environment: ...working...
+2025-02-08 19:16:02,811 - INFO - done
+2025-02-08 19:16:06,158 - INFO - ## Package Plan ##
+
+  environment location: /opt/miniconda3/envs/testbed
+
+  added / updated specs:
+    - python=3.9
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2024.12.31 |       h06a4308_0         128 KB
+    ld_impl_linux-64-2.40      |       h12ee557_0         710 KB
+    libffi-3.4.4               |       h6a678d5_1         141 KB
+    openssl-3.0.15             |       h5eee18b_0         5.2 MB
+    pip-25.0                   |   py39h06a4308_0         2.3 MB
+    python-3.9.21              |       he870216_1        25.1 MB
+    setuptools-75.8.0          |   py39h06a4308_0         1.6 MB
+    sqlite-3.45.3              |       h5eee18b_0         1.2 MB
+    tk-8.6.14                  |       h39e8969_0         3.4 MB
+    tzdata-2025a               |       h04d1e81_0         117 KB
+    wheel-0.45.1               |   py39h06a4308_0         114 KB
+    xz-5.4.6                   |       h5eee18b_1         643 KB
+    zlib-1.2.13                |       h5eee18b_1         111 KB
+    ------------------------------------------------------------
+                                           Total:        40.7 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu 
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2024.12.31-h06a4308_0 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.40-h12ee557_0 
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_1 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1 
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1 
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1 
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0 
+  openssl            pkgs/main/linux-64::openssl-3.0.15-h5eee18b_0 
+  pip                pkgs/main/linux-64::pip-25.0-py39h06a4308_0 
+  python             pkgs/main/linux-64::python-3.9.21-he870216_1 
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0 
+  setuptools         pkgs/main/linux-64::setuptools-75.8.0-py39h06a4308_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.45.3-h5eee18b_0 
+  tk                 pkgs/main/linux-64::tk-8.6.14-h39e8969_0 
+  tzdata             pkgs/main/noarch::tzdata-2025a-h04d1e81_0 
+  wheel              pkgs/main/linux-64::wheel-0.45.1-py39h06a4308_0 
+  xz                 pkgs/main/linux-64::xz-5.4.6-h5eee18b_1 
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_1 
+
+
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: ...working...
+2025-02-08 19:16:06,439 - INFO - done
+Verifying transaction: ...working...
+2025-02-08 19:16:07,575 - INFO - done
+2025-02-08 19:16:07,576 - INFO - Executing transaction: ...working...
+2025-02-08 19:16:09,001 - INFO - done
+2025-02-08 19:16:09,018 - INFO - #
+# To activate this environment, use
+#
+#     $ conda activate testbed
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+2025-02-08 19:16:09,121 - INFO - + conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+2025-02-08 19:16:09,122 - INFO - ++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+2025-02-08 19:16:09,123 - INFO - ++ /opt/miniconda3/bin/conda shell.posix activate testbed
+2025-02-08 19:16:09,244 - INFO - + ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_1=/opt/miniconda3
+++ CONDA_PREFIX_1=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+2025-02-08 19:16:09,244 - INFO - ++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
+2025-02-08 19:16:09,245 - INFO - + '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ python -m pip install atomicwrites==1.4.1 attrs==23.1.0 more-itertools==10.1.0 packaging==23.1 pluggy==0.13.1 py==1.11.0 six==1.16.0 wcwidth==0.2.6
+2025-02-08 19:16:09,615 - INFO - Collecting atomicwrites==1.4.1
+2025-02-08 19:16:09,690 - INFO - Downloading atomicwrites-1.4.1.tar.gz (14 kB)
+2025-02-08 19:16:09,705 - INFO - Preparing metadata (setup.py): started
+2025-02-08 19:16:09,881 - INFO - Preparing metadata (setup.py): finished with status 'done'
+2025-02-08 19:16:09,922 - INFO - Collecting attrs==23.1.0
+2025-02-08 19:16:09,932 - INFO - Downloading attrs-23.1.0-py3-none-any.whl.metadata (11 kB)
+2025-02-08 19:16:09,991 - INFO - Collecting more-itertools==10.1.0
+2025-02-08 19:16:10,001 - INFO - Downloading more_itertools-10.1.0-py3-none-any.whl.metadata (33 kB)
+2025-02-08 19:16:10,035 - INFO - Collecting packaging==23.1
+2025-02-08 19:16:10,042 - INFO - Downloading packaging-23.1-py3-none-any.whl.metadata (3.1 kB)
+2025-02-08 19:16:10,066 - INFO - Collecting pluggy==0.13.1
+2025-02-08 19:16:10,073 - INFO - Downloading pluggy-0.13.1-py2.py3-none-any.whl.metadata (15 kB)
+2025-02-08 19:16:10,105 - INFO - Collecting py==1.11.0
+2025-02-08 19:16:10,111 - INFO - Downloading py-1.11.0-py2.py3-none-any.whl.metadata (2.8 kB)
+2025-02-08 19:16:10,153 - INFO - Collecting six==1.16.0
+2025-02-08 19:16:10,159 - INFO - Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+2025-02-08 19:16:10,177 - INFO - Collecting wcwidth==0.2.6
+2025-02-08 19:16:10,183 - INFO - Downloading wcwidth-0.2.6-py2.py3-none-any.whl.metadata (11 kB)
+2025-02-08 19:16:10,202 - INFO - Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+2025-02-08 19:16:10,212 - INFO - Downloading more_itertools-10.1.0-py3-none-any.whl (55 kB)
+2025-02-08 19:16:10,221 - INFO - Downloading packaging-23.1-py3-none-any.whl (48 kB)
+2025-02-08 19:16:10,229 - INFO - Downloading pluggy-0.13.1-py2.py3-none-any.whl (18 kB)
+2025-02-08 19:16:10,238 - INFO - Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+2025-02-08 19:16:10,247 - INFO - Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+2025-02-08 19:16:10,256 - INFO - Downloading wcwidth-0.2.6-py2.py3-none-any.whl (29 kB)
+2025-02-08 19:16:10,270 - INFO - Building wheels for collected packages: atomicwrites
+2025-02-08 19:16:10,270 - INFO - Building wheel for atomicwrites (setup.py): started
+2025-02-08 19:16:10,478 - INFO - Building wheel for atomicwrites (setup.py): finished with status 'done'
+2025-02-08 19:16:10,479 - INFO - Created wheel for atomicwrites: filename=atomicwrites-1.4.1-py2.py3-none-any.whl size=6991 sha256=2d893efe3507849815f6ece144ccce1eca8050749dc54c90be4ea5c66a458e9c
+2025-02-08 19:16:10,479 - INFO - Stored in directory: /root/.cache/pip/wheels/2a/b5/06/d2f34584f352e4af7d1d7ac1baf38b5d24142c8044cd024fd5
+2025-02-08 19:16:10,486 - INFO - Successfully built atomicwrites
+2025-02-08 19:16:10,540 - INFO - Installing collected packages: wcwidth, six, py, pluggy, packaging, more-itertools, attrs, atomicwrites
+2025-02-08 19:16:10,771 - INFO - Successfully installed atomicwrites-1.4.1 attrs-23.1.0 more-itertools-10.1.0 packaging-23.1 pluggy-0.13.1 py-1.11.0 six-1.16.0 wcwidth-0.2.6
+2025-02-08 19:16:10,771 - INFO - WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+2025-02-08 19:16:28,871 - INFO - ---> Removed intermediate container 3efd40b2ad3f
+2025-02-08 19:16:28,871 - INFO - ---> 97f961d986b6
+2025-02-08 19:16:28,872 - INFO - Step 6/7 : WORKDIR /testbed/
+2025-02-08 19:16:28,872 - INFO - 
+2025-02-08 19:16:28,896 - INFO - ---> Running in af0c4a71907f
+2025-02-08 19:16:28,917 - INFO - ---> Removed intermediate container af0c4a71907f
+2025-02-08 19:16:28,918 - INFO - ---> 9d76181ecd22
+2025-02-08 19:16:28,918 - INFO - Step 7/7 : RUN echo "source /opt/miniconda3/etc/profile.d/conda.sh && conda activate testbed" > /root/.bashrc
+2025-02-08 19:16:28,918 - INFO - 
+2025-02-08 19:16:28,928 - INFO - ---> Running in cade9b5b0418
+2025-02-08 19:16:29,405 - INFO - ---> Removed intermediate container cade9b5b0418
+2025-02-08 19:16:29,405 - INFO - ---> 01f60b0ee2b4
+2025-02-08 19:16:29,406 - INFO - Successfully built 01f60b0ee2b4
+2025-02-08 19:16:29,415 - INFO - Successfully tagged sweb.env.py.x86_64.088a7e628bda9770f9757b:latest
+2025-02-08 19:16:29,416 - INFO - Image built successfully!

@@ -1,0 +1,52 @@
+2025-02-10 12:56:21,505 - INFO - Environment image sweb.env.py.x86_64.b649f0ff62fad147f7f073:latest found for pylint-dev__pylint-7993
+Building instance image sweb.eval.x86_64.pylint-dev__pylint-7993:latest for pylint-dev__pylint-7993
+2025-02-10 12:56:36,118 - INFO - Creating container for pylint-dev__pylint-7993...
+2025-02-10 12:56:36,145 - INFO - Container for pylint-dev__pylint-7993 created: 14c9d1a131f03cdd902555947bb7524f4697db434777d814d77601b8c95c17d9
+2025-02-10 12:56:36,474 - INFO - Container for pylint-dev__pylint-7993 started: 14c9d1a131f03cdd902555947bb7524f4697db434777d814d77601b8c95c17d9
+2025-02-10 12:56:36,475 - INFO - Intermediate patch for pylint-dev__pylint-7993 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pylint-dev__pylint-7993/patch.diff, now applying to container...
+2025-02-10 12:56:36,878 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 12:56:36,993 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 12:56:37,112 - INFO - >>>>> Applied Patch:
+patching file pylint/reporters/text.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 175 with fuzz 2.
+
+2025-02-10 12:56:37,444 - INFO - Git diff before:
+diff --git a/pylint/reporters/text.py b/pylint/reporters/text.py
+index 29bd46798..f9a8f1d0a 100644
+--- a/pylint/reporters/text.py
++++ b/pylint/reporters/text.py
+@@ -175,7 +175,7 @@ class TextReporter(BaseReporter):
+         self._template = template
+ 
+         # Check to see if all parameters in the template are attributes of the Message
+-        arguments = re.findall(r"\{(.+?)(:.*)?\}", template)
++        arguments = re.findall(r"\{([^:]+)(:.*)?\}", template)
+         for argument in arguments:
+             if argument[0] not in MESSAGE_FIELDS:
+                 warnings.warn(
+2025-02-10 12:56:37,444 - INFO - Eval script for pylint-dev__pylint-7993 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pylint-dev__pylint-7993/eval.sh; copying to container...
+2025-02-10 12:56:44,887 - INFO - Test runtime: 7.10 seconds
+2025-02-10 12:56:44,887 - INFO - Test output for pylint-dev__pylint-7993 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pylint-dev__pylint-7993/test_output.txt
+2025-02-10 12:56:45,000 - INFO - Git diff after:
+diff --git a/pylint/reporters/text.py b/pylint/reporters/text.py
+index 29bd46798..f9a8f1d0a 100644
+--- a/pylint/reporters/text.py
++++ b/pylint/reporters/text.py
+@@ -175,7 +175,7 @@ class TextReporter(BaseReporter):
+         self._template = template
+ 
+         # Check to see if all parameters in the template are attributes of the Message
+-        arguments = re.findall(r"\{(.+?)(:.*)?\}", template)
++        arguments = re.findall(r"\{([^:]+)(:.*)?\}", template)
+         for argument in arguments:
+             if argument[0] not in MESSAGE_FIELDS:
+                 warnings.warn(
+2025-02-10 12:56:45,000 - INFO - Grading answer for pylint-dev__pylint-7993...
+2025-02-10 12:56:45,004 - INFO - report: {'pylint-dev__pylint-7993': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['tests/reporters/unittest_reporting.py::test_template_option_with_header']}, 'PASS_TO_PASS': {'success': ['tests/reporters/unittest_reporting.py::test_template_option_default', 'tests/reporters/unittest_reporting.py::test_deprecation_set_output', 'tests/reporters/unittest_reporting.py::test_parseable_output_deprecated', 'tests/reporters/unittest_reporting.py::test_parseable_output_regression', 'tests/reporters/unittest_reporting.py::test_multi_format_output', 'tests/reporters/unittest_reporting.py::test_multi_reporter_independant_messages', 'tests/reporters/unittest_reporting.py::test_display_results_is_renamed'], 'failure': ['tests/reporters/unittest_reporting.py::test_template_option', 'tests/reporters/unittest_reporting.py::test_template_option_end_line', 'tests/reporters/unittest_reporting.py::test_template_option_non_existing']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pylint-dev__pylint-7993: resolved: False
+2025-02-10 12:56:45,005 - INFO - Attempting to stop container sweb.eval.pylint-dev__pylint-7993.test...
+2025-02-10 12:57:00,227 - INFO - Attempting to remove container sweb.eval.pylint-dev__pylint-7993.test...
+2025-02-10 12:57:00,252 - INFO - Container sweb.eval.pylint-dev__pylint-7993.test removed.
+2025-02-10 12:57:00,252 - INFO - Attempting to remove image sweb.eval.x86_64.pylint-dev__pylint-7993:latest...
+2025-02-10 12:57:00,345 - INFO - Image sweb.eval.x86_64.pylint-dev__pylint-7993:latest removed.

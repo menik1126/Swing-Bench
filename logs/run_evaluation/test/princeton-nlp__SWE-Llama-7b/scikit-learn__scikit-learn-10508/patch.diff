@@ -1,0 +1,13 @@
+<patch>
+diff --git a/sklearn/preprocessing/label.py b/sklearn/preprocessing/label.py
+--- a/sklearn/preprocessing/label.py
++++ b/sklearn/preprocessing/label.py
+@@ -128,7 +128,7 @@ def transform(self, y):
+         y = column_or_1d(y, warn=True)
+ 
+         classes = np.unique(y)
+-        if len(np.intersect1d(classes, self.classes_)) < len(classes):
++        if len(np.intersect1d(classes, self.classes_, assume_unique=True)) < len(classes):
+             diff = np.setdiff1d(classes, self.classes_)
+             raise ValueError(
+                     "y contains previously unseen labels: %s"

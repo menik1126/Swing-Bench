@@ -1,0 +1,14 @@
+<patch>
+diff --git a/sympy/utilities/lambdify.py b/sympy/utilities/lambdify.py
+--- a/sympy/utilities/lambdify.py
++++ b/sympy/utilities/lambdify.py
+@@ -1153,7 +1153,7 @@ def doprint(self, funcname, args, expr, *, cses=()):
+ 
+ 
+         if '\n' in str_expr:
+-            str_expr = '({})'.format(str_expr)
++            str_expr = '({})'.format(str_expr) if len(str_expr) > 1 else str_expr
+         funcbody.append('return {}'.format(str_expr))
+ 
+         funclines = [funcsig]
+

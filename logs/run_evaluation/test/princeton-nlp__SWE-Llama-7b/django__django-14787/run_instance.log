@@ -1,0 +1,2469 @@
+2025-02-21 00:25:06,084 - INFO - Environment image sweb.env.py.x86_64.934a137824256b612e9dc5:latest found for django__django-14787
+Building instance image sweb.eval.x86_64.django__django-14787:latest for django__django-14787
+2025-02-21 00:28:47,725 - INFO - Creating container for django__django-14787...
+2025-02-21 00:28:47,751 - INFO - Container for django__django-14787 created: fa6a8563e181f7e4e6cbef8ad114601a50fb39eeacc9c6232a7f1bf649ebebf4
+2025-02-21 00:28:48,063 - INFO - Container for django__django-14787 started: fa6a8563e181f7e4e6cbef8ad114601a50fb39eeacc9c6232a7f1bf649ebebf4
+2025-02-21 00:28:48,063 - INFO - Intermediate patch for django__django-14787 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/patch.diff, now applying to container...
+2025-02-21 00:28:48,517 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-21 00:28:48,630 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-21 00:28:48,732 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-21 00:28:48,732 - INFO - >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+2025-02-21 00:28:48,736 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:28:48,737 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,737 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,737 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,737 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,737 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,737 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,737 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,737 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,738 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,738 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,738 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,738 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,738 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,738 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,738 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,738 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,738 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,739 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,739 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,739 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,739 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,739 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,739 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,739 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,739 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,739 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,739 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,740 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,740 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,740 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,740 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,740 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,740 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,740 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,740 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,740 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,741 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,741 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,741 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,741 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,741 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,741 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,741 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,741 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,741 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,742 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,742 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,742 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,742 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,742 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,742 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,742 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,742 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,742 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,743 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,743 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,743 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,743 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,743 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,743 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,743 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,743 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,743 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,743 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,744 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,744 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,744 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,744 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,744 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,744 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,744 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,744 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,744 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,745 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,745 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,745 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,745 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,745 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,745 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,745 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,745 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,745 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,746 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,746 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,746 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,746 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,746 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,746 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,746 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,746 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,746 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,746 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,747 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,747 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,747 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,747 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,747 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,747 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,747 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,747 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,747 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,748 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,748 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,748 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,748 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,748 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,748 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,748 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,748 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,748 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,749 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,749 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,749 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,749 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,749 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,749 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,749 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,749 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,749 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,750 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,750 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,750 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,753 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:28:48,754 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,754 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,754 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,754 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,754 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,754 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,754 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,754 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,754 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,754 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,755 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,755 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,755 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,755 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,755 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,755 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,755 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,755 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,755 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,756 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,756 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,756 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,756 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,756 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,756 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,756 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,756 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,756 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,757 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,757 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,757 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,757 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,757 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,757 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,757 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,757 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,757 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,757 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,758 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,758 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,758 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,758 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,758 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,758 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,758 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,758 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,758 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,759 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,759 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,759 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,759 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,759 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,759 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,759 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,759 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,759 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,760 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,760 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,760 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,760 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,760 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,760 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,760 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,760 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,760 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,760 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,761 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,761 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,761 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,761 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,761 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,761 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,761 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,761 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,761 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,762 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,762 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,762 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,762 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,762 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,762 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,762 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,762 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,762 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,763 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,763 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,763 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,763 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,763 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,763 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,763 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,763 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,763 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,763 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,764 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,764 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,764 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,764 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,764 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,764 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,764 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,764 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,764 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,765 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,765 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,765 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,765 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,765 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,765 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,765 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,765 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,765 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,766 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,766 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,766 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,766 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,766 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,766 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,766 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,766 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,766 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,766 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-14787: >>>>> Patch Apply Failed:
+patching file django/utils/decorators.py
+patch: **** malformed patch at line 12: @@ -72,6 +73,10 @@ def _dec(obj):
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-14787/run_instance.log) for more information.
+
+2025-02-21 00:28:48,767 - INFO - Attempting to stop container sweb.eval.django__django-14787.test...
+2025-02-21 00:29:03,988 - INFO - Attempting to remove container sweb.eval.django__django-14787.test...
+2025-02-21 00:29:03,998 - INFO - Container sweb.eval.django__django-14787.test removed.
+2025-02-21 00:29:03,999 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-14787:latest...
+2025-02-21 00:29:04,250 - INFO - Image sweb.eval.x86_64.django__django-14787:latest removed.

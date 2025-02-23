@@ -1,0 +1,2469 @@
+2025-02-21 00:19:26,794 - INFO - Environment image sweb.env.py.x86_64.a18371b03f944585b4f08c:latest found for django__django-12747
+Building instance image sweb.eval.x86_64.django__django-12747:latest for django__django-12747
+2025-02-21 00:20:05,252 - INFO - Creating container for django__django-12747...
+2025-02-21 00:20:05,280 - INFO - Container for django__django-12747 created: c128e40e31265d2a2063533865173bd9d7539fd4484b917248b7ca7300df3523
+2025-02-21 00:20:05,607 - INFO - Container for django__django-12747 started: c128e40e31265d2a2063533865173bd9d7539fd4484b917248b7ca7300df3523
+2025-02-21 00:20:05,608 - INFO - Intermediate patch for django__django-12747 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/patch.diff, now applying to container...
+2025-02-21 00:20:06,000 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-21 00:20:06,115 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-21 00:20:06,227 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-21 00:20:06,227 - INFO - >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+2025-02-21 00:20:06,232 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:20:06,232 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,232 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,232 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,232 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,232 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,232 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,232 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,233 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,233 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,233 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,233 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,233 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,233 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,233 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,233 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,233 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,234 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,234 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,234 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,234 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,234 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,234 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,234 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,234 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,234 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,234 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,235 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,235 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,235 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,235 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,235 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,235 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,235 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,235 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,236 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,236 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,236 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,236 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,236 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,236 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,236 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,236 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,236 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,236 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,237 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,237 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,237 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,237 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,237 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,237 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,237 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,237 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,238 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,238 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,238 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,238 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,238 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,238 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,238 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,238 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,238 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,238 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,239 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,239 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,239 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,239 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,239 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,239 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,239 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,239 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,239 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,240 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,240 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,240 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,240 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,240 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,240 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,240 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,240 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,240 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,241 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,241 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,241 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,241 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,241 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,241 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,241 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,241 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,241 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,241 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,242 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,242 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,242 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,242 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,242 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,242 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,242 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,242 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,242 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,243 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,243 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,243 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,243 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,243 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,243 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,243 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,243 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,243 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,244 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,244 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,244 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,244 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,244 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,244 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,244 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,244 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,244 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,245 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,245 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,245 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,245 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,245 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,249 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:20:06,249 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,249 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,249 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,249 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,249 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,249 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,249 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,250 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,250 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,250 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,250 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,250 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,250 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,250 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,250 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,250 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,251 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,251 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,251 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,251 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,251 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,251 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,251 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,251 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,251 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,252 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,252 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,252 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,252 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,252 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,252 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,252 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,252 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,252 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,252 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,253 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,253 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,253 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,253 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,253 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,253 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,253 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,253 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,253 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,254 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,254 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,254 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,254 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,254 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,254 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,254 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,254 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,254 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,254 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,255 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,255 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,255 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,255 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,255 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,255 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,255 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,255 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,255 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,256 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,256 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,256 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,256 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,256 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,256 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,256 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,256 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,256 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,256 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,257 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,257 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,257 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,257 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,257 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,257 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,257 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,257 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,257 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,258 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,258 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,258 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,258 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,258 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,258 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,258 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,258 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,258 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,259 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,259 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,259 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,259 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,259 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,259 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,259 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,259 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,259 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,259 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,260 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,260 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,260 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,260 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,260 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,260 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,260 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,260 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,260 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,261 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,261 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,261 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,261 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,261 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,261 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,261 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,261 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,261 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,261 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,262 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,262 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12747: >>>>> Patch Apply Failed:
+patching file django/db/models/deletion.py
+patch unexpectedly ends in middle of line
+patch: **** unexpected end of file in patch
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-12747/run_instance.log) for more information.
+
+2025-02-21 00:20:06,262 - INFO - Attempting to stop container sweb.eval.django__django-12747.test...
+2025-02-21 00:20:21,498 - INFO - Attempting to remove container sweb.eval.django__django-12747.test...
+2025-02-21 00:20:21,509 - INFO - Container sweb.eval.django__django-12747.test removed.
+2025-02-21 00:20:21,510 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-12747:latest...
+2025-02-21 00:20:21,751 - INFO - Image sweb.eval.x86_64.django__django-12747:latest removed.

@@ -1,0 +1,2469 @@
+2025-02-10 14:13:13,001 - INFO - Environment image sweb.env.py.x86_64.764c21123474adcba1e003:latest found for sphinx-doc__sphinx-7738
+Building instance image sweb.eval.x86_64.sphinx-doc__sphinx-7738:latest for sphinx-doc__sphinx-7738
+2025-02-10 14:13:35,443 - INFO - Creating container for sphinx-doc__sphinx-7738...
+2025-02-10 14:13:35,475 - INFO - Container for sphinx-doc__sphinx-7738 created: 388a10347e04b641cf6b4511bd1a3eb005e83402e73fc1ea139f19d6d0ffc7d0
+2025-02-10 14:13:35,772 - INFO - Container for sphinx-doc__sphinx-7738 started: 388a10347e04b641cf6b4511bd1a3eb005e83402e73fc1ea139f19d6d0ffc7d0
+2025-02-10 14:13:35,773 - INFO - Intermediate patch for sphinx-doc__sphinx-7738 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/patch.diff, now applying to container...
+2025-02-10 14:13:36,183 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 14:13:36,291 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 14:13:36,401 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-10 14:13:36,401 - INFO - >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+2025-02-10 14:13:36,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-10 14:13:36,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,418 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,418 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,418 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,418 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,418 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,418 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,418 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,418 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,418 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,419 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,419 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,419 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,419 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,419 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,419 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,419 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,419 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,419 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,420 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,420 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,420 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,420 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,420 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,420 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,420 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,424 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-10 14:13:36,424 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,424 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,424 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,424 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,425 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,425 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,425 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,425 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,425 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,425 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,425 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,425 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,425 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,426 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,426 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,426 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,426 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,426 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,426 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,426 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,426 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,426 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,427 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,427 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,427 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,427 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,427 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,427 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,427 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,427 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,427 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,428 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,428 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,428 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,428 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,428 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,428 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,428 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,428 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,428 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,428 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,429 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,429 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,429 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,429 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,429 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,429 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,429 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,429 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,429 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,430 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,430 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,430 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,430 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,430 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,430 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,430 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,430 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,430 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,431 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,431 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,431 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,431 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,431 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,431 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,431 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,431 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,431 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,432 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,432 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,432 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,432 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,432 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,432 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,432 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,432 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,432 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,433 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,433 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,433 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,433 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,433 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,433 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,433 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,433 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,433 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,434 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,434 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,434 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,434 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,434 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,434 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,434 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,434 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,434 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,435 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,435 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,435 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,435 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,435 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,435 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,435 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,435 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,435 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,435 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,436 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,436 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,436 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,436 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,436 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,436 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,436 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,436 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,436 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,437 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,437 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,437 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,437 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,437 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,437 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,437 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,437 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sphinx-doc__sphinx-7738: >>>>> Patch Apply Failed:
+patching file sphinx/ext/napoleon/docstring.py
+patch: **** malformed patch at line 13: 
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sphinx-doc__sphinx-7738/run_instance.log) for more information.
+
+2025-02-10 14:13:36,437 - INFO - Attempting to stop container sweb.eval.sphinx-doc__sphinx-7738.test...
+2025-02-10 14:13:51,647 - INFO - Attempting to remove container sweb.eval.sphinx-doc__sphinx-7738.test...
+2025-02-10 14:13:51,660 - INFO - Container sweb.eval.sphinx-doc__sphinx-7738.test removed.
+2025-02-10 14:13:51,660 - INFO - Attempting to remove image sweb.eval.x86_64.sphinx-doc__sphinx-7738:latest...
+2025-02-10 14:13:51,866 - INFO - Image sweb.eval.x86_64.sphinx-doc__sphinx-7738:latest removed.

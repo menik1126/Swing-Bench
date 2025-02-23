@@ -1,0 +1,45 @@
+2025-02-10 12:55:39,873 - INFO - Environment image sweb.env.py.x86_64.b649f0ff62fad147f7f073:latest found for pylint-dev__pylint-7228
+Building instance image sweb.eval.x86_64.pylint-dev__pylint-7228:latest for pylint-dev__pylint-7228
+2025-02-10 12:55:56,696 - INFO - Creating container for pylint-dev__pylint-7228...
+2025-02-10 12:55:56,725 - INFO - Container for pylint-dev__pylint-7228 created: c7efedd93f082b3cb8efb8b0133079c3ed7797d17f09f69a7254ee95b875534d
+2025-02-10 12:55:57,051 - INFO - Container for pylint-dev__pylint-7228 started: c7efedd93f082b3cb8efb8b0133079c3ed7797d17f09f69a7254ee95b875534d
+2025-02-10 12:55:57,052 - INFO - Intermediate patch for pylint-dev__pylint-7228 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pylint-dev__pylint-7228/patch.diff, now applying to container...
+2025-02-10 12:55:57,495 - INFO - >>>>> Applied Patch:
+Checking patch pylint/config/argument.py...
+Applied patch pylint/config/argument.py cleanly.
+
+2025-02-10 12:55:57,834 - INFO - Git diff before:
+diff --git a/pylint/config/argument.py b/pylint/config/argument.py
+index 3c2951517..6d1e27873 100644
+--- a/pylint/config/argument.py
++++ b/pylint/config/argument.py
+@@ -103,7 +103,7 @@ def _regexp_csv_transfomer(value: str) -> Sequence[Pattern[str]]:
+     """Transforms a comma separated list of regular expressions."""
+     patterns: list[Pattern[str]] = []
+     for pattern in _csv_transformer(value):
+-        patterns.append(re.compile(pattern))
++        patterns.append(re.compile(pattern, flags=re.UNICODE))
+     return patterns
+2025-02-10 12:55:57,835 - INFO - Eval script for pylint-dev__pylint-7228 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pylint-dev__pylint-7228/eval.sh; copying to container...
+2025-02-10 12:56:05,975 - INFO - Test runtime: 7.84 seconds
+2025-02-10 12:56:05,975 - INFO - Test output for pylint-dev__pylint-7228 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pylint-dev__pylint-7228/test_output.txt
+2025-02-10 12:56:06,063 - INFO - Git diff after:
+diff --git a/pylint/config/argument.py b/pylint/config/argument.py
+index 3c2951517..6d1e27873 100644
+--- a/pylint/config/argument.py
++++ b/pylint/config/argument.py
+@@ -103,7 +103,7 @@ def _regexp_csv_transfomer(value: str) -> Sequence[Pattern[str]]:
+     """Transforms a comma separated list of regular expressions."""
+     patterns: list[Pattern[str]] = []
+     for pattern in _csv_transformer(value):
+-        patterns.append(re.compile(pattern))
++        patterns.append(re.compile(pattern, flags=re.UNICODE))
+     return patterns
+2025-02-10 12:56:06,063 - INFO - Grading answer for pylint-dev__pylint-7228...
+2025-02-10 12:56:06,071 - INFO - report: {'pylint-dev__pylint-7228': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['tests/config/test_config.py::test_regex_error', 'tests/config/test_config.py::test_csv_regex_error']}, 'PASS_TO_PASS': {'success': ['tests/config/test_config.py::test_can_read_toml_env_variable', 'tests/config/test_config.py::test_unknown_message_id', 'tests/config/test_config.py::test_unknown_option_name', 'tests/config/test_config.py::test_unknown_short_option_name', 'tests/config/test_config.py::test_unknown_confidence', 'tests/config/test_config.py::test_empty_confidence', 'tests/config/test_config.py::test_unknown_yes_no', 'tests/config/test_config.py::test_unknown_py_version', 'tests/config/test_config.py::test_short_verbose', 'tests/config/test_config.py::test_argument_separator'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pylint-dev__pylint-7228: resolved: False
+2025-02-10 12:56:06,071 - INFO - Attempting to stop container sweb.eval.pylint-dev__pylint-7228.test...
+2025-02-10 12:56:21,341 - INFO - Attempting to remove container sweb.eval.pylint-dev__pylint-7228.test...
+2025-02-10 12:56:21,366 - INFO - Container sweb.eval.pylint-dev__pylint-7228.test removed.
+2025-02-10 12:56:21,366 - INFO - Attempting to remove image sweb.eval.x86_64.pylint-dev__pylint-7228:latest...
+2025-02-10 12:56:21,497 - INFO - Image sweb.eval.x86_64.pylint-dev__pylint-7228:latest removed.

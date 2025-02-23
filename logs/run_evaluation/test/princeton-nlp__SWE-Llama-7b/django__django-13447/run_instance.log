@@ -1,0 +1,28 @@
+2025-02-08 20:16:41,265 - INFO - Environment image sweb.env.py.x86_64.297af196949a2a635bce66:latest found for django__django-13447
+Building instance image sweb.eval.x86_64.django__django-13447:latest for django__django-13447
+2025-02-08 20:17:20,937 - INFO - Creating container for django__django-13447...
+2025-02-08 20:17:20,964 - INFO - Container for django__django-13447 created: 3a0819fa46c54e54add9e4445cef41a9a67882b5d94a8da9dd8ba2e81e75cc61
+2025-02-08 20:17:21,313 - INFO - Container for django__django-13447 started: 3a0819fa46c54e54add9e4445cef41a9a67882b5d94a8da9dd8ba2e81e75cc61
+2025-02-08 20:17:21,314 - INFO - Intermediate patch for django__django-13447 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-13447/patch.diff, now applying to container...
+2025-02-08 20:17:21,712 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-08 20:17:21,823 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-08 20:17:21,931 - INFO - >>>>> Applied Patch:
+patching file django/contrib/admin/sites.py
+patch unexpectedly ends in middle of line
+patch unexpectedly ends in middle of line
+
+2025-02-08 20:17:22,829 - INFO - Git diff before:
+
+2025-02-08 20:17:22,830 - INFO - Eval script for django__django-13447 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-13447/eval.sh; copying to container...
+2025-02-08 20:17:29,651 - INFO - Test runtime: 6.53 seconds
+2025-02-08 20:17:29,652 - INFO - Test output for django__django-13447 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-13447/test_output.txt
+2025-02-08 20:17:29,782 - INFO - Git diff after:
+
+2025-02-08 20:17:29,782 - INFO - Grading answer for django__django-13447...
+2025-02-08 20:17:29,785 - INFO - report: {'django__django-13447': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_available_apps (admin_views.test_adminsite.SiteEachContextTest)']}, 'PASS_TO_PASS': {'success': ['test_add_action (admin_views.test_adminsite.SiteActionsTests)', 'test_disable_action (admin_views.test_adminsite.SiteActionsTests)', "AdminSite.get_action() returns an action even if it's disabled.", 'test_each_context (admin_views.test_adminsite.SiteEachContextTest)', 'test_each_context_site_url_with_script_name (admin_views.test_adminsite.SiteEachContextTest)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-13447: resolved: False
+2025-02-08 20:17:29,786 - INFO - Attempting to stop container sweb.eval.django__django-13447.test...
+2025-02-08 20:17:45,099 - INFO - Attempting to remove container sweb.eval.django__django-13447.test...
+2025-02-08 20:17:45,138 - INFO - Container sweb.eval.django__django-13447.test removed.
+2025-02-08 20:17:45,138 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-13447:latest...
+2025-02-08 20:17:45,420 - INFO - Image sweb.eval.x86_64.django__django-13447:latest removed.

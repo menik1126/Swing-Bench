@@ -1,0 +1,14 @@
+<patch>
+diff --git a/django/contrib/admin/views/autocomplete.py b/django/contrib/admin/views/autocomplete.py
+--- a/django/contrib/admin/views/autocomplete.py
++++ b/django/contrib/admin/views/autocomplete.py
+@@ -26,7 +26,7 @@ def get(self, request, *args, **kwargs):
+         context = self.get_context_data()
+         return JsonResponse({
+             'results': [
+-                {'id': str(getattr(obj, to_field_name)), 'text': str(obj)}
++                self.serialize_result(obj, to_field_name)
+                 for obj in context['object_list']
+             ],
+             'pagination': {'more': context['page_obj'].has_next()},
+@@ -

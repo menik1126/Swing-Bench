@@ -1,0 +1,16 @@
+<patch>
+diff --git a/sympy/functions/elementary/complexes.py b/sympy/functions/elementary/complexes.py
+--- a/sympy/functions/elementary/complexes.py
++++ b/sympy/functions/elementary/complexes.py
+@@ -290,7 +290,7 @@ class sign(Function):
+     def doit(self, **hints):
+         if self.args[0].is_zero is False:
+             return self.args[0] / Abs(self.args[0])
+-        return self
++        return S.One
+ 
+     @classmethod
+     def eval(cls, arg):
+@@ -320,7 +320,7 @@ def eval(cls, arg):
+         if arg is S.NaN:
+             return S.NaN

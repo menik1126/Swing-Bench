@@ -1,0 +1,15 @@
+<patch>
+diff --git a/sphinx/ext/autodoc/typehints.py b/sphinx/ext/autodoc/typehints.py
+--- a/sphinx/ext/autodoc/typehints.py
++++ b/sphinx/ext/autodoc/typehints.py
+@@ -115,7 +115,7 @@ def modify_field_list(node: nodes.field_list, annotations: Dict[str, str],
+         if name == 'return':
+             continue
+ 
+-        arg = arguments.get(name, {})
++        arg = arguments.get(name, {'param': False})
+         if not arg.get('type'):
+             field = nodes.field()
+             field += nodes.field_name('', 'type ' + name)
+
+</

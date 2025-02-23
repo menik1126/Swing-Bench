@@ -1,0 +1,14 @@
+
+diff --git a/django/contrib/auth/management/__init__.py b/django/contrib/auth/management/__init__.py
+--- a/django/contrib/auth/management/__init__.py
++++ b/django/contrib/auth/management/__init__.py
+@@ -65,7 +65,7 @@ def create_permissions(
+     except LookupError:
+         return
+ 
+-    if not router.allow_migrate_model(using, Permission):
++    if not router.allow_migrate(using, "auth", model=Permission):
+         return
+ 
+     # This will hold the permissions we're looking for as
+

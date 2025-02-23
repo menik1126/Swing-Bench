@@ -1,0 +1,14 @@
+
+diff --git a/django/core/management/commands/shell.py b/django/core/management/commands/shell.py
+--- a/django/core/management/commands/shell.py
++++ b/django/core/management/commands/shell.py
+@@ -84,7 +84,7 @@ def python(self, options):
+     def handle(self, **options):
+         # Execute the command and exit.
+         if options['command']:
+-            exec(options['command'])
++            exec(options['command'], globals())
+             return
+ 
+         # Execute stdin if it has anything to read and exit.
+

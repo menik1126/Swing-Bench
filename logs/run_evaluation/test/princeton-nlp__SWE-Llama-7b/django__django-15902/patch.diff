@@ -1,0 +1,14 @@
+
+diff --git a/django/forms/formsets.py b/django/forms/formsets.py
+--- a/django/forms/formsets.py
++++ b/django/forms/formsets.py
+@@ -145,7 +145,7 @@ def __repr__(self):
+     def management_form(self):
+         """Return the ManagementForm instance for this FormSet."""
+         if self.is_bound:
+-            form = ManagementForm(
++            form = ManagementForm(self.data,
+                 self.data,
+                 auto_id=self.auto_id,
+                 prefix=self.prefix,
+

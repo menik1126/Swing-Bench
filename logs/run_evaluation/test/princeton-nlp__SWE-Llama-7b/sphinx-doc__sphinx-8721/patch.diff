@@ -1,0 +1,10 @@
+<patch>
+diff --git a/sphinx/ext/viewcode.py b/sphinx/ext/viewcode.py
+--- a/sphinx/ext/viewcode.py
++++ b/sphinx/ext/viewcode.py
+@@ -56,7 +56,7 @@ def doctree_read(app: Sphinx, doctree: Node) -> None:
+         env._viewcode_modules = {}  # type: ignore
+     if app.builder.name == "singlehtml":
+         return
+-    if app.builder.name.startswith("epub") and not env.config.viewcode_enable_epub:
++    if app.builder.name.startswith("epub") and not env.config.viewcode_enable_epub and not env.config.html_code_include_source:

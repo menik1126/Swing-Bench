@@ -1,0 +1,13 @@
+<patch>
+diff --git a/django/db/models/lookups.py b/django/db/models/lookups.py
+--- a/django/db/models/lookups.py
++++ b/django/db/models/lookups.py
+@@ -105,7 +105,7 @@ def relabeled_clone(self, relabels):
+             new.rhs = new.rhs.relabeled_clone(relabels)
+         return new
+ 
+-    def get_group_by_cols(self, alias=None):
++    def get_group_by_cols(self, alias=None, allow_joins=True):
+         cols = self.lhs.get_group_by_cols()
+         if hasattr(self.rhs, 'get_group_by_cols'):
+             cols.extend(

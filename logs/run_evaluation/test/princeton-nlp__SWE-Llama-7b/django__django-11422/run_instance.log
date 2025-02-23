@@ -1,0 +1,49 @@
+2025-02-08 19:49:36,488 - INFO - Environment image sweb.env.py.x86_64.2baaea72acc974f6c02079:latest found for django__django-11422
+Building instance image sweb.eval.x86_64.django__django-11422:latest for django__django-11422
+2025-02-08 19:50:12,891 - INFO - Creating container for django__django-11422...
+2025-02-08 19:50:12,917 - INFO - Container for django__django-11422 created: 5f6057aeaea851e63dfb6cc77ca9d066b0d1c5b413c63550644c393166df49ec
+2025-02-08 19:50:13,194 - INFO - Container for django__django-11422 started: 5f6057aeaea851e63dfb6cc77ca9d066b0d1c5b413c63550644c393166df49ec
+2025-02-08 19:50:13,195 - INFO - Intermediate patch for django__django-11422 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11422/patch.diff, now applying to container...
+2025-02-08 19:50:13,576 - INFO - >>>>> Applied Patch:
+Checking patch django/utils/autoreload.py...
+Applied patch django/utils/autoreload.py cleanly.
+
+2025-02-08 19:50:14,324 - INFO - Git diff before:
+diff --git a/django/utils/autoreload.py b/django/utils/autoreload.py
+index 7ca0d68fae..62d24661c8 100644
+--- a/django/utils/autoreload.py
++++ b/django/utils/autoreload.py
+@@ -241,7 +241,7 @@ class BaseReloader:
+         Yield all files that need to be watched, including module files and
+         files within globs.
+         """
+-        yield from iter_all_python_module_files()
++        yield from iter_all_python_module_files(include_globs)
+         yield from self.extra_files
+         if include_globs:
+             for directory, patterns in self.directory_globs.items():
+2025-02-08 19:50:14,324 - INFO - Eval script for django__django-11422 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11422/eval.sh; copying to container...
+2025-02-08 19:50:20,284 - INFO - Test runtime: 5.65 seconds
+2025-02-08 19:50:20,285 - INFO - Test output for django__django-11422 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11422/test_output.txt
+2025-02-08 19:50:20,408 - INFO - Git diff after:
+diff --git a/django/utils/autoreload.py b/django/utils/autoreload.py
+index 7ca0d68fae..62d24661c8 100644
+--- a/django/utils/autoreload.py
++++ b/django/utils/autoreload.py
+@@ -241,7 +241,7 @@ class BaseReloader:
+         Yield all files that need to be watched, including module files and
+         files within globs.
+         """
+-        yield from iter_all_python_module_files()
++        yield from iter_all_python_module_files(include_globs)
+         yield from self.extra_files
+         if include_globs:
+             for directory, patterns in self.directory_globs.items():
+2025-02-08 19:50:20,408 - INFO - Grading answer for django__django-11422...
+2025-02-08 19:50:20,424 - INFO - report: {'django__django-11422': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_main_module_is_resolved (utils_tests.test_autoreload.TestIterModulesAndFiles)']}, 'PASS_TO_PASS': {'success': ['test_watchman_available (utils_tests.test_autoreload.GetReloaderTests)', 'test_watchman_unavailable (utils_tests.test_autoreload.GetReloaderTests)', 'test_calls_start_django (utils_tests.test_autoreload.RunWithReloaderTests)', 'test_calls_sys_exit (utils_tests.test_autoreload.RunWithReloaderTests)', 'test_swallows_keyboard_interrupt (utils_tests.test_autoreload.RunWithReloaderTests)', 'test_common_roots (utils_tests.test_autoreload.TestCommonRoots)', 'test_no_exception (utils_tests.test_autoreload.TestRaiseLastException)', 'test_raises_exception (utils_tests.test_autoreload.TestRaiseLastException)', 'test_mutates_error_files (utils_tests.test_autoreload.TestCheckErrors)', 'test_sys_paths_absolute (utils_tests.test_autoreload.TestSysPathDirectories)', 'test_sys_paths_directories (utils_tests.test_autoreload.TestSysPathDirectories)', 'test_sys_paths_non_existing (utils_tests.test_autoreload.TestSysPathDirectories)', 'test_sys_paths_with_directories (utils_tests.test_autoreload.TestSysPathDirectories)', 'test_manage_py (utils_tests.test_autoreload.RestartWithReloaderTests)', 'test_python_m_django (utils_tests.test_autoreload.RestartWithReloaderTests)', 'test_run_loop_catches_stopiteration (utils_tests.test_autoreload.BaseReloaderTests)', 'test_run_loop_stop_and_return (utils_tests.test_autoreload.BaseReloaderTests)', 'test_wait_for_apps_ready_checks_for_exception (utils_tests.test_autoreload.BaseReloaderTests)', 'test_wait_for_apps_ready_without_exception (utils_tests.test_autoreload.BaseReloaderTests)', 'test_watch_without_absolute (utils_tests.test_autoreload.BaseReloaderTests)', 'test_file (utils_tests.test_autoreload.StatReloaderTests)', 'test_glob (utils_tests.test_autoreload.StatReloaderTests)', 'test_glob_recursive (utils_tests.test_autoreload.StatReloaderTests)', 'test_multiple_globs (utils_tests.test_autoreload.StatReloaderTests)', 'test_multiple_recursive_globs (utils_tests.test_autoreload.StatReloaderTests)', 'test_nested_glob_recursive (utils_tests.test_autoreload.StatReloaderTests)', 'test_overlapping_glob_recursive (utils_tests.test_autoreload.StatReloaderTests)', 'test_overlapping_globs (utils_tests.test_autoreload.StatReloaderTests)', 'test_snapshot_files_ignores_missing_files (utils_tests.test_autoreload.StatReloaderTests)', 'test_snapshot_files_updates (utils_tests.test_autoreload.StatReloaderTests)', 'test_snapshot_files_with_duplicates (utils_tests.test_autoreload.StatReloaderTests)', 'test_check_errors_called (utils_tests.test_autoreload.StartDjangoTests)', 'test_echo_on_called (utils_tests.test_autoreload.StartDjangoTests)', 'test_starts_thread_with_args (utils_tests.test_autoreload.StartDjangoTests)', 'test_watchman_becomes_unavailable (utils_tests.test_autoreload.StartDjangoTests)', '.pyc and .pyo files are included in the files list.', 'test_check_errors (utils_tests.test_autoreload.TestIterModulesAndFiles)', 'test_check_errors_catches_all_exceptions (utils_tests.test_autoreload.TestIterModulesAndFiles)', 'test_file_added (utils_tests.test_autoreload.TestIterModulesAndFiles)', 'test_module_without_spec (utils_tests.test_autoreload.TestIterModulesAndFiles)', 'test_paths_are_pathlib_instances (utils_tests.test_autoreload.TestIterModulesAndFiles)', 'iter_all_python_module_file() ignores weakref modules.', 'test_zip_reload (utils_tests.test_autoreload.TestIterModulesAndFiles)'], 'failure': ['test_watch_files_with_recursive_glob (utils_tests.test_autoreload.BaseReloaderTests)', 'test_watch_with_glob (utils_tests.test_autoreload.BaseReloaderTests)', 'test_watch_with_single_file (utils_tests.test_autoreload.BaseReloaderTests)']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-11422: resolved: False
+2025-02-08 19:50:20,425 - INFO - Attempting to stop container sweb.eval.django__django-11422.test...
+2025-02-08 19:50:35,681 - INFO - Attempting to remove container sweb.eval.django__django-11422.test...
+2025-02-08 19:50:35,715 - INFO - Container sweb.eval.django__django-11422.test removed.
+2025-02-08 19:50:35,715 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-11422:latest...
+2025-02-08 19:50:35,983 - INFO - Image sweb.eval.x86_64.django__django-11422:latest removed.

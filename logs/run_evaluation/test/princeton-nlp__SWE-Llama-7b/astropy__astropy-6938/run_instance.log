@@ -1,0 +1,2714 @@
+2025-02-21 00:11:17,662 - INFO - Environment image sweb.env.py.x86_64.c70974ae7654c7a2c98577:latest found for astropy__astropy-6938
+Building instance image sweb.eval.x86_64.astropy__astropy-6938:latest for astropy__astropy-6938
+2025-02-21 00:13:30,103 - INFO - Creating container for astropy__astropy-6938...
+2025-02-21 00:13:30,127 - INFO - Container for astropy__astropy-6938 created: 79b93e872e98387e276efc34bc8b5a3f647bd1d215d4a78e6808318d20323f99
+2025-02-21 00:13:30,427 - INFO - Container for astropy__astropy-6938 started: 79b93e872e98387e276efc34bc8b5a3f647bd1d215d4a78e6808318d20323f99
+2025-02-21 00:13:30,427 - INFO - Intermediate patch for astropy__astropy-6938 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/patch.diff, now applying to container...
+2025-02-21 00:13:30,874 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-21 00:13:30,989 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-21 00:13:31,095 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-21 00:13:31,095 - INFO - >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+2025-02-21 00:13:31,101 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:13:31,101 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,101 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,101 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,118 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
+patching file astropy/io/fits/fitsrec.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 13:  
+
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
+
+2025-02-21 00:13:31,132 - INFO - Attempting to stop container sweb.eval.astropy__astropy-6938.test...
+2025-02-21 00:13:46,359 - INFO - Attempting to remove container sweb.eval.astropy__astropy-6938.test...
+2025-02-21 00:13:46,371 - INFO - Container sweb.eval.astropy__astropy-6938.test removed.
+2025-02-21 00:13:46,371 - INFO - Attempting to remove image sweb.eval.x86_64.astropy__astropy-6938:latest...
+2025-02-21 00:13:46,484 - INFO - Image sweb.eval.x86_64.astropy__astropy-6938:latest removed.

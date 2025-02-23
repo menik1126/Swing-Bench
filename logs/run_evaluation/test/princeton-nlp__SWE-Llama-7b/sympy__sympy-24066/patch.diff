@@ -1,0 +1,10 @@
+<patch>
+diff --git a/sympy/physics/units/unitsystem.py b/sympy/physics/units/unitsystem.py
+--- a/sympy/physics/units/unitsystem.py
++++ b/sympy/physics/units/unitsystem.py
+@@ -167,7 +167,7 @@ def _collect_factor_and_dimension(self, expr):
+         elif isinstance(expr, Pow):
+             factor, dim = self._collect_factor_and_dimension(expr.base)
+             exp_factor, exp_dim = self._collect_factor_and_dimension(expr.exp)
+-            if self.get_dimension_system().is_dimensionless(exp_dim):
++            if self.get_dimension_system().is_dimensionless

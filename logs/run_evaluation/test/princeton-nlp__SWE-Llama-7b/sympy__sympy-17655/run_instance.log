@@ -1,0 +1,47 @@
+2025-02-10 14:34:50,666 - INFO - Environment image sweb.env.py.x86_64.c795f4b88616b8462021ed:latest found for sympy__sympy-17655
+Building instance image sweb.eval.x86_64.sympy__sympy-17655:latest for sympy__sympy-17655
+2025-02-10 14:35:57,053 - INFO - Creating container for sympy__sympy-17655...
+2025-02-10 14:35:57,079 - INFO - Container for sympy__sympy-17655 created: 414e9df43eacaba98ff85c32106539a6706e72515a6dc072ac18bb2c314a7c8e
+2025-02-10 14:35:57,349 - INFO - Container for sympy__sympy-17655 started: 414e9df43eacaba98ff85c32106539a6706e72515a6dc072ac18bb2c314a7c8e
+2025-02-10 14:35:57,349 - INFO - Intermediate patch for sympy__sympy-17655 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-17655/patch.diff, now applying to container...
+2025-02-10 14:35:57,827 - INFO - >>>>> Applied Patch:
+Checking patch sympy/geometry/point.py...
+Applied patch sympy/geometry/point.py cleanly.
+
+2025-02-10 14:35:58,285 - INFO - Git diff before:
+diff --git a/sympy/geometry/point.py b/sympy/geometry/point.py
+index 7c978c47be..7f2993867f 100644
+--- a/sympy/geometry/point.py
++++ b/sympy/geometry/point.py
+@@ -214,7 +214,7 @@ def __add__(self, other):
+ 
+         """
+         try:
+-            s, o = Point._normalize_dimension(self, Point(other, evaluate=False))
++            s, o = Point._normalize_dimension(self, Point(other))
+         except TypeError:
+             raise GeometryError("Don't know how to add {} and a Point object".format(other))
+2025-02-10 14:35:58,286 - INFO - Eval script for sympy__sympy-17655 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-17655/eval.sh; copying to container...
+2025-02-10 14:36:12,217 - INFO - Test runtime: 13.61 seconds
+2025-02-10 14:36:12,217 - INFO - Test output for sympy__sympy-17655 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/sympy__sympy-17655/test_output.txt
+2025-02-10 14:36:12,320 - INFO - Git diff after:
+diff --git a/sympy/geometry/point.py b/sympy/geometry/point.py
+index 7c978c47be..7f2993867f 100644
+--- a/sympy/geometry/point.py
++++ b/sympy/geometry/point.py
+@@ -214,7 +214,7 @@ def __add__(self, other):
+ 
+         """
+         try:
+-            s, o = Point._normalize_dimension(self, Point(other, evaluate=False))
++            s, o = Point._normalize_dimension(self, Point(other))
+         except TypeError:
+             raise GeometryError("Don't know how to add {} and a Point object".format(other))
+2025-02-10 14:36:12,320 - INFO - Grading answer for sympy__sympy-17655...
+2025-02-10 14:36:12,325 - INFO - report: {'sympy__sympy-17655': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_point', 'test_point3D']}, 'PASS_TO_PASS': {'success': ['test_Point2D', 'test_issue_9214', 'test_issue_11617', 'test_transform', 'test_concyclic_doctest_bug', 'test_unit', 'test_dot', 'test__normalize_dimension'], 'failure': ['test_arguments']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-17655: resolved: False
+2025-02-10 14:36:12,325 - INFO - Attempting to stop container sweb.eval.sympy__sympy-17655.test...
+2025-02-10 14:36:27,598 - INFO - Attempting to remove container sweb.eval.sympy__sympy-17655.test...
+2025-02-10 14:36:27,632 - INFO - Container sweb.eval.sympy__sympy-17655.test removed.
+2025-02-10 14:36:27,633 - INFO - Attempting to remove image sweb.eval.x86_64.sympy__sympy-17655:latest...
+2025-02-10 14:36:27,719 - INFO - Image sweb.eval.x86_64.sympy__sympy-17655:latest removed.

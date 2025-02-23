@@ -1,0 +1,9 @@
+<patch>
+diff --git a/sympy/ntheory/residue_ntheory.py b/sympy/ntheory/residue_ntheory.py
+--- a/sympy/ntheory/residue_ntheory.py
++++ b/sympy/ntheory/residue_ntheory.py
+@@ -780,6 +780,10 @@ def nthroot_mod(a, n, p, all_roots=False):
+         return _nthroot_mod1(a, n, p, all_roots)
+     # The roots of ``x**n - a = 0 (mod p)`` are roots of
+     # ``gcd(x**n - a, x**(p - 1) - 1) = 0 (mod p)``
++

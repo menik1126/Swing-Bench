@@ -1,0 +1,14 @@
+
+diff --git a/django/template/defaultfilters.py b/django/template/defaultfilters.py
+--- a/django/template/defaultfilters.py
++++ b/django/template/defaultfilters.py
+@@ -582,7 +582,7 @@ def first(value):
+ 
+ 
+ @register.filter(is_safe=True, needs_autoescape=True)
+-def join(value, arg, autoescape=True):
++def join(value, arg, autoescape=None):
+     """Join a list with a string, like Python's ``str.join(list)``."""
+     try:
+         if autoescape:
+

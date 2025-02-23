@@ -1,0 +1,12 @@
+<patch>
+diff --git a/django/db/backends/base/schema.py b/django/db/backends/base/schema.py
+--- a/django/db/backends/base/schema.py
++++ b/django/db/backends/base/schema.py
+@@ -407,7 +407,7 @@ def _delete_composed_index(self, model, fields, constraint_kwargs, sql):
+             model, columns, exclude=meta_constraint_names | meta_index_names,
+             **constraint_kwargs
+         )
+-        if len(constraint_names) != 1:
++        if len(constraint_names) != 1 and not constraint_kwargs.get('index', False):
+             raise ValueError("Found wrong number (%s) of constraints for %s(%s)" % (
+                 len(

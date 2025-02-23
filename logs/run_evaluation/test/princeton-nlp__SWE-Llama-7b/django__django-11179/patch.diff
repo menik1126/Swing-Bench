@@ -1,0 +1,13 @@
+<patch>
+diff --git a/django/db/models/deletion.py b/django/db/models/deletion.py
+--- a/django/db/models/deletion.py
++++ b/django/db/models/deletion.py
+@@ -272,7 +272,7 @@ def delete(self):
+         deleted_counter = Counter()
+ 
+         # Optimize for the case with a single obj and no dependencies
+-        if len(self.data) == 1 and len(instances) == 1:
++        if len(self.data) == 1 and len(instances) == 1 and not self.dependencies:
+             instance = list(instances)[0]
+             if self.can_fast_delete(instance):
+                 with transaction.mark_for_rollback_on

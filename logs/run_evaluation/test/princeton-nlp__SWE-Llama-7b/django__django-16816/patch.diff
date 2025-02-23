@@ -1,0 +1,14 @@
+<patch>
+diff --git a/django/contrib/admin/checks.py b/django/contrib/admin/checks.py
+--- a/django/contrib/admin/checks.py
++++ b/django/contrib/admin/checks.py
+@@ -896,7 +896,7 @@ def _check_list_display_item(self, obj, item, label):
+         elif hasattr(obj, item):
+             return []
+         try:
+-            field = obj.model._meta.get_field(item)
++            field = _get_non_gfk_field(obj.model._meta, item)
+         except FieldDoesNotExist:
+             try:
+                 field = getattr(obj.model, item)
+@@ -917,7 +917,7 @@ def _check_list

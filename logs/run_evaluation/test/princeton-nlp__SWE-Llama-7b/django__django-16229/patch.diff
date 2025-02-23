@@ -1,0 +1,14 @@
+
+diff --git a/django/forms/boundfield.py b/django/forms/boundfield.py
+--- a/django/forms/boundfield.py
++++ b/django/forms/boundfield.py
+@@ -133,7 +133,7 @@ def value(self):
+         """
+         data = self.initial
+         if self.form.is_bound:
+-            data = self.field.bound_data(self.data, data)
++            data = self.field.bound_data(self.data, data, initial=self.initial)
+         return self.field.prepare_value(data)
+ 
+     def _has_changed(self):
+

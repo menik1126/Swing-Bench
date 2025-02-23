@@ -1,0 +1,2469 @@
+2025-02-21 00:33:56,061 - INFO - Environment image sweb.env.py.x86_64.a33dddf55cdff5d8e23374:latest found for django__django-15996
+Building instance image sweb.eval.x86_64.django__django-15996:latest for django__django-15996
+2025-02-21 00:34:35,193 - INFO - Creating container for django__django-15996...
+2025-02-21 00:34:35,221 - INFO - Container for django__django-15996 created: 9fbe262da8db50ef3af200adc54e014efd5075d1b9defe0c5eadfd5f69364349
+2025-02-21 00:34:35,524 - INFO - Container for django__django-15996 started: 9fbe262da8db50ef3af200adc54e014efd5075d1b9defe0c5eadfd5f69364349
+2025-02-21 00:34:35,525 - INFO - Intermediate patch for django__django-15996 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/patch.diff, now applying to container...
+2025-02-21 00:34:35,922 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-21 00:34:36,020 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-21 00:34:36,108 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-21 00:34:36,108 - INFO - >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+2025-02-21 00:34:36,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:34:36,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,113 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,114 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,115 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,116 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,116 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,116 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,116 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,116 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,116 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,116 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,116 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,116 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,117 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,117 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,117 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,117 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,117 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,117 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,117 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,117 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,117 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,118 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,118 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,118 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,118 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,118 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,118 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,118 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,118 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,118 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,119 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,120 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,121 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,122 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,123 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,124 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,125 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,126 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
+
+2025-02-21 00:34:36,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,130 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,131 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,132 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,133 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,133 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,133 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,133 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,133 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,133 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,133 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,133 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,133 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,134 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,134 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,134 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,134 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,134 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,134 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,134 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,134 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,134 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,135 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,135 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,135 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,135 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,135 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,135 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,135 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,135 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,135 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,136 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,136 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,136 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,136 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,136 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,136 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,136 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,136 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,136 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,137 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,137 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,137 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,137 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,137 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,137 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,137 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,137 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,137 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,137 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,138 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,138 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,138 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,138 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,138 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,138 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,138 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,138 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,138 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,139 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,139 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,139 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,139 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,139 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,139 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,139 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,139 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,139 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,140 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,140 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,140 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,140 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,140 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,140 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,140 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,140 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,140 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,140 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,141 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,141 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,141 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,141 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,141 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,141 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,141 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,141 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,141 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,142 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,142 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,142 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,142 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,142 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,142 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,142 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,142 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,142 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,143 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,143 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,143 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,143 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,143 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15996: >>>>> Patch Apply Failed:
+patch: **** malformed patch at line 15: @@ -253,7 +257,10 @@ def serialize(self):
+
+patching file django/db/migrations/serializer.py
+
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15996/run_instance.log) for more information.
+
+2025-02-21 00:34:36,143 - INFO - Attempting to stop container sweb.eval.django__django-15996.test...
+2025-02-21 00:34:51,377 - INFO - Attempting to remove container sweb.eval.django__django-15996.test...
+2025-02-21 00:34:51,388 - INFO - Container sweb.eval.django__django-15996.test removed.
+2025-02-21 00:34:51,388 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-15996:latest...
+2025-02-21 00:34:51,633 - INFO - Image sweb.eval.x86_64.django__django-15996:latest removed.

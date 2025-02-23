@@ -1,0 +1,14 @@
+
+diff --git a/sphinx/domains/std.py b/sphinx/domains/std.py
+--- a/sphinx/domains/std.py
++++ b/sphinx/domains/std.py
+@@ -852,7 +852,7 @@ def _resolve_numref_xref(self, env: "BuildEnvironment", fromdocname: str,
+             if fignumber is None:
+                 return contnode
+         except ValueError:
+-            logger.warning(__("no number is assigned for %s: %s"), figtype, labelid,
++            logger.warning(__("no number is assigned for %s: %s"), figtype, labelid, location=node,
+                            location=node)
+             return contnode
+ 
+

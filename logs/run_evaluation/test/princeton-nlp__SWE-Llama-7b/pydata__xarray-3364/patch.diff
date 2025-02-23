@@ -1,0 +1,18 @@
+<patch>
+diff --git a/xarray/core/concat.py b/xarray/core/concat.py
+--- a/xarray/core/concat.py
++++ b/xarray/core/concat.py
+@@ -1,5 +1,6 @@
+ import pandas as pd
+ 
+-from . import dtypes, utils
++import numpy as np
++from . import dtypes, utils
+ from .alignment import align
+ from .merge import _VALID_COMPAT, unique_variable
+ from .variable import IndexVariable, Variable, as_variable
+@@ -341,6 +342,10 @@ def ensure_common_dims(vars):
+ 
+     # we've already verified everything is consistent; now, calculate
+     # shared dimension sizes so we can expand the necessary variables
++    # We currently only support concatenating along a

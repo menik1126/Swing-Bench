@@ -1,0 +1,11 @@
+<patch>
+diff --git a/sympy/simplify/trigsimp.py b/sympy/simplify/trigsimp.py
+--- a/sympy/simplify/trigsimp.py
++++ b/sympy/simplify/trigsimp.py
+@@ -1101,7 +1101,7 @@ def futrig(e, **kwargs):
+         e, f = hyper_as_trig(e)
+         e = f(_futrig(e))
+ 
+-    if e != old and e.is_Mul and e.args[0].is_Rational:
++    if e != old and e.is_Mul and e.args[0].is_Rational and not e.args[0].is_negative:
+         # redistribute leading coeff on 2-

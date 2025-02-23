@@ -1,0 +1,14 @@
+
+diff --git a/src/_pytest/nodes.py b/src/_pytest/nodes.py
+--- a/src/_pytest/nodes.py
++++ b/src/_pytest/nodes.py
+@@ -362,7 +362,7 @@ def _repr_failure_py(
+             truncate_locals = True
+ 
+         try:
+-            os.getcwd()
++            os.getcwd()
+             abspath = False
+         except OSError:
+             abspath = True
+

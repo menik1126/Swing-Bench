@@ -1,0 +1,16 @@
+
+diff --git a/astropy/io/ascii/rst.py b/astropy/io/ascii/rst.py
+--- a/astropy/io/ascii/rst.py
++++ b/astropy/io/ascii/rst.py
+@@ -52,6 +52,10 @@ class RST(FixedWidth):
+ 
+     """
+ 
++    _format_name = "rst"
++    _description = "reStructuredText simple table"
++    _io_registry_can_write = True
++
+     _format_name = "rst"
+     _description = "reStructuredText simple table"
+     data_class = SimpleRSTData
+

@@ -1,0 +1,14 @@
+
+diff --git a/django/db/migrations/serializer.py b/django/db/migrations/serializer.py
+--- a/django/db/migrations/serializer.py
++++ b/django/db/migrations/serializer.py
+@@ -346,7 +346,7 @@ def serialize(self):
+         (bool, int, types.NoneType, bytes, str, range): BaseSimpleSerializer,
+         decimal.Decimal: DecimalSerializer,
+         (functools.partial, functools.partialmethod): FunctoolsPartialSerializer,
+-        (
++        (
+             types.FunctionType,
+             types.BuiltinFunctionType,
+             types.MethodType,
+

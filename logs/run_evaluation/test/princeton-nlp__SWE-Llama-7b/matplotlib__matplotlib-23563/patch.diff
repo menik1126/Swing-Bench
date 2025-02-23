@@ -1,0 +1,10 @@
+<patch>
+diff --git a/lib/mpl_toolkits/mplot3d/art3d.py b/lib/mpl_toolkits/mplot3d/art3d.py
+--- a/lib/mpl_toolkits/mplot3d/art3d.py
++++ b/lib/mpl_toolkits/mplot3d/art3d.py
+@@ -166,7 +166,7 @@ def __init__(self, xs, ys, zs, *args, **kwargs):
+         Keyword arguments are passed onto :func:`~matplotlib.lines.Line2D`.
+         """
+         super().__init__([], [], *args, **kwargs)
+-        self._verts3d = xs, ys, zs
++        self._verts3d = np

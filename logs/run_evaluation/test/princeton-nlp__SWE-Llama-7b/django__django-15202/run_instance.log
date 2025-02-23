@@ -1,0 +1,49 @@
+2025-02-08 20:42:55,926 - INFO - Environment image sweb.env.py.x86_64.934a137824256b612e9dc5:latest found for django__django-15202
+Building instance image sweb.eval.x86_64.django__django-15202:latest for django__django-15202
+2025-02-08 20:43:35,435 - INFO - Creating container for django__django-15202...
+2025-02-08 20:43:35,462 - INFO - Container for django__django-15202 created: 6831ded0be0fe9209d354df0edf23cabfa44dab18acf650d1e28b690291118e0
+2025-02-08 20:43:35,821 - INFO - Container for django__django-15202 started: 6831ded0be0fe9209d354df0edf23cabfa44dab18acf650d1e28b690291118e0
+2025-02-08 20:43:35,822 - INFO - Intermediate patch for django__django-15202 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15202/patch.diff, now applying to container...
+2025-02-08 20:43:36,266 - INFO - >>>>> Applied Patch:
+Checking patch django/core/validators.py...
+Applied patch django/core/validators.py cleanly.
+
+2025-02-08 20:43:37,122 - INFO - Git diff before:
+diff --git a/django/core/validators.py b/django/core/validators.py
+index 72fbe15551..8fb2666deb 100644
+--- a/django/core/validators.py
++++ b/django/core/validators.py
+@@ -115,7 +115,7 @@ class URLValidator(RegexValidator):
+             if value:
+                 try:
+                     scheme, netloc, path, query, fragment = urlsplit(value)
+-                except ValueError:  # for example, "Invalid IPv6 URL"
++                except ValueError as e:  # for example, "Invalid IPv6 URL"
+                     raise ValidationError(self.message, code=self.code, params={'value': value})
+                 try:
+                     netloc = punycode(netloc)  # IDN -> ACE
+2025-02-08 20:43:37,122 - INFO - Eval script for django__django-15202 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15202/eval.sh; copying to container...
+2025-02-08 20:43:43,556 - INFO - Test runtime: 6.08 seconds
+2025-02-08 20:43:43,557 - INFO - Test output for django__django-15202 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-15202/test_output.txt
+2025-02-08 20:43:43,704 - INFO - Git diff after:
+diff --git a/django/core/validators.py b/django/core/validators.py
+index 72fbe15551..8fb2666deb 100644
+--- a/django/core/validators.py
++++ b/django/core/validators.py
+@@ -115,7 +115,7 @@ class URLValidator(RegexValidator):
+             if value:
+                 try:
+                     scheme, netloc, path, query, fragment = urlsplit(value)
+-                except ValueError:  # for example, "Invalid IPv6 URL"
++                except ValueError as e:  # for example, "Invalid IPv6 URL"
+                     raise ValidationError(self.message, code=self.code, params={'value': value})
+                 try:
+                     netloc = punycode(netloc)  # IDN -> ACE
+2025-02-08 20:43:43,704 - INFO - Grading answer for django__django-15202...
+2025-02-08 20:43:43,706 - INFO - report: {'django__django-15202': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_urlfield_clean_invalid (forms_tests.field_tests.test_urlfield.URLFieldTest)', 'test_urlfield_clean_not_required (forms_tests.field_tests.test_urlfield.URLFieldTest)']}, 'PASS_TO_PASS': {'success': ['test_urlfield_clean (forms_tests.field_tests.test_urlfield.URLFieldTest)', 'test_urlfield_clean_required (forms_tests.field_tests.test_urlfield.URLFieldTest)', 'test_urlfield_strip_on_none_value (forms_tests.field_tests.test_urlfield.URLFieldTest)', 'test_urlfield_unable_to_set_strip_kwarg (forms_tests.field_tests.test_urlfield.URLFieldTest)', 'test_urlfield_widget (forms_tests.field_tests.test_urlfield.URLFieldTest)', 'test_urlfield_widget_max_min_length (forms_tests.field_tests.test_urlfield.URLFieldTest)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-15202: resolved: False
+2025-02-08 20:43:43,706 - INFO - Attempting to stop container sweb.eval.django__django-15202.test...
+2025-02-08 20:43:59,031 - INFO - Attempting to remove container sweb.eval.django__django-15202.test...
+2025-02-08 20:43:59,070 - INFO - Container sweb.eval.django__django-15202.test removed.
+2025-02-08 20:43:59,070 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-15202:latest...
+2025-02-08 20:43:59,402 - INFO - Image sweb.eval.x86_64.django__django-15202:latest removed.

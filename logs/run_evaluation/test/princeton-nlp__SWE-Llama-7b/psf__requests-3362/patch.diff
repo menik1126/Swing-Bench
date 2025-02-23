@@ -1,0 +1,16 @@
+
+diff --git a/requests/utils.py b/requests/utils.py
+--- a/requests/utils.py
++++ b/requests/utils.py
+@@ -365,6 +365,10 @@ def stream_decode_response_unicode(iterator, r):
+         return
+ 
+     decoder = codecs.getincrementaldecoder(r.encoding)(errors='replace')
++    if r.encoding is not None and not r.raw.stream_uncompressed:
++        # Decode as we're going, but only for encodings that aren't compressed
++        # Otherwise we lose zlib metadata that we'd need to decompress.
++        for chunk in iterator:
+             rv = decoder.decode(chunk)
+             if rv:
+                 yield rv
+

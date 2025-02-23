@@ -1,0 +1,17 @@
+
+diff --git a/django/core/management/base.py b/django/core/management/base.py
+--- a/django/core/management/base.py
++++ b/django/core/management/base.py
+@@ -243,6 +243,10 @@ class BaseCommand:
+     """
+ 
+     # Metadata about this command.
++    #
++    # ``help`` is the (one line, 80 columns long) help message for this
++    # command, as a string.
++    help = ""
++
+     # Configuration shortcuts that alter various logic.
+     _called_from_command_line = False
+     output_transaction = False  # Whether to wrap the output in a "BEGIN; COMMIT;"
+

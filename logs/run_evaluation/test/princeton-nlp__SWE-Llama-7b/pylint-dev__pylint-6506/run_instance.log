@@ -1,0 +1,49 @@
+2025-02-10 12:53:37,617 - INFO - Environment image sweb.env.py.x86_64.e3afd7f04b325a4de4982d:latest found for pylint-dev__pylint-6506
+Building instance image sweb.eval.x86_64.pylint-dev__pylint-6506:latest for pylint-dev__pylint-6506
+2025-02-10 12:53:48,817 - INFO - Creating container for pylint-dev__pylint-6506...
+2025-02-10 12:53:48,851 - INFO - Container for pylint-dev__pylint-6506 created: a9c68eff4a6e5fb2580531b3a0ea750eca22310e596cb3f50a1d0206a4528991
+2025-02-10 12:53:49,197 - INFO - Container for pylint-dev__pylint-6506 started: a9c68eff4a6e5fb2580531b3a0ea750eca22310e596cb3f50a1d0206a4528991
+2025-02-10 12:53:49,198 - INFO - Intermediate patch for pylint-dev__pylint-6506 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pylint-dev__pylint-6506/patch.diff, now applying to container...
+2025-02-10 12:53:49,657 - INFO - >>>>> Applied Patch:
+Checking patch pylint/config/config_initialization.py...
+Applied patch pylint/config/config_initialization.py cleanly.
+
+2025-02-10 12:53:49,937 - INFO - Git diff before:
+diff --git a/pylint/config/config_initialization.py b/pylint/config/config_initialization.py
+index 24e453a73..c6e0a6f6f 100644
+--- a/pylint/config/config_initialization.py
++++ b/pylint/config/config_initialization.py
+@@ -82,7 +82,7 @@ def _config_initialization(
+     if unrecognized_options:
+         msg = ", ".join(unrecognized_options)
+         linter.add_message("unrecognized-option", line=0, args=msg)
+-        raise _UnrecognizedOptionError(options=unrecognized_options)
++        sys.exit(32)
+ 
+     # Set the current module to configuration as we don't know where
+     # the --load-plugins key is coming from
+2025-02-10 12:53:49,938 - INFO - Eval script for pylint-dev__pylint-6506 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pylint-dev__pylint-6506/eval.sh; copying to container...
+2025-02-10 12:53:53,624 - INFO - Test runtime: 3.35 seconds
+2025-02-10 12:53:53,625 - INFO - Test output for pylint-dev__pylint-6506 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/pylint-dev__pylint-6506/test_output.txt
+2025-02-10 12:53:53,736 - INFO - Git diff after:
+diff --git a/pylint/config/config_initialization.py b/pylint/config/config_initialization.py
+index 24e453a73..c6e0a6f6f 100644
+--- a/pylint/config/config_initialization.py
++++ b/pylint/config/config_initialization.py
+@@ -82,7 +82,7 @@ def _config_initialization(
+     if unrecognized_options:
+         msg = ", ".join(unrecognized_options)
+         linter.add_message("unrecognized-option", line=0, args=msg)
+-        raise _UnrecognizedOptionError(options=unrecognized_options)
++        sys.exit(32)
+ 
+     # Set the current module to configuration as we don't know where
+     # the --load-plugins key is coming from
+2025-02-10 12:53:53,736 - INFO - Grading answer for pylint-dev__pylint-6506...
+2025-02-10 12:53:53,738 - INFO - report: {'pylint-dev__pylint-6506': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['tests/config/test_config.py::test_unknown_option_name', 'tests/config/test_config.py::test_unknown_short_option_name']}, 'PASS_TO_PASS': {'success': ['tests/config/test_config.py::test_can_read_toml_env_variable', 'tests/config/test_config.py::test_unknown_message_id', 'tests/config/test_config.py::test_unknown_confidence', 'tests/config/test_config.py::test_unknown_yes_no', 'tests/config/test_config.py::test_unknown_py_version', 'tests/config/test_config.py::test_short_verbose'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pylint-dev__pylint-6506: resolved: False
+2025-02-10 12:53:53,738 - INFO - Attempting to stop container sweb.eval.pylint-dev__pylint-6506.test...
+2025-02-10 12:54:08,991 - INFO - Attempting to remove container sweb.eval.pylint-dev__pylint-6506.test...
+2025-02-10 12:54:09,013 - INFO - Container sweb.eval.pylint-dev__pylint-6506.test removed.
+2025-02-10 12:54:09,013 - INFO - Attempting to remove image sweb.eval.x86_64.pylint-dev__pylint-6506:latest...
+2025-02-10 12:54:09,085 - INFO - Image sweb.eval.x86_64.pylint-dev__pylint-6506:latest removed.

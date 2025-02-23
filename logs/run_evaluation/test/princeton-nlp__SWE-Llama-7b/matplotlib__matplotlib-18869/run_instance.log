@@ -1,0 +1,70 @@
+2025-02-10 11:28:34,957 - INFO - Environment image sweb.env.py.x86_64.6b007979cf533f0f3016e8:latest found for matplotlib__matplotlib-18869
+Building instance image sweb.eval.x86_64.matplotlib__matplotlib-18869:latest for matplotlib__matplotlib-18869
+2025-02-10 11:35:16,894 - INFO - Creating container for matplotlib__matplotlib-18869...
+2025-02-10 11:35:16,913 - INFO - Container for matplotlib__matplotlib-18869 created: 155685fd2f68ecd2e54592e654b6d9c526e00872de8644b1a1a33330edb649b3
+2025-02-10 11:35:17,183 - INFO - Container for matplotlib__matplotlib-18869 started: 155685fd2f68ecd2e54592e654b6d9c526e00872de8644b1a1a33330edb649b3
+2025-02-10 11:35:17,183 - INFO - Intermediate patch for matplotlib__matplotlib-18869 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/matplotlib__matplotlib-18869/patch.diff, now applying to container...
+2025-02-10 11:35:17,572 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-10 11:35:17,660 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-10 11:35:17,741 - INFO - >>>>> Applied Patch:
+patching file lib/matplotlib/__init__.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 131 with fuzz 3.
+
+2025-02-10 11:35:18,965 - INFO - Git diff before:
+diff --git a/lib/matplotlib/__init__.py b/lib/matplotlib/__init__.py
+index b657a35cf7..df417b111c 100644
+--- a/lib/matplotlib/__init__.py
++++ b/lib/matplotlib/__init__.py
+@@ -102,7 +102,7 @@ import tempfile
+ import warnings
+ 
+ import numpy
+-from packaging.version import parse as parse_version
++from packaging.version import parse as parse_version, Version
+ 
+ # cbook must import matplotlib only within function
+ # definitions, so it is safe to import from it here.
+@@ -131,7 +131,7 @@ __bibtex__ = r"""@Article{Hunter:2007,
+ 
+ 
+ def __getattr__(name):
+-    if name == "__version__":
++    if name in {"__version__", "__version_info__"}:
+         import setuptools_scm
+         global __version__  # cache it.
+         # Only shell out to a git subprocess if really needed, and not on a
+2025-02-10 11:35:18,965 - INFO - Eval script for matplotlib__matplotlib-18869 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/matplotlib__matplotlib-18869/eval.sh; copying to container...
+2025-02-10 11:35:30,659 - INFO - Test runtime: 11.40 seconds
+2025-02-10 11:35:30,660 - INFO - Test output for matplotlib__matplotlib-18869 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/matplotlib__matplotlib-18869/test_output.txt
+2025-02-10 11:35:30,762 - INFO - Git diff after:
+diff --git a/lib/matplotlib/__init__.py b/lib/matplotlib/__init__.py
+index b657a35cf7..df417b111c 100644
+--- a/lib/matplotlib/__init__.py
++++ b/lib/matplotlib/__init__.py
+@@ -102,7 +102,7 @@ import tempfile
+ import warnings
+ 
+ import numpy
+-from packaging.version import parse as parse_version
++from packaging.version import parse as parse_version, Version
+ 
+ # cbook must import matplotlib only within function
+ # definitions, so it is safe to import from it here.
+@@ -131,7 +131,7 @@ __bibtex__ = r"""@Article{Hunter:2007,
+ 
+ 
+ def __getattr__(name):
+-    if name == "__version__":
++    if name in {"__version__", "__version_info__"}:
+         import setuptools_scm
+         global __version__  # cache it.
+         # Only shell out to a git subprocess if really needed, and not on a
+2025-02-10 11:35:30,762 - INFO - Grading answer for matplotlib__matplotlib-18869...
+2025-02-10 11:35:30,765 - INFO - report: {'matplotlib__matplotlib-18869': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['lib/matplotlib/tests/test_matplotlib.py::test_parse_to_version_info[3.5.0-version_tuple0]', 'lib/matplotlib/tests/test_matplotlib.py::test_parse_to_version_info[3.5.0rc2-version_tuple1]', 'lib/matplotlib/tests/test_matplotlib.py::test_parse_to_version_info[3.5.0.dev820+g6768ef8c4c-version_tuple2]', 'lib/matplotlib/tests/test_matplotlib.py::test_parse_to_version_info[3.5.0.post820+g6768ef8c4c-version_tuple3]']}, 'PASS_TO_PASS': {'success': ['lib/matplotlib/tests/test_matplotlib.py::test_importable_with_no_home', 'lib/matplotlib/tests/test_matplotlib.py::test_use_doc_standard_backends', 'lib/matplotlib/tests/test_matplotlib.py::test_importable_with__OO'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for matplotlib__matplotlib-18869: resolved: False
+2025-02-10 11:35:30,766 - INFO - Attempting to stop container sweb.eval.matplotlib__matplotlib-18869.test...
+2025-02-10 11:35:46,009 - INFO - Attempting to remove container sweb.eval.matplotlib__matplotlib-18869.test...
+2025-02-10 11:35:46,052 - INFO - Container sweb.eval.matplotlib__matplotlib-18869.test removed.
+2025-02-10 11:35:46,052 - INFO - Attempting to remove image sweb.eval.x86_64.matplotlib__matplotlib-18869:latest...
+2025-02-10 11:35:47,461 - INFO - Image sweb.eval.x86_64.matplotlib__matplotlib-18869:latest removed.

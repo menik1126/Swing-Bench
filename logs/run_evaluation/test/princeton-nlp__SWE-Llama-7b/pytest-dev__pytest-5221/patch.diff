@@ -1,0 +1,14 @@
+
+diff --git a/src/_pytest/python.py b/src/_pytest/python.py
+--- a/src/_pytest/python.py
++++ b/src/_pytest/python.py
+@@ -1343,7 +1343,7 @@ def _showfixtures_main(config, session):
+         if verbose <= 0 and argname[0] == "_":
+             continue
+         if verbose > 0:
+-            funcargspec = "%s -- %s" % (argname, bestrel)
++            funcargspec = "%s -- %s (%s)" % (argname, bestrel, fixturedef.scope)
+         else:
+             funcargspec = argname
+         tw.line(funcargspec, green=True)
+

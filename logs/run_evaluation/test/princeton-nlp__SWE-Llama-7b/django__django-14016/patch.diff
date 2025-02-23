@@ -1,0 +1,14 @@
+
+diff --git a/django/db/models/query_utils.py b/django/db/models/query_utils.py
+--- a/django/db/models/query_utils.py
++++ b/django/db/models/query_utils.py
+@@ -42,7 +42,7 @@ def __init__(self, *args, _connector=None, _negated=False, **kwargs):
+ 
+     def _combine(self, other, conn):
+         if not isinstance(other, Q):
+-            raise TypeError(other)
++            raise TypeError(f"'{type(other).__name__}' object is not a Q object")
+ 
+         # If the other Q() is empty, ignore it and just use `self`.
+         if not other:
+

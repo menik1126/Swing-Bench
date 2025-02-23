@@ -1,0 +1,14 @@
+
+diff --git a/lib/matplotlib/style/core.py b/lib/matplotlib/style/core.py
+--- a/lib/matplotlib/style/core.py
++++ b/lib/matplotlib/style/core.py
+@@ -118,7 +118,7 @@ def fix_style(s):
+                 "seaborn-bright",
+                 "seaborn-colorblind",
+                 "seaborn-dark",
+-                "seaborn-darkgrid",
++                "seaborn-darkgrid",
+                 "seaborn-dark-palette",
+                 "seaborn-deep",
+                 "seaborn-muted",
+
