@@ -1,49 +1,64 @@
-2025-02-08 19:52:33,087 - INFO - Environment image sweb.env.py.x86_64.2baaea72acc974f6c02079:latest found for django__django-11620
-Building instance image sweb.eval.x86_64.django__django-11620:latest for django__django-11620
-2025-02-08 19:53:09,649 - INFO - Creating container for django__django-11620...
-2025-02-08 19:53:09,678 - INFO - Container for django__django-11620 created: 497bccf6118067c32f95de97cedb48ded01baa36765454eb4a24ce021c59f6cd
-2025-02-08 19:53:10,005 - INFO - Container for django__django-11620 started: 497bccf6118067c32f95de97cedb48ded01baa36765454eb4a24ce021c59f6cd
-2025-02-08 19:53:10,005 - INFO - Intermediate patch for django__django-11620 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11620/patch.diff, now applying to container...
-2025-02-08 19:53:10,451 - INFO - >>>>> Applied Patch:
-Checking patch django/views/debug.py...
-Applied patch django/views/debug.py cleanly.
+2025-02-26 12:25:25,894 - INFO - Creating container for django__django-11620...
+2025-02-26 12:25:25,900 - ERROR - Error creating container for django__django-11620: 409 Client Error for http+docker://localhost/v1.47/containers/create?name=sweb.eval.django__django-11620.test&platform=linux%2Fx86_64: Conflict ("Conflict. The container name "/sweb.eval.django__django-11620.test" is already in use by container "3045b05686ed13798e24dc87aebc5a475b8853c600bcd6fdcbc66abca92386f2". You have to remove (or rename) that container to be able to reuse that name.")
+2025-02-26 12:25:25,903 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: http+docker://localhost/v1.47/containers/create?name=sweb.eval.django__django-11620.test&platform=linux%2Fx86_64
 
-2025-02-08 19:53:11,315 - INFO - Git diff before:
-diff --git a/django/views/debug.py b/django/views/debug.py
-index cb3e8c7ec1..37df8c428b 100644
---- a/django/views/debug.py
-+++ b/django/views/debug.py
-@@ -458,7 +458,7 @@ class ExceptionReporter:
- 
- def technical_404_response(request, exception):
-     """Create a technical 404 error response. `exception` is the Http404."""
--    try:
-+    if isinstance(exception, Http404):
-         error_url = exception.args[0]['path']
-     except (IndexError, TypeError, KeyError):
-         error_url = request.path_info[1:]  # Trim leading slash
-2025-02-08 19:53:11,315 - INFO - Eval script for django__django-11620 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11620/eval.sh; copying to container...
-2025-02-08 19:53:16,798 - INFO - Test runtime: 5.16 seconds
-2025-02-08 19:53:16,798 - INFO - Test output for django__django-11620 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11620/test_output.txt
-2025-02-08 19:53:16,923 - INFO - Git diff after:
-diff --git a/django/views/debug.py b/django/views/debug.py
-index cb3e8c7ec1..37df8c428b 100644
---- a/django/views/debug.py
-+++ b/django/views/debug.py
-@@ -458,7 +458,7 @@ class ExceptionReporter:
- 
- def technical_404_response(request, exception):
-     """Create a technical 404 error response. `exception` is the Http404."""
--    try:
-+    if isinstance(exception, Http404):
-         error_url = exception.args[0]['path']
-     except (IndexError, TypeError, KeyError):
-         error_url = request.path_info[1:]  # Trim leading slash
-2025-02-08 19:53:16,923 - INFO - Grading answer for django__django-11620...
-2025-02-08 19:53:16,924 - INFO - report: {'django__django-11620': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_technical_404_converter_raise_404 (view_tests.tests.test_debug.DebugViewTests)']}, 'PASS_TO_PASS': {'success': [], 'failure': ['test_repr (view_tests.tests.test_debug.CallableSettingWrapperTests)', 'test_cleanse_setting_basic (view_tests.tests.test_debug.HelperFunctionTests)', 'test_cleanse_setting_ignore_case (view_tests.tests.test_debug.HelperFunctionTests)', 'test_cleanse_setting_recurses_in_dictionary (view_tests.tests.test_debug.HelperFunctionTests)', 'test_handle_db_exception (view_tests.tests.test_debug.DebugViewQueriesAllowedTests)', 'test_400 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests)', 'test_403 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests)', 'test_404 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests)', 'test_template_not_found_error (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests)', 'An exception report can be generated even for a disallowed host.', 'test_message_only (view_tests.tests.test_debug.PlainTextReportTests)', 'An exception report can be generated for just a request', 'An exception report can be generated without request', 'A simple exception report can be generated', 'A message can be provided in addition to a request', 'test_request_with_items_key (view_tests.tests.test_debug.PlainTextReportTests)', 'test_template_exception (view_tests.tests.test_debug.PlainTextReportTests)', 'test_ajax_response_encoding (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter)', 'test_custom_exception_reporter_filter (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter)', 'test_non_sensitive_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter)', 'test_paranoid_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter)', 'test_sensitive_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter)', 'test_400 (view_tests.tests.test_debug.DebugViewTests)', 'test_403 (view_tests.tests.test_debug.DebugViewTests)', 'test_403_template (view_tests.tests.test_debug.DebugViewTests)', 'test_404 (view_tests.tests.test_debug.DebugViewTests)', 'test_404_empty_path_not_in_urls (view_tests.tests.test_debug.DebugViewTests)', 'test_404_not_in_urls (view_tests.tests.test_debug.DebugViewTests)', 'test_classbased_technical_404 (view_tests.tests.test_debug.DebugViewTests)', 'test_default_urlconf_template (view_tests.tests.test_debug.DebugViewTests)', 'test_files (view_tests.tests.test_debug.DebugViewTests)', 'test_no_template_source_loaders (view_tests.tests.test_debug.DebugViewTests)', 'test_non_l10ned_numeric_ids (view_tests.tests.test_debug.DebugViewTests)', 'test_regression_21530 (view_tests.tests.test_debug.DebugViewTests)', 'test_technical_404 (view_tests.tests.test_debug.DebugViewTests)', 'test_template_encoding (view_tests.tests.test_debug.DebugViewTests)', 'test_template_exceptions (view_tests.tests.test_debug.DebugViewTests)', 'Tests for not existing file', 'test_encoding_error (view_tests.tests.test_debug.ExceptionReporterTests)', 'The ExceptionReporter supports Unix, Windows and Macintosh EOL markers', 'test_exception_fetching_user (view_tests.tests.test_debug.ExceptionReporterTests)', 'test_ignore_traceback_evaluation_exceptions (view_tests.tests.test_debug.ExceptionReporterTests)', 'Safe strings in local variables are escaped.', 'test_message_only (view_tests.tests.test_debug.ExceptionReporterTests)', 'Non-UTF-8 exceptions/values should not make the output generation choke.', 'test_reporting_frames_for_cyclic_reference (view_tests.tests.test_debug.ExceptionReporterTests)', 'test_reporting_frames_without_source (view_tests.tests.test_debug.ExceptionReporterTests)', 'test_reporting_of_nested_exceptions (view_tests.tests.test_debug.ExceptionReporterTests)', 'test_request_with_items_key (view_tests.tests.test_debug.ExceptionReporterTests)', 'test_template_encoding (view_tests.tests.test_debug.ExceptionReporterTests)', 'Large values should not create a large HTML.', 'test_unfrozen_importlib (view_tests.tests.test_debug.ExceptionReporterTests)', 'Unprintable values should not make the output generation choke.', 'test_callable_settings (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_callable_settings_forbidding_to_set_attributes (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_custom_exception_reporter_filter (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_dict_setting_with_non_str_key (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_multivalue_dict_key_error (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_non_sensitive_request (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_paranoid_request (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_sensitive_function_arguments (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_sensitive_function_keyword_arguments (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_sensitive_method (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_sensitive_request (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_sensitive_settings (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_settings_with_sensitive_keys (view_tests.tests.test_debug.ExceptionReporterFilterTests)']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
-Result for django__django-11620: resolved: False
-2025-02-08 19:53:16,925 - INFO - Attempting to stop container sweb.eval.django__django-11620.test...
-2025-02-08 19:53:32,180 - INFO - Attempting to remove container sweb.eval.django__django-11620.test...
-2025-02-08 19:53:32,215 - INFO - Container sweb.eval.django__django-11620.test removed.
-2025-02-08 19:53:32,215 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-11620:latest...
-2025-02-08 19:53:32,492 - INFO - Image sweb.eval.x86_64.django__django-11620:latest removed.
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/docker_build.py", line 478, in build_container
+    container = client.containers.create(
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 409 Client Error for http+docker://localhost/v1.47/containers/create?name=sweb.eval.django__django-11620.test&platform=linux%2Fx86_64: Conflict ("Conflict. The container name "/sweb.eval.django__django-11620.test" is already in use by container "3045b05686ed13798e24dc87aebc5a475b8853c600bcd6fdcbc66abca92386f2". You have to remove (or rename) that container to be able to reuse that name.")
+
+2025-02-26 12:25:25,903 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: http+docker://localhost/v1.47/containers/create?name=sweb.eval.django__django-11620.test&platform=linux%2Fx86_64
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/docker_build.py", line 478, in build_container
+    container = client.containers.create(
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/home/xiongjing/miniconda3/envs/parallel_new_version/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 409 Client Error for http+docker://localhost/v1.47/containers/create?name=sweb.eval.django__django-11620.test&platform=linux%2Fx86_64: Conflict ("Conflict. The container name "/sweb.eval.django__django-11620.test" is already in use by container "3045b05686ed13798e24dc87aebc5a475b8853c600bcd6fdcbc66abca92386f2". You have to remove (or rename) that container to be able to reuse that name.")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 140, in run_instance
+    container = build_container(
+  File "/home/xiongjing/Swing-Bench/swebench/harness/docker_build.py", line 494, in build_container
+    raise BuildImageError(test_spec.instance_id, str(e), logger) from e
+swebench.harness.docker_build.BuildImageError: Error building image django__django-11620: 409 Client Error for http+docker://localhost/v1.47/containers/create?name=sweb.eval.django__django-11620.test&platform=linux%2Fx86_64: Conflict ("Conflict. The container name "/sweb.eval.django__django-11620.test" is already in use by container "3045b05686ed13798e24dc87aebc5a475b8853c600bcd6fdcbc66abca92386f2". You have to remove (or rename) that container to be able to reuse that name.")
+Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11620/run_instance.log) for more information.
+

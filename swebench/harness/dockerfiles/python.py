@@ -1,5 +1,5 @@
 _DOCKERFILE_BASE_PY = r"""
-FROM --platform={platform} ubuntu:22.04
+FROM --platform={platform} ubuntu:{ubuntu_version}
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Etc/UTC
@@ -21,7 +21,7 @@ tzdata \
 && rm -rf /var/lib/apt/lists/*
 
 # Download and install conda
-RUN wget 'https://repo.anaconda.com/miniconda/Miniconda3-py311_23.11.0-2-Linux-{conda_arch}.sh' -O miniconda.sh \
+RUN wget 'https://repo.anaconda.com/miniconda/Miniconda3-{conda_version}-Linux-{conda_arch}.sh' -O miniconda.sh \
     && bash miniconda.sh -b -p /opt/miniconda3
 # Add conda to PATH
 ENV PATH=/opt/miniconda3/bin:$PATH
@@ -32,7 +32,7 @@ RUN conda config --append channels conda-forge
 RUN adduser --disabled-password --gecos 'dog' nonroot
 """
 
-_DOCKERFILE_ENV_PY = r"""FROM --platform={platform} sweb.base.py.{arch}:latest
+_DOCKERFILE_ENV_PY = r"""FROM --platform={platform} {base_image_key}
 
 COPY ./setup_env.sh /root/
 RUN sed -i -e 's/\r$//' /root/setup_env.sh

@@ -1,0 +1,15 @@
+[Unit]
+Description=Paperless webserver
+After=network.target
+Wants=network.target
+Requires=redis.service
+#Requires=paperless-webserver.socket
+
+[Service]
+User=paperless
+Group=paperless
+WorkingDirectory=/opt/paperless/src
+ExecStart=/opt/paperless/.local/bin/gunicorn -c /opt/paperless/gunicorn.conf.py paperless.asgi:application
+
+[Install]
+WantedBy=multi-user.target

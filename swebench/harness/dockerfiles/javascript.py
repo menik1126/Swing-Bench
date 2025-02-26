@@ -1,5 +1,5 @@
 _DOCKERFILE_BASE_JS = r"""
-FROM --platform={platform} ubuntu:22.04
+FROM --platform={platform} ubuntu:{ubuntu_version}
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Etc/UTC
@@ -71,7 +71,7 @@ WORKDIR /home/chromeuser
 USER root
 """
 
-_DOCKERFILE_ENV_JS = r"""FROM --platform={platform} sweb.base.js.{arch}:latest
+_DOCKERFILE_ENV_JS = r"""FROM --platform={platform} {base_image_key}
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Etc/UTC

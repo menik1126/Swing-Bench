@@ -433,7 +433,7 @@ export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
 + hash -r
 + python -m pip install -e .
 Obtaining file:///testbed
-Requirement already satisfied: pytz in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from Django==3.0.dev20190208190805) (2025.1)
+Requirement already satisfied: pytz in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from Django==3.0.dev20190208190805) (2024.2)
 Requirement already satisfied: sqlparse in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from Django==3.0.dev20190208190805) (0.4.4)
 Installing collected packages: Django
   Attempting uninstall: Django
@@ -555,7 +555,7 @@ test_simple_not_equal_raise (test_utils.tests.XMLEqualTests) ... ok
 test_simple_not_equal_with_whitespace_in_the_middle (test_utils.tests.XMLEqualTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 100 tests in 0.080s
+Ran 100 tests in 0.072s
 
 OK (skipped=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')…

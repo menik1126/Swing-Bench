@@ -1,8 +1,8 @@
 #!/bin/bash
 
-conda activate parallel_new_version
+# conda activate parallel_new_version
 
-cd ../
+# cd ../
 
 echo "----------------Start evaluation!----------------"
 

@@ -25,27 +25,27 @@ _DOCKERFILE_INSTANCE = {
     "js": _DOCKERFILE_INSTANCE_JS,
 }
 
-def get_dockerfile_base(platform, arch, language):
+
+def get_dockerfile_base(platform, arch, language, **kwargs):
     if arch == "arm64":
         conda_arch = "aarch64"
     else:
         conda_arch = arch
     return _DOCKERFILE_BASE[language].format(
-        platform=platform,
-        conda_arch=conda_arch
+        platform=platform, conda_arch=conda_arch, **kwargs
     )
 
 
-def get_dockerfile_env(platform, arch, language, **kwargs):
+def get_dockerfile_env(platform, arch, language, base_image_key, **kwargs):
     return _DOCKERFILE_ENV[language].format(
         platform=platform,
         arch=arch,
-        **kwargs
+        base_image_key=base_image_key,
+        **kwargs,
     )
 
 
 def get_dockerfile_instance(platform, language, env_image_name):
     return _DOCKERFILE_INSTANCE[language].format(
-        platform=platform,
-        env_image_name=env_image_name
+        platform=platform, env_image_name=env_image_name
     )

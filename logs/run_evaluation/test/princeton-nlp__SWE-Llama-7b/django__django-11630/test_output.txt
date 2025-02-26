@@ -432,7 +432,7 @@ export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
 + hash -r
 + python -m pip install -e .
 Obtaining file:///testbed
-Requirement already satisfied: pytz in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from Django==3.0.dev20190807092314) (2025.1)
+Requirement already satisfied: pytz in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from Django==3.0.dev20190807092314) (2024.2)
 Requirement already satisfied: sqlparse in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from Django==3.0.dev20190807092314) (0.4.4)
 Requirement already satisfied: asgiref in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from Django==3.0.dev20190807092314) (3.4.1)
 Requirement already satisfied: typing-extensions in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from asgiref->Django==3.0.dev20190807092314) (4.1.1)
@@ -510,7 +510,7 @@ First differing element 0:
 + [<Warning: level=30, msg="db_table 'test_table' is used by multiple models: check_framework.Model1, check_framework.Model2.", hint='You have configured settings.DATABASE_ROUTERS. Verify that check_framework.Model1, check_framework.Model2 are correctly routed to separate databases.', obj='test_table', id='models.W035'>]
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.058s
+Ran 18 tests in 0.054s
 
 FAILED (failures=2)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

@@ -17,7 +17,9 @@ from swebench.harness.constants import (
 from swebench.harness.utils import get_modified_files
 from functools import cache
 
-HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
+}
 
 
 @cache
@@ -164,7 +166,9 @@ def get_test_directives(instance: SWEbenchInstance) -> list:
     return directives
 
 
-def make_repo_script_list_py(specs, repo, repo_directory, base_commit, env_name) -> list:
+def make_repo_script_list_py(
+    specs, repo, repo_directory, base_commit, env_name
+) -> list:
     """
     Create a list of bash commands to set up the repository for testing.
     This is the setup script for the instance image.
@@ -175,11 +179,11 @@ def make_repo_script_list_py(specs, repo, repo_directory, base_commit, env_name)
         f"cd {repo_directory}",
         f"git reset --hard {base_commit}",
         # Remove the remote so the agent won't see newer commits.
-        f"git remote remove origin",
+        "git remote remove origin",
         # Make sure conda is available for later use
         "source /opt/miniconda3/bin/activate",
         f"conda activate {env_name}",
-        f'echo "Current environment: $CONDA_DEFAULT_ENV"',
+        'echo "Current environment: $CONDA_DEFAULT_ENV"',
     ]
     if repo in MAP_REPO_TO_INSTALL:
         setup_commands.append(MAP_REPO_TO_INSTALL[repo])
@@ -228,7 +232,9 @@ def make_env_script_list_py(instance, specs, env_name) -> list:
         )
         if "no_use_env" in specs and specs["no_use_env"]:
             # `conda create` based installation
-            cmd = f"conda create -c conda-forge -n {env_name} python={specs['python']} -y"
+            cmd = (
+                f"conda create -c conda-forge -n {env_name} python={specs['python']} -y"
+            )
             reqs_commands.append(cmd)
 
             # Install dependencies
@@ -259,7 +265,9 @@ def make_env_script_list_py(instance, specs, env_name) -> list:
     return reqs_commands
 
 
-def make_eval_script_list_py(instance, specs, env_name, repo_directory, base_commit, test_patch) -> list:
+def make_eval_script_list_py(
+    instance, specs, env_name, repo_directory, base_commit, test_patch
+) -> list:
     """
     Applies the test patch and runs the tests.
     """
@@ -272,12 +280,14 @@ def make_eval_script_list_py(instance, specs, env_name, repo_directory, base_com
     )
     test_command = " ".join(
         [
-            MAP_REPO_VERSION_TO_SPECS[instance["repo"]][instance["version"]]["test_cmd"],
+            MAP_REPO_VERSION_TO_SPECS[instance["repo"]][instance["version"]][
+                "test_cmd"
+            ],
             *get_test_directives(instance),
         ]
     )
     eval_commands = [
-        f"source /opt/miniconda3/bin/activate",
+        "source /opt/miniconda3/bin/activate",
         f"conda activate {env_name}",
         f"cd {repo_directory}",
     ]
@@ -287,8 +297,8 @@ def make_eval_script_list_py(instance, specs, env_name, repo_directory, base_com
         f"git config --global --add safe.directory {repo_directory}",  # for nonroot user
         f"cd {repo_directory}",
         # This is just informational, so we have a record
-        f"git status",
-        f"git show",
+        "git status",
+        "git show",
         f"git -c core.fileMode=false diff {base_commit}",
         "source /opt/miniconda3/bin/activate",
         f"conda activate {env_name}",

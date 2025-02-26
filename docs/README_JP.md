@@ -10,7 +10,7 @@
 
 <div align="center">
 
- | [日本語](docs/README_JP.md) | [English](https://github.com/princeton-nlp/SWE-bench) | [中文简体](docs/README_CN.md) | [中文繁體](docs/README_TW.md) |
+ | [日本語](docs/README_JP.md) | [English](https://github.com/swe-bench/SWE-bench) | [中文简体](docs/README_CN.md) | [中文繁體](docs/README_TW.md) |
 
 </div>
 
@@ -28,7 +28,7 @@ ICLR 2024 の論文 <a href="http://swe-bench.github.io/paper.pdf">SWE-bench: Ca
     </a>
 </p>
 
-パブリックリーダーボードは[ウェブサイト](http://swe-bench.github.io)を、SWE-bench ベンチマークの最新アップデート情報は [change log](https://github.com/princeton-nlp/SWE-bench/blob/master/CHANGELOG.md) を参照してください。
+パブリックリーダーボードは[ウェブサイト](http://swe-bench.github.io)を、SWE-bench ベンチマークの最新アップデート情報は [change log](https://github.com/swe-bench/SWE-bench/blob/master/CHANGELOG.md) を参照してください。
 
 ## 👋 概要
 
@@ -98,8 +98,8 @@ python -m swebench.harness.run_evaluation --help
 
 さらに、SWE-Benchリポジトリは以下のことを支援できます：
 * 事前処理されたデータセットで独自のモデルをトレーニングする
-* 既存のモデル（ディスク上のLLaMAのようなモデルや、APIを通じてアクセス可能なGPT-4のようなモデル）で[推論](https://github.com/princeton-nlp/SWE-bench/blob/main/swebench/inference/README.md)を実行する。推論ステップは、リポジトリと課題が与えられ、モデルがそれに対する修正を生成しようとするところです。
-* 独自のリポジトリでSWE-benchの[データ収集手順](https://github.com/princeton-nlp/SWE-bench/blob/main/swebench/collect/)を実行し、新しいSWE-Benchタスクを作成する。
+* 既存のモデル（ディスク上のLLaMAのようなモデルや、APIを通じてアクセス可能なGPT-4のようなモデル）で[推論](https://github.com/swe-bench/SWE-bench/blob/main/swebench/inference/README.md)を実行する。推論ステップは、リポジトリと課題が与えられ、モデルがそれに対する修正を生成しようとするところです。
+* 独自のリポジトリでSWE-benchの[データ収集手順](https://github.com/swe-bench/SWE-bench/blob/main/swebench/collect/)を実行し、新しいSWE-Benchタスクを作成する。
 
 ## ⬇️ ダウンロード
 
@@ -116,8 +116,8 @@ python -m swebench.harness.run_evaluation --help
 
 SWE-benchの様々な部分の使用方法に関する以下のブログ記事も作成しました。
 特定のトピックに関する記事を見たい場合は、issueを通じてお知らせください。
-* [2023年11月1日] SWE-Benchの評価タスクの収集 ([🔗](https://github.com/princeton-nlp/SWE-bench/blob/main/assets/collection.md))
-* [2023年11月6日] SWE-benchでの評価 ([🔗](https://github.com/princeton-nlp/SWE-bench/blob/main/assets/evaluation.md))
+* [2023年11月1日] SWE-Benchの評価タスクの収集 ([🔗](https://github.com/swe-bench/SWE-bench/blob/main/assets/collection.md))
+* [2023年11月6日] SWE-benchでの評価 ([🔗](https://github.com/swe-bench/SWE-bench/blob/main/assets/evaluation.md))
 
 ## 💫 貢献
 

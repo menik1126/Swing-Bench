@@ -6,7 +6,7 @@
 
 <div align="center">
 
- | [日本語](docs/README_JP.md) | [English](https://github.com/princeton-nlp/SWE-bench) | [中文简体](docs/README_CN.md) | [中文繁體](docs/README_TW.md) |
+ | [日本語](docs/README_JP.md) | [English](https://github.com/swe-bench/SWE-bench) | [中文简体](docs/README_CN.md) | [中文繁體](docs/README_TW.md) |
 
 </div>
 
@@ -27,7 +27,7 @@
     </a>
 </p>
 
-请访问我们的[网站](http://swe-bench.github.io)查看公共排行榜，并查看[更改日志](https://github.com/princeton-nlp/SWE-bench/blob/master/CHANGELOG.md)以获取有关 SWE-bench 基准最新更新的信息。
+请访问我们的[网站](http://swe-bench.github.io)查看公共排行榜，并查看[更改日志](https://github.com/swe-bench/SWE-bench/blob/master/CHANGELOG.md)以获取有关 SWE-bench 基准最新更新的信息。
 
 ## 👋 概述
 
@@ -97,8 +97,8 @@ python -m swebench.harness.run_evaluation --help
 
 此外,SWE-Bench仓库还可以帮助你:
 * 在我们预处理的数据集上训练你自己的模型
-* 在现有模型上运行[推理](https://github.com/princeton-nlp/SWE-bench/blob/main/swebench/inference/README.md)(无论是你本地的模型如LLaMA,还是你通过API访问的模型如GPT-4)。推理步骤是指给定一个仓库和一个问题,让模型尝试生成修复方案。
-* 在你自己的仓库上运行SWE-bench的[数据收集程序](https://github.com/princeton-nlp/SWE-bench/blob/main/swebench/collect/),以创建新的SWE-Bench任务。
+* 在现有模型上运行[推理](https://github.com/swe-bench/SWE-bench/blob/main/swebench/inference/README.md)(无论是你本地的模型如LLaMA,还是你通过API访问的模型如GPT-4)。推理步骤是指给定一个仓库和一个问题,让模型尝试生成修复方案。
+* 在你自己的仓库上运行SWE-bench的[数据收集程序](https://github.com/swe-bench/SWE-bench/blob/main/swebench/collect/),以创建新的SWE-Bench任务。
 
 ## ⬇️ 下载
 
@@ -115,8 +115,8 @@ python -m swebench.harness.run_evaluation --help
 
 我们还编写了以下博客文章,介绍如何使用SWE-bench的不同部分。
 如果你想看到关于特定主题的文章,请通过issue告诉我们。
-* [2023年11月1日] 为SWE-Bench收集评估任务 ([🔗](https://github.com/princeton-nlp/SWE-bench/blob/main/assets/collection.md))
-* [2023年11月6日] 在SWE-bench上进行评估 ([🔗](https://github.com/princeton-nlp/SWE-bench/blob/main/assets/evaluation.md))
+* [2023年11月1日] 为SWE-Bench收集评估任务 ([🔗](https://github.com/swe-bench/SWE-bench/blob/main/assets/collection.md))
+* [2023年11月6日] 在SWE-bench上进行评估 ([🔗](https://github.com/swe-bench/SWE-bench/blob/main/assets/evaluation.md))
 
 ## 💫 贡献
 

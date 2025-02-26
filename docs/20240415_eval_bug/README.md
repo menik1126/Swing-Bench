@@ -82,7 +82,7 @@ Requirement already satisfied: pytest in /n/fs/p-swe-bench/temp/seaborn/tmphkkam
 ```
 
 Over time, the version number may increase. The solution we use for this is to explicitly specify versions for PyPI packages that are installed (e.g. `click==8.0.1`).
-Examples of this can be found throughout the `swebench/harness/constants.py` file, such as [here](https://github.com/princeton-nlp/SWE-bench/blob/main/swebench/harness/constants.py#L32).
+Examples of this can be found throughout the `swebench/harness/constants.py` file, such as [here](https://github.com/swe-bench/SWE-bench/blob/main/swebench/harness/constants.py#L32).
 </details>
 
 **4. PyPI Package Dependency Updates**: Assuming failure modes #1, #2, and #3 don't occur (conda environment is created + is set up correctly), a last source of potential error is that the PyPI packages for dependencies is updated by the maintainers. At this time, based on the extent of our investigation, this is not a source of error for any task instances. However, if future versions of a PyPI package break prior functionality, this may cause an error.
@@ -91,7 +91,7 @@ Examples of this can be found throughout the `swebench/harness/constants.py` fil
 
 The fix shown for Failure Mode #3 also resolves this situation.
 
-**5. P2P Tests with Machine-Specific Paths**: We found that some P2P tests collected automatically via the harness picked up on tests with machine-specific paths to local testing files (e.g. a test named `test-validation.py:[/n/fs/p-swe-bench/temp/pytest-tmpdir/TEXT_001.txt]`), which are impossible to resolve on other machines. To remedy this, we have either 1. Rewritten the log parsing logic to refactor machine-specific paths into just keeping the file name (see [here](https://github.com/princeton-nlp/SWE-bench/blob/main/swebench/harness/log_parsers.py#L28)), or 2. Removed these tests entirely.
+**5. P2P Tests with Machine-Specific Paths**: We found that some P2P tests collected automatically via the harness picked up on tests with machine-specific paths to local testing files (e.g. a test named `test-validation.py:[/n/fs/p-swe-bench/temp/pytest-tmpdir/TEXT_001.txt]`), which are impossible to resolve on other machines. To remedy this, we have either 1. Rewritten the log parsing logic to refactor machine-specific paths into just keeping the file name (see [here](https://github.com/swe-bench/SWE-bench/blob/main/swebench/harness/log_parsers.py#L28)), or 2. Removed these tests entirely.
 - 🟡 Low (< 10)
 - Affected Repositories: requests, sympy
 
@@ -117,7 +117,7 @@ To identify and then fix these issues, we carried out the following steps:
 To perform multiple rounds of validation, we run the `sweep_conda_links.py` script multiple times. We use manual inspection + several on the fly scripts to identify, then rename or remove any problematic tests.
 
 ## Outcomes
-We introduce the following fixes that are solutions to the discussed problems, which is generally starting from [#65](https://github.com/princeton-nlp/SWE-bench/pull/65) to the latest `1.0.x` releases:
+We introduce the following fixes that are solutions to the discussed problems, which is generally starting from [#65](https://github.com/swe-bench/SWE-bench/pull/65) to the latest `1.0.x` releases:
 * Fix conda version to `py39_23.10.0-1`.
 * Specify specific pip package versions to install (e.g. `contourpy==1.1.0`).
 * Add missing pip packages that need to be installed due to changes in the conda resolution logic.

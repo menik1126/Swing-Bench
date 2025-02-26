@@ -1,25 +1,23 @@
-2025-02-21 00:11:17,662 - INFO - Environment image sweb.env.py.x86_64.c70974ae7654c7a2c98577:latest found for astropy__astropy-6938
-Building instance image sweb.eval.x86_64.astropy__astropy-6938:latest for astropy__astropy-6938
-2025-02-21 00:13:30,103 - INFO - Creating container for astropy__astropy-6938...
-2025-02-21 00:13:30,127 - INFO - Container for astropy__astropy-6938 created: 79b93e872e98387e276efc34bc8b5a3f647bd1d215d4a78e6808318d20323f99
-2025-02-21 00:13:30,427 - INFO - Container for astropy__astropy-6938 started: 79b93e872e98387e276efc34bc8b5a3f647bd1d215d4a78e6808318d20323f99
-2025-02-21 00:13:30,427 - INFO - Intermediate patch for astropy__astropy-6938 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/patch.diff, now applying to container...
-2025-02-21 00:13:30,874 - INFO - Failed to apply patch to container: git apply --verbose
-2025-02-21 00:13:30,989 - INFO - Failed to apply patch to container: git apply --verbose --reject
-2025-02-21 00:13:31,095 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
-2025-02-21 00:13:31,095 - INFO - >>>>> Patch Apply Failed:
+2025-02-26 12:23:00,491 - INFO - Creating container for astropy__astropy-6938...
+2025-02-26 12:23:00,625 - INFO - Container for astropy__astropy-6938 created: 9f7098f1ef3b5d16c8fb86a709d86994dae1e3ffc08bda82072aebd9f99ba192
+2025-02-26 12:23:00,931 - INFO - Container for astropy__astropy-6938 started: 9f7098f1ef3b5d16c8fb86a709d86994dae1e3ffc08bda82072aebd9f99ba192
+2025-02-26 12:23:00,932 - INFO - Intermediate patch for astropy__astropy-6938 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/patch.diff, now applying to container...
+2025-02-26 12:23:01,186 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-26 12:23:01,282 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-26 12:23:01,378 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-02-26 12:23:01,378 - INFO - >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
 patch unexpectedly ends in middle of line
 patch: **** malformed patch at line 13:  
 
 
-2025-02-21 00:13:31,101 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,384 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
 
-2025-02-21 00:13:31,101 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,384 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -29,8 +27,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,101 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,384 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -40,8 +38,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,101 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,385 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -51,8 +49,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,385 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -62,8 +60,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,385 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -73,8 +71,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,385 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -84,8 +82,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,385 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -95,8 +93,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,385 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -106,8 +104,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,385 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -117,8 +115,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,385 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -128,8 +126,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,386 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -139,8 +137,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,102 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,386 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -150,8 +148,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,386 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -161,8 +159,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,386 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -172,8 +170,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,386 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -183,8 +181,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,386 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -194,8 +192,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,386 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -205,8 +203,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,386 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -216,8 +214,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,386 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -227,8 +225,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,387 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -238,8 +236,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,103 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,387 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -249,8 +247,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,387 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -260,8 +258,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,387 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -271,8 +269,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,387 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -282,8 +280,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,387 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -293,8 +291,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,387 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -304,8 +302,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,387 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -315,8 +313,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,387 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -326,8 +324,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,388 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -337,8 +335,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,104 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,388 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -348,8 +346,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,388 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -359,8 +357,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,388 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -370,8 +368,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,388 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -381,8 +379,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,388 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -392,8 +390,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,388 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -403,8 +401,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,388 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -414,8 +412,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,389 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -425,8 +423,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,389 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -436,8 +434,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,105 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,389 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -447,8 +445,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,389 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -458,8 +456,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,389 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -469,8 +467,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,389 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -480,8 +478,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,389 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -491,8 +489,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,389 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -502,8 +500,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,389 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -513,8 +511,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,390 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -524,8 +522,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,390 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -535,8 +533,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,106 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,390 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -546,8 +544,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,390 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -557,8 +555,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,390 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -568,8 +566,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,390 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -579,8 +577,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,390 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -590,8 +588,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,390 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -601,8 +599,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,390 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -612,8 +610,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,391 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -623,8 +621,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,391 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -634,8 +632,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,391 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -645,8 +643,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,107 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,391 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -656,8 +654,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,391 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -667,8 +665,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,391 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -678,8 +676,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,391 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -689,8 +687,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,391 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -700,8 +698,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,392 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -711,8 +709,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,392 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -722,8 +720,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,392 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -733,8 +731,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,392 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -744,8 +742,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,108 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,392 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -755,8 +753,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,392 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -766,8 +764,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,392 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -777,8 +775,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,392 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -788,8 +786,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,392 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -799,8 +797,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,393 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -810,8 +808,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,393 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -821,8 +819,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,393 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -832,8 +830,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,393 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -843,8 +841,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,109 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,393 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -854,8 +852,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,393 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -865,8 +863,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,393 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -876,8 +874,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,393 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -887,8 +885,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,393 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -898,8 +896,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,394 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -909,8 +907,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,394 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -920,8 +918,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,394 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -931,8 +929,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,394 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -942,8 +940,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,110 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,394 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -953,8 +951,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,394 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -964,8 +962,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,394 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -975,8 +973,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,394 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -986,8 +984,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,395 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -997,8 +995,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,395 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1008,8 +1006,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,395 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1019,8 +1017,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,395 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1030,8 +1028,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,395 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1041,8 +1039,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,111 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,395 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1052,8 +1050,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,395 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1063,8 +1061,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,395 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1074,8 +1072,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,395 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1085,8 +1083,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,396 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1096,8 +1094,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,396 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1107,8 +1105,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,396 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1118,8 +1116,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,396 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1129,8 +1127,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,396 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1140,8 +1138,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,112 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,396 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1151,8 +1149,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,396 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1162,8 +1160,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,396 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1173,8 +1171,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,397 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1184,8 +1182,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,397 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1195,8 +1193,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,397 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1206,8 +1204,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,397 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1217,8 +1215,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,397 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1228,8 +1226,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,397 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1239,8 +1237,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,113 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,397 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1250,8 +1248,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,397 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1261,8 +1259,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,397 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1272,8 +1270,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,398 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1283,8 +1281,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,398 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1294,8 +1292,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,398 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1305,8 +1303,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,398 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1316,8 +1314,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,398 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1327,8 +1325,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,398 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1338,8 +1336,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,114 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,398 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1349,8 +1347,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,115 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,398 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1360,13 +1358,13 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,118 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,402 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: <unprintable EvaluationError object>
 
-2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,402 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1376,8 +1374,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,403 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1387,8 +1385,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,403 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1398,8 +1396,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,403 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1409,8 +1407,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,403 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1420,8 +1418,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,403 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1431,8 +1429,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,403 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1442,8 +1440,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,403 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1453,8 +1451,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,119 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,403 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1464,8 +1462,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,404 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1475,8 +1473,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,404 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1486,8 +1484,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,404 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1497,8 +1495,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,404 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1508,8 +1506,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,404 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1519,8 +1517,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,404 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1530,8 +1528,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,404 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1541,8 +1539,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,404 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1552,8 +1550,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,120 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,404 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1563,8 +1561,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,405 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1574,8 +1572,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,405 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1585,8 +1583,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,405 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1596,8 +1594,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,405 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1607,8 +1605,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,405 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1618,8 +1616,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,405 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1629,8 +1627,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,405 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1640,8 +1638,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,405 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1651,8 +1649,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,121 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,405 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1662,8 +1660,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,406 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1673,8 +1671,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,406 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1684,8 +1682,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,406 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1695,8 +1693,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,406 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1706,8 +1704,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,406 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1717,8 +1715,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,406 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1728,8 +1726,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,406 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1739,8 +1737,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,406 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1750,8 +1748,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1761,8 +1759,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,122 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1772,8 +1770,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1783,8 +1781,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1794,8 +1792,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1805,8 +1803,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1816,8 +1814,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1827,8 +1825,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1838,8 +1836,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,407 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1849,8 +1847,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1860,8 +1858,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,123 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1871,8 +1869,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1882,8 +1880,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1893,8 +1891,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1904,8 +1902,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1915,8 +1913,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1926,8 +1924,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1937,8 +1935,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,408 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1948,8 +1946,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1959,8 +1957,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,124 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1970,8 +1968,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1981,8 +1979,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -1992,8 +1990,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2003,8 +2001,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2014,8 +2012,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2025,8 +2023,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,409 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2036,8 +2034,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2047,8 +2045,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2058,8 +2056,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,125 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2069,8 +2067,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2080,8 +2078,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2091,8 +2089,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2102,8 +2100,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2113,8 +2111,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2124,8 +2122,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,410 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2135,8 +2133,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2146,8 +2144,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2157,8 +2155,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2168,8 +2166,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,126 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2179,8 +2177,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,411 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2190,8 +2188,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2201,8 +2199,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2212,8 +2210,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2223,8 +2221,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2234,8 +2232,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2245,8 +2243,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2256,8 +2254,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,412 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2267,8 +2265,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,127 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2278,8 +2276,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2289,8 +2287,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2300,8 +2298,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2311,8 +2309,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2322,8 +2320,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2333,8 +2331,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2344,8 +2342,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2355,8 +2353,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,413 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2366,8 +2364,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,128 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2377,8 +2375,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2388,8 +2386,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2399,8 +2397,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2410,8 +2408,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2421,8 +2419,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2432,8 +2430,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2443,8 +2441,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,414 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2454,8 +2452,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2465,8 +2463,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,129 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2476,8 +2474,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2487,8 +2485,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2498,8 +2496,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2509,8 +2507,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2520,8 +2518,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2531,8 +2529,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2542,8 +2540,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,415 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2553,8 +2551,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2564,8 +2562,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,130 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2575,8 +2573,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2586,8 +2584,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2597,8 +2595,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2608,8 +2606,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2619,8 +2617,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2630,8 +2628,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,416 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2641,8 +2639,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2652,8 +2650,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2663,8 +2661,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,131 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2674,8 +2672,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,132 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2685,8 +2683,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,132 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2696,8 +2694,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,132 - INFO - Traceback (most recent call last):
-  File "/home/xiongjing/SWE-bench/swebench/harness/run_evaluation.py", line 160, in run_instance
+2025-02-26 12:23:01,417 - INFO - Traceback (most recent call last):
+  File "/home/xiongjing/Swing-Bench/swebench/harness/run_evaluation.py", line 170, in run_instance
     raise EvaluationError(
 swebench.harness.utils.EvaluationError: astropy__astropy-6938: >>>>> Patch Apply Failed:
 patching file astropy/io/fits/fitsrec.py
@@ -2707,8 +2705,8 @@ patch: **** malformed patch at line 13:
 
 Check (logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-6938/run_instance.log) for more information.
 
-2025-02-21 00:13:31,132 - INFO - Attempting to stop container sweb.eval.astropy__astropy-6938.test...
-2025-02-21 00:13:46,359 - INFO - Attempting to remove container sweb.eval.astropy__astropy-6938.test...
-2025-02-21 00:13:46,371 - INFO - Container sweb.eval.astropy__astropy-6938.test removed.
-2025-02-21 00:13:46,371 - INFO - Attempting to remove image sweb.eval.x86_64.astropy__astropy-6938:latest...
-2025-02-21 00:13:46,484 - INFO - Image sweb.eval.x86_64.astropy__astropy-6938:latest removed.
+2025-02-26 12:23:01,417 - INFO - Attempting to stop container sweb.eval.astropy__astropy-6938.test...
+2025-02-26 12:23:16,607 - INFO - Attempting to remove container sweb.eval.astropy__astropy-6938.test...
+2025-02-26 12:23:16,613 - INFO - Container sweb.eval.astropy__astropy-6938.test removed.
+2025-02-26 12:23:16,613 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.astropy_1776_astropy-6938:latest...
+2025-02-26 12:23:16,750 - INFO - Image swebench/sweb.eval.x86_64.astropy_1776_astropy-6938:latest removed.

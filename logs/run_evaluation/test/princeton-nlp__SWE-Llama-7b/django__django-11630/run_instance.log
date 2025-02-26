@@ -1,17 +1,15 @@
-2025-02-08 19:53:32,500 - INFO - Environment image sweb.env.py.x86_64.2baaea72acc974f6c02079:latest found for django__django-11630
-Building instance image sweb.eval.x86_64.django__django-11630:latest for django__django-11630
-2025-02-08 19:54:09,310 - INFO - Creating container for django__django-11630...
-2025-02-08 19:54:09,336 - INFO - Container for django__django-11630 created: 86c3c990ea8ff04e12de0589133ab75a113842203d9a23201b9bc6c3b7fee0ba
-2025-02-08 19:54:09,652 - INFO - Container for django__django-11630 started: 86c3c990ea8ff04e12de0589133ab75a113842203d9a23201b9bc6c3b7fee0ba
-2025-02-08 19:54:09,653 - INFO - Intermediate patch for django__django-11630 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11630/patch.diff, now applying to container...
-2025-02-08 19:54:10,047 - INFO - Failed to apply patch to container: git apply --verbose
-2025-02-08 19:54:10,134 - INFO - Failed to apply patch to container: git apply --verbose --reject
-2025-02-08 19:54:10,243 - INFO - >>>>> Applied Patch:
+2025-02-26 12:25:38,572 - INFO - Creating container for django__django-11630...
+2025-02-26 12:25:38,787 - INFO - Container for django__django-11630 created: 7a7121f03067f13038499d0d6a9eac7062fb87b15f3965b1d6c0437891681051
+2025-02-26 12:25:39,067 - INFO - Container for django__django-11630 started: 7a7121f03067f13038499d0d6a9eac7062fb87b15f3965b1d6c0437891681051
+2025-02-26 12:25:39,067 - INFO - Intermediate patch for django__django-11630 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11630/patch.diff, now applying to container...
+2025-02-26 12:25:39,253 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-26 12:25:39,358 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-26 12:25:39,444 - INFO - >>>>> Applied Patch:
 patching file django/core/checks/model_checks.py
 patch unexpectedly ends in middle of line
 Hunk #1 succeeded at 36 with fuzz 1.
 
-2025-02-08 19:54:11,068 - INFO - Git diff before:
+2025-02-26 12:25:40,200 - INFO - Git diff before:
 diff --git a/django/core/checks/model_checks.py b/django/core/checks/model_checks.py
 index 5c2266ca1d..81941f9ccb 100644
 --- a/django/core/checks/model_checks.py
@@ -25,10 +23,10 @@ index 5c2266ca1d..81941f9ccb 100644
              errors.append(
                  Error(
                      "db_table '%s' is used by multiple models: %s."
-2025-02-08 19:54:11,069 - INFO - Eval script for django__django-11630 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11630/eval.sh; copying to container...
-2025-02-08 19:54:17,373 - INFO - Test runtime: 6.00 seconds
-2025-02-08 19:54:17,374 - INFO - Test output for django__django-11630 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11630/test_output.txt
-2025-02-08 19:54:17,488 - INFO - Git diff after:
+2025-02-26 12:25:40,200 - INFO - Eval script for django__django-11630 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11630/eval.sh; copying to container...
+2025-02-26 12:25:45,819 - INFO - Test runtime: 5.52 seconds
+2025-02-26 12:25:45,820 - INFO - Test output for django__django-11630 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/django__django-11630/test_output.txt
+2025-02-26 12:25:45,955 - INFO - Git diff after:
 diff --git a/django/core/checks/model_checks.py b/django/core/checks/model_checks.py
 index 5c2266ca1d..81941f9ccb 100644
 --- a/django/core/checks/model_checks.py
@@ -42,11 +40,11 @@ index 5c2266ca1d..81941f9ccb 100644
              errors.append(
                  Error(
                      "db_table '%s' is used by multiple models: %s."
-2025-02-08 19:54:17,488 - INFO - Grading answer for django__django-11630...
-2025-02-08 19:54:17,491 - INFO - report: {'django__django-11630': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_collision_across_apps_database_routers_installed (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_collision_in_same_app_database_routers_installed (check_framework.test_model_checks.DuplicateDBTableTests)']}, 'PASS_TO_PASS': {'success': ['test_collision_abstract_model (check_framework.test_model_checks.IndexNameTests)', 'test_collision_across_apps (check_framework.test_model_checks.IndexNameTests)', 'test_collision_in_different_models (check_framework.test_model_checks.IndexNameTests)', 'test_collision_in_same_model (check_framework.test_model_checks.IndexNameTests)', 'test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.IndexNameTests)', 'test_no_collision_across_apps_interpolation (check_framework.test_model_checks.IndexNameTests)', 'test_collision_abstract_model (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_across_apps (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_in_different_models (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_in_same_model (check_framework.test_model_checks.ConstraintNameTests)', 'test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.ConstraintNameTests)', 'test_no_collision_across_apps_interpolation (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_across_apps (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_collision_in_same_app (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_no_collision_for_proxy_models (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_no_collision_for_unmanaged_models (check_framework.test_model_checks.DuplicateDBTableTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+2025-02-26 12:25:45,955 - INFO - Grading answer for django__django-11630...
+2025-02-26 12:25:45,956 - INFO - report: {'django__django-11630': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_collision_across_apps_database_routers_installed (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_collision_in_same_app_database_routers_installed (check_framework.test_model_checks.DuplicateDBTableTests)']}, 'PASS_TO_PASS': {'success': ['test_collision_abstract_model (check_framework.test_model_checks.IndexNameTests)', 'test_collision_across_apps (check_framework.test_model_checks.IndexNameTests)', 'test_collision_in_different_models (check_framework.test_model_checks.IndexNameTests)', 'test_collision_in_same_model (check_framework.test_model_checks.IndexNameTests)', 'test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.IndexNameTests)', 'test_no_collision_across_apps_interpolation (check_framework.test_model_checks.IndexNameTests)', 'test_collision_abstract_model (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_across_apps (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_in_different_models (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_in_same_model (check_framework.test_model_checks.ConstraintNameTests)', 'test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.ConstraintNameTests)', 'test_no_collision_across_apps_interpolation (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_across_apps (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_collision_in_same_app (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_no_collision_for_proxy_models (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_no_collision_for_unmanaged_models (check_framework.test_model_checks.DuplicateDBTableTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
 Result for django__django-11630: resolved: False
-2025-02-08 19:54:17,492 - INFO - Attempting to stop container sweb.eval.django__django-11630.test...
-2025-02-08 19:54:32,759 - INFO - Attempting to remove container sweb.eval.django__django-11630.test...
-2025-02-08 19:54:32,804 - INFO - Container sweb.eval.django__django-11630.test removed.
-2025-02-08 19:54:32,804 - INFO - Attempting to remove image sweb.eval.x86_64.django__django-11630:latest...
-2025-02-08 19:54:33,051 - INFO - Image sweb.eval.x86_64.django__django-11630:latest removed.
+2025-02-26 12:25:45,956 - INFO - Attempting to stop container sweb.eval.django__django-11630.test...
+2025-02-26 12:26:01,237 - INFO - Attempting to remove container sweb.eval.django__django-11630.test...
+2025-02-26 12:26:01,280 - INFO - Container sweb.eval.django__django-11630.test removed.
+2025-02-26 12:26:01,280 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-11630:latest...
+2025-02-26 12:26:01,521 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-11630:latest removed.

@@ -1,17 +1,15 @@
-2025-02-08 19:35:10,972 - INFO - Environment image sweb.env.py.x86_64.428468730904ff6b4232aa:latest found for astropy__astropy-14365
-Building instance image sweb.eval.x86_64.astropy__astropy-14365:latest for astropy__astropy-14365
-2025-02-08 19:36:18,381 - INFO - Creating container for astropy__astropy-14365...
-2025-02-08 19:36:18,412 - INFO - Container for astropy__astropy-14365 created: cca017e7c73e268a5d1a1984dd13a895de588ff603b3dd4e2d46890daf0ce156
-2025-02-08 19:36:18,757 - INFO - Container for astropy__astropy-14365 started: cca017e7c73e268a5d1a1984dd13a895de588ff603b3dd4e2d46890daf0ce156
-2025-02-08 19:36:18,758 - INFO - Intermediate patch for astropy__astropy-14365 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-14365/patch.diff, now applying to container...
-2025-02-08 19:36:19,197 - INFO - Failed to apply patch to container: git apply --verbose
-2025-02-08 19:36:19,303 - INFO - Failed to apply patch to container: git apply --verbose --reject
-2025-02-08 19:36:19,411 - INFO - >>>>> Applied Patch:
+2025-02-26 12:09:06,485 - INFO - Creating container for astropy__astropy-14365...
+2025-02-26 12:09:06,507 - INFO - Container for astropy__astropy-14365 created: 6b6f67b1f1950d1dcd30774ba433cb7fb8c3d1d81ea06ac74fc87f1e5e8544cb
+2025-02-26 12:09:06,807 - INFO - Container for astropy__astropy-14365 started: 6b6f67b1f1950d1dcd30774ba433cb7fb8c3d1d81ea06ac74fc87f1e5e8544cb
+2025-02-26 12:09:06,808 - INFO - Intermediate patch for astropy__astropy-14365 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-14365/patch.diff, now applying to container...
+2025-02-26 12:09:07,042 - INFO - Failed to apply patch to container: git apply --verbose
+2025-02-26 12:09:07,132 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-02-26 12:09:07,224 - INFO - >>>>> Applied Patch:
 patching file astropy/io/ascii/qdp.py
 patch unexpectedly ends in middle of line
 Hunk #1 succeeded at 60 with fuzz 2.
 
-2025-02-08 19:36:19,962 - INFO - Git diff before:
+2025-02-26 12:09:07,936 - INFO - Git diff before:
 diff --git a/astropy/io/ascii/qdp.py b/astropy/io/ascii/qdp.py
 index 83a4f004aa..4ab3c002ef 100644
 --- a/astropy/io/ascii/qdp.py
@@ -36,10 +34,10 @@ index 287a356a08..f2ee6c47cc 100644
              "setuptools_scm>=6.2",
              "wheel",
              "cython==0.29.30",
-2025-02-08 19:36:19,963 - INFO - Eval script for astropy__astropy-14365 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-14365/eval.sh; copying to container...
-2025-02-08 19:37:01,733 - INFO - Test runtime: 41.45 seconds
-2025-02-08 19:37:01,735 - INFO - Test output for astropy__astropy-14365 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-14365/test_output.txt
-2025-02-08 19:37:01,823 - INFO - Git diff after:
+2025-02-26 12:09:07,937 - INFO - Eval script for astropy__astropy-14365 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-14365/eval.sh; copying to container...
+2025-02-26 12:09:50,466 - INFO - Test runtime: 42.43 seconds
+2025-02-26 12:09:50,466 - INFO - Test output for astropy__astropy-14365 written to logs/run_evaluation/test/princeton-nlp__SWE-Llama-7b/astropy__astropy-14365/test_output.txt
+2025-02-26 12:09:50,579 - INFO - Git diff after:
 diff --git a/astropy/io/ascii/qdp.py b/astropy/io/ascii/qdp.py
 index 83a4f004aa..4ab3c002ef 100644
 --- a/astropy/io/ascii/qdp.py
@@ -64,11 +62,7 @@ index 287a356a08..f2ee6c47cc 100644
              "setuptools_scm>=6.2",
              "wheel",
              "cython==0.29.30",
-2025-02-08 19:37:01,823 - INFO - Grading answer for astropy__astropy-14365...
-2025-02-08 19:37:01,850 - INFO - report: {'astropy__astropy-14365': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]']}, 'PASS_TO_PASS': {'success': ['astropy/io/ascii/tests/test_qdp.py::test_read_write_simple', 'astropy/io/ascii/tests/test_qdp.py::test_read_write_simple_specify_name', 'astropy/io/ascii/tests/test_qdp.py::test_get_lines_from_qdp'], 'failure': ['astropy/io/ascii/tests/test_qdp.py::test_get_tables_from_qdp_file', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip[False]', 'astropy/io/ascii/tests/test_qdp.py::test_read_example', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example_comma']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+2025-02-26 12:09:50,580 - INFO - Grading answer for astropy__astropy-14365...
+2025-02-26 12:09:50,606 - INFO - report: {'astropy__astropy-14365': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]']}, 'PASS_TO_PASS': {'success': ['astropy/io/ascii/tests/test_qdp.py::test_read_write_simple', 'astropy/io/ascii/tests/test_qdp.py::test_read_write_simple_specify_name', 'astropy/io/ascii/tests/test_qdp.py::test_get_lines_from_qdp'], 'failure': ['astropy/io/ascii/tests/test_qdp.py::test_get_tables_from_qdp_file', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip[False]', 'astropy/io/ascii/tests/test_qdp.py::test_read_example', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example_comma']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
 Result for astropy__astropy-14365: resolved: False
-2025-02-08 19:37:01,851 - INFO - Attempting to stop container sweb.eval.astropy__astropy-14365.test...
-2025-02-08 19:37:17,088 - INFO - Attempting to remove container sweb.eval.astropy__astropy-14365.test...
-2025-02-08 19:37:17,132 - INFO - Container sweb.eval.astropy__astropy-14365.test removed.
-2025-02-08 19:37:17,133 - INFO - Attempting to remove image sweb.eval.x86_64.astropy__astropy-14365:latest...
-2025-02-08 19:37:17,284 - INFO - Image sweb.eval.x86_64.astropy__astropy-14365:latest removed.
+2025-02-26 12:09:50,607 - INFO - Attempting to stop container sweb.eval.astropy__astropy-14365.test...

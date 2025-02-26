@@ -482,7 +482,7 @@ export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
 + hash -r
 + python -m pip install -e .
 Obtaining file:///testbed
-Requirement already satisfied: pytz in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from Django==3.0.dev20190307150218) (2025.1)
+Requirement already satisfied: pytz in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from Django==3.0.dev20190307150218) (2024.2)
 Requirement already satisfied: sqlparse in /opt/miniconda3/envs/testbed/lib/python3.6/site-packages (from Django==3.0.dev20190307150218) (0.4.4)
 Installing collected packages: Django
   Attempting uninstall: Django
@@ -593,7 +593,45 @@ test_squashmigrations_invalid_start (migrations.test_commands.SquashMigrationsTe
 test_squashmigrations_optimizes (migrations.test_commands.SquashMigrationsTests) ... ok
 test_squashmigrations_squashes (migrations.test_commands.SquashMigrationsTests) ... ok
 test_squashmigrations_valid_start (migrations.test_commands.SquashMigrationsTests) ... ok
-test_ticket_23799_squashmigrations_no_optimize (migrations.test_commands.SquashMigrationsTests) ... Testing against Django installed in '/testbed/django'
+test_ticket_23799_squashmigrations_no_optimize (migrations.test_commands.SquashMigrationsTests) ... ok
+
+======================================================================
+FAIL: test_sqlmigrate_backwards (migrations.test_commands.MigrateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/testbed/django/test/utils.py", line 371, in inner
+    return func(*args, **kwargs)
+  File "/testbed/tests/migrations/test_commands.py", line 583, in test_sqlmigrate_backwards
+    self.assertGreater(index_tx_start, -1, "Transaction start not found")
+AssertionError: -1 not greater than -1 : Transaction start not found
+
+======================================================================
+FAIL: test_sqlmigrate_for_non_transactional_databases (migrations.test_commands.MigrateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/testbed/django/test/utils.py", line 371, in inner
+    return func(*args, **kwargs)
+  File "/testbed/tests/migrations/test_commands.py", line 635, in test_sqlmigrate_for_non_transactional_databases
+    self.assertNotIn(start_transaction_sql.lower(), queries)
+AssertionError: 'begin;' unexpectedly found in ['begin;', '--', '-- create model author', '--', 'create table "migrations_author" ("id" integer not null primary key autoincrement, "name" varchar(255) not null, "slug" varchar(50) null, "age" integer not null, "silly_field" bool not null);', '--', '-- create model tribble', '--', 'create table "migrations_tribble" ("id" integer not null primary key autoincrement, "fluffy" bool not null);', '--', '-- add field bool to tribble', '--', 'create table "new__migrations_tribble" ("id" integer not null primary key autoincrement, "fluffy" bool not null, "bool" bool not null);', 'insert into "new__migrations_tribble" ("id", "fluffy", "bool") select "id", "fluffy", 0 from "migrations_tribble";', 'drop table "migrations_tribble";', 'alter table "new__migrations_tribble" rename to "migrations_tribble";', 'create index "migrations_author_slug_43a992db" on "migrations_author" ("slug");', '--', '-- alter unique_together for author (1 constraint(s))', '--', 'create unique index "migrations_author_name_slug_0ef2ba54_uniq" on "migrations_author" ("name", "slug");', 'commit;']
+
+======================================================================
+FAIL: test_sqlmigrate_forwards (migrations.test_commands.MigrateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/testbed/django/test/utils.py", line 371, in inner
+    return func(*args, **kwargs)
+  File "/testbed/tests/migrations/test_commands.py", line 540, in test_sqlmigrate_forwards
+    self.assertGreater(index_tx_start, -1, "Transaction start not found")
+AssertionError: -1 not greater than -1 : Transaction start not found
+
+----------------------------------------------------------------------
+Ran 89 tests in 0.938s
+
+FAILED (failures=3)
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
+Testing against Django installed in '/testbed/django'
 Importing application migrations
 Operations to perform:
   Synchronize unmigrated apps: auth, contenttypes, messages, migrations, sessions, staticfiles
@@ -634,44 +672,6 @@ Running migrations:
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
 System check identified no issues (0 silenced).
-ok
-
-======================================================================
-FAIL: test_sqlmigrate_backwards (migrations.test_commands.MigrateTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/testbed/django/test/utils.py", line 371, in inner
-    return func(*args, **kwargs)
-  File "/testbed/tests/migrations/test_commands.py", line 583, in test_sqlmigrate_backwards
-    self.assertGreater(index_tx_start, -1, "Transaction start not found")
-AssertionError: -1 not greater than -1 : Transaction start not found
-
-======================================================================
-FAIL: test_sqlmigrate_for_non_transactional_databases (migrations.test_commands.MigrateTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/testbed/django/test/utils.py", line 371, in inner
-    return func(*args, **kwargs)
-  File "/testbed/tests/migrations/test_commands.py", line 635, in test_sqlmigrate_for_non_transactional_databases
-    self.assertNotIn(start_transaction_sql.lower(), queries)
-AssertionError: 'begin;' unexpectedly found in ['begin;', '--', '-- create model author', '--', 'create table "migrations_author" ("id" integer not null primary key autoincrement, "name" varchar(255) not null, "slug" varchar(50) null, "age" integer not null, "silly_field" bool not null);', '--', '-- create model tribble', '--', 'create table "migrations_tribble" ("id" integer not null primary key autoincrement, "fluffy" bool not null);', '--', '-- add field bool to tribble', '--', 'create table "new__migrations_tribble" ("id" integer not null primary key autoincrement, "fluffy" bool not null, "bool" bool not null);', 'insert into "new__migrations_tribble" ("id", "fluffy", "bool") select "id", "fluffy", 0 from "migrations_tribble";', 'drop table "migrations_tribble";', 'alter table "new__migrations_tribble" rename to "migrations_tribble";', 'create index "migrations_author_slug_43a992db" on "migrations_author" ("slug");', '--', '-- alter unique_together for author (1 constraint(s))', '--', 'create unique index "migrations_author_name_slug_0ef2ba54_uniq" on "migrations_author" ("name", "slug");', 'commit;']
-
-======================================================================
-FAIL: test_sqlmigrate_forwards (migrations.test_commands.MigrateTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/testbed/django/test/utils.py", line 371, in inner
-    return func(*args, **kwargs)
-  File "/testbed/tests/migrations/test_commands.py", line 540, in test_sqlmigrate_forwards
-    self.assertGreater(index_tx_start, -1, "Transaction start not found")
-AssertionError: -1 not greater than -1 : Transaction start not found
-
-----------------------------------------------------------------------
-Ran 89 tests in 0.983s
-
-FAILED (failures=3)
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
 + : '>>>>> End Test Output'
 + git checkout d5276398046ce4a102776a1e67dcac2884d80dfe tests/migrations/test_commands.py
 Updated 1 path from 99ec65f48c
