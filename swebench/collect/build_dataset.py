@@ -9,6 +9,7 @@ from typing import Optional
 from swebench.collect.utils import (
     extract_patches,
     extract_problem_statement_and_hints,
+    extract_ci_name_list,
     Repo,
 )
 
@@ -45,6 +46,7 @@ def create_instance(repo: Repo, pull: dict) -> dict:
         "problem_statement": problem_statement,
         "hints_text": hints,
         "created_at": pull["created_at"],
+        "ci_name_list": pull["ci_name_list"],
     }
 
 
@@ -159,10 +161,14 @@ def main(pr_file: str, output: str, token: Optional[str] = None):
                 instance_id = instance_id.replace("/", "__")
                 if instance_id in seen_prs:
                     seen_prs -= {instance_id}
+                    print('instance already be processed {}'.format(instance_id))
                     continue
                 if not is_valid_pull(pull):
                     # Throw out invalid PRs
                     continue
+                print('valid pull {}'.format(instance_id))
+                # Append action info
+                pull['ci_name_list'] = extract_ci_name_list(pull)
                 # Create task instance
                 repo_name = pull["base"]["repo"]["full_name"]
                 if repo_name not in repos:
