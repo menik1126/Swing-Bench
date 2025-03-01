@@ -408,6 +408,7 @@ def extract_problem_statement_and_hints_django(
 
 
 def extract_ci_name_list(pull: dict) -> list[str]:
+    # TODO(wdxu): adapt CIs which are not configured in .github/workflow/
     print('processing {} {}'.format(pull['base']['repo']['full_name'], pull['number']))
     checks_info_ptn = 'https://github.com/{}/pull/{}/checks'
     checks_url = checks_info_ptn.format(pull['base']['repo']['full_name'], pull['number'])
@@ -430,7 +431,7 @@ def extract_ci_name_list(pull: dict) -> list[str]:
             for action in action_list:
                 a_tag = action.find("a", href=True)
                 if 'completed successfully' in str(a_tag):
-                    if a_tag and "/astral-sh/uv/actions/runs/" in a_tag["href"]:
+                    if a_tag and "/{}/actions/runs/".format(pull['base']['repo']['full_name']) in a_tag["href"]:
                         ci_names.append(a_tag.get_text(strip=True))
             return ci_names
     return []
