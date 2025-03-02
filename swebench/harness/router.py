@@ -119,8 +119,7 @@ class ActCITool(CIToolBase):
         self._get_ci_job_name_id_dict(task.target_dir)
         result = []
         for ci in ci_list:
-            subprocess.run(["act", "-j", self.ci_dict[ci]], cwd=task.target_dir)
-            result.append(self._run_ci(task, log_file, ci))
+            result.append(subprocess.run(["act", "-j", self.ci_dict[ci]], cwd=task.target_dir))
         return result
 
     def construct(self):
@@ -153,4 +152,6 @@ if __name__ == '__main__':
                      "patch": "patch_content", \
                      "workdir": "/home/wdxu/github", \
                      "output_dir": "output_dir"})
-    act.run_ci(tasks[0], './debug.log', ['Android Build'])
+    result = act.run_ci(tasks[0], './debug.log', ['Android Build'])
+    with open('./result.log', 'w') as f:
+        f.write(str(result))
