@@ -7,6 +7,8 @@ from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import traceback
 
+handler = None
+
 def run_script(script_content):
 
     with tempfile.NamedTemporaryFile(mode="w", delete=False, suffix=".sh") as temp_script:
@@ -21,6 +23,7 @@ def run_script(script_content):
 
 
 def run_instance(task: Task):
+    global handler
 
     run_script("\n".join(task.env_script))
     run_script("\n".join(task.eval_script))
@@ -32,13 +35,9 @@ def run_instance(task: Task):
         log_file = os.path.join(task.output_dir, "output_"+ str(task.id) +".log")
         subprocess.run(["git", "apply", patch_path], cwd=task.target_dir, text=True, check=True)
         try:
-            with open(log_file, "w") as f:
-                result = subprocess.run(["cargo", "test"], cwd=task.target_dir, stdout=f, stderr=f, text=True)
-
-            if result.returncode != 0:
-                print(f"[ERROR] Task {task.id} cargo test failed with return code {result.returncode}")
+            result = handler.run_ci(task, log_file)
+            if result is None:
                 return False
-
             return True
         except Exception as e:
             print(f"[ERROR] Task {task.id} encountered an error: {e}")
@@ -92,15 +91,17 @@ def main(
         patch_content = f.read()
     
     config = {
+        "act_path": "act",
         "repo": "vectordotdev/vector",
         "base_commit": "d49c542930267cc69d577e8d3b86a6c119fcf331",
         "patch": patch_content,
         "workdir": workdir,
         "output_dir": output_dir
     }
-
+    global handler
     # router to different handler
-    HANDLER["cargo"](config)
+    handler = HANDLER["act"](config)
+    # HANDLER["cargo"](config)
 
     run_threadpool(run_instance, tasks, max_workers)
 
