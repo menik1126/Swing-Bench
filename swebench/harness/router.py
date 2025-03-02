@@ -60,9 +60,18 @@ class DockerCITool(CIToolBase):
         tasks.append()
 
 
+class ActCITool(CIToolBase):
+    def __init__(self, config):
+        super().__init__(config)
+        self.construct()
+    
+    def construct(self):
+        pass
+
 HANDLER = {
     "cargo": CargoCITool,
     "docker": DockerCITool,
+    "act": ActCITool
 }
 
 RUST_BASE_ENV={
