@@ -92,31 +92,6 @@ def run_threadpool(tasks, max_workers):
                 )
     return succeeded, failed
 
-# def run_threadpool(func, payloads, max_workers):
-#     if max_workers <= 0:
-#         return run_sequential(func, payloads)
-#     succeeded, failed = [], []
-#     with tqdm(total=len(payloads), smoothing=0) as pbar:
-#         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-#             # Create a future for running each instance
-#             futures = {executor.submit(func, *payload): payload for payload in payloads}
-#             # Wait for each future to complete
-#             for future in as_completed(futures):
-#                 try:
-#                     # Update progress bar, check if instance ran successfully
-#                     future.result()
-#                     succeeded.append(futures[future])
-#                 except Exception as e:
-#                     print(f"{type(e)}: {e}")
-#                     traceback.print_exc()
-#                     failed.append(futures[future])
-#                     continue
-#                 pbar.update(1)
-#                 pbar.set_description(
-#                     f"{len(succeeded)} ran successfully, {len(failed)} failed"
-#                 )
-#     return succeeded, failed
-
 def run_sequential(tasks):
     """
     Run a function with a list of arguments sequentially
@@ -130,25 +105,6 @@ def run_sequential(tasks):
         pbar.set_description(f"{len(succeeded)} ran successfully, {len(failed)} failed")
     pbar.close()
     return succeeded, failed
-
-# def run_sequential(func, args_list):
-#     """
-#     Run a function with a list of arguments sequentially
-#     """
-#     succeeded, failed = [], []
-#     pbar = tqdm(total=len(args_list), smoothing=0)
-#     for args in args_list:
-#         try:
-#             func(*args)
-#             succeeded.append(args)
-#         except Exception:
-#             traceback.print_exc()
-#             failed.append(args)
-#         pbar.update(1)
-#         pbar.set_description(f"{len(succeeded)} ran successfully, {len(failed)} failed")
-#     pbar.close()
-#     return succeeded, failed
-
 
 def load_swebench_dataset(
     name="princeton-nlp/SWE-bench", split="test", instance_ids=None
