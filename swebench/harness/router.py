@@ -2,12 +2,23 @@ from dataclasses import dataclass
 import subprocess
 import os
 import re
+import tempfile
 
-tasks = []
+def run_script(script_content):
+
+    with tempfile.NamedTemporaryFile(mode="w", delete=False, suffix=".sh") as temp_script:
+        temp_script.write(script_content)
+        temp_script.flush()
+        temp_path = temp_script.name
+
+    try:
+        subprocess.run(["bash", temp_path], check=True)
+    finally:
+        subprocess.run(["rm", "-f", temp_path])
 
 @dataclass
 class Task:
-    id: int
+    id: str
     env_script: list[str]
     eval_script: list[str]
     patch: str
@@ -21,7 +32,7 @@ class CIToolBase:
     def construct(self):
         pass
     
-    def run_ci(self, task, log_file):
+    def run_ci(self, log_file):
         pass
 
 class CargoCITool(CIToolBase):
@@ -53,10 +64,10 @@ class CargoCITool(CIToolBase):
         env_script = self._build_repo_base_env()
         eval_script = self._build_eval_script()
         target_dir = self.config["workdir"] + "/" + self.config["repo"].split("/")[1]
-        task = Task(len(tasks), env_script, eval_script, self.config["patch"], target_dir, self.config["output_dir"])
-        tasks.append(task)
+        self.task = Task("", env_script, eval_script, self.config["patch"], target_dir, self.config["output_dir"])
 
-    def run_ci(self, task, log_file):
+    def run_ci(self, log_file):
+        task = self.task
         with open(log_file, "w") as f:
             result = subprocess.run(["cargo", "test"], cwd=task.target_dir, stdout=f, stderr=f, text=True)
         if result.returncode != 0:
@@ -70,7 +81,7 @@ class DockerCITool(CIToolBase):
         self.construct()
 
     def construct(self):
-        tasks.append()
+        pass
 
 
 class ActCITool(CIToolBase):
@@ -112,22 +123,28 @@ class ActCITool(CIToolBase):
         script.extend(["cd " + target_dir])
         script.extend(["act --list > act_list.txt"])
         os.system("\n".join(script))
-        self.ci_dict = _extract_jobs(target_dir + "/act_list.txt")
+        # only absolute path? 
+        self.ci_dict = _extract_jobs(os.path.expanduser(target_dir + "/act_list.txt"))
         os.system("rm " + target_dir + "/act_list.txt")
                     
-    def run_ci(self, task, log_file, ci_list):
+    def run_ci(self, ci_list):
+        task = self.task
+        run_script("\n".join(task.env_script))
+        run_script("\n".join(task.eval_script))
+
         self._get_ci_job_name_id_dict(task.target_dir)
         result = []
         for ci in ci_list:
             result.append(subprocess.run(["act", "-j", self.ci_dict[ci]], cwd=task.target_dir))
+        os.system("rm -rf " + task.target_dir)
         return result
 
     def construct(self):
         env_script = self._build_repo_base_env()
         eval_script = self._build_eval_script()
         target_dir = self.config["workdir"] + "/" + self.config["repo"].split("/")[1]
-        task = Task(len(tasks), env_script, eval_script, self.config["patch"], target_dir, self.config["output_dir"])
-        tasks.append(task)
+        # TODO: add id
+        self.task = Task("", env_script, eval_script, self.config["patch"], target_dir, self.config["output_dir"])
 
 HANDLER = {
     "cargo": CargoCITool,
@@ -152,6 +169,6 @@ if __name__ == '__main__':
                      "patch": "patch_content", \
                      "workdir": "/home/wdxu/github", \
                      "output_dir": "output_dir"})
-    result = act.run_ci(tasks[0], './debug.log', ['Android Build'])
+    result = act.run_ci('./debug.log', ['Android Build'])
     with open('./result.log', 'w') as f:
         f.write(str(result))
