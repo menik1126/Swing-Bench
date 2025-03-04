@@ -6,15 +6,16 @@ import tempfile
 
 def run_script(script_content):
 
-    with tempfile.NamedTemporaryFile(mode="w", delete=False, suffix=".sh") as temp_script:
+    with tempfile.NamedTemporaryFile(mode="w", delete=True, suffix=".sh") as temp_script:
         temp_script.write(script_content)
         temp_script.flush()
         temp_path = temp_script.name
 
-    try:
-        subprocess.run(["bash", temp_path], check=True)
-    finally:
-        subprocess.run(["rm", "-f", temp_path])
+        try:
+            subprocess.run(["bash", temp_path], check=True)
+        except:
+            # TODO: handle except
+            pass
 
 @dataclass
 class Task:
