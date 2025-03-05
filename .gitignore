@@ -5,3 +5,12 @@ __pycache__
 src/plot
 src/crawl/repos/
 src/crawl/issues/
+results/*
+data/*
+logs/*
+*.log
+*.log.*
+*.log.*.*
+*.log.*.*.*
+*.log.*.*.*.*
+*.log.*.*.*.*.*
