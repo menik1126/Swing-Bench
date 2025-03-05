@@ -76,8 +76,8 @@ def run_instances(
         act = ActCITool({
                 "act_path": act_path,
                 "repo": test["repo"],
-                "base_sha": test["base_commit"],
-                "head_sha": test["head_commit"],
+                "base_commit": test["base_commit"],
+                "merge_commit": test["merge_commit"],
                 "patch": test["patch"],
                 "ci_name_list": test["ci_name_list"],
                 "workdir": target_dir,

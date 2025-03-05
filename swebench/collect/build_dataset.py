@@ -41,7 +41,7 @@ def create_instance(repo: Repo, pull: dict) -> dict:
         ),
         "issue_numbers": pull["resolved_issues"],
         "base_commit": pull["base"]["sha"],
-        "head_commit": pull["head"]["sha"],
+        "merge_commit_sha": pull["user"]["merge_commit_sha"],
         "patch": patch,
         "test_patch": test_patch,
         "problem_statement": problem_statement,
