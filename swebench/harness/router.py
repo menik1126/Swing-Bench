@@ -3,6 +3,8 @@ import subprocess
 import os
 import re
 import tempfile
+import threading
+from queue import Queue
 
 def run_script(script_content):
 
@@ -92,6 +94,9 @@ class ActCITool(CIToolBase):
         self.act_list_path = 'act_list.txt'
         self.cloned_repo_path = self.config["repo"].split("/")[1] + "_" + self.config["base_commit"]
         self.ci_dict = dict()
+        self.result_lock = threading.Lock()
+        self.semaphore = threading.Semaphore(8)
+        self.act_mq = Queue()
         self.construct()
 
     def _build_repo_base_env(self):
@@ -142,6 +147,22 @@ class ActCITool(CIToolBase):
         self.ci_dict = _extract_jobs(os.path.expanduser(act_list_path))
         os.system("rm " + act_list_path)
                     
+    def _run_act_with_semaphore(self, ci, target_dir):
+        with self.semaphore:
+            process = subprocess.Popen(["act", "-j", self.ci_dict[ci]], 
+                                     cwd=target_dir,
+                                     stdout=subprocess.PIPE,
+                                     stderr=subprocess.PIPE,
+                                     text=True)
+            stdout, stderr = process.communicate()
+            result = {
+                "stdout": stdout,
+                "stderr": stderr,
+                "returncode": process.returncode
+            }
+            self.act_mq.put(result)
+            return result
+
     def run_ci(self, ci_list):
         task = self.task
         run_script("\n".join(task.env_script))
@@ -149,13 +170,35 @@ class ActCITool(CIToolBase):
 
         self._get_ci_job_name_id_dict(task.target_dir)
         eval_result = []
+        threads = []
         for ci in ci_list:
-            eval_result.append(subprocess.run(["act", "-j", self.ci_dict[ci]], cwd=task.target_dir))
-
+            thread = threading.Thread(
+                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir)
+            )
+            thread.start()
+            threads.append(thread)
+        
+        for thread in threads:
+            thread.join()
+        
+        while not self.act_mq.empty():
+            eval_result.append(self.act_mq.get())
+        
         run_script("\n".join(task.previous_eval_script))
         previous_eval_result = []
+        threads = []
         for ci in ci_list:
-            previous_eval_result.append(subprocess.run(["act", "-j", self.ci_dict[ci]], cwd=task.target_dir))
+            thread = threading.Thread(
+                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir)
+            )
+            thread.start()
+            threads.append(thread)
+        
+        for thread in threads:
+            thread.join()
+            
+        while not self.act_mq.empty():
+            previous_eval_result.append(self.act_mq.get())
 
         os.system("rm -rf " + task.target_dir)
 
