@@ -1,365 +1,0 @@
-nohup: ignoring input
-Processing Rows:   0%|          | 0/733 [00:00<?, ?it/s]Processing Rows:   0%|          | 1/733 [00:01<23:28,  1.92s/it]Processing Rows:   0%|          | 2/733 [00:03<24:19,  2.00s/it]Processing Rows:   0%|          | 3/733 [00:06<28:06,  2.31s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:   1%|          | 4/733 [00:09<29:56,  2.46s/it]Processing Rows:   1%|          | 5/733 [00:11<28:01,  2.31s/it]Processing Rows:   1%|          | 6/733 [00:13<26:47,  2.21s/it]Processing Rows:   1%|          | 7/733 [00:15<25:58,  2.15s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:   1%|          | 8/733 [00:18<27:55,  2.31s/it]Processing Rows:   1%|          | 9/733 [00:19<26:21,  2.18s/it]Processing Rows:   1%|▏         | 10/733 [00:21<25:20,  2.10s/it]Processing Rows:   2%|▏         | 11/733 [00:23<24:42,  2.05s/it]Processing Rows:   2%|▏         | 12/733 [00:25<24:23,  2.03s/it]patch:No patch data available (possibly binary file)
-Processing Rows:   2%|▏         | 13/733 [00:27<24:03,  2.00s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:   2%|▏         | 14/733 [00:29<24:10,  2.02s/it]Processing Rows:   2%|▏         | 15/733 [00:31<24:35,  2.05s/it]Processing Rows:   2%|▏         | 16/733 [00:34<24:49,  2.08s/it]Processing Rows:   2%|▏         | 17/733 [00:36<24:26,  2.05s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:   2%|▏         | 18/733 [00:38<24:16,  2.04s/it]Processing Rows:   3%|▎         | 19/733 [00:40<24:33,  2.06s/it]Processing Rows:   3%|▎         | 20/733 [00:42<24:22,  2.05s/it]Processing Rows:   3%|▎         | 21/733 [00:44<24:24,  2.06s/it]Processing Rows:   3%|▎         | 22/733 [00:46<24:14,  2.05s/it]Processing Rows:   3%|▎         | 23/733 [00:48<24:17,  2.05s/it]Processing Rows:   3%|▎         | 24/733 [00:50<23:58,  2.03s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:   3%|▎         | 25/733 [00:52<24:05,  2.04s/it]Processing Rows:   4%|▎         | 26/733 [00:54<24:04,  2.04s/it]Processing Rows:   4%|▎         | 27/733 [00:56<23:50,  2.03s/it]Processing Rows:   4%|▍         | 28/733 [00:58<24:08,  2.05s/it]Processing Rows:   4%|▍         | 29/733 [01:00<24:33,  2.09s/it]Processing Rows:   4%|▍         | 30/733 [01:02<24:28,  2.09s/it]Processing Rows:   4%|▍         | 31/733 [01:05<24:53,  2.13s/it]Processing Rows:   4%|▍         | 32/733 [01:07<24:15,  2.08s/it]Processing Rows:   5%|▍         | 33/733 [01:08<23:46,  2.04s/it]Processing Rows:   5%|▍         | 34/733 [01:11<23:40,  2.03s/it]Processing Rows:   5%|▍         | 35/733 [01:12<23:22,  2.01s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:   5%|▍         | 36/733 [01:14<23:13,  2.00s/it]Processing Rows:   5%|▌         | 37/733 [01:17<23:26,  2.02s/it]Processing Rows:   5%|▌         | 38/733 [01:19<23:54,  2.06s/it]Processing Rows:   5%|▌         | 39/733 [01:21<23:36,  2.04s/it]Processing Rows:   5%|▌         | 40/733 [01:23<23:22,  2.02s/it]Processing Rows:   6%|▌         | 41/733 [01:25<23:23,  2.03s/it]Processing Rows:   6%|▌         | 42/733 [01:27<23:36,  2.05s/it]Processing Rows:   6%|▌         | 43/733 [01:29<23:14,  2.02s/it]Processing Rows:   6%|▌         | 44/733 [01:31<23:11,  2.02s/it]Processing Rows:   6%|▌         | 45/733 [01:33<23:31,  2.05s/it]Processing Rows:   6%|▋         | 46/733 [01:35<23:33,  2.06s/it]Processing Rows:   6%|▋         | 47/733 [01:37<23:42,  2.07s/it]Processing Rows:   7%|▋         | 48/733 [01:39<23:52,  2.09s/it]Processing Rows:   7%|▋         | 49/733 [01:41<23:47,  2.09s/it]Processing Rows:   7%|▋         | 50/733 [01:43<23:52,  2.10s/it]Processing Rows:   7%|▋         | 51/733 [01:45<23:43,  2.09s/it]Processing Rows:   7%|▋         | 52/733 [01:49<27:13,  2.40s/it]Processing Rows:   7%|▋         | 53/733 [01:51<25:36,  2.26s/it]Processing Rows:   7%|▋         | 54/733 [01:52<24:17,  2.15s/it]Processing Rows:   8%|▊         | 55/733 [01:54<23:43,  2.10s/it]Processing Rows:   8%|▊         | 56/733 [01:56<23:28,  2.08s/it]Processing Rows:   8%|▊         | 57/733 [01:59<23:55,  2.12s/it]Processing Rows:   8%|▊         | 58/733 [02:01<23:52,  2.12s/it]Processing Rows:   8%|▊         | 59/733 [02:03<23:36,  2.10s/it]Processing Rows:   8%|▊         | 60/733 [02:05<23:36,  2.10s/it]Processing Rows:   8%|▊         | 61/733 [02:08<25:20,  2.26s/it]Processing Rows:   8%|▊         | 62/733 [02:10<24:51,  2.22s/it]Processing Rows:   9%|▊         | 63/733 [02:12<24:42,  2.21s/it]Processing Rows:   9%|▊         | 64/733 [02:14<24:53,  2.23s/it]Processing Rows:   9%|▉         | 65/733 [02:16<24:21,  2.19s/it]Processing Rows:   9%|▉         | 66/733 [02:18<24:02,  2.16s/it]Processing Rows:   9%|▉         | 67/733 [02:20<23:31,  2.12s/it]WARNING:root:PR 100 的 patch 数据为空
-Processing Rows:   9%|▉         | 68/733 [02:22<23:14,  2.10s/it]Processing Rows:   9%|▉         | 69/733 [02:25<23:15,  2.10s/it]Processing Rows:  10%|▉         | 70/733 [02:27<23:08,  2.09s/it]Processing Rows:  10%|▉         | 71/733 [02:29<24:26,  2.21s/it]Processing Rows:  10%|▉         | 72/733 [02:31<23:38,  2.15s/it]Processing Rows:  10%|▉         | 73/733 [02:33<23:13,  2.11s/it]Processing Rows:  10%|█         | 74/733 [02:35<23:24,  2.13s/it]Processing Rows:  10%|█         | 75/733 [02:38<24:18,  2.22s/it]Processing Rows:  10%|█         | 76/733 [02:40<24:39,  2.25s/it]Processing Rows:  11%|█         | 77/733 [02:42<24:10,  2.21s/it]Processing Rows:  11%|█         | 78/733 [02:44<23:33,  2.16s/it]Processing Rows:  11%|█         | 79/733 [02:46<23:53,  2.19s/it]Processing Rows:  11%|█         | 80/733 [02:49<23:25,  2.15s/it]Processing Rows:  11%|█         | 81/733 [02:51<22:58,  2.11s/it]Processing Rows:  11%|█         | 82/733 [02:53<23:28,  2.16s/it]Processing Rows:  11%|█▏        | 83/733 [02:55<23:31,  2.17s/it]Processing Rows:  11%|█▏        | 84/733 [02:57<23:27,  2.17s/it]Processing Rows:  12%|█▏        | 85/733 [02:59<23:19,  2.16s/it]Processing Rows:  12%|█▏        | 86/733 [03:01<22:36,  2.10s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  12%|█▏        | 87/733 [03:03<22:11,  2.06s/it]Processing Rows:  12%|█▏        | 88/733 [03:06<23:25,  2.18s/it]Processing Rows:  12%|█▏        | 89/733 [03:08<22:46,  2.12s/it]Processing Rows:  12%|█▏        | 90/733 [03:10<22:38,  2.11s/it]Processing Rows:  12%|█▏        | 91/733 [03:12<22:33,  2.11s/it]Processing Rows:  13%|█▎        | 92/733 [03:14<22:23,  2.10s/it]Processing Rows:  13%|█▎        | 93/733 [03:16<22:23,  2.10s/it]WARNING:root:PR 34 的 patch 数据为空
-Processing Rows:  13%|█▎        | 94/733 [03:18<22:08,  2.08s/it]Processing Rows:  13%|█▎        | 95/733 [03:21<23:57,  2.25s/it]Processing Rows:  13%|█▎        | 96/733 [03:23<22:55,  2.16s/it]Processing Rows:  13%|█▎        | 97/733 [03:25<24:44,  2.33s/it]Processing Rows:  13%|█▎        | 98/733 [03:28<26:47,  2.53s/it]Processing Rows:  14%|█▎        | 99/733 [03:30<25:05,  2.37s/it]Processing Rows:  14%|█▎        | 100/733 [03:33<24:11,  2.29s/it]Processing Rows:  14%|█▍        | 101/733 [03:35<24:39,  2.34s/it]Processing Rows:  14%|█▍        | 102/733 [03:37<23:58,  2.28s/it]Processing Rows:  14%|█▍        | 103/733 [03:40<25:31,  2.43s/it]Processing Rows:  14%|█▍        | 104/733 [03:42<24:18,  2.32s/it]Processing Rows:  14%|█▍        | 105/733 [03:44<23:53,  2.28s/it]Processing Rows:  14%|█▍        | 106/733 [03:46<23:30,  2.25s/it]Processing Rows:  15%|█▍        | 107/733 [03:49<23:34,  2.26s/it]Processing Rows:  15%|█▍        | 108/733 [03:51<23:08,  2.22s/it]Processing Rows:  15%|█▍        | 109/733 [03:53<22:53,  2.20s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  15%|█▌        | 110/733 [04:00<37:24,  3.60s/it]Processing Rows:  15%|█▌        | 111/733 [04:02<32:42,  3.15s/it]Processing Rows:  15%|█▌        | 112/733 [04:04<29:04,  2.81s/it]Processing Rows:  15%|█▌        | 113/733 [04:06<26:43,  2.59s/it]Processing Rows:  16%|█▌        | 114/733 [04:08<24:42,  2.39s/it]Processing Rows:  16%|█▌        | 115/733 [04:10<23:23,  2.27s/it]Processing Rows:  16%|█▌        | 116/733 [04:12<23:03,  2.24s/it]Processing Rows:  16%|█▌        | 117/733 [04:14<22:18,  2.17s/it]Processing Rows:  16%|█▌        | 118/733 [04:16<21:39,  2.11s/it]Processing Rows:  16%|█▌        | 119/733 [04:18<21:32,  2.10s/it]Processing Rows:  16%|█▋        | 120/733 [04:20<21:56,  2.15s/it]Processing Rows:  17%|█▋        | 121/733 [04:22<21:21,  2.09s/it]Processing Rows:  17%|█▋        | 122/733 [04:24<21:15,  2.09s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  17%|█▋        | 123/733 [04:26<20:49,  2.05s/it]Processing Rows:  17%|█▋        | 124/733 [04:29<21:05,  2.08s/it]Processing Rows:  17%|█▋        | 125/733 [04:31<20:57,  2.07s/it]Processing Rows:  17%|█▋        | 126/733 [04:33<21:06,  2.09s/it]Processing Rows:  17%|█▋        | 127/733 [04:35<21:22,  2.12s/it]Processing Rows:  17%|█▋        | 128/733 [04:37<21:26,  2.13s/it]Processing Rows:  18%|█▊        | 129/733 [04:39<21:36,  2.15s/it]Processing Rows:  18%|█▊        | 130/733 [04:41<21:14,  2.11s/it]Processing Rows:  18%|█▊        | 131/733 [04:43<21:22,  2.13s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  18%|█▊        | 132/733 [04:47<27:08,  2.71s/it]Processing Rows:  18%|█▊        | 133/733 [04:50<25:20,  2.53s/it]Processing Rows:  18%|█▊        | 134/733 [04:52<23:38,  2.37s/it]Processing Rows:  18%|█▊        | 135/733 [04:54<22:52,  2.29s/it]Processing Rows:  19%|█▊        | 136/733 [04:56<22:49,  2.29s/it]Processing Rows:  19%|█▊        | 137/733 [04:58<22:05,  2.22s/it]Processing Rows:  19%|█▉        | 138/733 [05:01<22:48,  2.30s/it]Processing Rows:  19%|█▉        | 139/733 [05:03<22:55,  2.32s/it]Processing Rows:  19%|█▉        | 140/733 [05:05<23:09,  2.34s/it]Processing Rows:  19%|█▉        | 141/733 [05:07<22:20,  2.26s/it]Processing Rows:  19%|█▉        | 142/733 [05:10<22:18,  2.26s/it]Processing Rows:  20%|█▉        | 143/733 [05:12<22:03,  2.24s/it]Processing Rows:  20%|█▉        | 144/733 [05:14<21:48,  2.22s/it]Processing Rows:  20%|█▉        | 145/733 [05:16<21:20,  2.18s/it]Processing Rows:  20%|█▉        | 146/733 [05:18<20:53,  2.14s/it]Processing Rows:  20%|██        | 147/733 [05:20<20:07,  2.06s/it]Processing Rows:  20%|██        | 148/733 [05:22<21:09,  2.17s/it]Processing Rows:  20%|██        | 149/733 [05:25<20:56,  2.15s/it]Processing Rows:  20%|██        | 150/733 [05:27<20:34,  2.12s/it]Processing Rows:  21%|██        | 151/733 [05:29<21:03,  2.17s/it]Processing Rows:  21%|██        | 152/733 [05:31<21:03,  2.17s/it]Processing Rows:  21%|██        | 153/733 [05:33<20:59,  2.17s/it]Processing Rows:  21%|██        | 154/733 [05:35<20:55,  2.17s/it]Processing Rows:  21%|██        | 155/733 [05:38<20:55,  2.17s/it]Processing Rows:  21%|██▏       | 156/733 [05:40<20:42,  2.15s/it]Processing Rows:  21%|██▏       | 157/733 [05:42<20:53,  2.18s/it]Processing Rows:  22%|██▏       | 158/733 [05:44<20:58,  2.19s/it]Processing Rows:  22%|██▏       | 159/733 [05:46<20:51,  2.18s/it]Processing Rows:  22%|██▏       | 160/733 [05:48<20:42,  2.17s/it]Processing Rows:  22%|██▏       | 161/733 [05:51<20:36,  2.16s/it]Processing Rows:  22%|██▏       | 162/733 [05:53<20:24,  2.14s/it]Processing Rows:  22%|██▏       | 163/733 [05:56<23:29,  2.47s/it]Processing Rows:  22%|██▏       | 164/733 [05:58<22:30,  2.37s/it]Processing Rows:  23%|██▎       | 165/733 [06:00<21:47,  2.30s/it]Processing Rows:  23%|██▎       | 166/733 [06:02<21:06,  2.23s/it]Processing Rows:  23%|██▎       | 167/733 [06:04<20:39,  2.19s/it]Processing Rows:  23%|██▎       | 168/733 [06:06<20:05,  2.13s/it]Processing Rows:  23%|██▎       | 169/733 [06:08<20:00,  2.13s/it]Processing Rows:  23%|██▎       | 170/733 [06:11<19:54,  2.12s/it]Processing Rows:  23%|██▎       | 171/733 [06:13<19:51,  2.12s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  23%|██▎       | 172/733 [06:15<19:28,  2.08s/it]Processing Rows:  24%|██▎       | 173/733 [06:17<19:40,  2.11s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  24%|██▎       | 174/733 [06:20<22:06,  2.37s/it]Processing Rows:  24%|██▍       | 175/733 [06:22<21:25,  2.30s/it]Processing Rows:  24%|██▍       | 176/733 [06:24<21:14,  2.29s/it]Processing Rows:  24%|██▍       | 177/733 [06:26<20:42,  2.23s/it]Processing Rows:  24%|██▍       | 178/733 [06:29<20:47,  2.25s/it]Processing Rows:  24%|██▍       | 179/733 [06:31<20:22,  2.21s/it]Processing Rows:  25%|██▍       | 180/733 [06:33<20:16,  2.20s/it]Processing Rows:  25%|██▍       | 181/733 [06:35<20:22,  2.21s/it]Processing Rows:  25%|██▍       | 182/733 [06:38<20:44,  2.26s/it]Processing Rows:  25%|██▍       | 183/733 [06:48<43:34,  4.75s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  25%|██▌       | 184/733 [06:55<49:59,  5.46s/it]Processing Rows:  25%|██▌       | 185/733 [06:58<41:47,  4.58s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  25%|██▌       | 186/733 [07:00<36:43,  4.03s/it]Processing Rows:  26%|██▌       | 187/733 [07:02<31:09,  3.42s/it]Processing Rows:  26%|██▌       | 188/733 [07:05<27:20,  3.01s/it]Processing Rows:  26%|██▌       | 189/733 [07:07<24:52,  2.74s/it]Processing Rows:  26%|██▌       | 190/733 [07:09<23:05,  2.55s/it]Processing Rows:  26%|██▌       | 191/733 [07:11<22:44,  2.52s/it]Processing Rows:  26%|██▌       | 192/733 [07:13<21:36,  2.40s/it]Processing Rows:  26%|██▋       | 193/733 [07:16<21:26,  2.38s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  26%|██▋       | 194/733 [07:24<37:48,  4.21s/it]Processing Rows:  27%|██▋       | 195/733 [07:26<31:48,  3.55s/it]Processing Rows:  27%|██▋       | 196/733 [07:28<27:48,  3.11s/it]Processing Rows:  27%|██▋       | 197/733 [07:30<24:58,  2.80s/it]Processing Rows:  27%|██▋       | 198/733 [07:32<22:48,  2.56s/it]Processing Rows:  27%|██▋       | 199/733 [07:35<22:11,  2.49s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  27%|██▋       | 200/733 [07:37<20:51,  2.35s/it]Processing Rows:  27%|██▋       | 201/733 [07:39<20:26,  2.31s/it]Processing Rows:  28%|██▊       | 202/733 [07:41<20:06,  2.27s/it]Processing Rows:  28%|██▊       | 203/733 [07:43<19:32,  2.21s/it]Processing Rows:  28%|██▊       | 204/733 [07:45<18:49,  2.14s/it]Processing Rows:  28%|██▊       | 205/733 [07:47<18:37,  2.12s/it]Processing Rows:  28%|██▊       | 206/733 [07:49<18:41,  2.13s/it]Processing Rows:  28%|██▊       | 207/733 [07:52<19:25,  2.22s/it]Processing Rows:  28%|██▊       | 208/733 [07:54<19:28,  2.22s/it]Processing Rows:  29%|██▊       | 209/733 [07:56<19:36,  2.24s/it]Processing Rows:  29%|██▊       | 210/733 [07:58<19:02,  2.19s/it]Processing Rows:  29%|██▉       | 211/733 [08:01<20:27,  2.35s/it]Processing Rows:  29%|██▉       | 212/733 [08:03<19:39,  2.26s/it]Processing Rows:  29%|██▉       | 213/733 [08:05<18:50,  2.17s/it]Processing Rows:  29%|██▉       | 214/733 [08:07<18:47,  2.17s/it]Processing Rows:  29%|██▉       | 215/733 [08:09<18:26,  2.14s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  29%|██▉       | 216/733 [08:12<20:17,  2.35s/it]Processing Rows:  30%|██▉       | 217/733 [08:14<19:51,  2.31s/it]Processing Rows:  30%|██▉       | 218/733 [08:16<19:12,  2.24s/it]Processing Rows:  30%|██▉       | 219/733 [08:19<18:58,  2.22s/it]Processing Rows:  30%|███       | 220/733 [08:21<18:32,  2.17s/it]Processing Rows:  30%|███       | 221/733 [08:23<18:30,  2.17s/it]Processing Rows:  30%|███       | 222/733 [08:25<18:20,  2.15s/it]Processing Rows:  30%|███       | 223/733 [08:27<18:22,  2.16s/it]Processing Rows:  31%|███       | 224/733 [08:29<18:10,  2.14s/it]Processing Rows:  31%|███       | 225/733 [08:31<18:09,  2.14s/it]Processing Rows:  31%|███       | 226/733 [08:33<17:59,  2.13s/it]Processing Rows:  31%|███       | 227/733 [08:36<18:07,  2.15s/it]Processing Rows:  31%|███       | 228/733 [08:38<18:10,  2.16s/it]Processing Rows:  31%|███       | 229/733 [08:40<17:49,  2.12s/it]Processing Rows:  31%|███▏      | 230/733 [08:42<18:10,  2.17s/it]Processing Rows:  32%|███▏      | 231/733 [08:44<17:58,  2.15s/it]Processing Rows:  32%|███▏      | 232/733 [08:46<17:52,  2.14s/it]Processing Rows:  32%|███▏      | 233/733 [08:49<17:58,  2.16s/it]Processing Rows:  32%|███▏      | 234/733 [08:51<17:56,  2.16s/it]Processing Rows:  32%|███▏      | 235/733 [08:53<17:54,  2.16s/it]Processing Rows:  32%|███▏      | 236/733 [08:55<17:45,  2.14s/it]Processing Rows:  32%|███▏      | 237/733 [08:57<18:12,  2.20s/it]Processing Rows:  32%|███▏      | 238/733 [08:59<17:57,  2.18s/it]Processing Rows:  33%|███▎      | 239/733 [09:02<17:41,  2.15s/it]Processing Rows:  33%|███▎      | 240/733 [09:04<17:39,  2.15s/it]Processing Rows:  33%|███▎      | 241/733 [09:06<17:57,  2.19s/it]Processing Rows:  33%|███▎      | 242/733 [09:08<17:40,  2.16s/it]Processing Rows:  33%|███▎      | 243/733 [09:10<17:35,  2.15s/it]Processing Rows:  33%|███▎      | 244/733 [09:12<17:24,  2.14s/it]Processing Rows:  33%|███▎      | 245/733 [09:15<17:31,  2.16s/it]Processing Rows:  34%|███▎      | 246/733 [09:17<17:17,  2.13s/it]WARNING:root:PR 159 的 patch 数据为空
-Processing Rows:  34%|███▎      | 247/733 [09:19<16:53,  2.09s/it]Processing Rows:  34%|███▍      | 248/733 [09:21<16:51,  2.08s/it]Processing Rows:  34%|███▍      | 249/733 [09:23<17:02,  2.11s/it]Processing Rows:  34%|███▍      | 250/733 [09:25<16:58,  2.11s/it]Processing Rows:  34%|███▍      | 251/733 [09:27<16:59,  2.11s/it]Processing Rows:  34%|███▍      | 252/733 [09:29<16:54,  2.11s/it]Processing Rows:  35%|███▍      | 253/733 [09:31<16:52,  2.11s/it]Processing Rows:  35%|███▍      | 254/733 [09:33<16:47,  2.10s/it]Processing Rows:  35%|███▍      | 255/733 [09:35<16:49,  2.11s/it]Processing Rows:  35%|███▍      | 256/733 [09:38<16:43,  2.10s/it]Processing Rows:  35%|███▌      | 257/733 [09:40<16:40,  2.10s/it]Processing Rows:  35%|███▌      | 258/733 [09:42<16:41,  2.11s/it]Processing Rows:  35%|███▌      | 259/733 [09:44<16:52,  2.14s/it]Processing Rows:  35%|███▌      | 260/733 [09:46<17:00,  2.16s/it]Processing Rows:  36%|███▌      | 261/733 [09:48<16:43,  2.13s/it]Processing Rows:  36%|███▌      | 262/733 [09:50<16:39,  2.12s/it]Processing Rows:  36%|███▌      | 263/733 [09:53<16:58,  2.17s/it]Processing Rows:  36%|███▌      | 264/733 [09:55<17:04,  2.18s/it]Processing Rows:  36%|███▌      | 265/733 [09:57<17:11,  2.21s/it]Processing Rows:  36%|███▋      | 266/733 [09:59<17:00,  2.18s/it]Processing Rows:  36%|███▋      | 267/733 [10:01<17:01,  2.19s/it]Processing Rows:  37%|███▋      | 268/733 [10:04<16:52,  2.18s/it]Processing Rows:  37%|███▋      | 269/733 [10:06<16:45,  2.17s/it]Processing Rows:  37%|███▋      | 270/733 [10:08<16:21,  2.12s/it]Processing Rows:  37%|███▋      | 271/733 [10:10<16:42,  2.17s/it]Processing Rows:  37%|███▋      | 272/733 [10:12<16:47,  2.19s/it]Processing Rows:  37%|███▋      | 273/733 [10:14<16:53,  2.20s/it]Processing Rows:  37%|███▋      | 274/733 [10:17<16:45,  2.19s/it]Processing Rows:  38%|███▊      | 275/733 [10:19<16:57,  2.22s/it]Processing Rows:  38%|███▊      | 276/733 [10:21<16:44,  2.20s/it]Processing Rows:  38%|███▊      | 277/733 [10:23<16:42,  2.20s/it]Processing Rows:  38%|███▊      | 278/733 [10:25<16:20,  2.16s/it]Processing Rows:  38%|███▊      | 279/733 [10:28<16:18,  2.16s/it]Processing Rows:  38%|███▊      | 280/733 [10:30<16:33,  2.19s/it]Processing Rows:  38%|███▊      | 281/733 [10:32<16:19,  2.17s/it]Processing Rows:  38%|███▊      | 282/733 [10:34<16:00,  2.13s/it]Processing Rows:  39%|███▊      | 283/733 [10:36<16:05,  2.15s/it]Processing Rows:  39%|███▊      | 284/733 [10:38<16:28,  2.20s/it]Processing Rows:  39%|███▉      | 285/733 [10:41<16:29,  2.21s/it]Processing Rows:  39%|███▉      | 286/733 [10:43<16:14,  2.18s/it]Processing Rows:  39%|███▉      | 287/733 [10:45<16:03,  2.16s/it]Processing Rows:  39%|███▉      | 288/733 [10:47<15:43,  2.12s/it]Processing Rows:  39%|███▉      | 289/733 [10:49<15:41,  2.12s/it]Processing Rows:  40%|███▉      | 290/733 [10:51<15:44,  2.13s/it]Processing Rows:  40%|███▉      | 291/733 [10:53<15:50,  2.15s/it]Processing Rows:  40%|███▉      | 292/733 [10:56<15:57,  2.17s/it]Processing Rows:  40%|███▉      | 293/733 [10:58<15:55,  2.17s/it]Processing Rows:  40%|████      | 294/733 [11:00<15:44,  2.15s/it]Processing Rows:  40%|████      | 295/733 [11:02<16:00,  2.19s/it]Processing Rows:  40%|████      | 296/733 [11:05<16:16,  2.23s/it]Processing Rows:  41%|████      | 297/733 [11:07<16:25,  2.26s/it]Processing Rows:  41%|████      | 298/733 [11:09<16:33,  2.28s/it]Processing Rows:  41%|████      | 299/733 [11:11<16:25,  2.27s/it]Processing Rows:  41%|████      | 300/733 [11:14<16:15,  2.25s/it]Processing Rows:  41%|████      | 301/733 [11:16<16:29,  2.29s/it]Processing Rows:  41%|████      | 302/733 [11:18<16:19,  2.27s/it]Processing Rows:  41%|████▏     | 303/733 [11:20<15:48,  2.21s/it]Processing Rows:  41%|████▏     | 304/733 [11:22<15:31,  2.17s/it]Processing Rows:  42%|████▏     | 305/733 [11:24<15:07,  2.12s/it]Processing Rows:  42%|████▏     | 306/733 [11:27<15:07,  2.12s/it]Processing Rows:  42%|████▏     | 307/733 [11:29<15:17,  2.15s/it]Processing Rows:  42%|████▏     | 308/733 [11:31<15:18,  2.16s/it]Processing Rows:  42%|████▏     | 309/733 [11:33<15:14,  2.16s/it]Processing Rows:  42%|████▏     | 310/733 [11:35<15:12,  2.16s/it]Processing Rows:  42%|████▏     | 311/733 [11:37<15:06,  2.15s/it]Processing Rows:  43%|████▎     | 312/733 [11:40<15:12,  2.17s/it]Processing Rows:  43%|████▎     | 313/733 [11:42<15:26,  2.21s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  43%|████▎     | 314/733 [11:45<16:59,  2.43s/it]Processing Rows:  43%|████▎     | 315/733 [11:47<16:38,  2.39s/it]Processing Rows:  43%|████▎     | 316/733 [11:49<16:31,  2.38s/it]Processing Rows:  43%|████▎     | 317/733 [11:52<15:52,  2.29s/it]Processing Rows:  43%|████▎     | 318/733 [11:54<15:30,  2.24s/it]Processing Rows:  44%|████▎     | 319/733 [11:56<15:08,  2.19s/it]Processing Rows:  44%|████▎     | 320/733 [11:59<16:32,  2.40s/it]Processing Rows:  44%|████▍     | 321/733 [12:01<15:45,  2.29s/it]Processing Rows:  44%|████▍     | 322/733 [12:03<15:33,  2.27s/it]Processing Rows:  44%|████▍     | 323/733 [12:05<15:16,  2.24s/it]Processing Rows:  44%|████▍     | 324/733 [12:07<15:08,  2.22s/it]Processing Rows:  44%|████▍     | 325/733 [12:09<15:00,  2.21s/it]Processing Rows:  44%|████▍     | 326/733 [12:12<14:55,  2.20s/it]Processing Rows:  45%|████▍     | 327/733 [12:14<14:43,  2.18s/it]Processing Rows:  45%|████▍     | 328/733 [12:16<14:35,  2.16s/it]Processing Rows:  45%|████▍     | 329/733 [12:18<14:45,  2.19s/it]Processing Rows:  45%|████▌     | 330/733 [12:20<14:54,  2.22s/it]Processing Rows:  45%|████▌     | 331/733 [12:23<14:58,  2.24s/it]Processing Rows:  45%|████▌     | 332/733 [12:25<14:43,  2.20s/it]Processing Rows:  45%|████▌     | 333/733 [12:27<14:43,  2.21s/it]Processing Rows:  46%|████▌     | 334/733 [12:29<14:40,  2.21s/it]Processing Rows:  46%|████▌     | 335/733 [12:32<14:47,  2.23s/it]Processing Rows:  46%|████▌     | 336/733 [12:34<14:38,  2.21s/it]Processing Rows:  46%|████▌     | 337/733 [12:36<14:17,  2.17s/it]Processing Rows:  46%|████▌     | 338/733 [12:38<14:12,  2.16s/it]Processing Rows:  46%|████▌     | 339/733 [12:40<14:02,  2.14s/it]Processing Rows:  46%|████▋     | 340/733 [12:42<13:59,  2.14s/it]Processing Rows:  47%|████▋     | 341/733 [12:44<14:07,  2.16s/it]Processing Rows:  47%|████▋     | 342/733 [12:47<15:24,  2.36s/it]Processing Rows:  47%|████▋     | 343/733 [12:49<14:56,  2.30s/it]Processing Rows:  47%|████▋     | 344/733 [12:52<14:57,  2.31s/it]Processing Rows:  47%|████▋     | 345/733 [12:54<14:42,  2.28s/it]Processing Rows:  47%|████▋     | 346/733 [12:56<14:41,  2.28s/it]Processing Rows:  47%|████▋     | 347/733 [12:58<14:34,  2.27s/it]Processing Rows:  47%|████▋     | 348/733 [13:01<15:42,  2.45s/it]Processing Rows:  48%|████▊     | 349/733 [13:03<15:05,  2.36s/it]Processing Rows:  48%|████▊     | 350/733 [13:06<14:37,  2.29s/it]Processing Rows:  48%|████▊     | 351/733 [13:08<14:12,  2.23s/it]Processing Rows:  48%|████▊     | 352/733 [13:10<14:23,  2.27s/it]Processing Rows:  48%|████▊     | 353/733 [13:12<14:02,  2.22s/it]Processing Rows:  48%|████▊     | 354/733 [13:14<14:06,  2.23s/it]Processing Rows:  48%|████▊     | 355/733 [13:17<14:21,  2.28s/it]Processing Rows:  49%|████▊     | 356/733 [13:19<14:15,  2.27s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  49%|████▊     | 357/733 [13:22<14:58,  2.39s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  49%|████▉     | 358/733 [13:24<14:37,  2.34s/it]Processing Rows:  49%|████▉     | 359/733 [13:26<14:06,  2.26s/it]Processing Rows:  49%|████▉     | 360/733 [13:28<13:52,  2.23s/it]Processing Rows:  49%|████▉     | 361/733 [13:30<13:36,  2.19s/it]Processing Rows:  49%|████▉     | 362/733 [13:32<13:11,  2.13s/it]Processing Rows:  50%|████▉     | 363/733 [13:34<13:10,  2.14s/it]Processing Rows:  50%|████▉     | 364/733 [13:37<13:32,  2.20s/it]Processing Rows:  50%|████▉     | 365/733 [13:39<13:13,  2.16s/it]Processing Rows:  50%|████▉     | 366/733 [13:41<13:06,  2.14s/it]Processing Rows:  50%|█████     | 367/733 [13:43<13:06,  2.15s/it]Processing Rows:  50%|█████     | 368/733 [13:47<16:49,  2.77s/it]Processing Rows:  50%|█████     | 369/733 [13:49<15:38,  2.58s/it]Processing Rows:  50%|█████     | 370/733 [13:51<14:46,  2.44s/it]Processing Rows:  51%|█████     | 371/733 [13:54<15:13,  2.52s/it]Processing Rows:  51%|█████     | 372/733 [13:56<14:25,  2.40s/it]Processing Rows:  51%|█████     | 373/733 [13:59<14:50,  2.47s/it]Processing Rows:  51%|█████     | 374/733 [14:02<16:31,  2.76s/it]Processing Rows:  51%|█████     | 375/733 [14:06<18:12,  3.05s/it]Processing Rows:  51%|█████▏    | 376/733 [14:08<16:27,  2.77s/it]Processing Rows:  51%|█████▏    | 377/733 [14:10<15:09,  2.55s/it]Processing Rows:  52%|█████▏    | 378/733 [14:13<14:46,  2.50s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  52%|█████▏    | 379/733 [14:16<16:36,  2.81s/it]Processing Rows:  52%|█████▏    | 380/733 [14:18<15:17,  2.60s/it]Processing Rows:  52%|█████▏    | 381/733 [14:21<14:35,  2.49s/it]Processing Rows:  52%|█████▏    | 382/733 [14:23<14:00,  2.40s/it]Processing Rows:  52%|█████▏    | 383/733 [14:25<13:23,  2.29s/it]Processing Rows:  52%|█████▏    | 384/733 [14:27<13:05,  2.25s/it]Processing Rows:  53%|█████▎    | 385/733 [14:29<12:59,  2.24s/it]Processing Rows:  53%|█████▎    | 386/733 [14:32<13:30,  2.34s/it]Processing Rows:  53%|█████▎    | 387/733 [14:34<13:16,  2.30s/it]Processing Rows:  53%|█████▎    | 388/733 [14:36<13:25,  2.34s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  53%|█████▎    | 389/733 [14:41<16:55,  2.95s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  53%|█████▎    | 390/733 [14:45<19:28,  3.41s/it]Processing Rows:  53%|█████▎    | 391/733 [14:47<17:20,  3.04s/it]Processing Rows:  53%|█████▎    | 392/733 [14:50<15:51,  2.79s/it]Processing Rows:  54%|█████▎    | 393/733 [14:52<14:47,  2.61s/it]Processing Rows:  54%|█████▍    | 394/733 [14:54<14:09,  2.50s/it]Processing Rows:  54%|█████▍    | 395/733 [14:56<13:29,  2.39s/it]Processing Rows:  54%|█████▍    | 396/733 [14:58<13:05,  2.33s/it]Processing Rows:  54%|█████▍    | 397/733 [15:01<12:51,  2.30s/it]Processing Rows:  54%|█████▍    | 398/733 [15:03<12:31,  2.24s/it]Processing Rows:  54%|█████▍    | 399/733 [15:05<12:07,  2.18s/it]Processing Rows:  55%|█████▍    | 400/733 [15:08<13:56,  2.51s/it]Processing Rows:  55%|█████▍    | 401/733 [15:10<13:24,  2.42s/it]Processing Rows:  55%|█████▍    | 402/733 [15:12<12:47,  2.32s/it]Processing Rows:  55%|█████▍    | 403/733 [15:14<12:22,  2.25s/it]Processing Rows:  55%|█████▌    | 404/733 [15:17<12:08,  2.21s/it]Processing Rows:  55%|█████▌    | 405/733 [15:19<12:03,  2.21s/it]Processing Rows:  55%|█████▌    | 406/733 [15:21<11:55,  2.19s/it]Processing Rows:  56%|█████▌    | 407/733 [15:23<11:53,  2.19s/it]Processing Rows:  56%|█████▌    | 408/733 [15:25<11:44,  2.17s/it]Processing Rows:  56%|█████▌    | 409/733 [15:27<11:48,  2.19s/it]Processing Rows:  56%|█████▌    | 410/733 [15:30<12:00,  2.23s/it]Processing Rows:  56%|█████▌    | 411/733 [15:32<11:44,  2.19s/it]Processing Rows:  56%|█████▌    | 412/733 [15:34<11:42,  2.19s/it]Processing Rows:  56%|█████▋    | 413/733 [15:37<12:12,  2.29s/it]Processing Rows:  56%|█████▋    | 414/733 [15:39<12:26,  2.34s/it]Processing Rows:  57%|█████▋    | 415/733 [15:41<12:20,  2.33s/it]Processing Rows:  57%|█████▋    | 416/733 [15:44<12:12,  2.31s/it]Processing Rows:  57%|█████▋    | 417/733 [15:46<11:56,  2.27s/it]Processing Rows:  57%|█████▋    | 418/733 [15:48<11:41,  2.23s/it]Processing Rows:  57%|█████▋    | 419/733 [15:51<12:20,  2.36s/it]Processing Rows:  57%|█████▋    | 420/733 [15:53<11:55,  2.28s/it]Processing Rows:  57%|█████▋    | 421/733 [15:55<11:35,  2.23s/it]Processing Rows:  58%|█████▊    | 422/733 [15:57<11:23,  2.20s/it]Processing Rows:  58%|█████▊    | 423/733 [15:59<11:00,  2.13s/it]Processing Rows:  58%|█████▊    | 424/733 [16:01<11:02,  2.14s/it]Processing Rows:  58%|█████▊    | 425/733 [16:03<11:01,  2.15s/it]Processing Rows:  58%|█████▊    | 426/733 [16:05<11:03,  2.16s/it]Processing Rows:  58%|█████▊    | 427/733 [16:08<11:21,  2.23s/it]Processing Rows:  58%|█████▊    | 428/733 [16:10<11:19,  2.23s/it]Processing Rows:  59%|█████▊    | 429/733 [16:12<11:10,  2.21s/it]Processing Rows:  59%|█████▊    | 430/733 [16:14<11:05,  2.20s/it]Processing Rows:  59%|█████▉    | 431/733 [16:17<11:05,  2.20s/it]Processing Rows:  59%|█████▉    | 432/733 [16:19<11:04,  2.21s/it]Processing Rows:  59%|█████▉    | 433/733 [16:21<11:01,  2.20s/it]Processing Rows:  59%|█████▉    | 434/733 [16:23<10:57,  2.20s/it]Processing Rows:  59%|█████▉    | 435/733 [16:25<10:54,  2.20s/it]Processing Rows:  59%|█████▉    | 436/733 [16:28<10:58,  2.22s/it]Processing Rows:  60%|█████▉    | 437/733 [16:30<11:01,  2.23s/it]Processing Rows:  60%|█████▉    | 438/733 [16:32<10:49,  2.20s/it]Processing Rows:  60%|█████▉    | 439/733 [16:34<10:51,  2.22s/it]Processing Rows:  60%|██████    | 440/733 [16:36<10:45,  2.20s/it]Processing Rows:  60%|██████    | 441/733 [16:39<10:53,  2.24s/it]Processing Rows:  60%|██████    | 442/733 [16:41<10:47,  2.23s/it]Processing Rows:  60%|██████    | 443/733 [16:43<10:35,  2.19s/it]Processing Rows:  61%|██████    | 444/733 [16:45<10:34,  2.20s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  61%|██████    | 445/733 [16:48<10:41,  2.23s/it]Processing Rows:  61%|██████    | 446/733 [16:50<10:39,  2.23s/it]Processing Rows:  61%|██████    | 447/733 [16:52<10:25,  2.19s/it]Processing Rows:  61%|██████    | 448/733 [16:54<10:19,  2.18s/it]Processing Rows:  61%|██████▏   | 449/733 [16:56<10:18,  2.18s/it]Processing Rows:  61%|██████▏   | 450/733 [16:58<10:14,  2.17s/it]Processing Rows:  62%|██████▏   | 451/733 [17:01<10:42,  2.28s/it]Processing Rows:  62%|██████▏   | 452/733 [17:03<10:30,  2.24s/it]Processing Rows:  62%|██████▏   | 453/733 [17:05<10:24,  2.23s/it]Processing Rows:  62%|██████▏   | 454/733 [17:07<10:10,  2.19s/it]Processing Rows:  62%|██████▏   | 455/733 [17:10<10:11,  2.20s/it]Processing Rows:  62%|██████▏   | 456/733 [17:12<10:02,  2.18s/it]Processing Rows:  62%|██████▏   | 457/733 [17:14<10:00,  2.18s/it]Processing Rows:  62%|██████▏   | 458/733 [17:16<09:50,  2.15s/it]Processing Rows:  63%|██████▎   | 459/733 [17:18<09:41,  2.12s/it]Processing Rows:  63%|██████▎   | 460/733 [17:20<09:51,  2.17s/it]Processing Rows:  63%|██████▎   | 461/733 [17:22<09:44,  2.15s/it]WARNING:root:PR 26 的 patch 数据为空
-Processing Rows:  63%|██████▎   | 462/733 [17:24<09:25,  2.09s/it]Processing Rows:  63%|██████▎   | 463/733 [17:26<09:31,  2.12s/it]Processing Rows:  63%|██████▎   | 464/733 [17:29<09:30,  2.12s/it]Processing Rows:  63%|██████▎   | 465/733 [17:31<09:32,  2.13s/it]Processing Rows:  64%|██████▎   | 466/733 [17:33<10:11,  2.29s/it]Processing Rows:  64%|██████▎   | 467/733 [17:36<10:29,  2.37s/it]Processing Rows:  64%|██████▍   | 468/733 [17:38<10:14,  2.32s/it]Processing Rows:  64%|██████▍   | 469/733 [17:40<09:54,  2.25s/it]Processing Rows:  64%|██████▍   | 470/733 [17:42<09:41,  2.21s/it]Processing Rows:  64%|██████▍   | 471/733 [17:45<10:18,  2.36s/it]Processing Rows:  64%|██████▍   | 472/733 [17:48<10:20,  2.38s/it]Processing Rows:  65%|██████▍   | 473/733 [17:50<10:05,  2.33s/it]Processing Rows:  65%|██████▍   | 474/733 [17:52<09:44,  2.26s/it]Processing Rows:  65%|██████▍   | 475/733 [17:54<09:32,  2.22s/it]Processing Rows:  65%|██████▍   | 476/733 [17:57<10:06,  2.36s/it]Processing Rows:  65%|██████▌   | 477/733 [17:59<09:49,  2.30s/it]Processing Rows:  65%|██████▌   | 478/733 [18:01<09:41,  2.28s/it]Processing Rows:  65%|██████▌   | 479/733 [18:03<09:44,  2.30s/it]Processing Rows:  65%|██████▌   | 480/733 [18:06<09:35,  2.27s/it]Processing Rows:  66%|██████▌   | 481/733 [18:08<10:01,  2.39s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  66%|██████▌   | 482/733 [18:10<09:44,  2.33s/it]Processing Rows:  66%|██████▌   | 483/733 [18:13<09:36,  2.30s/it]Processing Rows:  66%|██████▌   | 484/733 [18:15<09:14,  2.23s/it]Processing Rows:  66%|██████▌   | 485/733 [18:17<09:04,  2.19s/it]Processing Rows:  66%|██████▋   | 486/733 [18:19<09:02,  2.20s/it]Processing Rows:  66%|██████▋   | 487/733 [18:22<09:46,  2.39s/it]Processing Rows:  67%|██████▋   | 488/733 [18:24<09:29,  2.32s/it]Processing Rows:  67%|██████▋   | 489/733 [18:26<09:15,  2.27s/it]Processing Rows:  67%|██████▋   | 490/733 [18:28<09:01,  2.23s/it]Processing Rows:  67%|██████▋   | 491/733 [18:31<08:56,  2.22s/it]Processing Rows:  67%|██████▋   | 492/733 [18:33<08:48,  2.19s/it]Processing Rows:  67%|██████▋   | 493/733 [18:35<08:45,  2.19s/it]Processing Rows:  67%|██████▋   | 494/733 [18:37<08:48,  2.21s/it]Processing Rows:  68%|██████▊   | 495/733 [18:39<08:38,  2.18s/it]Processing Rows:  68%|██████▊   | 496/733 [18:41<08:41,  2.20s/it]Processing Rows:  68%|██████▊   | 497/733 [18:44<08:37,  2.19s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  68%|██████▊   | 498/733 [18:47<10:19,  2.64s/it]Processing Rows:  68%|██████▊   | 499/733 [18:49<09:30,  2.44s/it]Processing Rows:  68%|██████▊   | 500/733 [18:51<09:00,  2.32s/it]Processing Rows:  68%|██████▊   | 501/733 [18:58<14:03,  3.64s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  68%|██████▊   | 502/733 [19:02<14:53,  3.87s/it]Processing Rows:  69%|██████▊   | 503/733 [19:06<14:02,  3.66s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  69%|██████▉   | 504/733 [19:10<14:43,  3.86s/it]Processing Rows:  69%|██████▉   | 505/733 [19:12<12:55,  3.40s/it]Processing Rows:  69%|██████▉   | 506/733 [19:17<14:25,  3.81s/it]Processing Rows:  69%|██████▉   | 507/733 [19:20<13:48,  3.66s/it]Processing Rows:  69%|██████▉   | 508/733 [19:23<12:28,  3.33s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  69%|██████▉   | 509/733 [19:30<16:09,  4.33s/it]Processing Rows:  70%|██████▉   | 510/733 [19:32<13:51,  3.73s/it]Processing Rows:  70%|██████▉   | 511/733 [19:34<12:18,  3.33s/it]Processing Rows:  70%|██████▉   | 512/733 [19:37<11:11,  3.04s/it]Processing Rows:  70%|██████▉   | 513/733 [19:39<10:12,  2.78s/it]Processing Rows:  70%|███████   | 514/733 [19:41<09:40,  2.65s/it]Processing Rows:  70%|███████   | 515/733 [19:44<09:56,  2.74s/it]Processing Rows:  70%|███████   | 516/733 [19:46<09:19,  2.58s/it]Processing Rows:  71%|███████   | 517/733 [19:49<08:56,  2.49s/it]Processing Rows:  71%|███████   | 518/733 [19:51<08:32,  2.38s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  71%|███████   | 519/733 [19:53<08:10,  2.29s/it]Processing Rows:  71%|███████   | 520/733 [19:55<08:01,  2.26s/it]Processing Rows:  71%|███████   | 521/733 [19:57<07:55,  2.24s/it]Processing Rows:  71%|███████   | 522/733 [19:59<07:43,  2.20s/it]Processing Rows:  71%|███████▏  | 523/733 [20:01<07:36,  2.17s/it]Processing Rows:  71%|███████▏  | 524/733 [20:04<07:42,  2.21s/it]Processing Rows:  72%|███████▏  | 525/733 [20:06<07:42,  2.22s/it]Processing Rows:  72%|███████▏  | 526/733 [20:08<07:30,  2.18s/it]Processing Rows:  72%|███████▏  | 527/733 [20:10<07:22,  2.15s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  72%|███████▏  | 528/733 [20:13<07:35,  2.22s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  72%|███████▏  | 529/733 [20:21<13:33,  3.99s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  72%|███████▏  | 530/733 [20:23<11:46,  3.48s/it]Processing Rows:  72%|███████▏  | 531/733 [20:25<10:21,  3.08s/it]Processing Rows:  73%|███████▎  | 532/733 [20:27<09:30,  2.84s/it]Processing Rows:  73%|███████▎  | 533/733 [20:29<08:43,  2.62s/it]Processing Rows:  73%|███████▎  | 534/733 [20:32<08:15,  2.49s/it]Processing Rows:  73%|███████▎  | 535/733 [20:34<07:50,  2.38s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  73%|███████▎  | 536/733 [20:37<08:14,  2.51s/it]Processing Rows:  73%|███████▎  | 537/733 [20:39<08:12,  2.51s/it]Processing Rows:  73%|███████▎  | 538/733 [20:41<07:55,  2.44s/it]Processing Rows:  74%|███████▎  | 539/733 [20:44<07:39,  2.37s/it]Processing Rows:  74%|███████▎  | 540/733 [20:46<07:33,  2.35s/it]Processing Rows:  74%|███████▍  | 541/733 [20:49<07:47,  2.44s/it]Processing Rows:  74%|███████▍  | 542/733 [20:51<07:47,  2.45s/it]Processing Rows:  74%|███████▍  | 543/733 [20:54<07:54,  2.50s/it]Processing Rows:  74%|███████▍  | 544/733 [20:56<07:34,  2.41s/it]Processing Rows:  74%|███████▍  | 545/733 [20:58<07:20,  2.34s/it]Processing Rows:  74%|███████▍  | 546/733 [21:00<07:02,  2.26s/it]Processing Rows:  75%|███████▍  | 547/733 [21:02<06:50,  2.21s/it]Processing Rows:  75%|███████▍  | 548/733 [21:04<06:52,  2.23s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  75%|███████▍  | 549/733 [21:07<06:51,  2.23s/it]Processing Rows:  75%|███████▌  | 550/733 [21:09<06:41,  2.19s/it]Processing Rows:  75%|███████▌  | 551/733 [21:11<06:33,  2.16s/it]Processing Rows:  75%|███████▌  | 552/733 [21:13<06:35,  2.18s/it]Processing Rows:  75%|███████▌  | 553/733 [21:15<06:38,  2.21s/it]Processing Rows:  76%|███████▌  | 554/733 [21:18<06:32,  2.19s/it]Processing Rows:  76%|███████▌  | 555/733 [21:20<06:30,  2.19s/it]Following Github server redirection from /repos/OpenBMB/MiniCPM-V to /repositories/749647889
-INFO:github.Requester:Following Github server redirection from /repos/OpenBMB/MiniCPM-V to /repositories/749647889
-Processing Rows:  76%|███████▌  | 556/733 [21:22<06:42,  2.27s/it]Processing Rows:  76%|███████▌  | 557/733 [21:24<06:32,  2.23s/it]Processing Rows:  76%|███████▌  | 558/733 [21:27<06:28,  2.22s/it]Processing Rows:  76%|███████▋  | 559/733 [21:29<06:21,  2.19s/it]Processing Rows:  76%|███████▋  | 560/733 [21:31<06:13,  2.16s/it]Processing Rows:  77%|███████▋  | 561/733 [21:33<06:08,  2.14s/it]Processing Rows:  77%|███████▋  | 562/733 [21:35<06:02,  2.12s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  77%|███████▋  | 563/733 [21:42<10:40,  3.77s/it]Processing Rows:  77%|███████▋  | 564/733 [21:45<09:09,  3.25s/it]Processing Rows:  77%|███████▋  | 565/733 [21:47<08:10,  2.92s/it]Processing Rows:  77%|███████▋  | 566/733 [21:49<07:20,  2.63s/it]Processing Rows:  77%|███████▋  | 567/733 [21:51<06:47,  2.45s/it]Processing Rows:  77%|███████▋  | 568/733 [21:53<06:29,  2.36s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  78%|███████▊  | 569/733 [21:55<06:19,  2.31s/it]Processing Rows:  78%|███████▊  | 570/733 [21:57<06:09,  2.27s/it]Processing Rows:  78%|███████▊  | 571/733 [21:59<06:02,  2.24s/it]Processing Rows:  78%|███████▊  | 572/733 [22:01<05:51,  2.18s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  78%|███████▊  | 573/733 [22:05<07:01,  2.63s/it]Processing Rows:  78%|███████▊  | 574/733 [22:07<06:34,  2.48s/it]Processing Rows:  78%|███████▊  | 575/733 [22:09<06:19,  2.40s/it]ERROR:root:处理 URL https://github.com/karpathy/minbpe/pull/65 时出错：422 {"message": "Sorry, there was a problem generating this diff. The repository may be missing relevant data.", "errors": [{"resource": "PullRequest", "field": "diff", "code": "not_available"}], "documentation_url": "https://docs.github.com/v3/pulls#diff-error", "status": "422"}
-Processing Rows:  79%|███████▊  | 576/733 [22:11<05:55,  2.26s/it]Processing Rows:  79%|███████▊  | 577/733 [22:14<05:51,  2.25s/it]Processing Rows:  79%|███████▉  | 578/733 [22:16<05:45,  2.23s/it]Processing Rows:  79%|███████▉  | 579/733 [22:18<05:35,  2.18s/it]Processing Rows:  79%|███████▉  | 580/733 [22:20<05:29,  2.15s/it]Processing Rows:  79%|███████▉  | 581/733 [22:22<05:25,  2.14s/it]Processing Rows:  79%|███████▉  | 582/733 [22:24<05:18,  2.11s/it]Processing Rows:  80%|███████▉  | 583/733 [22:26<05:20,  2.14s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  80%|███████▉  | 584/733 [22:36<10:51,  4.37s/it]Processing Rows:  80%|███████▉  | 585/733 [22:38<09:07,  3.70s/it]Processing Rows:  80%|███████▉  | 586/733 [22:41<08:28,  3.46s/it]Processing Rows:  80%|████████  | 587/733 [22:43<07:30,  3.08s/it]Processing Rows:  80%|████████  | 588/733 [22:45<06:49,  2.83s/it]Processing Rows:  80%|████████  | 589/733 [22:47<06:16,  2.62s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  80%|████████  | 590/733 [22:50<05:55,  2.49s/it]Processing Rows:  81%|████████  | 591/733 [22:52<05:40,  2.40s/it]Processing Rows:  81%|████████  | 592/733 [22:54<05:22,  2.29s/it]Processing Rows:  81%|████████  | 593/733 [22:56<05:19,  2.28s/it]Processing Rows:  81%|████████  | 594/733 [22:59<05:28,  2.36s/it]Processing Rows:  81%|████████  | 595/733 [23:01<05:35,  2.43s/it]Processing Rows:  81%|████████▏ | 596/733 [23:04<05:24,  2.37s/it]Processing Rows:  81%|████████▏ | 597/733 [23:06<05:09,  2.27s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  82%|████████▏ | 598/733 [23:12<07:35,  3.37s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  82%|████████▏ | 599/733 [23:14<07:14,  3.24s/it]Processing Rows:  82%|████████▏ | 600/733 [23:17<06:28,  2.92s/it]Processing Rows:  82%|████████▏ | 601/733 [23:19<05:55,  2.70s/it]Processing Rows:  82%|████████▏ | 602/733 [23:21<05:34,  2.55s/it]Processing Rows:  82%|████████▏ | 603/733 [23:23<05:15,  2.43s/it]Processing Rows:  82%|████████▏ | 604/733 [23:25<05:01,  2.34s/it]Processing Rows:  83%|████████▎ | 605/733 [23:27<04:52,  2.29s/it]Processing Rows:  83%|████████▎ | 606/733 [23:30<04:43,  2.24s/it]Processing Rows:  83%|████████▎ | 607/733 [23:32<04:36,  2.19s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  83%|████████▎ | 608/733 [24:05<24:15, 11.65s/it]Processing Rows:  83%|████████▎ | 609/733 [24:08<18:14,  8.83s/it]Processing Rows:  83%|████████▎ | 610/733 [24:10<14:10,  6.91s/it]Processing Rows:  83%|████████▎ | 611/733 [24:12<11:17,  5.55s/it]Processing Rows:  83%|████████▎ | 612/733 [24:15<09:08,  4.53s/it]Processing Rows:  84%|████████▎ | 613/733 [24:17<07:39,  3.83s/it]Processing Rows:  84%|████████▍ | 614/733 [24:19<06:38,  3.35s/it]Processing Rows:  84%|████████▍ | 615/733 [24:21<05:54,  3.00s/it]Processing Rows:  84%|████████▍ | 616/733 [24:23<05:25,  2.79s/it]Processing Rows:  84%|████████▍ | 617/733 [24:26<05:02,  2.60s/it]Processing Rows:  84%|████████▍ | 618/733 [24:28<04:41,  2.45s/it]Processing Rows:  84%|████████▍ | 619/733 [24:30<04:27,  2.35s/it]Processing Rows:  85%|████████▍ | 620/733 [24:32<04:24,  2.34s/it]Processing Rows:  85%|████████▍ | 621/733 [24:34<04:15,  2.28s/it]Processing Rows:  85%|████████▍ | 622/733 [24:36<04:09,  2.25s/it]Processing Rows:  85%|████████▍ | 623/733 [24:39<04:05,  2.23s/it]Processing Rows:  85%|████████▌ | 624/733 [24:41<04:03,  2.23s/it]Processing Rows:  85%|████████▌ | 625/733 [24:43<03:59,  2.22s/it]Processing Rows:  85%|████████▌ | 626/733 [24:45<03:55,  2.20s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  86%|████████▌ | 627/733 [24:47<03:50,  2.18s/it]Processing Rows:  86%|████████▌ | 628/733 [24:50<03:53,  2.23s/it]Processing Rows:  86%|████████▌ | 629/733 [24:52<03:46,  2.18s/it]Processing Rows:  86%|████████▌ | 630/733 [24:54<03:39,  2.14s/it]Processing Rows:  86%|████████▌ | 631/733 [24:56<03:38,  2.14s/it]Processing Rows:  86%|████████▌ | 632/733 [24:58<03:33,  2.11s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  86%|████████▋ | 633/733 [25:00<03:29,  2.09s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  86%|████████▋ | 634/733 [25:03<03:55,  2.38s/it]Processing Rows:  87%|████████▋ | 635/733 [25:05<03:44,  2.29s/it]Processing Rows:  87%|████████▋ | 636/733 [25:07<03:37,  2.24s/it]Processing Rows:  87%|████████▋ | 637/733 [25:10<03:39,  2.29s/it]Processing Rows:  87%|████████▋ | 638/733 [25:12<03:32,  2.24s/it]Processing Rows:  87%|████████▋ | 639/733 [25:14<03:26,  2.20s/it]Processing Rows:  87%|████████▋ | 640/733 [25:16<03:25,  2.21s/it]Processing Rows:  87%|████████▋ | 641/733 [25:18<03:23,  2.21s/it]Processing Rows:  88%|████████▊ | 642/733 [25:21<03:24,  2.24s/it]Processing Rows:  88%|████████▊ | 643/733 [25:23<03:19,  2.21s/it]Processing Rows:  88%|████████▊ | 644/733 [25:25<03:15,  2.20s/it]Processing Rows:  88%|████████▊ | 645/733 [25:27<03:19,  2.27s/it]Processing Rows:  88%|████████▊ | 646/733 [25:30<03:13,  2.22s/it]Processing Rows:  88%|████████▊ | 647/733 [25:32<03:07,  2.18s/it]Processing Rows:  88%|████████▊ | 648/733 [25:34<03:02,  2.14s/it]Processing Rows:  89%|████████▊ | 649/733 [25:36<03:00,  2.14s/it]WARNING:root:PR 47 的 patch 数据为空
-Processing Rows:  89%|████████▊ | 650/733 [25:38<02:54,  2.11s/it]Processing Rows:  89%|████████▉ | 651/733 [25:40<03:01,  2.21s/it]Processing Rows:  89%|████████▉ | 652/733 [25:43<03:04,  2.28s/it]Processing Rows:  89%|████████▉ | 653/733 [25:45<03:04,  2.30s/it]Processing Rows:  89%|████████▉ | 654/733 [25:48<03:05,  2.34s/it]Processing Rows:  89%|████████▉ | 655/733 [25:50<02:54,  2.24s/it]Processing Rows:  89%|████████▉ | 656/733 [25:52<02:49,  2.20s/it]Processing Rows:  90%|████████▉ | 657/733 [25:54<02:46,  2.19s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  90%|████████▉ | 658/733 [25:56<02:46,  2.22s/it]Processing Rows:  90%|████████▉ | 659/733 [25:58<02:41,  2.18s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  90%|█████████ | 660/733 [26:00<02:38,  2.17s/it]Processing Rows:  90%|█████████ | 661/733 [26:03<02:37,  2.19s/it]Processing Rows:  90%|█████████ | 662/733 [26:05<02:36,  2.21s/it]Processing Rows:  90%|█████████ | 663/733 [26:07<02:32,  2.18s/it]Following Github server redirection from /repos/CatchTheTornado/pdf-extract-api to /repositories/877212130
-INFO:github.Requester:Following Github server redirection from /repos/CatchTheTornado/pdf-extract-api to /repositories/877212130
-Processing Rows:  91%|█████████ | 664/733 [26:09<02:36,  2.27s/it]Following Github server redirection from /repos/CatchTheTornado/pdf-extract-api to /repositories/877212130
-INFO:github.Requester:Following Github server redirection from /repos/CatchTheTornado/pdf-extract-api to /repositories/877212130
-Processing Rows:  91%|█████████ | 665/733 [26:12<02:38,  2.33s/it]Following Github server redirection from /repos/CatchTheTornado/pdf-extract-api to /repositories/877212130
-INFO:github.Requester:Following Github server redirection from /repos/CatchTheTornado/pdf-extract-api to /repositories/877212130
-Processing Rows:  91%|█████████ | 666/733 [26:14<02:38,  2.36s/it]Following Github server redirection from /repos/CatchTheTornado/pdf-extract-api to /repositories/877212130
-INFO:github.Requester:Following Github server redirection from /repos/CatchTheTornado/pdf-extract-api to /repositories/877212130
-Processing Rows:  91%|█████████ | 667/733 [26:17<02:38,  2.41s/it]Processing Rows:  91%|█████████ | 668/733 [26:19<02:34,  2.38s/it]Processing Rows:  91%|█████████▏| 669/733 [26:22<02:41,  2.52s/it]Processing Rows:  91%|█████████▏| 670/733 [26:24<02:31,  2.40s/it]Processing Rows:  92%|█████████▏| 671/733 [26:27<02:28,  2.39s/it]Processing Rows:  92%|█████████▏| 672/733 [26:29<02:18,  2.28s/it]Processing Rows:  92%|█████████▏| 673/733 [26:31<02:14,  2.24s/it]Processing Rows:  92%|█████████▏| 674/733 [26:33<02:10,  2.22s/it]Processing Rows:  92%|█████████▏| 675/733 [26:35<02:05,  2.17s/it]Processing Rows:  92%|█████████▏| 676/733 [26:37<02:03,  2.17s/it]Processing Rows:  92%|█████████▏| 677/733 [26:39<02:02,  2.19s/it]Processing Rows:  92%|█████████▏| 678/733 [26:42<02:00,  2.20s/it]Processing Rows:  93%|█████████▎| 679/733 [26:44<01:56,  2.16s/it]Processing Rows:  93%|█████████▎| 680/733 [26:46<01:55,  2.17s/it]Processing Rows:  93%|█████████▎| 681/733 [26:48<01:53,  2.18s/it]Processing Rows:  93%|█████████▎| 682/733 [26:50<01:49,  2.15s/it]Processing Rows:  93%|█████████▎| 683/733 [26:52<01:48,  2.18s/it]Processing Rows:  93%|█████████▎| 684/733 [26:55<01:46,  2.18s/it]Processing Rows:  93%|█████████▎| 685/733 [26:57<01:48,  2.26s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  94%|█████████▎| 686/733 [27:00<01:50,  2.35s/it]Processing Rows:  94%|█████████▎| 687/733 [27:02<01:45,  2.30s/it]Processing Rows:  94%|█████████▍| 688/733 [27:04<01:41,  2.26s/it]Processing Rows:  94%|█████████▍| 689/733 [27:06<01:37,  2.22s/it]Processing Rows:  94%|█████████▍| 690/733 [27:08<01:33,  2.17s/it]Processing Rows:  94%|█████████▍| 691/733 [27:10<01:30,  2.15s/it]WARNING:root:PR 27 的 patch 数据为空
-Processing Rows:  94%|█████████▍| 692/733 [27:12<01:25,  2.09s/it]Processing Rows:  95%|█████████▍| 693/733 [27:14<01:24,  2.12s/it]Processing Rows:  95%|█████████▍| 694/733 [27:17<01:24,  2.17s/it]Processing Rows:  95%|█████████▍| 695/733 [27:19<01:24,  2.22s/it]Processing Rows:  95%|█████████▍| 696/733 [27:21<01:20,  2.19s/it]Processing Rows:  95%|█████████▌| 697/733 [27:23<01:20,  2.25s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  95%|█████████▌| 698/733 [27:27<01:28,  2.52s/it]Processing Rows:  95%|█████████▌| 699/733 [27:29<01:22,  2.42s/it]Processing Rows:  95%|█████████▌| 700/733 [27:31<01:18,  2.37s/it]Processing Rows:  96%|█████████▌| 701/733 [27:33<01:14,  2.33s/it]Processing Rows:  96%|█████████▌| 702/733 [27:35<01:09,  2.25s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  96%|█████████▌| 703/733 [27:38<01:07,  2.26s/it]Processing Rows:  96%|█████████▌| 704/733 [27:40<01:05,  2.27s/it]Processing Rows:  96%|█████████▌| 705/733 [27:42<01:02,  2.23s/it]patch:No patch data available (possibly binary file)
-Processing Rows:  96%|█████████▋| 706/733 [27:47<01:24,  3.13s/it]Processing Rows:  96%|█████████▋| 707/733 [27:50<01:14,  2.87s/it]Processing Rows:  97%|█████████▋| 708/733 [27:52<01:06,  2.64s/it]Processing Rows:  97%|█████████▋| 709/733 [27:54<00:59,  2.50s/it]Processing Rows:  97%|█████████▋| 710/733 [27:56<00:56,  2.47s/it]Processing Rows:  97%|█████████▋| 711/733 [27:58<00:51,  2.35s/it]Processing Rows:  97%|█████████▋| 712/733 [28:00<00:48,  2.30s/it]Processing Rows:  97%|█████████▋| 713/733 [28:03<00:45,  2.27s/it]Processing Rows:  97%|█████████▋| 714/733 [28:05<00:42,  2.25s/it]Processing Rows:  98%|█████████▊| 715/733 [28:07<00:40,  2.25s/it]Processing Rows:  98%|█████████▊| 716/733 [28:09<00:37,  2.20s/it]Processing Rows:  98%|█████████▊| 717/733 [28:11<00:35,  2.21s/it]Processing Rows:  98%|█████████▊| 718/733 [28:14<00:32,  2.19s/it]Processing Rows:  98%|█████████▊| 719/733 [28:16<00:30,  2.17s/it]Processing Rows:  98%|█████████▊| 720/733 [28:18<00:28,  2.17s/it]Processing Rows:  98%|█████████▊| 721/733 [28:20<00:26,  2.19s/it]Processing Rows:  98%|█████████▊| 722/733 [28:22<00:24,  2.22s/it]Processing Rows:  99%|█████████▊| 723/733 [28:25<00:21,  2.19s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  99%|█████████▉| 724/733 [28:27<00:21,  2.42s/it]patch:No patch data available (possibly binary file)
-patch:No patch data available (possibly binary file)
-Processing Rows:  99%|█████████▉| 725/733 [28:31<00:22,  2.76s/it]Processing Rows:  99%|█████████▉| 726/733 [28:33<00:17,  2.53s/it]Processing Rows:  99%|█████████▉| 727/733 [28:35<00:14,  2.43s/it]Processing Rows:  99%|█████████▉| 728/733 [28:37<00:11,  2.36s/it]Following Github server redirection from /repos/fedirz/faster-whisper-server to /repositories/802330841
-INFO:github.Requester:Following Github server redirection from /repos/fedirz/faster-whisper-server to /repositories/802330841
-Processing Rows:  99%|█████████▉| 729/733 [28:40<00:09,  2.44s/it]Processing Rows: 100%|█████████▉| 730/733 [28:42<00:07,  2.41s/it]Processing Rows: 100%|█████████▉| 731/733 [28:45<00:04,  2.32s/it]patch:No patch data available (possibly binary file)
-Processing Rows: 100%|█████████▉| 732/733 [28:47<00:02,  2.26s/it]Processing Rows: 100%|██████████| 733/733 [28:49<00:00,  2.22s/it]Processing Rows: 100%|██████████| 733/733 [28:49<00:00,  2.36s/it]
-               repo_name  ...                                      modified_code
-0              apple/pkl  ...  pkl-core/src/main/java/org/pkl/core/runtime/Vm...
-1              apple/pkl  ...  .circleci/config.pkl: import "jobs/DeployJob.p...
-2    bepass-org/oblivion  ...  app/build.gradle: implementation 'com.squareup...
-3  CodePhiliaX/fastexcel  ...  fastexcel-annotation/pom.xml: <?xml version="1...
-4  CodePhiliaX/fastexcel  ...  docs/1-快速开始.md: # 安装\n\n下表列出了各版本 FastExcel 基础库...
-
-[5 rows x 10 columns]

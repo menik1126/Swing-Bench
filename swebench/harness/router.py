@@ -3,6 +3,9 @@ import subprocess
 import os
 import re
 import tempfile
+import threading
+from queue import Queue
+import json
 
 def run_script(script_content):
 
@@ -25,6 +28,7 @@ class Task:
     patch: str
     target_dir: str
     output_dir: str
+    previous_eval_script: list[str] = None
 
 class CIToolBase:
     def __init__(self, config):
@@ -88,19 +92,34 @@ class DockerCITool(CIToolBase):
 class ActCITool(CIToolBase):
     def __init__(self, config):
         super().__init__(config)
-        self.construct()
+        self.act_list_path = 'act_list.txt'
+        self.cloned_repo_path = self.config["repo"].split("/")[1] + "_" + self.config["base_commit"]
         self.ci_dict = dict()
+        self.result_lock = threading.Lock()
+        self.semaphore = threading.Semaphore(8)
+        self.act_mq = Queue()
+        self.construct()
 
     def _build_repo_base_env(self):
         script = ["#!/bin/bash"]
-        script.extend(["cd " + self.config["workdir"], "git clone https://github.com/" + self.config["repo"] + ".git"])
+        script.extend(["cd " + self.config["workdir"],
+                       "git clone https://github.com/" + self.config["repo"] + ".git " + self.cloned_repo_path])
+
+        return script
+
+    def _build_previous_eval_script(self):
+        script = ["#!/bin/bash", 
+                    "cd " + os.path.join(self.config["workdir"], self.cloned_repo_path),
+                    "prev_commit=$(git rev-parse " + self.config["base_commit"] + "^)",
+                    "git checkout $prev_commit"
+                ]
 
         return script
 
     def _build_eval_script(self):
         script = ["#!/bin/bash", 
-                    "cd " + self.config["workdir"] + "/" + self.config["repo"].split("/")[1],
-                    "git checkout " + self.config["base_commit"],
+                    "cd " + os.path.join(self.config["workdir"], self.cloned_repo_path),
+                    "git checkout " + self.config["base_commit"]
                 ]
 
         return script
@@ -122,30 +141,121 @@ class ActCITool(CIToolBase):
 
         script = ["#!/bin/bash"]
         script.extend(["cd " + target_dir])
-        script.extend(["act --list > act_list.txt"])
+        script.extend(["act --list > {}".format(self.act_list_path)])
         os.system("\n".join(script))
         # only absolute path? 
-        self.ci_dict = _extract_jobs(os.path.expanduser(target_dir + "/act_list.txt"))
-        os.system("rm " + target_dir + "/act_list.txt")
+        act_list_path = os.path.join(target_dir, self.act_list_path)
+        self.ci_dict = _extract_jobs(os.path.expanduser(act_list_path))
+        os.system("rm " + act_list_path)
                     
+    def _process_act_output(self, stdout):
+        results = []
+        for line in stdout.split('\n'):
+            if not line.strip():
+                continue
+            try:
+                data = json.loads(line)
+                # {
+                # "dryrun": false,
+                # "job": "checks/test-linux",
+                # "jobID": "test-linux",
+                # "level": "info",
+                # "matrix": {},
+                # "msg": "  ✅  Success - Main actions/setup-go@v5",
+                # "stage": "Main",
+                # "step": "actions/setup-go@v5",
+                # "stepID": [
+                #     "2"
+                # ],
+                # "stepResult": "success",
+                # "time": "2025-03-05T13:49:03+08:00"
+                # }
+                result = {
+                    'dryrun': data.get('dryrun', ''),
+                    'job': data.get('job', ''),
+                    'jobID': data.get('jobID', ''),
+                    'level': data.get('level', ''),
+                    'matrix': data.get('matrix', ''),
+                    'msg': data.get('msg', ''),
+                    'raw_output': data.get('raw_output', ''),
+                    'stage': data.get('stage', ''),
+                    'step': data.get('step', ''),
+                    'stepID': data.get('stepID', ''),
+                    'stepResult': data.get('stepResult', ''),
+                    'time': data.get('time', ''),
+                }
+                results.append(result)
+            except json.JSONDecodeError:
+                continue
+        return results
+
+    def _run_act_with_semaphore(self, ci, target_dir):
+        with self.semaphore:
+            process = subprocess.Popen(["act", "-j", self.ci_dict[ci], "--json"], 
+                                     cwd=target_dir,
+                                     stdout=subprocess.PIPE,
+                                     stderr=subprocess.PIPE,
+                                     text=True)
+            stdout, stderr = process.communicate()
+            result = {
+                "stdout": stdout,
+                "stderr": stderr,
+                "returncode": process.returncode,
+                "processed_output": self._process_act_output(stdout)
+            }
+            self.act_mq.put(result)
+            return result
+
     def run_ci(self, ci_list):
         task = self.task
         run_script("\n".join(task.env_script))
         run_script("\n".join(task.eval_script))
 
         self._get_ci_job_name_id_dict(task.target_dir)
-        result = []
+        eval_result = []
+        threads = []
         for ci in ci_list:
-            result.append(subprocess.run(["act", "-j", self.ci_dict[ci]], cwd=task.target_dir))
+            thread = threading.Thread(
+                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir)
+            )
+            thread.start()
+            threads.append(thread)
+        
+        for thread in threads:
+            thread.join()
+        
+        while not self.act_mq.empty():
+            eval_result.append(self.act_mq.get())
+        
+        run_script("\n".join(task.previous_eval_script))
+        previous_eval_result = []
+        threads = []
+        for ci in ci_list:
+            thread = threading.Thread(
+                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir)
+            )
+            thread.start()
+            threads.append(thread)
+        
+        for thread in threads:
+            thread.join()
+            
+        while not self.act_mq.empty():
+            previous_eval_result.append(self.act_mq.get())
+
         os.system("rm -rf " + task.target_dir)
-        return result
+
+        return [eval_result, previous_eval_result]
 
     def construct(self):
         env_script = self._build_repo_base_env()
         eval_script = self._build_eval_script()
-        target_dir = self.config["workdir"] + "/" + self.config["repo"].split("/")[1]
+        previous_eval_script = self._build_previous_eval_script()
+        target_dir = os.path.join(self.config["workdir"],
+                                  self.cloned_repo_path)
         # TODO: add id
-        self.task = Task("", env_script, eval_script, self.config["patch"], target_dir, self.config["output_dir"])
+        self.task = Task("", env_script, eval_script, self.config["patch"], target_dir, self.config["output_dir"], previous_eval_script)
+
 
 HANDLER = {
     "cargo": CargoCITool,
@@ -165,11 +275,11 @@ RUST_INSTALL = ["if ! command -v rustc >/dev/null 2>&1; then",
 if __name__ == '__main__':
     # Comment(wdxu): fake data for test only.
     act = ActCITool({"act_path": "/mnt/Data/wdxu/github/act/bin/act", \
-                     "repo": "vectordotdev/servo", \
-                     "base_commit": "d49c542930267cc69d577e8d3b86a6c119fcf331", \
+                     "repo": "cplee/github-actions-demo", \
+                     "base_commit": "2dcabf3769c2613687310c7b71b89af681e8ee50", \
                      "patch": "patch_content", \
-                     "workdir": "/home/wdxu/github", \
+                     "workdir": "/home/wdxu/testbed", \
                      "output_dir": "output_dir"})
-    result = act.run_ci('./debug.log', ['Android Build'])
+    result = act.run_ci(['test'])
     with open('./result.log', 'w') as f:
         f.write(str(result))
