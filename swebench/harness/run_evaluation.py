@@ -77,7 +77,7 @@ def run_instances(
                 "act_path": act_path,
                 "repo": test["repo"],
                 "base_commit": test["base_commit"],
-                "merge_commit": test["merge_commit"],
+                "merge_commit": test["merge_commit_sha"],
                 "patch": test["patch"],
                 "ci_name_list": test["ci_name_list"],
                 "workdir": target_dir,
