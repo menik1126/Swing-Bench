@@ -15,6 +15,7 @@ class SWEbenchInstance(TypedDict):
     repo: str
     instance_id: str
     base_commit: str
+    head_commit: str
     patch: str
     test_patch: str
     problem_statement: str

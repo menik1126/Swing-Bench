@@ -60,7 +60,7 @@ class CargoCITool(CIToolBase):
     def _build_eval_script(self):
         script = ["#!/bin/bash", 
                     "cd " + self.config["workdir"] + "/" + self.config["repo"].split("/")[1],
-                    "git checkout " + self.config["base_commit"],
+                    "git checkout " + self.config["head_sha"],
                 ]
 
         return script
@@ -93,7 +93,7 @@ class ActCITool(CIToolBase):
     def __init__(self, config):
         super().__init__(config)
         self.act_list_path = 'act_list.txt'
-        self.cloned_repo_path = self.config["repo"].split("/")[1] + "_" + self.config["base_commit"]
+        self.cloned_repo_path = self.config["repo"].split("/")[1] + "_" + self.config["head_sha"]
         self.ci_dict = dict()
         self.result_lock = threading.Lock()
         self.semaphore = threading.Semaphore(8)
@@ -110,7 +110,7 @@ class ActCITool(CIToolBase):
     def _build_previous_eval_script(self):
         script = ["#!/bin/bash", 
                     "cd " + os.path.join(self.config["workdir"], self.cloned_repo_path),
-                    "prev_commit=$(git rev-parse " + self.config["base_commit"] + "^)",
+                    "prev_commit=$(git rev-parse " + self.config["base_sha"] + "^)",
                     "git checkout $prev_commit"
                 ]
 
@@ -119,7 +119,7 @@ class ActCITool(CIToolBase):
     def _build_eval_script(self):
         script = ["#!/bin/bash", 
                     "cd " + os.path.join(self.config["workdir"], self.cloned_repo_path),
-                    "git checkout " + self.config["base_commit"]
+                    "git checkout " + self.config["head_sha"]
                 ]
 
         return script
@@ -276,7 +276,8 @@ if __name__ == '__main__':
     # Comment(wdxu): fake data for test only.
     act = ActCITool({"act_path": "/mnt/Data/wdxu/github/act/bin/act", \
                      "repo": "cplee/github-actions-demo", \
-                     "base_commit": "2dcabf3769c2613687310c7b71b89af681e8ee50", \
+                     "base_sha": "2dcabf3769c2613687310c7b71b89af681e8ee50", \
+                     "head_sha": "2dcabf3769c2613687310c7b71b89af681e8ee50", \
                      "patch": "patch_content", \
                      "workdir": "/home/wdxu/testbed", \
                      "output_dir": "output_dir"})
