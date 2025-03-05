@@ -206,7 +206,7 @@ class ActCITool(CIToolBase):
             self.act_mq.put(result)
             return result
 
-    def run_ci(self, ci_list):
+    def run_ci(self):
         task = self.task
         run_script("\n".join(task.env_script))
         run_script("\n".join(task.eval_script))
@@ -214,7 +214,7 @@ class ActCITool(CIToolBase):
         self._get_ci_job_name_id_dict(task.target_dir)
         eval_result = []
         threads = []
-        for ci in ci_list:
+        for ci in self.config["ci_name_list"]:
             thread = threading.Thread(
                 target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir)
             )
@@ -230,7 +230,7 @@ class ActCITool(CIToolBase):
         run_script("\n".join(task.previous_eval_script))
         previous_eval_result = []
         threads = []
-        for ci in ci_list:
+        for ci in self.config["ci_name_list"]:
             thread = threading.Thread(
                 target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir)
             )

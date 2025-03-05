@@ -76,13 +76,15 @@ def get_predictions_from_file(predictions_path: str, dataset_name: str, split: s
     return predictions
 
 def run_threadpool(tasks, max_workers):
+    import pdb
+    pdb.set_trace()
     if max_workers <= 1:
         return run_sequential(tasks)
     succeeded, failed = [], []
     with tqdm(total=len(tasks), smoothing=0) as pbar:
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             # TODO: find ci target
-            futures = {executor.submit(task.run_ci([])) for task in tasks}
+            futures = {executor.submit(task.run_ci()) for task in tasks}
             # Wait for each future to complete
             for future in as_completed(futures):
                 # TODO: save results in report dir
@@ -99,7 +101,7 @@ def run_sequential(tasks):
     succeeded, failed = [], []
     pbar = tqdm(total=len(tasks), smoothing=0)
     for task in tasks:
-        result = task.run_ci([])
+        result = task.run_ci()
         # TODO: save results in report dir
         pbar.update(1)
         pbar.set_description(f"{len(succeeded)} ran successfully, {len(failed)} failed")
@@ -117,7 +119,8 @@ def load_swebench_dataset(
         instance_ids = set(instance_ids)
     # Load from local .json/.jsonl file
     if name.endswith(".json") or name.endswith(".jsonl"):
-        dataset = json.loads(Path(name).read_text())
+        with open(name, "r") as f:
+            dataset = [json.loads(line) for line in f]
         dataset_ids = {instance[KEY_INSTANCE_ID] for instance in dataset}
     else:
         # Load from Hugging Face Datasets

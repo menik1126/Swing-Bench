@@ -50,7 +50,6 @@ GIT_APPLY_CMDS = [
 
 
 def run_instances(
-    predictions: dict,
     instances: list,
     max_workers: int,
     timeout: int,
@@ -70,16 +69,17 @@ def run_instances(
     act_path = shutil.which("act")
     if act_path is None:
         raise FileNotFoundError("'act' not found in system PATH")
-    
+        
     tasks = []
 
     for test in instances:
         act = ActCITool({
                 "act_path": act_path,
                 "repo": test["repo"],
-                "base_commit": test["base_commit"],
-                "head_commit": test["head_commit"],
+                "base_sha": test["base_commit"],
+                "head_sha": test["head_commit"],
                 "patch": test["patch"],
+                "ci_name_list": test["ci_name_list"],
                 "workdir": target_dir,
                 "output_dir": report_dir,
             })
@@ -128,6 +128,7 @@ def get_dataset_from_preds(
         dataset = [i for i in dataset if i[KEY_INSTANCE_ID] in instance_ids]
 
     # check which instance IDs have already been run
+    # TODO: load instance id in completed_ids
     completed_ids = set()
     for instance in dataset:
         if instance[KEY_INSTANCE_ID] not in prediction_ids:
@@ -143,7 +144,7 @@ def get_dataset_from_preds(
     empty_patch_ids = {
         k
         for k, v in predictions.items()
-        if v[KEY_PREDICTION] == "" or v[KEY_PREDICTION] is None
+        if v["test_patch"] == "" or v["test_patch"] is None
     }
 
     # filter dataset to only instances with predictions
@@ -186,11 +187,12 @@ def main(
     assert len(run_id) > 0, "Run ID must be provided"
 
     # load predictions as map of instance_id to prediction
+    predictions_path = "tasks/scikit-learn-task-instances.jsonl"
+    dataset_name = "tasks/scikit-learn-task-instances.jsonl"
     predictions = get_predictions_from_file(predictions_path, dataset_name, split)
     predictions = {pred[KEY_INSTANCE_ID]: pred for pred in predictions}
 
     # get dataset from predictions
-    # TODO: remove fail to pass and pass to pass
     dataset = get_dataset_from_preds(
         dataset_name, split, instance_ids, predictions, run_id,
     )
@@ -202,7 +204,6 @@ def main(
         print("No instances to run.")
     else:
         run_instances(
-            predictions,
             dataset,
             max_workers,
             timeout,
@@ -245,7 +246,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--max_workers",
         type=int,
-        default=4,
+        default=1,
         help="Maximum number of workers (should be <= 75%% of CPU cores)",
     )
     parser.add_argument(
@@ -261,10 +262,10 @@ if __name__ == "__main__":
         "--run_id", type=str, required=True, help="Run ID - identifies the run"
     )
     parser.add_argument(
-        "--report_dir", type=str, default="~/report", help="Directory to write reports to"
+        "--report_dir", type=str, default="./report", help="Directory to write reports to"
     )
     parser.add_argument(
-        "--target_dir", type=str, default="~/testbed", help="Directory to clone repo to"
+        "--target_dir", type=str, default="./testbed", help="Directory to clone repo to"
     )
 
     args = parser.parse_args()
