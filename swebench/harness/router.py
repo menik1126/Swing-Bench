@@ -5,6 +5,7 @@ import re
 import tempfile
 import threading
 from queue import Queue
+import json
 
 def run_script(script_content):
 
@@ -147,9 +148,50 @@ class ActCITool(CIToolBase):
         self.ci_dict = _extract_jobs(os.path.expanduser(act_list_path))
         os.system("rm " + act_list_path)
                     
+    def _process_act_output(self, stdout):
+        results = []
+        for line in stdout.split('\n'):
+            if not line.strip():
+                continue
+            try:
+                data = json.loads(line)
+                # {
+                # "dryrun": false,
+                # "job": "checks/test-linux",
+                # "jobID": "test-linux",
+                # "level": "info",
+                # "matrix": {},
+                # "msg": "  ✅  Success - Main actions/setup-go@v5",
+                # "stage": "Main",
+                # "step": "actions/setup-go@v5",
+                # "stepID": [
+                #     "2"
+                # ],
+                # "stepResult": "success",
+                # "time": "2025-03-05T13:49:03+08:00"
+                # }
+                result = {
+                    'dryrun': data.get('dryrun', ''),
+                    'job': data.get('job', ''),
+                    'jobID': data.get('jobID', ''),
+                    'level': data.get('level', ''),
+                    'matrix': data.get('matrix', ''),
+                    'msg': data.get('msg', ''),
+                    'raw_output': data.get('raw_output', ''),
+                    'stage': data.get('stage', ''),
+                    'step': data.get('step', ''),
+                    'stepID': data.get('stepID', ''),
+                    'stepResult': data.get('stepResult', ''),
+                    'time': data.get('time', ''),
+                }
+                results.append(result)
+            except json.JSONDecodeError:
+                continue
+        return results
+
     def _run_act_with_semaphore(self, ci, target_dir):
         with self.semaphore:
-            process = subprocess.Popen(["act", "-j", self.ci_dict[ci]], 
+            process = subprocess.Popen(["act", "-j", self.ci_dict[ci], "--json"], 
                                      cwd=target_dir,
                                      stdout=subprocess.PIPE,
                                      stderr=subprocess.PIPE,
@@ -158,7 +200,8 @@ class ActCITool(CIToolBase):
             result = {
                 "stdout": stdout,
                 "stderr": stderr,
-                "returncode": process.returncode
+                "returncode": process.returncode,
+                "processed_output": self._process_act_output(stdout)
             }
             self.act_mq.put(result)
             return result
