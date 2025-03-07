@@ -75,6 +75,7 @@ def run_instances(
     for test in instances:
         act = ActCITool({
                 "act_path": act_path,
+                "id": test["instance_id"],
                 "repo": test["repo"],
                 "base_commit": test["base_commit"],
                 "merge_commit": test["merge_commit_sha"],
@@ -89,13 +90,11 @@ def run_instances(
     run_threadpool(tasks, max_workers)
     print("All instances run.")
 
-
 def get_dataset_from_preds(
     dataset_name: str,
     split: str,
     instance_ids: list,
     predictions: dict,
-    run_id: str,
     exclude_completed: bool = True,
 ):
     """
@@ -152,7 +151,7 @@ def get_dataset_from_preds(
         i
         for i in dataset
         if i[KEY_INSTANCE_ID] in prediction_ids
-        and i[KEY_INSTANCE_ID] not in empty_patch_ids
+        and i["test_patch"] not in empty_patch_ids
     ]
     return dataset
 
@@ -164,7 +163,6 @@ def main(
     predictions_path: str,
     max_workers: int,
     open_file_limit: int,
-    run_id: str,
     timeout: int,
     target_dir: str = "./testbed",
     report_dir: str = "./report",
@@ -184,17 +182,15 @@ def main(
     Path(expanded_path).mkdir(parents=True, exist_ok=True)
     expanded_path = os.path.expanduser(report_dir)
     Path(expanded_path).mkdir(parents=True, exist_ok=True)
-    assert len(run_id) > 0, "Run ID must be provided"
 
-    # load predictions as map of instance_id to prediction
+    # change to load data from hugging face
     predictions_path = "tasks/scikit-learn-task-instances.jsonl"
     dataset_name = "tasks/scikit-learn-task-instances.jsonl"
     predictions = get_predictions_from_file(predictions_path, dataset_name, split)
     predictions = {pred[KEY_INSTANCE_ID]: pred for pred in predictions}
-
-    # get dataset from predictions
+    # Temporarily keep this logic. Can be removed.
     dataset = get_dataset_from_preds(
-        dataset_name, split, instance_ids, predictions, run_id,
+        dataset_name, split, instance_ids, predictions,
     )
 
     if platform.system() == "Linux":
@@ -210,8 +206,6 @@ def main(
             target_dir,
             report_dir,
         )
-
-
 
 if __name__ == "__main__":
     parser = ArgumentParser(
@@ -239,7 +233,6 @@ if __name__ == "__main__":
         "--predictions_path",
         type=str,
         help="Path to predictions file - if 'gold', uses gold predictions",
-        required=True,
     )
 
     # Local execution args
@@ -257,9 +250,6 @@ if __name__ == "__main__":
         type=int,
         default=1_800,
         help="Timeout (in seconds) for running tests for each instance",
-    )
-    parser.add_argument(
-        "--run_id", type=str, required=True, help="Run ID - identifies the run"
     )
     parser.add_argument(
         "--report_dir", type=str, default="./report", help="Directory to write reports to"

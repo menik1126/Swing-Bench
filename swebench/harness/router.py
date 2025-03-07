@@ -96,7 +96,7 @@ class ActCITool(CIToolBase):
         self.cloned_repo_path = self.config["repo"].split("/")[1] + "_" + self.config["merge_commit"]
         self.ci_dict = dict()
         self.result_lock = threading.Lock()
-        self.semaphore = threading.Semaphore(8)
+        self.semaphore = threading.Semaphore(1)
         self.act_mq = Queue()
         self.construct()
 
@@ -189,23 +189,25 @@ class ActCITool(CIToolBase):
                 continue
         return results
 
-    def _run_act_with_semaphore(self, ci, target_dir):
-        # TODO: align ci_dict[ci]?
+    def _run_act_with_semaphore(self, ci, target_dir, order):
         with self.semaphore:
-            process = subprocess.Popen(["act", "-j", self.ci_dict[ci], "--json"], 
-                                     cwd=target_dir,
-                                     stdout=subprocess.PIPE,
-                                     stderr=subprocess.PIPE,
-                                     text=True)
-            stdout, stderr = process.communicate()
-            result = {
-                "stdout": stdout,
-                "stderr": stderr,
-                "returncode": process.returncode,
-                "processed_output": self._process_act_output(stdout)
-            }
-            self.act_mq.put(result)
-            return result
+            if ci in self.ci_dict.values():
+                process = subprocess.Popen(["act", "-j", ci, "--json"], 
+                                        cwd=target_dir,
+                                        stdout=subprocess.PIPE,
+                                        stderr=subprocess.PIPE,
+                                        text=True)
+                stdout, stderr = process.communicate()
+                result = {
+                    "stdout": stdout,
+                    "stderr": stderr,
+                    "returncode": process.returncode,
+                    "processed_output": self._process_act_output(stdout)
+                }
+                path = self.config["output_dir"] + "/" + self.task.id + "_" + order + "_" + ci + "_output.json"
+                with open(path, 'w', encoding='utf-8') as f:
+                    json.dump(result, f, ensure_ascii=False, indent=4)
+                self.act_mq.put(result)
 
     def run_ci(self):
         task = self.task
@@ -217,7 +219,7 @@ class ActCITool(CIToolBase):
         threads = []
         for ci in self.config["ci_name_list"]:
             thread = threading.Thread(
-                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir)
+                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir, "merged")
             )
             thread.start()
             threads.append(thread)
@@ -233,7 +235,7 @@ class ActCITool(CIToolBase):
         threads = []
         for ci in self.config["ci_name_list"]:
             thread = threading.Thread(
-                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir)
+                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir, "based")
             )
             thread.start()
             threads.append(thread)
@@ -254,8 +256,7 @@ class ActCITool(CIToolBase):
         previous_eval_script = self._build_previous_eval_script()
         target_dir = os.path.join(self.config["workdir"],
                                   self.cloned_repo_path)
-        # TODO: add id
-        self.task = Task("", env_script, eval_script, self.config["patch"], target_dir, self.config["output_dir"], previous_eval_script)
+        self.task = Task(self.config["id"], env_script, eval_script, self.config["patch"], target_dir, self.config["output_dir"], previous_eval_script)
 
 
 HANDLER = {
