@@ -1,9 +1,6 @@
 from __future__ import annotations
 
-import docker
-import json
 import platform
-import traceback
 import shutil
 import os
 
@@ -11,35 +8,18 @@ if platform.system() == "Linux":
     import resource
 
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
-from pathlib import Path, PurePosixPath
+from pathlib import Path
 
 from swebench.harness.constants import (
-    APPLY_PATCH_FAIL,
-    APPLY_PATCH_PASS,
-    DOCKER_PATCH,
-    DOCKER_USER,
-    DOCKER_WORKDIR,
-    INSTANCE_IMAGE_BUILD_DIR,
     KEY_INSTANCE_ID,
-    KEY_MODEL,
-    KEY_PREDICTION,
-    LOG_REPORT,
-    LOG_INSTANCE,
-    LOG_TEST_OUTPUT,
-    RUN_EVALUATION_LOG_DIR,
-    UTF8,
 )
 
-from swebench.harness.grading import get_eval_report
-from swebench.harness.reporting import make_run_report
 from swebench.harness.router import ActCITool
-from swebench.harness.test_spec.test_spec import make_test_spec, TestSpec
 from swebench.harness.utils import (
-    EvaluationError,
     load_swebench_dataset,
     get_predictions_from_file,
-    run_threadpool,
-    str2bool,
+    PortPool,
+    run_tasks
 )
 
 GIT_APPLY_CMDS = [
@@ -51,7 +31,6 @@ GIT_APPLY_CMDS = [
 
 def run_instances(
     instances: list,
-    max_workers: int,
     timeout: int,
     target_dir: str,
     report_dir: str,
@@ -86,8 +65,9 @@ def run_instances(
             })
         tasks.append(act)
 
-    print(f"Running {len(instances)} instances...")
-    run_threadpool(tasks, max_workers)
+    port_pool = PortPool()
+    run_tasks(tasks, port_pool)
+
     print("All instances run.")
 
 def get_dataset_from_preds(
@@ -161,7 +141,6 @@ def main(
     split: str,
     instance_ids: list,
     predictions_path: str,
-    max_workers: int,
     open_file_limit: int,
     timeout: int,
     target_dir: str = "./testbed",
@@ -201,7 +180,6 @@ def main(
     else:
         run_instances(
             dataset,
-            max_workers,
             timeout,
             target_dir,
             report_dir,
@@ -236,12 +214,6 @@ if __name__ == "__main__":
     )
 
     # Local execution args
-    parser.add_argument(
-        "--max_workers",
-        type=int,
-        default=1,
-        help="Maximum number of workers (should be <= 75%% of CPU cores)",
-    )
     parser.add_argument(
         "--open_file_limit", type=int, default=4096, help="Open file limit"
     )

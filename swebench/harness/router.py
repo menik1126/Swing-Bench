@@ -189,30 +189,34 @@ class ActCITool(CIToolBase):
                 continue
         return results
 
-    def _run_act_with_semaphore(self, ci, target_dir, order):
-        with self.semaphore:
-            value = self.ci_dict.get(ci[0])
-            if value is not None:
-                process = subprocess.Popen(["act", "-j", value,
-                                            "-W", ci[1], 
-                                             "--json"], 
-                                        cwd=target_dir,
-                                        stdout=subprocess.PIPE,
-                                        stderr=subprocess.PIPE,
-                                        text=True)
-                stdout, stderr = process.communicate()
-                result = {
-                    "stdout": stdout,
-                    "stderr": stderr,
-                    "returncode": process.returncode,
-                    "processed_output": self._process_act_output(stdout)
-                }
-                path = self.config["output_dir"] + "/" + self.task.id + "_" + order + "_" + value + "_output.json"
-                with open(path, 'w', encoding='utf-8') as f:
-                    json.dump(result, f, ensure_ascii=False, indent=4)
-                self.act_mq.put(result)
+    def _run_act_with_semaphore(self, ci, target_dir, order, pool):
+        value = self.ci_dict.get(ci[0])
+        if value is not None:
+            port = pool.acquire_port()
+            process = subprocess.Popen(["act", "-j", value,
+                                        "--artifact-server-port", str(port),
+                                        "--artifact-server-addr", "0.0.0.0", 
+                                        "--artifact-server-path", f"./act/{port}",
+                                        "-W", ci[1], 
+                                        "--json"], 
+                                    cwd=target_dir,
+                                    stdout=subprocess.PIPE,
+                                    stderr=subprocess.PIPE,
+                                    text=True)
+            stdout, stderr = process.communicate()
+            result = {
+                "stdout": stdout,
+                "stderr": stderr,
+                "returncode": process.returncode,
+                "processed_output": self._process_act_output(stdout)
+            }
+            path = self.config["output_dir"] + "/" + self.task.id + "_" + order + "_" + value + "_output.json"
+            with open(path, 'w', encoding='utf-8') as f:
+                json.dump(result, f, ensure_ascii=False, indent=4)
+            self.act_mq.put(result)
+            pool.release_port(port)
 
-    def run_ci(self):
+    def run_ci(self, pool):
         task = self.task
         run_script("\n".join(task.env_script))
         run_script("\n".join(task.eval_script))
@@ -222,7 +226,7 @@ class ActCITool(CIToolBase):
         threads = []
         for ci in self.config["ci_name_list"]:
             thread = threading.Thread(
-                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir, "merged")
+                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir, "merged", pool)
             )
             thread.start()
             threads.append(thread)
@@ -238,7 +242,7 @@ class ActCITool(CIToolBase):
         threads = []
         for ci in self.config["ci_name_list"]:
             thread = threading.Thread(
-                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir, "based")
+                target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir, "based", pool)
             )
             thread.start()
             threads.append(thread)

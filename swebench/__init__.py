@@ -48,7 +48,7 @@ from swebench.harness.run_evaluation import (
 )
 
 from swebench.harness.utils import (
-    run_threadpool,
+    run_tasks,
 )
 
 from swebench.versioning.constants import (
