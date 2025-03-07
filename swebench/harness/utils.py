@@ -305,3 +305,56 @@ def get_modified_files(patch: str) -> list[str]:
             source_files.append(file.source_file)
     source_files = [x[2:] for x in source_files if x.startswith("a/")]
     return source_files
+
+
+# class PortPool:
+#     def __init__(self, ports=[34567, 34568, 34569, 34570]):
+#         self.ports = ports
+#         self.semaphore = threading.Semaphore(len(ports))
+#         self.available_ports = Queue()
+#         self.lock = threading.Lock()
+#         for port in ports:
+#             self.available_ports.put(port)
+
+#     def acquire_port(self):
+#         self.semaphore.acquire()
+#         with self.lock:
+#             port = self.available_ports.get()
+#         print(f"Port {port} acquired")
+#         return port
+
+#     def release_port(self, port):
+#         with self.lock:
+#             self.available_ports.put(port)
+#         self.semaphore.release()
+#         print(f"Port {port} released")
+
+
+# def run_threadpool(tasks, max_workers):
+#     port_pool = PortPool()
+#     if max_workers <= 1:
+#         return run_sequential(tasks, port_pool)
+#     succeeded, failed = [], []
+#     with tqdm(total=len(tasks), smoothing=0) as pbar:
+#         with ThreadPoolExecutor(max_workers=max_workers) as executor:
+#             futures = {executor.submit(task.run_ci()) for task in tasks}
+#             # Wait for each future to complete
+#             for future in as_completed(futures):
+#                 pbar.update(1)
+#                 pbar.set_description(
+#                     f"{len(succeeded)} ran successfully, {len(failed)} failed"
+#                 )
+#     return succeeded, failed
+
+# def run_sequential(tasks, port_pool):
+#     """
+#     Run a function with a list of arguments sequentially
+#     """
+#     succeeded, failed = [], []
+#     pbar = tqdm(total=len(tasks), smoothing=0)
+#     for task in tasks:
+#         [eval_result, previous_eval_result] = task.run_ci(port_pool)
+#         pbar.update(1)
+#         # pbar.set_description(f"{len(succeeded)} ran successfully, {len(failed)} failed")
+#     pbar.close()
+#     return succeeded, failed

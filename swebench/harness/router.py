@@ -191,8 +191,11 @@ class ActCITool(CIToolBase):
 
     def _run_act_with_semaphore(self, ci, target_dir, order):
         with self.semaphore:
-            if ci in self.ci_dict.values():
-                process = subprocess.Popen(["act", "-j", ci, "--json"], 
+            value = self.ci_dict.get(ci[0])
+            if value is not None:
+                process = subprocess.Popen(["act", "-j", value,
+                                            "-W", ci[1], 
+                                             "--json"], 
                                         cwd=target_dir,
                                         stdout=subprocess.PIPE,
                                         stderr=subprocess.PIPE,
@@ -204,7 +207,7 @@ class ActCITool(CIToolBase):
                     "returncode": process.returncode,
                     "processed_output": self._process_act_output(stdout)
                 }
-                path = self.config["output_dir"] + "/" + self.task.id + "_" + order + "_" + ci + "_output.json"
+                path = self.config["output_dir"] + "/" + self.task.id + "_" + order + "_" + value + "_output.json"
                 with open(path, 'w', encoding='utf-8') as f:
                     json.dump(result, f, ensure_ascii=False, indent=4)
                 self.act_mq.put(result)
@@ -286,3 +289,70 @@ if __name__ == '__main__':
     result = act.run_ci(['test'])
     with open('./result.log', 'w') as f:
         f.write(str(result))
+
+    # def _run_act_with_semaphore(self, ci, target_dir, order, port_pool):
+    #     if ci in self.ci_dict.values():
+    #         with self.semaphone:
+    #             port = 34567
+    #             os.makedirs(f"./act/{port}", exist_ok=True)
+    #             process = subprocess.Popen(["act", "-j", ci, "--artifact-server-port", str(port),
+    #                                         "--artifact-server-addr", "0.0.0.0", 
+    #                                         "--artifact-server-path", f"./act/{port}", 
+    #                                         "--json"], 
+    #                                     cwd=target_dir,
+    #                                     stdout=subprocess.PIPE,
+    #                                     stderr=subprocess.PIPE,
+    #                                     text=True)
+    #             stdout, stderr = process.communicate()
+    #             result = {
+    #                 "stdout": stdout,
+    #                 "stderr": stderr,
+    #                 "returncode": process.returncode,
+    #                 "processed_output": self._process_act_output(stdout)
+    #             }
+    #             path = self.config["output_dir"] + "/" + self.task.id + "_" + order + "_" + ci + "_output.json"
+    #             with open(path, 'w', encoding='utf-8') as f:
+    #                 json.dump(result, f, ensure_ascii=False, indent=4)
+    #             self.act_mq.put(result)
+    #             port_pool.release_port(port)
+
+    # def run_ci(self, port_pool):
+    #     task = self.task
+    #     run_script("\n".join(task.env_script))
+    #     run_script("\n".join(task.eval_script))
+
+    #     self._get_ci_job_name_id_dict(task.target_dir)
+    #     eval_result = []
+    #     threads = []
+    #     for ci in self.config["ci_name_list"]:
+    #         thread = threading.Thread(
+    #             target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir, "merged", port_pool)
+    #         )
+    #         thread.start()
+    #         threads.append(thread)
+        
+    #     for thread in threads:
+    #         thread.join()
+        
+    #     while not self.act_mq.empty():
+    #         eval_result.append(self.act_mq.get())
+        
+    #     run_script("\n".join(task.previous_eval_script))
+    #     previous_eval_result = []
+    #     threads = []
+    #     for ci in self.config["ci_name_list"]:
+    #         thread = threading.Thread(
+    #             target=lambda ci=ci: self._run_act_with_semaphore(ci, task.target_dir, "based", port_pool)
+    #         )
+    #         thread.start()
+    #         threads.append(thread)
+        
+    #     for thread in threads:
+    #         thread.join()
+            
+    #     while not self.act_mq.empty():
+    #         previous_eval_result.append(self.act_mq.get())
+
+    #     os.system("rm -rf " + task.target_dir)
+
+    #     return [eval_result, previous_eval_result]

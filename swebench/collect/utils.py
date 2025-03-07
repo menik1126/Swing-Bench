@@ -417,23 +417,26 @@ def extract_ci_name_list(pull: dict) -> list[str]:
         runs_url_prefix = '{}/actions/runs/'.format(pull['base']['repo']['full_name'])
         runs_url_ptn = re.compile(rf'{runs_url_prefix}(\d+)')
         matches = runs_url_ptn.findall(response.text)
-        run_id = -1
-        if len(matches) > 0:
-            run_id = matches[0]
-        else:
-            return []
-        run_url = 'https://github.com/{}/actions/runs/{}'.format(pull['base']['repo']['full_name'], run_id)
-        run_response = requests.get(run_url)
-        if run_response.status_code == 200:
-            run_soup = BeautifulSoup(run_response.text, "html.parser")
-            action_list = run_soup.find_all("li", class_="ActionListItem")
-            ci_names = []
-            for action in action_list:
-                a_tag = action.find("a", href=True)
-                if 'completed successfully' in str(a_tag):
-                    if a_tag and "/{}/actions/runs/".format(pull['base']['repo']['full_name']) in a_tag["href"]:
-                        ci_names.append(a_tag.get_text(strip=True))
-            return ci_names
+        ci_names = []
+        for num in list(set(matches)):
+            run_url = 'https://github.com/{}/actions/runs/{}/workflow'.format(pull['base']['repo']['full_name'], num)
+            run_response = requests.get(run_url)
+            if run_response.status_code == 200:
+                run_soup = BeautifulSoup(run_response.text, "html.parser")
+                yml = run_soup.find_all('table')
+                assert len(yml) == 1
+                yml = yml[0].get('data-tagsearch-path')
+                action_list = run_soup.find_all("a", class_="ActionListContent--visual16")[10:-2]
+                ci = None
+                for action in action_list:
+                    svg = action.find('svg', attrs={'aria-label': 'completed successfully: '})
+                    if svg:
+                        label_span = action.find('span', class_='ActionListItem-label')
+                        if label_span:
+                            ci = label_span.get_text(strip=True)
+                ci_names.append((ci, yml))
+
+        return list(set(ci_names))
     return []
 
 
