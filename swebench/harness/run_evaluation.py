@@ -163,8 +163,6 @@ def main(
     Path(expanded_path).mkdir(parents=True, exist_ok=True)
 
     # change to load data from hugging face
-    predictions_path = "tasks/scikit-learn-task-instances.jsonl"
-    dataset_name = "tasks/scikit-learn-task-instances.jsonl"
     predictions = get_predictions_from_file(predictions_path, dataset_name, split)
     predictions = {pred[KEY_INSTANCE_ID]: pred for pred in predictions}
     # Temporarily keep this logic. Can be removed.
@@ -194,7 +192,7 @@ if __name__ == "__main__":
     # Common args
     parser.add_argument(
         "--dataset_name",
-        default="princeton-nlp/SWE-bench_Lite",
+        default="results/scikit-learn-task-instances.jsonl",
         type=str,
         help="Name of dataset or path to JSON file.",
     )
@@ -209,6 +207,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--predictions_path",
+        default="results/scikit-learn-task-instances.jsonl",
         type=str,
         help="Path to predictions file - if 'gold', uses gold predictions",
     )
