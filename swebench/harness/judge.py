@@ -11,6 +11,7 @@ from swebench.harness.constants import (
 JUDGE_SUCCESS = 'success'
 JUDGE_FAILURE = 'failure'
 
+
 def process_report_results(report_results):
     job_step_result = {}
     for result in report_results:
@@ -23,6 +24,7 @@ def process_report_results(report_results):
             job_step_result[result["job"]][result["step"]] = result["stepResult"]
     return job_step_result
 
+
 def get_step_transition(base_state, merged_state):
     if base_state == JUDGE_SUCCESS:
         return PASS_TO_PASS if merged_state == JUDGE_SUCCESS else PASS_TO_FAIL
@@ -30,7 +32,7 @@ def get_step_transition(base_state, merged_state):
         return FAIL_TO_PASS if merged_state == JUDGE_SUCCESS else FAIL_TO_FAIL
 
 
-def main(based_report, merged_report):
+def main(based_report, merged_report, debug_tag=False):
     based_report = json.load(open(based_report))
     merged_report = json.load(open(merged_report))
 
@@ -38,7 +40,6 @@ def main(based_report, merged_report):
     merged_job_step_result = process_report_results(merged_report["processed_output"])
 
     job_step_result_judgement = {}
-
 
     for job in based_job_step_result:
         job_step_result_judgement[job] = {}
@@ -62,11 +63,11 @@ def main(based_report, merged_report):
                 base_state = based_job_step_result[job][step]
                 merged_state = merged_job_step_result[job][step]
                 job_step_result_judgement[job][step] = get_step_transition(base_state, merged_state)
-
-    for job in job_step_result_judgement:
-        print(job)
-        for step in job_step_result_judgement[job]:
-            print(step, job_step_result_judgement[job][step])
+    if debug_tag:
+        for job in job_step_result_judgement:
+            print(job)
+            for step in job_step_result_judgement[job]:
+                print(step, job_step_result_judgement[job][step])
 
     return job_step_result_judgement
 
@@ -77,4 +78,4 @@ if __name__ == "__main__":
     parser.add_argument("--merged-report", type=str, required=True)
     args = parser.parse_args()
 
-    main(args.based_report, args.merged_report)
+    main(args.based_report, args.merged_report, debug_tag=True)
