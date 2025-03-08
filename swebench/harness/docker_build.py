@@ -22,7 +22,6 @@ from swebench.harness.test_spec.test_spec import (
     make_test_spec,
     TestSpec,
 )
-from swebench.harness.utils import run_threadpool
 
 ansi_escape = re.compile(r"\x1B\[[0-?]*[ -/]*[@-~]")
 
