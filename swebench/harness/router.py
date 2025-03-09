@@ -103,7 +103,7 @@ class ActCITool(CIToolBase):
     def _build_repo_base_env(self):
         script = ["#!/bin/bash"]
         script.extend(["cd " + self.config["workdir"],
-                       "git clone https://github.com/" + self.config["repo"] + ".git " + self.cloned_repo_path])
+                       "git clone https://github.com.psmoe.com/" + self.config["repo"] + ".git " + self.cloned_repo_path])
 
         return script
 

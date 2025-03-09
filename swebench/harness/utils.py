@@ -1,3 +1,4 @@
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 import re
 import requests
@@ -98,16 +99,61 @@ def get_predictions_from_file(predictions_path: str, dataset_name: str, split: s
 
     return predictions
 
-def run_tasks(tasks, pool):
+# We assign [34000 ~ 38000] for ci running and 5 ports for each task
+ports_per_instance = 5
+port_start = 34000
+concurrency = 100
+available_group = [i for i in range(concurrency)]
+used_ports = set()
+mutex = threading.Lock()
+
+def get_ports():
+    with mutex:
+        if not available_group:
+            raise RuntimeError("No available port group")
+        group_index = available_group.pop(0)
+        start_port = port_start + group_index * ports_per_instance
+        ports = list(range(start_port, start_port + ports_per_instance))
+        used_ports.update(ports)        
+        return ports
+
+def release_ports(ports):
+    with mutex:
+        if not all(port in used_ports for port in ports):
+            raise ValueError("Try to release unused ports")
+        
+        for port in ports:
+            used_ports.remove(port)
+        if ports[0] >= port_start and (ports[0] - port_start) % ports_per_instance == 0:
+            group_index = (ports[0] - port_start) // ports_per_instance
+            if ports == list(range(ports[0], ports[0] + ports_per_instance)):
+                available_group.append(group_index)
+            else:
+                raise ValueError("The group is not consequent")
+        else:
+            raise ValueError("Invalid port group")
+
+def run_tasks(tasks):
     """
-    Run a function with a list of arguments sequentially
+    Run a function with a list of arguments concurrently with a specified concurrency level.
     """
     succeeded, failed = [], []
     pbar = tqdm(total=len(tasks), smoothing=0)
-    for task in tasks:
-        [eval_result, previous_eval_result] = task.run_ci(pool)
-        pbar.update(1)
-        # pbar.set_description(f"{len(succeeded)} ran successfully, {len(failed)} failed")
+
+    with ThreadPoolExecutor(max_workers=concurrency) as executor:
+        futures = {executor.submit(task.run_ci, PortPool(get_ports())): task for task in tasks}
+
+        for future in as_completed(futures):
+            task = futures[future]
+            try:
+                [eval_result, previous_eval_result] = future.result()
+                succeeded.append(task)
+            except Exception as e:
+                failed.append(task)
+            finally:
+                release_ports(get_ports())
+                pbar.update(1)
+
     pbar.close()
     return succeeded, failed
 
