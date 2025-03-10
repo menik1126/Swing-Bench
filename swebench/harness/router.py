@@ -103,7 +103,7 @@ class ActCITool(CIToolBase):
     def _build_repo_base_env(self):
         script = ["#!/bin/bash"]
         script.extend(["cd " + self.config["workdir"],
-                       "git clone https://github.com.psmoe.com/" + self.config["repo"] + ".git " + self.cloned_repo_path])
+                       "git clone https://github.com/" + self.config["repo"] + ".git " + self.cloned_repo_path])
 
         return script
 
@@ -193,6 +193,10 @@ class ActCITool(CIToolBase):
         value = self.ci_dict.get(ci[0])
         if value is not None:
             port = pool.acquire_port()
+            path = self.config["output_dir"] + "/" + self.task.id + "_" + order + "_" + value + "_output.json"
+            if os.path.exists(path):
+                # pool.release_port(port)
+                return
             process = subprocess.Popen(["act", "-j", value,
                                         "--artifact-server-port", str(port),
                                         "--artifact-server-addr", "0.0.0.0", 
@@ -210,11 +214,10 @@ class ActCITool(CIToolBase):
                 "returncode": process.returncode,
                 "processed_output": self._process_act_output(stdout)
             }
-            path = self.config["output_dir"] + "/" + self.task.id + "_" + order + "_" + value + "_output.json"
             with open(path, 'w', encoding='utf-8') as f:
                 json.dump(result, f, ensure_ascii=False, indent=4)
             self.act_mq.put(result)
-            pool.release_port(port)
+            # pool.release_port(port)
 
     def run_ci(self, pool):
         task = self.task

@@ -100,8 +100,8 @@ def get_predictions_from_file(predictions_path: str, dataset_name: str, split: s
     return predictions
 
 # We assign [34000 ~ 38000] for ci running and 5 ports for each task
-ports_per_instance = 5
-port_start = 34000
+ports_per_instance = 20
+port_start = 32000
 concurrency = 100
 available_group = [i for i in range(concurrency)]
 used_ports = set()
@@ -119,8 +119,8 @@ def get_ports():
 
 def release_ports(ports):
     with mutex:
-        if not all(port in used_ports for port in ports):
-            raise ValueError("Try to release unused ports")
+        # if not all(port in used_ports for port in ports):
+        #     raise ValueError("Try to release unused ports")
         
         for port in ports:
             used_ports.remove(port)
@@ -141,8 +141,8 @@ def run_tasks(tasks):
     pbar = tqdm(total=len(tasks), smoothing=0)
 
     with ThreadPoolExecutor(max_workers=concurrency) as executor:
-        futures = {executor.submit(task.run_ci, PortPool(get_ports())): task for task in tasks}
-
+        ports = get_ports()
+        futures = {executor.submit(task.run_ci, PortPool(ports)): task for task in tasks}
         for future in as_completed(futures):
             task = futures[future]
             try:
@@ -151,7 +151,7 @@ def run_tasks(tasks):
             except Exception as e:
                 failed.append(task)
             finally:
-                release_ports(get_ports())
+                release_ports(ports)
                 pbar.update(1)
 
     pbar.close()
