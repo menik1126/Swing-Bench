@@ -1,11 +1,11 @@
-from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 import re
 import requests
+import time
 import traceback
 
 from argparse import ArgumentTypeError
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed, wait, FIRST_COMPLETED
 from datasets import Dataset, load_dataset, load_from_disk
 from dotenv import load_dotenv
 from pathlib import Path
@@ -100,17 +100,26 @@ def get_predictions_from_file(predictions_path: str, dataset_name: str, split: s
     return predictions
 
 # We assign [34000 ~ 38000] for ci running and 5 ports for each task
-ports_per_instance = 20
+ports_per_instance = 10
 port_start = 32000
-concurrency = 100
+concurrency = 40
 available_group = [i for i in range(concurrency)]
 used_ports = set()
 mutex = threading.Lock()
+condition = threading.Condition(mutex)
 
-def get_ports():
-    with mutex:
-        if not available_group:
-            raise RuntimeError("No available port group")
+def get_ports(timeout=None):
+    with condition:
+        wait_start_time = time.time()
+        while not available_group:
+            if timeout is not None:
+                elapsed = time.time() - wait_start_time
+                if elapsed >= timeout:
+                    raise RuntimeError(f"Timed out waiting for available port group after {timeout} seconds")
+                condition.wait(timeout - elapsed)
+            else:
+                condition.wait()
+                
         group_index = available_group.pop(0)
         start_port = port_start + group_index * ports_per_instance
         ports = list(range(start_port, start_port + ports_per_instance))
@@ -118,41 +127,70 @@ def get_ports():
         return ports
 
 def release_ports(ports):
-    with mutex:
-        # if not all(port in used_ports for port in ports):
-        #     raise ValueError("Try to release unused ports")
-        
+    with condition:
         for port in ports:
-            used_ports.remove(port)
+            if port in used_ports:
+                used_ports.remove(port)
+                
         if ports[0] >= port_start and (ports[0] - port_start) % ports_per_instance == 0:
             group_index = (ports[0] - port_start) // ports_per_instance
             if ports == list(range(ports[0], ports[0] + ports_per_instance)):
                 available_group.append(group_index)
+                condition.notify()
             else:
                 raise ValueError("The group is not consequent")
         else:
             raise ValueError("Invalid port group")
 
-def run_tasks(tasks):
+def run_tasks(tasks, port_wait_timeout=None):
     """
     Run a function with a list of arguments concurrently with a specified concurrency level.
     """
     succeeded, failed = [], []
     pbar = tqdm(total=len(tasks), smoothing=0)
-
-    with ThreadPoolExecutor(max_workers=concurrency) as executor:
-        ports = get_ports()
-        futures = {executor.submit(task.run_ci, PortPool(ports)): task for task in tasks}
-        for future in as_completed(futures):
-            task = futures[future]
+    effective_concurrency = min(concurrency, len(tasks))
+    with ThreadPoolExecutor(max_workers=effective_concurrency) as executor:
+        pending_tasks = list(tasks)
+        running_futures = {}
+        while pending_tasks and len(running_futures) < effective_concurrency:
+            task = pending_tasks.pop(0)
             try:
-                [eval_result, previous_eval_result] = future.result()
-                succeeded.append(task)
-            except Exception as e:
+                task_ports = get_ports(timeout=port_wait_timeout)
+                future = executor.submit(task.run_ci, PortPool(task_ports))
+                running_futures[future] = (task, task_ports)
+            except RuntimeError as e:
                 failed.append(task)
-            finally:
-                release_ports(ports)
                 pbar.update(1)
+                print(f"Failed to get ports for task: {e}")
+        
+        while running_futures:
+            done, _ = wait(
+                running_futures.keys(),
+                return_when=FIRST_COMPLETED
+            )
+            
+            for future in done:
+                task, task_ports = running_futures.pop(future)
+                try:
+                    [eval_result, previous_eval_result] = future.result()
+                    succeeded.append(task)
+                except Exception as e:
+                    failed.append(task)
+                    print(f"Task failed with exception: {e}")
+                finally:
+                    release_ports(task_ports)
+                    pbar.update(1)
+                
+                if pending_tasks:
+                    next_task = pending_tasks.pop(0)
+                    try:
+                        next_ports = get_ports(timeout=port_wait_timeout)
+                        next_future = executor.submit(next_task.run_ci, PortPool(next_ports))
+                        running_futures[next_future] = (next_task, next_ports)
+                    except RuntimeError as e:
+                        failed.append(next_task)
+                        pbar.update(1)
+                        print(f"Failed to get ports for task: {e}")
 
     pbar.close()
     return succeeded, failed

@@ -8,14 +8,14 @@ from queue import Queue
 import json
 
 def run_script(script_content):
-
     with tempfile.NamedTemporaryFile(mode="w", delete=True, suffix=".sh") as temp_script:
         temp_script.write(script_content)
         temp_script.flush()
         temp_path = temp_script.name
 
         try:
-            subprocess.run(["bash", temp_path], check=True)
+            # subprocess.run(["bash", temp_path], check=True)
+            subprocess.run(["bash", temp_path], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         except:
             # TODO: handle except
             pass
@@ -195,13 +195,12 @@ class ActCITool(CIToolBase):
             port = pool.acquire_port()
             path = self.config["output_dir"] + "/" + self.task.id + "_" + order + "_" + value + "_output.json"
             if os.path.exists(path):
-                # pool.release_port(port)
                 return
             process = subprocess.Popen(["act", "-j", value,
                                         "--artifact-server-port", str(port),
                                         "--artifact-server-addr", "0.0.0.0", 
                                         "--artifact-server-path", f"./act/{port}",
-                                        "-W", ci[1], 
+                                        "-W", ci[1],
                                         "--json"], 
                                     cwd=target_dir,
                                     stdout=subprocess.PIPE,
@@ -217,8 +216,7 @@ class ActCITool(CIToolBase):
             with open(path, 'w', encoding='utf-8') as f:
                 json.dump(result, f, ensure_ascii=False, indent=4)
             self.act_mq.put(result)
-            # pool.release_port(port)
-
+           
     def run_ci(self, pool):
         task = self.task
         run_script("\n".join(task.env_script))
