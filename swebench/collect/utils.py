@@ -412,11 +412,13 @@ def extract_ci_name_list(pull: dict) -> list[str]:
     print('processing {} {}'.format(pull['base']['repo']['full_name'], pull['number']))
     checks_info_ptn = 'https://github.com/{}/pull/{}/checks'
     checks_url = checks_info_ptn.format(pull['base']['repo']['full_name'], pull['number'])
+    print(checks_url)
     response = requests.get(checks_url)
     if response.status_code == 200:
         runs_url_prefix = '{}/actions/runs/'.format(pull['base']['repo']['full_name'])
         runs_url_ptn = re.compile(rf'{runs_url_prefix}(\d+)')
         matches = runs_url_ptn.findall(response.text)
+        # print(matches)
         ci_names = []
         for num in list(set(matches)):
             run_url = 'https://github.com/{}/actions/runs/{}/workflow'.format(pull['base']['repo']['full_name'], num)
@@ -426,14 +428,28 @@ def extract_ci_name_list(pull: dict) -> list[str]:
                 yml = run_soup.find_all('table')
                 assert len(yml) == 1
                 yml = yml[0].get('data-tagsearch-path')
-                action_list = run_soup.find_all("a", class_="ActionListContent--visual16")[10:-2]
+                action_list = run_soup.find_all("a", class_="ActionListContent--visual16")
+                summary_index = None
+                usage_index = None
+                for i, item in enumerate(action_list):
+                    href = item.get('href', '')
+                    if '/actions/runs/' in href and href.endswith(str(num)):
+                        summary_index = i
+                    elif href.endswith('/usage'):
+                        usage_index = i
+                
+                if summary_index is None or usage_index is None or summary_index >= usage_index:
+                    raise ValueError("Could not find Summary or Usage in the expected order")
+                
+                action_list = action_list[summary_index + 1:usage_index]
                 ci = None
                 for action in action_list:
-                    svg = action.find('svg', attrs={'aria-label': 'completed successfully: '})
+                    svg = action.find('svg', attrs={'aria-label': lambda value: value != 'skipped: '})
                     if svg:
                         label_span = action.find('span', class_='ActionListItem-label')
                         if label_span:
                             ci = label_span.get_text(strip=True)
+                assert ci is not None
                 ci_names.append((ci, yml))
 
         return list(set(ci_names))
