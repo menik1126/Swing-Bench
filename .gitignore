@@ -1,3 +1,8 @@
+test_repo/
+testbed/
+tasks_with_ci_final.jsonl
+tasks_with_ci_final.json
+report/
 __pycache__
 .vscode
 *.DS_Store
