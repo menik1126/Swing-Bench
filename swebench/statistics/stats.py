@@ -6,7 +6,7 @@ import argparse
 import os
 import json
 
-fields = ['patch', 'test_patch', 'problem_statement', 'hints_text']
+fields = ["patch", "test_patch", "problem_statement", "hints_text"]
 
 
 bins = [
@@ -29,8 +29,9 @@ bins = [
     "17. 25000-30000",
     "18. 30000-35000",
     "19. 35000-50000",
-    "20. 50000+"
+    "20. 50000+",
 ]
+
 
 def get_length_bins(length):
     if length < 100:
@@ -77,7 +78,7 @@ def get_length_bins(length):
 def get_length_stats(language, dataset, tokenizer_path, output_dir):
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
 
-    print('-' * 80)
+    print("-" * 80)
     print(f"Language: {language}")
     print(f"Number of unsampled examples: {len(dataset)}")
     stats = {
@@ -85,11 +86,12 @@ def get_length_stats(language, dataset, tokenizer_path, output_dir):
         "patch": {},
         "test_patch": {},
         "problem_statement": {},
-        "hints_text": {}
+        "hints_text": {},
     }
 
-    dump_field_token_length_path = os.path.join(output_dir,
-                                                f"{language}_field_token_length.data")
+    dump_field_token_length_path = os.path.join(
+        output_dir, f"{language}_field_token_length.data"
+    )
     # Initialize all bins
     for field in fields:
         for bin_name in bins:
@@ -108,7 +110,9 @@ def get_length_stats(language, dataset, tokenizer_path, output_dir):
                     if field in instance and instance[field]:
                         token_length = len(tokenizer.encode(instance[field]))
                         bin_name = get_length_bins(token_length)
-                        f.write(f"{instance['repo']} {instance['instance_id']} {field} {token_length}\n")
+                        f.write(
+                            f"{instance['repo']} {instance['instance_id']} {field} {token_length}\n"
+                        )
                         stats[field][bin_name] += 1
 
     with open(os.path.join(output_dir, f"{language}_summary.json"), "w") as f:
@@ -130,11 +134,32 @@ def main(**kwargs):
         get_length_stats(language, dataset, tokenizer_path, output_dir)
 
 
+def analyze_difficulty_distribution(results):
+    difficulties = [r["difficulty"] for r in results]
+    avg_difficulty = sum(difficulties) / len(difficulties)
+
+    print(f"\nDifficulty Analysis Results:")
+    print(f"Total instances: {len(results)}")
+    print(f"Average difficulty: {avg_difficulty:.3f}")
+
+    bins = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+    for i in range(len(bins) - 1):
+        count = sum(1 for d in difficulties if bins[i] <= d < bins[i + 1])
+        percentage = (count / len(difficulties)) * 100
+        print(f"Difficulty {bins[i]:.1f}-{bins[i+1]:.1f}: {count} ({percentage:.1f}%)")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_path", type=str, default="/home/mnt/wdxu/github/SwingBench-data")
+    parser.add_argument(
+        "--data_path", type=str, default="/home/mnt/wdxu/github/SwingBench-data"
+    )
     parser.add_argument("--language_list", type=str, default="rust,cpp,python,go")
-    parser.add_argument("--tokenizer_path", type=str, default="/home/mnt/wdxu/models/Qwen2.5-Coder-7B-Instruct")
+    parser.add_argument(
+        "--tokenizer_path",
+        type=str,
+        default="/home/mnt/wdxu/models/Qwen2.5-Coder-7B-Instruct",
+    )
     parser.add_argument("--output_dir", type=str, default="./length_stats")
     args = parser.parse_args()
 
