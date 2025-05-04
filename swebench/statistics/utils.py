@@ -150,7 +150,9 @@ def chunk_instance(instance, chunk_type: str, language: str, max_chunk_num: int,
     for chunk in chunk_list:
         chunk['file_path'] = instance["instance_id"]
     print(f"file_path: {instance['instance_id']} has {len(chunk_list)} code block(s).")
-    top_chunks = chunk_list[:min(len(chunk_list), max_chunk_num)]
+    top_chunks = []
+    if chunk_list and reranker.initialized:
+        top_chunks = reranker.rerank(chunk_list, instance["problem_statement"], top_k=max_chunk_num)
 
     context_info = []
     for chunk in top_chunks:
