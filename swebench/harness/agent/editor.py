@@ -114,6 +114,7 @@ class RawDataCodeEditor(CodeEditorBase):
                 # response_format={"type": "json_object"},
                 temperature=0.0,
             )
+            print(f"[Call API] Role: #{role}# Sending request size: #{len(input)}# Response size: #{len(response.choices[0].message.content)}#")
             # print("##################################################")
             # print(response.choices[0].message.content)
             # print("##################################################")
