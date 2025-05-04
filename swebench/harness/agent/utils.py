@@ -3,7 +3,10 @@ import os
 import re
 import tempfile
 import logging
+import shutil
+
 from pathlib import Path
+
 
 OPENAI_LIST = ["gpt-3.5-turbo", "gpt-4", "gpt-4o", "gpt-4.5-preview",
                "/home/mnt/wdxu/models/DeepSeek-R1-Distill-Qwen-7B",
@@ -124,6 +127,22 @@ def files_to_str(files: dict[str, str]) -> str:
         A string containing the file contents
     """
     return "\n".join([f"{file_path}:\n{file_content}" for file_path, file_content in files.items()])
+
+
+class TempDirectoryManager:
+    def __init__(self, base_path: str):
+        self.base_path = base_path
+
+    def __enter__(self):
+        return self.base_path
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if os.path.exists(self.base_path):
+            try:
+                print(f"Removing base_path {self.base_path}...")
+                shutil.rmtree(self.base_path)
+            except Exception as e:
+                print(f"Error removing base_path {self.base_path}: {e}")
 
 
 if __name__ == "__main__":

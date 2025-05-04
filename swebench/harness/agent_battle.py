@@ -18,7 +18,7 @@ from swebench.harness.agent.retriever import BM25DiskRetriever, Retriever
 
 from swebench.harness.swing_utils import merge_diffs
 
-DEBUG_ONE_SHOT = False
+DEBUG_ONE_SHOT = True
 
 if platform.system() == "Linux":
     import resource
@@ -453,6 +453,8 @@ def main(
 
     print('------------ end of processing dataset ------------')
     print('\n')
+    exit(0)
+
 
 if __name__ == "__main__":
     parser = ArgumentParser(
@@ -469,7 +471,7 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "--language", type=str, default="Rust", help="Language of the dataset"
+        "--language", type=str, default="rust", help="Language of the dataset"
     )
 
     # default models
