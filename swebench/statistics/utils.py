@@ -2,15 +2,18 @@
 
 import os
 import re
+import time
+import json
+import re
+import concurrent.futures
+
 from datasets import load_dataset, load_from_disk
 from pathlib import Path
 from openai import OpenAI
 from typing import Optional
-import time
-import json
-import re
 from tqdm import tqdm
-import concurrent.futures
+
+from swebench.harness.agent.swing_chunker import CodeChunker, CodeReranker
 
 
 parquet_dir = Path("../../dataset/swing-bench/")
@@ -121,9 +124,53 @@ def create_difficulty_prompt(instance):
     return prompt
 
 
+def extract_code_snippet_from_patch(patch: str):
+    result_lines = []
+    for line in patch.splitlines():
+        if line.startswith('+++') or line.startswith('---') or line.startswith('diff --git') or line.startswith('@@'):
+            continue
+        if not line.startswith('-'):
+            if line.startswith('+'):
+                result_lines.append(line[1:])
+            else:
+                result_lines.append(line)
+        if not line.startswith('+'):
+            if line.startswith('-'):
+                result_lines.append(line[1:])
+            else:
+                result_lines.append(line)
+        
+    result =    '\n'.join(result_lines)
+    return result
+
+
+def chunk_instance(instance, chunk_type: str, language: str, max_chunk_num: int, chunker: CodeChunker = None, reranker: CodeReranker = None):
+    code_snippet = extract_code_snippet_from_patch(instance["patch"])
+    chunk_list = chunker.chunk(code_snippet=code_snippet)
+    for chunk in chunk_list:
+        chunk['file_path'] = instance["instance_id"]
+    print(f"file_path: {instance['instance_id']} has {len(chunk_list)} code block(s).")
+    top_chunks = chunk_list[:min(len(chunk_list), max_chunk_num)]
+
+    context_info = []
+    for chunk in top_chunks:
+        context_info.append(f"File: {chunk['file_path']}\n"
+                            f"Type: {chunk['type']}\n"
+                            f"Name: {chunk['name']}\n"
+                            f"Lines: {chunk['start_line']}-{chunk['end_line']}\n"
+                            f"Code:\n{chunk['code']}\n")
+
+    instance['patch'] = "\n".join(context_info)
+
+    return instance
+
+
 def estimate_clarity_and_difficulty(
-    instance, api_key, base_url, model, max_attempts: int = 3
+    instance, api_key, base_url, model, max_attempts: int = 3, need_chunk: bool = False, chunk_type: str = "function", language: str = "rust", max_chunk_num: int = 3, chunker: CodeChunker = None, reranker: CodeReranker = None
 ):
+    if need_chunk:
+        instance = chunk_instance(instance, chunk_type, language, max_chunk_num, chunker, reranker)
+
     prompt = create_difficulty_prompt(instance)
     for attempt in range(max_attempts):
         response = call_api(prompt, api_key, base_url, model)
@@ -177,7 +224,7 @@ def estimate_clarity_and_difficulty(
 
 
 def process_instances_parallel(
-    instances, output_file, api_key, base_url, model, num_workers=50
+    instances, output_file, api_key, base_url, model, num_workers=50, max_attempts: int = 3, need_chunk: bool = False, chunk_type: str = "function", language: str = "rust", max_chunk_num: int = 3
 ):
     results = []
 
@@ -210,13 +257,20 @@ def process_instances_parallel(
 
     print(f"总共 {len(instances)} 个实例，其中 {len(instances_to_process)} 个待处理。")
 
+    chunker = None
+    reranker = None
+
+    if need_chunk:
+        chunker = CodeChunker(language=language, chunk_type=chunk_type)
+        reranker = CodeReranker()
+
     # 只打开文件一次用于追加结果
     with open(output_file, "a") as f:
         with concurrent.futures.ThreadPoolExecutor(max_workers=num_workers) as executor:
             # 创建future到实例的映射
             future_to_instance = {
                 executor.submit(
-                    estimate_clarity_and_difficulty, instance, api_key, base_url, model
+                    estimate_clarity_and_difficulty, instance, api_key, base_url, model, max_attempts, need_chunk, chunk_type, language, max_chunk_num, chunker, reranker
                 ): instance
                 for instance in instances_to_process
             }
