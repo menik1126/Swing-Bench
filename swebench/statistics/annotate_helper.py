@@ -15,6 +15,23 @@ if __name__ == "__main__":
         os.makedirs(output_dir)
     part_num = 20
 
+    annotator = [
+        "Xiong Jing",
+        "Shen Hui",
+        "Wan Zhongwei",
+        "Xu Wendong",
+        "Xiao He",
+        "Zhao Chenyang",
+        "Chen Qiujiang",
+        "Wang Haoran",
+        "Guo Zhijiang",
+        "Dai Jianbo",
+        "Tao Chaofan",
+        "Wu Taiqiang",
+    ]
+
+    workload = {name: [] for name in annotator}
+
     for each_file in jsonl_file_list:
         new_data = []
         with open(each_file, "r") as f:
@@ -26,7 +43,24 @@ if __name__ == "__main__":
                 data["human_difficulty"] = -1
                 new_data.append(data)
 
-            for i in range(part_num):
-                with open(os.path.join(output_dir, f"{each_file}.{i}.jsonl"), "w") as f:
-                    for data in new_data[i::part_num]:
-                        f.write(json.dumps(data) + "\n")
+        total_parts = part_num
+        annotator_count = len(annotator)
+        base_parts = total_parts // annotator_count
+        remainder = total_parts % annotator_count
+
+        start_idx = 1
+        for i, name in enumerate(annotator):
+            current_parts = base_parts + (1 if i < remainder else 0)
+            end_idx = start_idx + current_parts
+            
+            file_numbers = list(range(start_idx, end_idx))
+            file_names = [os.path.join(output_dir, f"{os.path.basename(each_file)}.{num}.jsonl") for num in file_numbers]
+            
+            workload[name].extend(file_names)
+            start_idx = end_idx
+
+    for name in annotator:
+        print(f"{name}:")
+        for file_name in workload[name]:
+            print(f"  {file_name}")
+        print()
