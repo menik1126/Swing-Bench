@@ -20,31 +20,28 @@ from swebench.harness.constants.swing_constants import SwingbenchInstance
 from unidiff import PatchSet
 import threading
 from queue import Queue
+import socket
 
 logger = logging.getLogger("agent_battle")
 load_dotenv()
 
 class PortPool:
-    def __init__(self, ports=[34567, 34568, 34569, 34570]):
-        self.ports = ports
-        self.semaphore = threading.Semaphore(len(ports))
-        self.available_ports = Queue()
-        self.lock = threading.Lock()
-        for port in ports:
-            self.available_ports.put(port)
+    # Aborted paramter: `ports`
+    def __init__(self, ports=None):
+        pass
 
     def acquire_port(self):
-        self.semaphore.acquire()
-        with self.lock:
-            port = self.available_ports.get()
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        # experimental acquire
+        sock.bind(('', 0))
+        port = sock.getsockname()[1]
+        sock.close()
         print(f"Port {port} acquired")
         return port
 
     def release_port(self, port):
-        with self.lock:
-            self.available_ports.put(port)
-        self.semaphore.release()
         print(f"Port {port} released")
+
 
 class EvaluationError(Exception):
     def __init__(self, instance_id, message, logger):
