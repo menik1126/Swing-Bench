@@ -502,28 +502,27 @@ class ActCITool(CIToolBase):
                 result_json = result
 
             for job in result_json["processed_output"].keys():
+                # collect jobResult
                 if job not in processed_result.keys():
                     processed_result[job] = {
                         "returncode": result_json["processed_output"][job]["jobResult"],
                         "test_results": {
-                            "passed": [],
-                            "failed": [],
-                            "ignored": [],
+                            "success": [],
+                            "failure": [],
+                            "skipped": [],
                         },
                         "unit_test": [0, 0, 0]
                     }
+                    # collect step results
                     for item in result_json["processed_output"][job]["steps"]:
+                        step_name = item[0]
                         if item[2] == "success":
-                            temp = processed_result[job]["test_results"]["passed"]
+                            processed_result[job]["test_results"]["success"].append(step_name)
                         elif item[2] == "failure":
-                            temp = processed_result[job]["test_results"]["failed"]
+                            processed_result[job]["test_results"]["failure"].append(step_name)
                         elif item[2] == "skipped":
-                            temp = processed_result[job]["test_results"]["ignored"]
-                        temp.append({
-                                "step": item[0],
-                                "stage": item[1]
-                            }
-                        )
+                            processed_result[job]["test_results"]["skipped"].append(step_name)
+
                     processed_result[job]["unit_test"] = result_json["processed_output"][job]["testResult"]
 
         return processed_result

@@ -113,6 +113,37 @@ def check_generated_patch(original_patch_result: dict, golden_patch_result: dict
             result[ci_name] = True
         print(f'ci_name: {ci_name}, result_str: {result_str}')
 
+        # Collect step results
+        step_name_list = sorted(generated_patch_result['result'][ci_name]['test_results']["success"] + \
+                                generated_patch_result['result'][ci_name]['test_results']["failure"] + \
+                                generated_patch_result['result'][ci_name]['test_results']["ignored"])
+        for step_name in step_name_list:
+            result_str = ''
+            if step_name in original_patch_result['result'][ci_name]['test_results']["success"]:
+                result_str += 'P'
+            else:
+                result_str += 'F'
+
+            if step_name in golden_patch_result['result'][ci_name]['test_results']["success"]:
+                result_str += 'P'
+            elif step_name in golden_patch_result['result'][ci_name]['test_results']["failure"]:
+                result_str += 'F'
+            else:
+                result_str += 'P'
+
+            if step_name in generated_patch_result['result'][ci_name]['test_results']["success"]:
+                result_str += 'P'
+            elif step_name in generated_patch_result['result'][ci_name]['test_results']["failure"]:
+                result_str += 'F'
+            else:
+                result_str += 'P'
+
+            if result_str in failed_rules:
+                result[step_name] = False
+            else:
+                result[step_name] = True
+
+            print(f'step_name: {step_name}, result_str: {result_str}')
     return result
 
 
@@ -150,6 +181,29 @@ def check_generated_test(golden_patch_result: dict, generated_test_result: dict)
         else:
             result[ci_name] = True
         print(f'ci_name: {ci_name}, result_str: {result_str}')
+
+        # Collect step results
+        step_name_list = sorted(generated_test_result['result'][ci_name]['test_results']["success"] + \
+                                generated_test_result['result'][ci_name]['test_results']["failure"] + \
+                                generated_test_result['result'][ci_name]['test_results']["ignored"])
+        for step_name in step_name_list:
+            result_str = ''
+            if step_name in golden_patch_result['result'][ci_name]['test_results']["success"]:
+                result_str += 'P'
+            else:
+                result_str += 'F'
+            if step_name in generated_test_result['result'][ci_name]['test_results']["success"]:
+                result_str += 'P'
+            elif step_name in generated_test_result['result'][ci_name]['test_results']["failure"]:
+                result_str += 'F'
+            else:
+                result_str += 'P'
+
+            if result_str in failed_rules:
+                result[step_name] = False
+            else:
+                result[step_name] = True
+            print(f'step_name: {step_name}, result_str: {result_str}')
 
     return result
 
