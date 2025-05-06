@@ -31,13 +31,17 @@ class PortPool:
         pass
 
     def acquire_port(self):
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        # experimental acquire
-        sock.bind(('', 0))
-        port = sock.getsockname()[1]
-        sock.close()
-        print(f"Port {port} acquired")
-        return port
+        while True:
+            try:
+                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                sock.bind(('', 0))
+                port = sock.getsockname()[1]
+                sock.close()
+                print(f"Port {port} acquired")
+                return port
+            except Exception as e:
+                print(f"Failed to acquire port: {e}, retrying...")
+                time.sleep(0.1)
 
     def release_port(self, port):
         print(f"Port {port} released")

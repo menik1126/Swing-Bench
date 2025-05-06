@@ -10,6 +10,7 @@ from typing import List, Tuple
 from swebench.harness.constants.swing_constants import SwingbenchInstance
 from swebench.harness.swing_utils import (
     load_swingbench_dataset,
+    load_swingbench_dataset_json,
 )
 
 from swebench.harness.agent.verifier import PatchVerifier, TestVerifier, PatchGenerator, TestGenerator
@@ -18,7 +19,7 @@ from swebench.harness.agent.retriever import BM25DiskRetriever, Retriever
 
 from swebench.harness.swing_utils import merge_diffs
 
-DEBUG_ONE_SHOT = True
+DEBUG_ONE_SHOT = False
 
 if platform.system() == "Linux":
     import resource
@@ -211,14 +212,15 @@ def battle_one_turn(
 
         check_repo_exists(data.repo, os.path.join(workdir, src_folder))
 
-        # clear all patch information, only need to keep the base_commit
         base_instance = construct_base_instance(data)
+        # clear all patch information, only need to keep the base_commit
         original_patch_result = patch_verifier.verify(base_instance, '') # results_0
         print(f'original_patch_result: {original_patch_result["result"]}')
 
         # 1. golden patch CI: checkout base_commit -> apply golden (merged_commit) patch -> run CI -> results_1.
         golden_patch_result = patch_verifier.verify(data, '') # results_1
         print(f'golden_patch_result: {golden_patch_result["result"]}')
+
         for _ in range(turns):
             # -- Stage 1: patch, test individually generation and verification.
             # Case 1: patch generation and verification.
@@ -411,7 +413,10 @@ def main(
 
     with_ci = 'act' == ci_tool_name
 
-    dataset = load_swingbench_dataset(dataset_name, language, split=split, with_ci=with_ci)
+    if "jsonl" in dataset_name:
+        dataset = load_swingbench_dataset_json(dataset_name)
+    else:
+        dataset = load_swingbench_dataset(dataset_name, language, split=split, with_ci=with_ci)
     print(f'dataset size: {len(dataset)}')
 
     retriever = BM25DiskRetriever(index_dir=retriever_index_dir)

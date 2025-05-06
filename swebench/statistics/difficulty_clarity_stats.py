@@ -2,10 +2,14 @@ import os
 import json
 
 data_path_list = [
-    "/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/cpp.jsonl",
-    "/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/go.jsonl",
-    "/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/python.jsonl",
-    "/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/rust.jsonl",
+    # "/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/cpp.jsonl",
+    # "/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/go.jsonl",
+    # "/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/python.jsonl",
+    # "/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/rust.jsonl",
+    "/mnt/Data/wdxu/github/Swing-Bench/temp/cpp_filtered.jsonl",
+    "/mnt/Data/wdxu/github/Swing-Bench/temp/go_filtered.jsonl",
+    "/mnt/Data/wdxu/github/Swing-Bench/temp/python_filtered.jsonl",
+    "/mnt/Data/wdxu/github/Swing-Bench/temp/rust_filtered.jsonl",
 ]
 
 if __name__ == '__main__':

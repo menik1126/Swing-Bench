@@ -6,6 +6,7 @@ import threading
 import json
 from dataclasses import dataclass
 import logging
+import time
 
 logger = logging.getLogger(__name__)
 
@@ -390,6 +391,9 @@ class ActCITool(CIToolBase):
             # cast str to list
             ci = ast.literal_eval(ci)
         value = self.ci_dict.get(ci[0])
+        if value is None:
+            print("value is None ci and its type: ", ci, type(ci))
+            print(self.ci_dict)
         if value is not None:
             port = pool.acquire_port()
             path = self.config["output_dir"] + "/" + \
@@ -403,7 +407,7 @@ class ActCITool(CIToolBase):
             # print(target_dir)
             # print(os.path.join(target_dir, ci[1]))
             print("Run Act with command: " + "act " + "-j " + value + " " \
-                                            "-P " + "ubuntu-latest=catthehacker/ubuntu:full-latest " + \
+                                            "-P " + "node:16-bullseye " + \
                                             "--artifact-server-port " + str(port) + " " +\
                                             "--artifact-server-addr " + "0.0.0.0" + " " +\
                                             "--artifact-server-path " + f"./act/{port}" + " " +\
@@ -411,7 +415,7 @@ class ActCITool(CIToolBase):
                                             "--json")
 
             process = subprocess.Popen(["act", "-j", value,
-                                        "-P", "ubuntu-latest=catthehacker/ubuntu:full-latest",
+                                        "-P", "node:16-bullseye",
                                         "--artifact-server-port", str(port),
                                         "--artifact-server-addr", "0.0.0.0", 
                                         "--artifact-server-path", f"./act/{port}",
@@ -430,14 +434,20 @@ class ActCITool(CIToolBase):
             }
             # dump result to file in specific path
             # DEBUG
-            print('dump ci result to file {}'.format(os.path.join(target_dir, self.task.instance_id + "_"  + \
-                   value + "_" + \
-                   order + "_output.json")))
-            with open(os.path.join(target_dir, self.task.instance_id + "_"  + \
-                   value + "_" + \
-                   order + "_output.json"), 'w', encoding='utf-8') as f:
-                json.dump(result, f, ensure_ascii=False, indent=4)
-            
+            try:
+                debug_path = os.environ["SWING_DEBUG_DIR"]
+            except KeyError:
+                debug_path = ''
+
+            if debug_path != '':
+                print('dump ci result to file {}'.format(os.path.join(debug_path, self.task.instance_id + "_"  + \
+                    value + "_" + \
+                    order + "_output.json")))
+                with open(os.path.join(debug_path, self.task.instance_id + "_"  + \
+                    value + "_" + \
+                    order + "_output.json"), 'w', encoding='utf-8') as f:
+                    json.dump(result, f, ensure_ascii=False, indent=4)
+
             result_path = os.path.join(target_dir, path) 
             if not os.path.exists(os.path.dirname(result_path)):
                 os.makedirs(os.path.dirname(result_path))
@@ -542,6 +552,7 @@ class ActCITool(CIToolBase):
             )
             thread.start()
             threads.append(thread)
+            time.sleep(0.5)
 
         for thread in threads:
             thread.join()
