@@ -158,6 +158,13 @@ def run_tasks(tasks, port_wait_timeout=None):
     return succeeded, failed
 
 
+def load_swingbench_dataset_json(json_path: str) -> list[SwingbenchInstance]:
+    instances = None
+    with open(json_path, "r") as f:
+        instances = [SwingbenchInstance(**json.loads(line)) for line in f]
+    return instances
+
+
 def load_swingbench_dataset(
     dataset_name: str,
     sub_dataset_identifier: str,

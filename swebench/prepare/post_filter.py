@@ -1,6 +1,8 @@
 import os
 import json
 import argparse
+import shutil
+from datasets import load_dataset
 
 
 def clarity_rule(instance):
@@ -18,6 +20,10 @@ def image_rule(instance):
     """
     if "![image](" in instance["problem_statement"]:
         return False
+    
+    if "snapshot" in instance["problem_statement"]:
+        return False
+
     return True
 
 
@@ -26,7 +32,7 @@ def main(**kwargs):
         os.makedirs(kwargs["output_dir"])
 
     instance_list = []
-    
+    key_set = set()
     file_name = kwargs["jsonl_path"].split("/")[-1]
 
     with open(kwargs["jsonl_path"], "r") as f:
@@ -39,7 +45,7 @@ def main(**kwargs):
             if not image_rule(instance):
                 continue
             instance_list.append(instance)
-
+            key_set.add(instance["instance_id"])
     output_path = os.path.join(kwargs["output_dir"], file_name.split(".")[0] + "_filtered.jsonl")
     with open(output_path, "w") as f:
         for instance in instance_list:
@@ -50,10 +56,29 @@ def main(**kwargs):
     print(f"Total instances: {total_instance}")
     print(f"Filtered instances: {len(instance_list)}")
 
+    language = kwargs["jsonl_path"].split("/")[-1].split(".")[0].split("_")[0]
+    ori_instance_list = load_dataset(kwargs["instance_dir"], split=None)[language]
+    new_instances_list = []
+
+    for instance in ori_instance_list:
+        if instance["instance_id"] not in key_set:
+            continue
+        new_instances_list.append(instance)
+
+    output_filename = f"filtered_{language}_instance_list.jsonl"
+    with open(os.path.join(kwargs["output_dir"], output_filename), "w") as f:
+        for instance in new_instances_list:
+            f.write(json.dumps(instance) + "\n")
+
+    print(f"ori_instance_list: {len(ori_instance_list)}")
+    print(f"new_instances_list: {len(new_instances_list)}")
+    print(f"saved to {os.path.join(kwargs['output_dir'], output_filename)}")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--jsonl_path", type=str, default="/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/cpp.jsonl")
+    parser.add_argument("--instance_dir", type=str, default="/mnt/Data/wdxu/github/SwingBench-data/")
     parser.add_argument("--output_dir", type=str, default="./temp")
     args = parser.parse_args()
 
