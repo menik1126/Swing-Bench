@@ -1,3 +1,7 @@
+"""
+  Some random tests.
+"""
+
 import re
 import os
 
@@ -29,12 +33,32 @@ def _get_ci_job_name_id_dict(target_dir, act_list_path):
 
     return ci_dict
 
+sample_file = """
+```json
+{
+  "reasoning_trace": "The issue arises because the code does not account for the vertical alignment of the text labels and the knobs. The text labels are positioned correctly, but the knobs are not horizontally centered directly beneath the center of their respective labels. This is likely due to the lack of vertical alignment calculations in the code.",
+  "code_edits": [
+    {
+      "file": "libs/sapphire/util/make_sapphire_svg.py",
+      "code_to_be_modified": "text += '{:8.3f}'.format(comp.cx)\n            text += ', '\n            text += '{:8.3f}'.format(comp.cy)\n            text += '}},\\n'",
+      "code_edited": "text += '{:8.3f}'.format(comp.cx)\n            text += ', '\n            text += '{:8.3f}'.format(comp.cy - label_height / 2)  # Adjust for vertical alignment\n            text += '}},\\n'"
+    }
+  ]
+}
+```
+"""
 
 if __name__ == "__main__":
-    target_dir = '/mnt/Data/wdxu/github/Swing-Bench/testbed/lightningnetwork__lnd'
-    act_list_path = './act_list.txt'
-    ci_dict = _get_ci_job_name_id_dict(target_dir, act_list_path)
-    print(ci_dict)
+    # target_dir = '/mnt/Data/wdxu/github/Swing-Bench/testbed/lightningnetwork__lnd'
+    # act_list_path = './act_list.txt'
+    # ci_dict = _get_ci_job_name_id_dict(target_dir, act_list_path)
+    # print(ci_dict)
+    
+    import re
+    pattern = r'```json(.*?)```'
+    match = re.search(pattern, sample_file, re.DOTALL)
+    print(match.group(1).strip())
+    
 
     # origin_path = "/home/mnt/wdxu/github/SwingBench-data"
     # origin_dataset = load_swingbench_dataset(origin_path, sub_dataset_identifier="python", split=None)
