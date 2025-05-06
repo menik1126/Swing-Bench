@@ -69,9 +69,9 @@ def check_generated_patch(original_patch_result: dict, golden_patch_result: dict
     #       "test_results": {
     #         "passed": passed_tests,
     #         "failed": failed_tests,
-    #         "ignored": ignored_tests,
+    #         "skipped": skipped_tests,
     #       },
-    #       "unit_test": [passed, failed, ignored]
+    #       "unit_test": [passed, failed, skipped]
     #     },
     # }
 
@@ -116,7 +116,7 @@ def check_generated_patch(original_patch_result: dict, golden_patch_result: dict
         # Collect step results
         step_name_list = sorted(generated_patch_result['result'][ci_name]['test_results']["success"] + \
                                 generated_patch_result['result'][ci_name]['test_results']["failure"] + \
-                                generated_patch_result['result'][ci_name]['test_results']["ignored"])
+                                generated_patch_result['result'][ci_name]['test_results']["skipped"])
         for step_name in step_name_list:
             result_str = ''
             if step_name in original_patch_result['result'][ci_name]['test_results']["success"]:
@@ -154,7 +154,7 @@ def check_generated_test(golden_patch_result: dict, generated_test_result: dict)
     #     "ci_1": {
     #         "passed": passed_tests,
     #         "failed": failed_tests,
-    #         "ignored": ignored_tests,
+    #         "skipped": skipped_tests,
     #         "failure_details": {}
     #     }, ...
     # }
@@ -185,7 +185,7 @@ def check_generated_test(golden_patch_result: dict, generated_test_result: dict)
         # Collect step results
         step_name_list = sorted(generated_test_result['result'][ci_name]['test_results']["success"] + \
                                 generated_test_result['result'][ci_name]['test_results']["failure"] + \
-                                generated_test_result['result'][ci_name]['test_results']["ignored"])
+                                generated_test_result['result'][ci_name]['test_results']["skipped"])
         for step_name in step_name_list:
             result_str = ''
             if step_name in golden_patch_result['result'][ci_name]['test_results']["success"]:
