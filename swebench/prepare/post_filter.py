@@ -27,6 +27,17 @@ def image_rule(instance):
     return True
 
 
+def make_pair_ci_list(ci_name_list):
+    """
+    Make a pair of CI names from the list of CI names.
+    TODO(wdxu): Remove once the dataset is fixed.
+    """
+    new_ci_name_list = []
+    for i in range(0, len(ci_name_list) // 2, 2):
+        new_ci_name_list.append([ci_name_list[i], ci_name_list[i+1]])
+    return new_ci_name_list
+
+
 def main(**kwargs):
     if not os.path.exists(kwargs["output_dir"]):
         os.makedirs(kwargs["output_dir"])
@@ -63,6 +74,10 @@ def main(**kwargs):
     for instance in ori_instance_list:
         if instance["instance_id"] not in key_set:
             continue
+
+        # TODO(wdxu): Remove once the dataset is fixed.
+        instance["ci_name_list"] = make_pair_ci_list(instance["ci_name_list"])
+
         new_instances_list.append(instance)
 
     output_filename = f"filtered_{language}_instance_list.jsonl"
@@ -77,7 +92,7 @@ def main(**kwargs):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--jsonl_path", type=str, default="/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/cpp.jsonl")
+    parser.add_argument("--jsonl_path", type=str, default="/mnt/Data/wdxu/dataset/swing-bench-annotated-jsonl/python.jsonl")
     parser.add_argument("--instance_dir", type=str, default="/mnt/Data/wdxu/github/SwingBench-data/")
     parser.add_argument("--output_dir", type=str, default="./temp")
     args = parser.parse_args()
