@@ -391,9 +391,9 @@ class ActCITool(CIToolBase):
             # cast str to list
             ci = ast.literal_eval(ci)
         value = self.ci_dict.get(ci[0])
-        if value is None:
-            print("value is None ci and its type: ", ci, type(ci))
-            print(self.ci_dict)
+        # if value is None:
+            # print("value is None ci and its type: ", ci, type(ci))
+            # print(self.ci_dict)
         if value is not None:
             port = pool.acquire_port()
             path = self.config["output_dir"] + "/" + \
@@ -407,7 +407,7 @@ class ActCITool(CIToolBase):
             # print(target_dir)
             # print(os.path.join(target_dir, ci[1]))
             print("Run Act with command: " + "act " + "-j " + value + " " \
-                                            "-P " + "node:16-bullseye " + \
+                                            "-P " + "ubuntu-latest=catthehacker/ubuntu:full-latest " + \
                                             "--artifact-server-port " + str(port) + " " +\
                                             "--artifact-server-addr " + "0.0.0.0" + " " +\
                                             "--artifact-server-path " + f"./act/{port}" + " " +\
@@ -415,7 +415,7 @@ class ActCITool(CIToolBase):
                                             "--json")
 
             process = subprocess.Popen(["act", "-j", value,
-                                        "-P", "node:16-bullseye",
+                                        "-P", "ubuntu-latest=catthehacker/ubuntu:full-latest",
                                         "--artifact-server-port", str(port),
                                         "--artifact-server-addr", "0.0.0.0", 
                                         "--artifact-server-path", f"./act/{port}",

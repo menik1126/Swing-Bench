@@ -259,7 +259,6 @@ def battle_one_turn(
     verified_patch_agent_score = 0
     verified_test_agent_score = 0
 
-
     for data in dataset:
         # -- Prepare Stage:
         # 0. original patch CI: checkout base_commit  -> apply original (base_commit) patch -> run CI -> results_0.
@@ -363,15 +362,23 @@ def battle(
     retrieve_file_num: int = 5,
     agent_retry_times: int = 3,
     turns: int = 1,
+    port_range: str = '10000-11000'
 ) -> Tuple[List[int], List[int]]:
+    
+    begin_port, end_port = map(int, port_range.split('-'))
+    
     def get_roles(code_editor_lhs, code_editor_rhs):
         patch_verifier = PatchVerifier(ci_tool_name=ci_tool_name, 
             workdir=workdir, 
             src_folder=src_folder, 
+            begin_port=begin_port,
+            end_port=end_port
         )
         test_verifier = TestVerifier(ci_tool_name=ci_tool_name, 
             workdir=workdir, 
             src_folder=src_folder, 
+            begin_port=begin_port,
+            end_port=end_port
         )
         patch_generator = PatchGenerator(workdir=workdir, 
             src_folder=src_folder, 
@@ -439,6 +446,7 @@ def main(
     ci_tool_name: str,
     turns: int = 1,
     split: str = "train",
+    port_range: str = '10000-11000'
 ) -> Tuple[List[int], List[int]]:
     """
     Runs evaluation to battle two agents on a dataset.
@@ -504,7 +512,8 @@ def main(
                                 ci_tool_name,
                                 retrieve_file_num,
                                 agent_retry_times,
-                                turns)
+                                turns,
+                                port_range)
 
     print('------------ result ------------')
     print(f'result: {result}')
@@ -537,6 +546,7 @@ if __name__ == "__main__":
     # base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"#'https://dashscope.aliyuncs.com/compatible-mode/v1/'
     # api_key = "sk-826b874003eb4f309bd65c7a6f0f79b5"#'sk-826b874003eb4f309bd65c7a6f0f79b5'
     # model = "qwen-max-latest"#'qwq-plus'
+
     base_url = "http://localhost:8000/v1"
     api_key = "no-api-key"
     model = "/home/mnt/wdxu/models/Qwen2.5-Coder-7B-Instruct"
@@ -586,6 +596,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--tok_model_rhs", type=str, default=None, help="Tokenizer model for rhs"
+    )
+    parser.add_argument(
+        "--port_range", type=str, default='10000-11000', help="Port range"
     )
     args = parser.parse_args()
 

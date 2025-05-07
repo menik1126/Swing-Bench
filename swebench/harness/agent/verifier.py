@@ -333,11 +333,14 @@ class PatchVerifier(Verifier):
     def __init__(self, ci_tool_name: str, 
                  workdir: str = "testbed", 
                  src_folder: str = "repos",
+                 begin_port: int = 10000,
+                 end_port: int = 11000
                  ):
         self.ci_tool_name = ci_tool_name
         self.workdir = workdir
         self.src_folder = src_folder
-        self.port_pool_size = 100
+        self.begin_port = begin_port
+        self.end_port = end_port
 
     def verify(self, data: SwingbenchInstance, patch: str) -> dict:
         data.patch = patch
@@ -364,7 +367,7 @@ class PatchVerifier(Verifier):
 
             # TODO(wdxu): remove the switch process for run_ci.
             if self.ci_tool_name == "act":
-                pool = get_available_port_pool(self.port_pool_size)
+                pool = get_available_port_pool(self.begin_port, self.end_port)
                 result = tool.run_ci(pool)
             else:
                 result = tool.run_ci()
@@ -400,12 +403,15 @@ class TestVerifier(Verifier):
                  workdir: str = "testbed", 
                  src_folder: str = "repos",
                  proxy: AgentProxy = None,
+                 begin_port: int = 10000,
+                 end_port: int = 11000
                  ):
         self.ci_tool_name = ci_tool_name
         self.workdir = workdir
         self.src_folder = src_folder
         self.proxy = proxy
-        self.port_pool_size = 100
+        self.begin_port = begin_port
+        self.end_port = end_port
 
     def verify(self, data: SwingbenchInstance, testcase: str) -> dict:
         # apply both test patch and original patch
@@ -431,7 +437,7 @@ class TestVerifier(Verifier):
 
             # TODO(wdxu): remove the switch process for run_ci.
             if self.ci_tool_name == "act":
-                pool = get_available_port_pool(self.port_pool_size)
+                pool = get_available_port_pool(self.begin_port, self.end_port)
                 result = tool.run_ci(pool)
             else:
                 result = tool.run_ci()
