@@ -23,6 +23,9 @@ def image_rule(instance):
     
     if "snapshot" in instance["problem_statement"]:
         return False
+    
+    if "![Image]" in instance["problem_statement"]:
+        return False
 
     return True
 
