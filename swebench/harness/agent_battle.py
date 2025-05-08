@@ -119,21 +119,21 @@ def check_generated_patch(original_patch_result: dict, golden_patch_result: dict
                                 generated_patch_result['result'][ci_name]['test_results']["skipped"])
         for step_name in step_name_list:
             result_str = ''
-            if step_name in original_patch_result['result'][ci_name]['test_results']["success"]:
+            if ci_name in golden_patch_result and step_name in original_patch_result['result'][ci_name]['test_results']["success"]:
                 result_str += 'P'
             else:
                 result_str += 'F'
 
-            if step_name in golden_patch_result['result'][ci_name]['test_results']["success"]:
+            if ci_name in golden_patch_result and step_name in golden_patch_result['result'][ci_name]['test_results']["success"]:
                 result_str += 'P'
-            elif step_name in golden_patch_result['result'][ci_name]['test_results']["failure"]:
+            elif ci_name in golden_patch_result and step_name in golden_patch_result['result'][ci_name]['test_results']["failure"]:
                 result_str += 'F'
             else:
                 result_str += 'P'
 
-            if step_name in generated_patch_result['result'][ci_name]['test_results']["success"]:
+            if ci_name in generated_patch_result and step_name in generated_patch_result['result'][ci_name]['test_results']["success"]:
                 result_str += 'P'
-            elif step_name in generated_patch_result['result'][ci_name]['test_results']["failure"]:
+            elif ci_name in generated_patch_result and step_name in generated_patch_result['result'][ci_name]['test_results']["failure"]:
                 result_str += 'F'
             else:
                 result_str += 'P'
