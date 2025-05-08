@@ -119,21 +119,21 @@ def check_generated_patch(original_patch_result: dict, golden_patch_result: dict
                                 generated_patch_result['result'][ci_name]['test_results']["skipped"])
         for step_name in step_name_list:
             result_str = ''
-            if step_name in original_patch_result['result'][ci_name]['test_results']["success"]:
+            if ci_name in golden_patch_result and step_name in original_patch_result['result'][ci_name]['test_results']["success"]:
                 result_str += 'P'
             else:
                 result_str += 'F'
 
-            if step_name in golden_patch_result['result'][ci_name]['test_results']["success"]:
+            if ci_name in golden_patch_result and step_name in golden_patch_result['result'][ci_name]['test_results']["success"]:
                 result_str += 'P'
-            elif step_name in golden_patch_result['result'][ci_name]['test_results']["failure"]:
+            elif ci_name in golden_patch_result and step_name in golden_patch_result['result'][ci_name]['test_results']["failure"]:
                 result_str += 'F'
             else:
                 result_str += 'P'
 
-            if step_name in generated_patch_result['result'][ci_name]['test_results']["success"]:
+            if ci_name in generated_patch_result and step_name in generated_patch_result['result'][ci_name]['test_results']["success"]:
                 result_str += 'P'
-            elif step_name in generated_patch_result['result'][ci_name]['test_results']["failure"]:
+            elif ci_name in generated_patch_result and step_name in generated_patch_result['result'][ci_name]['test_results']["failure"]:
                 result_str += 'F'
             else:
                 result_str += 'P'
@@ -337,12 +337,13 @@ def battle_one_turn(
             
             if DEBUG_ONE_SHOT:
                 break
-        print(f'patch generator: {patch_generator.model_name()}')
-        print(f'test generator: {test_generator.model_name()}')
-        print(f'patch_agent_score: {patch_agent_score}')
-        print(f'test_agent_score: {test_agent_score}')
-        print(f'verified_patch_agent_score: {verified_patch_agent_score}')
-        print(f'verified_test_agent_score: {verified_test_agent_score}')
+        print(f'[FINAL_RESULT] running finished: {data.repo}')
+        print(f'[FINAL_RESULT] patch generator: {patch_generator.model_name()}')
+        print(f'[FINAL_RESULT] test generator: {test_generator.model_name()}')
+        print(f'[FINAL_RESULT] patch_agent_score: {patch_agent_score}')
+        print(f'[FINAL_RESULT] test_agent_score: {test_agent_score}')
+        print(f'[FINAL_RESULT] verified_patch_agent_score: {verified_patch_agent_score}')
+        print(f'[FINAL_RESULT] verified_test_agent_score: {verified_test_agent_score}')
         print('-----------------------------------')
         if DEBUG_ONE_SHOT:
             break

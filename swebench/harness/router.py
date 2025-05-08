@@ -440,6 +440,9 @@ class ActCITool(CIToolBase):
                 debug_path = ''
 
             if debug_path != '':
+                if not os.path.exists(debug_path):
+                    os.makedirs(debug_path)
+
                 print('dump ci result to file {}'.format(os.path.join(debug_path, self.task.instance_id + "_"  + \
                     value + "_" + \
                     order + "_output.json")))
