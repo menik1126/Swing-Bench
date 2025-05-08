@@ -337,12 +337,13 @@ def battle_one_turn(
             
             if DEBUG_ONE_SHOT:
                 break
-        print(f'patch generator: {patch_generator.model_name()}')
-        print(f'test generator: {test_generator.model_name()}')
-        print(f'patch_agent_score: {patch_agent_score}')
-        print(f'test_agent_score: {test_agent_score}')
-        print(f'verified_patch_agent_score: {verified_patch_agent_score}')
-        print(f'verified_test_agent_score: {verified_test_agent_score}')
+        print(f'[FINAL_RESULT] running finished: {data.repo}')
+        print(f'[FINAL_RESULT] patch generator: {patch_generator.model_name()}')
+        print(f'[FINAL_RESULT] test generator: {test_generator.model_name()}')
+        print(f'[FINAL_RESULT] patch_agent_score: {patch_agent_score}')
+        print(f'[FINAL_RESULT] test_agent_score: {test_agent_score}')
+        print(f'[FINAL_RESULT] verified_patch_agent_score: {verified_patch_agent_score}')
+        print(f'[FINAL_RESULT] verified_test_agent_score: {verified_test_agent_score}')
         print('-----------------------------------')
         if DEBUG_ONE_SHOT:
             break
