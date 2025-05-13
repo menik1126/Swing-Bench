@@ -5,6 +5,10 @@ import numpy as np
 from matplotlib import cm
 from matplotlib.colors import LogNorm
 from matplotlib.colors import LinearSegmentedColormap
+from matplotlib import font_manager
+
+plt.rcParams['font.size'] = 12  # Default font size for consistency
+plt.rcParams['font.family'] = 'serif'
 # Data (unchanged)
 data = [
     {"Submitter": "Gemini", "Reviewer": "Gemini", "Language": "C++", "Request Token": 59187, "Response Token": 2357},
@@ -59,6 +63,7 @@ data = [
     {"Submitter": "ChatGPT", "Reviewer": "Gemini", "Language": "Python", "Request Token": 46966, "Response Token": 2264},
     {"Submitter": "ChatGPT", "Reviewer": "Gemini", "Language": "Rust", "Request Token": 50890, "Response Token": 2332},
     {"Submitter": "ChatGPT", "Reviewer": "Gemini", "Language": "Go", "Request Token": 40515, "Response Token": 2637},
+    {"Submitter": "ChatGPT", "Reviewer": "Claude", "Language": "Python", "Request Token": 43749, "Response Token": 2788},
     {"Submitter": "Claude", "Reviewer": "DeepSeek", "Language": "C++", "Request Token": 66457, "Response Token": 3398},
     {"Submitter": "Claude", "Reviewer": "DeepSeek", "Language": "Python", "Request Token": 52576, "Response Token": 3147},
     {"Submitter": "Claude", "Reviewer": "DeepSeek", "Language": "Rust", "Request Token": 48364, "Response Token": 3616},
@@ -78,21 +83,29 @@ df = pd.DataFrame(data)
 
 # Unique languages, submitters, and reviewers
 languages = ["C++", "Python", "Rust", "Go"]
-submitters = sorted(df["Submitter"].unique())
-reviewers = sorted(df["Reviewer"].unique())
+submitters = ["Claude", "ChatGPT", "DeepSeek", "Gemini"]
+reviewers = ["Claude", "ChatGPT", "DeepSeek", "Gemini"]
 
 # Set up the 2x2 subplot grid
-fig = plt.figure(figsize=(20, 15))
+fig = plt.figure(figsize=(18, 14))
 axes = [fig.add_subplot(2, 2, i+1, projection='3d') for i in range(4)]
 
-# Colormap for Request Token (matching the heatmap)
-# Create a custom darker OrRd colormap
-or_rd_colors = cm.OrRd(np.linspace(0, 1, 256))  # Get the original OrRd colors
-# Darken the colors by reducing brightness (multiply RGB values by a factor < 1)
-darkening_factor = 0.96  # Adjust this factor to control darkness (lower = darker)
-or_rd_colors_darkened = np.clip(or_rd_colors[:, :3] * darkening_factor, 0, 1)  # Darken RGB, clip to valid range
-or_rd_colors_darkened = np.hstack((or_rd_colors_darkened, or_rd_colors[:, 3:4]))  # Reattach alpha channel
+# Colormap for Request Token
+or_rd_colors = cm.OrRd(np.linspace(0, 1, 256))
+darkening_factor = 0.96
+or_rd_colors_darkened = np.clip(or_rd_colors[:, :3] * darkening_factor, 0, 1)
+or_rd_colors_darkened = np.hstack((or_rd_colors_darkened, or_rd_colors[:, 3:4]))
 cmap = LinearSegmentedColormap.from_list("DarkenedOrRd", or_rd_colors_darkened)
+
+# Determine global Z-axis limits for uniform scaling
+max_response_token = df["Response Token"].max()
+z_max = max_response_token * 1.1  # Add 10% buffer for annotations
+
+# 在创建3D条形图之前添加图例说明
+legend_elements = [
+    plt.Rectangle((0, 0), 1, 1, facecolor=cmap(0.1), edgecolor='black', label='Low Request Tokens'),
+    plt.Rectangle((0, 0), 1, 1, facecolor=cmap(0.9), edgecolor='black', label='High Request Tokens')
+]
 
 # Create a 3D bar plot for each language
 for idx, lang in enumerate(languages):
@@ -121,47 +134,60 @@ for idx, lang in enumerate(languages):
     dx = dy = 0.4  # Bar width
     dz = response_data.ravel()  # Bar height (Response Token)
     
-    # Log-normalize Request Token for colormap, with adjusted vmin/vmax to match heatmap
+    # Log-normalize Request Token for colormap
     norm = LogNorm(vmin=df["Request Token"].min(), vmax=df["Request Token"].max())
     colors = cmap(norm(request_data.ravel()))
     
-    # Plot 3D bars without shading to avoid darkening
-    bars = axes[idx].bar3d(x, y, z, dx, dy, dz, color=colors, shade=False)
+    # Plot 3D bars with edge lines (edgecolor='black')
+    bars = axes[idx].bar3d(x, y, z, dx, dy, dz, color=colors, shade=False, edgecolor='black', linewidth=0.5)
     
-    # 在循环内的标注部分
+    # Annotate bars with bold I/O
     for i in range(len(x)):
         if dz[i] > 0:  # Only annotate non-zero bars
-            # Combined annotation: I: Request Token, O: Response Token
             annotation = f"I: {int(request_data.ravel()[i])}\nO: {int(dz[i])}"
             axes[idx].text(
-                x[i] + dx/2, y[i] + dy/2, dz[i],  # Position at top of bar
+                x[i] + dx/2, y[i] + dy/2, dz[i] + 400,  # Position at top of bar
                 annotation,
                 color='black',
-                fontsize=9, ha='center', va='bottom'  # 字体大小改为 8
+                fontsize=7, ha='center', va='bottom',
+                fontweight='bold',  # Bold annotations
             )
 
-    # 设置 Y 轴标签并旋转
+    # Set axis labels and ticks
     axes[idx].set_xticks(np.arange(len(reviewers)))
     axes[idx].set_yticks(np.arange(len(submitters)))
     axes[idx].set_xticklabels(reviewers, rotation=25, ha='left', va='bottom', rotation_mode='anchor')
     axes[idx].set_yticklabels(submitters, rotation=0, ha='right')
-    axes[idx].set_xlabel("Reviewer", fontsize=15, labelpad=10)
-    axes[idx].set_ylabel("Submitter", fontsize=15, labelpad=10)  # 增加 labelpad
-    axes[idx].set_zlabel("Response Token", fontsize=15)
+    axes[idx].set_xlabel("Reviewer", fontsize=15, labelpad=15)
+    axes[idx].set_ylabel("Submitter", fontsize=15, labelpad=15)
+    axes[idx].set_zlabel("Response Token", fontsize=15, labelpad=10)
     axes[idx].set_title(f"Language: {lang}", fontsize=15)
     
-    # Adjust view angle for better visibility
+    # Set uniform Z-axis limits
+    axes[idx].set_zlim(0, z_max)
+    
+    # Adjust view angle
     axes[idx].view_init(elev=25, azim=22)
     
-    # Add colorbar for Request Token with log scale, matching the heatmap
+    # Add colorbar with rotated label
     cbar = fig.colorbar(cm.ScalarMappable(norm=norm, cmap=cmap), ax=axes[idx], shrink=0.5, aspect=10)
-    cbar.set_label("Request Token (log scale)", fontsize=8)
+    cbar.set_label("Request Token (log scale)", fontsize=10, rotation=270, labelpad=15)
+
+    # 在添加colorbar之前添加图例
+    axes[idx].legend(handles=legend_elements, 
+                    loc='upper right',
+                    bbox_to_anchor=(1.15, 1),
+                    fontsize=8)
+
+# 添加总标题
+fig.suptitle("Token Usage Across Different Languages and Models on SwingArena", 
+             fontsize=20, y=0.98)
 
 # Adjust layout
-plt.tight_layout(pad=3.0, rect=[0.1, 0, 0.95, 1])  # 修正 rect 参数，增加左侧边距
+plt.tight_layout(pad=2.0, rect=[0.1, 0.02, 0.95, 0.95])  # 调整rect参数使总标题有足够空间
 
 # Save the figure
-plt.savefig("3d_bar_token_usage_matching_or_rd_annotated.png", dpi=300, bbox_inches='tight', pad_inches=0.5)
+plt.savefig("3d_bar_token_usage_modified_v2.pdf", dpi=300, bbox_inches='tight', pad_inches=0.5)
 
 # Show plot
 plt.show()
