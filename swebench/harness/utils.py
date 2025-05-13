@@ -3,6 +3,7 @@ import re
 import requests
 import time
 import traceback
+import socket
 
 from argparse import ArgumentTypeError
 from concurrent.futures import ThreadPoolExecutor, as_completed, wait, FIRST_COMPLETED
@@ -25,26 +26,42 @@ load_dotenv()
 
 # TODO(wdxu): remove this class.
 class PortPool:
-    def __init__(self, ports=[34567, 34568, 34569, 34570]):
-        self.ports = ports
-        self.semaphore = threading.Semaphore(len(ports))
-        self.available_ports = Queue()
-        self.lock = threading.Lock()
-        for port in ports:
-            self.available_ports.put(port)
+    def __init__(self, begin_port, end_port):
+        self._lock = threading.Lock()
+        self._used_ports = set()
+        self._ports = list(range(begin_port, end_port))
 
     def acquire_port(self):
-        self.semaphore.acquire()
-        with self.lock:
-            port = self.available_ports.get()
-        print(f"Port {port} acquired")
-        return port
+        with self._lock:
+            if self._ports:
+                port = self._ports.pop(0)
+                self._used_ports.add(port)
+                print(f"Port {port} acquired from pool")
+                return port
+            
+            while True:
+                try:
+                    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    sock.bind(('', 0))
+                    port = sock.getsockname()[1]
+                    sock.close()
+                    
+                    if port not in self._used_ports:
+                        self._used_ports.add(port)
+                        print(f"Port {port} acquired dynamically")
+                        return port
+                except Exception as e:
+                    print(f"Failed to acquire port: {e}, retrying...")
+                    time.sleep(0.1)
 
     def release_port(self, port):
-        with self.lock:
-            self.available_ports.put(port)
-        self.semaphore.release()
-        print(f"Port {port} released")
+        with self._lock:
+            if port in self._used_ports:
+                self._used_ports.remove(port)
+                if port not in self._ports:
+                    self._ports.append(port)
+                print(f"Port {port} released back to pool")
+
 
 class EvaluationError(Exception):
     def __init__(self, instance_id, message, logger):
@@ -400,5 +417,5 @@ def get_modified_files(patch: str) -> list[str]:
     return source_files
 
 # TODO(wdxu): remove this function.
-def get_available_port_pool(port_pool_size: int):
-    return PortPool(ports=list(range(32000, 32000 + port_pool_size)))
+def get_available_port_pool(begin_port: int, end_port: int):
+    return PortPool(begin_port, end_port)

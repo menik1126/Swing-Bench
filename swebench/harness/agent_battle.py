@@ -10,6 +10,7 @@ from typing import List, Tuple
 from swebench.harness.constants.swing_constants import SwingbenchInstance
 from swebench.harness.swing_utils import (
     load_swingbench_dataset,
+    load_swingbench_dataset_json,
 )
 
 from swebench.harness.agent.verifier import PatchVerifier, TestVerifier, PatchGenerator, TestGenerator
@@ -68,9 +69,9 @@ def check_generated_patch(original_patch_result: dict, golden_patch_result: dict
     #       "test_results": {
     #         "passed": passed_tests,
     #         "failed": failed_tests,
-    #         "ignored": ignored_tests,
+    #         "skipped": skipped_tests,
     #       },
-    #       "unit_test": [passed, failed, ignored]
+    #       "unit_test": [passed, failed, skipped]
     #     },
     # }
 
@@ -112,6 +113,37 @@ def check_generated_patch(original_patch_result: dict, golden_patch_result: dict
             result[ci_name] = True
         print(f'ci_name: {ci_name}, result_str: {result_str}')
 
+        # Collect step results
+        step_name_list = sorted(generated_patch_result['result'][ci_name]['test_results']["success"] + \
+                                generated_patch_result['result'][ci_name]['test_results']["failure"] + \
+                                generated_patch_result['result'][ci_name]['test_results']["skipped"])
+        for step_name in step_name_list:
+            result_str = ''
+            if ci_name in golden_patch_result and step_name in original_patch_result['result'][ci_name]['test_results']["success"]:
+                result_str += 'P'
+            else:
+                result_str += 'F'
+
+            if ci_name in golden_patch_result and step_name in golden_patch_result['result'][ci_name]['test_results']["success"]:
+                result_str += 'P'
+            elif ci_name in golden_patch_result and step_name in golden_patch_result['result'][ci_name]['test_results']["failure"]:
+                result_str += 'F'
+            else:
+                result_str += 'P'
+
+            if ci_name in generated_patch_result and step_name in generated_patch_result['result'][ci_name]['test_results']["success"]:
+                result_str += 'P'
+            elif ci_name in generated_patch_result and step_name in generated_patch_result['result'][ci_name]['test_results']["failure"]:
+                result_str += 'F'
+            else:
+                result_str += 'P'
+
+            if result_str in failed_rules:
+                result[step_name] = False
+            else:
+                result[step_name] = True
+
+            print(f'step_name: {step_name}, result_str: {result_str}')
     return result
 
 
@@ -122,7 +154,7 @@ def check_generated_test(golden_patch_result: dict, generated_test_result: dict)
     #     "ci_1": {
     #         "passed": passed_tests,
     #         "failed": failed_tests,
-    #         "ignored": ignored_tests,
+    #         "skipped": skipped_tests,
     #         "failure_details": {}
     #     }, ...
     # }
@@ -149,6 +181,29 @@ def check_generated_test(golden_patch_result: dict, generated_test_result: dict)
         else:
             result[ci_name] = True
         print(f'ci_name: {ci_name}, result_str: {result_str}')
+
+        # Collect step results
+        step_name_list = sorted(generated_test_result['result'][ci_name]['test_results']["success"] + \
+                                generated_test_result['result'][ci_name]['test_results']["failure"] + \
+                                generated_test_result['result'][ci_name]['test_results']["skipped"])
+        for step_name in step_name_list:
+            result_str = ''
+            if step_name in golden_patch_result['result'][ci_name]['test_results']["success"]:
+                result_str += 'P'
+            else:
+                result_str += 'F'
+            if step_name in generated_test_result['result'][ci_name]['test_results']["success"]:
+                result_str += 'P'
+            elif step_name in generated_test_result['result'][ci_name]['test_results']["failure"]:
+                result_str += 'F'
+            else:
+                result_str += 'P'
+
+            if result_str in failed_rules:
+                result[step_name] = False
+            else:
+                result[step_name] = True
+            print(f'step_name: {step_name}, result_str: {result_str}')
 
     return result
 
@@ -204,21 +259,21 @@ def battle_one_turn(
     verified_patch_agent_score = 0
     verified_test_agent_score = 0
 
-
     for data in dataset:
         # -- Prepare Stage:
         # 0. original patch CI: checkout base_commit  -> apply original (base_commit) patch -> run CI -> results_0.
 
         check_repo_exists(data.repo, os.path.join(workdir, src_folder))
 
-        # clear all patch information, only need to keep the base_commit
         base_instance = construct_base_instance(data)
+        # clear all patch information, only need to keep the base_commit
         original_patch_result = patch_verifier.verify(base_instance, '') # results_0
         print(f'original_patch_result: {original_patch_result["result"]}')
 
         # 1. golden patch CI: checkout base_commit -> apply golden (merged_commit) patch -> run CI -> results_1.
         golden_patch_result = patch_verifier.verify(data, '') # results_1
         print(f'golden_patch_result: {golden_patch_result["result"]}')
+
         for _ in range(turns):
             # -- Stage 1: patch, test individually generation and verification.
             # Case 1: patch generation and verification.
@@ -282,12 +337,13 @@ def battle_one_turn(
             
             if DEBUG_ONE_SHOT:
                 break
-        print(f'patch generator: {patch_generator.model_name()}')
-        print(f'test generator: {test_generator.model_name()}')
-        print(f'patch_agent_score: {patch_agent_score}')
-        print(f'test_agent_score: {test_agent_score}')
-        print(f'verified_patch_agent_score: {verified_patch_agent_score}')
-        print(f'verified_test_agent_score: {verified_test_agent_score}')
+        print(f'[FINAL_RESULT] running finished: {data.repo}')
+        print(f'[FINAL_RESULT] patch generator: {patch_generator.model_name()}')
+        print(f'[FINAL_RESULT] test generator: {test_generator.model_name()}')
+        print(f'[FINAL_RESULT] patch_agent_score: {patch_agent_score}')
+        print(f'[FINAL_RESULT] test_agent_score: {test_agent_score}')
+        print(f'[FINAL_RESULT] verified_patch_agent_score: {verified_patch_agent_score}')
+        print(f'[FINAL_RESULT] verified_test_agent_score: {verified_test_agent_score}')
         print('-----------------------------------')
         if DEBUG_ONE_SHOT:
             break
@@ -307,15 +363,23 @@ def battle(
     retrieve_file_num: int = 5,
     agent_retry_times: int = 3,
     turns: int = 1,
+    port_range: str = '10000-11000'
 ) -> Tuple[List[int], List[int]]:
+    
+    begin_port, end_port = map(int, port_range.split('-'))
+    
     def get_roles(code_editor_lhs, code_editor_rhs):
         patch_verifier = PatchVerifier(ci_tool_name=ci_tool_name, 
             workdir=workdir, 
             src_folder=src_folder, 
+            begin_port=begin_port,
+            end_port=end_port
         )
         test_verifier = TestVerifier(ci_tool_name=ci_tool_name, 
             workdir=workdir, 
             src_folder=src_folder, 
+            begin_port=begin_port,
+            end_port=end_port
         )
         patch_generator = PatchGenerator(workdir=workdir, 
             src_folder=src_folder, 
@@ -383,6 +447,7 @@ def main(
     ci_tool_name: str,
     turns: int = 1,
     split: str = "train",
+    port_range: str = '10000-11000'
 ) -> Tuple[List[int], List[int]]:
     """
     Runs evaluation to battle two agents on a dataset.
@@ -411,7 +476,10 @@ def main(
 
     with_ci = 'act' == ci_tool_name
 
-    dataset = load_swingbench_dataset(dataset_name, language, split=split, with_ci=with_ci)
+    if "jsonl" in dataset_name:
+        dataset = load_swingbench_dataset_json(dataset_name)
+    else:
+        dataset = load_swingbench_dataset(dataset_name, language, split=split, with_ci=with_ci)
     print(f'dataset size: {len(dataset)}')
 
     retriever = BM25DiskRetriever(index_dir=retriever_index_dir)
@@ -445,7 +513,8 @@ def main(
                                 ci_tool_name,
                                 retrieve_file_num,
                                 agent_retry_times,
-                                turns)
+                                turns,
+                                port_range)
 
     print('------------ result ------------')
     print(f'result: {result}')
@@ -453,6 +522,8 @@ def main(
 
     print('------------ end of processing dataset ------------')
     print('\n')
+    exit(0)
+
 
 if __name__ == "__main__":
     parser = ArgumentParser(
@@ -469,13 +540,14 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "--language", type=str, default="Rust", help="Language of the dataset"
+        "--language", type=str, default="rust", help="Language of the dataset"
     )
 
     # default models
     # base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"#'https://dashscope.aliyuncs.com/compatible-mode/v1/'
     # api_key = "sk-826b874003eb4f309bd65c7a6f0f79b5"#'sk-826b874003eb4f309bd65c7a6f0f79b5'
     # model = "qwen-max-latest"#'qwq-plus'
+
     base_url = "http://localhost:8000/v1"
     api_key = "no-api-key"
     model = "/home/mnt/wdxu/models/Qwen2.5-Coder-7B-Instruct"
@@ -525,6 +597,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--tok_model_rhs", type=str, default=None, help="Tokenizer model for rhs"
+    )
+    parser.add_argument(
+        "--port_range", type=str, default='10000-11000', help="Port range"
     )
     args = parser.parse_args()
 

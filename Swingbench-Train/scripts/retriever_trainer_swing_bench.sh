@@ -2,14 +2,15 @@
 
 echo "==== 环境变量设置 ===="
 
-export CUDA_VISIBLE_DEVICES=0
-gpu=3
+export NCCL_P2P_DISABLE=1
+export CUDA_VISIBLE_DEVICES=1,2
+gpu=2
 port=5324
 
 
 
-task_name=rust
-model_name=llama2-7b-chat
+task_name=combined
+model_name=llama3-8b #llama2-7b-chat
 
 
 echo "==== 输入参数 ===="
@@ -23,12 +24,12 @@ elif [ "${model_name}" = "llama2-7b-chat" ]; then
 elif [ "${model_name}" = "vicuna-7b" ]; then
   model_path=YOUR_PATH
 elif [ "${model_name}" = "llama3-8b" ]; then 
-  model_path=YOUR_PATH
+  model_path=meta-llama/Llama-3.1-8B-Instruct #YOUR_PATH
 fi
 
 n_tokens=800
 scr_batch_size=4
-inf_batch_size=1
+
 
 for task_name in ${task_name} # selection from asdiv gsm8k svamp aqua   rust
 do

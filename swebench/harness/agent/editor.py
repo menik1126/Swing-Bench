@@ -80,7 +80,8 @@ class RawDataCodeEditor(CodeEditorBase):
         self.default_prompt_token_length = len(self.tokenizer.encode(str(json.dumps(other_content_tokens)))) + buffer_tokens
 
     def _parse_structured_data(self, content: str) -> dict:
-        pattern = r'<response>\s*(.*?)\s*</response>'
+        # pattern = r'<response>\s*(.*?)\s*</response>'
+        pattern = r'```json(.*?)```'
         match = re.search(pattern, content, re.DOTALL)
         if not match:
             print(f'No match found in content: {content}')
@@ -113,7 +114,9 @@ class RawDataCodeEditor(CodeEditorBase):
                         {"role": "system", "content": system_prompt}],
                 # response_format={"type": "json_object"},
                 temperature=0.0,
+                timeout=120
             )
+            print(f"[Call API] Role: #{role}# Sending request size: #{len(input)}# Response size: #{len(response.choices[0].message.content)}#")
             # print("##################################################")
             # print(response.choices[0].message.content)
             # print("##################################################")

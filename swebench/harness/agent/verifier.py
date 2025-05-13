@@ -17,6 +17,7 @@ from swebench.harness.constants.swing_constants import SwingbenchInstance
 from swebench.harness.router import CIToolBase
 from swebench.harness.router import EVAL_HANDLER
 from swebench.harness.agent.model import AgentProxy
+from swebench.harness.agent.utils import TempDirectoryManager
 import shutil
 import tempfile
 # 强制设置临时目录
@@ -162,31 +163,32 @@ class PatchGenerator(Generator):
         if response is None:
             print(f'patch generator response is None: {response}')
             return None
+
         base_path = f"{self.workdir}/{data.instance_id}_{str(uuid4())}"
+        with TempDirectoryManager(base_path) as base_path:
+            # convert repo path from x/y to x__y
+            repo_path = f"{self.src_folder}/{data.repo.replace('/', '__')}"
 
-        # convert repo path from x/y to x__y
-        repo_path = f"{self.src_folder}/{data.repo.replace('/', '__')}"
+            if os.path.exists(base_path):
+                try:
+                    # remove existing repo
+                    shutil.rmtree(base_path)
+                except Exception as e:
+                    print(f"Error removing existing repo {base_path}: {e}. Skipping...")
 
-        if os.path.exists(base_path):
             try:
-                # remove existing repo
-                shutil.rmtree(base_path)
+                shutil.copytree(repo_path, base_path)
+                subprocess.run(["git", "checkout", data.base_commit], cwd=base_path)
             except Exception as e:
-                print(f"Error removing existing repo {base_path}: {e}. Skipping...")
+                print(f"Error copying repo {repo_path} to {base_path}: {e}. Skipping...")
+                return None
 
-        try:
-            shutil.copytree(repo_path, base_path)
-            subprocess.run(["git", "checkout", data.base_commit], cwd=base_path)
-        except Exception as e:
-            print(f"Error copying repo {repo_path} to {base_path}: {e}. Skipping...")
-            return None
+            patch = generate_git_diff_batch(response["code_edits"], base_path)
+            if patch is None:
+                print(f'generate_git_diff_batch merged failed. patch is None. code_edits: {response["code_edits"]}. base_path: {base_path}')
+                return None
 
-        patch = generate_git_diff_batch(response["code_edits"], base_path)
-        if patch is None:
-            print(f'generate_git_diff_batch merged failed. patch is None. code_edits: {response["code_edits"]}. base_path: {base_path}')
-            return None
-
-        return patch
+            return patch
 
 
 class TestGenerator(Generator):
@@ -299,96 +301,101 @@ class TestGenerator(Generator):
         if response is None:
             print(f'test generator response is None: {response}')
             return None
+
         base_path = f"{self.workdir}/{data.instance_id}_{str(uuid4())}"
+        with TempDirectoryManager(base_path) as base_path:
+            # convert repo path from x/y to x__y
+            repo_path = f"{self.src_folder}/{data.repo.replace('/', '__')}"
 
-        # convert repo path from x/y to x__y
-        repo_path = f"{self.src_folder}/{data.repo.replace('/', '__')}"
+            if os.path.exists(base_path):
+                try:
+                    # remove existing repo
+                    shutil.rmtree(base_path)
+                except Exception as e:
+                    print(f"Error removing existing repo {base_path}: {e}. Skipping...")
 
-        if os.path.exists(base_path):
             try:
-                # remove existing repo
-                shutil.rmtree(base_path)
+                shutil.copytree(repo_path, base_path)
+                subprocess.run(["git", "checkout", data.base_commit], cwd=base_path)
             except Exception as e:
-                print(f"Error removing existing repo {base_path}: {e}. Skipping...")
+                print(f"Error copying repo {repo_path} to {base_path}: {e}. Skipping...")
+                return None
 
-        try:
-            shutil.copytree(repo_path, base_path)
-            subprocess.run(["git", "checkout", data.base_commit], cwd=base_path)
-        except Exception as e:
-            print(f"Error copying repo {repo_path} to {base_path}: {e}. Skipping...")
-            return None
+            patch = generate_git_diff_batch(response["test_cases"], base_path)
+            if patch is None:
+                print(f'generate_git_diff_batch merged failed. patch is None. test_cases: {response["test_cases"]}. base_path: {base_path}')
+                return None
 
-        patch = generate_git_diff_batch(response["test_cases"], base_path)
-        if patch is None:
-            print(f'generate_git_diff_batch merged failed. patch is None. test_cases: {response["test_cases"]}. base_path: {base_path}')
-            return None
-
-        return patch
+            return patch
 
 
 class PatchVerifier(Verifier):
     def __init__(self, ci_tool_name: str, 
                  workdir: str = "testbed", 
                  src_folder: str = "repos",
+                 begin_port: int = 10000,
+                 end_port: int = 11000
                  ):
         self.ci_tool_name = ci_tool_name
         self.workdir = workdir
         self.src_folder = src_folder
-        self.port_pool_size = 100
+        self.begin_port = begin_port
+        self.end_port = end_port
 
     def verify(self, data: SwingbenchInstance, patch: str) -> dict:
         data.patch = patch
         base_path = f"{self.workdir}/{data.instance_id}_{str(uuid4())}"
-        if os.path.exists(base_path):
-            shutil.rmtree(base_path)
-        
-        # CITool will handle the patch
-        config = {
-            "instance_id": data.instance_id,
-            "repo": data.repo,
-            "base_commit": data.base_commit,
-            "merge_commit": data.merge_commit_sha,
-            "patch": patch,
-            "src_folder": self.src_folder,
-            "output_dir": "logs",
-            "workdir": base_path,
-            "apply_patch": True,
-            "ci_name_list": data.ci_name_list
-        }
-        ci_tool = EVAL_HANDLER.get(self.ci_tool_name)
-        tool = ci_tool(config)
+        with TempDirectoryManager(base_path) as base_path:
+            if os.path.exists(base_path):
+                shutil.rmtree(base_path)
+            
+            # CITool will handle the patch
+            config = {
+                "instance_id": data.instance_id,
+                "repo": data.repo,
+                "base_commit": data.base_commit,
+                "merge_commit": data.merge_commit_sha,
+                "patch": patch,
+                "src_folder": self.src_folder,
+                "output_dir": "logs",
+                "workdir": base_path,
+                "apply_patch": True,
+                "ci_name_list": data.ci_name_list
+            }
+            ci_tool = EVAL_HANDLER.get(self.ci_tool_name)
+            tool = ci_tool(config)
 
-        # TODO(wdxu): remove the switch process for run_ci.
-        if self.ci_tool_name == "act":
-            pool = get_available_port_pool(self.port_pool_size)
-            result = tool.run_ci(pool)
-        else:
-            result = tool.run_ci()
+            # TODO(wdxu): remove the switch process for run_ci.
+            if self.ci_tool_name == "act":
+                pool = get_available_port_pool(self.begin_port, self.end_port)
+                result = tool.run_ci(pool)
+            else:
+                result = tool.run_ci()
 
-        # haoran: FOR CARGO
-        # test_results = {
-        #     "unit_test": {
-        #         "passed": passed_tests,
-        #         "failed": failed_tests,
-        #         "ignored": ignored_tests,
-        #         "failure_details": {}
-        #     }
-        # }
-        # FOR ACT
-        # test_results = {
-        #     "ci_1": {
-        #         "passed": passed_tests,
-        #         "failed": failed_tests,
-        #         "ignored": ignored_tests,
-        #         "failure_details": {}
-        #     }, ...
-        # }
+            # haoran: FOR CARGO
+            # test_results = {
+            #     "unit_test": {
+            #         "passed": passed_tests,
+            #         "failed": failed_tests,
+            #         "ignored": ignored_tests,
+            #         "failure_details": {}
+            #     }
+            # }
+            # FOR ACT
+            # test_results = {
+            #     "ci_1": {
+            #         "passed": passed_tests,
+            #         "failed": failed_tests,
+            #         "ignored": ignored_tests,
+            #         "failure_details": {}
+            #     }, ...
+            # }
 
-        return {
-            "tool": self.ci_tool_name,
-            "result": result,
-            "patch": patch
-        }
+            return {
+                "tool": self.ci_tool_name,
+                "result": result,
+                "patch": patch
+            }
 
 
 class TestVerifier(Verifier):
@@ -396,65 +403,69 @@ class TestVerifier(Verifier):
                  workdir: str = "testbed", 
                  src_folder: str = "repos",
                  proxy: AgentProxy = None,
+                 begin_port: int = 10000,
+                 end_port: int = 11000
                  ):
         self.ci_tool_name = ci_tool_name
         self.workdir = workdir
         self.src_folder = src_folder
         self.proxy = proxy
-        self.port_pool_size = 100
+        self.begin_port = begin_port
+        self.end_port = end_port
 
     def verify(self, data: SwingbenchInstance, testcase: str) -> dict:
         # apply both test patch and original patch
         base_path = f"{self.workdir}/{data.instance_id}_{str(uuid4())}"
-        if os.path.exists(base_path):
-            shutil.rmtree(base_path)
-        
-        config = {
-            "instance_id": data.instance_id,
-            "repo": data.repo,
-            "base_commit": data.base_commit,
-            "merge_commit": data.merge_commit_sha,
-            "patch": testcase,
-            "src_folder": self.src_folder,
-            "output_dir": "logs",
-            "workdir": base_path,
-            "apply_patch": True,
-            "ci_name_list": data.ci_name_list
-        }
-        ci_tool = EVAL_HANDLER.get(self.ci_tool_name)
-        tool = ci_tool(config)
+        with TempDirectoryManager(base_path) as base_path:
+            if os.path.exists(base_path):
+                shutil.rmtree(base_path)
+            
+            config = {
+                "instance_id": data.instance_id,
+                "repo": data.repo,
+                "base_commit": data.base_commit,
+                "merge_commit": data.merge_commit_sha,
+                "patch": testcase,
+                "src_folder": self.src_folder,
+                "output_dir": "logs",
+                "workdir": base_path,
+                "apply_patch": True,
+                "ci_name_list": data.ci_name_list
+            }
+            ci_tool = EVAL_HANDLER.get(self.ci_tool_name)
+            tool = ci_tool(config)
 
-        # TODO(wdxu): remove the switch process for run_ci.
-        if self.ci_tool_name == "act":
-            pool = get_available_port_pool(self.port_pool_size)
-            result = tool.run_ci(pool)
-        else:
-            result = tool.run_ci()
+            # TODO(wdxu): remove the switch process for run_ci.
+            if self.ci_tool_name == "act":
+                pool = get_available_port_pool(self.begin_port, self.end_port)
+                result = tool.run_ci(pool)
+            else:
+                result = tool.run_ci()
 
-        # haoran: FOR CARGO
-        # test_results = {
-        #     "unit_test": {
-        #         "passed": passed_tests,
-        #         "failed": failed_tests,
-        #         "ignored": ignored_tests,
-        #         "failure_details": {}
-        #     }
-        # }
-        # FOR ACT
-        # test_results = {
-        #     "ci_1": {
-        #         "passed": passed_tests,
-        #         "failed": failed_tests,
-        #         "ignored": ignored_tests,
-        #         "failure_details": {}
-        #     }, ...
-        # }
+            # haoran: FOR CARGO
+            # test_results = {
+            #     "unit_test": {
+            #         "passed": passed_tests,
+            #         "failed": failed_tests,
+            #         "ignored": ignored_tests,
+            #         "failure_details": {}
+            #     }
+            # }
+            # FOR ACT
+            # test_results = {
+            #     "ci_1": {
+            #         "passed": passed_tests,
+            #         "failed": failed_tests,
+            #         "ignored": ignored_tests,
+            #         "failure_details": {}
+            #     }, ...
+            # }
 
-        return {
-            "tool": self.ci_tool_name,
-            "result": result,
-            "test_cases": testcase
-        }
+            return {
+                "tool": self.ci_tool_name,
+                "result": result,
+                "test_cases": testcase
+            }
 
 
 if __name__ == "__main__":

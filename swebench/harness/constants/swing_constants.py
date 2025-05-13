@@ -43,7 +43,17 @@ class SwingbenchInstance:
                f"patch={self.patch[:15]}...), " \
                f"test_patch={self.test_patch[:15]}...), " \
                f"problem_statement={self.problem_statement[:15]}...), " \
-               f"hints_text={self.hints_text[:15]}...)"
+               f"hints_text={self.hints_text[:15]}...), " \
+               f"ci_name_list={self.ci_name_list}, " \
+               f"retrieved_files={self.retrieved_files}, " \
+               f"environment_setup_commit={self.environment_setup_commit}, " \
+               f"version={self.version}, " \
+               f"FAIL_TO_PASS={self.FAIL_TO_PASS}, " \
+               f"PASS_TO_PASS={self.PASS_TO_PASS}, " \
+               f"enhanced_problem={self.enhanced_problem}, " \
+               f"original_code={self.original_code}, " \
+               f"file_paths={self.file_paths}, " \
+               f"total_tokens={self.total_tokens})"
 
     def __repr__(self):
         return self.__str__()

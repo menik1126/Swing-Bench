@@ -42,3 +42,6 @@ ruby_repos/
 csharp_instances/
 csharp_repos/
 temp/
+
+dataset/*
+!dataset/swing-bench-annotated-jsonl/

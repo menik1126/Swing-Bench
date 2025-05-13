@@ -6,6 +6,7 @@ import threading
 import json
 from dataclasses import dataclass
 import logging
+import time
 
 logger = logging.getLogger(__name__)
 
@@ -390,6 +391,9 @@ class ActCITool(CIToolBase):
             # cast str to list
             ci = ast.literal_eval(ci)
         value = self.ci_dict.get(ci[0])
+        # if value is None:
+            # print("value is None ci and its type: ", ci, type(ci))
+            # print(self.ci_dict)
         if value is not None:
             port = pool.acquire_port()
             path = self.config["output_dir"] + "/" + \
@@ -430,14 +434,23 @@ class ActCITool(CIToolBase):
             }
             # dump result to file in specific path
             # DEBUG
-            print('dump ci result to file {}'.format(os.path.join(target_dir, self.task.instance_id + "_"  + \
-                   value + "_" + \
-                   order + "_output.json")))
-            with open(os.path.join(target_dir, self.task.instance_id + "_"  + \
-                   value + "_" + \
-                   order + "_output.json"), 'w', encoding='utf-8') as f:
-                json.dump(result, f, ensure_ascii=False, indent=4)
-            
+            try:
+                debug_path = os.environ["SWING_DEBUG_DIR"]
+            except KeyError:
+                debug_path = ''
+
+            if debug_path != '':
+                if not os.path.exists(debug_path):
+                    os.makedirs(debug_path)
+
+                print('dump ci result to file {}'.format(os.path.join(debug_path, self.task.instance_id + "_"  + \
+                    value + "_" + \
+                    order + "_output.json")))
+                with open(os.path.join(debug_path, self.task.instance_id + "_"  + \
+                    value + "_" + \
+                    order + "_output.json"), 'w', encoding='utf-8') as f:
+                    json.dump(result, f, ensure_ascii=False, indent=4)
+
             result_path = os.path.join(target_dir, path) 
             if not os.path.exists(os.path.dirname(result_path)):
                 os.makedirs(os.path.dirname(result_path))
@@ -492,28 +505,27 @@ class ActCITool(CIToolBase):
                 result_json = result
 
             for job in result_json["processed_output"].keys():
+                # collect jobResult
                 if job not in processed_result.keys():
                     processed_result[job] = {
                         "returncode": result_json["processed_output"][job]["jobResult"],
                         "test_results": {
-                            "passed": [],
-                            "failed": [],
-                            "ignored": [],
+                            "success": [],
+                            "failure": [],
+                            "skipped": [],
                         },
                         "unit_test": [0, 0, 0]
                     }
+                    # collect step results
                     for item in result_json["processed_output"][job]["steps"]:
+                        step_name = item[0]
                         if item[2] == "success":
-                            temp = processed_result[job]["test_results"]["passed"]
+                            processed_result[job]["test_results"]["success"].append(step_name)
                         elif item[2] == "failure":
-                            temp = processed_result[job]["test_results"]["failed"]
+                            processed_result[job]["test_results"]["failure"].append(step_name)
                         elif item[2] == "skipped":
-                            temp = processed_result[job]["test_results"]["ignored"]
-                        temp.append({
-                                "step": item[0],
-                                "stage": item[1]
-                            }
-                        )
+                            processed_result[job]["test_results"]["skipped"].append(step_name)
+
                     processed_result[job]["unit_test"] = result_json["processed_output"][job]["testResult"]
 
         return processed_result
@@ -542,6 +554,7 @@ class ActCITool(CIToolBase):
             )
             thread.start()
             threads.append(thread)
+            time.sleep(0.5)
 
         for thread in threads:
             thread.join()
