@@ -31,19 +31,22 @@ dfs = []
 problem_statement_lengths = []
 patch_lengths = []
 
+p_lengths = []
+
 for lang in languages:
     df = pd.read_json(f'{lang}.jsonl', lines=True)
     df['language'] = lang
 
     df['statement_length'] = df['problem_statement'].apply(lambda x: len(x.split()))
     problem_statement_lengths.append(df['statement_length'].mean())
-    
+    p_lengths.append(df['statement_length'])
+
     df['total_lines_changed'] = df['patch'].apply(lambda x: len(x.split()))
     patch_lengths.append(df['total_lines_changed'].mean())
 
     dfs.append(df)
 
-# languages = ['Go', 'Python', 'Cpp', 'Rust']
+languages = ['Go', 'Python', 'Cpp', 'Rust']
 # x = np.arange(len(languages)) * 0.4  # 将间隔设置为 0.8
 # width = 0.15  # 条形的宽度变窄
 # fig, ax = plt.subplots(figsize=(8, 6))  # 调整图形大小
@@ -130,19 +133,48 @@ all_data = pd.concat(dfs, ignore_index=True)
 #     ax.set_ylabel('Statement Length')
 #     ax.set_xticks([])
 
-fig, axe = plt.subplots(1, 4, figsize=(10, 5))
+# 设置子图数量
+fig, axes = plt.subplots(1, len(languages), figsize=(5 * len(languages), 5))
 
-all_data['statement_length'] = all_data['problem_statement'].apply(lambda x: len(x.split()))
-all_data['statement_length'] = all_data['statement_length'].sort_values(ascending=False).iloc[2:].sort_index()
-axe.bar(all_data.index, all_data['statement_length'], color='skyblue', edgecolor='black')
-axe.set_title('Problem statement length distribution')
-axe.set_xlabel('Problem')
-axe.set_ylabel('Statement Length')
-axe.set_xticks([])
+# 确保 axes 是可迭代的（当只有一个语言时，axes 是单个对象）
+if len(languages) == 1:
+    axes = [axes]
+
+buckets = [100, 100, 100, 100]
+
+t = p_lengths[0]
+t = t[t <= 1350]
+p_lengths[0] = t
+
+t = p_lengths[1]
+t = t[t <= 2625]
+p_lengths[1] = t
+
+t = p_lengths[3]
+t = t[t <= 1500]
+p_lengths[3] = t
+
+# 为每种语言绘制柱状图
+for i, lang in enumerate(languages):
+    lang_df = p_lengths[i]
+
+    bins = range(0, lang_df.max() + buckets[i], buckets[i])
+    labels = [f"{bins[j]}-{bins[j+1]}" for j in range(len(bins) - 1)]
+
+    # 计算每个桶的数量
+    bin_counts = pd.cut(lang_df, bins=bins, labels=labels, right=False).value_counts().sort_index()
+
+    # 绘制柱状图
+    axes[i].bar(bin_counts.index.astype(str), bin_counts.values, color='skyblue')
+    axes[i].set_xlabel(f'{lang} Statement Length Distribution')
+    axes[i].set_ylabel('Count')
+    axes[i].set_xticks(range(len(labels)))
+    axes[i].set_xticklabels(labels, rotation=45, ha='right')
 
 plt.tight_layout()
 plt.savefig('problem_statement_distribution_filtered_bar.pdf', dpi=300, bbox_inches='tight')
 plt.show()
+exit(0)
 
 # fig, axe = plt.subplots(1, 1, figsize=(10, 5))
 
