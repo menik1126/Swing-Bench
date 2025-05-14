@@ -166,7 +166,8 @@ for i, lang in enumerate(languages):
 
     # 绘制柱状图
     axes[i].bar(bin_counts.index.astype(str), bin_counts.values, color='skyblue')
-    axes[i].set_xlabel(f'{lang} Statement Length Distribution')
+    axes[i].set_title(f'{lang} Statement Length Distribution')
+    # axes[i].set_xlabel(f'{lang} Statement Length Distribution')
     axes[i].set_ylabel('Count')
     axes[i].set_xticks(range(len(labels)))
     axes[i].set_xticklabels(labels, rotation=45, ha='right')
