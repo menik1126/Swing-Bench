@@ -1,7 +1,7 @@
 from abc import abstractmethod
 from pathlib import Path
-from swebench.harness.constants.swing_constants import SwingbenchInstance
-from swebench.harness.agent.swing_search_index import search_instance
+from Swingbench.harness.swing_constants import SwingbenchInstance
+from Swingbench.harness.agent.swing_search_index import search_instance
 
 
 class Retriever:
@@ -26,7 +26,6 @@ class BM25DiskRetriever(Retriever):
             self.document_encoding_style,
             k=k
         )
-        # TODO(wdxu): need some reduce strategies
         
         return results
 
@@ -34,8 +33,8 @@ class BM25DiskRetriever(Retriever):
 if __name__ == "__main__":
     import swing_utils
 
-    retriever = BM25DiskRetriever(index_dir="/mnt/Data/wdxu/github/Swing-Bench/tmpdata/indexes")
-    dataset_jsonl_path = '/mnt/Data/wdxu/github/Swing-Bench/tmpdata/dataset.json'
+    retriever = BM25DiskRetriever(index_dir="")
+    dataset_jsonl_path = ''
     dataset = swing_utils.load_swingbench_dataset(dataset_jsonl_path)
     
     for instance in dataset:

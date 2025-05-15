@@ -1,10 +1,10 @@
 import argparse
 import os
 
-from swebench.harness.agent.retriever import BM25DiskRetriever
-from swebench.harness.swing_utils import load_swingbench_dataset
-from swebench.harness.agent.verifier import PatchGenerator, TestGenerator
-from swebench.harness.agent.editor import RawDataCodeEditor
+from Swingbench.harness.agent.retriever import BM25DiskRetriever
+from Swingbench.harness.swing_utils import load_swingbench_dataset
+from Swingbench.harness.agent.verifier import PatchGenerator, TestGenerator
+from Swingbench.harness.agent.editor import RawDataCodeEditor
 
 DEBUG_ONE_SHOT = True
 
@@ -82,13 +82,13 @@ if __name__ == "__main__":
         "--model", type=str, default=model, help="Model"
     )
     parser.add_argument(
-        "--retriever_index_dir", type=str, default=os.environ["SWING_INDEXES_PATH"], help="Retriever index directory"
+        "--retriever_index_dir", type=str, help="Retriever index directory", required=True
     )
     parser.add_argument(
-        "--workdir", type=str, default=os.environ["SWING_TESTBED_PATH"], help="Work directory"
+        "--workdir", type=str, help="Work directory", required=True
     )
     parser.add_argument(
-        "--src_folder", type=str, default=os.environ["SWING_REPOS_DIR_PATH"], help="Source code folder"
+        "--src_folder", type=str, help="Source code folder", required=True
     )
     parser.add_argument(
         "--retrieve_file_num", type=int, default=5, help="Retrieve file number"

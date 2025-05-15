@@ -450,3 +450,6 @@ def extract_file_list_from_diff(diff_str: str) -> list[str]:
             modified_files.append(match)
     
     return modified_files
+
+def get_available_port_pool(begin_port: int, end_port: int):
+    return PortPool(begin_port, end_port)

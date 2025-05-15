@@ -1,6 +1,6 @@
-from swebench.harness.agent.prompt import Prompt
-from swebench.harness.agent.retriever import Retriever
-from swebench.harness.constants.swing_constants import SwingbenchInstance
+from Swingbench.harness.agent.prompt import Prompt
+from Swingbench.harness.agent.retriever import Retriever
+from Swingbench.harness.swing_constants import SwingbenchInstance
 
 from openai import OpenAI
 
@@ -118,14 +118,14 @@ class AgentProxy:
 
 if __name__ == "__main__":
     import swing_utils
-    from swebench.harness.agent.retriever import BM25DiskRetriever
-    from swebench.harness.agent.prompt import GENERATE_PATCH_SYSTEM_MESSAGE, GENERATE_PATCH_TEMPLATE
+    from Swingbench.harness.agent.retriever import BM25DiskRetriever
+    from Swingbench.harness.agent.prompt import GENERATE_PATCH_SYSTEM_MESSAGE, GENERATE_PATCH_TEMPLATE
 
-    retriever = BM25DiskRetriever(index_dir="/mnt/Data/wdxu/github/Swing-Bench/tmpdata/indexes")
-    dataset_jsonl_path = '/mnt/Data/wdxu/github/Swing-Bench/tmpdata/dataset.json'
+    retriever = BM25DiskRetriever(index_dir="")
+    dataset_jsonl_path = ''
     dataset = swing_utils.load_swingbench_dataset(dataset_jsonl_path)
 
-    model_info = ModelInfo(name="/home/mnt/wdxu/models/DeepSeek-R1-Distill-Qwen-7B", base_url="http://localhost:8000/v1", api_key="no-api-key")
+    model_info = ModelInfo(name="", base_url="http://localhost:8000/v1", api_key="no-api-key")
     agent_proxy = AgentProxy(model_info)
     
     for instance in dataset:

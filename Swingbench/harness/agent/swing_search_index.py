@@ -8,8 +8,8 @@ import subprocess
 from argparse import ArgumentParser
 from pyserini.search.lucene import LuceneSearcher
 from tqdm import tqdm
-from swebench.harness.constants.swing_constants import SwingbenchInstance
-from swebench.prepare.swing_build_index import build_repo_index
+from Swingbench.harness.swing_constants import SwingbenchInstance
+from Swingbench.prepare.swing_build_index import build_repo_index
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
@@ -153,8 +153,8 @@ def main(debug: bool = False):
 if __name__ == "__main__":
     """
     python swing_search_index.py \
-        --instances_file /mnt/Data/wdxu/github/Swing-Bench/tmpdata/dataset.json \
-        --index_dir /mnt/Data/wdxu/github/Swing-Bench/tmpdata/indexes \
+        --instances_file  \
+        --index_dir  \
         --document_encoding_style file_name_and_contents \
         --output_file_for_debug results.jsonl
     """

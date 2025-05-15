@@ -6,7 +6,7 @@ import subprocess
 import copy
 from openai import OpenAI
 from abc import abstractmethod
-from swebench.harness.agent.prompt import swing_patch_retry_prompt, swing_test_retry_prompt, swing_patch_function, swing_test_function, swing_patch_system_prompt, swing_test_system_prompt
+from Swingbench.harness.agent.prompt import swing_patch_retry_prompt, swing_test_retry_prompt, swing_patch_function, swing_test_function, swing_patch_system_prompt, swing_test_system_prompt
 
 from transformers import AutoTokenizer
 from json_repair import repair_json
@@ -516,25 +516,12 @@ def generate_git_diff_batch(code_edits: list[dict], base_path: str) -> dict:
     return diffs
 
 if __name__ == "__main__":
-    # from swebench.harness.agent.model import ModelInfo
-    # code_editor = RawDataCodeEditor(
-    #     api_key=os.environ["XAI_API_KEY"],
-    #     base_url="https://api.x.ai/v1",
-    #     model="grok-2-latest"
-    # )
+
     code_editor = RawDataCodeEditor(
-        api_key="no-api-key",
-        base_url="http://localhost:8000/v1",
-        model="/home/mnt/wdxu/models/Qwen2.5-Coder-7B-Instruct"
+        api_key="",
+        base_url="",
+        model=""
     )
-    # with open("/mnt/Data/wdxu/github/Swing-Bench/tmpdata/tset_editor.py", "r") as f:
-    #     content = f.read()
-    #     result = code_editor.edit_code(
-    #         issue="fix the bug",
-    #         original_code=content,
-    #         file_path="/mnt/Data/wdxu/github/Swing-Bench/tmpdata/tset_editor.py"
-    #     )
-    #     print(result)
 
     resp = {
         "reasoning_trace": "The issue at hand is to eliminate loading a whole file into a vector when processing TAP files in the `rustzx-core` emulator. Currently, the `Tap::from_asset` function reads the entire file into a `Vec<u8>`, which is not memory-efficient, especially for resource-restricted hosts. To resolve this, we need to modify the `Tap::from_asset` function to use a more memory-efficient approach, such as reading the file in chunks and processing it on demand. This will involve changing the way data is stored and accessed within the `Tap` struct, likely using a custom reader or a file-like object that supports seeking and reading on demand. The goal is to maintain the functionality of the TAP loader while reducing memory usage, which will make the emulator more portable to resource-constrained environments.",

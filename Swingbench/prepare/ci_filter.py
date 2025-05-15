@@ -1,8 +1,8 @@
 import argparse
 import os
 
-from swebench.harness.swing_utils import load_swingbench_dataset_json
-from swebench.harness.agent.verifier import PatchVerifier
+from Swingbench.harness.swing_utils import load_swingbench_dataset_json
+from Swingbench.harness.agent.verifier import PatchVerifier
 
 
 json_name_path = "filtered_{}_instance_list.jsonl"

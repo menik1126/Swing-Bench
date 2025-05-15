@@ -13,23 +13,23 @@ from abc import abstractmethod
 from datetime import datetime
 import subprocess
 from uuid import uuid4
-from swebench.harness.constants.swing_constants import SwingbenchInstance
-from swebench.harness.router import CIToolBase
-from swebench.harness.router import EVAL_HANDLER
-from swebench.harness.agent.model import AgentProxy
-from swebench.harness.agent.utils import TempDirectoryManager
+from Swingbench.harness.swing_constants import SwingbenchInstance
+from Swingbench.harness.router import CIToolBase
+from Swingbench.harness.router import EVAL_HANDLER
+from Swingbench.harness.agent.model import AgentProxy
+from Swingbench.harness.agent.utils import TempDirectoryManager
 import shutil
 import tempfile
-# 强制设置临时目录
+
 tempfile.tempdir = temp_dir
 
-from swebench.harness.agent.editor import generate_git_diff_batch
-from swebench.harness.agent.retriever import Retriever
-from swebench.harness.agent.editor import CodeEditorBase
-from swebench.harness.utils import get_available_port_pool
-from swebench.harness.swing_utils import merge_diffs
+from Swingbench.harness.agent.editor import generate_git_diff_batch
+from Swingbench.harness.agent.retriever import Retriever
+from Swingbench.harness.agent.editor import CodeEditorBase
+from Swingbench.harness.swing_utils import get_available_port_pool
+from Swingbench.harness.swing_utils import merge_diffs
 
-from swebench.harness.agent.swing_chunker import CodeChunker, CodeReranker
+from Swingbench.harness.agent.swing_chunker import CodeChunker, CodeReranker
 
 class Verifier:
     @abstractmethod
@@ -216,7 +216,6 @@ class TestGenerator(Generator):
         return self.code_editor.model
 
     def generate(self, data: SwingbenchInstance, generated_patch: str = None):
-        # TODO(wdxu): remove this hack.
         data.hints_text += "test, testcase, unittest."
         code_snippet = self.retriever.retrieve(data, self.src_folder, k=self.retrieve_file_num)
         if code_snippet is not None:
@@ -365,7 +364,6 @@ class PatchVerifier(Verifier):
             ci_tool = EVAL_HANDLER.get(self.ci_tool_name)
             tool = ci_tool(config)
 
-            # TODO(wdxu): remove the switch process for run_ci.
             if self.ci_tool_name == "act":
                 pool = get_available_port_pool(self.begin_port, self.end_port)
                 result = tool.run_ci(pool)
@@ -435,7 +433,6 @@ class TestVerifier(Verifier):
             ci_tool = EVAL_HANDLER.get(self.ci_tool_name)
             tool = ci_tool(config)
 
-            # TODO(wdxu): remove the switch process for run_ci.
             if self.ci_tool_name == "act":
                 pool = get_available_port_pool(self.begin_port, self.end_port)
                 result = tool.run_ci(pool)
@@ -469,21 +466,17 @@ class TestVerifier(Verifier):
 
 
 if __name__ == "__main__":
-    from swebench.harness.swing_utils import load_swingbench_dataset
-    from swebench.harness.agent.retriever import BM25DiskRetriever
-    from swebench.harness.agent.editor import RawDataCodeEditor
-    from swebench.harness.agent.model import AgentProxy
+    from Swingbench.harness.swing_utils import load_swingbench_dataset
+    from Swingbench.harness.agent.retriever import BM25DiskRetriever
+    from Swingbench.harness.agent.editor import RawDataCodeEditor
+    from Swingbench.harness.agent.model import AgentProxy
     import json
     
     SWING_DEBUG_GENERATE_DRYRUN = False
     
-    # base_url = "https://api.x.ai/v1/"
-    # api_key = os.environ["XAI_API_KEY"]
-    # model = "grok-2-latest"
-
-    base_url = "http://147.8.181.248:8000/v1/"
-    api_key = "no-api-key"
-    model = "/home/mnt/wdxu/models/Qwen2.5-Coder-7B-Instruct"
+    base_url = ""
+    api_key = ""
+    model = ""
 
     with open(os.environ["SWING_DEMO_DATASET_PATH"], "r") as f:
         dataset = json.load(f)
@@ -553,5 +546,5 @@ if __name__ == "__main__":
         print('patch with test verify result: ', result)
 
     else:
-        import swebench.harness.agent.verifier_test_patch as test_patch
+        import Swingbench.harness.agent.verifier_test_patch as test_patch
         patch = test_patch.patch
