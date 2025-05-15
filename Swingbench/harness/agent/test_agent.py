@@ -2,7 +2,7 @@ import logging
 import json
 import re
 
-from Swingbench.harness.constants.swing_constants import SwingbenchInstance
+from Swingbench.harness.swing_constants import SwingbenchInstance
 from Swingbench.harness.agent.model import AgentProxy
 from Swingbench.harness.agent.prompt import (
     TEST_AGENT_PROBLEM_AND_TEST,
