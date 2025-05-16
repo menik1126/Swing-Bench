@@ -26,25 +26,41 @@ logger = logging.getLogger("agent_battle")
 load_dotenv()
 
 class PortPool:
-    # Aborted paramter: `ports`
-    def __init__(self, ports=None):
-        pass
+    def __init__(self, begin_port, end_port):
+        self._lock = threading.Lock()
+        self._used_ports = set()
+        self._ports = list(range(begin_port, end_port))
 
     def acquire_port(self):
-        while True:
-            try:
-                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                sock.bind(('', 0))
-                port = sock.getsockname()[1]
-                sock.close()
-                print(f"Port {port} acquired")
+        with self._lock:
+            if self._ports:
+                port = self._ports.pop(0)
+                self._used_ports.add(port)
+                print(f"Port {port} acquired from pool")
                 return port
-            except Exception as e:
-                print(f"Failed to acquire port: {e}, retrying...")
-                time.sleep(0.1)
+            
+            while True:
+                try:
+                    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    sock.bind(('', 0))
+                    port = sock.getsockname()[1]
+                    sock.close()
+                    
+                    if port not in self._used_ports:
+                        self._used_ports.add(port)
+                        print(f"Port {port} acquired dynamically")
+                        return port
+                except Exception as e:
+                    print(f"Failed to acquire port: {e}, retrying...")
+                    time.sleep(0.1)
 
     def release_port(self, port):
-        print(f"Port {port} released")
+        with self._lock:
+            if port in self._used_ports:
+                self._used_ports.remove(port)
+                if port not in self._ports:
+                    self._ports.append(port)
+                print(f"Port {port} released back to pool")
 
 
 class EvaluationError(Exception):

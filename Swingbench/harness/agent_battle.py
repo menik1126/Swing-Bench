@@ -447,7 +447,9 @@ def main(
     ci_tool_name: str,
     turns: int = 1,
     split: str = "train",
-    port_range: str = '10000-11000'
+    port_range: str = '10000-11000',
+    retrieve_file_num: int = 5,
+    agent_retry_times: int = 3
 ) -> Tuple[List[int], List[int]]:
     """
     Runs evaluation to battle two agents on a dataset.
@@ -500,9 +502,6 @@ def main(
         tok_model=tok_model_rhs
     )
     print(f'code_editor_rhs: {code_editor_rhs}')
-
-    retrieve_file_num = 2
-    agent_retry_times = 3
 
     result, result_rev = battle(dataset,
                                 workdir,
@@ -595,6 +594,12 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--port_range", type=str, default='10000-11000', help="Port range"
+    )
+    parser.add_argument(
+        "--retrieve_file_num", type=int, default=2, help="Retrieve file number"
+    )
+    parser.add_argument(
+        "--agent_retry_times", type=int, default=3, help="Agent retry times"
     )
     args = parser.parse_args()
 
