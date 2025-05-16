@@ -209,8 +209,6 @@ def main(
         for file in os.listdir(used_path):
             if file.endswith("-instances.jsonl"):
                 used.extend([file.replace("-task-instances.jsonl", "")])
-        # with jsonlines.open("/root/CodeAgent/results/issues/all_tasks.jsonl", "r") as f:
-        #     used = [d['repo'] for d in f]
     repos = [r for r in repos if not r.split("/")[-1] in used]
     print(f"rest repos: {len(repos)}")
     if start_index is not None or end_index is not None:

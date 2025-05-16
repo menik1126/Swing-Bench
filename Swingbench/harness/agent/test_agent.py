@@ -202,9 +202,9 @@ if __name__ == "__main__":
     problem_statement = "Fix the bug in the calculator's add function. It's currently subtracting instead of adding."
     
     test_agent = TestAgent(
-        model_name="qwen-max-latest",
-        api_key="sk-826b874003eb4f309bd65c7a6f0f79b5",
-        base_url="https://dashscope.aliyuncs.com/compatible-mode/v1/"
+        model_name="Qwen/Qwen2.5-Coder-32B-Instruct",
+        api_key="no-api-key",
+        base_url="http://localhost:8000/v1"
     )
         
     print("==== Testing with problem statement and test case (correct patch) ====")
