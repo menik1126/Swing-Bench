@@ -5,9 +5,9 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setuptools.setup(
     name='Swingbench',
-    author='John Yang',
-    author_email='byjohnyang@gmail.com',
-    description='The official SWE-bench package - a benchmark for evaluating LMs on software engineering',
+    author='Anonymous',
+    author_email='anonymous@anonymous.com',
+    description='The official Swingbench package - a benchmark for evaluating LMs on software engineering',
     keywords='nlp, benchmark, code',
     long_description=long_description,
     long_description_content_type='text/markdown',

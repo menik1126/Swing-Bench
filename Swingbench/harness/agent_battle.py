@@ -232,7 +232,6 @@ def check_patches(golden_patch_result: dict, patch_with_test_verify_result: dict
     return [True]
 
 
-# TODO(haoran): concurrent execution
 def battle_one_turn(
     dataset: List[SwingbenchInstance],
     patch_generator: PatchGenerator,

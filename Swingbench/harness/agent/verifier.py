@@ -370,7 +370,6 @@ class PatchVerifier(Verifier):
             else:
                 result = tool.run_ci()
 
-            # haoran: FOR CARGO
             # test_results = {
             #     "unit_test": {
             #         "passed": passed_tests,
@@ -439,7 +438,6 @@ class TestVerifier(Verifier):
             else:
                 result = tool.run_ci()
 
-            # haoran: FOR CARGO
             # test_results = {
             #     "unit_test": {
             #         "passed": passed_tests,

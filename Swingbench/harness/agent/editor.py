@@ -314,7 +314,6 @@ class RawDataCodeEditor(CodeEditorBase):
             }
 
 
-# TODO(haoran): use flake8 to lint the code
 def lint_code(code: str, prev_code: str = "") -> tuple[bool, set[str], set[str]]:
     """
     Lints Python code using flake8 to check for fatal errors.
