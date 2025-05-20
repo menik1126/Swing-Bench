@@ -176,12 +176,12 @@ class RawDataCodeEditor(CodeEditorBase):
             return None
         if role == "patch":
             return {
-                "reasoning_trace": function_call_args["reasoning_trace"],
+                "reasoning_trace": function_call_args["reasoning_trace"] if "reasoning_trace" in function_call_args else "",
                 "code_edits": function_call_args["code_edits"],
             }
         else:
             return {
-                "reasoning_trace": function_call_args["reasoning_trace"],
+                "reasoning_trace": function_call_args["reasoning_trace"] if "reasoning_trace" in function_call_args else "",
                 "test_cases": function_call_args["test_cases"],
             }
 
@@ -304,12 +304,12 @@ class RawDataCodeEditor(CodeEditorBase):
 
         if role == "patch":
             return {
-                "reasoning_trace": function_call_args["reasoning_trace"],
+                "reasoning_trace": function_call_args["reasoning_trace"] if "reasoning_trace" in function_call_args else "",
                 "code_edits": function_call_args["code_edits"],
             }
         else:
             return {
-                "reasoning_trace": function_call_args["reasoning_trace"],
+                "reasoning_trace": function_call_args["reasoning_trace"] if "reasoning_trace" in function_call_args else "",
                 "test_cases": function_call_args["test_cases"],
             }
 
