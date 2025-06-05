@@ -4,7 +4,7 @@ export SWING_REPOS_DIR_PATH=/raid/rust-repos
 export SWING_INDEXES_PATH=/raid/SwingBench/tmpdata/indexes #~/swing_indexes
 export CI_TOOL_NAME=act
 
-python swebench/harness/agent_battle.py \
+python swingarena/harness/agent_battle.py \
     --workdir $SWING_TESTBED_PATH \
     --src_folder $SWING_REPOS_DIR_PATH \
     --retriever_index_dir $SWING_INDEXES_PATH \
