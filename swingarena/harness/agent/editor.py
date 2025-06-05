@@ -516,7 +516,7 @@ def generate_git_diff_batch(code_edits: list[dict], base_path: str) -> dict:
     return diffs
 
 if __name__ == "__main__":
-    # from swebench.harness.agent.model import ModelInfo
+    # from swingarena.harness.agent.model import ModelInfo
     # code_editor = RawDataCodeEditor(
     #     api_key=os.environ["XAI_API_KEY"],
     #     base_url="https://api.x.ai/v1",
