@@ -26,15 +26,15 @@ REMOTE_SANDBOX_ENTRYPOINT_PATH = f"/root/{SANDBOX_ENTRYPOINT}.py"
 
 app = modal.App("swebench-evaluation")
 
-swebench_image = modal.Image.debian_slim().pip_install("swebench", "tenacity")
+swebench_image = modal.Image.debian_slim().pip_install("swingarena", "tenacity")
 
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     APPLY_PATCH_FAIL,
     APPLY_PATCH_PASS,
     RUN_EVALUATION_LOG_DIR,
 )
-from swebench.harness.grading import get_eval_report
-from swebench.harness.test_spec.test_spec import make_test_spec, TestSpec
+from swingarena.harness.grading import get_eval_report
+from swingarena.harness.test_spec.test_spec import make_test_spec, TestSpec
 
 
 @dataclass

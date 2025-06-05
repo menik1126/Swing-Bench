@@ -42,7 +42,7 @@ def main():
 
 if __name__ == "__main__":
     """
-    python swebench/prepare/swing_clone_repos.py \
+    python swingarena/prepare/swing_clone_repos.py \
         --dataset_path /home/mnt/wdxu/github/Swing-Dataset/Swing-Rust \
         --repo_root_dir ./testbed
     """

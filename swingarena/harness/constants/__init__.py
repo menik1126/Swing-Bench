@@ -1,6 +1,6 @@
-from swebench.harness.constants.constants import *
-from swebench.harness.constants.javascript import *
-from swebench.harness.constants.python import *
+from swingarena.harness.constants.constants import *
+from swingarena.harness.constants.javascript import *
+from swingarena.harness.constants.python import *
 
 MAP_REPO_VERSION_TO_SPECS = {
     **MAP_REPO_VERSION_TO_SPECS_JS,

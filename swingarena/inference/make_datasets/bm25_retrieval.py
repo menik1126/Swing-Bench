@@ -14,7 +14,7 @@ from pathlib import Path
 from tqdm.auto import tqdm
 from argparse import ArgumentParser
 
-from swebench.inference.make_datasets.utils import list_files, string_to_bool
+from swingarena.inference.make_datasets.utils import list_files, string_to_bool
 
 import logging
 

@@ -6,7 +6,7 @@ export DATASET_NAME=princeton-nlp/SWE-bench_Lite
 export SPLIT=test
 export MAX_WORKERS=4
 export RUN_ID=some-random-ID
-python -m swebench.harness.run_evaluation \
+python -m swingarena.harness.run_evaluation \
     --dataset_name $DATASET_NAME \
     --split $SPLIT \
     --predictions_path gold \

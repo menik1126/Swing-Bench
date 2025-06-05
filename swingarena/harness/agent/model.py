@@ -118,8 +118,8 @@ class AgentProxy:
 
 if __name__ == "__main__":
     import swing_utils
-    from swebench.harness.agent.retriever import BM25DiskRetriever
-    from swebench.harness.agent.prompt import GENERATE_PATCH_SYSTEM_MESSAGE, GENERATE_PATCH_TEMPLATE
+    from swingarena.harness.agent.retriever import BM25DiskRetriever
+    from swingarena.harness.agent.prompt import GENERATE_PATCH_SYSTEM_MESSAGE, GENERATE_PATCH_TEMPLATE
 
     retriever = BM25DiskRetriever(index_dir="/mnt/Data/wdxu/github/Swing-Bench/tmpdata/indexes")
     dataset_jsonl_path = '/mnt/Data/wdxu/github/Swing-Bench/tmpdata/dataset.json'

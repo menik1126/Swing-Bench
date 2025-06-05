@@ -15,7 +15,7 @@ Here's an example of how to call the script to create a dataset with `style-3` p
 
 ```bash
 export GITHUB_TOKEN=<your token>
-python -m swebench.inference.make_datasets.create_text_dataset \
+python -m swingarena.inference.make_datasets.create_text_dataset \
     --dataset_name_or_path princeton-nlp/SWE-bench \
     --output_dir ./base_datasets --prompt_style style-3 \
     --file_source oracle
@@ -38,7 +38,7 @@ This script is used to tokenize a text dataset with a given tokenizer. You can c
 Here's an example of how to call the script to tokenize a dataset with the `llama` tokenizer:
 
 ```bash
-python -m swebench.inference.make_datasets.tokenize_dataset \
+python -m swingarena.inference.make_datasets.tokenize_dataset \
     --dataset_name_or_path ./base_datasets/DATASET_NAME \
     --output_dir ./tokenized_datasets \
     --tokenizer_name llama \
@@ -55,7 +55,7 @@ This script can be used to perform BM25 retrieval on the SWE-bench dataset. It c
 Here's an example of how to call the script to perform BM25 retrieval on the `test` split of the SWE-bench dataset:
 
 ```bash
-python -m swebench.inference.make_datasets.bm25_retrieval \
+python -m swingarena.inference.make_datasets.bm25_retrieval \
     --dataset_name_or_path princeton-nlp/SWE-bench \
     --output_dir ./retrieval_results \
     --splits test
@@ -71,7 +71,7 @@ __NOTE__: The script assumes that the `text` field in the dataset specifies file
 Here's an example of how to call the script to evaluate the BM25 retrieval results for a dataset:
 
 ```bash
-python -m swebench.inference.make_datasets.eval_retrieval \
+python -m swingarena.inference.make_datasets.eval_retrieval \
     --dataset_name_or_path princeton-nlp/SWE-bench_bm25_13K \
     --split test
 ```

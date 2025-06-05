@@ -1,10 +1,10 @@
-from swebench.harness.dockerfiles.javascript import (
+from swingarena.harness.dockerfiles.javascript import (
     _DOCKERFILE_BASE_JS,
     _DOCKERFILE_ENV_JS,
     _DOCKERFILE_INSTANCE_JS,
 )
 
-from swebench.harness.dockerfiles.python import (
+from swingarena.harness.dockerfiles.python import (
     _DOCKERFILE_BASE_PY,
     _DOCKERFILE_ENV_PY,
     _DOCKERFILE_INSTANCE_PY,

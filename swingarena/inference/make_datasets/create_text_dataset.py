@@ -12,11 +12,11 @@ from pathlib import Path
 from datasets import Dataset, DatasetDict, load_dataset, load_from_disk
 from tqdm.auto import tqdm
 
-from swebench.inference.make_datasets.create_instance import (
+from swingarena.inference.make_datasets.create_instance import (
     add_text_inputs,
     PROMPT_FUNCTIONS,
 )
-from swebench.inference.make_datasets.tokenize_dataset import TOKENIZER_FUNCS
+from swingarena.inference.make_datasets.tokenize_dataset import TOKENIZER_FUNCS
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)

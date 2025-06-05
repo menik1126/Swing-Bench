@@ -22,7 +22,7 @@ If you'd like examples, the [swe-bench/experiments](https://github.com/swe-bench
 ## 🔄 Running Evaluation
 Evaluate model predictions on the test split of SWE-bench Lite using the evaluation harness with the following command:
 ```bash
-python -m swebench.harness.run_evaluation \
+python -m swingarena.harness.run_evaluation \
     --dataset_name princeton-nlp/SWE-bench_Lite \
     --predictions_path <path_to_predictions> \
     --max_workers <num_workers> \
@@ -46,7 +46,7 @@ Use [sb-cli](https://github.com/swe-bench/sb-cli/) for SWE-bench Multimodal eval
 ### 🌩️ Evaluation with Modal
 You can also run evaluations entirely on the cloud using [Modal](https://modal.com/) to avoid local setup and resource constraints:
 ```bash
-python -m swebench.harness.run_evaluation \
+python -m swingarena.harness.run_evaluation \
     --predictions_path gold \
     --run_id validate-gold-modal \
     --instance_ids sympy__sympy-20590 \

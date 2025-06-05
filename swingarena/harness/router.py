@@ -606,7 +606,7 @@ if __name__ == '__main__':
     #         print(each, result[each])
     # exit()
 
-    from swebench.harness.utils import PortPool
+    from swingarena.harness.utils import PortPool
     port_pool = PortPool([i for i in range(50505, 52505)])
 
     # Comment(wdxu): fake data for test only.

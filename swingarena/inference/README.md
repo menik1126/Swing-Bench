@@ -23,7 +23,7 @@ This python script is designed to run inference on a dataset using either the Op
 For instance, to run this script on SWE-bench with the ``Oracle`` context and Anthropic's Claude 2 model, you can run the following command:
 ```bash
 export ANTHROPIC_API_KEY=<your key>
-python -m swebench.inference.run_api --dataset_name_or_path princeton-nlp/SWE-bench_oracle --model_name_or_path claude-2 --output_dir ./outputs
+python -m swingarena.inference.run_api --dataset_name_or_path princeton-nlp/SWE-bench_oracle --model_name_or_path claude-2 --output_dir ./outputs
 ```
 
 You can also specify further options:
@@ -41,7 +41,7 @@ This script is similar to `run_api.py`, but it is designed to run inference usin
 
 For instance, to run this script on SWE-bench with the ``Oracle`` context and SWE-Llama, you can run the following command:
 ```bash
-python -m swebench.inference.run_llama \
+python -m swingarena.inference.run_llama \
     --dataset_path princeton-nlp/SWE-bench_oracle \
     --model_name_or_path princeton-nlp/SWE-Llama-13b \
     --output_dir ./outputs \
@@ -64,6 +64,6 @@ Then run `run_live.py` to try solving a new issue. For example, you can try solv
 
 ```bash
 export OPENAI_API_KEY=<your key>
-python -m swebench.inference.run_live --model_name gpt-3.5-turbo-1106 \
+python -m swingarena.inference.run_live --model_name gpt-3.5-turbo-1106 \
     --issue_url https://github.com/huggingface/transformers/issues/26706 
 ```

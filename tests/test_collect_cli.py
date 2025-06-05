@@ -2,7 +2,7 @@ import subprocess
 
 
 def test_collect_smoke_test():
-    cmd = ["python", "-m", "swebench.collect.print_pulls", "--help"]
+    cmd = ["python", "-m", "swingarena.collect.print_pulls", "--help"]
     result = subprocess.run(cmd, capture_output=True)
     print(result.stdout)
     print(result.stderr)
@@ -13,7 +13,7 @@ def test_collect_one(tmp_path):
     cmd = [
         "python",
         "-m",
-        "swebench.collect.print_pulls",
+        "swingarena.collect.print_pulls",
         "pvlib/pvlib-python",
         str(tmp_path / "out.txt"),
         "--max_pulls",
@@ -30,7 +30,7 @@ def test_collect_ds(tmp_path):
     cmd = [
         "python",
         "-m",
-        "swebench.collect.build_dataset",
+        "swingarena.collect.build_dataset",
         "tests/test_data/pvlib.jsonl",
         str(tmp_path / "out.jsonl"),
     ]

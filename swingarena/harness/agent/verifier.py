@@ -13,23 +13,23 @@ from abc import abstractmethod
 from datetime import datetime
 import subprocess
 from uuid import uuid4
-from swebench.harness.constants.swing_constants import SwingbenchInstance
-from swebench.harness.router import CIToolBase
-from swebench.harness.router import EVAL_HANDLER
-from swebench.harness.agent.model import AgentProxy
-from swebench.harness.agent.utils import TempDirectoryManager
+from swingarena.harness.constants.swing_constants import SwingbenchInstance
+from swingarena.harness.router import CIToolBase
+from swingarena.harness.router import EVAL_HANDLER
+from swingarena.harness.agent.model import AgentProxy
+from swingarena.harness.agent.utils import TempDirectoryManager
 import shutil
 import tempfile
 # 强制设置临时目录
 tempfile.tempdir = temp_dir
 
-from swebench.harness.agent.editor import generate_git_diff_batch
-from swebench.harness.agent.retriever import Retriever
-from swebench.harness.agent.editor import CodeEditorBase
-from swebench.harness.utils import get_available_port_pool
-from swebench.harness.swing_utils import merge_diffs
+from swingarena.harness.agent.editor import generate_git_diff_batch
+from swingarena.harness.agent.retriever import Retriever
+from swingarena.harness.agent.editor import CodeEditorBase
+from swingarena.harness.utils import get_available_port_pool
+from swingarena.harness.swing_utils import merge_diffs
 
-from swebench.harness.agent.swing_chunker import CodeChunker, CodeReranker
+from swingarena.harness.agent.swing_chunker import CodeChunker, CodeReranker
 
 class Verifier:
     @abstractmethod
@@ -469,10 +469,10 @@ class TestVerifier(Verifier):
 
 
 if __name__ == "__main__":
-    from swebench.harness.swing_utils import load_swingbench_dataset
-    from swebench.harness.agent.retriever import BM25DiskRetriever
-    from swebench.harness.agent.editor import RawDataCodeEditor
-    from swebench.harness.agent.model import AgentProxy
+    from swingarena.harness.swing_utils import load_swingbench_dataset
+    from swingarena.harness.agent.retriever import BM25DiskRetriever
+    from swingarena.harness.agent.editor import RawDataCodeEditor
+    from swingarena.harness.agent.model import AgentProxy
     import json
     
     SWING_DEBUG_GENERATE_DRYRUN = False
@@ -553,5 +553,5 @@ if __name__ == "__main__":
         print('patch with test verify result: ', result)
 
     else:
-        import swebench.harness.agent.verifier_test_patch as test_patch
+        import swingarena.harness.agent.verifier_test_patch as test_patch
         patch = test_patch.patch

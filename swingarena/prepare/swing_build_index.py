@@ -265,7 +265,7 @@ def main():
 
 if __name__ == "__main__":
     """
-    python swebench/prepare/swing_build_index.py \
+    python swingarena/prepare/swing_build_index.py \
         --dataset_path /mnt/Data/wdxu/github/SwingBench \
         --repo_root_dir ./testbed \
         --output_dir tmpdata/indexes \

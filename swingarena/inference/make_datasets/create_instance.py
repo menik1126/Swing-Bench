@@ -8,8 +8,8 @@ from tempfile import TemporaryDirectory
 import unidiff
 from tqdm.auto import tqdm
 
-from swebench.inference.make_datasets.tokenize_dataset import TOKENIZER_FUNCS
-from swebench.inference.make_datasets.utils import (
+from swingarena.inference.make_datasets.tokenize_dataset import TOKENIZER_FUNCS
+from swingarena.inference.make_datasets.utils import (
     AutoContextManager,
     ingest_directory_contents,
 )
