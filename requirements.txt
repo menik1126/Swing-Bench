@@ -7,3 +7,8 @@ accelerate
 evaluate
 xopen
 python-dotenv
+tree-sitter==0.24.0
+tree-sitter-javascript==0.23.1
+tree-sitter-python==0.23.6
+tree-sitter-rust==0.21.1
+tree-sitter-typescript==0.23.2
