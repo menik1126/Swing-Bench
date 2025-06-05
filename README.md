@@ -1,19 +1,19 @@
 <p align="center">
   <a href="https://swebench.com">
-    <img src="assets/figures/swellama_banner.svg" style="height: 10em" alt="Kawi the SWE-Llama" />
+    <img src="figures_swing/github_logo_pot.png" style="height: 10em" alt="Kawi the SWE-Llama" />
   </a>
 </p>
 
 <div align="center">
 
- | [日本語](docs/README_JP.md) | [English](https://github.com/princeton-nlp/SWE-bench) | [中文简体](docs/README_CN.md) | [中文繁體](docs/README_TW.md) |
+ [English](https://github.com/menik1126/Swing-Bench/) 
 
 </div>
 
 
----
+
 <p align="center">
-Code and data for our ICLR 2024 paper <a href="http://swe-bench.github.io/paper.pdf">SWE-bench: Can Language Models Resolve Real-World GitHub Issues?</a>
+Code and data for our paper <a href="https://arxiv.org/abs/2505.23932">SwingArena: Competitive Programming Arena for Long-context GitHub Issue Solving</a>
     </br>
     </br>
     <a href="https://www.python.org/">
@@ -27,25 +27,22 @@ Code and data for our ICLR 2024 paper <a href="http://swe-bench.github.io/paper.
     </a>
 </p>
 
-Please refer our [website](http://swe-bench.github.io) for the public leaderboard and the [change log](https://github.com/princeton-nlp/SWE-bench/blob/main/CHANGELOG.md) for information on the latest updates to the SWE-bench benchmark.
+Please refer our [website](https://swing-bench.github.io/) for the public leaderboard.
 
 ## 📰 News
-* **[Jan. 11, 2025]**: Thanks to [Modal](https://modal.com/), we've added a new evaluation mode that runs evaluations entirely on the cloud! See 🚀 Set Up on this page for more details.
-* **[Aug. 13, 2024]**: Introducing *SWE-bench Verified*! Part 2 of our collaboration with [OpenAI Preparedness](https://openai.com/preparedness/). A subset of 500 problems that real software engineers have confirmed are solvable. Check out more in the [report](https://openai.com/index/introducing-swe-bench-verified/)!
-* **[Jun. 27, 2024]**: We have an exciting update for SWE-bench - with support from [OpenAI's Preparedness](https://openai.com/preparedness/) team: We're moving to a fully containerized evaluation harness using Docker for more reproducible evaluations! Read more in our [report](https://github.com/princeton-nlp/SWE-bench/blob/main/docs/20240627_docker/README.md).
-* **[Apr. 2, 2024]**: We have released [SWE-agent](https://github.com/princeton-nlp/SWE-agent), which sets the state-of-the-art on the full SWE-bench test set! ([Tweet 🔗](https://twitter.com/jyangballin/status/1775114444370051582))
-* **[Jan. 16, 2024]**: SWE-bench has been accepted to ICLR 2024 as an oral presentation! ([OpenReview 🔗](https://openreview.net/forum?id=VTF8yNQM66))
+
+* **[June. 5, 2024]**: We have released [SwingArena](https://arxiv.org/abs/2505.23932)! 
 
 ## 👋 Overview
-SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub.
-Given a *codebase* and an *issue*, a language model is tasked with generating a *patch* that resolves the described problem.
+SwingArena is a realistic, *CI-driven* evaluation framework for LLMs that simulates real-world software development by pairing models as patch *submitters* and *reviewers*, enhanced with *retrieval-augmented code generation* for multi-language support and long-context handling.
 
-<img src="assets/figures/teaser.png">
+<img src="figures_swing/main_pot.png">
 
-To access SWE-bench, copy and run the following code:
-```python
-from datasets import load_dataset
-swebench = load_dataset('princeton-nlp/SWE-bench', split='test')
+To access SwingArena, copy and run the following code:
+```from datasets import load_dataset
+languages = ['rust', 'cpp', 'python', 'go', 'java', 'javascript', 'php']
+for lang in languages:
+    swingbench[lang] = load_dataset('SwingBench/SwingBench-data', split=lang)
 ```
 
 ## 🚀 Set Up
@@ -55,8 +52,8 @@ If you're setting up on Linux, we recommend seeing the [post-installation steps]
 
 Finally, to build SWE-bench from source, follow these steps:
 ```bash
-git clone git@github.com:princeton-nlp/SWE-bench.git
-cd SWE-bench
+git clone https://github.com/menik1126/Swing-Bench.git
+cd Swing-Bench
 pip install -e .
 ```
 
