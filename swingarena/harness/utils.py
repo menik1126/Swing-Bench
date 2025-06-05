@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 from tqdm import tqdm
 from typing import cast
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     SWEbenchInstance,
     KEY_INSTANCE_ID,
     KEY_MODEL,

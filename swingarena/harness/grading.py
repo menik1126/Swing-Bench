@@ -1,6 +1,6 @@
 from typing import Any
 
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     APPLY_PATCH_FAIL,
     END_TEST_OUTPUT,
     FAIL_TO_FAIL,
@@ -18,8 +18,8 @@ from swebench.harness.constants import (
     ResolvedStatus,
     TestStatus,
 )
-from swebench.harness.test_spec.test_spec import TestSpec
-from swebench.harness.log_parsers import MAP_REPO_TO_PARSER, get_eval_type
+from swingarena.harness.test_spec.test_spec import TestSpec
+from swingarena.harness.log_parsers import MAP_REPO_TO_PARSER, get_eval_type
 
 
 # MARK: Utility functions

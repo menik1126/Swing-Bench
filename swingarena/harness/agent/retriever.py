@@ -1,7 +1,7 @@
 from abc import abstractmethod
 from pathlib import Path
-from swebench.harness.constants.swing_constants import SwingbenchInstance
-from swebench.harness.agent.swing_search_index import search_instance
+from swingarena.harness.constants.swing_constants import SwingbenchInstance
+from swingarena.harness.agent.swing_search_index import search_instance
 
 
 class Retriever:

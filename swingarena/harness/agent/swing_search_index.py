@@ -8,8 +8,8 @@ import subprocess
 from argparse import ArgumentParser
 from pyserini.search.lucene import LuceneSearcher
 from tqdm import tqdm
-from swebench.harness.constants.swing_constants import SwingbenchInstance
-from swebench.prepare.swing_build_index import build_repo_index
+from swingarena.harness.constants.swing_constants import SwingbenchInstance
+from swingarena.prepare.swing_build_index import build_repo_index
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)

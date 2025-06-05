@@ -13,7 +13,7 @@ from openai import OpenAI
 from typing import Optional
 from tqdm import tqdm
 
-from swebench.harness.agent.swing_chunker import CodeChunker, CodeReranker
+from swingarena.harness.agent.swing_chunker import CodeChunker, CodeReranker
 
 
 parquet_dir = Path("../../dataset/swing-bench/")

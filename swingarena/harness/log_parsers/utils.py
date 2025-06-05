@@ -1,6 +1,6 @@
 import re
-from swebench.harness.constants.constants import EvalType, FAIL_ONLY_REPOS
-from swebench.harness.test_spec.test_spec import TestSpec
+from swingarena.harness.constants.constants import EvalType, FAIL_ONLY_REPOS
+from swingarena.harness.test_spec.test_spec import TestSpec
 
 
 def ansi_escape(text: str) -> str:

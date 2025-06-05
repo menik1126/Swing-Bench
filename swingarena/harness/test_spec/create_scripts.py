@@ -1,14 +1,14 @@
-from swebench.harness.test_spec.javascript import (
+from swingarena.harness.test_spec.javascript import (
     make_repo_script_list_js,
     make_env_script_list_js,
     make_eval_script_list_js,
 )
-from swebench.harness.test_spec.python import (
+from swingarena.harness.test_spec.python import (
     make_repo_script_list_py,
     make_env_script_list_py,
     make_eval_script_list_py,
 )
-from swebench.harness.constants import MAP_REPO_TO_EXT
+from swingarena.harness.constants import MAP_REPO_TO_EXT
 
 
 def make_repo_script_list(specs, repo, repo_directory, base_commit, env_name) -> list:

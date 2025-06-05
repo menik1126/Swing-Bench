@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 from tqdm import tqdm
 from typing import cast
-from swebench.harness.constants.swing_constants import SwingbenchInstance
+from swingarena.harness.constants.swing_constants import SwingbenchInstance
 
 from unidiff import PatchSet
 import threading

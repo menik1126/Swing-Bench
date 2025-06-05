@@ -3,7 +3,7 @@ import posixpath
 import re
 import requests
 
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     SWEbenchInstance,
     MAP_REPO_TO_ENV_YML_PATHS,
     MAP_REPO_TO_INSTALL,
@@ -14,7 +14,7 @@ from swebench.harness.constants import (
     START_TEST_OUTPUT,
     END_TEST_OUTPUT,
 )
-from swebench.harness.utils import get_modified_files
+from swingarena.harness.utils import get_modified_files
 from functools import cache
 
 HEADERS = {

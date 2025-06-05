@@ -7,17 +7,17 @@ import subprocess
 from copy import deepcopy
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 from typing import List, Tuple
-from swebench.harness.constants.swing_constants import SwingbenchInstance
-from swebench.harness.swing_utils import (
+from swingarena.harness.constants.swing_constants import SwingbenchInstance
+from swingarena.harness.swing_utils import (
     load_swingbench_dataset,
     load_swingbench_dataset_json,
 )
 
-from swebench.harness.agent.verifier import PatchVerifier, TestVerifier, PatchGenerator, TestGenerator
-from swebench.harness.agent.editor import CodeEditorBase, RawDataCodeEditor
-from swebench.harness.agent.retriever import BM25DiskRetriever, Retriever
+from swingarena.harness.agent.verifier import PatchVerifier, TestVerifier, PatchGenerator, TestGenerator
+from swingarena.harness.agent.editor import CodeEditorBase, RawDataCodeEditor
+from swingarena.harness.agent.retriever import BM25DiskRetriever, Retriever
 
-from swebench.harness.swing_utils import merge_diffs
+from swingarena.harness.swing_utils import merge_diffs
 
 DEBUG_ONE_SHOT = False
 

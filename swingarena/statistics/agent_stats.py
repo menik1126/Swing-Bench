@@ -1,10 +1,10 @@
 import argparse
 import os
 
-from swebench.harness.agent.retriever import BM25DiskRetriever
-from swebench.harness.swing_utils import load_swingbench_dataset
-from swebench.harness.agent.verifier import PatchGenerator, TestGenerator
-from swebench.harness.agent.editor import RawDataCodeEditor
+from swingarena.harness.agent.retriever import BM25DiskRetriever
+from swingarena.harness.swing_utils import load_swingbench_dataset
+from swingarena.harness.agent.verifier import PatchGenerator, TestGenerator
+from swingarena.harness.agent.editor import RawDataCodeEditor
 
 DEBUG_ONE_SHOT = True
 

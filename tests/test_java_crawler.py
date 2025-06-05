@@ -4,7 +4,7 @@ import os
 # Add the project root to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.crawl.metainfo import JavaMavenCrawler
+from swingarena.crawl.metainfo import JavaMavenCrawler
 
 def test_java_crawler():
     print("Starting Java crawler test...")

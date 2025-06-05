@@ -13,9 +13,9 @@ import traceback
 
 from dataclasses import dataclass
 from pathlib import Path
-from swebench.harness.docker_build import setup_logger
-from swebench.harness.reporting import make_run_report
-from swebench.harness.utils import EvaluationError
+from swingarena.harness.docker_build import setup_logger
+from swingarena.harness.reporting import make_run_report
+from swingarena.harness.utils import EvaluationError
 from typing import cast
 
 SANDBOX_ENTRYPOINT = "run_evaluation_modal_entrypoint"

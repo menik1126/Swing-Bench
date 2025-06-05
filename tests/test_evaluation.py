@@ -2,13 +2,13 @@ import collections
 import json
 import docker
 
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     FAIL_TO_PASS,
     PASS_TO_PASS,
     KEY_INSTANCE_ID,
     KEY_MODEL,
 )
-from swebench.harness.run_evaluation import make_run_report
+from swingarena.harness.run_evaluation import make_run_report
 
 TEST_INSTANCE = collections.defaultdict(lambda: "test")
 TEST_INSTANCE[PASS_TO_PASS] = "[]"

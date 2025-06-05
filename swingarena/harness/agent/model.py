@@ -1,6 +1,6 @@
-from swebench.harness.agent.prompt import Prompt
-from swebench.harness.agent.retriever import Retriever
-from swebench.harness.constants.swing_constants import SwingbenchInstance
+from swingarena.harness.agent.prompt import Prompt
+from swingarena.harness.agent.retriever import Retriever
+from swingarena.harness.constants.swing_constants import SwingbenchInstance
 
 from openai import OpenAI
 

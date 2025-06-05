@@ -2,9 +2,9 @@ import logging
 import json
 import re
 
-from swebench.harness.constants.swing_constants import SwingbenchInstance
-from swebench.harness.agent.model import AgentProxy
-from swebench.harness.agent.prompt import (
+from swingarena.harness.constants.swing_constants import SwingbenchInstance
+from swingarena.harness.agent.model import AgentProxy
+from swingarena.harness.agent.prompt import (
     TEST_AGENT_PROBLEM_AND_TEST,
     TEST_AGENT_TEST_ONLY, 
     TEST_AGENT_PROBLEM_TEST_AND_GOLDEN,

@@ -4,7 +4,7 @@ import os
 # Add the project root to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.crawl.metainfo import CPlusPlusConanCrawler
+from swingarena.crawl.metainfo import CPlusPlusConanCrawler
 
 def test_cpp_crawler():
     print("Starting C++ crawler test...")

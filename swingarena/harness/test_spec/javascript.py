@@ -2,12 +2,12 @@ import json
 import re
 
 from pathlib import Path
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     END_TEST_OUTPUT,
     MAP_REPO_VERSION_TO_SPECS,
     START_TEST_OUTPUT,
 )
-from swebench.harness.utils import get_modified_files
+from swingarena.harness.utils import get_modified_files
 from unidiff import PatchSet
 
 

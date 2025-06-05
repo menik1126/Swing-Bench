@@ -5,7 +5,7 @@ import platform
 from dataclasses import dataclass
 from typing import Any, Union, cast
 
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     DEFAULT_DOCKER_SPECS,
     KEY_INSTANCE_ID,
     LATEST,
@@ -13,13 +13,13 @@ from swebench.harness.constants import (
     MAP_REPO_VERSION_TO_SPECS,
     USE_X86,
 )
-from swebench.harness.constants.constants import SWEbenchInstance
-from swebench.harness.dockerfiles import (
+from swingarena.harness.constants.constants import SWEbenchInstance
+from swingarena.harness.dockerfiles import (
     get_dockerfile_base,
     get_dockerfile_env,
     get_dockerfile_instance,
 )
-from swebench.harness.test_spec.create_scripts import (
+from swingarena.harness.test_spec.create_scripts import (
     make_repo_script_list,
     make_env_script_list,
     make_eval_script_list,

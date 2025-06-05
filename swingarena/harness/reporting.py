@@ -3,15 +3,15 @@ import json
 from pathlib import Path
 from typing import Optional
 
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     KEY_INSTANCE_ID,
     KEY_MODEL,
     KEY_PREDICTION,
     RUN_EVALUATION_LOG_DIR,
     LOG_REPORT,
 )
-from swebench.harness.docker_utils import list_images
-from swebench.harness.test_spec.test_spec import make_test_spec
+from swingarena.harness.docker_utils import list_images
+from swingarena.harness.test_spec.test_spec import make_test_spec
 
 
 def make_run_report(

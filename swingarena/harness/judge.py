@@ -1,7 +1,7 @@
 import json
 import argparse
 
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     FAIL_TO_FAIL,
     FAIL_TO_PASS,
     PASS_TO_FAIL,

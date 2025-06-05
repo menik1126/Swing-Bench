@@ -1,7 +1,7 @@
-import swebench.harness.agent as agent
+import swingarena.harness.agent as agent
 import swing_utils
 
-from swebench.harness.router import HANDLER
+from swingarena.harness.router import HANDLER
 
 def test_patch_verifier(patch_response_list):
     dataset_jsonl_path = '/mnt/Data/wdxu/github/Swing-Bench/tmpdata/dataset.json'

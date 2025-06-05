@@ -4,9 +4,9 @@ import shutil
 import subprocess
 import json
 from pathlib import Path
-from swebench.harness.agent import AgentProxy, PatchVerifier, TestVerifier, ModelInfo, BM25DiskRetriever
-from swebench.harness.router import CargoCITool, HANDLER
-from swebench.harness.constants.swing_constants import SwingbenchInstance, AgentState
+from swingarena.harness.agent import AgentProxy, PatchVerifier, TestVerifier, ModelInfo, BM25DiskRetriever
+from swingarena.harness.router import CargoCITool, HANDLER
+from swingarena.harness.constants.swing_constants import SwingbenchInstance, AgentState
 
 def create_test_rust_project():
     """Create a test Rust project with a bug and its fix."""

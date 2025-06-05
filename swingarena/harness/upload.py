@@ -1,6 +1,6 @@
 from dataclasses import asdict
 from datasets import Dataset, DatasetDict
-from swebench.harness.constants.swing_constants import SwingbenchInstance
+from swingarena.harness.constants.swing_constants import SwingbenchInstance
 
 def upload_dataclass_list_to_huggingface(
     dataclass_list: list[SwingbenchInstance],

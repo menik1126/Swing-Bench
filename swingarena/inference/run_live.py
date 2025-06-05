@@ -16,25 +16,25 @@ import re
 import time
 from datetime import datetime
 from tqdm.auto import tqdm
-from swebench.inference.make_datasets.utils import (
+from swingarena.inference.make_datasets.utils import (
     ContextManager,
     string_to_bool,
     extract_diff,
     extract_minimal_patch,
 )
-from swebench.inference.make_datasets.create_instance import (
+from swingarena.inference.make_datasets.create_instance import (
     PROMPT_FUNCTIONS,
     TOKENIZER_FUNCS,
     make_code_text,
     ingest_files,
 )
-from swebench.inference.make_datasets.bm25_retrieval import (
+from swingarena.inference.make_datasets.bm25_retrieval import (
     make_index,
     clone_repo,
     search,
     DOCUMENT_ENCODING_FUNCTIONS,
 )
-from swebench.inference.run_api import call_chat, call_anthropic
+from swingarena.inference.run_api import call_chat, call_anthropic
 import logging
 from argparse import ArgumentParser
 

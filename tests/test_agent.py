@@ -1,9 +1,9 @@
 import os
 import pytest
 from pathlib import Path
-from swebench.harness.agent import create_patch_from_diff, parse_testcase, PatchVerifier, TestVerifier
-from swebench.harness.router import CargoCITool
-from swebench.harness.constants.swing_constants import SwingbenchInstance
+from swingarena.harness.agent import create_patch_from_diff, parse_testcase, PatchVerifier, TestVerifier
+from swingarena.harness.router import CargoCITool
+from swingarena.harness.constants.swing_constants import SwingbenchInstance
 
 def test_create_patch_from_diff(tmp_path):
     """Test creating patch from two versions of code."""

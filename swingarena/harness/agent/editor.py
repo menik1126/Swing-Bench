@@ -6,7 +6,7 @@ import subprocess
 import copy
 from openai import OpenAI
 from abc import abstractmethod
-from swebench.harness.agent.prompt import swing_patch_retry_prompt, swing_test_retry_prompt, swing_patch_function, swing_test_function, swing_patch_system_prompt, swing_test_system_prompt
+from swingarena.harness.agent.prompt import swing_patch_retry_prompt, swing_test_retry_prompt, swing_patch_function, swing_test_function, swing_patch_system_prompt, swing_test_system_prompt
 
 from transformers import AutoTokenizer
 from json_repair import repair_json

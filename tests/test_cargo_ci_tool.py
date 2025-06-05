@@ -3,7 +3,7 @@ import tempfile
 import shutil
 import subprocess
 import json
-from swebench.harness.router import CargoCITool
+from swingarena.harness.router import CargoCITool
 
 def create_test_rust_project():
     temp_dir = tempfile.mkdtemp()

@@ -1,10 +1,10 @@
 import re
 
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     TestStatus,
 )
-from swebench.harness.test_spec.test_spec import TestSpec
-from swebench.harness.log_parsers.utils import ansi_escape
+from swingarena.harness.test_spec.test_spec import TestSpec
+from swingarena.harness.log_parsers.utils import ansi_escape
 
 
 def parse_log_calypso(log: str, test_spec: TestSpec) -> dict[str, str]:

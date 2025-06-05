@@ -17,12 +17,12 @@ if platform.system() == "Linux":
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 from pathlib import Path
 
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     KEY_INSTANCE_ID,
 )
 
-from swebench.harness.router import ActCITool, CargoCITool
-from swebench.harness.utils import (
+from swingarena.harness.router import ActCITool, CargoCITool
+from swingarena.harness.utils import (
     load_swebench_dataset,
     get_predictions_from_file,
     PortPool,

@@ -4,7 +4,7 @@ import os
 # Add the project root to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.crawl.metainfo import PHPPackageCrawler
+from swingarena.crawl.metainfo import PHPPackageCrawler
 
 def test_php_crawler():
     print("Starting PHP crawler test...")

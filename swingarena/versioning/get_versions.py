@@ -9,12 +9,12 @@ import subprocess
 
 from multiprocessing import Pool, Manager
 
-from swebench.versioning.constants import (
+from swingarena.versioning.constants import (
     SWE_BENCH_URL_RAW,
     MAP_REPO_TO_VERSION_PATHS,
     MAP_REPO_TO_VERSION_PATTERNS,
 )
-from swebench.versioning.utils import get_instances, split_instances
+from swingarena.versioning.utils import get_instances, split_instances
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"

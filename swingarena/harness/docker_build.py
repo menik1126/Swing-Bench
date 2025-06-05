@@ -9,15 +9,15 @@ import traceback
 
 from pathlib import Path
 
-from swebench.harness.constants import (
+from swingarena.harness.constants import (
     BASE_IMAGE_BUILD_DIR,
     DOCKER_USER,
     ENV_IMAGE_BUILD_DIR,
     INSTANCE_IMAGE_BUILD_DIR,
     UTF8,
 )
-from swebench.harness.docker_utils import cleanup_container, remove_image
-from swebench.harness.test_spec.test_spec import (
+from swingarena.harness.docker_utils import cleanup_container, remove_image
+from swingarena.harness.test_spec.test_spec import (
     get_test_specs_from_dataset,
     make_test_spec,
     TestSpec,
