@@ -6,7 +6,7 @@ import logging
 import os
 from typing import Optional
 
-from swebench.collect.utils import (
+from swingarena.collect.utils import (
     extract_patches,
     extract_problem_statement_and_hints,
     extract_ci_name_list,

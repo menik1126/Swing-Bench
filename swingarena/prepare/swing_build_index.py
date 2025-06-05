@@ -10,7 +10,7 @@ from git import Repo
 from tqdm import tqdm
 import shutil
 
-from swebench.harness.swing_utils import load_swingbench_dataset
+from swingarena.harness.swing_utils import load_swingbench_dataset
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)

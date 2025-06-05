@@ -5,7 +5,7 @@
 import re
 import os
 
-from swebench.harness.swing_utils import load_swingbench_dataset_json, load_swingbench_dataset
+from swingarena.harness.swing_utils import load_swingbench_dataset_json, load_swingbench_dataset
 
 ignored_instance_id = ['nvidia-holoscan__holohub-419',
 'electron__electron-46279',

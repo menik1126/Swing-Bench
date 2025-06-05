@@ -11,7 +11,7 @@ import os
 
 from datetime import datetime
 from fastcore.xtras import obj2dict
-from swebench.collect.utils import Repo
+from swingarena.collect.utils import Repo
 from typing import Optional
 
 logging.basicConfig(
