@@ -121,17 +121,143 @@ def install_docker():
         return True
     
     system = platform.system().lower()
-    print(f"❌ Docker not found. Please install Docker for {system}:")
+    print(f"🐳 Docker not found. Attempting to install Docker for {system}...")
     
-    if system == "linux":
-        print("   Ubuntu/Debian: https://docs.docker.com/engine/install/ubuntu/")
-        print("   CentOS/RHEL: https://docs.docker.com/engine/install/centos/")
-    elif system == "darwin":
-        print("   macOS: https://docs.docker.com/desktop/mac/install/")
-    elif system == "windows":
-        print("   Windows: https://docs.docker.com/desktop/windows/install/")
-    
-    return False
+    try:
+        if system == "linux":
+            # For Ubuntu/Debian systems
+            if os.path.exists("/etc/debian_version"):
+                print("📥 Installing Docker on Debian/Ubuntu...")
+                commands = [
+                    "sudo apt-get update",
+                    "sudo apt-get install -y ca-certificates curl gnupg",
+                    "sudo install -m 0755 -d /etc/apt/keyrings",
+                    "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg",
+                    "sudo chmod a+r /etc/apt/keyrings/docker.gpg",
+                    'echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null',
+                    "sudo apt-get update",
+                    "sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin"
+                ]
+                
+                for cmd in commands:
+                    subprocess.run(cmd, shell=True, check=True)
+                
+                # Add user to docker group
+                subprocess.run(f"sudo usermod -aG docker {os.getenv('USER')}", shell=True, check=True)
+                
+                # Start and enable Docker service
+                subprocess.run("sudo systemctl start docker", shell=True, check=True)
+                subprocess.run("sudo systemctl enable docker", shell=True, check=True)
+                
+                print("✅ Docker installed successfully on Debian/Ubuntu")
+                print("⚠️  Please log out and back in for docker group changes to take effect")
+                return True
+                
+            # For CentOS/RHEL systems
+            elif os.path.exists("/etc/redhat-release"):
+                print("📥 Installing Docker on CentOS/RHEL...")
+                commands = [
+                    "sudo yum install -y yum-utils",
+                    "sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
+                    "sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin",
+                    "sudo systemctl start docker",
+                    "sudo systemctl enable docker"
+                ]
+                
+                for cmd in commands:
+                    subprocess.run(cmd, shell=True, check=True)
+                
+                subprocess.run(f"sudo usermod -aG docker {os.getenv('USER')}", shell=True, check=True)
+                print("✅ Docker installed successfully on CentOS/RHEL")
+                print("⚠️  Please log out and back in for docker group changes to take effect")
+                return True
+                
+            # For Arch Linux
+            elif os.path.exists("/etc/arch-release"):
+                print("📥 Installing Docker on Arch Linux...")
+                commands = [
+                    "sudo pacman -Syu --noconfirm",
+                    "sudo pacman -S --noconfirm docker docker-compose",
+                    "sudo systemctl start docker",
+                    "sudo systemctl enable docker"
+                ]
+                
+                for cmd in commands:
+                    subprocess.run(cmd, shell=True, check=True)
+                
+                subprocess.run(f"sudo usermod -aG docker {os.getenv('USER')}", shell=True, check=True)
+                print("✅ Docker installed successfully on Arch Linux")
+                print("⚠️  Please log out and back in for docker group changes to take effect")
+                return True
+                
+            # For other Linux distributions, try generic installation
+            else:
+                print("📥 Attempting generic Docker installation for Linux...")
+                # Try the convenience script
+                subprocess.run("curl -fsSL https://get.docker.com -o get-docker.sh", shell=True, check=True)
+                subprocess.run("sudo sh get-docker.sh", shell=True, check=True)
+                subprocess.run("rm get-docker.sh", shell=True, check=True)
+                
+                # Add user to docker group and start service
+                subprocess.run(f"sudo usermod -aG docker {os.getenv('USER')}", shell=True, check=True)
+                subprocess.run("sudo systemctl start docker", shell=True, check=True)
+                subprocess.run("sudo systemctl enable docker", shell=True, check=True)
+                
+                print("✅ Docker installed successfully using convenience script")
+                print("⚠️  Please log out and back in for docker group changes to take effect")
+                return True
+                
+        elif system == "darwin":  # macOS
+            if check_command_exists("brew"):
+                print("📥 Installing Docker Desktop via Homebrew...")
+                subprocess.run(["brew", "install", "--cask", "docker"], check=True)
+                print("✅ Docker Desktop installed successfully via Homebrew")
+                print("⚠️  Please start Docker Desktop manually from Applications folder")
+                return True
+            else:
+                print("❌ Homebrew not found. Docker Desktop for macOS cannot be installed automatically")
+                print("   Please download and install Docker Desktop from:")
+                print("   https://docs.docker.com/desktop/mac/install/")
+                return False
+            
+        elif system == "windows":
+            if check_command_exists("choco"):
+                print("📥 Installing Docker Desktop via Chocolatey...")
+                subprocess.run(["choco", "install", "docker-desktop", "-y"], check=True)
+                print("✅ Docker Desktop installed successfully via Chocolatey")
+                print("⚠️  Please restart your computer and start Docker Desktop")
+                return True
+            elif check_command_exists("winget"):
+                print("📥 Installing Docker Desktop via winget...")
+                subprocess.run(["winget", "install", "Docker.DockerDesktop"], check=True)
+                print("✅ Docker Desktop installed successfully via winget")
+                print("⚠️  Please restart your computer and start Docker Desktop")
+                return True
+            else:
+                print("❌ Neither Chocolatey nor winget found.")
+                print("   Docker Desktop for Windows cannot be installed automatically")
+                print("   Please download and install Docker Desktop from:")
+                print("   https://docs.docker.com/desktop/windows/install/")
+                return False
+            
+        else:
+            print(f"❌ Unsupported system: {system}")
+            print("   Please install Docker manually: https://docs.docker.com/get-docker/")
+            return False
+            
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Failed to install Docker: {e}")
+        print(f"   Please install Docker manually for {system}:")
+        if system == "linux":
+            print("   https://docs.docker.com/engine/install/")
+        elif system == "darwin":
+            print("   https://docs.docker.com/desktop/mac/install/")
+        elif system == "windows":
+            print("   https://docs.docker.com/desktop/windows/install/")
+        return False
+    except Exception as e:
+        print(f"❌ Unexpected error installing Docker: {e}")
+        return False
 
 def install_git():
     """Ensure Git is available"""

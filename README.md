@@ -77,21 +77,28 @@ Through this technical architecture, SwingArena provides the industry's closest-
 
 ## 🔨 CI Tools Setup
 
-SwingArena requires CI tools for realistic software development workflow simulation. The primary tool is `act` for GitHub Actions simulation.
+SwingArena requires CI tools for realistic software development workflow simulation. The primary tools are **Docker** (for containerized environments) and **`act`** (for GitHub Actions simulation).
 
 ### Prerequisites
 - **Git** (required for repository operations)
-- **Docker** (required for act to run GitHub Actions)
+- **Docker** (required for act to run GitHub Actions and containerized environments)
 - **sudo/admin privileges** (for system-level tool installation)
 
 ### 🚀 Quick Installation
 
-**Option 1: One-command installation with CI tools**
+**Option 1: One-command installation with CI tools (includes automatic Docker installation)**
 ```bash
 git clone https://github.com/menik1126/Swing-Bench.git
 cd Swing-Bench
 pip install -e ".[ci-tools]"
 ```
+
+This will automatically:
+- ✅ Install all Python dependencies
+- 🐳 Install Docker (on supported Linux distributions)
+- 🔧 Install `act` binary for your system
+- 📦 Install Docker SDK for Python
+- 🔗 Set up pre-commit hooks
 
 **Option 2: Using the dedicated installer script**
 ```bash
@@ -116,8 +123,47 @@ Python yaml: ✅ Installed
 📊 Overall status: ✅ All tools ready
 ```
 
+### 🐳 Docker Installation Details
+
+Our installer supports automatic Docker installation on major Linux distributions:
+
+**Supported Linux Distributions:**
+- **Ubuntu/Debian**: Uses official Docker APT repository
+- **CentOS/RHEL**: Uses official Docker YUM repository  
+- **Arch Linux**: Uses pacman package manager
+- **Other Linux**: Falls back to Docker's convenience script
+
+**macOS**: 
+- Automatic installation via Homebrew (`brew install --cask docker`)
+- Manual download required if Homebrew unavailable
+
+**Windows**:
+- Automatic installation via Chocolatey or winget
+- Manual download required if neither available
+
 ### Manual Installation
 If automatic installation fails, install manually:
+
+**Installing Docker:**
+
+- **Linux (Ubuntu/Debian)**:
+  ```bash
+  curl -fsSL https://get.docker.com -o get-docker.sh
+  sudo sh get-docker.sh
+  sudo usermod -aG docker $USER
+  ```
+
+- **Linux (CentOS/RHEL)**:
+  ```bash
+  sudo yum install -y yum-utils
+  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+  sudo yum install -y docker-ce docker-ce-cli containerd.io
+  sudo systemctl start docker && sudo systemctl enable docker
+  sudo usermod -aG docker $USER
+  ```
+
+- **macOS**: [Download Docker Desktop](https://docs.docker.com/desktop/mac/install/)
+- **Windows**: [Download Docker Desktop](https://docs.docker.com/desktop/windows/install/)
 
 **Installing act (GitHub Actions Local Runner):**
 
