@@ -272,10 +272,11 @@ requirements_txt_deps = read_requirements('requirements.txt')
 all_requirements = base_requirements + requirements_txt_deps
 
 setuptools.setup(
-    name='Swingbench',
+    name='SwingArena',
+    version='0.1.0',
     author='Anonymous',
     author_email='anonymous@anonymous.com',
-    description='The official Swingbench package - a benchmark for evaluating LMs on software engineering',
+    description='The official SwingArena package - a benchmark for evaluating LMs on software engineering',
     keywords='nlp, benchmark, code',
     long_description=long_description,
     long_description_content_type='text/markdown',
