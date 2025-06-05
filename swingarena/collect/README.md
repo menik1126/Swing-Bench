@@ -42,7 +42,7 @@ The data collection and filtering process consists of four main steps:
 
 > SWE-bench's collection pipeline is currently designed to target PyPI packages. We hope to expand SWE-bench to more repositories and languages in the future.
 
-<div align="center">
+<div>
 <img src="../../figures_swing/Data_construct_pot.png">
 </div>
 
