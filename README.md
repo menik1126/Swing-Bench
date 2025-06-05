@@ -75,6 +75,58 @@ The system includes a complete data collection, annotation, and evaluation pipel
 
 Through this technical architecture, SwingArena provides the industry's closest-to-real development environment benchmark platform for evaluating large language models in software engineering domains.
 
+## 🔨 CI Tools Setup
+
+SwingArena requires CI tools for realistic software development workflow simulation. The primary tool is `act` for GitHub Actions simulation.
+
+### Prerequisites
+- **Git** (required for repository operations)
+- **Docker** (required for act to run GitHub Actions)
+- **sudo/admin privileges** (for system-level tool installation)
+
+### 🚀 Quick Installation
+
+**Option 1: One-command installation with CI tools**
+```bash
+git clone https://github.com/menik1126/Swing-Bench.git
+cd Swing-Bench
+pip install -e ".[ci-tools]"
+```
+
+**Option 2: Using the dedicated installer script**
+```bash
+python install_ci_tools.py
+```
+
+**Option 3: Check installation status**
+```bash
+python install_ci_tools.py --check
+```
+
+Expected output after successful installation:
+```
+🔍 Checking CI tools installation status...
+
+act (GitHub Actions): ✅ Installed
+Docker: ✅ Installed  
+Git: ✅ Installed
+Python docker: ✅ Installed
+Python yaml: ✅ Installed
+
+📊 Overall status: ✅ All tools ready
+```
+
+### Manual Installation
+If automatic installation fails, install manually:
+
+**Installing act (GitHub Actions Local Runner):**
+
+- **Linux**: `curl -s https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash`
+- **macOS**: `brew install act` (or use curl method above)
+- **Windows**: `choco install act-cli` or `winget install nektos.act`
+
+For detailed troubleshooting and advanced configuration, see [CI_TOOLS_SETUP.md](CI_TOOLS_SETUP.md).
+
 ## 🚀 Quick Start
 
 To build SwingArena from source, follow these steps:
@@ -106,6 +158,32 @@ This will execute the evaluation harness on Modal's cloud infrastructure, elimin
 
 > [!NOTE]
 > Modal for SwingArena Multimodal is currently experimental and may not be fully supported yet.
+
+### 🥊 Agent Battle Mode
+
+SwingArena's unique agent battle evaluation mode can be used as follows:
+
+```bash
+export CI_TOOL_NAME=act
+python swingarena/harness/agent_battle.py \
+    --ci_tool_name act \
+    --dataset_name SwingBench/SwingBench \
+    --split Rust \
+    --model_lhs "gpt-4" \
+    --model_rhs "claude-3" \
+    --api_key_lhs "your-api-key-1" \
+    --api_key_rhs "your-api-key-2"
+```
+
+Or use the provided script:
+```bash
+# Set environment variables
+export SWING_TESTBED_PATH="/path/to/workdir"
+export SWING_REPOS_DIR_PATH="/path/to/repos" 
+export SWING_INDEXES_PATH="/path/to/indexes"
+
+./start_battle.sh
+```
 
 ## 💽 Usage
 > [!WARNING]
@@ -157,6 +235,24 @@ We've also written the following blog posts on how to use different parts of SWE
 If you'd like to see a post about a particular topic, please let us know via an issue.
 * [Nov 1. 2023] Collecting Evaluation Tasks for SWE-Bench ([🔗](https://github.com/princeton-nlp/SWE-bench/blob/main/assets/collection.md))
 * [Nov 6. 2023] Evaluating on SWE-bench ([🔗](https://github.com/princeton-nlp/SWE-bench/blob/main/assets/evaluation.md))
+
+## 🚨 Troubleshooting
+
+### Common CI Tool Issues
+
+**1. "act: command not found"**
+- Ensure `/usr/local/bin` is in your PATH
+- Reinstall: `python install_ci_tools.py --force`
+
+**2. "Docker daemon not running"**
+- Start Docker service: `sudo systemctl start docker` (Linux)
+- Start Docker Desktop (macOS/Windows)
+
+**3. Permission denied errors**
+- Add user to docker group: `sudo usermod -aG docker $USER`
+- Log out and back in
+
+For detailed troubleshooting, see [CI_TOOLS_SETUP.md](CI_TOOLS_SETUP.md).
 
 ## 💫 Contributions
 We would love to hear from the broader NLP, Machine Learning, and Software Engineering research communities, and we welcome any contributions, pull requests, or issues!
