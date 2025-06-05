@@ -5,7 +5,7 @@ import os
 import json
 from tqdm import tqdm
 
-from swebench.collect.get_tasks_pipeline import main as get_tasks_pipeline
+from swingarena.collect.get_tasks_pipeline import main as get_tasks_pipeline
 
 overall_info_json_path = "progress.json"
 

@@ -21,8 +21,8 @@ from threading import Lock
 
 import jsonlines
 from dotenv import load_dotenv
-from swebench.collect.build_dataset import main as build_dataset
-from swebench.collect.print_pulls import main as print_pulls
+from swingarena.collect.build_dataset import main as build_dataset
+from swingarena.collect.print_pulls import main as print_pulls
 from tqdm import tqdm
 
 load_dotenv()
