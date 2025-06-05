@@ -57,7 +57,7 @@ pip install -e .
 
 通过运行以下命令测试你的安装:
 ```bash
-python -m swebench.harness.run_evaluation \
+python -m swingarena.harness.run_evaluation \
     --predictions_path gold \
     --max_workers 1 \
     --instance_ids sympy__sympy-20590 \
@@ -77,7 +77,7 @@ python -m swebench.harness.run_evaluation \
 
 使用以下命令通过评估工具在SWE-bench Lite上评估模型预测:
 ```bash
-python -m swebench.harness.run_evaluation \
+python -m swingarena.harness.run_evaluation \
     --dataset_name princeton-nlp/SWE-bench_Lite \
     --predictions_path <预测结果路径> \
     --max_workers <工作进程数> \
@@ -92,7 +92,7 @@ python -m swebench.harness.run_evaluation \
 
 要查看评估工具的完整参数列表,请运行:
 ```bash
-python -m swebench.harness.run_evaluation --help
+python -m swingarena.harness.run_evaluation --help
 ```
 
 此外,SWE-Bench仓库还可以帮助你:

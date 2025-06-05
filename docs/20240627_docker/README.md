@@ -13,11 +13,11 @@ To eliminate these irregularities, our new harness provisions **per-sample Docke
 In the new Docker harness, **99.78% (2289/2294) of SWE-bench** tasks and **100% (300/300) of SWE-bench Lite** tasks consistently resolve correctly with the ground truth solution. Furthermore, containers spawned from these images can be used as development environments for agents that run and develop solutions iteratively.
 
 ## Running Evaluation
-The main entrypoint for the evaluation harness is the `swebench.harness.run_evaluation` module.
+The main entrypoint for the evaluation harness is the `swingarena.harness.run_evaluation` module.
 
 Run the following command to see the available arguments:
 ```bash
-python -m swebench.harness.run_evaluation -h
+python -m swingarena.harness.run_evaluation -h
 ```
 
 This module runs docker containers for each evaluation instance in parallel.
@@ -66,7 +66,7 @@ We're providing experimental support for running evaluations on `arm64` machines
 Users may experience substantial speed degradation when running evaluations on `arm64` machines.
 
 ## Deliverables
-* Please use `swebench>=2.0` for the latest version of the benchmark - the old version is now deprecated but can still be accessed using `swebench<2.0`.
+* Please use `swingarena>=2.0` for the latest version of the benchmark - the old version is now deprecated but can still be accessed using `swingarena<2.0`.
 
 ## Acknowledgements
 This work was done in collaboration with the Preparedness team at OpenAI (including Oliver Jaffe, Chan Jun Shern, James Aung, Giulio Starace, Dane Sherburn, and Neil Chowdhury).

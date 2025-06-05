@@ -149,7 +149,7 @@ Our diagnosis is that:
 * We are continuing to explore how to make installation specifications more explicitly, robust, and reliable.
 
 ## Deliverables
-* Please use `swebench>=1.1.0`.
+* Please use `swingarena>=1.1.0`.
 * Use the `check_harness.jsonl` file to verify that your harness is working correctly.
 
 ✍️ Carlos & John

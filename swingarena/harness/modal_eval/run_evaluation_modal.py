@@ -24,9 +24,9 @@ LOCAL_SANDBOX_ENTRYPOINT_PATH = (
 ).resolve()
 REMOTE_SANDBOX_ENTRYPOINT_PATH = f"/root/{SANDBOX_ENTRYPOINT}.py"
 
-app = modal.App("swebench-evaluation")
+app = modal.App("swingarena-evaluation")
 
-swebench_image = modal.Image.debian_slim().pip_install("swingarena", "tenacity")
+swingarena_image = modal.Image.debian_slim().pip_install("swingarena", "tenacity")
 
 from swingarena.harness.constants import (
     APPLY_PATCH_FAIL,
@@ -218,7 +218,7 @@ def get_log_dir(pred: dict, run_id: str, instance_id: str) -> Path:
 
 
 @app.function(
-    image=swebench_image.add_local_file(
+    image=swingarena_image.add_local_file(
         LOCAL_SANDBOX_ENTRYPOINT_PATH,
         REMOTE_SANDBOX_ENTRYPOINT_PATH,
     ),
