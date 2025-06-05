@@ -8,36 +8,36 @@ The data collection and filtering process consists of four main steps:
 ### Step 1: Repository Mining 🧐
 - **Purpose**: Extract high-quality repositories and pull requests from popular Python packages
 - **Process**: 
-  - Use `get_top_pypi.py` to retrieve the top 5000 most downloaded PyPI packages
-  - Extract GitHub URLs, star counts, and issue/PR statistics
-  - Filter repositories based on popularity and activity metrics
+- Use `get_top_pypi.py` to retrieve the top 5000 most downloaded PyPI packages
+- Extract GitHub URLs, star counts, and issue/PR statistics
+- Filter repositories based on popularity and activity metrics
 - **Output**: Repository list with metadata (`pypi_rankings.jsonl`)
 
 ### Step 2: CI Test Filter ⚙️
 - **Purpose**: Filter pull requests based on Continuous Integration (CI) test results
 - **Process**:
-  - Collect PR metadata using `print_pulls.py` 
-  - Extract CI action names and test status from each PR
-  - Filter out PRs with insufficient CI coverage (≤3 CI actions)
-  - Ensure PRs have both issue references and test modifications
+- Collect PR metadata using `print_pulls.py` 
+- Extract CI action names and test status from each PR
+- Filter out PRs with insufficient CI coverage (≤3 CI actions)
+- Ensure PRs have both issue references and test modifications
 - **Output**: Task instances with valid CI test coverage (`<repo>-task-instances.jsonl`)
 
 ### Step 3: LLM Filter 🤖
 - **Purpose**: Use Large Language Model to evaluate problem statement quality
 - **Process**:
-  - Analyze problem statements for clarity and specificity
-  - Filter out extremely vague or ambiguous problem descriptions
-  - Ensure problem statements provide actionable information for developers
-  - Apply semantic understanding to eliminate low-quality instances
+- Analyze problem statements for clarity and specificity
+- Filter out extremely vague or ambiguous problem descriptions
+- Ensure problem statements provide actionable information for developers
+- Apply semantic understanding to eliminate low-quality instances
 - **Implementation**: Located in `crawl/filter.py` with LLM-based evaluation
 
 ### Step 4: Expert Filter 👨‍💻
 - **Purpose**: Apply expert-defined heuristics for final quality assurance
 - **Process**:
-  - Code quality checks: patch length, meaningful changes, non-test-only modifications
-  - Problem statement validation: appropriate length, no banned phrases
-  - Structural validation: maximum 5 file diffs per instance
-  - Manual review criteria for edge cases
+- Code quality checks: patch length, meaningful changes, non-test-only modifications
+- Problem statement validation: appropriate length, no banned phrases
+- Structural validation: maximum 5 file diffs per instance
+- Manual review criteria for edge cases
 - **Output**: High-quality, validated task instances ready for evaluation
 
 > SWE-bench's collection pipeline is currently designed to target PyPI packages. We hope to expand SWE-bench to more repositories and languages in the future.
@@ -50,44 +50,44 @@ The data collection and filtering process consists of four main steps:
 To run collection on your own repositories, run the `run_get_tasks_pipeline.sh` script. Given a repository or list of repositories (formatted as `owner/name`), for each repository this command will generate...
 * `<repo>-prs.jsonl` file containing the [metadata for every pull request](https://docs.github.com/rest/reference/pulls#list-pull-requests) from the repository.
 * `<repo>-task-instances.jsonl.all` file containing all *valid* task instances (has associated issues + gold patch).
-    * This file's values can be used for fine tuning purposes.
+* This file's values can be used for fine tuning purposes.
 * `<repo>-task-instances.jsonl` file containing *valid* task instances that also has associated *tests*.
-    * This file's values are candidate task instances. Once validated, they can be used for evaluation purposes.
-    * The `.json.all` includes these task instances as well.
+* This file's values are candidate task instances. Once validated, they can be used for evaluation purposes.
+* The `.json.all` includes these task instances as well.
 
 ## Directory Overview
 In this section, we briefly describe each of the files in this directory and its usage details.
 
 **🧐 GitHub Repository Selection**
 * `get_top_pypi.py`
-    * Purpose: Retrieves the PyPI URL, GitHub URL, # of ⭐, and # of Issues + PRs for the [top 5000](https://hugovk.github.io/top-pypi-packages/") most downloaded PyPI packages.
-    * Usage: `python get_top_pypi.py`
+* Purpose: Retrieves the PyPI URL, GitHub URL, # of ⭐, and # of Issues + PRs for the [top 5000](https://hugovk.github.io/top-pypi-packages/") most downloaded PyPI packages.
+* Usage: `python get_top_pypi.py`
 
 **⛏️ GitHub Data Collection**
 * `print_pulls.py`
-    * Purpose: Given the `<owner/name>` of a GitHub repo, this script writes the raw information for all the repo's PRs to a single `.jsonl` file
-    * Usage: `python print_pulls.py <repo name> <path to PRs .jsonl file> --token <GitHub Token>`
+* Purpose: Given the `<owner/name>` of a GitHub repo, this script writes the raw information for all the repo's PRs to a single `.jsonl` file
+* Usage: `python print_pulls.py <repo name> <path to PRs .jsonl file> --token <GitHub Token>`
 * `build_dataset.py`
-    * Purpose: Given the path to a PRs `.jsonl` file generated by `print_pulls.py`, this script attempts to convert each PR to a task instance. It creates a `jsonl.all` file for any PRs with an issue and a `.jsonl` file for any PRs with both an issue and modifications to that repository's tests.
-    * Usage: `python build_dataset.py <path to PRs .jsonl file> <path to output .jsonl file> --token <Github Token>`
+* Purpose: Given the path to a PRs `.jsonl` file generated by `print_pulls.py`, this script attempts to convert each PR to a task instance. It creates a `jsonl.all` file for any PRs with an issue and a `.jsonl` file for any PRs with both an issue and modifications to that repository's tests.
+* Usage: `python build_dataset.py <path to PRs .jsonl file> <path to output .jsonl file> --token <Github Token>`
 * `get_tasks_pipeline.py`
-    * Purpose: Automates invocation of the repo → task instance construction pipeline (`print_pulls.py` + `build_dataset.py`) for multiple repositories
-    * Usage: `./run_get_tasks_pipeline` (Check file for arguments)
+* Purpose: Automates invocation of the repo → task instance construction pipeline (`print_pulls.py` + `build_dataset.py`) for multiple repositories
+* Usage: `./run_get_tasks_pipeline` (Check file for arguments)
 
 **🎵 Fine Tuning Dataset Construction**
 * `build_dataset_ft.py`
-    * Purpose: Given the path to a collection of `.jsonl.all` files generated by `build_dataset.py`, this is a simple script to combine all such files into a single `.jsonl` that can be used to construct a instruction tuning dataset based on [problem statement + original code, code Δ] pairs.
-    * Usage: `./run_build_dataset_ft` (Check file for arguments)
+* Purpose: Given the path to a collection of `.jsonl.all` files generated by `build_dataset.py`, this is a simple script to combine all such files into a single `.jsonl` that can be used to construct a instruction tuning dataset based on [problem statement + original code, code Δ] pairs.
+* Usage: `./run_build_dataset_ft` (Check file for arguments)
 
 **🪞 Mirroring Repositories**
 * `make_repo.sh`
-    * Purpose: A script for creating a [mirror repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) of an existing repository on GitHub. Examples available under the [swe-bench organization](https://github.com/orgs/swe-bench/repositories).
-    * Usage: `python call_make_repo.py` (Check file for arguments)
+* Purpose: A script for creating a [mirror repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) of an existing repository on GitHub. Examples available under the [swe-bench organization](https://github.com/orgs/swe-bench/repositories).
+* Usage: `python call_make_repo.py` (Check file for arguments)
 
 **🧹 Clean Up**
 * `delete_gh_workflows.py`
-    * Purpose: Recurring workflows from mirror repositories can clog up your inbox for the email account associated with your GitHub token. Given a repo URL, this will automate removing the `.github/workflows` folder from all branches of a repository.
-    * Usage: `python delete_gh_workflows.py <repo URL>`
+* Purpose: Recurring workflows from mirror repositories can clog up your inbox for the email account associated with your GitHub token. Given a repo URL, this will automate removing the `.github/workflows` folder from all branches of a repository.
+* Usage: `python delete_gh_workflows.py <repo URL>`
 * `remove_envs.py`
-    * Purpose: SWE Bench's evaluation + validation harnesses rely on the creation of multiple virtual environments with conda to speed up benchmark evaluation. Use these script to parallelize conda environment removal for environments named with the same prefix.
-    * Usage: `python remove_envs.py <prefix> --conda_path <path to conda installation>`
+* Purpose: SWE Bench's evaluation + validation harnesses rely on the creation of multiple virtual environments with conda to speed up benchmark evaluation. Use these script to parallelize conda environment removal for environments named with the same prefix.
+* Usage: `python remove_envs.py <prefix> --conda_path <path to conda installation>`
