@@ -79,36 +79,27 @@ Through this technical architecture, SwingArena provides the industry's closest-
 
 SwingArena requires CI tools for realistic software development workflow simulation. The primary tools are **Docker** (for containerized environments) and **`act`** (for GitHub Actions simulation).
 
+> **💡 Quick Setup**: If you followed the [Quick Start](#-quick-start) with `pip install -e ".[ci-tools]"`, most CI tools are already installed automatically.
+
 ### Prerequisites
 - **Git** (required for repository operations)
 - **Docker** (required for act to run GitHub Actions and containerized environments)
 - **sudo/admin privileges** (for system-level tool installation)
 
-### 🚀 Quick Installation
+### 🚀 Installation Options
 
-**Option 1: One-command installation with CI tools (includes automatic Docker installation)**
+**Option 1: Automatic installation during pip install (Recommended)**
 ```bash
-git clone https://github.com/menik1126/Swing-Bench.git
-cd Swing-Bench
+# This is the same command from Quick Start
 pip install -e ".[ci-tools]"
 ```
-
-This will automatically:
-- ✅ Install all Python dependencies
-- 🐳 Install Docker (on supported Linux distributions)
-- 🔧 Install `act` binary for your system
-- 📦 Install Docker SDK for Python
-- 🔗 Set up pre-commit hooks
 
 **Option 2: Using the dedicated installer script**
 ```bash
 python install_ci_tools.py
 ```
 
-**Option 3: Check installation status**
-```bash
-python install_ci_tools.py --check
-```
+
 
 Expected output after successful installation:
 ```
@@ -176,11 +167,30 @@ For detailed troubleshooting and advanced configuration, see [CI_TOOLS_SETUP.md]
 ## 🚀 Quick Start
 
 To build SwingArena from source, follow these steps:
+
+### 🔧 Basic Installation
 ```bash
 git clone https://github.com/menik1126/Swing-Bench.git
 cd Swing-Bench
 pip install -e .
 ```
+
+### 🛠️ Installation with CI Tools (Recommended)
+For full SwingArena functionality including agent battles and CI simulation:
+```bash
+pip install -e ".[ci-tools]"
+```
+
+This enhanced installation will automatically:
+- ✅ Install all Python dependencies 
+- 🐳 **Install Docker** (on supported Linux distributions)
+- 🔧 **Install `act`** (GitHub Actions local runner)
+- 📦 Install Docker SDK for Python
+- 🔗 Set up pre-commit hooks
+
+> **💡 Note**: The basic `pip install -e .` only installs Python dependencies. For CI-driven evaluation and agent battles, use the `[ci-tools]` extra or run the dedicated installer script.
+
+### ✅ Installation Verification
 
 Test your installation by running:
 ```bash
@@ -189,6 +199,11 @@ python -m swingarena.harness.run_evaluation \
     --max_workers 1 \
     --instance_ids sympy__sympy-20590 \
     --run_id validate-gold
+```
+
+For CI tools verification:
+```bash
+python install_ci_tools.py --check
 ```
 
 ### 🌩️ Evaluation with Modal
@@ -208,6 +223,8 @@ This will execute the evaluation harness on Modal's cloud infrastructure, elimin
 ### 🥊 Agent Battle Mode
 
 SwingArena's unique agent battle evaluation mode can be used as follows:
+
+> **⚠️ Prerequisites**: Ensure CI tools are installed with `pip install -e ".[ci-tools]"` or verify with `python install_ci_tools.py --check`
 
 ```bash
 export CI_TOOL_NAME=act
