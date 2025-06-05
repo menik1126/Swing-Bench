@@ -45,12 +45,39 @@ for lang in languages:
     swingbench[lang] = load_dataset('SwingBench/SwingBench-data', split=lang)
 ```
 
-## 🚀 Set Up
-SWE-bench uses Docker for reproducible evaluations.
-Follow the instructions in the [Docker setup guide](https://docs.docker.com/engine/install/) to install Docker on your machine.
-If you're setting up on Linux, we recommend seeing the [post-installation steps](https://docs.docker.com/engine/install/linux-postinstall/) as well.
+## 🛠️ Technical Architecture & Environment Setup
 
-Finally, to build SWE-bench from source, follow these steps:
+SwingArena employs an advanced containerized evaluation architecture that ensures cross-platform reproducibility and consistency. The system core relies on **Docker** for isolated environment management, combined with **CI tools** (such as GitHub Actions simulated through `act`) to achieve real-world software development workflow evaluation.
+
+### 🔧 System Requirements
+Before getting started, please ensure your system meets the following requirements:
+- **Docker**: Follow the [Docker official installation guide](https://docs.docker.com/engine/install/) to install Docker Engine. Linux users are recommended to refer to the [post-installation steps](https://docs.docker.com/engine/install/linux-postinstall/) for optimal experience.
+- **Hardware Configuration**: Recommended `x86_64` architecture machine with at least 120GB available storage, 16GB RAM, and 8 CPU cores (`arm64` support is still experimental)
+- **Python Environment**: Python 3.8+ and related dependency packages
+
+### 🏗️ Core Technology Stack
+SwingArena integrates multiple cutting-edge technologies:
+
+**AI Model Integration**: Supports various large language model APIs (OpenAI, Anthropic, Claude, etc.) and local model serving through a flexible model proxy system for seamless switching.
+
+**Retrieval-Augmented Generation**: Built-in BM25 retriever provides precise relevant information retrieval for long-context code generation, supporting multi-language codebase indexing (Python, Rust, C++, Go, JavaScript, TypeScript, PHP, etc.).
+
+**Distributed Evaluation**: Adopts multi-process parallel evaluation architecture with Modal cloud execution support, dynamically adjusting worker processes based on system resources (recommended not to exceed `min(0.75 * os.cpu_count(), 24)`).
+
+**Arena Mechanism**: Pioneering dual-agent battle evaluation mode where one agent acts as a patch submitter and another as a code reviewer, simulating real collaborative development scenarios.
+
+### 📊 Data Processing Pipeline
+The system includes a complete data collection, annotation, and evaluation pipeline:
+- **Data Crawling**: Automated GitHub repository issue collection and PR analysis
+- **Multi-round Annotation**: Quality control mechanism supporting collaborative annotation by multiple annotators
+- **CI-driven Validation**: Validates patches and test cases effectiveness through real CI environments
+- **Statistical Analysis**: Provides detailed performance metrics and failure mode analysis
+
+Through this technical architecture, SwingArena provides the industry's closest-to-real development environment benchmark platform for evaluating large language models in software engineering domains.
+
+## 🚀 Quick Start
+
+To build SwingArena from source, follow these steps:
 ```bash
 git clone https://github.com/menik1126/Swing-Bench.git
 cd Swing-Bench
@@ -59,7 +86,7 @@ pip install -e .
 
 Test your installation by running:
 ```bash
-python -m swebench.harness.run_evaluation \
+python -m swingarena.harness.run_evaluation \
     --predictions_path gold \
     --max_workers 1 \
     --instance_ids sympy__sympy-20590 \
@@ -69,7 +96,7 @@ python -m swebench.harness.run_evaluation \
 ### 🌩️ Evaluation with Modal
 You can also run evaluations entirely on the cloud using [Modal](https://modal.com/) to avoid local setup and resource constraints:
 ```bash
-python -m swebench.harness.run_evaluation \
+python -m swingarena.harness.run_evaluation \
     --predictions_path gold \
     --run_id validate-gold-modal \
     --instance_ids sympy__sympy-20590 \
@@ -78,7 +105,7 @@ python -m swebench.harness.run_evaluation \
 This will execute the evaluation harness on Modal's cloud infrastructure, eliminating the need for local Docker setup and resource management.
 
 > [!NOTE]
-> Modal for SWE-bench Multimodal is currently experimental and may not be fully supported yet.
+> Modal for SwingArena Multimodal is currently experimental and may not be fully supported yet.
 
 ## 💽 Usage
 > [!WARNING]
@@ -90,10 +117,10 @@ This will execute the evaluation harness on Modal's cloud infrastructure, elimin
 >
 > Support for `arm64` machines is experimental.
 
-Evaluate model predictions on SWE-bench Lite using the evaluation harness with the following command:
+Evaluate model predictions on SwingArena using the evaluation harness with the following command:
 ```bash
-python -m swebench.harness.run_evaluation \
-    --dataset_name princeton-nlp/SWE-bench_Lite \
+python -m swingarena.harness.run_evaluation \
+    --dataset_name SwingBench/SwingBench \
     --predictions_path <path_to_predictions> \
     --max_workers <num_workers> \
     --run_id <run_id>
@@ -107,13 +134,13 @@ The final evaluation results will be stored in the `evaluation_results` director
 
 To see the full list of arguments for the evaluation harness, run:
 ```bash
-python -m swebench.harness.run_evaluation --help
+python -m swingarena.harness.run_evaluation --help
 ```
 
-Additionally, the SWE-Bench repo can help you:
+Additionally, the SwingArena repo can help you:
 * Train your own models on our pre-processed datasets
-* Run [inference](https://github.com/princeton-nlp/SWE-bench/blob/main/swebench/inference/README.md) on existing models (either models you have on-disk like LLaMA, or models you have access to through an API like GPT-4). The inference step is where you get a repo and an issue and have the model try to generate a fix for it.
-*  Run SWE-bench's [data collection procedure](https://github.com/princeton-nlp/SWE-bench/blob/main/swebench/collect/) on your own repositories, to make new SWE-Bench tasks.
+* Run [inference](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/inference/README.md) on existing models (either models you have on-disk like LLaMA, or models you have access to through an API like GPT-4). The inference step is where you get a repo and an issue and have the model try to generate a fix for it.
+*  Run SwingArena's [data collection procedure](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/collect/) on your own repositories, to make new SwingArena tasks.
 
 ## ⬇️ Downloads
 | Datasets | Models |
