@@ -1,11 +1,50 @@
 # Data Collection
 This folder includes the code for the first two parts of the benchmark construction procedure as described in the paper, specifically 1. Repo selection and data scraping, and 2. Attribute-based filtering.
 
+## Pipeline Overview
 
+The data collection and filtering process consists of four main steps:
+
+### Step 1: Repository Mining 🧐
+- **Purpose**: Extract high-quality repositories and pull requests from popular Python packages
+- **Process**: 
+  - Use `get_top_pypi.py` to retrieve the top 5000 most downloaded PyPI packages
+  - Extract GitHub URLs, star counts, and issue/PR statistics
+  - Filter repositories based on popularity and activity metrics
+- **Output**: Repository list with metadata (`pypi_rankings.jsonl`)
+
+### Step 2: CI Test Filter ⚙️
+- **Purpose**: Filter pull requests based on Continuous Integration (CI) test results
+- **Process**:
+  - Collect PR metadata using `print_pulls.py` 
+  - Extract CI action names and test status from each PR
+  - Filter out PRs with insufficient CI coverage (≤3 CI actions)
+  - Ensure PRs have both issue references and test modifications
+- **Output**: Task instances with valid CI test coverage (`<repo>-task-instances.jsonl`)
+
+### Step 3: LLM Filter 🤖
+- **Purpose**: Use Large Language Model to evaluate problem statement quality
+- **Process**:
+  - Analyze problem statements for clarity and specificity
+  - Filter out extremely vague or ambiguous problem descriptions
+  - Ensure problem statements provide actionable information for developers
+  - Apply semantic understanding to eliminate low-quality instances
+- **Implementation**: Located in `crawl/filter.py` with LLM-based evaluation
+
+### Step 4: Expert Filter 👨‍💻
+- **Purpose**: Apply expert-defined heuristics for final quality assurance
+- **Process**:
+  - Code quality checks: patch length, meaningful changes, non-test-only modifications
+  - Problem statement validation: appropriate length, no banned phrases
+  - Structural validation: maximum 5 file diffs per instance
+  - Manual review criteria for edge cases
+- **Output**: High-quality, validated task instances ready for evaluation
 
 > SWE-bench's collection pipeline is currently designed to target PyPI packages. We hope to expand SWE-bench to more repositories and languages in the future.
 
-<img src="../../assets/figures/collection.png">
+<div align="center">
+<img src="../../figures_swing/Data_construct_pot.png">
+</div>
 
 ## Collection Procedure
 To run collection on your own repositories, run the `run_get_tasks_pipeline.sh` script. Given a repository or list of repositories (formatted as `owner/name`), for each repository this command will generate...
