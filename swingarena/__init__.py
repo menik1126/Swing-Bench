@@ -2,7 +2,6 @@ __version__ = "3.0.13"
 
 from swingarena.collect.build_dataset import main as build_dataset
 from swingarena.collect.get_tasks_pipeline import main as get_tasks_pipeline
-from swingarena.collect.print_pulls import main as print_pulls
 
 from swingarena.harness.constants import (
     KEY_INSTANCE_ID,

@@ -1,93 +1,204 @@
 # Data Collection
-This folder includes the code for the first two parts of the benchmark construction procedure as described in the paper, specifically 1. Repo selection and data scraping, and 2. Attribute-based filtering.
 
-## Pipeline Overview
+This folder contains the code for collecting and processing GitHub repository data. The pipeline follows a six-step process to gather, process, and filter data from GitHub repositories.
 
-The data collection and filtering process consists of four main steps:
+## Pipeline Steps
 
-### Step 1: Repository Mining 🧐
-- **Purpose**: Extract high-quality repositories and pull requests from popular Python packages
-- **Process**: 
-- Use `get_top_pypi.py` to retrieve the top 5000 most downloaded PyPI packages
-- Extract GitHub URLs, star counts, and issue/PR statistics
-- Filter repositories based on popularity and activity metrics
-- **Output**: Repository list with metadata (`pypi_rankings.jsonl`)
+### Step 1: Repository Collection 🔍
 
-### Step 2: CI Test Filter ⚙️
-- **Purpose**: Filter pull requests based on Continuous Integration (CI) test results
-- **Process**:
-- Collect PR metadata using `print_pulls.py` 
-- Extract CI action names and test status from each PR
-- Filter out PRs with insufficient CI coverage (≤3 CI actions)
-- Ensure PRs have both issue references and test modifications
-- **Output**: Task instances with valid CI test coverage (`<repo>-task-instances.jsonl`)
+Fetches repositories from GitHub based on specified languages and criteria.
 
-### Step 3: LLM Filter 🤖
-- **Purpose**: Use Large Language Model to evaluate problem statement quality
-- **Process**:
-- Analyze problem statements for clarity and specificity
-- Filter out extremely vague or ambiguous problem descriptions
-- Ensure problem statements provide actionable information for developers
-- Apply semantic understanding to eliminate low-quality instances
-- **Implementation**: Located in `crawl/filter.py` with LLM-based evaluation
+```bash
+python crawl/fetch_all.py \
+    --output github_repos \
+    --max-repos 100 \
+    --concurrency 10 \
+    --languages "python,java,javascript,go,rust,c++,php" \
+    --parallel \
+    --timeout 30 \
+    --retry 3
+```
 
-### Step 4: Expert Filter 👨‍💻
-- **Purpose**: Apply expert-defined heuristics for final quality assurance
-- **Process**:
-- Code quality checks: patch length, meaningful changes, non-test-only modifications
-- Problem statement validation: appropriate length, no banned phrases
-- Structural validation: maximum 5 file diffs per instance
-- Manual review criteria for edge cases
-- **Output**: High-quality, validated task instances ready for evaluation
+**Parameters:**
+- `--output`: Output directory for repositories
+- `--max-repos`: Maximum repositories per language
+- `--concurrency`: Number of concurrent requests
+- `--languages`: Target programming languages
+- `--parallel`: Enable parallel crawling
+- `--timeout`: HTTP request timeout in seconds
+- `--retry`: Number of retry attempts
 
-> SWE-bench's collection pipeline is currently designed to target PyPI packages. We hope to expand SWE-bench to more repositories and languages in the future.
+### Step 2: Instance Extraction ⚙️
 
-<div>
-<img src="../../figures_swing/Data_construct_pot.png">
-</div>
+Extracts task instances from the collected repositories.
 
-## Collection Procedure
-To run collection on your own repositories, run the `run_get_tasks_pipeline.sh` script. Given a repository or list of repositories (formatted as `owner/name`), for each repository this command will generate...
-* `<repo>-prs.jsonl` file containing the [metadata for every pull request](https://docs.github.com/rest/reference/pulls#list-pull-requests) from the repository.
-* `<repo>-task-instances.jsonl.all` file containing all *valid* task instances (has associated issues + gold patch).
-* This file's values can be used for fine tuning purposes.
-* `<repo>-task-instances.jsonl` file containing *valid* task instances that also has associated *tests*.
-* This file's values are candidate task instances. Once validated, they can be used for evaluation purposes.
-* The `.json.all` includes these task instances as well.
+```bash
+python get_tasks_pipeline.py \
+    --repos swing_data/tasks/all_tasks.jsonl \
+    --path_prs swing_data/tasks/prs \
+    --path_tasks swing_data/tasks/tasks \
+    --max_pulls 100 \
+    --cutoff_date 20220101
+```
 
-## Directory Overview
-In this section, we briefly describe each of the files in this directory and its usage details.
+**Parameters:**
+- `--repos`: Path to repository list file
+- `--path_prs`: Output directory for pull requests
+- `--path_tasks`: Output directory for task instances
+- `--max_pulls`: Maximum number of PRs to process
+- `--cutoff_date`: Cut-off date for PRs (YYYYMMDD)
 
-**🧐 GitHub Repository Selection**
-* `get_top_pypi.py`
-* Purpose: Retrieves the PyPI URL, GitHub URL, # of ⭐, and # of Issues + PRs for the [top 5000](https://hugovk.github.io/top-pypi-packages/") most downloaded PyPI packages.
-* Usage: `python get_top_pypi.py`
+### Step 3: Result Combination 🔄
 
-**⛏️ GitHub Data Collection**
-* `print_pulls.py`
-* Purpose: Given the `<owner/name>` of a GitHub repo, this script writes the raw information for all the repo's PRs to a single `.jsonl` file
-* Usage: `python print_pulls.py <repo name> <path to PRs .jsonl file> --token <GitHub Token>`
-* `build_dataset.py`
-* Purpose: Given the path to a PRs `.jsonl` file generated by `print_pulls.py`, this script attempts to convert each PR to a task instance. It creates a `jsonl.all` file for any PRs with an issue and a `.jsonl` file for any PRs with both an issue and modifications to that repository's tests.
-* Usage: `python build_dataset.py <path to PRs .jsonl file> <path to output .jsonl file> --token <Github Token>`
-* `get_tasks_pipeline.py`
-* Purpose: Automates invocation of the repo → task instance construction pipeline (`print_pulls.py` + `build_dataset.py`) for multiple repositories
-* Usage: `./run_get_tasks_pipeline` (Check file for arguments)
+Merges extracted instances into a single dataset.
 
-**🎵 Fine Tuning Dataset Construction**
-* `build_dataset_ft.py`
-* Purpose: Given the path to a collection of `.jsonl.all` files generated by `build_dataset.py`, this is a simple script to combine all such files into a single `.jsonl` that can be used to construct a instruction tuning dataset based on [problem statement + original code, code Δ] pairs.
-* Usage: `./run_build_dataset_ft` (Check file for arguments)
+```bash
+python crawl/merge_instances.py \
+    --input swing_data/tasks/all_tasks.jsonl \
+    --output swing_data/tasks/merged_tasks.jsonl
+```
 
-**🪞 Mirroring Repositories**
-* `make_repo.sh`
-* Purpose: A script for creating a [mirror repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) of an existing repository on GitHub. Examples available under the [swe-bench organization](https://github.com/orgs/swe-bench/repositories).
-* Usage: `python call_make_repo.py` (Check file for arguments)
+**Parameters:**
+- `--input`: Path to task instances file
+- `--output`: Path for merged output file
 
-**🧹 Clean Up**
-* `delete_gh_workflows.py`
-* Purpose: Recurring workflows from mirror repositories can clog up your inbox for the email account associated with your GitHub token. Given a repo URL, this will automate removing the `.github/workflows` folder from all branches of a repository.
-* Usage: `python delete_gh_workflows.py <repo URL>`
-* `remove_envs.py`
-* Purpose: SWE Bench's evaluation + validation harnesses rely on the creation of multiple virtual environments with conda to speed up benchmark evaluation. Use these script to parallelize conda environment removal for environments named with the same prefix.
-* Usage: `python remove_envs.py <prefix> --conda_path <path to conda installation>`
+### Step 4: Initial Filtering 🔍
+
+First round of data filtering to ensure quality.
+
+```bash
+python filter.py \
+    --input swing_data/tasks/all_tasks.jsonl \
+    --output swing_data/tasks/filtered_tasks.jsonl \
+    --api-key <your-api-key> \
+    --base-url <your-base-url> \
+    --workers 10
+```
+
+**Parameters:**
+- `--input`: Input file to filter
+- `--output`: Output file for filtered data
+- `--api-key`: API key for filtering service
+- `--base-url`: Base URL for filtering service
+- `--workers`: Number of worker threads
+
+### Step 5: Dataset Building 📊
+
+Constructs the dataset from filtered instances.
+
+```bash
+python build_dataset.py \
+    swing_data/tasks/filtered_tasks.jsonl \
+    --output swing_data/tasks/dataset.jsonl \
+    --token <your-github-token>
+```
+
+**Parameters:**
+- First argument: Input file path
+- `--output`: Output dataset path
+- `--token`: GitHub API token
+
+### Step 6: Final Filtering ✨
+
+Final quality assurance filtering of the dataset.
+
+```bash
+python filter.py \
+    --input swing_data/tasks/dataset.jsonl \
+    --output swing_data/tasks/filtered_dataset.jsonl \
+    --api-key <your-api-key> \
+    --base-url <your-base-url> \
+    --workers 10
+```
+
+**Parameters:**
+- Same as Step 4, but operates on the built dataset
+
+## Directory Structure
+
+```
+collect/
+├── crawl/
+│   ├── fetch_all.py        # Step 1: Repository collection
+│   ├── merge_instances.py  # Step 3: Result combination
+│   └── filter.py          # Steps 4 & 6: Filtering
+├── get_tasks_pipeline.py   # Step 2: Instance extraction
+└── build_dataset.py       # Step 5: Dataset building
+```
+
+## Output Structure
+
+```
+swing_data/
+├── tasks/
+│   ├── all_tasks.jsonl         # Step 1 output
+│   ├── prs/                    # Step 2 PR data
+│   ├── tasks/                  # Step 2 task data
+│   ├── merged_tasks.jsonl      # Step 3 output
+│   ├── filtered_tasks.jsonl    # Step 4 output
+│   ├── dataset.jsonl           # Step 5 output
+│   └── filtered_dataset.jsonl  # Step 6 output
+└── logs/
+    └── *.log                   # Process logs
+```
+
+## Environment Setup
+
+1. Required environment variables:
+```bash
+# GitHub API tokens (required)
+export GITHUB_TOKENS='token1,token2,token3'
+
+# API key and base URL for filtering service
+export API_KEY='your-api-key'
+export BASE_URL='your-base-url'
+```
+
+2. Required Python packages:
+```bash
+pip install aiohttp aiofiles tqdm
+```
+
+## Supported Languages
+
+Currently supported programming languages:
+- Python
+- Java
+- JavaScript
+- Go
+- Rust
+- C++
+- PHP
+
+## Resource Requirements
+
+- **Disk Space**: Varies based on repository count and size
+- **Memory**: Depends on concurrency settings
+- **Network**: Stable internet connection required
+- **API Usage**: 
+  - GitHub API tokens for repository access
+  - Filtering service API key
+  - Rate limiting handled automatically
+
+## Error Handling
+
+- Each step includes error handling and logging
+- Failed operations are logged for investigation
+- Progress is saved between steps
+- Automatic retries for transient failures
+
+## Quick Start
+
+1. Set up environment variables:
+```bash
+export GITHUB_TOKENS='your-tokens-here'
+export API_KEY='your-api-key'
+export BASE_URL='your-base-url'
+```
+
+2. Run the complete pipeline:
+```bash
+./run_pipeline.sh
+```
+
+Or run individual steps as needed using the commands shown in each step section.

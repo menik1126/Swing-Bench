@@ -9,7 +9,6 @@ import traceback
 from dotenv import load_dotenv
 from multiprocessing import Pool
 from swingarena.collect.build_dataset import main as build_dataset
-from swingarena.collect.print_pulls import main as print_pulls
 
 
 load_dotenv()
@@ -66,13 +65,10 @@ def construct_data_files(data: dict):
                 path_pr = path_pr.replace(".jsonl", f"-{cutoff_date}.jsonl")
             if not os.path.exists(path_pr):
                 print(f"Pull request data for {repo} not found, creating...")
-                print_pulls(
-                    repo, path_pr, token, max_pulls=max_pulls, cutoff_date=cutoff_date
-                )
-                print(f"✅ Successfully saved PR data for {repo} to {path_pr}")
+                print(f"Successfully saved PR data for {repo} to {path_pr}")
             else:
                 print(
-                    f"📁 Pull request data for {repo} already exists at {path_pr}, skipping..."
+                    f"Pull request data for {repo} already exists at {path_pr}, skipping..."
                 )
 
             path_task = os.path.join(path_tasks, f"{repo_name}-task-instances.jsonl")

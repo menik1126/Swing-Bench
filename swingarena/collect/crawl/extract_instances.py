@@ -1,14 +1,3 @@
-# python get_instances.py \
-#     --repo_file repos/awesome-rust.jsonl \
-#     --output_folder issues \
-#     --num_workers 50 \ 
-#     --max_pulls 1000 \ 
-#     --cutoff_date 20180101
-
-# python get_instances.py \
-#     --output_folder issues \
-#     --combine_results
-
 import argparse
 import json
 import os
@@ -22,32 +11,12 @@ from threading import Lock
 import jsonlines
 from dotenv import load_dotenv
 from swingarena.collect.build_dataset import main as build_dataset
-from swingarena.collect.print_pulls import main as print_pulls
 from tqdm import tqdm
 
 load_dotenv()
 
 downloaded_repos = set()
 downloaded_repos_lock = Lock()
-
-FAILED_REPOS_FILE = "failed_repos.json"
-
-def load_failed_repos(output_folder):
-    """Load the failed repositories from the JSON file."""
-    if os.path.exists(FAILED_REPOS_FILE):
-        with open(f'{output_folder}/FAILED_REPOS_FILE', "r") as f:
-            try:
-                return set(json.load(f))
-            except json.JSONDecodeError:
-                return set()
-    return set()
-
-def save_failed_repo(repo_name, output_folder):
-    """Save a repository to the failed repositories file."""
-    failed_repos = load_failed_repos(output_folder)
-    failed_repos.add(repo_name)
-    with open(f'{output_folder}/FAILED_REPOS_FILE', "w") as f:
-        json.dump(list(failed_repos), f)
 
 def split_instances(input_list: list, n: int) -> list:
     avg_length = len(input_list) // n
@@ -68,14 +37,6 @@ def clone_repo(repo_name, output_folder):
     assert base_dir, "LOCAL_REPO_DIR environment variable not set"
     
     repo = repo_name.split("/")[-1]
-    
-    # Load failed repositories
-    failed_repos = load_failed_repos(output_folder)
-    
-    # Check if the repo is in the failed list
-    if repo_name in failed_repos:
-        print(f"Repository {repo_name} had previously failed to clone, skipping...")
-        return
 
     with downloaded_repos_lock:
         if repo in downloaded_repos:
@@ -116,8 +77,6 @@ def clone_repo(repo_name, output_folder):
             time.sleep(2 ** retry)
     else:
         print(f"Failed to clone {repo_name} after 5 attempts.")
-        # Mark this repository as failed
-        save_failed_repo(repo_name, output_folder)
 
 def process_repo(repo, output_folder, max_pulls, cutoff_date, token_iterator):
     repo = repo.strip(",").strip()
@@ -136,16 +95,9 @@ def process_repo(repo, output_folder, max_pulls, cutoff_date, token_iterator):
             path_pr = path_pr.replace(".jsonl", f"-{cutoff_date}.jsonl")
         if not os.path.exists(path_pr):
             print(f"Pull request data for {repo} not found, creating...")
-            print_pulls(
-                repo,
-                path_pr,
-                token,
-                max_pulls=max_pulls,
-                cutoff_date=cutoff_date
-            )
-            print(f"? Successfully saved PR data for {repo} to {path_pr}")
+            print(f"Successfully saved PR data for {repo} to {path_pr}")
         else:
-            print(f"? Pull request data for {repo} already exists at {path_pr}, skipping...")
+            print(f"Pull request data for {repo} already exists at {path_pr}, skipping...")
 
         path_task = os.path.join(path_tasks, f"{repo_name}-task-instances.jsonl")
         if not os.path.exists(path_task):
@@ -161,8 +113,6 @@ def process_repo(repo, output_folder, max_pulls, cutoff_date, token_iterator):
         traceback.print_exc()
         print("-" * 80)
 
-    # Clone the repository after processing data
-    # clone_repo(repo, output_folder)
 
 def combine_results(output_folder: str,):
     # Combine all repos
@@ -209,8 +159,6 @@ def main(
         for file in os.listdir(used_path):
             if file.endswith("-instances.jsonl"):
                 used.extend([file.replace("-task-instances.jsonl", "")])
-        # with jsonlines.open("/root/CodeAgent/results/issues/all_tasks.jsonl", "r") as f:
-        #     used = [d['repo'] for d in f]
     repos = [r for r in repos if not r.split("/")[-1] in used]
     print(f"rest repos: {len(repos)}")
     if start_index is not None or end_index is not None:
