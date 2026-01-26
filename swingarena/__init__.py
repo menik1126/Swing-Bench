@@ -50,18 +50,19 @@ from swingarena.harness.utils import (
     run_tasks,
 )
 
-from swingarena.versioning.constants import (
-    MAP_REPO_TO_VERSION_PATHS,
-    MAP_REPO_TO_VERSION_PATTERNS,
-)
-
-from swingarena.versioning.get_versions import (
-    get_version,
-    get_versions_from_build,
-    get_versions_from_web,
-    map_version_to_task_instances,
-)
-
-from swingarena.versioning.utils import (
-    split_instances,
-)
+# NOTE: versioning module not found in current codebase - commented out
+# from swingarena.versioning.constants import (
+#     MAP_REPO_TO_VERSION_PATHS,
+#     MAP_REPO_TO_VERSION_PATTERNS,
+# )
+#
+# from swingarena.versioning.get_versions import (
+#     get_version,
+#     get_versions_from_build,
+#     get_versions_from_web,
+#     map_version_to_task_instances,
+# )
+#
+# from swingarena.versioning.utils import (
+#     split_instances,
+# )

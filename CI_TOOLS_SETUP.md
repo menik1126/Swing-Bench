@@ -143,7 +143,7 @@ export ACT_DOCKER_IMAGE="catthehacker/ubuntu:act-latest"
 export SWING_TESTBED_PATH="/path/to/workdir"
 export SWING_REPOS_DIR_PATH="/path/to/repos"
 
-./start_battle.sh
+./scripts/examples/battle_template.sh
 ```
 
 ## 🐛 Troubleshooting

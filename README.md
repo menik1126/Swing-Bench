@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://swebench.com">
-    <img src="figures_swing/github_logo_pot.png" style="height: 10em" alt="Kawi the SWE-Llama" />
+    <img src="docs/images/github_logo_pot.png" style="height: 10em" alt="Kawi the SWE-Llama" />
   </a>
 </p>
 
@@ -36,7 +36,7 @@ Please refer our [website](https://swing-bench.github.io/) for the public leader
 ## 👋 Overview
 SwingArena is a realistic, *CI-driven* evaluation framework for LLMs that simulates real-world software development by pairing models as patch *submitters* and *reviewers*, enhanced with *retrieval-augmented code generation* for multi-language support and long-context handling.
 
-<img src="figures_swing/main_pot.png">
+<img src="docs/images/main_pot.png">
 
 ## 🛠️ Technical Architecture & Environment Setup
 
@@ -255,7 +255,7 @@ python swingarena/harness/agent_battle.py \
 For convenience, use the provided battle script:
 ```bash
 # Configure environment variables in the script
-./start_battle.sh
+./scripts/examples/battle_template.sh
 ```
 
 **🎯 Arena Parameters:**

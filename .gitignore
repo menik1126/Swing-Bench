@@ -45,3 +45,14 @@ temp/
 
 dataset/*
 !dataset/swing-bench-annotated-jsonl/
+# 整理后的备份目录
+_backup_before_cleanup/
+
+# 构建产物
+build/
+*.egg-info/
+
+# 数据目录
+annotated/
+dataset/
+length_stats/
