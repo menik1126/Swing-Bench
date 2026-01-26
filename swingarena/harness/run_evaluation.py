@@ -119,7 +119,8 @@ def run_instance(
                 "ci_name_list": instance.get("ci_name_list", []),
                 "workdir": f"{target_dir}/{instance_id}",  # Use instance-specific directory
                 "output_dir": logs_dir,
-                "apply_patch": apply_patch
+                "apply_patch": apply_patch,
+                "src_folder":src_folder
             })
             # Pass port_pool object to ActCITool's run_ci method
             result = act.run_ci(port_pool)
@@ -306,7 +307,7 @@ def get_dataset_from_preds(
     empty_patch_ids = {
         k
         for k, v in predictions.items()
-        if v["test_patch"] == "" or v["test_patch"] is None
+        if v.get("test_patch") == "" or v.get("test_patch") is None
     }
     logger.info(f"Found {len(empty_patch_ids)} instances with empty test patches")
 
