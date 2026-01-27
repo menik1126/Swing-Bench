@@ -13,3 +13,11 @@ tree-sitter-python==0.23.6
 tree-sitter-rust==0.21.1
 tree-sitter-typescript==0.23.2
 json_repair
+anthropic
+tenacity
+peft
+ghapi
+datasets
+tqdm
+numpy
+pyserini
