@@ -80,6 +80,8 @@ def construct_data_files(data: dict):
                             break
                         # Convert to dict if necessary (fastcore L objects)
                         pull_dict = dict(pull) if hasattr(pull, '__dict__') and not isinstance(pull, dict) else pull
+                        # Extract resolved issues from PR body
+                        pull_dict['resolved_issues'] = repo_obj.extract_resolved_issues(pull_dict)
                         f.write(json.dumps(pull_dict, default=str) + '\n')
                         count += 1
                 print(f"Successfully saved {count} PR(s) for {repo} to {path_pr}")
