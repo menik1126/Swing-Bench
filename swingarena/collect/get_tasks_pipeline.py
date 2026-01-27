@@ -78,7 +78,9 @@ def construct_data_files(data: dict):
                     for pull in pulls:
                         if max_pulls and count >= max_pulls:
                             break
-                        f.write(json.dumps(pull) + '\n')
+                        # Convert to dict if necessary (fastcore L objects)
+                        pull_dict = dict(pull) if hasattr(pull, '__dict__') and not isinstance(pull, dict) else pull
+                        f.write(json.dumps(pull_dict, default=str) + '\n')
                         count += 1
                 print(f"Successfully saved {count} PR(s) for {repo} to {path_pr}")
             else:
