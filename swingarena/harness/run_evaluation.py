@@ -92,7 +92,7 @@ def run_instance(
                 "base_commit": instance.get("base_commit"),
                 "merge_commit": instance.get("merge_commit_sha"),
                 "patch": instance.get("patch"),
-                "workdir": f"{target_dir}/{instance_id}",  # Use instance-specific directory
+                "workdir": target_dir,
                 "output_dir": logs_dir,
                 "apply_patch": apply_patch,
                 "src_folder": src_folder
@@ -117,7 +117,7 @@ def run_instance(
                 "merge_commit": instance.get("merge_commit_sha"),
                 "patch": instance.get("patch"),
                 "ci_name_list": instance.get("ci_name_list", []),
-                "workdir": f"{target_dir}/{instance_id}",  # Use instance-specific directory
+                "workdir": target_dir,
                 "output_dir": logs_dir,
                 "apply_patch": apply_patch,
                 "src_folder":src_folder

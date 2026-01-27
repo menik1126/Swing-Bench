@@ -412,16 +412,19 @@ class ActCITool(CIToolBase):
                                             "--artifact-server-addr " + "0.0.0.0" + " " +\
                                             "--artifact-server-path " + f"./act/{port}" + " " +\
                                             # "-W " + os.path.join(target_dir, ci[1]) + " " +\
+                                            "-v " +\
                                             "--json")
 
             process = subprocess.Popen(["act", "-j", value,
                                         "-P", "ubuntu-latest=catthehacker/ubuntu:full-latest",
                                         "--artifact-server-port", str(port),
-                                        "--artifact-server-addr", "0.0.0.0", 
+                                        "--artifact-server-addr", "0.0.0.0",
                                         "--artifact-server-path", f"./act/{port}",
                                         # "-W", os.path.join(target_dir, ci[1]),
-                                        "--json"], 
+                                        "-v",
+                                        "--json"],
                                     cwd=target_dir,
+                                    env=os.environ.copy(),
                                     stdout=subprocess.PIPE,
                                     stderr=subprocess.PIPE,
                                     text=True)
@@ -474,8 +477,9 @@ class ActCITool(CIToolBase):
 
             process = subprocess.Popen(["act", "-j", value,
                                         "-P", "ubuntu-latest=catthehacker/ubuntu:full-latest",
-                                        "--json"], 
+                                        "--json"],
                                     cwd=target_dir,
+                                    env=os.environ.copy(),
                                     stdout=subprocess.PIPE,
                                     stderr=subprocess.PIPE,
                                     text=True)
@@ -536,11 +540,47 @@ class ActCITool(CIToolBase):
         if not os.path.exists(self.config["workdir"]):
             raise Exception(f'Workdir {self.config["workdir"]} does not exist. Please check.')
 
+    def _ensure_docker_image(self, image_name):
+        """Check if Docker image exists, pull it if not"""
+        print(f"Checking Docker image: {image_name}")
+
+        # Check if image exists
+        check_cmd = ["docker", "images", "-q", image_name]
+        result = subprocess.run(check_cmd, capture_output=True, text=True, env=os.environ.copy())
+
+        if result.stdout.strip():
+            print(f"✓ Docker image {image_name} already exists")
+            return True
+
+        # Image doesn't exist, pull it
+        print(f"Docker image {image_name} not found")
+        print(f"Pulling image from Docker Hub (size: ~15-20GB)...")
+        print(f"This may take 10-60 minutes depending on network speed. Please wait...")
+
+        pull_cmd = ["docker", "pull", image_name]
+        try:
+            # Don't capture output, let user see progress
+            result = subprocess.run(pull_cmd, env=os.environ.copy())
+
+            if result.returncode == 0:
+                print(f"✓ Successfully pulled Docker image {image_name}")
+                return True
+            else:
+                print(f"✗ Failed to pull Docker image {image_name}")
+                raise Exception(f"Failed to pull Docker image: {image_name}")
+
+        except Exception as e:
+            print(f"✗ Error pulling Docker image: {e}")
+            raise
+
     def run_ci(self, pool):
         task = self.task
         run_script("\n".join(task.env_script))
         self.check_env()
         run_script("\n".join(task.eval_script))
+
+        # Ensure Docker image exists before running CI
+        self._ensure_docker_image("catthehacker/ubuntu:full-latest")
 
         print(f"Starting CI run for {self.config['repo']} (ID: {self.config.get('instance_id', 'unknown')})")
 
