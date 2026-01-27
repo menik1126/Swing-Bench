@@ -9,6 +9,8 @@ import traceback
 from dotenv import load_dotenv
 from multiprocessing import Pool
 from swingarena.collect.build_dataset import main as build_dataset
+from swingarena.collect.utils import Repo
+import json
 
 
 load_dotenv()
@@ -65,7 +67,20 @@ def construct_data_files(data: dict):
                 path_pr = path_pr.replace(".jsonl", f"-{cutoff_date}.jsonl")
             if not os.path.exists(path_pr):
                 print(f"Pull request data for {repo} not found, creating...")
-                print(f"Successfully saved PR data for {repo} to {path_pr}")
+                # Fetch PR data from GitHub
+                repo_obj = Repo(repo.split("/")[0], repo.split("/")[1], token)
+                pulls = repo_obj.get_all_pulls(per_page=100, num_pages=None)
+
+                # Save PR data to file
+                os.makedirs(path_prs, exist_ok=True)
+                count = 0
+                with open(path_pr, 'w') as f:
+                    for pull in pulls:
+                        if max_pulls and count >= max_pulls:
+                            break
+                        f.write(json.dumps(pull) + '\n')
+                        count += 1
+                print(f"Successfully saved {count} PR(s) for {repo} to {path_pr}")
             else:
                 print(
                     f"Pull request data for {repo} already exists at {path_pr}, skipping..."
