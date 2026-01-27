@@ -20,10 +20,11 @@ from tenacity import (
     stop_after_attempt,
     wait_random_exponential,
 )
-from datasets import load_dataset, load_from_disk
+from datasets import load_dataset, load_from_disk, Dataset, DatasetDict
 from swingarena.inference.make_datasets.utils import extract_diff
 from argparse import ArgumentParser
 import logging
+import os
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
@@ -439,6 +440,72 @@ def parse_model_args(model_args):
     return kwargs
 
 
+def load_dataset_from_jsonl(dataset_path: str) -> DatasetDict:
+    """
+    Load dataset from local JSON or JSONL file and convert to HuggingFace Dataset format.
+
+    Args:
+        dataset_path (str): Path to the JSON or JSONL file
+
+    Returns:
+        DatasetDict: Dataset with 'test' split
+    """
+    instances = []
+
+    with open(dataset_path, 'r') as f:
+        # Try to load as single JSON first
+        try:
+            data = json.load(f)
+            # If it's a list of instances
+            if isinstance(data, list):
+                instances = data
+            # If it's a single instance
+            elif isinstance(data, dict):
+                instances = [data]
+        except json.JSONDecodeError:
+            # If not valid JSON, try as JSONL (one JSON per line)
+            f.seek(0)
+            for line in f:
+                line = line.strip()
+                if line:
+                    instances.append(json.loads(line))
+
+    # Convert to HuggingFace Dataset format
+    # Ensure we have 'text' field by combining problem_statement and hints_text
+    processed = []
+    for inst in instances:
+        # Create text field if it doesn't exist
+        if 'text' not in inst:
+            text_parts = []
+            if 'problem_statement' in inst:
+                text_parts.append(inst['problem_statement'])
+            if 'hints_text' in inst:
+                text_parts.append(inst['hints_text'])
+            inst['text'] = '\n\n'.join(text_parts) if text_parts else str(inst)
+
+        # Ensure instance_id exists
+        if 'instance_id' not in inst:
+            inst['instance_id'] = f"instance_{len(processed)}"
+
+        processed.append(inst)
+
+    logger.info(f"Loaded {len(processed)} instances from {dataset_path}")
+
+    # Create dataset with all fields as columns
+    if processed:
+        data_dict = {}
+        for key in processed[0].keys():
+            data_dict[key] = [inst.get(key, '') for inst in processed]
+
+        dataset_dict = DatasetDict({
+            'test': Dataset.from_dict(data_dict)
+        })
+    else:
+        raise ValueError(f"No instances found in {dataset_path}")
+
+    return dataset_dict
+
+
 def main(
     dataset_name_or_path,
     split,
@@ -474,10 +541,18 @@ def main(
                 instance_id = data["instance_id"]
                 existing_ids.add(instance_id)
     logger.info(f"Read {len(existing_ids)} already completed ids from {output_file}")
-    if Path(dataset_name_or_path).exists():
+
+    # Load dataset - support both local JSONL/JSON files and HuggingFace datasets
+    if Path(dataset_name_or_path).exists() and (dataset_name_or_path.endswith('.jsonl') or dataset_name_or_path.endswith('.json')):
+        logger.info(f"Loading dataset from local file: {dataset_name_or_path}")
+        dataset = load_dataset_from_jsonl(dataset_name_or_path)
+    elif Path(dataset_name_or_path).exists():
+        logger.info(f"Loading dataset from local directory: {dataset_name_or_path}")
         dataset = load_from_disk(dataset_name_or_path)
     else:
+        logger.info(f"Loading dataset from HuggingFace: {dataset_name_or_path}")
         dataset = load_dataset(dataset_name_or_path)
+
     if split not in dataset:
         raise ValueError(f"Invalid split {split} for dataset {dataset_name_or_path}")
     dataset = dataset[split]
