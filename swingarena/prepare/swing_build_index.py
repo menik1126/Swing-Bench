@@ -11,13 +11,59 @@ from tqdm import tqdm
 import shutil
 
 from swingarena.harness.swing_utils import load_swingbench_dataset
+from swingarena.harness.constants.swing_constants import SwingbenchInstance
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
+
+def load_dataset_from_file(dataset_path: str) -> list[SwingbenchInstance]:
+    """
+    Load dataset from local JSON or JSONL file
+
+    Args:
+        dataset_path (str): Path to the JSON or JSONL file
+
+    Returns:
+        list[SwingbenchInstance]: List of SwingbenchInstance objects
+    """
+    instances = []
+
+    with open(dataset_path, 'r') as f:
+        # Try to load as single JSON first
+        try:
+            data = json.load(f)
+            # If it's a list of instances
+            if isinstance(data, list):
+                for instance_data in data:
+                    instances.append(SwingbenchInstance(**instance_data))
+            # If it's a single instance
+            elif isinstance(data, dict):
+                instances.append(SwingbenchInstance(**data))
+        except json.JSONDecodeError:
+            # If not valid JSON, try as JSONL (one JSON per line)
+            f.seek(0)
+            for line in f:
+                line = line.strip()
+                if line:
+                    instance_data = json.loads(line)
+                    instances.append(SwingbenchInstance(**instance_data))
+
+    return instances
+
+
 def extract_repo_commits(dataset_path: str, sub_dataset_identifier: str, split: str) -> Dict[str, Set[str]]:
     repo_commits: Dict[str, Set[str]] = {}
-    dataset = load_swingbench_dataset(dataset_path, sub_dataset_identifier=sub_dataset_identifier, split=split)
+
+    # Check if it's a local file
+    if os.path.isfile(dataset_path):
+        logger.info(f"Loading dataset from local file: {dataset_path}")
+        dataset = load_dataset_from_file(dataset_path)
+    else:
+        # Assume it's a HuggingFace dataset
+        logger.info(f"Loading dataset from HuggingFace: {dataset_path}")
+        dataset = load_swingbench_dataset(dataset_path, sub_dataset_identifier=sub_dataset_identifier, split=split)
+
     for instance in dataset:
         if instance.repo not in repo_commits:
             repo_commits[instance.repo] = set()
