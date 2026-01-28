@@ -127,14 +127,29 @@ def run_instance(
         
         elapsed_time = time.time() - start_time
         logger.info(f"Instance {instance_id} completed in {elapsed_time:.2f}s")
-        
+
+        # Write CI test results to log file
+        try:
+            with open(log_file, 'w') as f:
+                f.write(f"Instance: {instance_id}\n")
+                f.write(f"Repository: {repo}\n")
+                f.write(f"Elapsed time: {elapsed_time:.2f}s\n")
+                f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+                f.write("=" * 80 + "\n\n")
+                f.write("CI Test Results:\n")
+                f.write(json.dumps(result, indent=2, ensure_ascii=False))
+                f.write("\n")
+            logger.info(f"Results written to {log_file}")
+        except Exception as log_error:
+            logger.warning(f"Failed to write log file: {log_error}")
+
         # Add metadata to result
         result["instance_id"] = instance_id
         result["repo"] = repo
         result["elapsed_time"] = elapsed_time
         result["log_file"] = os.path.relpath(log_file, os.path.dirname(logs_dir))
         result["timestamp"] = datetime.now().isoformat()
-        
+
         return result
     except Exception as e:
         elapsed_time = time.time() - start_time
