@@ -97,14 +97,30 @@ def calc_cost(model_name, input_tokens, output_tokens):
     Calculates the cost of a response from the openai API.
 
     Args:
-    response (openai.ChatCompletion): The response from the API.
+    model_name (str): The name of the model used.
+    input_tokens (int): Number of input tokens.
+    output_tokens (int): Number of output tokens.
 
     Returns:
     float: The cost of the response.
     """
+    # Default prices for unknown models (using GPT-3.5-turbo pricing as baseline)
+    DEFAULT_COST_PER_INPUT = 0.000001  # $0.001 per 1K input tokens
+    DEFAULT_COST_PER_OUTPUT = 0.000002  # $0.002 per 1K output tokens
+
+    cost_per_input = MODEL_COST_PER_INPUT.get(model_name, DEFAULT_COST_PER_INPUT)
+    cost_per_output = MODEL_COST_PER_OUTPUT.get(model_name, DEFAULT_COST_PER_OUTPUT)
+
+    if model_name not in MODEL_COST_PER_INPUT:
+        logger.warning(
+            f"Model '{model_name}' not found in pricing database. "
+            f"Using default pricing: ${DEFAULT_COST_PER_INPUT*1000:.4f}/1K input tokens, "
+            f"${DEFAULT_COST_PER_OUTPUT*1000:.4f}/1K output tokens"
+        )
+
     cost = (
-        MODEL_COST_PER_INPUT[model_name] * input_tokens
-        + MODEL_COST_PER_OUTPUT[model_name] * output_tokens
+        cost_per_input * input_tokens
+        + cost_per_output * output_tokens
     )
     logger.info(
         f"input_tokens={input_tokens}, output_tokens={output_tokens}, cost={cost:.2f}"
@@ -181,8 +197,10 @@ def openai_inference(
     max_cost (float): The maximum cost to spend on inference.
     """
     encoding = tiktoken.encoding_for_model(model_name_or_path)
+    # Default model limit: 128K tokens (supports most modern models)
+    model_limit = MODEL_LIMITS.get(model_name_or_path, 128_000)
     test_dataset = test_dataset.filter(
-        lambda x: gpt_tokenize(x["text"], encoding) <= MODEL_LIMITS[model_name_or_path],
+        lambda x: gpt_tokenize(x["text"], encoding) <= model_limit,
         desc="Filtering",
         load_from_cache_file=False,
     )
@@ -347,9 +365,11 @@ def anthropic_inference(
         )
     print(f"Using Anthropic key {'*' * max(0, len(api_key) - 5) + api_key[-5:]}")
     anthropic = Anthropic(api_key=api_key)
+    # Default model limit: 200K tokens (typical for Claude models)
+    model_limit = MODEL_LIMITS.get(model_name_or_path, 200_000)
     test_dataset = test_dataset.filter(
         lambda x: claude_tokenize(x["text"], anthropic)
-        <= MODEL_LIMITS[model_name_or_path],
+        <= model_limit,
         desc="Filtering",
         load_from_cache_file=False,
     )
@@ -600,8 +620,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model_name_or_path",
         type=str,
-        help="Name of API model. Update MODEL* constants in this file to add new models.",
-        choices=sorted(list(MODEL_LIMITS.keys())),
+        default="gpt-3.5-turbo-1106",
+        help="Name of API model (e.g., gpt-3.5-turbo-1106, gpt-4, claude-3-sonnet-20240229). Any model name is accepted.",
     )
     parser.add_argument(
         "--shard_id",
