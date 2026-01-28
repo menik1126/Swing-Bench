@@ -132,9 +132,16 @@ def main(
 
     tokens = os.getenv("GITHUB_TOKENS")
     if not tokens:
-        raise Exception(
-            "Missing GITHUB_TOKENS, consider rerunning with GITHUB_TOKENS=$(gh auth token)"
-        )
+        # Fallback to single GITHUB_TOKEN if GITHUB_TOKENS not set
+        token = os.getenv("GITHUB_TOKEN")
+        if not token:
+            raise Exception(
+                "Missing GITHUB_TOKEN or GITHUB_TOKENS. Please set one of:\n"
+                "  1. GITHUB_TOKEN in .env file (single token)\n"
+                "  2. GITHUB_TOKENS in .env file (comma-separated for parallel processing)\n"
+                "  3. Or run with: GITHUB_TOKENS=$(gh auth token)"
+            )
+        tokens = token
     tokens = tokens.split(",")
     data_task_lists = split_instances(repos, len(tokens))
 
