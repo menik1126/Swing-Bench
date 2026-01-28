@@ -408,6 +408,26 @@ def extract_problem_statement_and_hints_django(
 
     return text, all_hints_text
 
+def extract_base_job_name(job_name: str) -> str:
+    """Extract base job name by removing matrix parameters
+
+    Examples:
+        'test (windows-latest, 3.10, conda)' -> 'test'
+        'Build wheel and sdist' -> 'Build wheel and sdist'
+        'lint / flake8' -> 'lint / flake8'
+
+    Args:
+        job_name: Full job name from GitHub API
+
+    Returns:
+        Base job name without matrix parameters
+    """
+    # Remove matrix parameters in parentheses at the end
+    if '(' in job_name and job_name.rstrip().endswith(')'):
+        return job_name.split('(')[0].strip()
+    return job_name
+
+
 def extract_ci_name_list(pull: dict, token: Optional[str] = None) -> List[Tuple[str, str]]:
     """Extract CI job names and workflow files from a PR using GitHub API
 
@@ -484,7 +504,9 @@ def extract_ci_name_list(pull: dict, token: Optional[str] = None) -> List[Tuple[
                     if jobs_response and jobs_response.jobs:
                         for job in jobs_response.jobs:
                             job_name = job.name
-                            all_ci_names.append((job_name, workflow_path))
+                            # Extract base job name (remove matrix parameters)
+                            base_job_name = extract_base_job_name(job_name)
+                            all_ci_names.append((base_job_name, workflow_path))
 
                 except Exception as e:
                     logger.warning(f"Could not fetch jobs for run {run_id}: {e}")
