@@ -150,11 +150,19 @@ def main(
             del existing_dataset  # don't store in memory
 
     # Load dataset
-    dataset = (
-        load_from_disk(dataset_name_or_path)
-        if Path(dataset_name_or_path).exists()
-        else load_dataset(dataset_name_or_path)
-    )
+    if Path(dataset_name_or_path).exists():
+        # Check if it's a JSONL file
+        if dataset_name_or_path.endswith('.jsonl') or dataset_name_or_path.endswith('.json'):
+            logger.info(f"Loading data from JSONL file: {dataset_name_or_path}")
+            data = load_jsonl_file(dataset_name_or_path)
+            # Create a DatasetDict with 'test' split by default
+            dataset = DatasetDict({'test': Dataset.from_list(data)})
+        else:
+            # It's a Dataset directory
+            dataset = load_from_disk(dataset_name_or_path)
+    else:
+        # Load from HuggingFace Hub
+        dataset = load_dataset(dataset_name_or_path)
     logger.info(f"Found {set(dataset.keys())} splits")
     if set(splits) - set(dataset.keys()) != set():
         raise ValueError(f"Unknown splits {set(splits) - set(dataset.keys())}")
