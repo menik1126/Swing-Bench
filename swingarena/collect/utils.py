@@ -408,53 +408,106 @@ def extract_problem_statement_and_hints_django(
 
     return text, all_hints_text
 
-def extract_ci_name_list(pull: dict) -> List[Tuple[str, str]]:
-    """Extract CI job names and workflow files from a PR
-    
+def extract_ci_name_list(pull: dict, token: Optional[str] = None) -> List[Tuple[str, str]]:
+    """Extract CI job names and workflow files from a PR using GitHub API
+
     Args:
         pull: Pull Request data dictionary
-    
+        token: GitHub API token (optional, uses environment variable if not provided)
+
     Returns:
         List of tuples containing (ci_job_name, workflow_file_path)
     """
     try:
         repo_full_name = pull['base']['repo']['full_name']
         pr_number = pull['number']
-    except KeyError as e:
-        logger.error(f"Invalid input format, missing key: {e}")
+        owner, repo = repo_full_name.split('/')
+    except (KeyError, ValueError) as e:
+        logger.error(f"Invalid input format: {e}")
         return []
-    
-    checks_url = f"https://github.com/{repo_full_name}/pull/{pr_number}/checks"
-    print(f"Processing {repo_full_name} {pr_number} at {checks_url}")
-    
-    # Get checks page
-    checks_html = get_html_page(checks_url)
-    
-    if not checks_html:
-        logger.error(f"Failed to fetch checks page")
+
+    # Get token from environment if not provided
+    if not token:
+        import os
+        token = os.getenv('GITHUB_TOKEN') or os.getenv('GITHUB_TOKENS', '').split(',')[0]
+
+    if not token:
+        logger.warning("No GitHub token provided, API rate limits may apply")
+
+    try:
+        # Initialize GitHub API client
+        api = GhApi(token=token) if token else GhApi()
+
+        logger.info(f"Fetching workflow runs for {repo_full_name} PR #{pr_number}")
+
+        # Get the head SHA from the PR
+        try:
+            pr_data = api.pulls.get(owner=owner, repo=repo, pull_number=pr_number)
+            head_sha = pr_data.head.sha
+        except Exception as e:
+            # Fallback: try to get from pull dict
+            head_sha = pull.get('head', {}).get('sha')
+            if not head_sha:
+                logger.error(f"Could not get head SHA for PR #{pr_number}: {e}")
+                return []
+
+        # Get workflow runs for this commit
+        all_ci_names = []
+        try:
+            runs = api.actions.list_workflow_runs_for_repo(
+                owner=owner,
+                repo=repo,
+                head_sha=head_sha,
+                per_page=100
+            )
+
+            if not runs or not runs.workflow_runs:
+                logger.warning(f"No workflow runs found for {repo_full_name} PR #{pr_number}")
+                return []
+
+            logger.info(f"Found {len(runs.workflow_runs)} workflow runs")
+
+            # Process each workflow run
+            for run in runs.workflow_runs:
+                run_id = run.id
+                workflow_path = run.path  # e.g., '.github/workflows/test.yml'
+
+                # Get jobs for this workflow run
+                try:
+                    jobs_response = api.actions.list_jobs_for_workflow_run(
+                        owner=owner,
+                        repo=repo,
+                        run_id=run_id,
+                        per_page=100
+                    )
+
+                    if jobs_response and jobs_response.jobs:
+                        for job in jobs_response.jobs:
+                            job_name = job.name
+                            all_ci_names.append((job_name, workflow_path))
+
+                except Exception as e:
+                    logger.warning(f"Could not fetch jobs for run {run_id}: {e}")
+                    continue
+
+        except Exception as e:
+            logger.error(f"Error fetching workflow runs: {e}")
+            return []
+
+        # Remove duplicates while preserving order
+        seen = set()
+        unique_ci_names = []
+        for item in all_ci_names:
+            if item not in seen:
+                seen.add(item)
+                unique_ci_names.append(item)
+
+        logger.info(f"Extracted {len(unique_ci_names)} unique CI jobs")
+        return unique_ci_names
+
+    except Exception as e:
+        logger.error(f"Error extracting CI names: {e}")
         return []
-    
-    # Find workflow run IDs
-    runs_url_prefix = f'{repo_full_name}/actions/runs/'
-    runs_url_ptn = re.compile(rf'{runs_url_prefix}(\d+)')
-    matches = runs_url_ptn.findall(checks_html)
-    
-    all_ci_names = []
-    
-    # Process each unique run ID
-    for run_id in set(matches):
-        workflow_url = f"https://github.com/{repo_full_name}/actions/runs/{run_id}/workflow"
-        workflow_html = get_html_page(workflow_url)
-        
-        if not workflow_html:
-            continue
-            
-        # Extract jobs from this workflow
-        ci_names = find_workflow_jobs(workflow_html, run_id)
-        all_ci_names.extend(ci_names)
-    
-    # Return unique CI names
-    return list(set(all_ci_names))
 
 # Create a session with retry capability
 session = requests.Session()

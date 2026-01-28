@@ -169,7 +169,7 @@ def main(pr_file: str, output: str, token: Optional[str] = None):
                     continue
                 print('valid pull {}'.format(instance_id))
                 # Append action info
-                pull['ci_name_list'] = extract_ci_name_list(pull)
+                pull['ci_name_list'] = extract_ci_name_list(pull, token=token)
                 # Create task instance
                 repo_name = pull["base"]["repo"]["full_name"]
                 if repo_name not in repos:
