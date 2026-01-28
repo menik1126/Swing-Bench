@@ -141,6 +141,12 @@ def main(pr_file: str, output: str, token: Optional[str] = None):
         f"Will skip {len(seen_prs)} pull requests that have already been inspected"
     )
 
+    # Ensure output directory exists
+    output_dir = os.path.dirname(output)
+    if output_dir and not os.path.exists(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
+        logger.info(f"Created output directory: {output_dir}")
+
     # Write to .all file for all PRs
     write_mode_all = "w" if not os.path.exists(all_output) else "a"
     with open(all_output, write_mode_all) as all_output:
