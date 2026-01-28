@@ -14,6 +14,7 @@ from tqdm.auto import tqdm
 import numpy as np
 import tiktoken
 import openai
+from openai import OpenAI
 from anthropic import HUMAN_PROMPT, AI_PROMPT, Anthropic
 from tenacity import (
     retry,
@@ -112,14 +113,14 @@ def calc_cost(model_name, input_tokens, output_tokens):
 
 
 @retry(wait=wait_random_exponential(min=30, max=600), stop=stop_after_attempt(3))
-def call_chat(model_name_or_path, inputs, use_azure, temperature, top_p, **model_args):
+def call_chat(client, model_name_or_path, inputs, temperature, top_p, **model_args):
     """
     Calls the openai API to generate completions for the given inputs.
 
     Args:
+    client (OpenAI): The OpenAI client object
     model_name_or_path (str): The name or path of the model to use.
     inputs (str): The inputs to generate completions for.
-    use_azure (bool): Whether to use the azure API.
     temperature (float): The temperature to use.
     top_p (float): The top_p to use.
     **model_args (dict): A dictionary of model arguments.
@@ -127,28 +128,16 @@ def call_chat(model_name_or_path, inputs, use_azure, temperature, top_p, **model
     system_messages = inputs.split("\n", 1)[0]
     user_message = inputs.split("\n", 1)[1]
     try:
-        if use_azure:
-            response = openai.chat.completions.create(
-                engine=ENGINES[model_name_or_path] if use_azure else None,
-                messages=[
-                    {"role": "system", "content": system_messages},
-                    {"role": "user", "content": user_message},
-                ],
-                temperature=temperature,
-                top_p=top_p,
-                **model_args,
-            )
-        else:
-            response = openai.chat.completions.create(
-                model=model_name_or_path,
-                messages=[
-                    {"role": "system", "content": system_messages},
-                    {"role": "user", "content": user_message},
-                ],
-                temperature=temperature,
-                top_p=top_p,
-                **model_args,
-            )
+        response = client.chat.completions.create(
+            model=model_name_or_path,
+            messages=[
+                {"role": "system", "content": system_messages},
+                {"role": "user", "content": user_message},
+            ],
+            temperature=temperature,
+            top_p=top_p,
+            **model_args,
+        )
         input_tokens = response.usage.prompt_tokens
         output_tokens = response.usage.completion_tokens
         cost = calc_cost(response.model, input_tokens, output_tokens)
@@ -202,13 +191,24 @@ def openai_inference(
         raise ValueError(
             "Must provide an api key. Expected in OPENAI_API_KEY environment variable."
         )
-    openai.api_key = openai_key
+
+    # Support custom base URL via environment variable or model_args
+    base_url = os.environ.get("OPENAI_BASE_URL", None)
+    if "base_url" in model_args:
+        base_url = model_args.pop("base_url")
+
+    # Create OpenAI client with optional base_url for proxy/custom endpoints
+    if base_url:
+        logger.info(f"Using custom OpenAI base URL: {base_url}")
+        client = OpenAI(api_key=openai_key, base_url=base_url)
+    else:
+        logger.info("Using default OpenAI base URL (https://api.openai.com/v1)")
+        client = OpenAI(api_key=openai_key)
+
     print(f"Using OpenAI key {'*' * max(0, len(openai_key) - 5) + openai_key[-5:]}")
     use_azure = model_args.pop("use_azure", False)
     if use_azure:
-        openai.api_type = "azure"
-        openai.api_base = "https://pnlpopenai3.openai.azure.com/"
-        openai.api_version = "2023-05-15"
+        raise ValueError("Azure support not yet compatible with new OpenAI client. Use OPENAI_BASE_URL instead.")
     temperature = model_args.pop("temperature", 0.2)
     top_p = model_args.pop("top_p", 0.95 if temperature > 0 else 1)
     print(f"Using temperature={temperature}, top_p={top_p}")
@@ -226,9 +226,9 @@ def openai_inference(
             output_dict.update(basic_args)
             output_dict["text"] = f"{datum['text']}\n\n"
             response, cost = call_chat(
+                client,
                 output_dict["model_name_or_path"],
                 output_dict["text"],
-                use_azure,
                 temperature,
                 top_p,
             )

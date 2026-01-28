@@ -1,12 +1,13 @@
 import json
 import logging
 import re
+import os
 from argparse import ArgumentParser
 from datetime import datetime
 from pathlib import Path
 
 import torch
-from datasets import load_from_disk, load_dataset
+from datasets import load_from_disk, load_dataset, Dataset, DatasetDict
 from peft import PeftConfig, PeftModel
 from tqdm.auto import tqdm
 from transformers import (
@@ -154,6 +155,72 @@ def load_model(model_name_or_path, peft_path):
     return model
 
 
+def load_dataset_from_jsonl(dataset_path: str) -> DatasetDict:
+    """
+    Load dataset from local JSON or JSONL file and convert to HuggingFace Dataset format.
+
+    Args:
+        dataset_path (str): Path to the JSON or JSONL file
+
+    Returns:
+        DatasetDict: Dataset with 'test' split
+    """
+    instances = []
+
+    with open(dataset_path, 'r') as f:
+        # Try to load as single JSON first
+        try:
+            data = json.load(f)
+            # If it's a list of instances
+            if isinstance(data, list):
+                instances = data
+            # If it's a single instance
+            elif isinstance(data, dict):
+                instances = [data]
+        except json.JSONDecodeError:
+            # If not valid JSON, try as JSONL (one JSON per line)
+            f.seek(0)
+            for line in f:
+                line = line.strip()
+                if line:
+                    instances.append(json.loads(line))
+
+    # Convert to HuggingFace Dataset format
+    # Ensure we have 'text' field by combining problem_statement and hints_text
+    processed = []
+    for inst in instances:
+        # Create text field if it doesn't exist
+        if 'text' not in inst:
+            text_parts = []
+            if 'problem_statement' in inst:
+                text_parts.append(inst['problem_statement'])
+            if 'hints_text' in inst:
+                text_parts.append(inst['hints_text'])
+            inst['text'] = '\n\n'.join(text_parts) if text_parts else str(inst)
+
+        # Ensure instance_id exists
+        if 'instance_id' not in inst:
+            inst['instance_id'] = f"instance_{len(processed)}"
+
+        processed.append(inst)
+
+    logging.getLogger(__name__).info(f"Loaded {len(processed)} instances from {dataset_path}")
+
+    # Create dataset with all fields as columns
+    if processed:
+        data_dict = {}
+        for key in processed[0].keys():
+            data_dict[key] = [inst.get(key, '') for inst in processed]
+
+        dataset_dict = DatasetDict({
+            'test': Dataset.from_dict(data_dict)
+        })
+    else:
+        raise ValueError(f"No instances found in {dataset_path}")
+
+    return dataset_dict
+
+
 def load_tokenizer(model_name_or_path):
     logger.info(f"Loading tokenizer {model_name_or_path}")
     tokenizer = LlamaTokenizer.from_pretrained(model_name_or_path)
@@ -191,7 +258,13 @@ def load_data(
         dataset: The preprocessed dataset for model inference.
     """
     logger.info(f"Loading dataset from {dataset_path}")
-    if not Path(dataset_path).exists():
+
+    # Load dataset - support both local JSONL/JSON files and HuggingFace datasets
+    if Path(dataset_path).exists() and (dataset_path.endswith('.jsonl') or dataset_path.endswith('.json')):
+        logger.info(f"Loading dataset from local file: {dataset_path}")
+        dataset_dict = load_dataset_from_jsonl(dataset_path)
+        dataset = dataset_dict[split]
+    elif not Path(dataset_path).exists():
         dataset = load_dataset(dataset_path, split=split)
     elif Path(dataset_path, split).exists():
         dataset = load_from_disk(Path(dataset_path) / split)
