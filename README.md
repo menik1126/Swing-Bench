@@ -140,6 +140,27 @@ This enhanced installation will automatically:
 
 > **💡 Note**: The basic `pip install -e .` only installs Python dependencies. For CI-driven evaluation and agent battles, the `[ci-tools]` installation is required.
 
+### ☕ Java Requirements for BM25 Retrieval
+
+If you plan to use BM25 retrieval for code search (used by the `prepare` and `inference` modules), you'll need Java 21+:
+
+**Installation:**
+```bash
+# Using conda (recommended)
+conda install openjdk=21
+
+# Set environment variables (add to ~/.bashrc or ~/.zshrc)
+export JVM_PATH=$CONDA_PREFIX/lib/jvm/lib/server/libjvm.so
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib/jvm/lib/server:$LD_LIBRARY_PATH
+```
+
+**Alternative installation methods:**
+- **Ubuntu/Debian**: `sudo apt-get install openjdk-21-jdk`
+- **macOS**: `brew install openjdk@21`
+- **Windows**: Download from [Adoptium](https://adoptium.net/) or use `choco install openjdk21`
+
+> **💡 Note**: Java is required for the `pyserini` library used in BM25 indexing and retrieval. Without it, you can still use other SwingArena features but won't be able to build search indexes or use retrieval-augmented generation.
+
 ### 🔧 CI Tools Installation Details
 
 **Prerequisites:**
