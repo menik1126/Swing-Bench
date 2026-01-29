@@ -21,3 +21,4 @@ datasets
 tqdm
 numpy
 pyserini
+jedi
