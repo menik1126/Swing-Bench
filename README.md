@@ -315,15 +315,38 @@ cd swingarena/collect
 Process and index datasets:
 ```bash
 cd swingarena/prepare
-python swing_clone_repos.py --dataset_path ./data
-python swing_build_index.py --language python
+
+# Clone repositories from task instances
+python swing_clone_repos.py \
+    --dataset_path /path/to/task-instances.jsonl \
+    --repo_root_dir /path/to/repos
+
+# Build BM25 search index
+python swing_build_index.py \
+    --dataset_path /path/to/task-instances.jsonl \
+    --repo_root_dir /path/to/repos \
+    --output_dir /path/to/indexes \
+    --sub_dataset_identifier Python
 ```
 
 ### 3. **Model Inference** (`inference`)
 Generate solutions with AI models:
 ```bash
 cd swingarena/inference
-python -m swingarena.inference.run_api --model_name_or_path gpt-4
+
+# Using API models (OpenAI, Anthropic, etc.)
+python -m swingarena.inference.run_api \
+    --dataset_name_or_path /path/to/task-instances.jsonl \
+    --split test \
+    --model_name_or_path gpt-4 \
+    --output_dir /path/to/output \
+    --max_cost 1.0
+
+# Or using local Llama models
+python -m swingarena.inference.run_llama \
+    --dataset_name_or_path /path/to/task-instances.jsonl \
+    --model_name_or_path /path/to/llama-model \
+    --output_dir /path/to/output
 ```
 
 ### 4. **Evaluation** (`harness`)
