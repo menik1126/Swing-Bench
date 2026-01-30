@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://swebench.com">
-    <img src="docs/images/github_logo_pot.png" style="height: 10em" alt="Kawi the SWE-Llama" />
-  </a>
+    <img src="docs/images/github_logo_pot.png" style="height: 10em" alt="SwingArena Logo" />
 </p>
 
 <div align="center">
@@ -21,9 +19,6 @@ Code and data for our paper <a href="https://arxiv.org/abs/2505.23932">SwingAren
     </a>
     <a href="https://copyright.princeton.edu/policy">
         <img alt="License" src="https://img.shields.io/badge/License-MIT-blue">
-    </a>
-    <a href="https://badge.fury.io/py/swebench">
-        <img src="https://badge.fury.io/py/swebench.svg">
     </a>
 </p>
 
@@ -365,7 +360,7 @@ python arena_stats.py --arena_log_dir ./evaluations
 
 ## 💽 Usage
 > [!WARNING]
-> Running fast evaluations on SWE-bench can be resource intensive
+> Running fast evaluations on SwingBench can be resource intensive
 > We recommend running the evaluation harness on an `x86_64` machine with at least 120GB of free storage, 16GB of RAM, and 8 CPU cores.
 > You may need to experiment with the `--max_workers` argument to find the optimal number of workers for your machine, but we recommend using fewer than `min(0.75 * os.cpu_count(), 24)`.
 >
@@ -398,21 +393,10 @@ Additionally, the SwingArena repo can help you:
 * Run [inference](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/inference/README.md) on existing models (either models you have on-disk like LLaMA, or models you have access to through an API like GPT-4). The inference step is where you get a repo and an issue and have the model try to generate a fix for it.
 *  Run SwingArena's [data collection procedure](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/collect/) on your own repositories, to make new SwingArena tasks.
 
-## ⬇️ Downloads
-| Datasets | Models |
-| - | - |
-| [🤗 SWE-bench](https://huggingface.co/datasets/princeton-nlp/SWE-bench) | [🦙 SWE-Llama 13b](https://huggingface.co/princeton-nlp/SWE-Llama-13b) |
-| [🤗 "Oracle" Retrieval](https://huggingface.co/datasets/princeton-nlp/SWE-bench_oracle) | [🦙 SWE-Llama 13b (PEFT)](https://huggingface.co/princeton-nlp/SWE-Llama-13b-peft) |
-| [🤗 BM25 Retrieval 13K](https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_13K) | [🦙 SWE-Llama 7b](https://huggingface.co/princeton-nlp/SWE-Llama-7b) |
-| [🤗 BM25 Retrieval 27K](https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_27K) | [🦙 SWE-Llama 7b (PEFT)](https://huggingface.co/princeton-nlp/SWE-Llama-7b-peft) |
-| [🤗 BM25 Retrieval 40K](https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_40K) | |
-| [🤗 BM25 Retrieval 50K (Llama tokens)](https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_50k_llama)   | |
-
 ## 🍎 Tutorials
-We've also written the following blog posts on how to use different parts of SWE-bench.
+We've also written the following blog posts on how to use different parts of SwingBench.
 If you'd like to see a post about a particular topic, please let us know via an issue.
 * [Nov 1. 2023] Collecting Evaluation Tasks for SwingArena ([🔗](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/collect/README.md))
-<!-- * [Nov 6. 2023] Evaluating on SWE-bench ([🔗](https://github.com/princeton-nlp/SWE-bench/blob/main/assets/evaluation.md)) -->
 
 
 ## 🚨 Troubleshooting

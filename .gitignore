@@ -56,3 +56,6 @@ build/
 annotated/
 dataset/
 length_stats/
+
+# 测试进度文件（仅本地保留）
+TESTING_PROGRESS.md
