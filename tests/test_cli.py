@@ -19,7 +19,7 @@ def test_one_instance():
         "--concurrent_workers",
         "1",
         "--instance_ids",
-        "chronotope__chrono-1502",
+        "tokio-rs__tokio-6978",
     ]
     result = subprocess.run(cmd, capture_output=True)
     print(result.stdout)

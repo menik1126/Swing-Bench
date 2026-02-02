@@ -202,7 +202,7 @@ Test your basic installation:
 python -m swingarena.harness.run_evaluation \
     --predictions_path gold \
     --concurrent_workers 1 \
-    --instance_ids chronotope__chrono-1502
+    --instance_ids tokio-rs__tokio-6978
 ```
 
 Verify CI tools installation:
@@ -230,7 +230,7 @@ You can run evaluations entirely on the cloud using [Modal](https://modal.com/) 
 # The standard run_evaluation command does not support --modal parameter
 python -m swingarena.harness.modal_eval.run_evaluation_modal \
     --predictions_path gold \
-    --instance_ids chronotope__chrono-1502
+    --instance_ids tokio-rs__tokio-6978
 ```
 
 > [!NOTE]
