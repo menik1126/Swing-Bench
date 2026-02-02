@@ -124,33 +124,29 @@ pip install -e .
 
 For complete SwingArena functionality including agent battles and CI simulation:
 
-**Step 1: Install Python dependencies**
 ```bash
 pip install -e ".[ci-tools]"
 ```
 
-This installs:
-- ✅ All core Python dependencies
-- 📦 Docker SDK for Python
-- 📄 YAML parser and other CI-related Python packages
-- 🔗 Pre-commit hooks
+**This single command will:**
+- ✅ Install all Python dependencies (including Docker SDK, YAML parser)
+- 🐳 **Automatically install Docker** (on supported Linux distributions)
+- 🔧 **Automatically install `act`** (GitHub Actions local runner)
+- 🔗 Set up pre-commit hooks
 
-**Step 2: Install CI system tools (Docker and act)**
+> **💡 How it works**:
+> - First installs Python packages
+> - Then automatically detects the `[ci-tools]` extra and installs system tools
+> - On macOS/Windows, uses Homebrew/Chocolatey when available
+
+**To skip system tools installation:**
 ```bash
+pip install -e ".[ci-tools]" --install-option="--skip-ci-tools"
+# Then install manually later:
 python install_ci_tools.py
 ```
 
-This will:
-- 🐳 Install Docker (on supported Linux distributions)
-- 🔧 Install `act` (GitHub Actions local runner)
-- ✅ Verify all tools are correctly installed
-
-> **💡 Note**: `pip install` only installs **Python packages**. Docker and `act` are system-level tools that require a separate installation script.
-
-> **Alternative**: To install CI tools during pip install, set environment variable:
-> ```bash
-> SWINGARENA_INSTALL_CI_TOOLS=1 pip install -e ".[ci-tools]"
-> ```
+> **⚠️ Note**: On macOS/Windows, you may need to install Docker Desktop manually if package managers (brew/choco) are not available.
 
 ### ☕ Java Requirements for BM25 Retrieval
 

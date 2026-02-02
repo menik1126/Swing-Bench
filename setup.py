@@ -241,25 +241,36 @@ def install_ci_tools():
 class CustomInstallCommand(install):
     """Custom installation command that installs CI tools when the ci-tools extra is used"""
     user_options = install.user_options + [
-        ('with-ci-tools', None, 'Install CI tools (Docker, act)'),
+        ('skip-ci-tools', None, 'Skip installing system CI tools (Docker, act)'),
     ]
 
     def initialize_options(self):
         install.initialize_options(self)
-        self.with_ci_tools = None
+        self.skip_ci_tools = None
 
     def finalize_options(self):
         install.finalize_options(self)
 
     def run(self):
         install.run(self)
-        # Check if ci-tools extra was requested via environment variable or flag
-        if self.with_ci_tools or os.environ.get('SWINGARENA_INSTALL_CI_TOOLS') == '1':
+
+        # Don't install CI tools if user explicitly skipped
+        if self.skip_ci_tools:
+            print("\n💡 Skipped CI tools installation (--skip-ci-tools flag used)")
+            print("   To install later, run: python install_ci_tools.py")
+            return
+
+        # Check if docker package was installed (part of ci-tools extra)
+        try:
+            import docker
+            # If docker package is available, user installed ci-tools extra
+            print("\n🔧 Detected ci-tools extra installation, installing system tools...")
             install_ci_tools()
-        else:
+        except ImportError:
+            # docker package not installed, user didn't install ci-tools extra
             print("\n💡 To install CI tools (Docker, act), run:")
-            print("   python install_ci_tools.py")
-            print("   Or set SWINGARENA_INSTALL_CI_TOOLS=1 environment variable")
+            print("   pip install -e \".[ci-tools]\"")
+            print("   Or: python install_ci_tools.py")
 
 with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
