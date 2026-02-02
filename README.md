@@ -201,9 +201,8 @@ Test your basic installation:
 ```bash
 python -m swingarena.harness.run_evaluation \
     --predictions_path gold \
-    --max_workers 1 \
-    --instance_ids sympy__sympy-20590 \
-    --run_id validate-gold
+    --concurrent_workers 1 \
+    --instance_ids sympy__sympy-20590
 ```
 
 Verify CI tools installation:
@@ -227,11 +226,11 @@ Python yaml: ✅ Installed
 ### 🌩️ Cloud Evaluation with Modal
 You can run evaluations entirely on the cloud using [Modal](https://modal.com/) to avoid local setup:
 ```bash
-python -m swingarena.harness.run_evaluation \
+# Note: Modal evaluation requires using the modal_eval module directly
+# The standard run_evaluation command does not support --modal parameter
+python -m swingarena.harness.modal_eval.run_evaluation_modal \
     --predictions_path gold \
-    --run_id validate-gold-modal \
-    --instance_ids sympy__sympy-20590 \
-    --modal true
+    --instance_ids sympy__sympy-20590
 ```
 
 > [!NOTE]
@@ -259,7 +258,7 @@ Run a simple battle between two models:
 python swingarena/harness/agent_battle.py \
     --ci_tool_name act \
     --dataset_name SwingBench/SwingBench \
-    --split Rust \
+    --language rust \
     --model_lhs "gpt-4" \
     --model_rhs "claude-3" \
     --api_key_lhs "your-api-key-1" \
@@ -278,7 +277,8 @@ For convenience, use the provided battle script:
 - `--model_lhs/rhs`: Left/Right side AI models (e.g., "gpt-4", "claude-3")
 - `--api_key_lhs/rhs`: API keys for the respective models
 - `--base_url_lhs/rhs`: Custom API endpoints (optional)
-- `--split`: Dataset split (Rust, Python, Go, etc.)
+- `--language`: Programming language (rust, python, go, etc.)
+- `--split`: Dataset split (optional)
 - `--turns`: Number of battle turns (default: 1)
 - `--ci_tool_name`: CI tool to use (default: "act")
 
@@ -373,10 +373,8 @@ Evaluate model predictions on SwingArena using the evaluation harness with the f
 python -m swingarena.harness.run_evaluation \
     --dataset_name SwingBench/SwingBench \
     --predictions_path <path_to_predictions> \
-    --max_workers <num_workers> \
-    --run_id <run_id>
+    --concurrent_workers <num_workers>
     # use --predictions_path 'gold' to verify the gold patches
-    # use --run_id to name the evaluation run
 ```
 
 This command will generate docker build logs (`logs/build_images`) and evaluation logs (`logs/run_evaluation`) in the current directory.
