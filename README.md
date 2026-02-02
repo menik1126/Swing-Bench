@@ -197,14 +197,6 @@ python install_ci_tools.py
 
 ### ✅ Installation Verification
 
-Test your basic installation:
-```bash
-python -m swingarena.harness.run_evaluation \
-    --predictions_path gold \
-    --concurrent_workers 1 \
-    --instance_ids tokio-rs__tokio-6978
-```
-
 Verify CI tools installation:
 ```bash
 python install_ci_tools.py --check
@@ -215,7 +207,7 @@ Expected output after successful CI tools installation:
 🔍 Checking CI tools installation status...
 
 act (GitHub Actions): ✅ Installed
-Docker: ✅ Installed  
+Docker: ✅ Installed
 Git: ✅ Installed
 Python docker: ✅ Installed
 Python yaml: ✅ Installed
@@ -223,37 +215,139 @@ Python yaml: ✅ Installed
 📊 Overall status: ✅ All tools ready
 ```
 
-### 🌩️ Cloud Evaluation with Modal
-You can run evaluations entirely on the cloud using [Modal](https://modal.com/) to avoid local setup:
+## 📊 Dataset Access
+
+SwingArena automatically downloads datasets from Hugging Face when needed. You can also load them manually:
+
+```python
+from datasets import load_dataset
+
+# Load the main SwingBench dataset
+dataset = load_dataset('SwingBench/SwingBench', split='test')
+
+# Or load language-specific datasets
+languages = ['rust', 'cpp', 'python', 'go', 'java', 'javascript', 'php']
+swingbench = {}
+for lang in languages:
+    swingbench[lang] = load_dataset('SwingBench/SwingBench-data', split=lang)
+```
+
+## 🎯 First Run: Verify Your Setup
+
+Now let's run a simple evaluation to verify everything works:
+
+> **⚠️ Important Prerequisites:**
+> - **Docker must be running** (check with `docker ps`)
+> - This command will **automatically download** the dataset from Hugging Face (~500MB)
+> - It will **build Docker images** and **run CI tests** (may take 5-10 minutes first time)
+
 ```bash
-# Note: Modal evaluation requires using the modal_eval module directly
-# The standard run_evaluation command does not support --modal parameter
-python -m swingarena.harness.modal_eval.run_evaluation_modal \
+python -m swingarena.harness.run_evaluation \
     --predictions_path gold \
+    --concurrent_workers 1 \
     --instance_ids tokio-rs__tokio-6978
 ```
 
-> [!NOTE]
-> Modal for SwingArena Multimodal is currently experimental and may not be fully supported yet.
+**What this does:**
+1. Downloads `tokio-rs__tokio-6978` instance from SwingBench dataset
+2. Builds a Docker container with the repository environment
+3. Applies the gold patch (the correct fix)
+4. Runs CI tests to verify the patch works
 
-### 🥊 Quick Start: Arena Battle Mode
+**Expected output:**
+```
+Loading dataset...
+Building Docker images...
+Running evaluation...
+✅ Test passed: tokio-rs__tokio-6978
+```
 
-SwingArena's unique dual-agent battle evaluation mode allows you to compare two AI models in a competitive programming environment.
+If successful, you're ready to use SwingArena! 🎉
 
-**🔧 Setup Arena Environment:**
+## 💽 Basic Usage
 
-First, set up the required environment variables:
+### Running Evaluations
+
+Evaluate model predictions on SwingArena using the evaluation harness:
+
 ```bash
-# Set your workspace directories
-export SWING_TESTBED_PATH="/path/to/your/testbed"
-export SWING_REPOS_DIR_PATH="/path/to/your/repos" 
-export SWING_INDEXES_PATH="/path/to/your/indexes"
+python -m swingarena.harness.run_evaluation \
+    --dataset_name SwingBench/SwingBench \
+    --predictions_path <path_to_predictions> \
+    --concurrent_workers <num_workers>
+    # use --predictions_path 'gold' to verify the gold patches
+```
+
+**Key Parameters:**
+- `--dataset_name`: Dataset to use (default: SwingBench/SwingBench)
+- `--predictions_path`: Path to predictions file, or 'gold' for gold patches
+- `--concurrent_workers`: Number of parallel workers (recommended: `min(0.75 * os.cpu_count(), 24)`)
+- `--instance_ids`: Specific instance IDs to evaluate (space-separated)
+- `--timeout`: Timeout in seconds for each instance (default: 600)
+
+**Output:**
+This command generates:
+- Docker build logs in `logs/build_images/`
+- Evaluation logs in `logs/run_evaluation/`
+- Final results in `evaluation_results/`
+
+To see all available options:
+```bash
+python -m swingarena.harness.run_evaluation --help
+```
+
+> [!WARNING]
+> **Resource Requirements**
+> - Recommended: `x86_64` machine with at least 120GB free storage, 16GB RAM, 8 CPU cores
+> - For Docker Desktop: Increase virtual disk space to ~120GB
+> - Adjust `--concurrent_workers` based on available resources
+> - `arm64` support is experimental
+
+### Using SwingArena for Model Development
+
+The SwingArena repository can help you:
+* Train your own models on our pre-processed datasets
+* Run [inference](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/inference/README.md) on existing models (local models like LLaMA, or API models like GPT-4)
+* Run SwingArena's [data collection procedure](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/collect/) on your own repositories
+
+## 🚀 Advanced Features
+
+### 🥊 Arena Battle Mode
+
+SwingArena's dual-agent battle evaluation mode allows you to compare two AI models in a competitive programming environment.
+
+**Prerequisites:**
+Before running Arena Battle, you need to set up the workspace:
+
+1. **Create workspace directories:**
+```bash
+mkdir -p /path/to/testbed /path/to/repos /path/to/indexes
+```
+
+2. **Set environment variables:**
+```bash
+export SWING_TESTBED_PATH="/path/to/testbed"         # Temporary work directory
+export SWING_REPOS_DIR_PATH="/path/to/repos"         # Repository storage (see preparation below)
+export SWING_INDEXES_PATH="/path/to/indexes"         # BM25 indexes (see preparation below)
 export CI_TOOL_NAME=act
 ```
 
-**⚡ Quick Arena Battle:**
+3. **Prepare repositories and indexes** (required for retrieval-augmented generation):
+```bash
+# Clone repositories
+cd swingarena/prepare
+python swing_clone_repos.py \
+    --dataset_path SwingBench/SwingBench \
+    --repo_root_dir $SWING_REPOS_DIR_PATH
 
-Run a simple battle between two models:
+# Build BM25 indexes (requires Java 21+)
+python swing_build_index.py \
+    --dataset_path SwingBench/SwingBench \
+    --repo_root_dir $SWING_REPOS_DIR_PATH \
+    --output_dir $SWING_INDEXES_PATH
+```
+
+**Running a Battle:**
 ```bash
 python swingarena/harness/agent_battle.py \
     --ci_tool_name act \
@@ -265,15 +359,7 @@ python swingarena/harness/agent_battle.py \
     --api_key_rhs "your-api-key-2"
 ```
 
-**📜 Using the Battle Script:**
-
-For convenience, use the provided battle script:
-```bash
-# Configure environment variables in the script
-./scripts/examples/battle_template.sh
-```
-
-**🎯 Arena Parameters:**
+**Battle Parameters:**
 - `--model_lhs/rhs`: Left/Right side AI models (e.g., "gpt-4", "claude-3")
 - `--api_key_lhs/rhs`: API keys for the respective models
 - `--base_url_lhs/rhs`: Custom API endpoints (optional)
@@ -282,31 +368,38 @@ For convenience, use the provided battle script:
 - `--turns`: Number of battle turns (default: 1)
 - `--ci_tool_name`: CI tool to use (default: "act")
 
-> **⚠️ Prerequisites**: Ensure CI tools are installed with `pip install -e ".[ci-tools]"` or verify with `python install_ci_tools.py --check`
-
-## 📊 Dataset Access
-
-To access SwingArena datasets, copy and run the following code:
-```python
-from datasets import load_dataset
-languages = ['rust', 'cpp', 'python', 'go', 'java', 'javascript', 'php']
-swingbench = {}
-for lang in languages:
-    swingbench[lang] = load_dataset('SwingBench/SwingBench-data', split=lang)
+**Using the Battle Script:**
+```bash
+# Edit environment variables in the script, then run:
+./scripts/examples/battle_template.sh
 ```
 
-## 🔄 Complete Workflow Example
+### 🌩️ Cloud Evaluation with Modal
 
-Here's how to use the five core modules together:
+Run evaluations on the cloud using [Modal](https://modal.com/) to avoid local setup:
 
-### 1. **Data Collection** (`collect`)
+```bash
+# Note: Modal evaluation requires using the modal_eval module
+python -m swingarena.harness.modal_eval.run_evaluation_modal \
+    --predictions_path gold \
+    --instance_ids tokio-rs__tokio-6978
+```
+
+> [!NOTE]
+> Modal for SwingArena is currently experimental and may not be fully supported.
+
+### 🔄 Complete Workflow: Custom Dataset Creation
+
+For advanced users who want to create their own SwingArena-style datasets:
+
+#### 1. **Data Collection** (`collect`)
 Mine repositories and create task instances:
 ```bash
 cd swingarena/collect
 ./run_get_tasks_pipeline.sh
 ```
 
-### 2. **Data Preparation** (`prepare`)
+#### 2. **Data Preparation** (`prepare`)
 Process and index datasets:
 ```bash
 cd swingarena/prepare
@@ -324,7 +417,7 @@ python swing_build_index.py \
     --sub_dataset_identifier Python
 ```
 
-### 3. **Model Inference** (`inference`)
+#### 3. **Model Inference** (`inference`)
 Generate solutions with AI models:
 ```bash
 cd swingarena/inference
@@ -344,52 +437,19 @@ python -m swingarena.inference.run_llama \
     --output_dir /path/to/output
 ```
 
-### 4. **Evaluation** (`harness`)
+#### 4. **Evaluation** (`harness`)
 Test with CI-driven evaluation:
 ```bash
-cd swingarena/harness  
+cd swingarena/harness
 python -m swingarena.harness.run_evaluation --predictions_path ./results
 ```
 
-### 5. **Analysis** (`statistics`)
+#### 5. **Analysis** (`statistics`)
 Generate insights and reports:
 ```bash
 cd swingarena/statistics
 python arena_stats.py --arena_log_dir ./evaluations
 ```
-
-## 💽 Usage
-> [!WARNING]
-> Running fast evaluations on SwingBench can be resource intensive
-> We recommend running the evaluation harness on an `x86_64` machine with at least 120GB of free storage, 16GB of RAM, and 8 CPU cores.
-> You may need to experiment with the `--max_workers` argument to find the optimal number of workers for your machine, but we recommend using fewer than `min(0.75 * os.cpu_count(), 24)`.
->
-> If running with docker desktop, make sure to increase your virtual disk space to have ~120 free GB available, and set max_workers to be consistent with the above for the CPUs available to docker.
->
-> Support for `arm64` machines is experimental.
-
-Evaluate model predictions on SwingArena using the evaluation harness with the following command:
-```bash
-python -m swingarena.harness.run_evaluation \
-    --dataset_name SwingBench/SwingBench \
-    --predictions_path <path_to_predictions> \
-    --concurrent_workers <num_workers>
-    # use --predictions_path 'gold' to verify the gold patches
-```
-
-This command will generate docker build logs (`logs/build_images`) and evaluation logs (`logs/run_evaluation`) in the current directory.
-
-The final evaluation results will be stored in the `evaluation_results` directory.
-
-To see the full list of arguments for the evaluation harness, run:
-```bash
-python -m swingarena.harness.run_evaluation --help
-```
-
-Additionally, the SwingArena repo can help you:
-* Train your own models on our pre-processed datasets
-* Run [inference](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/inference/README.md) on existing models (either models you have on-disk like LLaMA, or models you have access to through an API like GPT-4). The inference step is where you get a repo and an issue and have the model try to generate a fix for it.
-*  Run SwingArena's [data collection procedure](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/collect/) on your own repositories, to make new SwingArena tasks.
 
 ## 🍎 Tutorials
 We've also written the following blog posts on how to use different parts of SwingBench.
