@@ -310,6 +310,136 @@ The SwingArena repository can help you:
 * Run [inference](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/inference/README.md) on existing models (local models like LLaMA, or API models like GPT-4)
 * Run SwingArena's [data collection procedure](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/collect/) on your own repositories
 
+## 🗂️ Data Preparation (prepare)
+
+The `prepare` module helps you clone repositories and build search indexes for retrieval-augmented generation. This is required for:
+- Arena Battle mode (retrieval-augmented patch generation)
+- Model inference with code search
+- Working with custom datasets
+
+### Prerequisites
+- Java 21+ (for BM25 index building, see [installation guide](#-java-requirements-for-bm25-retrieval))
+- Sufficient disk space (repos can be large, ~10GB per language)
+
+### Clone Repositories
+
+Clone repositories from the SwingBench dataset or your custom task instances:
+
+```bash
+cd swingarena/prepare
+
+# Clone from SwingBench dataset
+python swing_clone_repos.py \
+    --dataset_path SwingBench/SwingBench \
+    --repo_root_dir /path/to/repos
+
+# Or from a local .jsonl file
+python swing_clone_repos.py \
+    --dataset_path /path/to/task-instances.jsonl \
+    --repo_root_dir /path/to/repos
+```
+
+**What this does:**
+- Downloads repositories from GitHub based on task instances
+- Checks out the correct commit for each instance
+- Organizes repos by `owner__repo` naming convention
+
+### Build BM25 Search Indexes
+
+Build search indexes for fast code retrieval:
+
+```bash
+# Build indexes for SwingBench dataset
+python swing_build_index.py \
+    --dataset_path SwingBench/SwingBench \
+    --repo_root_dir /path/to/repos \
+    --output_dir /path/to/indexes
+
+# Or specify a language/subset
+python swing_build_index.py \
+    --dataset_path /path/to/task-instances.jsonl \
+    --repo_root_dir /path/to/repos \
+    --output_dir /path/to/indexes \
+    --sub_dataset_identifier Python
+```
+
+**Parameters:**
+- `--dataset_path`: Path to dataset or HuggingFace dataset name
+- `--repo_root_dir`: Directory containing cloned repositories
+- `--output_dir`: Where to save the BM25 indexes
+- `--sub_dataset_identifier`: Optional language filter (Python, Rust, etc.)
+
+**What this does:**
+- Parses source code files in each repository
+- Builds BM25 indexes for fast text search
+- Saves indexes to disk for use by inference/arena modules
+
+**Index Structure:**
+```
+indexes/
+├── python_index/
+├── rust_index/
+└── ...
+```
+
+> **💡 Note**: Index building can take 1-2 hours for the full SwingBench dataset. You can build indexes for specific languages to save time.
+
+## 🤖 Model Inference (inference)
+
+The `inference` module generates patches/solutions using AI models. This step comes after data preparation if you're using retrieval-augmented generation.
+
+### Using API Models
+
+Generate solutions with OpenAI, Anthropic, or other API providers:
+
+```bash
+cd swingarena/inference
+
+python -m swingarena.inference.run_api \
+    --dataset_name_or_path SwingBench/SwingBench \
+    --split test \
+    --model_name_or_path gpt-4 \
+    --output_dir /path/to/output \
+    --max_cost 1.0
+```
+
+**Key Parameters:**
+- `--dataset_name_or_path`: Dataset to use (HuggingFace name or local .jsonl)
+- `--model_name_or_path`: Model identifier (gpt-4, claude-3-opus, etc.)
+- `--output_dir`: Where to save generated patches
+- `--max_cost`: Maximum API cost in USD (stops when reached)
+- `--instance_ids`: Specific instances to run (optional)
+
+### Using Local Models
+
+Run inference with local models like LLaMA:
+
+```bash
+python -m swingarena.inference.run_llama \
+    --dataset_name_or_path SwingBench/SwingBench \
+    --model_name_or_path /path/to/llama-model \
+    --output_dir /path/to/output
+```
+
+### With Retrieval-Augmented Generation
+
+To use code search for better context (requires prepared data):
+
+```bash
+# Set environment variables
+export SWING_REPOS_DIR_PATH="/path/to/repos"
+export SWING_INDEXES_PATH="/path/to/indexes"
+
+# Run inference with retrieval
+python -m swingarena.inference.run_api \
+    --dataset_name_or_path SwingBench/SwingBench \
+    --model_name_or_path gpt-4 \
+    --output_dir /path/to/output \
+    --use_retrieval
+```
+
+For more details, see the [inference README](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/inference/README.md).
+
 ## 🚀 Advanced Features
 
 ### 🥊 Arena Battle Mode
@@ -317,34 +447,18 @@ The SwingArena repository can help you:
 SwingArena's dual-agent battle evaluation mode allows you to compare two AI models in a competitive programming environment.
 
 **Prerequisites:**
-Before running Arena Battle, you need to set up the workspace:
+1. **Complete Data Preparation** (see [Data Preparation](#-data-preparation-prepare) section above)
+2. **Set up workspace:**
 
-1. **Create workspace directories:**
 ```bash
-mkdir -p /path/to/testbed /path/to/repos /path/to/indexes
-```
+# Create workspace directories
+mkdir -p /path/to/testbed
 
-2. **Set environment variables:**
-```bash
-export SWING_TESTBED_PATH="/path/to/testbed"         # Temporary work directory
-export SWING_REPOS_DIR_PATH="/path/to/repos"         # Repository storage (see preparation below)
-export SWING_INDEXES_PATH="/path/to/indexes"         # BM25 indexes (see preparation below)
+# Set environment variables
+export SWING_TESTBED_PATH="/path/to/testbed"              # Temporary work directory
+export SWING_REPOS_DIR_PATH="/path/to/repos"              # From Data Preparation
+export SWING_INDEXES_PATH="/path/to/indexes"              # From Data Preparation
 export CI_TOOL_NAME=act
-```
-
-3. **Prepare repositories and indexes** (required for retrieval-augmented generation):
-```bash
-# Clone repositories
-cd swingarena/prepare
-python swing_clone_repos.py \
-    --dataset_path SwingBench/SwingBench \
-    --repo_root_dir $SWING_REPOS_DIR_PATH
-
-# Build BM25 indexes (requires Java 21+)
-python swing_build_index.py \
-    --dataset_path SwingBench/SwingBench \
-    --repo_root_dir $SWING_REPOS_DIR_PATH \
-    --output_dir $SWING_INDEXES_PATH
 ```
 
 **Running a Battle:**
@@ -388,68 +502,138 @@ python -m swingarena.harness.modal_eval.run_evaluation_modal \
 > [!NOTE]
 > Modal for SwingArena is currently experimental and may not be fully supported.
 
-### 🔄 Complete Workflow: Custom Dataset Creation
+### 🔄 Complete Workflow: Building Custom Datasets
 
-For advanced users who want to create their own SwingArena-style datasets:
+This workflow shows how to use all five SwingArena modules to create and evaluate custom datasets. Follow these steps in order:
+
+```mermaid
+graph LR
+    A[collect] --> B[prepare]
+    B --> C[inference]
+    C --> D[harness]
+    D --> E[statistics]
+    E -.feedback.-> A
+```
 
 #### 1. **Data Collection** (`collect`)
-Mine repositories and create task instances:
+
+Mine GitHub repositories and create task instances:
+
 ```bash
 cd swingarena/collect
 ./run_get_tasks_pipeline.sh
 ```
 
+**What this does:**
+- Collects pull requests from top GitHub repositories
+- Filters PRs with passing CI tests
+- Extracts problem statements, patches, and test cases
+- Saves task instances to `.jsonl` format
+
+**Output:** `task-instances.jsonl` containing collected issues
+
+For more details, see the [collect README](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/collect/README.md).
+
+---
+
 #### 2. **Data Preparation** (`prepare`)
-Process and index datasets:
+
+See the [Data Preparation](#-data-preparation-prepare) section above for detailed instructions.
+
+**Quick commands:**
 ```bash
 cd swingarena/prepare
 
-# Clone repositories from task instances
+# Clone repositories
 python swing_clone_repos.py \
     --dataset_path /path/to/task-instances.jsonl \
     --repo_root_dir /path/to/repos
 
-# Build BM25 search index
+# Build BM25 indexes
 python swing_build_index.py \
     --dataset_path /path/to/task-instances.jsonl \
     --repo_root_dir /path/to/repos \
-    --output_dir /path/to/indexes \
-    --sub_dataset_identifier Python
+    --output_dir /path/to/indexes
 ```
 
+**Output:** Cloned repositories and BM25 search indexes
+
+---
+
 #### 3. **Model Inference** (`inference`)
-Generate solutions with AI models:
+
+See the [Model Inference](#-model-inference-inference) section above for detailed instructions.
+
+**Quick commands:**
 ```bash
 cd swingarena/inference
 
-# Using API models (OpenAI, Anthropic, etc.)
+# Generate patches with API models
 python -m swingarena.inference.run_api \
     --dataset_name_or_path /path/to/task-instances.jsonl \
-    --split test \
     --model_name_or_path gpt-4 \
-    --output_dir /path/to/output \
+    --output_dir /path/to/predictions \
     --max_cost 1.0
-
-# Or using local Llama models
-python -m swingarena.inference.run_llama \
-    --dataset_name_or_path /path/to/task-instances.jsonl \
-    --model_name_or_path /path/to/llama-model \
-    --output_dir /path/to/output
 ```
+
+**Output:** `predictions.jsonl` containing model-generated patches
+
+---
 
 #### 4. **Evaluation** (`harness`)
-Test with CI-driven evaluation:
+
+Evaluate the generated patches using CI-driven testing:
+
 ```bash
 cd swingarena/harness
-python -m swingarena.harness.run_evaluation --predictions_path ./results
+
+python -m swingarena.harness.run_evaluation \
+    --dataset_name /path/to/task-instances.jsonl \
+    --predictions_path /path/to/predictions.jsonl \
+    --concurrent_workers 4
 ```
 
+**What this does:**
+- Builds Docker containers for each task instance
+- Applies model-generated patches
+- Runs CI tests (GitHub Actions via `act` or Cargo tests)
+- Records pass/fail results
+
+**Output:** Evaluation results in `evaluation_results/`
+
+See [Basic Usage](#-basic-usage) for more evaluation options.
+
+---
+
 #### 5. **Analysis** (`statistics`)
-Generate insights and reports:
+
+Generate performance metrics and insights:
+
 ```bash
 cd swingarena/statistics
-python arena_stats.py --arena_log_dir ./evaluations
+
+python arena_stats.py --arena_log_dir /path/to/evaluation_results
 ```
+
+**What this does:**
+- Calculates pass rates and success metrics
+- Analyzes difficulty and clarity correlations
+- Tracks token usage and API costs
+- Generates reports for dataset quality assessment
+
+**Output:** Statistical reports and visualizations
+
+---
+
+### 🔁 Iterative Improvement
+
+Use insights from the analysis (step 5) to improve your data collection criteria (step 1):
+- Adjust difficulty thresholds
+- Filter by clarity scores
+- Refine repository selection
+- Update quality criteria
+
+This creates a feedback loop for continuous dataset improvement.
 
 ## 🍎 Tutorials
 We've also written the following blog posts on how to use different parts of SwingBench.
