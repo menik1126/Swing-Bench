@@ -16,12 +16,10 @@ def test_one_instance():
         "swingarena.harness.run_evaluation",
         "--predictions_path",
         "gold",
-        "--max_workers",
+        "--concurrent_workers",
         "1",
         "--instance_ids",
-        "sympy__sympy-20590",
-        "--run_id",
-        "validate-gold",
+        "chronotope__chrono-1502",
     ]
     result = subprocess.run(cmd, capture_output=True)
     print(result.stdout)
