@@ -240,11 +240,26 @@ def install_ci_tools():
 
 class CustomInstallCommand(install):
     """Custom installation command that installs CI tools when the ci-tools extra is used"""
+    user_options = install.user_options + [
+        ('with-ci-tools', None, 'Install CI tools (Docker, act)'),
+    ]
+
+    def initialize_options(self):
+        install.initialize_options(self)
+        self.with_ci_tools = None
+
+    def finalize_options(self):
+        install.finalize_options(self)
+
     def run(self):
         install.run(self)
-        # Check if ci-tools extra was requested
-        if 'ci-tools' in sys.argv or any('ci-tools' in arg for arg in sys.argv):
+        # Check if ci-tools extra was requested via environment variable or flag
+        if self.with_ci_tools or os.environ.get('SWINGARENA_INSTALL_CI_TOOLS') == '1':
             install_ci_tools()
+        else:
+            print("\n💡 To install CI tools (Docker, act), run:")
+            print("   python install_ci_tools.py")
+            print("   Or set SWINGARENA_INSTALL_CI_TOOLS=1 environment variable")
 
 with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
