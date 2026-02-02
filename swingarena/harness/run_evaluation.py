@@ -423,7 +423,7 @@ if __name__ == "__main__":
     # Common args
     parser.add_argument(
         "--dataset_name",
-        default="results/scikit-learn-task-instances.jsonl",
+        default="SwingBench/SwingBench",
         type=str,
         help="Name of dataset or path to JSON file.",
     )
@@ -438,7 +438,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--predictions_path",
-        default="results/scikit-learn-task-instances.jsonl",
+        default="gold",
         type=str,
         help="Path to predictions file - if 'gold', uses gold predictions",
     )
