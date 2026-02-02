@@ -238,6 +238,8 @@ def install_ci_tools():
         print("⚠️  Some tools failed to install. Please install them manually.")
         print("   Check the error messages above for specific instructions.")
 
+from setuptools.command.develop import develop
+
 class CustomInstallCommand(install):
     """Custom installation command that installs CI tools when the ci-tools extra is used"""
     user_options = install.user_options + [
@@ -253,18 +255,60 @@ class CustomInstallCommand(install):
 
     def run(self):
         install.run(self)
+        self._install_ci_tools_if_needed()
 
+    def _install_ci_tools_if_needed(self):
+        """Helper method to install CI tools if ci-tools extra was requested"""
         # Don't install CI tools if user explicitly skipped
         if self.skip_ci_tools:
             print("\n💡 Skipped CI tools installation (--skip-ci-tools flag used)")
             print("   To install later, run: python install_ci_tools.py")
             return
 
-        # Check if docker package was installed (part of ci-tools extra)
+        # Check if docker package is installed (part of ci-tools extra)
         try:
             import docker
             # If docker package is available, user installed ci-tools extra
             print("\n🔧 Detected ci-tools extra installation, installing system tools...")
+            print("   This may require sudo privileges and will install Docker and act.")
+            install_ci_tools()
+        except ImportError:
+            # docker package not installed, user didn't install ci-tools extra
+            print("\n💡 To install CI tools (Docker, act), run:")
+            print("   pip install -e \".[ci-tools]\"")
+            print("   Or: python install_ci_tools.py")
+
+class CustomDevelopCommand(develop):
+    """Custom develop command that installs CI tools when the ci-tools extra is used"""
+    user_options = develop.user_options + [
+        ('skip-ci-tools', None, 'Skip installing system CI tools (Docker, act)'),
+    ]
+
+    def initialize_options(self):
+        develop.initialize_options(self)
+        self.skip_ci_tools = None
+
+    def finalize_options(self):
+        develop.finalize_options(self)
+
+    def run(self):
+        develop.run(self)
+        self._install_ci_tools_if_needed()
+
+    def _install_ci_tools_if_needed(self):
+        """Helper method to install CI tools if ci-tools extra was requested"""
+        # Don't install CI tools if user explicitly skipped
+        if self.skip_ci_tools:
+            print("\n💡 Skipped CI tools installation (--skip-ci-tools flag used)")
+            print("   To install later, run: python install_ci_tools.py")
+            return
+
+        # Check if docker package is installed (part of ci-tools extra)
+        try:
+            import docker
+            # If docker package is available, user installed ci-tools extra
+            print("\n🔧 Detected ci-tools extra installation, installing system tools...")
+            print("   This may require sudo privileges and will install Docker and act.")
             install_ci_tools()
         except ImportError:
             # docker package not installed, user didn't install ci-tools extra
@@ -365,6 +409,7 @@ setuptools.setup(
     },
     cmdclass={
         'install': CustomInstallCommand,
+        'develop': CustomDevelopCommand,
     },
     include_package_data=True,
 )
