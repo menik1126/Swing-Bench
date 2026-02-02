@@ -215,6 +215,74 @@ Python yaml: ✅ Installed
 📊 Overall status: ✅ All tools ready
 ```
 
+## ⚙️ Environment Configuration
+
+SwingArena uses environment variables for API keys, paths, and configuration. Set up your `.env` file before running SwingArena:
+
+### 1. Create .env File
+
+Copy the example configuration file:
+```bash
+cp .env.example .env
+```
+
+### 2. Configure API Keys
+
+Edit `.env` and add your API keys (required for inference and collect modules):
+
+```bash
+# OpenAI API Key (for GPT models)
+OPENAI_API_KEY=sk-xxx
+
+# Anthropic API Key (for Claude models)
+ANTHROPIC_API_KEY=sk-ant-xxx
+
+# GitHub Token (for collect module and repository operations)
+GITHUB_TOKEN=ghp_xxx
+```
+
+**How to get API keys:**
+- **OpenAI**: [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+- **Anthropic**: [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys)
+- **GitHub**: [github.com/settings/tokens](https://github.com/settings/tokens) (needs `repo` scope)
+
+### 3. Configure Workspace Paths
+
+Set paths for SwingArena data storage:
+
+```bash
+# Path to the testbed directory (temporary workspace for evaluation)
+SWING_TESTBED_PATH=/path/to/testbed
+
+# Path to cloned repositories (for prepare module)
+SWING_REPOS_DIR_PATH=/path/to/repos
+
+# Path to BM25 search indexes (for prepare and inference modules)
+SWING_INDEXES_PATH=/path/to/indexes
+
+# CI tool to use for running tests (default: act)
+CI_TOOL_NAME=act
+```
+
+**Path recommendations:**
+- Use absolute paths
+- Ensure directories have sufficient space (~10GB per language for repos)
+- Create directories before running commands: `mkdir -p /path/to/{testbed,repos,indexes}`
+
+### 4. Optional Configuration
+
+```bash
+# OpenAI Base URL (for proxies or Azure OpenAI)
+# OPENAI_BASE_URL=https://api.openai.com/v1
+
+# Multiple GitHub Tokens (for parallel data collection)
+# GITHUB_TOKENS=ghp_token1,ghp_token2,ghp_token3
+```
+
+> **💡 Note**: SwingArena automatically loads `.env` from the project root. You can also set environment variables directly in your shell or use export commands.
+
+> **🔒 Security**: Never commit your `.env` file to version control. It contains sensitive API keys.
+
 ## 📊 Dataset Access
 
 SwingArena automatically downloads datasets from Hugging Face when needed. You can also load them manually:
@@ -425,11 +493,9 @@ python -m swingarena.inference.run_llama \
 
 To use code search for better context (requires prepared data):
 
-```bash
-# Set environment variables
-export SWING_REPOS_DIR_PATH="/path/to/repos"
-export SWING_INDEXES_PATH="/path/to/indexes"
+> **Prerequisites:** Configure environment variables in your `.env` file (see [Environment Configuration](#%EF%B8%8F-environment-configuration))
 
+```bash
 # Run inference with retrieval
 python -m swingarena.inference.run_api \
     --dataset_name_or_path SwingBench/SwingBench \
@@ -437,6 +503,8 @@ python -m swingarena.inference.run_api \
     --output_dir /path/to/output \
     --use_retrieval
 ```
+
+SwingArena will automatically use `SWING_REPOS_DIR_PATH` and `SWING_INDEXES_PATH` from your `.env` file.
 
 For more details, see the [inference README](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/inference/README.md).
 
@@ -448,18 +516,9 @@ SwingArena's dual-agent battle evaluation mode allows you to compare two AI mode
 
 **Prerequisites:**
 1. **Complete Data Preparation** (see [Data Preparation](#-data-preparation-prepare) section above)
-2. **Set up workspace:**
-
-```bash
-# Create workspace directories
-mkdir -p /path/to/testbed
-
-# Set environment variables
-export SWING_TESTBED_PATH="/path/to/testbed"              # Temporary work directory
-export SWING_REPOS_DIR_PATH="/path/to/repos"              # From Data Preparation
-export SWING_INDEXES_PATH="/path/to/indexes"              # From Data Preparation
-export CI_TOOL_NAME=act
-```
+2. **Configure Environment** (see [Environment Configuration](#%EF%B8%8F-environment-configuration) section)
+   - Set `SWING_TESTBED_PATH`, `SWING_REPOS_DIR_PATH`, `SWING_INDEXES_PATH` in your `.env` file
+   - Ensure directories exist: `mkdir -p /path/to/testbed`
 
 **Running a Battle:**
 ```bash
@@ -472,6 +531,8 @@ python swingarena/harness/agent_battle.py \
     --api_key_lhs "your-api-key-1" \
     --api_key_rhs "your-api-key-2"
 ```
+
+> **💡 Tip**: You can also set API keys in your `.env` file instead of passing them as command arguments.
 
 **Battle Parameters:**
 - `--model_lhs/rhs`: Left/Right side AI models (e.g., "gpt-4", "claude-3")
