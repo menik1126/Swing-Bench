@@ -324,15 +324,17 @@ Now let's run a simple evaluation to verify everything works:
 
 ```bash
 python -m swingarena.harness.run_evaluation \
+    --dataset_name SwingBench/SwingBench \
+    --split test \
     --predictions_path gold \
     --concurrent_workers 1 \
     --instance_ids tokio-rs__tokio-6978
 ```
 
 **What this does:**
-1. Downloads `tokio-rs__tokio-6978` instance from SwingBench dataset
-2. Builds a Docker container with the repository environment
-3. Applies the gold patch (the correct fix)
+1. Downloads `tokio-rs__tokio-6978` instance from SwingBench dataset (HuggingFace)
+2. Uses the gold patch (the correct fix from the dataset)
+3. Builds a Docker container with the repository environment
 4. Runs CI tests to verify the patch works
 
 **Expected output:**
@@ -354,6 +356,7 @@ Evaluate model predictions on SwingArena using the evaluation harness:
 ```bash
 python -m swingarena.harness.run_evaluation \
     --dataset_name SwingBench/SwingBench \
+    --split test \
     --predictions_path <path_to_predictions> \
     --concurrent_workers <num_workers>
     # use --predictions_path 'gold' to verify the gold patches
@@ -361,6 +364,7 @@ python -m swingarena.harness.run_evaluation \
 
 **Key Parameters:**
 - `--dataset_name`: Dataset to use (default: SwingBench/SwingBench)
+- `--split`: Dataset split to use (test, train, etc.)
 - `--predictions_path`: Path to predictions file, or 'gold' for gold patches
 - `--concurrent_workers`: Number of parallel workers (recommended: `min(0.75 * os.cpu_count(), 24)`)
 - `--instance_ids`: Specific instance IDs to evaluate (space-separated)
