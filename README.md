@@ -324,19 +324,20 @@ Now let's run a simple evaluation to verify everything works. This requires two 
 
 ### Step 1: Prepare Repositories
 
-First, clone the repository needed for evaluation:
+First, clone the repositories needed for evaluation:
 
 ```bash
 python swingarena/prepare/swing_clone_repos.py \
     --dataset_path SwingBench/SwingBench \
-    --repo_root_dir ./repos \
-    --instance_ids pypa__pipenv-6240
+    --repo_root_dir ./repos
 ```
 
 **What this does:**
-- Downloads `pypa__pipenv-6240` instance metadata from HuggingFace
-- Clones `pypa/pipenv` repository from GitHub
-- Checks out the correct commit for evaluation
+- Downloads SwingBench dataset from HuggingFace
+- Clones all repositories from the dataset to `./repos`
+- Checks out the correct commits for each repository
+
+> **Note:** This will clone all repositories in the dataset (~10GB total). The cloning process may take 10-30 minutes depending on network speed.
 
 ### Step 2: Run Evaluation
 
