@@ -392,10 +392,10 @@ class ActCITool(CIToolBase):
         return results
 
     def _run_act_with_lock(self, ci, target_dir, order, pool):
-        if type(ci) == str:
-            import ast
-            # cast str to list
-            ci = ast.literal_eval(ci)
+        # ci is expected to be a list: [job_name, workflow_file]
+        if not isinstance(ci, list) or len(ci) < 2:
+            print(f"Warning: Invalid ci format: {ci}")
+            return
         value = self.ci_dict.get(ci[0])
         # if value is None:
             # print("value is None ci and its type: ", ci, type(ci))
@@ -594,13 +594,17 @@ class ActCITool(CIToolBase):
         print(f'Collected CI job name and id dict: {self.ci_dict}')
         print(f'Run ci list: {self.config["ci_name_list"]}')
         threads = []
-        for ci in self.config["ci_name_list"]:
-            thread = threading.Thread(
-                target=lambda ci=ci: self._run_act_with_lock(ci, task.target_dir, "merged", pool)
-            )
-            thread.start()
-            threads.append(thread)
-            time.sleep(0.5)
+        # Pair the flat list into [job_name, workflow_file] tuples
+        ci_list = self.config["ci_name_list"]
+        for i in range(0, len(ci_list), 2):
+            if i + 1 < len(ci_list):
+                ci = [ci_list[i], ci_list[i+1]]  # Create pair: [job_name, workflow_file]
+                thread = threading.Thread(
+                    target=lambda ci=ci: self._run_act_with_lock(ci, task.target_dir, "merged", pool)
+                )
+                thread.start()
+                threads.append(thread)
+                time.sleep(0.5)
 
         for thread in threads:
             thread.join()
