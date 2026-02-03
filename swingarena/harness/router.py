@@ -52,50 +52,54 @@ class CargoCITool(CIToolBase):
 
     def _build_repo_base_env(self):
         script = ["#!/bin/bash"]
-        
+
         repo_dir_name = self.config["repo"].replace('/', '__')
         instance_id = self.config.get("instance_id", "unknown")
         src_path = os.path.join(self.config["src_folder"], repo_dir_name)
-        dst_path = os.path.join(self.config["workdir"], f"{self.config['repo'].split('/')[1]}_{instance_id}")
-        
-        script.append(f"mkdir -p {dst_path}")
-        script.append(f"cp -r {src_path}/. {dst_path}/")
+        # Use instance_id directly as directory name (it already contains repo info)
+        dst_path = os.path.join(self.config["workdir"], instance_id)
+
+        # Quote paths to handle special characters
+        script.append(f"mkdir -p \"{dst_path}\"")
+        script.append(f"cp -r \"{src_path}\"/. \"{dst_path}\"/")
 
         return script
 
     def _build_eval_script(self):
         instance_id = self.config.get("instance_id", "unknown")
-        target_dir = os.path.join(self.config["workdir"], f"{self.config['repo'].split('/')[1]}_{instance_id}")
+        # Use instance_id directly as directory name
+        target_dir = os.path.join(self.config["workdir"], instance_id)
 
-        script = ["#!/bin/bash", 
-                  f"cd {target_dir}",
+        script = ["#!/bin/bash",
+                  f"cd \"{target_dir}\"",
                  ]
 
         script.append("git stash -u || true")
-        
+
         if "merge_commit" in self.config and self.config["merge_commit"]:
             script.append("git checkout " + self.config["merge_commit"])
-            
+
             # Apply test_patch if it exists
             if self.config.get("test_patch"):
                 test_patch_file = f"{target_dir}/test_patch.diff"
-                script.append(f"cat > {test_patch_file} << 'EOL'\n{self.config['test_patch']}\nEOL")
-                script.append(f"git apply {test_patch_file} || echo 'Failed to apply test_patch'")
-            
+                script.append(f"cat > \"{test_patch_file}\" << 'EOL'\n{self.config['test_patch']}\nEOL")
+                script.append(f"git apply \"{test_patch_file}\" || echo 'Failed to apply test_patch'")
+
             # Apply patch only if apply_patch is specified
             if self.config.get("apply_patch", False) and self.config.get("patch"):
                 patch_file = f"{target_dir}/patch.diff"
-                script.append(f"cat > {patch_file} << 'EOL'\n{self.config['patch']}\nEOL")
-                script.append(f"git apply {patch_file} || echo 'Failed to apply patch'")
+                script.append(f"cat > \"{patch_file}\" << 'EOL'\n{self.config['patch']}\nEOL")
+                script.append(f"git apply \"{patch_file}\" || echo 'Failed to apply patch'")
 
         return script
 
     def construct(self):
         env_script = self._build_repo_base_env()
         eval_script = self._build_eval_script()
-        
+
         instance_id = self.config.get("instance_id", "unknown")
-        target_dir = os.path.join(self.config["workdir"], f"{self.config['repo'].split('/')[1]}_{instance_id}")
+        # Use instance_id directly as directory name
+        target_dir = os.path.join(self.config["workdir"], instance_id)
         
         self.task = Task(instance_id=instance_id,
                          env_script=env_script,
@@ -174,10 +178,9 @@ class CargoCITool(CIToolBase):
             
     def _execute_scripts(self, cwd="~"):
         """Execute environment setup and evaluation scripts, hide output"""
-        # Ensure each repository uses unique script file paths
-        repo_name = self.config["repo"].split("/")[1]
+        # Use instance_id directly as directory name
         instance_id = self.config.get("instance_id", "unknown")
-        script_dir = os.path.join(self.config["workdir"], f"{repo_name}_{instance_id}")
+        script_dir = os.path.join(self.config["workdir"], instance_id)
         
         print(f"Creating script directory: {script_dir}")
         # Create script directory
@@ -251,41 +254,44 @@ class ActCITool(CIToolBase):
     # TODO(wdxu): make these two functions to be public methods.
     def _build_repo_base_env(self):
         script = ["#!/bin/bash"]
-        
+
         repo_dir_name = self.config["repo"].replace('/', '__')
         instance_id = self.config.get("instance_id", "unknown")
         src_path = os.path.join(self.config["src_folder"], repo_dir_name)
-        dst_path = os.path.join(self.config["workdir"], f"{self.config['repo'].split('/')[1]}_{instance_id}")
-        
-        script.append(f"mkdir -p {dst_path}")
-        script.append(f"cp -r {src_path}/. {dst_path}/")
+        # Use instance_id directly as directory name
+        dst_path = os.path.join(self.config["workdir"], instance_id)
+
+        # Quote paths to handle special characters
+        script.append(f"mkdir -p \"{dst_path}\"")
+        script.append(f"cp -r \"{src_path}\"/. \"{dst_path}\"/")
 
         return script
 
     def _build_eval_script(self):
         instance_id = self.config.get("instance_id", "unknown")
-        target_dir = os.path.join(self.config["workdir"], f"{self.config['repo'].split('/')[1]}_{instance_id}")
+        # Use instance_id directly as directory name
+        target_dir = os.path.join(self.config["workdir"], instance_id)
 
-        script = ["#!/bin/bash", 
-                  f"cd {target_dir}",
+        script = ["#!/bin/bash",
+                  f"cd \"{target_dir}\"",
                  ]
-        
+
         script.append("git stash -u || true")
-        
+
         if "merge_commit" in self.config and self.config["merge_commit"]:
             script.append("git checkout " + self.config["merge_commit"])
-            
+
             # Apply test_patch if it exists
             if self.config.get("test_patch"):
                 test_patch_file = f"{target_dir}/test_patch.diff"
-                script.append(f"cat > {test_patch_file} << 'EOL'\n{self.config['test_patch']}\nEOL")
-                script.append(f"git apply {test_patch_file} || echo 'Failed to apply test_patch'")
-            
+                script.append(f"cat > \"{test_patch_file}\" << 'EOL'\n{self.config['test_patch']}\nEOL")
+                script.append(f"git apply \"{test_patch_file}\" || echo 'Failed to apply test_patch'")
+
             # Apply patch only if apply_patch is specified
             if self.config.get("apply_patch", False) and self.config.get("patch"):
                 patch_file = f"{target_dir}/patch.diff"
-                script.append(f"cat > {patch_file} << 'EOL'\n{self.config['patch']}\nEOL")
-                script.append(f"git apply {patch_file} || echo 'Failed to apply patch'")
+                script.append(f"cat > \"{patch_file}\" << 'EOL'\n{self.config['patch']}\nEOL")
+                script.append(f"git apply \"{patch_file}\" || echo 'Failed to apply patch'")
 
         return script
 
@@ -611,7 +617,8 @@ class ActCITool(CIToolBase):
         eval_script = self._build_eval_script()
 
         instance_id = self.config.get("instance_id", "unknown")
-        target_dir = os.path.join(self.config["workdir"], f"{self.config['repo'].split('/')[1]}_{instance_id}")
+        # Use instance_id directly as directory name
+        target_dir = os.path.join(self.config["workdir"], instance_id)
         
         self.task = Task(instance_id=instance_id,
                          env_script=env_script,
