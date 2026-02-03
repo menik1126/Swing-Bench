@@ -315,43 +315,68 @@ for lang in languages:
 
 ## 🎯 First Run: Verify Your Setup
 
-Now let's run a simple evaluation to verify everything works:
+Now let's run a simple evaluation to verify everything works. This requires two steps:
 
 > **⚠️ Important Prerequisites:**
 > - **Docker must be running** (check with `docker ps`)
-> - This command will **automatically download** the dataset from Hugging Face (~500MB)
-> - It will **build Docker images** and **run CI tests** (may take 5-10 minutes first time)
+> - This will **download dataset from HuggingFace** (~500MB) and **clone repositories from GitHub** (~100MB)
+> - First run will **build Docker images** and may take 5-10 minutes
+
+### Step 1: Prepare Repositories
+
+First, clone the repository needed for evaluation:
+
+```bash
+python swingarena/prepare/swing_clone_repos.py \
+    --dataset_path SwingBench/SwingBench \
+    --repo_root_dir ./repos \
+    --instance_ids pypa__pipenv-6240
+```
+
+**What this does:**
+- Downloads `pypa__pipenv-6240` instance metadata from HuggingFace
+- Clones `pypa/pipenv` repository from GitHub
+- Checks out the correct commit for evaluation
+
+### Step 2: Run Evaluation
+
+Now run the evaluation harness:
 
 ```bash
 python -m swingarena.harness.run_evaluation \
     --dataset_name SwingBench/SwingBench \
     --split test \
     --predictions_path gold \
+    --src_folder ./repos \
+    --target_dir ./testbed \
+    --report_dir ./report \
     --concurrent_workers 1 \
     --instance_ids pypa__pipenv-6240
 ```
 
 **What this does:**
-1. Downloads `pypa__pipenv-6240` instance from SwingBench (Python project: pypa/pipenv)
-2. Uses the gold patch (the correct fix from the dataset)
-3. Applies the test patch (adds/modifies tests)
-4. Builds a Docker container and runs 22 CI jobs to verify the fix
-
-> **💡 Note:** All 100 instances in SwingBench include both patches and test patches, with full CI configurations across 4 languages (Python, Rust, Go, C++).
+1. Loads `pypa__pipenv-6240` instance from SwingBench (Python project with 22 CI jobs)
+2. Copies repository from `./repos` to isolated testbed
+3. Applies the gold patch (correct fix) and test patch
+4. Runs CI tests using GitHub Actions (via `act` tool)
 
 **Expected output:**
 ```
 Loading dataset...
-Building Docker images...
-Running evaluation...
-✅ Test passed: tokio-rs__tokio-6978
+Copying repository to testbed...
+Running CI tests...
+✅ Evaluation complete - results in ./report/
 ```
 
 If successful, you're ready to use SwingArena! 🎉
 
+> **💡 Note:** All 100 instances in SwingBench include both patches and test patches, with full CI configurations across 4 languages (Python, Rust, Go, C++).
+
 ## 💽 Basic Usage
 
 ### Running Evaluations
+
+> **⚠️ Prerequisites:** You must first complete the [Data Preparation](#-data-preparation-prepare) step to clone repositories.
 
 Evaluate model predictions on SwingArena using the evaluation harness:
 
@@ -360,6 +385,9 @@ python -m swingarena.harness.run_evaluation \
     --dataset_name SwingBench/SwingBench \
     --split test \
     --predictions_path <path_to_predictions> \
+    --src_folder ./repos \
+    --target_dir ./testbed \
+    --report_dir ./report \
     --concurrent_workers <num_workers>
     # use --predictions_path 'gold' to verify the gold patches
 ```
@@ -368,6 +396,9 @@ python -m swingarena.harness.run_evaluation \
 - `--dataset_name`: Dataset to use (default: SwingBench/SwingBench)
 - `--split`: Dataset split to use (test, train, etc.)
 - `--predictions_path`: Path to predictions file, or 'gold' for gold patches
+- `--src_folder`: Directory containing cloned repositories (from prepare step)
+- `--target_dir`: Isolated testbed directory for running evaluations
+- `--report_dir`: Directory for evaluation results and logs
 - `--concurrent_workers`: Number of parallel workers (recommended: `min(0.75 * os.cpu_count(), 24)`)
 - `--instance_ids`: Specific instance IDs to evaluate (space-separated)
 - `--timeout`: Timeout in seconds for each instance (default: 600)
@@ -397,9 +428,12 @@ The SwingArena repository can help you:
 * Run [inference](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/inference/README.md) on existing models (local models like LLaMA, or API models like GPT-4)
 * Run SwingArena's [data collection procedure](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/collect/) on your own repositories
 
-## 🗂️ Data Preparation (prepare)
+## 🗂️ Data Preparation (prepare) - **REQUIRED**
 
-The `prepare` module helps you clone repositories and build search indexes for retrieval-augmented generation. This is required for:
+> **⚠️ IMPORTANT:** This step is **required** before running evaluations. The harness needs pre-cloned repositories to run CI tests.
+
+The `prepare` module helps you clone repositories and build search indexes. This is required for:
+- **All evaluation runs** (harness needs local repositories)
 - Arena Battle mode (retrieval-augmented patch generation)
 - Model inference with code search
 - Working with custom datasets
@@ -542,22 +576,33 @@ SwingArena's dual-agent battle evaluation mode allows you to compare two AI mode
 **Running a Battle:**
 ```bash
 python swingarena/harness/agent_battle.py \
-    --ci_tool_name act \
     --dataset_name SwingBench/SwingBench \
-    --language rust \
-    --model_lhs "gpt-4" \
-    --model_rhs "claude-3" \
-    --api_key_lhs "your-api-key-1" \
-    --api_key_rhs "your-api-key-2"
+    --split test \
+    --src_folder ./repos \
+    --retriever_index_dir ./indexes \
+    --workdir ./arena_testbed \
+    --ci_tool_name act \
+    --tok_model_lhs gpt2 \
+    --tok_model_rhs gpt2 \
+    --model_lhs gpt-4 \
+    --model_rhs claude-3-opus \
+    --max_turns 1
 ```
 
-> **💡 Tip**: You can also set API keys in your `.env` file instead of passing them as command arguments.
+> **💡 Tips**:
+> - Set `OPENAI_API_KEY` and `ANTHROPIC_API_KEY` in your `.env` file
+> - Or use `SWING_REPOS_DIR_PATH` and `SWING_INDEXES_PATH` from `.env` to avoid specifying paths
 
 **Battle Parameters:**
-- `--model_lhs/rhs`: Left/Right side AI models (e.g., "gpt-4", "claude-3")
-- `--api_key_lhs/rhs`: API keys for the respective models
-- `--base_url_lhs/rhs`: Custom API endpoints (optional)
-- `--language`: Programming language (rust, python, go, etc.)
+- `--dataset_name`: Dataset to use (HuggingFace name or local path)
+- `--split`: Dataset split (test, train, etc.)
+- `--src_folder`: Directory containing cloned repositories
+- `--retriever_index_dir`: Directory containing BM25 search indexes
+- `--workdir`: Working directory for battle execution
+- `--ci_tool_name`: CI tool to use (default: "act")
+- `--tok_model_lhs/rhs`: Tokenizer models (e.g., "gpt2" for API models)
+- `--model_lhs/rhs`: AI models for patch generation (e.g., "gpt-4", "claude-3-opus")
+- `--max_turns`: Number of battle turns (default: 1)
 - `--split`: Dataset split (optional)
 - `--turns`: Number of battle turns (default: 1)
 - `--ci_tool_name`: CI tool to use (default: "act")
@@ -600,17 +645,32 @@ graph LR
 Mine GitHub repositories and create task instances:
 
 ```bash
-cd swingarena/collect
-./run_get_tasks_pipeline.sh
+# Set your GitHub token
+export GITHUB_TOKEN=$(gh auth token)  # Or set it manually
+
+python swingarena/collect/get_tasks_pipeline.py \
+    --repos owner/repo-name \
+    --path_prs ./collected_data/prs \
+    --path_tasks ./collected_data/tasks \
+    --max_pulls 100
 ```
 
+**Key Parameters:**
+- `--repos`: GitHub repository to collect from (format: `owner/repo-name`)
+- `--path_prs`: Directory to save PR data
+- `--path_tasks`: Directory to save task instances
+- `--max_pulls`: Maximum number of PRs to process (optional)
+
 **What this does:**
-- Collects pull requests from top GitHub repositories
+- Collects pull requests from specified GitHub repositories
 - Filters PRs with passing CI tests
 - Extracts problem statements, patches, and test cases
 - Saves task instances to `.jsonl` format
 
 **Output:** `task-instances.jsonl` containing collected issues
+
+**Environment Variables:**
+- `GITHUB_TOKEN`: Required for GitHub API access (get from `gh auth token` or [github.com/settings/tokens](https://github.com/settings/tokens))
 
 For more details, see the [collect README](https://github.com/menik1126/Swing-Bench/blob/main/swingarena/collect/README.md).
 
@@ -665,21 +725,22 @@ python -m swingarena.inference.run_api \
 Evaluate the generated patches using CI-driven testing:
 
 ```bash
-cd swingarena/harness
-
 python -m swingarena.harness.run_evaluation \
     --dataset_name /path/to/task-instances.jsonl \
     --predictions_path /path/to/predictions.jsonl \
+    --src_folder /path/to/repos \
+    --target_dir /path/to/testbed \
+    --report_dir /path/to/report \
     --concurrent_workers 4
 ```
 
 **What this does:**
-- Builds Docker containers for each task instance
+- Copies repositories from `src_folder` to isolated testbed
 - Applies model-generated patches
 - Runs CI tests (GitHub Actions via `act` or Cargo tests)
 - Records pass/fail results
 
-**Output:** Evaluation results in `evaluation_results/`
+**Output:** Evaluation results in `report_dir`
 
 See [Basic Usage](#-basic-usage) for more evaluation options.
 
