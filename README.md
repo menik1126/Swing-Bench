@@ -328,14 +328,16 @@ python -m swingarena.harness.run_evaluation \
     --split test \
     --predictions_path gold \
     --concurrent_workers 1 \
-    --instance_ids tokio-rs__tokio-6978
+    --instance_ids pypa__pipenv-6240
 ```
 
 **What this does:**
-1. Downloads `tokio-rs__tokio-6978` instance from SwingBench dataset (HuggingFace)
+1. Downloads `pypa__pipenv-6240` instance from SwingBench (Python project: pypa/pipenv)
 2. Uses the gold patch (the correct fix from the dataset)
-3. Builds a Docker container with the repository environment
-4. Runs CI tests to verify the patch works
+3. Applies the test patch (adds/modifies tests)
+4. Builds a Docker container and runs 22 CI jobs to verify the fix
+
+> **💡 Note:** All 100 instances in SwingBench include both patches and test patches, with full CI configurations across 4 languages (Python, Rust, Go, C++).
 
 **Expected output:**
 ```
