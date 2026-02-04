@@ -576,9 +576,25 @@ def main(
     if split not in dataset:
         raise ValueError(f"Invalid split {split} for dataset {dataset_name_or_path}")
     dataset = dataset[split]
-    # Sort by problem_statement length for SwingBench (SWE-bench used "text" column)
-    text_column = "text" if "text" in dataset.column_names else "problem_statement"
-    lens = np.array(list(map(len, dataset[text_column])))
+
+    # Add 'text' column if it doesn't exist (SwingBench uses problem_statement + hints_text)
+    if "text" not in dataset.column_names:
+        def create_text_field(example):
+            text_parts = []
+            if example.get('problem_statement'):
+                text_parts.append(example['problem_statement'])
+            if example.get('hints_text'):
+                text_parts.append(example['hints_text'])
+            return {"text": '\n\n'.join(text_parts) if text_parts else ''}
+
+        dataset = dataset.map(
+            create_text_field,
+            desc="Creating text field from problem_statement and hints_text",
+            load_from_cache_file=False,
+        )
+
+    # Sort by text length
+    lens = np.array(list(map(len, dataset["text"])))
     dataset = dataset.select(np.argsort(lens))
     if len(existing_ids) > 0:
         dataset = dataset.filter(
