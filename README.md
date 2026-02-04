@@ -471,6 +471,8 @@ python swing_clone_repos.py \
 Build search indexes for fast code retrieval:
 
 ```bash
+cd swingarena/prepare
+
 # Build indexes for SwingBench dataset
 python swing_build_index.py \
     --dataset_path SwingBench/SwingBench \
