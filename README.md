@@ -589,7 +589,7 @@ python swingarena/harness/agent_battle.py \
     --tok_model_rhs gpt2 \
     --model_lhs gpt-4 \
     --model_rhs claude-3-opus \
-    --max_turns 1
+    --turns 1
 ```
 
 > **💡 Tips**:
@@ -605,10 +605,7 @@ python swingarena/harness/agent_battle.py \
 - `--ci_tool_name`: CI tool to use (default: "act")
 - `--tok_model_lhs/rhs`: Tokenizer models (e.g., "gpt2" for API models)
 - `--model_lhs/rhs`: AI models for patch generation (e.g., "gpt-4", "claude-3-opus")
-- `--max_turns`: Number of battle turns (default: 1)
-- `--split`: Dataset split (optional)
 - `--turns`: Number of battle turns (default: 1)
-- `--ci_tool_name`: CI tool to use (default: "act")
 
 **Using the Battle Script:**
 ```bash
