@@ -28,6 +28,7 @@ class SwingbenchInstance:
     retrieved_files: dict[str, str] = field(default_factory=dict)
     environment_setup_commit: str = ""
     version: str = ""
+    language: str = ""
     FAIL_TO_PASS: str = ""
     PASS_TO_PASS: str = ""
     enhanced_problem: str = ""
