@@ -172,30 +172,45 @@ def load_swingbench_dataset(
     split: str = None,
     with_ci: bool = False
 ) -> list[SwingbenchInstance]:
-    multi_language_choice = False
+    # Try to load dataset with sub_dataset_identifier as a config name first
     try:
         dataset = load_dataset(dataset_name, sub_dataset_identifier, split=split)
-    except:
-        # multi-language choice
-        print(f'dataset_name: {dataset_name}, sub_dataset_identifier: {sub_dataset_identifier}, split: {split}')
-        dataset = load_dataset(dataset_name, split=split)[sub_dataset_identifier]
-        multi_language_choice = True
-    instance_list = []
-    if split is None:
-        if multi_language_choice:
-            for instance in dataset:    
+        # Successfully loaded with config, iterate directly
+        instance_list = []
+        if split is None:
+            identifier = sub_dataset_identifier
+            for instance in dataset[identifier]:
                 if with_ci and not instance['ci_name_list']:
                     continue
                 instance_list.append(SwingbenchInstance(**instance))
         else:
-            identifier = sub_dataset_identifier
-            for instance in dataset[identifier]:    
+            for instance in dataset:
                 if with_ci and not instance['ci_name_list']:
                     continue
                 instance_list.append(SwingbenchInstance(**instance))
-    else:
-        instance_list = [SwingbenchInstance(**instance) for instance in dataset]
-    return instance_list
+        return instance_list
+    except:
+        # Config not found, try loading full dataset and filter by language
+        print(f'Config "{sub_dataset_identifier}" not found. Loading full dataset and filtering by language.')
+        dataset = load_dataset(dataset_name, split=split)
+
+        # Normalize language identifier to lowercase
+        language_filter = sub_dataset_identifier.lower()
+
+        instance_list = []
+        for instance in dataset:
+            # Filter by language field if it exists
+            if 'language' in instance and instance['language'] != language_filter:
+                continue
+            if with_ci and not instance['ci_name_list']:
+                continue
+            instance_list.append(SwingbenchInstance(**instance))
+
+        if not instance_list:
+            print(f'Warning: No instances found for language "{language_filter}"')
+            print(f'Available languages in dataset: {set([inst["language"] for inst in dataset if "language" in inst])}')
+
+        return instance_list
 
 
 ### MARK - Patch Correction

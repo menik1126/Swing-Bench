@@ -491,7 +491,7 @@ python swing_build_index.py \
 - `--dataset_path`: Path to dataset or HuggingFace dataset name
 - `--repo_root_dir`: Directory containing cloned repositories
 - `--output_dir`: Where to save the BM25 indexes
-- `--sub_dataset_identifier`: Optional language filter (Python, Rust, etc.)
+- `--sub_dataset_identifier`: Optional language filter (`python`, `rust`, `go`, `cpp` - case insensitive)
 
 **What this does:**
 - Parses source code files in each repository
