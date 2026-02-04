@@ -198,17 +198,38 @@ def load_swingbench_dataset(
         language_filter = sub_dataset_identifier.lower()
 
         instance_list = []
-        for instance in dataset:
-            # Filter by language field if it exists
-            if 'language' in instance and instance['language'] != language_filter:
-                continue
-            if with_ci and not instance['ci_name_list']:
-                continue
-            instance_list.append(SwingbenchInstance(**instance))
+
+        # Handle different dataset structures
+        if split is None:
+            # Dataset is a DatasetDict with splits like 'train', 'test', etc.
+            for split_name, split_data in dataset.items():
+                for instance in split_data:
+                    # Filter by language field if it exists
+                    if 'language' in instance and instance['language'] != language_filter:
+                        continue
+                    if with_ci and not instance['ci_name_list']:
+                        continue
+                    instance_list.append(SwingbenchInstance(**instance))
+        else:
+            # Dataset is a single split
+            for instance in dataset:
+                # Filter by language field if it exists
+                if 'language' in instance and instance['language'] != language_filter:
+                    continue
+                if with_ci and not instance['ci_name_list']:
+                    continue
+                instance_list.append(SwingbenchInstance(**instance))
 
         if not instance_list:
             print(f'Warning: No instances found for language "{language_filter}"')
-            print(f'Available languages in dataset: {set([inst["language"] for inst in dataset if "language" in inst])}')
+            # Get available languages from the dataset
+            if split is None:
+                all_langs = set()
+                for split_data in dataset.values():
+                    all_langs.update([inst["language"] for inst in split_data if "language" in inst])
+                print(f'Available languages in dataset: {all_langs}')
+            else:
+                print(f'Available languages in dataset: {set([inst["language"] for inst in dataset if "language" in inst])}')
 
         return instance_list
 
