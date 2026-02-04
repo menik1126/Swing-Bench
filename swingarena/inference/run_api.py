@@ -576,7 +576,9 @@ def main(
     if split not in dataset:
         raise ValueError(f"Invalid split {split} for dataset {dataset_name_or_path}")
     dataset = dataset[split]
-    lens = np.array(list(map(len, dataset["text"])))
+    # Sort by problem_statement length for SwingBench (SWE-bench used "text" column)
+    text_column = "text" if "text" in dataset.column_names else "problem_statement"
+    lens = np.array(list(map(len, dataset[text_column])))
     dataset = dataset.select(np.argsort(lens))
     if len(existing_ids) > 0:
         dataset = dataset.filter(
