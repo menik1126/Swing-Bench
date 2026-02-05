@@ -459,6 +459,12 @@ def merge_two_diffs(diff1: str, diff2: str) -> str:
 
 
 def merge_diffs(lhs: dict, rhs: dict) -> str:
+    # Validate inputs to prevent AttributeError
+    if lhs is None or rhs is None:
+        raise ValueError(f"merge_diffs requires non-None dict arguments. Got lhs={type(lhs)}, rhs={type(rhs)}")
+    if not isinstance(lhs, dict) or not isinstance(rhs, dict):
+        raise TypeError(f"merge_diffs requires dict arguments. Got lhs={type(lhs)}, rhs={type(rhs)}")
+
     result_patch = ''
     for key in lhs.keys():
         result_patch = merge_two_diffs(result_patch, lhs[key])

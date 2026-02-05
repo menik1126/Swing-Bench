@@ -284,6 +284,8 @@ def battle_one_turn(
             patch = patch_generator.generate(data)
             if patch is None:
                 print('patch is None')
+                patch_agent_score -= 1
+                continue
             else:
                 print(f"patch is {patch}")
             generated_patch_result = patch_verifier.verify(data, patch) # results_2
@@ -303,6 +305,8 @@ def battle_one_turn(
             test = test_generator.generate(data, patch)
             if test is None:
                 print('test is None')
+                test_agent_score -= 1
+                continue
             else:
                 print(f"test is {test}")
             generated_test_result = test_verifier.verify(data, test) # results_3
