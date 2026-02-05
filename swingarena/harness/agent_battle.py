@@ -41,13 +41,17 @@ def check_repo_exists(repo: str, src_folder: str) -> None:
     if src_folder == '':
         return
 
-    # check if the original repo is exists
-    if not os.path.exists(repo):
-        print(f'repo {repo} does not exist. Cloning...')
-        repo_owner, repo_name = repo.split("/")
+    # Build the actual repo path
+    repo_owner, repo_name = repo.split("/")
+    repo_path = os.path.join(src_folder, f"{repo_owner}__{repo_name}")
+
+    # Check if the repo directory exists
+    if not os.path.exists(repo_path):
+        print(f'repo {repo} does not exist at {repo_path}. Cloning...')
         repo_url = f"https://github.com/{repo}"
-        repo_path = os.path.join(src_folder, f"{repo_owner}__{repo_name}")
         subprocess.run(["git", "clone", repo_url, repo_path, "--recursive"])
+    else:
+        print(f'repo {repo} already exists at {repo_path}')
 
 
 def construct_base_instance(data: SwingbenchInstance) -> SwingbenchInstance:
@@ -263,7 +267,7 @@ def battle_one_turn(
         # -- Prepare Stage:
         # 0. original patch CI: checkout base_commit  -> apply original (base_commit) patch -> run CI -> results_0.
 
-        check_repo_exists(data.repo, os.path.join(workdir, src_folder))
+        check_repo_exists(data.repo, src_folder)
 
         base_instance = construct_base_instance(data)
         # clear all patch information, only need to keep the base_commit
