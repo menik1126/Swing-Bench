@@ -84,15 +84,37 @@ def check_repo_exists(repo: str, repo_path: str, github_base_url: str) -> None:
 
 def build_documents(repo_dir: Path, commit: str, document_encoding_func) -> Dict[str, str]:
     documents = {}
-    
+
     repo = Repo(repo_dir)
     repo.git.reset("--hard", commit)
     repo.git.clean("-fdxq")
-    
-    for root, _, files in os.walk(repo_dir):
+
+    # Binary file extensions to skip
+    binary_extensions = {
+        '.wasm', '.webc', '.wasmer', '.wasm32', '.wasm64',  # WebAssembly
+        '.pdf', '.docx', '.doc', '.xlsx', '.xls', '.ppt', '.pptx',  # Documents
+        '.zip', '.tar', '.gz', '.bz2', '.xz', '.rar', '.7z',  # Archives
+        '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.ico', '.svg',  # Images
+        '.mp3', '.mp4', '.avi', '.mov', '.wav', '.flac',  # Media
+        '.exe', '.dll', '.so', '.dylib', '.a', '.o', '.obj',  # Binaries
+        '.pyc', '.pyo', '.class', '.jar',  # Compiled
+        '.db', '.sqlite', '.sqlite3',  # Databases
+    }
+
+    # Directories to skip
+    skip_dirs = {'.git', '.svn', '.hg', 'node_modules', '__pycache__', '.venv', 'venv'}
+
+    for root, dirs, files in os.walk(repo_dir):
+        # Skip unwanted directories
+        dirs[:] = [d for d in dirs if d not in skip_dirs]
+
         for file in files:
-            # TODO(wdxu): better way to filter all documents.
-            if file.endswith(".md") or file.endswith(".txt") or file.endswith(".rst") or file.endswith(".pdf") or file.endswith(".docx") or file.startswith("."):
+            # Skip documentation and hidden files
+            if file.endswith(".md") or file.endswith(".txt") or file.endswith(".rst") or file.startswith("."):
+                continue
+
+            # Skip binary files by extension
+            if any(file.lower().endswith(ext) for ext in binary_extensions):
                 continue
 
             file_path = Path(root) / file
@@ -103,14 +125,18 @@ def build_documents(repo_dir: Path, commit: str, document_encoding_func) -> Dict
             except Exception as e:
                 logger.error(f"Error processing {relative_path}: {e}")
                 continue
-    
+
     return documents
 
 
 def file_name_and_contents(filename: Path, relative_path: str) -> str:
     text = relative_path + "\n"
-    with open(filename) as f:
-        text += f.read()
+    try:
+        with open(filename, encoding='utf-8', errors='strict') as f:
+            text += f.read()
+    except UnicodeDecodeError:
+        # Skip binary files that can't be decoded as UTF-8
+        raise ValueError(f"Cannot decode {relative_path} as UTF-8 (likely binary file)")
     return text
 
 
