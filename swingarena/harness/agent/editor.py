@@ -113,15 +113,31 @@ class RawDataCodeEditor(CodeEditorBase):
         return json_result, ""
 
     def _call_api(self, origin_input: str, role: str, retry: int = 1):
-        input = origin_input
+        input_data = json.loads(origin_input)
+        function_schema = input_data.get("function_schema", {})
+        actual_input = input_data.get("input", {})
+
         function_call_args, raw_resposne = None, ""
         for i in range(retry):
             system_prompt = swing_patch_system_prompt if role == "patch" else swing_test_system_prompt
+
+            # Add JSON template to system prompt to enforce schema
+            json_template = json.dumps({
+                "reasoning_trace": "Your step-by-step analysis here",
+                "code_edits": [] if role == "patch" else None,
+                "test_cases": [] if role == "test" else None
+            }, indent=2)
+            json_template = {k: v for k, v in json.loads(json_template).items() if v is not None}
+
+            enhanced_prompt = f"{system_prompt}\n\nYou MUST return JSON in exactly this format:\n{json.dumps(json_template, indent=2)}"
+
+            user_message = f"Input data:\n{json.dumps(actual_input, indent=2)}"
+
             response = self.client.chat.completions.create(
                 model=self.model,
-                messages=[{"role": "user", "content": input},
-                        {"role": "system", "content": system_prompt}],
-                # response_format={"type": "json_object"},
+                messages=[{"role": "system", "content": enhanced_prompt},
+                        {"role": "user", "content": user_message}],
+                response_format={"type": "json_object"},
                 temperature=0.0,
                 timeout=120
             )
