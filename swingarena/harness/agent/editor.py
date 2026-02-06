@@ -292,16 +292,25 @@ class RawDataCodeEditor(CodeEditorBase):
         print(f'system_tokens length: {len(system_tokens)}')
         print(f'other_content_tokens length: {len(other_content_tokens)}')
         print(f'buffer_tokens: {buffer_tokens}')
-        self.function = copy.deepcopy(swing_patch_function if role == "patch" else swing_test_function)
-        self.function["input"] = {
+
+        # Prepare the function schema (expected output format)
+        function_schema = copy.deepcopy(swing_patch_function if role == "patch" else swing_test_function)
+
+        # Prepare the actual input data separately
+        input_data = {
             "issue": problem_statement,
             "original_code": original_code,
             "file_path": file_paths,
         }
         if generated_patch is not None:
-            self.function["input"]["generated_patch"] = generated_patch
+            input_data["generated_patch"] = generated_patch
 
-        origin_input = json.dumps(self.function)
+        # Combine schema and data in the request
+        request_content = {
+            "function_schema": function_schema,
+            "input": input_data
+        }
+        origin_input = json.dumps(request_content)
         try:
             function_call_args = self._call_api(origin_input, role, retry)
         except Exception as e:
