@@ -80,23 +80,32 @@ class RawDataCodeEditor(CodeEditorBase):
         self.default_prompt_token_length = len(self.tokenizer.encode(str(json.dumps(other_content_tokens)))) + buffer_tokens
 
     def _parse_structured_data(self, content: str) -> dict:
-        # pattern = r'<response>\s*(.*?)\s*</response>'
+        # Try to find JSON in markdown code block first
         pattern = r'```json(.*?)```'
         match = re.search(pattern, content, re.DOTALL)
-        if not match:
-            print(f'No match found in content: {content}')
-            return None, content
-        json_content = match.group(1).strip()
-        json_result = json.loads(json_content)
-        if json_result is None:
-            print('Trying to repair json.')
-            print(f'json_content: {json_content}')
+        if match:
+            json_content = match.group(1).strip()
+        else:
+            # Try to parse the content directly as JSON (for models that don't use markdown)
+            json_content = content.strip()
+
+        try:
+            json_result = json.loads(json_content)
+        except json.JSONDecodeError as e:
+            print(f'Failed to parse JSON: {e}')
+            print(f'Content preview: {content[:500]}...')
+            # Try to repair json
             repaired_json = repair_json(json_content)
             if repaired_json == '':
-                print(f'Failed to repair json. json_content: {json_content}')
-                return None, json_content
+                print(f'Failed to repair json')
+                return None, content
             else:
                 return repaired_json, ""
+
+        if json_result is None:
+            print('json_result is None after parsing')
+            return None, json_content
+
         if 'code_edits' not in json_result and 'test_cases' not in json_result:
             print(f'No code_edits and test_cases in json_result: {json_result}')
             return None, json_content
