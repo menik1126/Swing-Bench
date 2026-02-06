@@ -122,12 +122,29 @@ class RawDataCodeEditor(CodeEditorBase):
             system_prompt = swing_patch_system_prompt if role == "patch" else swing_test_system_prompt
 
             # Add JSON template to system prompt to enforce schema
-            json_template = json.dumps({
-                "reasoning_trace": "Your step-by-step analysis here",
-                "code_edits": [] if role == "patch" else None,
-                "test_cases": [] if role == "test" else None
-            }, indent=2)
-            json_template = {k: v for k, v in json.loads(json_template).items() if v is not None}
+            if role == "patch":
+                json_template = {
+                    "reasoning_trace": "Your step-by-step analysis here",
+                    "code_edits": [
+                        {
+                            "file": "path/to/file.rs",
+                            "code_to_be_modified": "old code here",
+                            "code_edited": "new code here"
+                        }
+                    ]
+                }
+            else:  # test
+                json_template = {
+                    "reasoning_trace": "Your step-by-step analysis here",
+                    "test_cases": [
+                        {
+                            "file": "tests/test_example.rs",
+                            "test_name": "test_example_functionality",
+                            "test_code": "complete test code here",
+                            "test_description": "description of what this test verifies"
+                        }
+                    ]
+                }
 
             enhanced_prompt = f"{system_prompt}\n\nYou MUST return JSON in exactly this format:\n{json.dumps(json_template, indent=2)}"
 
