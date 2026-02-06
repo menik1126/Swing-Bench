@@ -146,7 +146,20 @@ class RawDataCodeEditor(CodeEditorBase):
                     ]
                 }
 
-            enhanced_prompt = f"{system_prompt}\n\nYou MUST return JSON in exactly this format:\n{json.dumps(json_template, indent=2)}"
+            enhanced_prompt = f"""{system_prompt}
+
+CRITICAL: You MUST return JSON with EXACTLY these field names (use underscores, NOT camelCase):
+- Use "test_cases" NOT "testCases"
+- Use "code_edits" NOT "codeEdits"
+- Use "reasoning_trace" NOT "reasoningTrace"
+- Use "test_name" NOT "testName"
+- Use "test_code" NOT "testCode"
+- Use "test_description" NOT "testDescription"
+- Use "code_to_be_modified" NOT "codeToBeModified"
+- Use "code_edited" NOT "codeEdited"
+
+Required JSON format:
+{json.dumps(json_template, indent=2)}"""
 
             user_message = f"Input data:\n{json.dumps(actual_input, indent=2)}"
 
