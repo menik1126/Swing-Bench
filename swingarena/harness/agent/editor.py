@@ -161,12 +161,52 @@ CRITICAL: You MUST return JSON with EXACTLY these field names (use underscores, 
 Required JSON format:
 {json.dumps(json_template, indent=2)}"""
 
+            # Prepare few-shot example
+            if role == "patch":
+                example_input = {
+                    "issue": "Fix typo in error message",
+                    "original_code": 'println!("Eror: invalid input");',
+                    "file_path": ["src/main.rs"]
+                }
+                example_output = {
+                    "reasoning_trace": "The error message contains a typo: 'Eror' should be 'Error'. This needs to be fixed for clarity.",
+                    "code_edits": [
+                        {
+                            "file": "src/main.rs",
+                            "code_to_be_modified": 'println!("Eror: invalid input");',
+                            "code_edited": 'println!("Error: invalid input");'
+                        }
+                    ]
+                }
+            else:  # test
+                example_input = {
+                    "issue": "Add validation for empty string input",
+                    "original_code": "fn process(s: String) { println!(\"{}\", s); }",
+                    "file_path": ["src/lib.rs"],
+                    "generated_patch": "fn process(s: String) { if s.is_empty() { return; } println!(\"{}\", s); }"
+                }
+                example_output = {
+                    "reasoning_trace": "The patch adds empty string validation. We should test both empty and non-empty inputs to verify the behavior.",
+                    "test_cases": [
+                        {
+                            "file": "tests/test_process.rs",
+                            "test_name": "test_process_empty_string",
+                            "test_code": "#[test]\nfn test_process_empty_string() {\n    let s = String::from(\"\");\n    process(s); // Should return early\n}",
+                            "test_description": "Verify that empty strings are handled correctly"
+                        }
+                    ]
+                }
+
             user_message = f"Input data:\n{json.dumps(actual_input, indent=2)}"
 
             response = self.client.chat.completions.create(
                 model=self.model,
-                messages=[{"role": "system", "content": enhanced_prompt},
-                        {"role": "user", "content": user_message}],
+                messages=[
+                    {"role": "system", "content": enhanced_prompt},
+                    {"role": "user", "content": f"Example:\n{json.dumps(example_input, indent=2)}"},
+                    {"role": "assistant", "content": json.dumps(example_output, indent=2)},
+                    {"role": "user", "content": user_message}
+                ],
                 response_format={"type": "json_object"},
                 temperature=0.0,
                 timeout=120
