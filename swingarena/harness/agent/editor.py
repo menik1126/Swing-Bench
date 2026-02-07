@@ -211,7 +211,7 @@ Required JSON format:
                 temperature=0.0,
                 timeout=120
             )
-            print(f"[Call API] Role: #{role}# Sending request size: #{len(input)}# Response size: #{len(response.choices[0].message.content)}#")
+            print(f"[Call API] Role: #{role}# Sending request size: #{len(user_message)}# Response size: #{len(response.choices[0].message.content)}#")
             # print("##################################################")
             # print(response.choices[0].message.content)
             # print("##################################################")
