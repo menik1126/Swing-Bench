@@ -1,3 +1,4 @@
+import ast
 from enum import Enum, auto
 from pathlib import Path
 from dataclasses import dataclass, field
@@ -24,7 +25,7 @@ class SwingbenchInstance:
     pull_number: int = 0
     issue_numbers: int = 0
     merge_commit_sha: str = ""
-    ci_name_list: list[str] = field(default_factory=list)
+    ci_name_list: list = field(default_factory=list)
     retrieved_files: dict[str, str] = field(default_factory=dict)
     environment_setup_commit: str = ""
     version: str = ""
@@ -35,6 +36,22 @@ class SwingbenchInstance:
     original_code: str = ""
     file_paths: list[str] = field(default_factory=list)
     total_tokens: int = 0
+
+    def __post_init__(self):
+        normalized = []
+        for item in self.ci_name_list:
+            if isinstance(item, str):
+                try:
+                    parsed = ast.literal_eval(item)
+                    if isinstance(parsed, list):
+                        normalized.append(parsed)
+                    else:
+                        normalized.append(item)
+                except (ValueError, SyntaxError):
+                    normalized.append(item)
+            else:
+                normalized.append(item)
+        self.ci_name_list = normalized
 
     def __str__(self):
         return f"SwingbenchInstance( " \

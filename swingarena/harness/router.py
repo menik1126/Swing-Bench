@@ -1,3 +1,4 @@
+import ast
 import subprocess
 import re
 import os
@@ -242,6 +243,8 @@ class DockerCITool(CIToolBase):
         pass
 
 
+DEFAULT_MAX_CONCURRENT_CI_JOBS = 4
+
 class ActCITool(CIToolBase):
     def __init__(self, config):
         super().__init__(config)
@@ -251,6 +254,7 @@ class ActCITool(CIToolBase):
         self.ci_dict = dict()
         self.result_lock = threading.Lock()
         self.result_list = []
+        self.max_concurrent = self.config.get("max_concurrent_ci_jobs", DEFAULT_MAX_CONCURRENT_CI_JOBS)
 
         self.construct()
 
@@ -659,17 +663,30 @@ class ActCITool(CIToolBase):
         print(f'Collected CI job name and id dict: {self.ci_dict}')
         print(f'Run ci list: {self.config["ci_name_list"]}')
         threads = []
-        # Pair the flat list into [job_name, workflow_file] tuples
         ci_list = self.config["ci_name_list"]
-        for i in range(0, len(ci_list), 2):
-            if i + 1 < len(ci_list):
-                ci = [ci_list[i], ci_list[i+1]]  # Create pair: [job_name, workflow_file]
-                thread = threading.Thread(
-                    target=lambda ci=ci: self._run_act_with_lock(ci, task.target_dir, "merged", pool)
-                )
-                thread.start()
-                threads.append(thread)
-                time.sleep(0.5)
+        semaphore = threading.Semaphore(self.max_concurrent)
+        print(f'Max concurrent CI jobs: {self.max_concurrent}')
+
+        def _throttled_run(ci, target_dir, order, pool, sem):
+            with sem:
+                self._run_act_with_lock(ci, target_dir, order, pool)
+
+        for ci in ci_list:
+            if isinstance(ci, str):
+                try:
+                    ci = ast.literal_eval(ci)
+                except (ValueError, SyntaxError):
+                    print(f"Warning: Cannot parse ci entry: {ci}")
+                    continue
+            if not isinstance(ci, list) or len(ci) < 2:
+                print(f"Warning: Invalid ci format (expected [job_name, workflow_file]): {ci}")
+                continue
+            thread = threading.Thread(
+                target=lambda ci=ci: _throttled_run(ci, task.target_dir, "merged", pool, semaphore)
+            )
+            thread.start()
+            threads.append(thread)
+            time.sleep(0.5)
 
         for thread in threads:
             thread.join()

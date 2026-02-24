@@ -33,11 +33,14 @@ def image_rule(instance):
 def make_pair_ci_list(ci_name_list):
     """
     Make a pair of CI names from the list of CI names.
+    Expects a flat list: [job_name, workflow_file, job_name, workflow_file, ...]
+    Returns: [[job_name, workflow_file], [job_name, workflow_file], ...]
     TODO(wdxu): Remove once the dataset is fixed.
     """
     new_ci_name_list = []
-    for i in range(0, len(ci_name_list) // 2, 2):
-        new_ci_name_list.append([ci_name_list[i], ci_name_list[i+1]])
+    for i in range(0, len(ci_name_list), 2):
+        if i + 1 < len(ci_name_list):
+            new_ci_name_list.append([ci_name_list[i], ci_name_list[i+1]])
     return new_ci_name_list
 
 
