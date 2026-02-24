@@ -306,6 +306,9 @@ class ActCITool(CIToolBase):
     def _get_ci_job_name_id_dict(self, target_dir):
         def _extract_jobs(filename):
             jobs = {}
+            if not os.path.exists(filename):
+                print(f"Warning: act list file not found: {filename}")
+                return jobs
             with open(filename, 'r', encoding='utf-8') as f:
                 for line in f:
                     line = line.strip()
@@ -318,14 +321,32 @@ class ActCITool(CIToolBase):
                         jobs[job_name] = job_id
             return jobs
 
-        script = ["#!/bin/bash"]
-        script.extend(["cd " + target_dir])
-        script.extend([f"act --list > {self.act_list_path}"])
-        os.system("\n".join(script))
-        # only absolute path? 
         act_list_path = os.path.join(target_dir, self.act_list_path)
-        self.ci_dict = _extract_jobs(os.path.expanduser(act_list_path))
-        os.system("rm " + act_list_path)
+        result = subprocess.run(
+            ["act", "--list"],
+            cwd=target_dir,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        if result.returncode != 0:
+            print(f"Warning: 'act --list' failed (exit {result.returncode}) in {target_dir}")
+            print(f"  stderr: {result.stderr.strip()}")
+            self.ci_dict = {}
+            return
+
+        with open(act_list_path, 'w', encoding='utf-8') as f:
+            f.write(result.stdout)
+
+        self.ci_dict = _extract_jobs(act_list_path)
+
+        if not self.ci_dict:
+            print(f"Warning: No CI jobs parsed from 'act --list'. Raw output:")
+            for line in result.stdout.strip().split('\n')[:10]:
+                print(f"  | {line}")
+
+        if os.path.exists(act_list_path):
+            os.remove(act_list_path)
                     
     def _process_act_output(self, stdout):
         # result format:
@@ -404,9 +425,9 @@ class ActCITool(CIToolBase):
             print(f"Warning: Invalid ci format: {ci}")
             return
         value = self.ci_dict.get(ci[0])
-        # if value is None:
-            # print("value is None ci and its type: ", ci, type(ci))
-            # print(self.ci_dict)
+        if value is None:
+            print(f"Warning: CI job '{ci[0]}' not found in ci_dict (available: {list(self.ci_dict.keys())}). Skipping.")
+            return
         if value is not None:
             port = pool.acquire_port()
             path = self.config["output_dir"] + "/" + \
@@ -592,6 +613,21 @@ class ActCITool(CIToolBase):
     # inject a setup step to install these tools before anything else.
     _CONTAINER_BOOTSTRAP_TOOLS = ["curl", "wget", "git", "gnupg", "ca-certificates"]
 
+    class _WorkflowDumper(yaml.SafeDumper):
+        """Custom YAML dumper that preserves boolean-like keys (on/off/yes/no)
+        as their original string form instead of converting them to true/false."""
+        pass
+
+    @staticmethod
+    def _bool_key_representer(dumper, data):
+        if data is True:
+            return dumper.represent_scalar('tag:yaml.org,2002:str', 'on')
+        if data is False:
+            return dumper.represent_scalar('tag:yaml.org,2002:str', 'off')
+        return dumper.represent_data(data)
+
+    _WorkflowDumper.add_representer(bool, _bool_key_representer)
+
     def _patch_workflow_files(self, target_dir):
         """Inject tool-installation step into workflow jobs that use `container:`."""
         workflows_dir = os.path.join(target_dir, ".github", "workflows")
@@ -641,7 +677,8 @@ class ActCITool(CIToolBase):
 
             if modified:
                 with open(wf_path, "w", encoding="utf-8") as f:
-                    yaml.dump(wf, f, default_flow_style=False, sort_keys=False,
+                    yaml.dump(wf, f, Dumper=self._WorkflowDumper,
+                              default_flow_style=False, sort_keys=False,
                               allow_unicode=True)
                 logger.info("Patched workflow for act container compatibility: %s", wf_path)
 
