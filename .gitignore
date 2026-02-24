@@ -61,3 +61,4 @@ length_stats/
 TESTING_PROGRESS.md
 .env
 .idea/
+.venv/
