@@ -440,23 +440,18 @@ class ActCITool(CIToolBase):
             #     return
             # print(target_dir)
             # print(os.path.join(target_dir, ci[1]))
-            print("Run Act with command: " + "act " + "-j " + value + " " \
-                                            "-P " + "ubuntu-latest=catthehacker/ubuntu:full-latest " + \
-                                            "--artifact-server-port " + str(port) + " " +\
-                                            "--artifact-server-addr " + "0.0.0.0" + " " +\
-                                            "--artifact-server-path " + f"./act/{port}" + " " +\
-                                            # "-W " + os.path.join(target_dir, ci[1]) + " " +\
-                                            "-v " +\
-                                            "--json")
+            workflow_file = os.path.join(target_dir, ci[1])
+            act_cmd = ["act", "-j", value,
+                       "-P", "ubuntu-latest=catthehacker/ubuntu:full-latest",
+                       "--artifact-server-port", str(port),
+                       "--artifact-server-addr", "0.0.0.0",
+                       "--artifact-server-path", f"./act/{port}",
+                       "-W", workflow_file,
+                       "-v",
+                       "--json"]
+            print(f"Run Act with command: {' '.join(act_cmd)}")
 
-            process = subprocess.Popen(["act", "-j", value,
-                                        "-P", "ubuntu-latest=catthehacker/ubuntu:full-latest",
-                                        "--artifact-server-port", str(port),
-                                        "--artifact-server-addr", "0.0.0.0",
-                                        "--artifact-server-path", f"./act/{port}",
-                                        # "-W", os.path.join(target_dir, ci[1]),
-                                        "-v",
-                                        "--json"],
+            process = subprocess.Popen(act_cmd,
                                     cwd=target_dir,
                                     env=os.environ.copy(),
                                     stdout=subprocess.PIPE,
@@ -500,18 +495,22 @@ class ActCITool(CIToolBase):
 
     def _run_act_without_lock(self, ci, target_dir):
         # for debug
+        if not isinstance(ci, list) or len(ci) < 2:
+            print(f"Warning: Invalid ci format: {ci}")
+            return
         value = self.ci_dict.get(ci[0])
         if value is not None:
             path = self.config["output_dir"] + "/" + \
                    self.task.instance_id + "_"  + \
                    value + "_output.json"
-            print("Run Act with command: " + "act " + "-j " + value + " " \
-                                            "-P " + "ubuntu-latest=catthehacker/ubuntu:full-latest " + \
-                                            "--json")
+            workflow_file = os.path.join(target_dir, ci[1])
+            act_cmd = ["act", "-j", value,
+                       "-P", "ubuntu-latest=catthehacker/ubuntu:full-latest",
+                       "-W", workflow_file,
+                       "--json"]
+            print(f"Run Act with command: {' '.join(act_cmd)}")
 
-            process = subprocess.Popen(["act", "-j", value,
-                                        "-P", "ubuntu-latest=catthehacker/ubuntu:full-latest",
-                                        "--json"],
+            process = subprocess.Popen(act_cmd,
                                     cwd=target_dir,
                                     env=os.environ.copy(),
                                     stdout=subprocess.PIPE,
