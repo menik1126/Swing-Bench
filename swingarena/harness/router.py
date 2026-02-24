@@ -244,6 +244,7 @@ class DockerCITool(CIToolBase):
 
 
 DEFAULT_MAX_CONCURRENT_CI_JOBS = 4
+DEFAULT_ACT_TIMEOUT_SECONDS = 30 * 60  # 30 minutes per CI job
 
 class ActCITool(CIToolBase):
     def __init__(self, config):
@@ -255,6 +256,7 @@ class ActCITool(CIToolBase):
         self.result_lock = threading.Lock()
         self.result_list = []
         self.max_concurrent = self.config.get("max_concurrent_ci_jobs", DEFAULT_MAX_CONCURRENT_CI_JOBS)
+        self.act_timeout = self.config.get("act_timeout_seconds", DEFAULT_ACT_TIMEOUT_SECONDS)
 
         self.construct()
 
@@ -457,7 +459,14 @@ class ActCITool(CIToolBase):
                                     stdout=subprocess.PIPE,
                                     stderr=subprocess.PIPE,
                                     text=True)
-            stdout, stderr = process.communicate()
+            try:
+                stdout, stderr = process.communicate(timeout=self.act_timeout)
+            except subprocess.TimeoutExpired:
+                print(f"Warning: act job '{ci[0]}' (workflow: {ci[1]}) timed out after {self.act_timeout}s. Killing.")
+                process.kill()
+                process.communicate()
+                self._cleanup_act_containers()
+                return
             result = {
                 "stdout": stdout,
                 "stderr": stderr,
@@ -573,6 +582,23 @@ class ActCITool(CIToolBase):
         if not os.path.exists(self.config["workdir"]):
             raise Exception(f'Workdir {self.config["workdir"]} does not exist. Please check.')
 
+    @staticmethod
+    def _cleanup_act_containers():
+        """Remove all act-created Docker containers to free resources after timeout."""
+        try:
+            result = subprocess.run(
+                ["docker", "ps", "--filter", "name=act-", "-q"],
+                capture_output=True, text=True
+            )
+            container_ids = result.stdout.strip().split('\n')
+            container_ids = [c for c in container_ids if c]
+            if container_ids:
+                subprocess.run(["docker", "rm", "-f"] + container_ids,
+                               capture_output=True, text=True)
+                print(f"Cleaned up {len(container_ids)} act containers after timeout.")
+        except Exception as e:
+            print(f"Warning: Failed to cleanup act containers: {e}")
+
     def _ensure_docker_image(self, image_name):
         """Check if Docker image exists, pull it if not"""
         print(f"Checking Docker image: {image_name}")
@@ -633,11 +659,18 @@ class ActCITool(CIToolBase):
         if not os.path.isdir(workflows_dir):
             return
 
+        tools = " ".join(self._CONTAINER_BOOTSTRAP_TOOLS)
         install_cmd = (
-            "apt-get update -qq && "
-            "apt-get install -y -qq --no-install-recommends "
-            + " ".join(self._CONTAINER_BOOTSTRAP_TOOLS)
-            + " > /dev/null 2>&1 || true"
+            "if command -v apt-get >/dev/null 2>&1; then "
+            f"apt-get update -qq && apt-get install -y -qq --no-install-recommends {tools}; "
+            "elif command -v dnf >/dev/null 2>&1; then "
+            f"dnf install -y -q {tools}; "
+            "elif command -v yum >/dev/null 2>&1; then "
+            f"yum install -y -q {tools}; "
+            "elif command -v apk >/dev/null 2>&1; then "
+            f"apk add --no-cache {tools}; "
+            "fi"
+            " > /dev/null 2>&1 || true"
         )
 
         setup_step = {
