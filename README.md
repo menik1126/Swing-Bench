@@ -230,69 +230,73 @@ Python yaml: ✅ Installed
 
 ## ⚙️ Environment Configuration
 
-SwingArena uses environment variables for API keys, paths, and configuration. Set up your `.env` file before running SwingArena:
+SwingArena uses environment variables for API keys, paths, and configuration. All variables can be set in a `.env` file, via shell `export`, or passed inline when running scripts.
 
 ### 1. Create .env File
 
-Copy the example configuration file:
 ```bash
 cp .env.example .env
 ```
 
-### 2. Configure API Keys
+### 2. Configure LLM API
 
-Edit `.env` and add your API keys (required for inference and collect modules):
+The core battle / inference features require an **OpenAI-compatible** LLM endpoint:
 
 ```bash
-# OpenAI API Key (for GPT models)
-OPENAI_API_KEY=sk-xxx
+# LLM endpoint (any OpenAI-compatible API)
+LLM_BASE_URL=https://api.openai.com/v1
+LLM_API_KEY=sk-xxx
+LLM_MODEL=gpt-4
 
-# Anthropic API Key (for Claude models)
-ANTHROPIC_API_KEY=sk-ant-xxx
-
-# GitHub Token (for collect module and repository operations)
-GITHUB_TOKEN=ghp_xxx
+# Tokenizer for token counting (HuggingFace model name)
+# Use "gpt2" for OpenAI models, or match the model family for others
+LLM_TOK_MODEL=gpt2
 ```
 
-**How to get API keys:**
-- **OpenAI**: [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
-- **Anthropic**: [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys)
-- **GitHub**: [github.com/settings/tokens](https://github.com/settings/tokens) (needs `repo` scope)
+Common provider examples:
+
+| Provider | `LLM_BASE_URL` | `LLM_MODEL` example |
+|----------|----------------|---------------------|
+| OpenAI | `https://api.openai.com/v1` | `gpt-4` |
+| DashScope | `https://dashscope.aliyuncs.com/compatible-mode/v1` | `qwen-max-latest` |
+| DeepSeek | `https://api.deepseek.com/v1` | `deepseek-chat` |
+| Local vLLM | `http://localhost:8000/v1` | model path or name |
 
 ### 3. Configure Workspace Paths
 
-Set paths for SwingArena data storage:
-
 ```bash
-# Path to the testbed directory (temporary workspace for evaluation)
+# Temporary workspace for CI evaluation runs
 SWING_TESTBED_PATH=/path/to/testbed
 
-# Path to cloned repositories (for prepare module)
+# Directory containing cloned repositories
 SWING_REPOS_DIR_PATH=/path/to/repos
 
-# Path to BM25 search indexes (for prepare and inference modules)
+# Directory containing BM25 search indexes
 SWING_INDEXES_PATH=/path/to/indexes
 
-# CI tool to use for running tests (default: act)
+# CI tool: "act" (local GitHub Actions) or "cargo" (Rust only)
 CI_TOOL_NAME=act
 ```
 
-**Path recommendations:**
-- Use absolute paths
-- Ensure directories have sufficient space (~10GB per language for repos)
-- Create directories before running commands: `mkdir -p /path/to/{testbed,repos,indexes}`
+> **Path recommendations:**
+> - Use absolute paths
+> - Ensure sufficient disk space (~10 GB per language for repos)
+> - Directories are auto-created by `scripts/setup_env.sh`, or create manually: `mkdir -p /path/to/{testbed,repos,indexes}`
 
 ### 4. Optional Configuration
 
 ```bash
-# OpenAI Base URL (for proxies or Azure OpenAI)
-# OPENAI_BASE_URL=https://api.openai.com/v1
+# Java (required by pyserini for BM25 retrieval; auto-detected if on PATH)
+# JAVA_HOME=/path/to/jdk-21
 
-# Multiple GitHub Tokens (for parallel data collection)
+# API keys for inference / collect modules (not needed for agent_battle)
+# OPENAI_API_KEY=sk-xxx
+# ANTHROPIC_API_KEY=sk-ant-xxx
+# GITHUB_TOKEN=ghp_xxx
 # GITHUB_TOKENS=ghp_token1,ghp_token2,ghp_token3
 ```
 
-> **💡 Note**: SwingArena automatically loads `.env` from the project root. You can also set environment variables directly in your shell or use export commands.
+> **💡 Tip**: Run `source scripts/setup_env.sh` to load `.env` and auto-detect Java. The script only sets defaults for variables that are not already exported.
 
 > **🔒 Security**: Never commit your `.env` file to version control. It contains sensitive API keys.
 
@@ -572,46 +576,64 @@ SwingArena's dual-agent battle evaluation mode allows you to compare two AI mode
 
 **Prerequisites:**
 1. **Complete Data Preparation** (see [Data Preparation](#-data-preparation-prepare) section above)
-2. **Configure Environment** (see [Environment Configuration](#%EF%B8%8F-environment-configuration) section)
-   - Set `SWING_TESTBED_PATH`, `SWING_REPOS_DIR_PATH`, `SWING_INDEXES_PATH` in your `.env` file
-   - Ensure directories exist: `mkdir -p /path/to/testbed`
+2. **Configure `.env`** (see [Environment Configuration](#%EF%B8%8F-environment-configuration) section)
 
-**Running a Battle:**
+**Quick Start (recommended):**
+
+```bash
+# 1. Load environment (auto-detects Java, creates dirs)
+source scripts/setup_env.sh
+
+# 2. Run battle — all config comes from .env / env vars
+bash scripts/run_battle.sh
+```
+
+Override any parameter via environment variables:
+
+```bash
+LLM_MODEL=gpt-4 LLM_BASE_URL=https://api.openai.com/v1 \
+DATASET_NAME=SwingBench/SwingBench LANGUAGE=rust \
+bash scripts/run_battle.sh
+```
+
+**Running directly (without script):**
+
 ```bash
 python swingarena/harness/agent_battle.py \
     --dataset_name SwingBench/SwingBench \
     --split test \
-    --src_folder ./repos \
-    --retriever_index_dir ./indexes \
-    --workdir ./arena_testbed \
+    --src_folder $SWING_REPOS_DIR_PATH \
+    --retriever_index_dir $SWING_INDEXES_PATH \
+    --workdir $SWING_TESTBED_PATH \
     --ci_tool_name act \
-    --tok_model_lhs gpt2 \
-    --tok_model_rhs gpt2 \
+    --base_url_lhs https://api.openai.com/v1 \
+    --api_key_lhs $LLM_API_KEY \
     --model_lhs gpt-4 \
-    --model_rhs claude-3-opus \
+    --tok_model_lhs gpt2 \
+    --base_url_rhs https://api.openai.com/v1 \
+    --api_key_rhs $LLM_API_KEY \
+    --model_rhs gpt-4 \
+    --tok_model_rhs gpt2 \
     --turns 1
 ```
 
-> **💡 Tips**:
-> - Set `OPENAI_API_KEY` and `ANTHROPIC_API_KEY` in your `.env` file
-> - Or use `SWING_REPOS_DIR_PATH` and `SWING_INDEXES_PATH` from `.env` to avoid specifying paths
-
 **Battle Parameters:**
-- `--dataset_name`: Dataset to use (HuggingFace name or local path)
-- `--split`: Dataset split (test, train, etc.)
-- `--src_folder`: Directory containing cloned repositories
-- `--retriever_index_dir`: Directory containing BM25 search indexes
-- `--workdir`: Working directory for battle execution
-- `--ci_tool_name`: CI tool to use (default: "act")
-- `--tok_model_lhs/rhs`: Tokenizer models (e.g., "gpt2" for API models)
-- `--model_lhs/rhs`: AI models for patch generation (e.g., "gpt-4", "claude-3-opus")
-- `--turns`: Number of battle turns (default: 1)
 
-**Using the Battle Script:**
-```bash
-# Edit environment variables in the script, then run:
-./scripts/examples/battle_template.sh
-```
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `--dataset_name` | HuggingFace dataset name or local `.jsonl` path | `SwingBench/SwingBench` |
+| `--language` | Language filter | `rust` |
+| `--split` | Dataset split | `test` |
+| `--src_folder` | Directory containing cloned repositories | `$SWING_REPOS_DIR_PATH` |
+| `--retriever_index_dir` | Directory containing BM25 search indexes | `$SWING_INDEXES_PATH` |
+| `--workdir` | Temporary workspace for CI runs | `$SWING_TESTBED_PATH` |
+| `--ci_tool_name` | CI tool (`act` or `cargo`) | `act` |
+| `--model_lhs/rhs` | LLM model names for the two agents | — |
+| `--base_url_lhs/rhs` | OpenAI-compatible API endpoints | — |
+| `--api_key_lhs/rhs` | API keys for the two agents | — |
+| `--tok_model_lhs/rhs` | HuggingFace tokenizer names | — |
+| `--turns` | Number of battle rounds | `1` |
+| `--port_range` | Port range for `act` artifact server | `10000-11000` |
 
 ### 🌩️ Cloud Evaluation with Modal
 
