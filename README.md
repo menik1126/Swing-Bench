@@ -677,6 +677,38 @@ When using `run_battle.sh`, these parameters are configured via environment vari
 | `RERANKER_GPU` | GPU id for CodeBERT reranker | `0` |
 | `ACT_TIMEOUT_SECONDS` | Timeout per act CI job (for matrix jobs) | `7200` (2h) |
 
+### Matrix CI Jobs (Beginner-Friendly)
+
+Many GitHub Actions workflows in SwingBench use **matrix jobs**. A matrix job means:
+
+- You describe a **set of parameters** (for example different OS and Python versions)
+- CI **automatically runs the same job once for each parameter combination**
+
+For example, a `matrix` like this:
+
+```yaml
+strategy:
+  matrix:
+    os: [ubuntu-latest, macos-latest, windows-latest]
+    python-version: [3.8, 3.9, 3.10, 3.11, 3.12]
+```
+
+expands to many jobs like:
+
+- Ubuntu + Python 3.8
+- Ubuntu + Python 3.9
+- ...
+- Windows + Python 3.12
+
+Each combination runs the **same CI steps**, but on a different environment. This is great for compatibility, but very slow to simulate locally with `act`.
+
+To keep SwingBench runs practical, you can reduce the matrix size via the workflow (editing `strategy.matrix`) or via `act` filters (see `ACT_MATRIX_FILTER` in `.env.example` and `swingarena/harness/readme.md`):
+
+- Set `ACT_MATRIX_FILTER` to a single representative combination, for example `os:ubuntu-latest,python-version:3.10`
+- The framework converts this into `act --matrix os:ubuntu-latest --matrix python-version:3.10`, so only that one environment is executed
+
+If you want full matrix coverage, simply leave `ACT_MATRIX_FILTER` empty or comment it out; CI will then run all combinations defined in the workflow.
+
 ### 🌩️ Cloud Evaluation with Modal
 
 Run evaluations on the cloud using [Modal](https://modal.com/) to avoid local setup:
