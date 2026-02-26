@@ -674,6 +674,8 @@ When using `run_battle.sh`, these parameters are configured via environment vari
 | `AGENT_RETRY_TIMES` | `--agent_retry_times` | `3` |
 | `MAX_CHUNK_NUM` | `--max_chunk_num` | `16` |
 | `MAX_INSTANCES` | `--max_instances` | `1` |
+| `RERANKER_GPU` | GPU id for CodeBERT reranker | `0` |
+| `ACT_TIMEOUT_SECONDS` | Timeout per act CI job (for matrix jobs) | `7200` (2h) |
 
 ### 🌩️ Cloud Evaluation with Modal
 

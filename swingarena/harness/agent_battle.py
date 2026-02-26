@@ -14,6 +14,7 @@ from swingarena.harness.swing_utils import (
 )
 
 from swingarena.harness.agent.verifier import PatchVerifier, TestVerifier, PatchGenerator, TestGenerator
+from swingarena.harness.agent.swing_chunker import CodeReranker
 from swingarena.harness.agent.editor import CodeEditorBase, RawDataCodeEditor
 from swingarena.harness.agent.retriever import BM25DiskRetriever, Retriever
 
@@ -391,6 +392,7 @@ def battle(
             begin_port=begin_port,
             end_port=end_port
         )
+        shared_reranker = CodeReranker()
         patch_generator = PatchGenerator(workdir=workdir, 
             src_folder=src_folder, 
             code_editor=code_editor_lhs,
@@ -399,7 +401,8 @@ def battle(
             agent_retry_times=agent_retry_times,
             max_chunk_num=max_chunk_num,
             language=language,
-            chunk_type='block'
+            chunk_type='block',
+            reranker=shared_reranker
         )
         test_generator = TestGenerator(workdir=workdir, 
             src_folder=src_folder, 
@@ -409,7 +412,8 @@ def battle(
             agent_retry_times=agent_retry_times,
             max_chunk_num=max_chunk_num,
             language=language,
-            chunk_type='block'
+            chunk_type='block',
+            reranker=shared_reranker
         )
         return patch_generator, test_generator, patch_verifier, test_verifier
 

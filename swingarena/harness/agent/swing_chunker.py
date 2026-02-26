@@ -1,5 +1,6 @@
 from tree_sitter import Language, Parser
 
+import os
 import torch
 from transformers import AutoTokenizer, AutoModel
 import numpy as np
@@ -19,7 +20,8 @@ class CodeReranker:
         try:
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
             self.model = AutoModel.from_pretrained(model_name)
-            self.device = "cuda" if torch.cuda.is_available() else "cpu"
+            reranker_gpu = os.environ.get("RERANKER_GPU", "0")
+            self.device = f"cuda:{reranker_gpu}" if torch.cuda.is_available() else "cpu"
             self.model.to(self.device)
             self.model.eval()
             print(f"CodeReranker initialized with {model_name} on {self.device}")

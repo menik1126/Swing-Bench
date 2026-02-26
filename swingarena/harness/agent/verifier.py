@@ -64,7 +64,8 @@ class PatchGenerator(Generator):
                  agent_retry_times: int = 3,
                  max_chunk_num: int = 3,
                  language = "rust",
-                 chunk_type = "function"
+                 chunk_type = "function",
+                 reranker: CodeReranker = None
                  ):
         self.workdir = workdir
         self.src_folder = src_folder
@@ -74,7 +75,7 @@ class PatchGenerator(Generator):
         self.agent_retry_times = agent_retry_times
         self.chunker = CodeChunker(language=language, chunk_type=chunk_type)
         self.max_chunk_num = max_chunk_num
-        self.reranker = CodeReranker()
+        self.reranker = reranker if reranker is not None else CodeReranker()
     def model_name(self):
         return self.code_editor.model
 
@@ -200,7 +201,8 @@ class TestGenerator(Generator):
                  agent_retry_times: int = 3,
                  max_chunk_num: int = 3,
                  language = "rust",
-                 chunk_type = "function"
+                 chunk_type = "function",
+                 reranker: CodeReranker = None
                  ):
         self.workdir = workdir
         self.src_folder = src_folder
@@ -210,7 +212,7 @@ class TestGenerator(Generator):
         self.agent_retry_times = agent_retry_times
         self.chunker = CodeChunker(language=language, chunk_type=chunk_type)
         self.max_chunk_num = max_chunk_num
-        self.reranker = CodeReranker()
+        self.reranker = reranker if reranker is not None else CodeReranker()
     
     def model_name(self):
         return self.code_editor.model
@@ -362,6 +364,8 @@ class PatchVerifier(Verifier):
                 "apply_patch": True,
                 "ci_name_list": data.ci_name_list
             }
+            if self.ci_tool_name == "act":
+                config["act_timeout_seconds"] = int(os.environ.get("ACT_TIMEOUT_SECONDS", 30 * 60))
             ci_tool = EVAL_HANDLER.get(self.ci_tool_name)
             tool = ci_tool(config)
 
@@ -432,6 +436,8 @@ class TestVerifier(Verifier):
                 "apply_patch": True,
                 "ci_name_list": data.ci_name_list
             }
+            if self.ci_tool_name == "act":
+                config["act_timeout_seconds"] = int(os.environ.get("ACT_TIMEOUT_SECONDS", 30 * 60))
             ci_tool = EVAL_HANDLER.get(self.ci_tool_name)
             tool = ci_tool(config)
 

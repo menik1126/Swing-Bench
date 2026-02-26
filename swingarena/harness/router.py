@@ -827,50 +827,51 @@ class ActCITool(CIToolBase):
 
     def run_ci(self, pool):
         task = self.task
-        run_script("\n".join(task.env_script))
-        self.check_env()
-        run_script("\n".join(task.eval_script))
+        try:
+            run_script("\n".join(task.env_script))
+            self.check_env()
+            run_script("\n".join(task.eval_script))
 
-        # Ensure Docker image exists before running CI
-        self._ensure_docker_image("catthehacker/ubuntu:full-latest")
+            # Ensure Docker image exists before running CI
+            self._ensure_docker_image("catthehacker/ubuntu:full-latest")
 
-        # Patch workflow files so container-based jobs have common tools
-        self._patch_workflow_files(task.target_dir)
+            # Patch workflow files so container-based jobs have common tools
+            self._patch_workflow_files(task.target_dir)
 
-        print(f"Starting CI run for {self.config['repo']} (ID: {self.config.get('instance_id', 'unknown')})")
+            print(f"Starting CI run for {self.config['repo']} (ID: {self.config.get('instance_id', 'unknown')})")
 
-        self._get_ci_job_name_id_dict(task.target_dir)
-        print(f'Collected CI job name and id dict: {self.ci_dict}')
-        print(f'Run ci list: {self.config["ci_name_list"]}')
-        threads = []
-        ci_list = self._normalize_ci_list(self.config["ci_name_list"])
-        print(f'Normalized ci list: {ci_list}')
-        ci_list = self._deduplicate_ci_list(ci_list)
-        print(f'Deduplicated ci list: {ci_list}')
-        semaphore = threading.Semaphore(self.max_concurrent)
-        print(f'Max concurrent CI jobs: {self.max_concurrent}')
+            self._get_ci_job_name_id_dict(task.target_dir)
+            print(f'Collected CI job name and id dict: {self.ci_dict}')
+            print(f'Run ci list: {self.config["ci_name_list"]}')
+            threads = []
+            ci_list = self._normalize_ci_list(self.config["ci_name_list"])
+            print(f'Normalized ci list: {ci_list}')
+            ci_list = self._deduplicate_ci_list(ci_list)
+            print(f'Deduplicated ci list: {ci_list}')
+            semaphore = threading.Semaphore(self.max_concurrent)
+            print(f'Max concurrent CI jobs: {self.max_concurrent}')
 
-        def _throttled_run(ci, target_dir, order, pool, sem):
-            with sem:
-                self._run_act_with_lock(ci, target_dir, order, pool)
+            def _throttled_run(ci, target_dir, order, pool, sem):
+                with sem:
+                    self._run_act_with_lock(ci, target_dir, order, pool)
 
-        for ci in ci_list:
-            thread = threading.Thread(
-                target=lambda ci=ci: _throttled_run(ci, task.target_dir, "merged", pool, semaphore)
-            )
-            thread.start()
-            threads.append(thread)
-            time.sleep(0.5)
+            for ci in ci_list:
+                thread = threading.Thread(
+                    target=lambda ci=ci: _throttled_run(ci, task.target_dir, "merged", pool, semaphore)
+                )
+                thread.start()
+                threads.append(thread)
+                time.sleep(0.5)
 
-        for thread in threads:
-            thread.join()
+            for thread in threads:
+                thread.join()
 
-        # for ci in self.config["ci_name_list"]:
-        #     self._run_act_without_lock(ci, task.target_dir)
-
-        result = ActCITool._process_result(self.result_list)
-        print(f"CI run completed for {self.config['repo']} (ID: {self.config.get('instance_id', 'unknown')})")
-        return result
+            result = ActCITool._process_result(self.result_list)
+            print(f"CI run completed for {self.config['repo']} (ID: {self.config.get('instance_id', 'unknown')})")
+            return result
+        finally:
+            
+            ActCITool._cleanup_act_containers()
 
     def construct(self):
         env_script = self._build_repo_base_env()
