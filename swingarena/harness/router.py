@@ -4,9 +4,11 @@ import re
 import os
 import sys
 import glob
+import shutil
 import tempfile
 import threading
 import json
+import uuid
 from dataclasses import dataclass
 import logging
 import time
@@ -246,6 +248,21 @@ class DockerCITool(CIToolBase):
 
 DEFAULT_MAX_CONCURRENT_CI_JOBS = 4
 DEFAULT_ACT_TIMEOUT_SECONDS = 30 * 60  # 30 minutes per CI job
+
+ACT_DEFAULT_IMAGE = "catthehacker/ubuntu:full-latest"
+ACT_PLATFORM_MAPPINGS = [
+    f"ubuntu-latest={ACT_DEFAULT_IMAGE}",
+    f"ubuntu-24.04={ACT_DEFAULT_IMAGE}",
+    f"ubuntu-22.04={ACT_DEFAULT_IMAGE}",
+    f"ubuntu-20.04={ACT_DEFAULT_IMAGE}",
+    f"macos-latest={ACT_DEFAULT_IMAGE}",
+    f"macos-14={ACT_DEFAULT_IMAGE}",
+    f"macos-13={ACT_DEFAULT_IMAGE}",
+    f"macos-12={ACT_DEFAULT_IMAGE}",
+    f"windows-latest={ACT_DEFAULT_IMAGE}",
+    f"windows-2022={ACT_DEFAULT_IMAGE}",
+    f"windows-2019={ACT_DEFAULT_IMAGE}",
+]
 
 class ActCITool(CIToolBase):
     def __init__(self, config):
@@ -497,6 +514,7 @@ class ActCITool(CIToolBase):
             return
         if value is not None:
             port = pool.acquire_port()
+            unique_workflow = None
             path = self.config["output_dir"] + "/" + \
                    self.task.instance_id + "_"  + \
                    value + "_" + \
@@ -508,110 +526,164 @@ class ActCITool(CIToolBase):
             # print(target_dir)
             # print(os.path.join(target_dir, ci[1]))
             workflow_file = os.path.join(target_dir, ci[1])
-            act_cmd = ["act", "-j", value,
-                       "-P", "ubuntu-latest=catthehacker/ubuntu:full-latest",
+            try:
+                unique_workflow = self._create_unique_workflow_copy(workflow_file, value)
+            except Exception as e:
+                logger.warning("Failed to create unique workflow copy for '%s': %s. Using original.", value, e)
+                unique_workflow = None
+            act_workflow = unique_workflow if unique_workflow else workflow_file
+            act_cmd = ["act", "-j", value]
+            for mapping in ACT_PLATFORM_MAPPINGS:
+                act_cmd.extend(["-P", mapping])
+            act_cmd.extend([
                        "--artifact-server-port", str(port),
                        "--artifact-server-addr", "0.0.0.0",
                        "--artifact-server-path", f"./act/{port}",
-                       "-W", workflow_file,
+                       "-W", act_workflow,
                        "-v",
-                       "--json"]
+                       "--json"])
             print(f"Run Act with command: {' '.join(act_cmd)}")
 
-            process = subprocess.Popen(act_cmd,
-                                    cwd=target_dir,
-                                    env=os.environ.copy(),
-                                    stdout=subprocess.PIPE,
-                                    stderr=subprocess.PIPE,
-                                    text=True)
-
-            stdout_lines = []
-            stderr_lines = []
-            timed_out = False
-
-            def _timeout_kill():
-                nonlocal timed_out
-                timed_out = True
-                process.kill()
-
-            timer = threading.Timer(self.act_timeout, _timeout_kill)
-            timer.start()
-
-            stderr_thread = threading.Thread(
-                target=lambda: stderr_lines.extend(process.stderr.readlines()),
-                daemon=True,
-            )
-            stderr_thread.start()
-
-            job_tracker = {}
-            start_time = time.time()
-            for line in process.stdout:
-                stdout_lines.append(line)
-                try:
-                    data = json.loads(line.strip())
-                    job_name = data.get('job', '')
-                    job_result = data.get('jobResult')
-
-                    if job_name and job_name not in job_tracker:
-                        job_tracker[job_name] = 'running'
-                        elapsed = time.time() - start_time
-                        print(f"  [Act {value}] ({elapsed:.0f}s) Job started: {job_name}")
-                        sys.stdout.flush()
-
-                    if job_result and job_name in job_tracker:
-                        job_tracker[job_name] = job_result
-                        done = sum(1 for s in job_tracker.values() if s != 'running')
-                        elapsed = time.time() - start_time
-                        print(f"  [Act {value}] ({elapsed:.0f}s) [{done}/{len(job_tracker)}] {job_name} -> {job_result}")
-                        sys.stdout.flush()
-                except json.JSONDecodeError:
-                    pass
-
-            process.wait()
-            timer.cancel()
-            stderr_thread.join(timeout=5)
-
-            if timed_out:
-                print(f"Warning: act job '{ci[0]}' (workflow: {ci[1]}) timed out after {self.act_timeout}s. Killed.")
-                self._cleanup_act_containers()
-                return
-
-            stdout = ''.join(stdout_lines)
-            stderr = ''.join(stderr_lines)
-            result = {
-                "stdout": stdout,
-                "stderr": stderr,
-                "returncode": process.returncode,
-                "processed_output": self._process_act_output(stdout)
-            }
-            # dump result to file in specific path
-            # DEBUG
+            act_cache_dir = os.path.join(target_dir, f".act_cache_{port}")
             try:
-                debug_path = os.environ["SWING_DEBUG_DIR"]
-            except KeyError:
-                debug_path = ''
+                env = os.environ.copy()
+                env["XDG_CACHE_HOME"] = act_cache_dir
+                os.makedirs(act_cache_dir, exist_ok=True)
 
-            if debug_path != '':
-                if not os.path.exists(debug_path):
-                    os.makedirs(debug_path)
+                process = subprocess.Popen(act_cmd,
+                                        cwd=target_dir,
+                                        env=env,
+                                        stdout=subprocess.PIPE,
+                                        stderr=subprocess.PIPE,
+                                        text=True)
 
-                print('dump ci result to file {}'.format(os.path.join(debug_path, self.task.instance_id + "_"  + \
-                    value + "_" + \
-                    order + "_output.json")))
-                with open(os.path.join(debug_path, self.task.instance_id + "_"  + \
-                    value + "_" + \
-                    order + "_output.json"), 'w', encoding='utf-8') as f:
+                stdout_lines = []
+                stderr_lines = []
+                timed_out = False
+
+                def _timeout_kill():
+                    nonlocal timed_out
+                    timed_out = True
+                    process.kill()
+
+                timer = threading.Timer(self.act_timeout, _timeout_kill)
+                timer.start()
+
+                stderr_thread = threading.Thread(
+                    target=lambda: stderr_lines.extend(process.stderr.readlines()),
+                    daemon=True,
+                )
+                stderr_thread.start()
+
+                job_tracker = {}
+                step_tracker = {}
+                start_time = time.time()
+                for line in process.stdout:
+                    stdout_lines.append(line)
+                    try:
+                        data = json.loads(line.strip())
+                        job_name = data.get('job', '')
+                        job_result = data.get('jobResult')
+                        step_name = data.get('step', '')
+                        step_result = data.get('stepResult')
+
+                        if job_name and job_name not in job_tracker:
+                            job_tracker[job_name] = 'running'
+                            elapsed = time.time() - start_time
+                            print(f"  [Act {value}] ({elapsed:.0f}s) Job started: {job_name}")
+                            sys.stdout.flush()
+
+                        if step_name and job_name:
+                            step_key = (job_name, step_name)
+                            if step_result:
+                                if step_key in step_tracker:
+                                    elapsed = time.time() - start_time
+                                    print(f"  [Act {value}] ({elapsed:.0f}s)   Step: {step_name} -> {step_result}")
+                                    sys.stdout.flush()
+                            elif step_key not in step_tracker:
+                                step_tracker[step_key] = True
+                                elapsed = time.time() - start_time
+                                print(f"  [Act {value}] ({elapsed:.0f}s)   Step: {step_name} ...")
+                                sys.stdout.flush()
+
+                        if job_result and job_name in job_tracker:
+                            job_tracker[job_name] = job_result
+                            done = sum(1 for s in job_tracker.values() if s != 'running')
+                            elapsed = time.time() - start_time
+                            print(f"  [Act {value}] ({elapsed:.0f}s) [{done}/{len(job_tracker)}] {job_name} -> {job_result}")
+                            sys.stdout.flush()
+                    except json.JSONDecodeError:
+                        pass
+
+                process.wait()
+                timer.cancel()
+                stderr_thread.join(timeout=5)
+
+                if timed_out:
+                    print(f"Warning: act job '{ci[0]}' (workflow: {ci[1]}) timed out after {self.act_timeout}s. Killed.")
+                    self._cleanup_act_containers()
+                    return
+
+                stdout = ''.join(stdout_lines)
+                stderr = ''.join(stderr_lines)
+
+                # Diagnostic: log when act exits with partial results (helps debug early exit)
+                completed = sum(1 for v in job_tracker.values() if v != 'running')
+                total = len(job_tracker)
+                if completed < total and not timed_out:
+                    logger.warning(
+                        "Act job '%s' exited early: %d/%d jobs completed, returncode=%s. stderr (last 800 chars): %s",
+                        ci[0], completed, total, process.returncode,
+                        stderr[-800:] if stderr else "(empty)"
+                    )
+                elif process.returncode != 0:
+                    logger.warning(
+                        "Act job '%s' exited with returncode=%s. stderr (last 500 chars): %s",
+                        ci[0], process.returncode,
+                        stderr[-500:] if stderr else "(empty)"
+                    )
+
+                result = {
+                    "stdout": stdout,
+                    "stderr": stderr,
+                    "returncode": process.returncode,
+                    "processed_output": self._process_act_output(stdout)
+                }
+                # dump result to file in specific path
+                # DEBUG
+                try:
+                    debug_path = os.environ["SWING_DEBUG_DIR"]
+                except KeyError:
+                    debug_path = ''
+
+                if debug_path != '':
+                    if not os.path.exists(debug_path):
+                        os.makedirs(debug_path)
+
+                    print('dump ci result to file {}'.format(os.path.join(debug_path, self.task.instance_id + "_"  + \
+                        value + "_" + \
+                        order + "_output.json")))
+                    with open(os.path.join(debug_path, self.task.instance_id + "_"  + \
+                        value + "_" + \
+                        order + "_output.json"), 'w', encoding='utf-8') as f:
+                        json.dump(result, f, ensure_ascii=False, indent=4)
+
+                result_path = os.path.join(target_dir, path) 
+                if not os.path.exists(os.path.dirname(result_path)):
+                    os.makedirs(os.path.dirname(result_path))
+                with open(result_path, 'w', encoding='utf-8') as f:
                     json.dump(result, f, ensure_ascii=False, indent=4)
 
-            result_path = os.path.join(target_dir, path) 
-            if not os.path.exists(os.path.dirname(result_path)):
-                os.makedirs(os.path.dirname(result_path))
-            with open(result_path, 'w', encoding='utf-8') as f:
-                json.dump(result, f, ensure_ascii=False, indent=4)
-
-            self.result_lock.acquire()
-            self.result_list.append(result)
-            self.result_lock.release()
+                self.result_lock.acquire()
+                self.result_list.append(result)
+                self.result_lock.release()
+            finally:
+                if unique_workflow and os.path.exists(unique_workflow):
+                    try:
+                        os.remove(unique_workflow)
+                    except OSError:
+                        pass
+                shutil.rmtree(act_cache_dir, ignore_errors=True)
 
     def _run_act_without_lock(self, ci, target_dir):
         # for debug
@@ -620,36 +692,51 @@ class ActCITool(CIToolBase):
             return
         value = self.ci_dict.get(ci[0])
         if value is not None:
+            unique_workflow = None
             path = self.config["output_dir"] + "/" + \
                    self.task.instance_id + "_"  + \
                    value + "_output.json"
             workflow_file = os.path.join(target_dir, ci[1])
-            act_cmd = ["act", "-j", value,
-                       "-P", "ubuntu-latest=catthehacker/ubuntu:full-latest",
-                       "-W", workflow_file,
-                       "--json"]
+            try:
+                unique_workflow = self._create_unique_workflow_copy(workflow_file, value)
+            except Exception as e:
+                logger.warning("Failed to create unique workflow copy for '%s': %s. Using original.", value, e)
+                unique_workflow = None
+            act_workflow = unique_workflow if unique_workflow else workflow_file
+            act_cmd = ["act", "-j", value]
+            for mapping in ACT_PLATFORM_MAPPINGS:
+                act_cmd.extend(["-P", mapping])
+            act_cmd.extend(["-W", act_workflow,
+                       "--json"])
             print(f"Run Act with command: {' '.join(act_cmd)}")
 
-            process = subprocess.Popen(act_cmd,
-                                    cwd=target_dir,
-                                    env=os.environ.copy(),
-                                    stdout=subprocess.PIPE,
-                                    stderr=subprocess.PIPE,
-                                    text=True)
-            stdout, stderr = process.communicate()
-            result = {
-                "stdout": stdout,
-                "stderr": stderr,
-                "returncode": process.returncode,
-                "processed_output": self._process_act_output(stdout)
-            }
-            result_path = os.path.join(target_dir, path) 
-            if not os.path.exists(os.path.dirname(result_path)):
-                os.makedirs(os.path.dirname(result_path))
-            with open(result_path, 'w', encoding='utf-8') as f:
-                json.dump(result, f, ensure_ascii=False, indent=4)
+            try:
+                process = subprocess.Popen(act_cmd,
+                                        cwd=target_dir,
+                                        env=os.environ.copy(),
+                                        stdout=subprocess.PIPE,
+                                        stderr=subprocess.PIPE,
+                                        text=True)
+                stdout, stderr = process.communicate()
+                result = {
+                    "stdout": stdout,
+                    "stderr": stderr,
+                    "returncode": process.returncode,
+                    "processed_output": self._process_act_output(stdout)
+                }
+                result_path = os.path.join(target_dir, path) 
+                if not os.path.exists(os.path.dirname(result_path)):
+                    os.makedirs(os.path.dirname(result_path))
+                with open(result_path, 'w', encoding='utf-8') as f:
+                    json.dump(result, f, ensure_ascii=False, indent=4)
 
-            self.result_list.append(result)
+                self.result_list.append(result)
+            finally:
+                if unique_workflow and os.path.exists(unique_workflow):
+                    try:
+                        os.remove(unique_workflow)
+                    except OSError:
+                        pass
 
     @staticmethod
     def _process_result(result_list: list[str]) -> dict:
@@ -694,19 +781,60 @@ class ActCITool(CIToolBase):
             raise Exception(f'Workdir {self.config["workdir"]} does not exist. Please check.')
 
     @staticmethod
-    def _cleanup_act_containers():
-        """Remove all act-created Docker containers to free resources after timeout."""
+    def _create_unique_workflow_copy(workflow_file, job_value):
+        """Create a temp copy of the workflow with a unique name field to avoid
+        Docker container name conflicts when running multiple act processes concurrently.
+
+        act generates deterministic container names from <workflow_name>/<job_name>/<hash>.
+        When multiple act processes target the same workflow, they produce identical
+        container names for shared dependency jobs, causing Docker conflicts.
+
+        A short UUID is appended to make names unique across runs as well,
+        preventing collisions with leftover containers from previous runs.
+        """
+        run_id = uuid.uuid4().hex[:8]
+
+        with open(workflow_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        match = re.search(r'^name:\s*(.+)$', content, re.MULTILINE)
+        if match:
+            original_name = match.group(1).strip().strip("'\"")
+            new_name = f"{original_name}_{job_value}_{run_id}"
+            content = content[:match.start()] + f"name: {new_name}" + content[match.end():]
+        else:
+            content = f"name: workflow_{job_value}_{run_id}\n" + content
+
+        dir_name = os.path.dirname(workflow_file)
+        base_name = os.path.basename(workflow_file)
+        name, ext = os.path.splitext(base_name)
+        unique_file = os.path.join(dir_name, f"{name}_{job_value}{ext}")
+
+        with open(unique_file, 'w', encoding='utf-8') as f:
+            f.write(content)
+
+        return unique_file
+
+    @staticmethod
+    def _cleanup_act_containers(include_stopped=False):
+        """Remove act-created Docker containers to free resources.
+
+        Args:
+            include_stopped: If True, also remove stopped/exited containers
+                (needed before starting a new run to avoid container name conflicts).
+                If False, only remove running containers (used after timeout kill).
+        """
         try:
-            result = subprocess.run(
-                ["docker", "ps", "--filter", "name=act-", "-q"],
-                capture_output=True, text=True
-            )
+            cmd = ["docker", "ps", "--filter", "name=act-", "-q"]
+            if include_stopped:
+                cmd.insert(2, "-a")
+            result = subprocess.run(cmd, capture_output=True, text=True)
             container_ids = result.stdout.strip().split('\n')
             container_ids = [c for c in container_ids if c]
             if container_ids:
                 subprocess.run(["docker", "rm", "-f"] + container_ids,
                                capture_output=True, text=True)
-                print(f"Cleaned up {len(container_ids)} act containers after timeout.")
+                print(f"Cleaned up {len(container_ids)} act containers.")
         except Exception as e:
             print(f"Warning: Failed to cleanup act containers: {e}")
 
@@ -833,7 +961,10 @@ class ActCITool(CIToolBase):
             run_script("\n".join(task.eval_script))
 
             # Ensure Docker image exists before running CI
-            self._ensure_docker_image("catthehacker/ubuntu:full-latest")
+            self._ensure_docker_image(ACT_DEFAULT_IMAGE)
+
+            # Remove stale act containers from previous runs to avoid name conflicts
+            self._cleanup_act_containers(include_stopped=True)
 
             # Patch workflow files so container-based jobs have common tools
             self._patch_workflow_files(task.target_dir)
@@ -870,8 +1001,7 @@ class ActCITool(CIToolBase):
             print(f"CI run completed for {self.config['repo']} (ID: {self.config.get('instance_id', 'unknown')})")
             return result
         finally:
-            
-            ActCITool._cleanup_act_containers()
+            ActCITool._cleanup_act_containers(include_stopped=True)
 
     def construct(self):
         env_script = self._build_repo_base_env()

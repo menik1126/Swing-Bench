@@ -63,7 +63,12 @@ if __name__ == "__main__":
                     print(f"doing job {job_id} of {repo_name}")
                     script = ["#!/bin/bash"]
                     script.append(f"cd {target_path}")
-                    script.append(f"act -j {job_id} -P ubuntu-latest=catthehacker/ubuntu:full-latest --json > {log_path}/{job_id}.log")
+                    platform_flags = (
+                        "-P ubuntu-latest=catthehacker/ubuntu:full-latest "
+                        "-P macos-latest=catthehacker/ubuntu:full-latest "
+                        "-P windows-latest=catthehacker/ubuntu:full-latest"
+                    )
+                    script.append(f"act -j {job_id} {platform_flags} --json > {log_path}/{job_id}.log")
                     run_script("\n".join(script))
 
                 delete_act_containers()
