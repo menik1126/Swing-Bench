@@ -131,9 +131,16 @@ The evaluation follows this sequence:
 
 ## Scoring System
 
-- **Patch Agent Score**: Points for generating valid patches
-- **Test Agent Score**: Points for generating effective tests  
-- **Verified Scores**: Points for patches/tests that pass combined validation
+The final result reports four scores:
+
+| Score | Initial | How it changes | Meaning |
+|-------|---------|----------------|---------|
+| `patch_agent_score` | 0 | **-1** when patch generation fails or patch CI verification fails | Penalty counter for patch failures (0 = no failures, negative = failures occurred) |
+| `test_agent_score` | 0 | **-1** when test generation fails or test CI verification fails | Penalty counter for test failures (0 = no failures, negative = failures occurred) |
+| `verified_patch_agent_score` | 0 | **+1** when merged patch+test CI matches golden patch | Success counter: patch is correct (higher = better) |
+| `verified_test_agent_score` | 0 | **+1** when merged patch+test CI does NOT match golden patch | Success counter: test detects a bad patch (higher = better) |
+
+Note: `patch_agent_score` and `test_agent_score` only have penalty logic (no positive scoring). A score of 0 means all phases passed without failure. The actual success metric is `verified_patch_agent_score` / `verified_test_agent_score`.
 
 The framework uses rule-based validation:
 - **FPF/PPF rules**: Fail-Pass-Fail and Pass-Pass-Fail patterns indicate invalid solutions
