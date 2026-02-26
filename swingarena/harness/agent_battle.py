@@ -272,10 +272,16 @@ def battle_one_turn(
 
         base_instance = construct_base_instance(data)
         # clear all patch information, only need to keep the base_commit
+        print("=" * 60)
+        print("  [Phase 0] Baseline CI: original commit (no patch)")
+        print("=" * 60)
         original_patch_result = patch_verifier.verify(base_instance, '') # results_0
         print(f'original_patch_result: {original_patch_result["result"]}')
 
         # 1. golden patch CI: checkout base_commit -> apply golden (merged_commit) patch -> run CI -> results_1.
+        print("=" * 60)
+        print("  [Phase 1] Golden Patch CI: applying merged commit")
+        print("=" * 60)
         golden_patch_result = patch_verifier.verify(data, '') # results_1
         print(f'golden_patch_result: {golden_patch_result["result"]}')
 
@@ -289,6 +295,9 @@ def battle_one_turn(
                 continue
             else:
                 print(f"patch is {patch}")
+            print("-" * 60)
+            print("  [Phase 2] Generated Patch CI: agent-generated patch")
+            print("-" * 60)
             generated_patch_result = patch_verifier.verify(data, patch) # results_2
             print(f'generated_patch_result: {generated_patch_result["result"]}')
 
@@ -310,6 +319,9 @@ def battle_one_turn(
                 continue
             else:
                 print(f"test is {test}")
+            print("-" * 60)
+            print("  [Phase 3] Generated Test CI: agent-generated test")
+            print("-" * 60)
             generated_test_result = test_verifier.verify(data, test) # results_3
             print(f'generated_test_result: {generated_test_result["result"]}')
 
@@ -327,6 +339,9 @@ def battle_one_turn(
             # Case 3: with new patch, with new generated tests (Verifying)
             try:
                 patch_with_test = merge_diffs(patch, test)
+                print("-" * 60)
+                print("  [Phase 4] Patch + Test CI: merged patch and test")
+                print("-" * 60)
                 patch_with_test_verify_result = test_verifier.verify(data, patch_with_test) # results_4
                 print(f'patch_with_test_verify_result: {patch_with_test_verify_result["result"]}')
             except Exception as e:
@@ -417,6 +432,9 @@ def battle(
         )
         return patch_generator, test_generator, patch_verifier, test_verifier
 
+    print("#" * 60)
+    print("  Battle Round 1: LHS=Patch Agent, RHS=Test Agent")
+    print("#" * 60)
     patch_generator, test_generator, patch_verifier, test_verifier = \
         get_roles(code_editor_lhs, code_editor_rhs)
     result = battle_one_turn(dataset,
@@ -431,6 +449,9 @@ def battle(
     if DEBUG_ONE_SHOT:
         return result, result
 
+    print("#" * 60)
+    print("  Battle Round 2 (Reversed): RHS=Patch Agent, LHS=Test Agent")
+    print("#" * 60)
     patch_generator, test_generator, patch_verifier, test_verifier = \
         get_roles(code_editor_rhs, code_editor_lhs)
     result_rev = battle_one_turn(dataset,

@@ -147,6 +147,16 @@ The script provides detailed logging including:
 - Final scores for both agents
 - Detailed failure analysis
 
+## Proxy Configuration for Act Containers
+
+Act containers run in Docker and may not inherit the host's proxy settings. If your environment requires a proxy to access GitHub (e.g. for `pre-commit` hooks or `actions/checkout`), configure `ACT_PROXY`:
+
+```bash
+export ACT_PROXY=http://127.0.0.1:7890
+```
+
+If `ACT_PROXY` is not set, the framework automatically falls back to the host's `http_proxy`/`https_proxy` environment variables. The proxy is injected into containers via `act --env`.
+
 ## Debugging: CI Run Debug Dump
 
 When the environment variable `SWING_DEBUG_DIR` is set, each `act` CI process will dump its raw result to a JSON file in that directory upon completion. This is useful for troubleshooting CI failures, partial results, or container issues.

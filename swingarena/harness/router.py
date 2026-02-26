@@ -275,8 +275,48 @@ class ActCITool(CIToolBase):
         self.result_list = []
         self.max_concurrent = self.config.get("max_concurrent_ci_jobs", DEFAULT_MAX_CONCURRENT_CI_JOBS)
         self.act_timeout = self.config.get("act_timeout_seconds", DEFAULT_ACT_TIMEOUT_SECONDS)
+        self.act_matrix_filters = self._parse_matrix_filters(
+            self.config.get("act_matrix_filter", "")
+        )
+        self.act_env_flags = self._build_act_env_flags()
 
         self.construct()
+
+    @staticmethod
+    def _build_act_env_flags() -> list:
+        """Build --env flags to inject proxy settings into act containers.
+
+        Checks ACT_PROXY first, then falls back to host http_proxy/https_proxy.
+        """
+        proxy = os.environ.get("ACT_PROXY", "")
+        if not proxy:
+            proxy = os.environ.get("https_proxy") or os.environ.get("http_proxy", "")
+        if not proxy:
+            return []
+        flags = []
+        for var in ("http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY"):
+            flags.extend(["--env", f"{var}={proxy}"])
+        no_proxy = os.environ.get("no_proxy") or os.environ.get("NO_PROXY", "")
+        if no_proxy:
+            flags.extend(["--env", f"no_proxy={no_proxy}"])
+            flags.extend(["--env", f"NO_PROXY={no_proxy}"])
+        return flags
+
+    @staticmethod
+    def _parse_matrix_filters(raw: str) -> list:
+        """Parse ACT_MATRIX_FILTER env var into --matrix flags for act.
+
+        Format: "key1:val1,key2:val2" e.g. "os:ubuntu-latest,python-version:3.10"
+        Returns list like ["--matrix", "os:ubuntu-latest", "--matrix", "python-version:3.10"]
+        """
+        if not raw or not raw.strip():
+            return []
+        flags = []
+        for entry in raw.split(","):
+            entry = entry.strip()
+            if ":" in entry:
+                flags.extend(["--matrix", entry])
+        return flags
 
     # TODO(wdxu): make these two functions to be public methods.
     def _build_repo_base_env(self):
@@ -383,13 +423,20 @@ class ActCITool(CIToolBase):
         # }
         # for unit test
         results = {}
+        # Strip per-run UUIDs from job names so results are comparable across runs.
+        # e.g. "CI_tests_86db90de/Check code linting" -> "CI_tests/Check code linting"
+        _uuid_suffix_re = re.compile(r'_[0-9a-f]{8}/')
+
+        def _normalize_job(name):
+            return _uuid_suffix_re.sub('/', name, count=1) if name else name
+
         stdout_list = stdout.split('\n')
         for line in stdout_list:
             if not line.strip():
                 continue
             try:
                 data = json.loads(line)
-                job = data.get('job')
+                job = _normalize_job(data.get('job'))
                 if job not in results.keys():
                     results[job] = {
                         'job': job,
@@ -405,13 +452,14 @@ class ActCITool(CIToolBase):
             if not data.strip():
                 continue
             data = json.loads(data)
+            job = _normalize_job(data.get('job'))
             step = data.get('step', None)
             step_result = data.get('stepResult', None)
             job_result = data.get('jobResult', None)
             if step and step_result:
-                results[data.get('job')]['steps'].append((step, data.get('stage', None), step_result))
+                results[job]['steps'].append((step, data.get('stage', None), step_result))
             if job_result:
-                results[data.get('job')]['jobResult'] = job_result
+                results[job]['jobResult'] = job_result
 
             # parse unit test results
             target = ["cargo test", "test", "tests"]
@@ -419,23 +467,23 @@ class ActCITool(CIToolBase):
             failed = [r"(\d+)\s*failed", r"(\d+)\s*fail"]
             ignored = [r"(\d+)\s*ignored", r"(\d+)\s*ignore"]
             for tar in target:
-                if tar in data.get('job').lower():
+                if tar in job.lower():
                     msg = data.get('msg')
                     if "test result" in msg:
                         for p in passed:
                             match = re.search(p, msg, re.IGNORECASE)
                             if match:
-                                results[data.get('job')]['testResult'][0] += int(match.group(1))
+                                results[job]['testResult'][0] += int(match.group(1))
 
                         for f in failed:
                             match = re.search(f, msg, re.IGNORECASE)
                             if match:
-                                results[data.get('job')]['testResult'][1] += int(match.group(1))
+                                results[job]['testResult'][1] += int(match.group(1))
 
                         for i in ignored:
                             match = re.search(i, msg, re.IGNORECASE)
                             if match:
-                                results[data.get('job')]['testResult'][2] += int(match.group(1))
+                                results[job]['testResult'][2] += int(match.group(1))
 
         return results
 
@@ -515,17 +563,23 @@ class ActCITool(CIToolBase):
         if value is not None:
             port = pool.acquire_port()
             unique_workflow = None
+            job_dir = None
             path = self.config["output_dir"] + "/" + \
                    self.task.instance_id + "_"  + \
                    value + "_" + \
                    order + "_output.json"
-            # Do not ignore the existing results.
-            # if os.path.exists(path):
-            #     print(f"path exists: {path}. Ignore...")
-            #     return
-            # print(target_dir)
-            # print(os.path.join(target_dir, ci[1]))
-            workflow_file = os.path.join(target_dir, ci[1])
+
+            # Create a per-job copy of the testbed so concurrent act processes
+            # don't race on git operations / Docker volume initialization.
+            job_dir = f"{target_dir}_act_{value}"
+            try:
+                shutil.copytree(target_dir, job_dir, symlinks=True)
+            except Exception as e:
+                logger.warning("Failed to create per-job testbed copy for '%s': %s. Using shared dir.", value, e)
+                job_dir = None
+            work_dir = job_dir if job_dir else target_dir
+
+            workflow_file = os.path.join(work_dir, ci[1])
             try:
                 unique_workflow = self._create_unique_workflow_copy(workflow_file, value)
             except Exception as e:
@@ -535,6 +589,8 @@ class ActCITool(CIToolBase):
             act_cmd = ["act", "-j", value]
             for mapping in ACT_PLATFORM_MAPPINGS:
                 act_cmd.extend(["-P", mapping])
+            act_cmd.extend(self.act_matrix_filters)
+            act_cmd.extend(self.act_env_flags)
             act_cmd.extend([
                        "--artifact-server-port", str(port),
                        "--artifact-server-addr", "0.0.0.0",
@@ -544,14 +600,14 @@ class ActCITool(CIToolBase):
                        "--json"])
             print(f"Run Act with command: {' '.join(act_cmd)}")
 
-            act_cache_dir = os.path.join(target_dir, f".act_cache_{port}")
+            act_cache_dir = os.path.join(work_dir, f".act_cache_{port}")
             try:
                 env = os.environ.copy()
                 env["XDG_CACHE_HOME"] = act_cache_dir
                 os.makedirs(act_cache_dir, exist_ok=True)
 
                 process = subprocess.Popen(act_cmd,
-                                        cwd=target_dir,
+                                        cwd=work_dir,
                                         env=env,
                                         stdout=subprocess.PIPE,
                                         stderr=subprocess.PIPE,
@@ -684,6 +740,8 @@ class ActCITool(CIToolBase):
                     except OSError:
                         pass
                 shutil.rmtree(act_cache_dir, ignore_errors=True)
+                if job_dir and job_dir != target_dir:
+                    shutil.rmtree(job_dir, ignore_errors=True)
 
     def _run_act_without_lock(self, ci, target_dir):
         # for debug
@@ -706,6 +764,8 @@ class ActCITool(CIToolBase):
             act_cmd = ["act", "-j", value]
             for mapping in ACT_PLATFORM_MAPPINGS:
                 act_cmd.extend(["-P", mapping])
+            act_cmd.extend(self.act_matrix_filters)
+            act_cmd.extend(self.act_env_flags)
             act_cmd.extend(["-W", act_workflow,
                        "--json"])
             print(f"Run Act with command: {' '.join(act_cmd)}")

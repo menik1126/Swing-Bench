@@ -366,6 +366,7 @@ class PatchVerifier(Verifier):
             }
             if self.ci_tool_name == "act":
                 config["act_timeout_seconds"] = int(os.environ.get("ACT_TIMEOUT_SECONDS", 30 * 60))
+                config["act_matrix_filter"] = os.environ.get("ACT_MATRIX_FILTER", "")
             ci_tool = EVAL_HANDLER.get(self.ci_tool_name)
             tool = ci_tool(config)
 
@@ -438,6 +439,7 @@ class TestVerifier(Verifier):
             }
             if self.ci_tool_name == "act":
                 config["act_timeout_seconds"] = int(os.environ.get("ACT_TIMEOUT_SECONDS", 30 * 60))
+                config["act_matrix_filter"] = os.environ.get("ACT_MATRIX_FILTER", "")
             ci_tool = EVAL_HANDLER.get(self.ci_tool_name)
             tool = ci_tool(config)
 
