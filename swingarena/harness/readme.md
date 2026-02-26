@@ -146,3 +146,22 @@ The script provides detailed logging including:
 - Patch and test validation outcomes
 - Final scores for both agents
 - Detailed failure analysis
+
+## Debugging: CI Run Debug Dump
+
+When the environment variable `SWING_DEBUG_DIR` is set, each `act` CI process will dump its raw result to a JSON file in that directory upon completion. This is useful for troubleshooting CI failures, partial results, or container issues.
+
+```bash
+export SWING_DEBUG_DIR=/tmp/swing_act_debug
+```
+
+Each JSON file is named `<instance_id>_<job_id>_<order>_output.json` (e.g. `pypa__pipenv-6240_build_merged_output.json`) and contains:
+
+| Field | Description |
+|-------|-------------|
+| `stdout` | Full act stdout (one JSON object per line, containing step-level logs and results) |
+| `stderr` | Full act stderr (debug logs, error messages, container diagnostics) |
+| `returncode` | Act process exit code |
+| `processed_output` | Parsed result: per-job step success/failure/skipped lists and unit test counts |
+
+These files capture data **before** the final merge step (`_process_result`), so they preserve per-workflow details that are otherwise aggregated in the final log output (`original_patch_result: ...`).
