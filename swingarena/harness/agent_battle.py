@@ -370,8 +370,10 @@ def battle(
     ci_tool_name: str,
     retrieve_file_num: int = 5,
     agent_retry_times: int = 3,
+    max_chunk_num: int = 16,
     turns: int = 1,
-    port_range: str = '10000-11000'
+    port_range: str = '10000-11000',
+    language: str = 'python'
 ) -> Tuple[List[int], List[int]]:
     
     begin_port, end_port = map(int, port_range.split('-'))
@@ -395,7 +397,8 @@ def battle(
             retriever=retriever,
             retrieve_file_num=retrieve_file_num,
             agent_retry_times=agent_retry_times,
-            max_chunk_num=16,
+            max_chunk_num=max_chunk_num,
+            language=language,
             chunk_type='block'
         )
         test_generator = TestGenerator(workdir=workdir, 
@@ -404,7 +407,8 @@ def battle(
             retriever=retriever,
             retrieve_file_num=retrieve_file_num,
             agent_retry_times=agent_retry_times,
-            max_chunk_num=16,
+            max_chunk_num=max_chunk_num,
+            language=language,
             chunk_type='block'
         )
         return patch_generator, test_generator, patch_verifier, test_verifier
@@ -455,7 +459,11 @@ def main(
     ci_tool_name: str,
     turns: int = 1,
     split: str = "train",
-    port_range: str = '10000-11000'
+    port_range: str = '10000-11000',
+    retrieve_file_num: int = 10,
+    agent_retry_times: int = 3,
+    max_chunk_num: int = 16,
+    max_instances: int = 0
 ) -> Tuple[List[int], List[int]]:
     """
     Runs evaluation to battle two agents on a dataset.
@@ -488,6 +496,8 @@ def main(
         dataset = load_swingbench_dataset_json(dataset_name)
     else:
         dataset = load_swingbench_dataset(dataset_name, language, split=split, with_ci=with_ci)
+    if max_instances > 0:
+        dataset = dataset[:max_instances]
     print(f'dataset size: {len(dataset)}')
 
     retriever = BM25DiskRetriever(index_dir=retriever_index_dir)
@@ -509,9 +519,6 @@ def main(
     )
     print(f'code_editor_rhs: {code_editor_rhs}')
 
-    retrieve_file_num = 2
-    agent_retry_times = 3
-
     result, result_rev = battle(dataset,
                                 workdir,
                                 src_folder,
@@ -521,8 +528,10 @@ def main(
                                 ci_tool_name,
                                 retrieve_file_num,
                                 agent_retry_times,
+                                max_chunk_num,
                                 turns,
-                                port_range)
+                                port_range,
+                                language)
 
     print('------------ result ------------')
     print(f'result: {result}')
@@ -608,6 +617,18 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--port_range", type=str, default='10000-11000', help="Port range"
+    )
+    parser.add_argument(
+        "--retrieve_file_num", type=int, default=10, help="Number of files to retrieve via BM25"
+    )
+    parser.add_argument(
+        "--agent_retry_times", type=int, default=3, help="Number of retry attempts for agent"
+    )
+    parser.add_argument(
+        "--max_chunk_num", type=int, default=16, help="Number of chunks to keep after reranking"
+    )
+    parser.add_argument(
+        "--max_instances", type=int, default=0, help="Max number of instances to process (0 = all)"
     )
     args = parser.parse_args()
 

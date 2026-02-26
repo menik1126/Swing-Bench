@@ -120,6 +120,7 @@ class CodeChunker:
     
         self.language = language
         self.chunk_type = chunk_type
+        print(f"[CodeChunker] language={language}, chunk_type={chunk_type}")
         
  
         if language == "python":
@@ -185,8 +186,6 @@ class CodeChunker:
             
         # If tree-sitter parser is available, use it
         if self.parser is not None:
-                print("start _chunk_with_tree_sitter in here==========================")
-                #assert 1==0
                 return self._chunk_with_tree_sitter(code_snippet)
 
             
@@ -197,7 +196,6 @@ class CodeChunker:
     
     def _chunk_with_tree_sitter(self,  code_snippet: str = None) -> List[Dict[str, Any]]:
         """Use tree-sitter to extract code chunks."""
-        print("start _chunk_with_tree_sitter in here==========================")
         chunks = []
         tree = self.parser.parse(bytes(code_snippet, "utf8"))
         root_node = tree.root_node
@@ -223,7 +221,6 @@ class CodeChunker:
             else:
                 query_string = "(function_definition) @function (class_definition) @class"
         elif self.language == "rust":
-            print("self.language:{}".format(self.language))
             # Use the correct Rust syntax node type
             if self.chunk_type == "function":
                 query_string = "(function_item name: (identifier) @func_name) @function"

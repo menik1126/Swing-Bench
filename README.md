@@ -289,12 +289,29 @@ CI_TOOL_NAME=act
 # Java (required by pyserini for BM25 retrieval; auto-detected if on PATH)
 # JAVA_HOME=/path/to/jdk-21
 
+# Direct path to libjvm.so (overrides JAVA_HOME; used by pyjnius).
+# Only needed when pyjnius cannot auto-detect the JVM, e.g. in conda envs.
+# JVM_PATH=/usr/lib/jvm/java-21-openjdk-amd64/lib/server/libjvm.so
+
 # API keys for inference / collect modules (not needed for agent_battle)
 # OPENAI_API_KEY=sk-xxx
 # ANTHROPIC_API_KEY=sk-ant-xxx
 # GITHUB_TOKEN=ghp_xxx
 # GITHUB_TOKENS=ghp_token1,ghp_token2,ghp_token3
 ```
+
+### 5. Git Identity
+
+Git author/committer identity used when applying patches to repositories during battle evaluation. If not set, `git commit` may fail in clean environments (e.g. fresh containers) where no global git config exists.
+
+```bash
+GIT_AUTHOR_NAME=SwingBench
+GIT_AUTHOR_EMAIL=swingbench@local
+GIT_COMMITTER_NAME=SwingBench
+GIT_COMMITTER_EMAIL=swingbench@local
+```
+
+These are already set with default values in `.env.example`. Override them if you need commits attributed to a specific identity.
 
 > **💡 Tip**: Run `source scripts/setup_env.sh` to load `.env` and auto-detect Java. The script only sets defaults for variables that are not already exported.
 
@@ -592,7 +609,7 @@ Override any parameter via environment variables:
 
 ```bash
 LLM_MODEL=gpt-4 LLM_BASE_URL=https://api.openai.com/v1 \
-DATASET_NAME=SwingBench/SwingBench LANGUAGE=rust \
+DATASET_NAME=SwingBench/SwingBench BATTLE_LANGUAGE=rust \
 bash scripts/run_battle.sh
 ```
 
@@ -634,6 +651,29 @@ python swingarena/harness/agent_battle.py \
 | `--tok_model_lhs/rhs` | HuggingFace tokenizer names | — |
 | `--turns` | Number of battle rounds | `1` |
 | `--port_range` | Port range for `act` artifact server | `10000-11000` |
+| `--retrieve_file_num` | Number of files retrieved via BM25 for context | `10` |
+| `--agent_retry_times` | Max retry attempts when agent LLM call fails | `3` |
+| `--max_chunk_num` | Max code chunks kept after reranking for LLM context | `16` |
+| `--max_instances` | Max dataset instances to process (`0` = all) | `0` |
+
+When using `run_battle.sh`, these parameters are configured via environment variables:
+
+| Env Variable | Maps to | Default |
+|---|---|---|
+| `LLM_BASE_URL` | `--base_url_lhs/rhs` | `http://localhost:8000/v1` |
+| `LLM_API_KEY` | `--api_key_lhs/rhs` | `no-api-key` |
+| `LLM_MODEL` | `--model_lhs/rhs` | `Qwen/Qwen2.5-Coder-7B-Instruct` |
+| `LLM_TOK_MODEL` | `--tok_model_lhs/rhs` | `Qwen/Qwen2.5-7B-Instruct` |
+| `DATASET_NAME` | `--dataset_name` | `SwingBench/SwingBench` |
+| `BATTLE_LANGUAGE` | `--language` | `python` |
+| `SPLIT` | `--split` | `test` |
+| `CI_TOOL` | `--ci_tool_name` | `act` |
+| `TURNS` | `--turns` | `1` |
+| `PORT_RANGE` | `--port_range` | `10000-11000` |
+| `RETRIEVE_FILE_NUM` | `--retrieve_file_num` | `10` |
+| `AGENT_RETRY_TIMES` | `--agent_retry_times` | `3` |
+| `MAX_CHUNK_NUM` | `--max_chunk_num` | `16` |
+| `MAX_INSTANCES` | `--max_instances` | `1` |
 
 ### 🌩️ Cloud Evaluation with Modal
 

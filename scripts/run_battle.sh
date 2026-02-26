@@ -10,23 +10,33 @@ fi
 
 source "$SCRIPT_DIR/setup_env.sh"
 
+LOG_DIR="$PROJECT_ROOT/logs"
+mkdir -p "$LOG_DIR"
+LOG_FILE="$LOG_DIR/battle_$(date +%Y%m%d_%H%M%S).log"
+exec > >(tee -a "$LOG_FILE") 2>&1
+echo "Logging to: $LOG_FILE"
+
 BASE_URL="${LLM_BASE_URL:-http://localhost:8000/v1}"
 API_KEY="${LLM_API_KEY:-no-api-key}"
 MODEL="${LLM_MODEL:-Qwen/Qwen2.5-Coder-7B-Instruct}"
 TOK_MODEL="${LLM_TOK_MODEL:-Qwen/Qwen2.5-7B-Instruct}"
 
 DATASET_NAME="${DATASET_NAME:-SwingBench/SwingBench}"
-LANGUAGE="${LANGUAGE:-python}"
+BATTLE_LANGUAGE="${BATTLE_LANGUAGE:-python}"
 SPLIT="${SPLIT:-test}"
 CI_TOOL="${CI_TOOL:-act}"
 TURNS="${TURNS:-1}"
 PORT_RANGE="${PORT_RANGE:-10000-11000}"
+RETRIEVE_FILE_NUM="${RETRIEVE_FILE_NUM:-10}"
+AGENT_RETRY_TIMES="${AGENT_RETRY_TIMES:-3}"
+MAX_CHUNK_NUM="${MAX_CHUNK_NUM:-16}"
+MAX_INSTANCES="${MAX_INSTANCES:-1}"
 
 echo "============================================="
 echo "  SwingArena Agent Battle"
 echo "============================================="
 echo "Dataset:      $DATASET_NAME"
-echo "Language:     $LANGUAGE"
+echo "Language:     $BATTLE_LANGUAGE"
 echo "Split:        $SPLIT"
 echo "CI Tool:      $CI_TOOL"
 echo "LLM Model:    $MODEL"
@@ -36,6 +46,10 @@ echo "Workdir:      $SWING_TESTBED_PATH"
 echo "Repos dir:    $SWING_REPOS_DIR_PATH"
 echo "Indexes dir:  $SWING_INDEXES_PATH"
 echo "Turns:        $TURNS"
+echo "Retrieve files: $RETRIEVE_FILE_NUM"
+echo "Max chunks:     $MAX_CHUNK_NUM"
+echo "Agent retries:  $AGENT_RETRY_TIMES"
+echo "Max instances:  $MAX_INSTANCES (0=all)"
 echo "============================================="
 echo ""
 
@@ -60,7 +74,7 @@ echo ""
 
 exec python swingarena/harness/agent_battle.py \
     --dataset_name "$DATASET_NAME" \
-    --language "$LANGUAGE" \
+    --language "$BATTLE_LANGUAGE" \
     --split "$SPLIT" \
     --workdir "$SWING_TESTBED_PATH" \
     --src_folder "$SWING_REPOS_DIR_PATH" \
@@ -75,4 +89,8 @@ exec python swingarena/harness/agent_battle.py \
     --tok_model_lhs "$TOK_MODEL" \
     --tok_model_rhs "$TOK_MODEL" \
     --turns "$TURNS" \
-    --port_range "$PORT_RANGE"
+    --port_range "$PORT_RANGE" \
+    --retrieve_file_num "$RETRIEVE_FILE_NUM" \
+    --agent_retry_times "$AGENT_RETRY_TIMES" \
+    --max_chunk_num "$MAX_CHUNK_NUM" \
+    --max_instances "$MAX_INSTANCES"

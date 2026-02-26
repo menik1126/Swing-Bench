@@ -2,6 +2,7 @@ import ast
 import subprocess
 import re
 import os
+import sys
 import glob
 import tempfile
 import threading
@@ -421,6 +422,70 @@ class ActCITool(CIToolBase):
 
         return results
 
+    def _normalize_ci_list(self, ci_list):
+        """Normalize ci_list from flat [name, file, name, file, ...] to [[name, file], ...]."""
+        if not ci_list:
+            return []
+        if isinstance(ci_list[0], list):
+            return ci_list
+
+        parsed = []
+        for item in ci_list:
+            if isinstance(item, str):
+                try:
+                    val = ast.literal_eval(item)
+                    if isinstance(val, list):
+                        parsed.append(val)
+                        continue
+                except (ValueError, SyntaxError):
+                    pass
+            parsed.append(item)
+
+        if all(isinstance(item, list) for item in parsed):
+            return parsed
+
+        if all(isinstance(item, str) for item in parsed) and len(parsed) >= 2:
+            pairs = []
+            for i in range(0, len(parsed) - 1, 2):
+                pairs.append([parsed[i], parsed[i + 1]])
+            return pairs
+
+        return ci_list
+
+    def _deduplicate_ci_list(self, ci_list):
+        """Deduplicate ci_list by resolved job id so each job only runs once.
+
+        Handles matrix-expanded names (e.g. 'MacOS / 3.10') that map to the
+        same template job (e.g. '${{matrix.os}} / ${{ matrix.python-version }}').
+        """
+        seen_job_ids = set()
+        deduped = []
+        for ci in ci_list:
+            if not isinstance(ci, list) or len(ci) < 2:
+                deduped.append(ci)
+                continue
+            job_name = ci[0]
+            job_id = self.ci_dict.get(job_name)
+            if job_id is None:
+                for key, value in self.ci_dict.items():
+                    if '${{' not in key:
+                        continue
+                    pattern = re.escape(key)
+                    pattern = re.sub(r'\\\$\\\{\\\{.*?\\\}\\\}', '.*', pattern)
+                    if re.fullmatch(pattern.strip(), job_name.strip()):
+                        job_id = value
+                        ci = [key, ci[1]]
+                        break
+            if job_id is None:
+                print(f"Warning: CI job '{job_name}' not found in ci_dict (available: {list(self.ci_dict.keys())}). Skipping.")
+                continue
+            if job_id not in seen_job_ids:
+                seen_job_ids.add(job_id)
+                deduped.append(ci)
+            else:
+                print(f"Skipping duplicate job '{job_name}' (job_id '{job_id}' already queued)")
+        return deduped
+
     def _run_act_with_lock(self, ci, target_dir, order, pool):
         # ci is expected to be a list: [job_name, workflow_file]
         if not isinstance(ci, list) or len(ci) < 2:
@@ -459,14 +524,60 @@ class ActCITool(CIToolBase):
                                     stdout=subprocess.PIPE,
                                     stderr=subprocess.PIPE,
                                     text=True)
-            try:
-                stdout, stderr = process.communicate(timeout=self.act_timeout)
-            except subprocess.TimeoutExpired:
-                print(f"Warning: act job '{ci[0]}' (workflow: {ci[1]}) timed out after {self.act_timeout}s. Killing.")
+
+            stdout_lines = []
+            stderr_lines = []
+            timed_out = False
+
+            def _timeout_kill():
+                nonlocal timed_out
+                timed_out = True
                 process.kill()
-                process.communicate()
+
+            timer = threading.Timer(self.act_timeout, _timeout_kill)
+            timer.start()
+
+            stderr_thread = threading.Thread(
+                target=lambda: stderr_lines.extend(process.stderr.readlines()),
+                daemon=True,
+            )
+            stderr_thread.start()
+
+            job_tracker = {}
+            start_time = time.time()
+            for line in process.stdout:
+                stdout_lines.append(line)
+                try:
+                    data = json.loads(line.strip())
+                    job_name = data.get('job', '')
+                    job_result = data.get('jobResult')
+
+                    if job_name and job_name not in job_tracker:
+                        job_tracker[job_name] = 'running'
+                        elapsed = time.time() - start_time
+                        print(f"  [Act {value}] ({elapsed:.0f}s) Job started: {job_name}")
+                        sys.stdout.flush()
+
+                    if job_result and job_name in job_tracker:
+                        job_tracker[job_name] = job_result
+                        done = sum(1 for s in job_tracker.values() if s != 'running')
+                        elapsed = time.time() - start_time
+                        print(f"  [Act {value}] ({elapsed:.0f}s) [{done}/{len(job_tracker)}] {job_name} -> {job_result}")
+                        sys.stdout.flush()
+                except json.JSONDecodeError:
+                    pass
+
+            process.wait()
+            timer.cancel()
+            stderr_thread.join(timeout=5)
+
+            if timed_out:
+                print(f"Warning: act job '{ci[0]}' (workflow: {ci[1]}) timed out after {self.act_timeout}s. Killed.")
                 self._cleanup_act_containers()
                 return
+
+            stdout = ''.join(stdout_lines)
+            stderr = ''.join(stderr_lines)
             result = {
                 "stdout": stdout,
                 "stderr": stderr,
@@ -732,7 +843,10 @@ class ActCITool(CIToolBase):
         print(f'Collected CI job name and id dict: {self.ci_dict}')
         print(f'Run ci list: {self.config["ci_name_list"]}')
         threads = []
-        ci_list = self.config["ci_name_list"]
+        ci_list = self._normalize_ci_list(self.config["ci_name_list"])
+        print(f'Normalized ci list: {ci_list}')
+        ci_list = self._deduplicate_ci_list(ci_list)
+        print(f'Deduplicated ci list: {ci_list}')
         semaphore = threading.Semaphore(self.max_concurrent)
         print(f'Max concurrent CI jobs: {self.max_concurrent}')
 
@@ -741,15 +855,6 @@ class ActCITool(CIToolBase):
                 self._run_act_with_lock(ci, target_dir, order, pool)
 
         for ci in ci_list:
-            if isinstance(ci, str):
-                try:
-                    ci = ast.literal_eval(ci)
-                except (ValueError, SyntaxError):
-                    print(f"Warning: Cannot parse ci entry: {ci}")
-                    continue
-            if not isinstance(ci, list) or len(ci) < 2:
-                print(f"Warning: Invalid ci format (expected [job_name, workflow_file]): {ci}")
-                continue
             thread = threading.Thread(
                 target=lambda ci=ci: _throttled_run(ci, task.target_dir, "merged", pool, semaphore)
             )
