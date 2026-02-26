@@ -85,11 +85,18 @@ class PatchGenerator(Generator):
         """
         print("Retrieving data files from retriever to data:{}".format(data))
         code_snippet = self.retriever.retrieve(data, self.src_folder, k=self.retrieve_file_num)
-        print(f"self.retrieve_file_num: {self.retrieve_file_num}")
         if code_snippet is not None:
-            print(f"len of code_snippet: {len(code_snippet)}")
-            print(f"len(code_snippet['hits']): {len(code_snippet['hits'])}")
-            print(f"code_snippet.keys: {code_snippet.keys()}")
+            hits = code_snippet.get('hits', []) if isinstance(code_snippet, dict) else []
+            print(
+                f"[Retriever] k={self.retrieve_file_num}, "
+                f"returned_snippets={len(code_snippet)}, hits={len(hits)}"
+            )
+            if hits:
+                print("[Retriever] top hit files:")
+                for h in hits[: min(3, len(hits))]:
+                    docid = h.get("docid") if isinstance(h, dict) else None
+                    score = h.get("score") if isinstance(h, dict) else None
+                    print(f"  - docid={docid}, score={score}")
         else:
             print('Warning: code_snippet is None')
             return None
@@ -222,9 +229,17 @@ class TestGenerator(Generator):
         data.hints_text += "test, testcase, unittest."
         code_snippet = self.retriever.retrieve(data, self.src_folder, k=self.retrieve_file_num)
         if code_snippet is not None:
-            print(f"len of code_snippet: {len(code_snippet)}")
-            print(f"len(code_snippet['hits']): {len(code_snippet['hits'])}")
-            print(f"code_snippet.keys: {code_snippet.keys()}")
+            hits = code_snippet.get('hits', []) if isinstance(code_snippet, dict) else []
+            print(
+                f"[Retriever] (test gen) k={self.retrieve_file_num}, "
+                f"returned_snippets={len(code_snippet)}, hits={len(hits)}"
+            )
+            if hits:
+                print("[Retriever] (test gen) top hit files:")
+                for h in hits[: min(3, len(hits))]:
+                    docid = h.get("docid") if isinstance(h, dict) else None
+                    score = h.get("score") if isinstance(h, dict) else None
+                    print(f"  - docid={docid}, score={score}")
         else:
             print('Warning: code_snippet is None')
             return None

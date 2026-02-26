@@ -129,6 +129,38 @@ The evaluation follows this sequence:
 4. **Role Reversal**:
    - Repeat with agents swapped (A generates tests, B generates patches)
 
+## Matrix CI Jobs (Beginner-Friendly)
+
+Many GitHub Actions workflows in SwingBench use **matrix jobs**. A matrix job means:
+
+- You describe a **set of parameters** (for example different OS and Python versions)
+- CI **automatically runs the same job once for each parameter combination**
+
+For example, a `matrix` like this:
+
+```yaml
+strategy:
+  matrix:
+    os: [ubuntu-latest, macos-latest, windows-latest]
+    python-version: [3.8, 3.9, 3.10, 3.11, 3.12]
+```
+
+expands to many jobs like:
+
+- Ubuntu + Python 3.8
+- Ubuntu + Python 3.9
+- ...
+- Windows + Python 3.12
+
+Each combination runs the **same CI steps**, but on a different environment. This is great for compatibility, but very slow to simulate locally with `act`.
+
+To keep SwingBench runs practical, we expose:
+
+- `ACT_MATRIX_FILTER` (in `.env.example`): lets you **filter the matrix** down to a single representative combination (for example `os:ubuntu-latest,python-version:3.10`)
+- The code converts this into `act --matrix os:ubuntu-latest --matrix python-version:3.10`, so only that one environment is executed
+
+If you want full matrix coverage, simply leave `ACT_MATRIX_FILTER` empty or comment it out; CI will then run all combinations defined in the workflow.
+
 ## Scoring System
 
 The final result reports four scores:
