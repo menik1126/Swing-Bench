@@ -676,6 +676,7 @@ When using `run_battle.sh`, these parameters are configured via environment vari
 | `MAX_INSTANCES` | `--max_instances` | `1` |
 | `RERANKER_GPU` | GPU id for CodeBERT reranker | `0` |
 | `ACT_TIMEOUT_SECONDS` | Timeout per act CI job (for matrix jobs) | `7200` (2h) |
+| `ACT_MATRIX_FILTER` | Additional `--matrix` filters for `act` (e.g. `os:ubuntu-latest,python-version:3.10`) | empty (run full workflow matrix) |
 
 ### Matrix CI Jobs (Beginner-Friendly)
 
@@ -702,12 +703,34 @@ expands to many jobs like:
 
 Each combination runs the **same CI steps**, but on a different environment. This is great for compatibility, but very slow to simulate locally with `act`.
 
-To keep SwingBench runs practical, you can reduce the matrix size via the workflow (editing `strategy.matrix`) or via `act` filters (see `ACT_MATRIX_FILTER` in `.env.example` and `swingarena/harness/readme.md`):
+#### What `ACT_MATRIX_FILTER` does
 
-- Set `ACT_MATRIX_FILTER` to a single representative combination, for example `os:ubuntu-latest,python-version:3.10`
-- The framework converts this into `act --matrix os:ubuntu-latest --matrix python-version:3.10`, so only that one environment is executed
+`ACT_MATRIX_FILTER` lets you **override the full workflow matrix at runtime** and tell `act` to only run a subset of matrix combinations when SwingBench calls it.
 
-If you want full matrix coverage, simply leave `ACT_MATRIX_FILTER` empty or comment it out; CI will then run all combinations defined in the workflow.
+- The value is a **comma‑separated list of `key:value` pairs**, where `key` matches a matrix dimension (for example `os` or `python-version`)
+- For each `key:value` pair, SwingBench adds a corresponding `--matrix key:value` flag to the `act` command
+
+For example, setting:
+
+```bash
+ACT_MATRIX_FILTER=os:ubuntu-latest,python-version:3.10
+```
+
+results in an `act` invocation like:
+
+```bash
+act ... \
+  --matrix os:ubuntu-latest \
+  --matrix python-version:3.10
+```
+
+In practice this means:
+
+- The GitHub Actions workflow can still define a **large matrix** (many OS × Python versions)
+- But when running under SwingBench with `ACT_MATRIX_FILTER` set, `act` will only execute the **single filtered combination** instead of the full matrix
+- This is very useful for **speeding up local evaluation or debugging**, while keeping the workflow itself unchanged
+
+If you want full matrix coverage (all combinations defined in the workflow), simply leave `ACT_MATRIX_FILTER` empty or comment it out; SwingBench will then run the workflow’s complete matrix without additional `--matrix` filters.
 
 ### 🌩️ Cloud Evaluation with Modal
 
