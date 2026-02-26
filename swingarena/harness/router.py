@@ -279,6 +279,9 @@ class ActCITool(CIToolBase):
             self.config.get("act_matrix_filter", "")
         )
         self.act_env_flags = self._build_act_env_flags()
+        self.act_platform_overrides = self._parse_platform_overrides(
+            os.environ.get("ACT_PLATFORM_OVERRIDES", "")
+        )
 
         self.construct()
 
@@ -316,6 +319,27 @@ class ActCITool(CIToolBase):
             entry = entry.strip()
             if ":" in entry:
                 flags.extend(["--matrix", entry])
+        return flags
+
+    @staticmethod
+    def _parse_platform_overrides(raw: str) -> list:
+        """Parse ACT_PLATFORM_OVERRIDES env var into extra -P flags for act.
+
+        Allows users to map workflow container images to custom images that
+        have additional tools (curl, git, etc.) pre-installed.
+
+        Format: comma-separated "original=replacement" pairs, e.g.
+          "node:16-bullseye-slim=my-registry/node:16-with-tools,python:3.9-slim=my-python:3.9"
+        Returns list like ["-P", "node:16-bullseye-slim=my-registry/node:16-with-tools",
+                           "-P", "python:3.9-slim=my-python:3.9"]
+        """
+        if not raw or not raw.strip():
+            return []
+        flags = []
+        for entry in raw.split(","):
+            entry = entry.strip()
+            if "=" in entry:
+                flags.extend(["-P", entry])
         return flags
 
     # TODO(wdxu): make these two functions to be public methods.
@@ -589,6 +613,7 @@ class ActCITool(CIToolBase):
             act_cmd = ["act", "-j", value]
             for mapping in ACT_PLATFORM_MAPPINGS:
                 act_cmd.extend(["-P", mapping])
+            act_cmd.extend(self.act_platform_overrides)
             act_cmd.extend(self.act_matrix_filters)
             act_cmd.extend(self.act_env_flags)
             act_cmd.extend([
@@ -764,6 +789,7 @@ class ActCITool(CIToolBase):
             act_cmd = ["act", "-j", value]
             for mapping in ACT_PLATFORM_MAPPINGS:
                 act_cmd.extend(["-P", mapping])
+            act_cmd.extend(self.act_platform_overrides)
             act_cmd.extend(self.act_matrix_filters)
             act_cmd.extend(self.act_env_flags)
             act_cmd.extend(["-W", act_workflow,

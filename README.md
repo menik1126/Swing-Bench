@@ -677,6 +677,7 @@ When using `run_battle.sh`, these parameters are configured via environment vari
 | `RERANKER_GPU` | GPU id for CodeBERT reranker | `0` |
 | `ACT_TIMEOUT_SECONDS` | Timeout per act CI job (for matrix jobs) | `7200` (2h) |
 | `ACT_MATRIX_FILTER` | Additional `--matrix` filters for `act` (e.g. `os:ubuntu-latest,python-version:3.10`) | empty (run full workflow matrix) |
+| `ACT_PLATFORM_OVERRIDES` | Extra `-P` image mappings for `act` (e.g. `node:16-bullseye-slim=my/node:16-with-tools`) | empty |
 
 ### Matrix CI Jobs (Beginner-Friendly)
 
@@ -731,6 +732,44 @@ In practice this means:
 - This is very useful for **speeding up local evaluation or debugging**, while keeping the workflow itself unchanged
 
 If you want full matrix coverage (all combinations defined in the workflow), simply leave `ACT_MATRIX_FILTER` empty or comment it out; SwingBench will then run the workflow’s complete matrix without additional `--matrix` filters.
+
+#### Container image overrides (`ACT_PLATFORM_OVERRIDES`)
+
+Some workflows define a custom `container:` image for their jobs (e.g. `node:16-bullseye-slim`). On GitHub-hosted runners the surrounding VM already has tools like `curl`, `git`, and `bash` pre-installed, so the workflow works fine. However, when `act` runs the job it executes **everything inside that container image**, and minimal images often lack these tools, causing failures like `curl: command not found`.
+
+`ACT_PLATFORM_OVERRIDES` lets you remap those images to your own versions that have the missing tools installed — **without modifying the workflow files themselves**.
+
+**How to use:**
+
+1. Build a custom base image once on your machine (Docker must be installed):
+
+```bash
+cd Swing-Bench
+bash scripts/build_act_base_image.sh
+```
+
+By default this uses `BASE_IMAGE=node:16-bullseye-slim` and produces an image tagged `swingbench/base-with-tools` that has extra tools (curl, git, ca-certificates, build-essential, etc.) installed. You can override the base image or target tag:
+
+```bash
+BASE_IMAGE=python:3.11-slim TARGET_TAG=swingbench/python311-with-tools \
+  bash scripts/build_act_base_image.sh
+```
+
+2. Set the environment variable (in `.env` or `.env.example`):
+
+```bash
+ACT_PLATFORM_OVERRIDES=node:16-bullseye-slim=swingbench/base-with-tools
+```
+
+Multiple mappings can be comma-separated, for example:
+
+```bash
+ACT_PLATFORM_OVERRIDES=node:16-bullseye-slim=my/node:16-tools,python:3.9-slim=my/python:3.9-tools
+```
+
+SwingBench converts each pair into an `act -P original=replacement` flag, so `act` will use your enhanced image instead of the original.
+
+If `ACT_PLATFORM_OVERRIDES` is empty or not set, no extra `-P` flags are added and the default image mappings are used.
 
 ### 🌩️ Cloud Evaluation with Modal
 
